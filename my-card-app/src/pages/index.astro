@@ -6,16 +6,56 @@ import Layout from '../layouts/Layout.astro';
 const { searchParams } = Astro.url;
 const queryFolder = searchParams.get('folder');
 
-// 2. 表示するフォルダ名の決定 (デフォルトは最新の試合に設定)
-const folderName = queryFolder || "260116/NBA_Cards_0022500587_20260116";
-
-// GitHub API 設定
-const GITHUB_REPO = "BDATALAB55/nba-card-data";
+// --- 修正：新しいリポジトリ情報 ---
+const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
-// 選手データ取得用
-const apiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/players/${folderName}`;
-const githubBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/players`;
+// 修正：画像があるベースパス (output/players)
+const githubBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/players`;
+
+let folderName = queryFolder;
+
+// --- 自動化：フォルダ名が未指定なら最新を取得 ---
+if (!folderName) {
+  try {
+    const listApi = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players`;
+    const res = await fetch(listApi, {
+      headers: token ? { "Authorization": `token ${token}` } : {}
+    });
+    const items = await res.json();
+    
+    if (Array.isArray(items)) {
+      // 最新の日付フォルダ（例：260112）を特定
+      const dateFolders = items
+        .filter(item => item.type === 'dir' && /^\d+$/.test(item.name))
+        .sort((a, b) => b.name.localeCompare(a.name));
+
+      if (dateFolders.length > 0) {
+        const latestDateDir = dateFolders[0].name;
+        
+        // その中の試合フォルダを取得
+        const matchApi = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players/${latestDateDir}`;
+        const matchRes = await fetch(matchApi, {
+          headers: token ? { "Authorization": `token ${token}` } : {}
+        });
+        const matchItems = await matchRes.json();
+        
+        if (Array.isArray(matchItems)) {
+          const latestMatch = matchItems.find(m => m.type === 'dir' && m.name.startsWith('NBA_Cards_'));
+          if (latestMatch) {
+            folderName = `${latestDateDir}/${latestMatch.name}`;
+          }
+        }
+      }
+    }
+  } catch (e) {
+    console.error("Auto-fetch failed:", e);
+    folderName = "251201/NBA_Cards_0022500001_20251201"; 
+  }
+}
+
+// 選手データ取得用URLの修正
+const apiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players/${folderName}`;
 
 let awayData = [];
 let homeData = [];
@@ -23,12 +63,11 @@ let teamHome = "HOME";
 let teamAway = "AWAY";
 let reportImagePath = "";
 
-// フォルダ名から日付を抽出 (例: 260115 -> 2026.01.15)
-const rawDate = folderName.split('/')[0];
-const formattedDate = `20${rawDate.substring(0,2)}.${rawDate.substring(2,4)}.${rawDate.substring(4,6)}`;
+// フォルダ名から日付を抽出
+const rawDate = folderName ? folderName.split('/')[0] : "";
+const formattedDate = rawDate ? `20${rawDate.substring(0,2)}.${rawDate.substring(2,4)}.${rawDate.substring(4,6)}` : "NO DATA";
 
 try {
-  // --- 選手データの取得 ---
   const response = await fetch(apiURL, {
     headers: token ? { "Authorization": `token ${token}` } : {}
   });
@@ -60,14 +99,13 @@ try {
     homeData = process(teamHome);
   }
 
-  // --- トップ用レポート画像の取得 ---
-  // GameID（10桁の数字）を抜き出す
+  // --- 修正：レポート画像の取得パス ---
   const gameIdMatch = folderName.match(/\d{10}/);
   const gameId = gameIdMatch ? gameIdMatch[0] : "";
 
   if (gameId) {
-    const reportsApiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/reports/NBA/${rawDate}`;
-    const reportsRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/reports/NBA/${rawDate}`;
+    const reportsApiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/reports/NBA/${rawDate}`;
+    const reportsRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/NBA/${rawDate}`;
 
     const reportRes = await fetch(reportsApiURL, {
       headers: token ? { "Authorization": `token ${token}` } : {}
@@ -75,7 +113,6 @@ try {
     const reportFiles = await reportRes.json();
 
     if (Array.isArray(reportFiles)) {
-      // GameIDが含まれるPNGファイルを特定
       const matchFile = reportFiles.find(f => f.name.includes(gameId) && f.name.endsWith('.png'));
       if (matchFile) {
         reportImagePath = `${reportsRawBase}/${matchFile.name}`;

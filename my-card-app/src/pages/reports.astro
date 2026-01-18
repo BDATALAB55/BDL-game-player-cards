@@ -2,10 +2,11 @@
 export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
-const GITHUB_REPO = "BDATALAB55/nba-card-data";
-// リポジトリのルートにある reports/NBA を見に行く
+// --- 修正：新しいリポジトリ名 ---
+const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
+// 修正：reports/NBA の前に output/ を追加
 const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1`;
-const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/reports/NBA`;
+const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/NBA`;
 
 const token = process.env.GITHUB_TOKEN;
 
@@ -18,10 +19,10 @@ try {
   const data = await res.json();
 
   if (data.tree) {
-    // パスを GitHub の実構造に合わせて修正
-    // 実構造: reports/NBA/260107/NBA_...png
+    // 修正：データのパス判定に output/ を追加
+    // 実構造: output/reports/NBA/260107/NBA_...png
     const allFiles = data.tree.filter(item => 
-      item.path.startsWith('reports/NBA/') && 
+      item.path.startsWith('output/reports/NBA/') && 
       item.path.endsWith('.png')
     );
 
@@ -29,9 +30,9 @@ try {
 
     allFiles.forEach(file => {
       const pathParts = file.path.split('/');
-      // [0]=reports, [1]=NBA, [2]=260107, [3]=ファイル名
-      const folderName = pathParts[2]; 
-      const fileName = pathParts[3];
+      // [0]=output, [1]=reports, [2]=NBA, [3]=日付(260107), [4]=ファイル名
+      const folderName = pathParts[3]; 
+      const fileName = pathParts[4];
 
       if (!folderName || !fileName || !/^\d+$/.test(folderName)) return;
 
@@ -53,7 +54,7 @@ try {
         path: `${IMAGE_BASE_URL}/${folderName}/${fileName}`,
         away: teamA,
         home: teamB,
-        // カードへのリンクも GitHub 構造に合わせる (players/260107/...)
+        // カードへのリンク。index側も同じ階層構造を期待するように修正
         link: `/?folder=${folderName}/NBA_Cards_${gameId}_${fullDate}`
       });
     });
@@ -104,7 +105,7 @@ const availableDates = reportGroups.map(g => g.id);
           ))
         ) : (
           <div class="w-full flex items-center justify-center py-20 text-gray-500 font-black text-[10px] tracking-[0.3em]">
-            NO DATA FOUND AT /reports/NBA
+            NO DATA FOUND AT /output/reports/NBA
           </div>
         )}
       </div>
@@ -118,7 +119,7 @@ const availableDates = reportGroups.map(g => g.id);
 
     <div class="fixed bottom-8 left-0 right-0 flex justify-center z-50">
        <a href="/" class="bg-white text-black px-10 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 transition-transform">
-        Back to Cards
+       Back to Cards
        </a>
     </div>
   </div>

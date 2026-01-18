@@ -1,0 +1,198 @@
+---
+export const prerender = false;
+import Layout from '../layouts/Layout.astro';
+
+// 1. URLから ?folder= の値を取得する
+const { searchParams } = Astro.url;
+const queryFolder = searchParams.get('folder');
+
+// 2. 表示するフォルダ名の決定 (デフォルトは最新の試合に設定)
+const folderName = queryFolder || "260116/NBA_Cards_0022500587_20260116";
+
+// GitHub API 設定
+const GITHUB_REPO = "BDATALAB55/nba-card-data";
+const token = process.env.GITHUB_TOKEN;
+
+// 選手データ取得用
+const apiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/players/${folderName}`;
+const githubBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/players`;
+
+let awayData = [];
+let homeData = [];
+let teamHome = "HOME";
+let teamAway = "AWAY";
+let reportImagePath = "";
+
+// フォルダ名から日付を抽出 (例: 260115 -> 2026.01.15)
+const rawDate = folderName.split('/')[0];
+const formattedDate = `20${rawDate.substring(0,2)}.${rawDate.substring(2,4)}.${rawDate.substring(4,6)}`;
+
+try {
+  // --- 選手データの取得 ---
+  const response = await fetch(apiURL, {
+    headers: token ? { "Authorization": `token ${token}` } : {}
+  });
+  const files = await response.json();
+
+  if (Array.isArray(files)) {
+    const playerFiles = files.filter(f => f.name.endsWith('.png')).map(f => f.name);
+    const detectedTeams = [...new Set(playerFiles.map(f => f.split('_')[0]))].filter(t => t && t !== 'NBA');
+    
+    teamAway = detectedTeams[1] || "AWAY";
+    teamHome = detectedTeams[0] || "HOME";
+
+    const process = (teamName) => {
+      return playerFiles
+        .filter(f => f.startsWith(teamName))
+        .map(f => {
+          const p = f.replace('.png', '').split('_');
+          return {
+            team: p[0],
+            no: p[1],
+            name: p.slice(2).join(' '),
+            imagePath: `${githubBase}/${folderName}/${f}`,
+            playerLink: "#"
+          };
+        }).sort((a, b) => parseInt(a.no) - parseInt(b.no));
+    };
+
+    awayData = process(teamAway);
+    homeData = process(teamHome);
+  }
+
+  // --- トップ用レポート画像の取得 ---
+  // GameID（10桁の数字）を抜き出す
+  const gameIdMatch = folderName.match(/\d{10}/);
+  const gameId = gameIdMatch ? gameIdMatch[0] : "";
+
+  if (gameId) {
+    const reportsApiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/reports/NBA/${rawDate}`;
+    const reportsRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/reports/NBA/${rawDate}`;
+
+    const reportRes = await fetch(reportsApiURL, {
+      headers: token ? { "Authorization": `token ${token}` } : {}
+    });
+    const reportFiles = await reportRes.json();
+
+    if (Array.isArray(reportFiles)) {
+      // GameIDが含まれるPNGファイルを特定
+      const matchFile = reportFiles.find(f => f.name.includes(gameId) && f.name.endsWith('.png'));
+      if (matchFile) {
+        reportImagePath = `${reportsRawBase}/${matchFile.name}`;
+      }
+    }
+  }
+} catch (e) {
+  console.error("Fetch Error:", e);
+}
+---
+
+<Layout title="NBA CARDS">
+  <div class="app-container bg-[#373A36] min-h-screen text-white overflow-hidden font-avenir">
+    
+    <header class="pt-12 pb-6 px-8 border-b border-white/5 text-center">
+      <h1 class="text-2xl font-black uppercase leading-none tracking-[0.25em]">NBA Cards</h1>
+      <p class="text-gray-600 text-[10px] font-bold tracking-[0.4em] mt-3 uppercase">Gameday Collection</p>
+    </header>
+
+    <div class="py-10 space-y-16 pb-32">
+      <div class="px-8">
+        <div class="flex flex-col gap-1">
+          <span class="text-gray-500 text-[12px] font-black uppercase tracking-[0.3em]">Gameday</span>
+          <span class="text-white text-[28px] font-bold uppercase leading-none tracking-[0.1em]">{formattedDate}</span>
+        </div>
+      </div>
+
+      <section class="px-8 flex flex-col items-center">
+        {reportImagePath ? (
+          <div class="w-full md:w-[50%] mx-auto cursor-pointer card-trigger rounded-xl overflow-hidden border border-white/20 shadow-2xl" data-img={reportImagePath}>
+            <img src={reportImagePath} alt="Game Report" class="w-full h-auto block" />
+          </div>
+        ) : (
+          <div class="w-full py-10 text-center text-white/20 text-[10px] tracking-widest uppercase border border-dashed border-white/10 rounded-xl">
+            Report Image Not Found
+          </div>
+        )}
+        <div class="mt-4 text-center">
+          <span class="text-[13px] font-black tracking-[0.2em] uppercase text-white/90">
+            {teamAway} <span class="text-[9px] font-medium text-white/40 mx-1 italic">vs</span> {teamHome}
+          </span>
+        </div>
+      </section>
+
+      {[awayData, homeData].map((team) => team.length > 0 && (
+        <section>
+          <div class="px-8 mb-6">
+            <span class="bg-white text-black px-4 py-1.5 text-[16px] font-black uppercase rounded-sm inline-block">
+              {team[0].team}
+            </span>
+          </div>
+
+          <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-8 no-scrollbar pb-4">
+            {team.map((p) => (
+              <div class="flex-none w-[78vw] max-w-[340px] snap-center">
+                <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-xl" data-img={p.imagePath}>
+                  <img src={p.imagePath} alt={p.name} class="w-full h-auto block" loading="lazy" />
+                </div>
+                
+                <div class="mt-6 flex flex-col items-center px-1">
+                    <button class="w-full inline-flex items-center justify-between px-6 py-4 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative active:scale-95 transition-all group overflow-hidden shadow-lg">
+                      <div class="absolute inset-0 p-[1.5px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10 opacity-80"></div>
+                      <div class="flex items-center">
+                        <span class="text-[14px] font-black tracking-[0.15em] uppercase text-white">{p.name}</span>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-white/40 group-hover:text-white transition-colors" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                    </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+
+    <div id="modal" class="fixed inset-0 bg-black/98 z-50 hidden flex-col items-center justify-center p-6 backdrop-blur-md">
+      <div class="absolute top-8 right-8 text-white/40 text-4xl font-light cursor-pointer p-4" id="close">&times;</div>
+      <img id="modal-img" src="" class="max-w-full max-h-[85vh] shadow-2xl rounded-xl mb-12" />
+      <a id="download-btn" href="" download class="bg-white text-black px-14 py-4 rounded-full font-black uppercase tracking-widest text-[11px]">Download Card</a>
+    </div>
+
+    <div class="fixed bottom-8 left-0 right-0 flex justify-center z-40 pointer-events-none">
+      <a href="/reports" class="pointer-events-auto bg-blue-600 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 transition-transform">
+        View Archive
+      </a>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modal-img') as HTMLImageElement;
+  const close = document.getElementById('close');
+  const downloadBtn = document.getElementById('download-btn') as HTMLAnchorElement;
+
+  document.querySelectorAll('.card-trigger').forEach(card => {
+    card.addEventListener('click', () => {
+      const imgSrc = card.getAttribute('data-img');
+      if (imgSrc && modalImg && downloadBtn) {
+        modalImg.src = imgSrc;
+        downloadBtn.href = imgSrc;
+        modal?.classList.remove('hidden');
+        modal?.classList.add('flex');
+      }
+    });
+  });
+
+  close?.addEventListener('click', () => {
+    modal?.classList.add('hidden');
+    modal?.classList.remove('flex');
+  });
+</script>
+
+<style is:global>
+  :root { font-family: "Avenir Next", sans-serif; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>

@@ -1,0 +1,198 @@
+---
+export const prerender = false;
+import Layout from '../layouts/Layout.astro';
+
+const GITHUB_REPO = "BDATALAB55/nba-card-data";
+// リポジトリのルートにある reports/NBA を見に行く
+const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1`;
+const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/reports/NBA`;
+
+const token = process.env.GITHUB_TOKEN;
+
+let reportGroups = [];
+
+try {
+  const res = await fetch(`${RECURSIVE_API}&t=${Date.now()}`, {
+    headers: token ? { "Authorization": `token ${token}` } : {}
+  });
+  const data = await res.json();
+
+  if (data.tree) {
+    // パスを GitHub の実構造に合わせて修正
+    // 実構造: reports/NBA/260107/NBA_...png
+    const allFiles = data.tree.filter(item => 
+      item.path.startsWith('reports/NBA/') && 
+      item.path.endsWith('.png')
+    );
+
+    const groups = {};
+
+    allFiles.forEach(file => {
+      const pathParts = file.path.split('/');
+      // [0]=reports, [1]=NBA, [2]=260107, [3]=ファイル名
+      const folderName = pathParts[2]; 
+      const fileName = pathParts[3];
+
+      if (!folderName || !fileName || !/^\d+$/.test(folderName)) return;
+
+      const nameParts = fileName.replace('.png', '').split('_');
+      const fullDate = nameParts[1] || ""; 
+      const gameId = nameParts[2] || "";
+      const teamA = nameParts[nameParts.length - 2] || "AWAY";
+      const teamB = nameParts[nameParts.length - 1] || "HOME";
+
+      if (!groups[folderName]) {
+        groups[folderName] = {
+          id: folderName,
+          date: `20${folderName.substring(0,2)}.${folderName.substring(2,4)}.${folderName.substring(4,6)}`,
+          reports: []
+        };
+      }
+
+      groups[folderName].reports.push({
+        path: `${IMAGE_BASE_URL}/${folderName}/${fileName}`,
+        away: teamA,
+        home: teamB,
+        // カードへのリンクも GitHub 構造に合わせる (players/260107/...)
+        link: `/?folder=${folderName}/NBA_Cards_${gameId}_${fullDate}`
+      });
+    });
+
+    reportGroups = Object.values(groups).sort((a, b) => b.id.localeCompare(a.id));
+  }
+} catch (e) {
+  console.error("Fetch Error:", e);
+}
+
+const allData = reportGroups;
+const availableDates = reportGroups.map(g => g.id);
+---
+
+<Layout title="GAME REPORT">
+  <div class="bg-[#373A36] min-h-screen text-white font-avenir overflow-x-hidden">
+    
+    <header class="pt-12 pb-6 px-8 text-center border-b border-white/5">
+      <h1 class="text-2xl font-black uppercase leading-none tracking-[0.25em]">GAME REPORT</h1>
+    </header>
+
+    <section class="py-10">
+      <div class="px-8 mb-4 min-h-[80px]">
+        <div class="flex flex-col gap-1">
+          <span id="display-label" class="text-blue-500 text-[10px] font-black uppercase tracking-[0.3em]">Latest Update</span>
+          <span id="display-date" class="text-white text-[32px] font-bold uppercase leading-none tracking-[0.05em] text-shadow-xl">
+            {reportGroups.length > 0 ? reportGroups[0].date : "NO DATA"}
+          </span>
+        </div>
+      </div>
+
+      <div id="report-slider" class="flex overflow-x-auto snap-x snap-mandatory gap-4 px-8 no-scrollbar min-h-[300px]">
+        {reportGroups.length > 0 ? (
+          reportGroups[0].reports.map((report) => (
+            <div class="flex-none w-[85vw] max-w-[400px] snap-center">
+              <div class="rounded-2xl overflow-hidden border border-white/10 bg-gray-900 shadow-2xl">
+                <img src={report.path} alt="Report" class="w-full h-auto block" loading="lazy" />
+              </div>
+              <div class="mt-6 text-center">
+                <a href={report.link} class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative active:scale-95 transition-all group overflow-hidden">
+                  <div class="absolute inset-0 p-[2px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10"></div>
+                  <span class="text-[14px] font-black tracking-[0.2em] uppercase text-white">
+                    {report.away} <span class="text-[10px] font-medium lowercase tracking-normal mx-1 text-white/50 italic px-1">vs</span> {report.home}
+                  </span>
+                </a>
+              </div>
+            </div>
+          ))
+        ) : (
+          <div class="w-full flex items-center justify-center py-20 text-gray-500 font-black text-[10px] tracking-[0.3em]">
+            NO DATA FOUND AT /reports/NBA
+          </div>
+        )}
+      </div>
+    </section>
+
+    <section class="px-8 pb-40">
+      <div class="max-w-md mx-auto">
+        <div id="calendar" class="bg-gray-900/40 p-6 rounded-3xl border border-white/5 shadow-inner"></div>
+      </div>
+    </section>
+
+    <div class="fixed bottom-8 left-0 right-0 flex justify-center z-50">
+       <a href="/" class="bg-white text-black px-10 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 transition-transform">
+        Back to Cards
+       </a>
+    </div>
+  </div>
+</Layout>
+
+<script is:inline define:vars={{ allData, availableDates }}>
+  // カレンダー・表示切り替えロジック
+  let currentY = 2026;
+  let currentM = 0; 
+
+  if (availableDates.length > 0) {
+    const latest = availableDates[0];
+    currentY = 2000 + parseInt(latest.substring(0,2));
+    currentM = parseInt(latest.substring(2,4)) - 1;
+  }
+
+  window.updateReports = function(dateId) {
+    const sliderEl = document.getElementById('report-slider');
+    const dateTitleEl = document.getElementById('display-date');
+    const labelEl = document.getElementById('display-label');
+    const data = allData.find(g => g.id === dateId);
+    if (!data || !sliderEl) return;
+
+    dateTitleEl.innerText = data.date;
+    const isLatest = (allData.length > 0 && dateId === availableDates[0]);
+    labelEl.innerText = isLatest ? "Latest Update" : "Archive Data";
+    labelEl.className = `text-[10px] font-black uppercase tracking-[0.3em] ${isLatest ? 'text-blue-500' : 'text-gray-500'}`;
+
+    sliderEl.innerHTML = data.reports.map(report => `
+      <div class="flex-none w-[85vw] max-w-[400px] snap-center">
+        <div class="rounded-2xl overflow-hidden border border-white/10 bg-gray-900 shadow-2xl">
+          <img src="${report.path}" class="w-full h-auto block" />
+        </div>
+        <div class="mt-6 text-center">
+          <a href="${report.link}" class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative active:scale-95 transition-all group overflow-hidden">
+            <div class="absolute inset-0 p-[2px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10"></div>
+            <span class="text-[14px] font-black tracking-[0.2em] uppercase text-white">
+              ${report.away} <span class="text-[10px] font-medium lowercase tracking-normal mx-1 text-white/50 italic px-1">vs</span> ${report.home}
+            </span>
+          </a>
+        </div>
+      </div>
+    `).join('');
+    sliderEl.scrollTo({ left: 0, behavior: 'smooth' });
+  };
+
+  window.changeMonth = function(delta) {
+    currentM += delta;
+    if (currentM < 0) { currentM = 11; currentY--; }
+    else if (currentM > 11) { currentM = 0; currentY++; }
+    renderCalendar(currentY, currentM);
+  };
+
+  function renderCalendar(y, m) {
+    const calendarEl = document.getElementById('calendar');
+    if (!calendarEl) return;
+    const firstDay = new Date(y, m, 1).getDay();
+    const daysInMonth = new Date(y, m + 1, 0).getDate();
+    const monthNames = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
+    
+    let html = `<div class="flex justify-between items-center mb-6 px-2 text-white"><button onclick="changeMonth(-1)">←</button><div class="font-black text-sm tracking-widest">${monthNames[m]} ${y}</div><button onclick="changeMonth(1)">→</button></div><div class="grid grid-cols-7 gap-1 text-center text-[9px] font-bold text-gray-600 mb-4 uppercase"><div>S</div><div>M</div><div>T</div><div>W</div><div>T</div><div>F</div><div>S</div></div><div class="grid grid-cols-7 gap-y-3">`;
+    for (let i = 0; i < firstDay; i++) html += `<div></div>`;
+    for (let d = 1; d <= daysInMonth; d++) {
+      const dateStr = `${String(y).substring(2)}${String(m + 1).padStart(2, '0')}${String(d).padStart(2, '0')}`;
+      const hasReport = availableDates.includes(dateStr);
+      html += `<div class="aspect-square flex items-center justify-center rounded-full text-[12px] transition-all ${hasReport ? "bg-blue-600 text-white font-black cursor-pointer shadow-lg" : "text-gray-700"}" ${hasReport ? `onclick="updateReports('${dateStr}')"` : ''}>${d}</div>`;
+    }
+    calendarEl.innerHTML = html + `</div>`;
+  }
+  renderCalendar(currentY, currentM);
+</script>
+
+<style is:global>
+  :root { font-family: "Avenir Next", sans-serif; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>

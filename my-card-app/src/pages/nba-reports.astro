@@ -23,7 +23,6 @@ try {
   const data = await res.json();
 
   if (data.tree) {
-    // 判定条件を少し広げて確実に拾うように修正
     const allFiles = data.tree.filter(item => 
       item.path.includes('output/reports/NBA/') && 
       item.path.toLowerCase().endsWith('.png')
@@ -33,7 +32,6 @@ try {
 
     allFiles.forEach(file => {
       const pathParts = file.path.split('/');
-      // 階層を動的に判定（outputから数えてNBAの次が日付フォルダ）
       const nbaIndex = pathParts.indexOf('NBA');
       if (nbaIndex === -1 || pathParts.length <= nbaIndex + 2) return;
 
@@ -43,6 +41,7 @@ try {
       if (!/^\d+$/.test(folderName)) return;
 
       const nameParts = fileName.replace('.png', '').split('_');
+      // ファイル名形式: NBA_20260117_0022500593_CHA_GSW.png
       const fullDate = nameParts[1] || ""; 
       const gameId = nameParts[2] || "";
       const teamA = nameParts[nameParts.length - 2] || "AWAY";
@@ -56,11 +55,12 @@ try {
         };
       }
 
+      // 【重要修正】詳細ページが期待するフォルダ形式に合わせたリンク生成
       groups[folderName].reports.push({
         path: `${IMAGE_BASE_URL}/${folderName}/${fileName}`,
         away: teamA,
         home: teamB,
-        link: `/nba-cards?folder=${folderName}/${fileName.replace('.png', '').replace('NBA_', 'NBA_Cards_')}`
+        link: `/nba-cards?folder=${folderName}/NBA_Cards_${gameId}_${fullDate}`
       });
     });
 
@@ -78,7 +78,9 @@ const availableDates = reportGroups.map(g => g.id);
   <div class="bg-[#373A36] min-h-screen text-white font-avenir overflow-x-hidden">
     
     <header class="pt-12 pb-6 px-8 text-center border-b border-white/5">
-      <h1 class="text-2xl font-black uppercase leading-none tracking-[0.25em]">GAME REPORT</h1>
+      <a href="/" class="hover:opacity-70 transition-opacity">
+        <h1 class="text-2xl font-black uppercase leading-none tracking-[0.25em]">GAME REPORT</h1>
+      </a>
     </header>
 
     <section class="py-10">
@@ -122,7 +124,11 @@ const availableDates = reportGroups.map(g => g.id);
       </div>
     </section>
 
-    
+    <div class="fixed bottom-8 left-0 right-0 flex justify-center z-40 pointer-events-none">
+      <a href="/" class="pointer-events-auto bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 transition-transform border border-white/10">
+        Back to Portal
+      </a>
+    </div>
   </div>
 </Layout>
 

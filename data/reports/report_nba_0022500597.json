@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500597",
+  "date": "2026.01.17",
+  "venue": "Kaseya Center",
+  "attendance": 19704,
+  "home": {
+    "id": "1610612748",
+    "total": {
+      "pts": 122,
+      "fgm": 41,
+      "fga": 111,
+      "f2m": 21,
+      "f2a": 61,
+      "f3m": 20,
+      "f3a": 50,
+      "ftm": 20,
+      "fta": 28,
+      "reb": 66,
+      "oreb": 21,
+      "dreb": 30,
+      "ast": 30,
+      "tov": 4,
+      "stl": 7,
+      "blk": 4,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "29:30",
+        "pts": 16,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "32:13",
+        "pts": 15,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "32:00",
+        "pts": 30,
+        "reb": 12,
+        "ast": 4
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "35:24",
+        "pts": 19,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "25",
+        "name": "KASPARAS JAKUČIONIS",
+        "min": "26:41",
+        "pts": 3,
+        "reb": 5,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612760",
+    "total": {
+      "pts": 120,
+      "fgm": 42,
+      "fga": 77,
+      "f2m": 29,
+      "f2a": 48,
+      "f3m": 13,
+      "f3a": 29,
+      "ftm": 23,
+      "fta": 28,
+      "reb": 52,
+      "oreb": 5,
+      "dreb": 41,
+      "ast": 23,
+      "tov": 14,
+      "stl": 3,
+      "blk": 6,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "21:52",
+        "pts": 2,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "JALEN WILLIAMS",
+        "min": "13:37",
+        "pts": 8,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "30:11",
+        "pts": 14,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "22:05",
+        "pts": 9,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "36:15",
+        "pts": 39,
+        "reb": 4,
+        "ast": 3
+      }
+    ]
+  }
+}

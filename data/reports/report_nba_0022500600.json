@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500600",
+  "date": "2026.01.17",
+  "venue": "Ball Arena",
+  "attendance": 19968,
+  "home": {
+    "id": "1610612743",
+    "total": {
+      "pts": 121,
+      "fgm": 45,
+      "fga": 85,
+      "f2m": 31,
+      "f2a": 50,
+      "f3m": 14,
+      "f3a": 35,
+      "ftm": 17,
+      "fta": 23,
+      "reb": 50,
+      "oreb": 4,
+      "dreb": 34,
+      "ast": 31,
+      "tov": 12,
+      "stl": 7,
+      "blk": 4,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "SPENCER JONES",
+        "min": "29:02",
+        "pts": 7,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "PEYTON WATSON",
+        "min": "35:17",
+        "pts": 21,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "32",
+        "name": "AARON GORDON",
+        "min": "32:00",
+        "pts": 8,
+        "reb": 10,
+        "ast": 11
+      },
+      {
+        "no": "24",
+        "name": "JALEN PICKETT",
+        "min": "22:13",
+        "pts": 5,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "39:16",
+        "pts": 42,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612764",
+    "total": {
+      "pts": 115,
+      "fgm": 44,
+      "fga": 96,
+      "f2m": 33,
+      "f2a": 66,
+      "f3m": 11,
+      "f3a": 30,
+      "ftm": 16,
+      "fta": 29,
+      "reb": 62,
+      "oreb": 17,
+      "dreb": 31,
+      "ast": 20,
+      "tov": 11,
+      "stl": 9,
+      "blk": 4,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "22",
+        "name": "KHRIS MIDDLETON",
+        "min": "27:03",
+        "pts": 16,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "31:52",
+        "pts": 29,
+        "reb": 5,
+        "ast": 7
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "28:15",
+        "pts": 16,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "12",
+        "name": "TRE JOHNSON",
+        "min": "30:40",
+        "pts": 4,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "38:54",
+        "pts": 13,
+        "reb": 4,
+        "ast": 3
+      }
+    ]
+  }
+}

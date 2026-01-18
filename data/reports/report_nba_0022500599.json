@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500599",
+  "date": "2026.01.17",
+  "venue": "Chase Center",
+  "attendance": 18064,
+  "home": {
+    "id": "1610612744",
+    "total": {
+      "pts": 136,
+      "fgm": 51,
+      "fga": 93,
+      "f2m": 28,
+      "f2a": 41,
+      "f3m": 23,
+      "f3a": 52,
+      "ftm": 11,
+      "fta": 13,
+      "reb": 45,
+      "oreb": 9,
+      "dreb": 32,
+      "ast": 34,
+      "tov": 11,
+      "stl": 8,
+      "blk": 7,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "26:54",
+        "pts": 12,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "26:32",
+        "pts": 20,
+        "reb": 3,
+        "ast": 6
+      },
+      {
+        "no": "21",
+        "name": "QUINTEN POST",
+        "min": "19:27",
+        "pts": 7,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "WILL RICHARD",
+        "min": "30:41",
+        "pts": 11,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "29:35",
+        "pts": 14,
+        "reb": 3,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612766",
+    "total": {
+      "pts": 116,
+      "fgm": 43,
+      "fga": 94,
+      "f2m": 27,
+      "f2a": 50,
+      "f3m": 16,
+      "f3a": 44,
+      "ftm": 14,
+      "fta": 17,
+      "reb": 53,
+      "oreb": 12,
+      "dreb": 32,
+      "ast": 27,
+      "tov": 17,
+      "stl": 5,
+      "blk": 3,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "29:18",
+        "pts": 24,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "MILES BRIDGES",
+        "min": "29:57",
+        "pts": 9,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "11",
+        "name": "RYAN KALKBRENNER",
+        "min": "24:10",
+        "pts": 4,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "24",
+        "name": "BRANDON MILLER",
+        "min": "30:08",
+        "pts": 28,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "4",
+        "name": "SION JAMES",
+        "min": "24:00",
+        "pts": 2,
+        "reb": 2,
+        "ast": 3
+      }
+    ]
+  }
+}

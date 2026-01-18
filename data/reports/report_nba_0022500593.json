@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500593",
+  "date": "2026.01.17",
+  "venue": "American Airlines Center",
+  "attendance": 20031,
+  "home": {
+    "id": "1610612742",
+    "total": {
+      "pts": 138,
+      "fgm": 49,
+      "fga": 91,
+      "f2m": 31,
+      "f2a": 50,
+      "f3m": 18,
+      "f3a": 41,
+      "ftm": 22,
+      "fta": 36,
+      "reb": 58,
+      "oreb": 13,
+      "dreb": 31,
+      "ast": 36,
+      "tov": 11,
+      "stl": 8,
+      "blk": 2,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "16",
+        "name": "CALEB MARTIN",
+        "min": "21:16",
+        "pts": 3,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "29:01",
+        "pts": 16,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "7",
+        "name": "DWIGHT POWELL",
+        "min": "26:33",
+        "pts": 10,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "25:47",
+        "pts": 22,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "10",
+        "name": "BRANDON WILLIAMS",
+        "min": "27:31",
+        "pts": 22,
+        "reb": 4,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612762",
+    "total": {
+      "pts": 120,
+      "fgm": 48,
+      "fga": 89,
+      "f2m": 38,
+      "f2a": 58,
+      "f3m": 10,
+      "f3a": 31,
+      "ftm": 14,
+      "fta": 20,
+      "reb": 47,
+      "oreb": 11,
+      "dreb": 30,
+      "ast": 30,
+      "tov": 15,
+      "stl": 5,
+      "blk": 3,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "36:58",
+        "pts": 18,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "CODY WILLIAMS",
+        "min": "27:37",
+        "pts": 11,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "KYLE FILIPOWSKI",
+        "min": "29:16",
+        "pts": 13,
+        "reb": 12,
+        "ast": 5
+      },
+      {
+        "no": "8",
+        "name": "ISAIAH COLLIER",
+        "min": "22:14",
+        "pts": 9,
+        "reb": 1,
+        "ast": 4
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "37:13",
+        "pts": 29,
+        "reb": 1,
+        "ast": 6
+      }
+    ]
+  }
+}

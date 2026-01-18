@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500596",
+  "date": "2026.01.17",
+  "venue": "Madison Square Garden",
+  "attendance": 19812,
+  "home": {
+    "id": "1610612752",
+    "total": {
+      "pts": 99,
+      "fgm": 33,
+      "fga": 82,
+      "f2m": 19,
+      "f2a": 38,
+      "f3m": 14,
+      "f3a": 44,
+      "ftm": 19,
+      "fta": 25,
+      "reb": 60,
+      "oreb": 15,
+      "dreb": 32,
+      "ast": 20,
+      "tov": 17,
+      "stl": 9,
+      "blk": 5,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "38:34",
+        "pts": 21,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "51",
+        "name": "MOHAMED DIAWARA",
+        "min": "12:07",
+        "pts": 3,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "34:36",
+        "pts": 23,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "37:02",
+        "pts": 15,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "MILES MCBRIDE",
+        "min": "36:19",
+        "pts": 23,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612756",
+    "total": {
+      "pts": 106,
+      "fgm": 34,
+      "fga": 82,
+      "f2m": 19,
+      "f2a": 40,
+      "f3m": 15,
+      "f3a": 42,
+      "ftm": 23,
+      "fta": 27,
+      "reb": 49,
+      "oreb": 13,
+      "dreb": 24,
+      "ast": 22,
+      "tov": 12,
+      "stl": 9,
+      "blk": 2,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "29:01",
+        "pts": 5,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "29:56",
+        "pts": 10,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "25:27",
+        "pts": 14,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "38:10",
+        "pts": 27,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "25:42",
+        "pts": 11,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  }
+}

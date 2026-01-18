@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500601",
+  "date": "2026.01.17",
+  "venue": "Moda Center",
+  "attendance": 19335,
+  "home": {
+    "id": "1610612757",
+    "total": {
+      "pts": 132,
+      "fgm": 45,
+      "fga": 86,
+      "f2m": 29,
+      "f2a": 44,
+      "f3m": 16,
+      "f3a": 42,
+      "ftm": 26,
+      "fta": 34,
+      "reb": 61,
+      "oreb": 12,
+      "dreb": 30,
+      "ast": 24,
+      "tov": 15,
+      "stl": 9,
+      "blk": 5,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "91",
+        "name": "SIDY CISSOKO",
+        "min": "28:43",
+        "pts": 14,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "26:25",
+        "pts": 9,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "27:26",
+        "pts": 18,
+        "reb": 11,
+        "ast": 4
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "29:24",
+        "pts": 25,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "JRUE HOLIDAY",
+        "min": "19:34",
+        "pts": 9,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612747",
+    "total": {
+      "pts": 116,
+      "fgm": 42,
+      "fga": 85,
+      "f2m": 29,
+      "f2a": 54,
+      "f3m": 13,
+      "f3a": 31,
+      "ftm": 19,
+      "fta": 21,
+      "reb": 34,
+      "oreb": 7,
+      "dreb": 20,
+      "ast": 25,
+      "tov": 15,
+      "stl": 8,
+      "blk": 6,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "32:27",
+        "pts": 20,
+        "reb": 9,
+        "ast": 8
+      },
+      {
+        "no": "12",
+        "name": "JAKE LARAVIA",
+        "min": "28:20",
+        "pts": 2,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "14",
+        "name": "MAXI KLEBER",
+        "min": "20:43",
+        "pts": 11,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "24:45",
+        "pts": 25,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "GABE VINCENT",
+        "min": "22:52",
+        "pts": 3,
+        "reb": 0,
+        "ast": 1
+      }
+    ]
+  }
+}

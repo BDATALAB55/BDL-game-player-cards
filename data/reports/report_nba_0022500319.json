@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500319",
+  "date": "2025.12.02",
+  "venue": "Scotiabank Arena",
+  "attendance": 19203,
+  "home": {
+    "id": "1610612761",
+    "total": {
+      "pts": 121,
+      "fgm": 48,
+      "fga": 90,
+      "f2m": 37,
+      "f2a": 60,
+      "f3m": 11,
+      "f3a": 30,
+      "ftm": 14,
+      "fta": 21,
+      "reb": 50,
+      "oreb": 10,
+      "dreb": 33,
+      "ast": 33,
+      "tov": 18,
+      "stl": 10,
+      "blk": 3,
+      "pf": 28
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "34:43",
+        "pts": 21,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "38:31",
+        "pts": 28,
+        "reb": 7,
+        "ast": 7
+      },
+      {
+        "no": "19",
+        "name": "JAKOB POELTL",
+        "min": "26:22",
+        "pts": 11,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "14",
+        "name": "JA'KOBE WALTER",
+        "min": "17:49",
+        "pts": 3,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "34:57",
+        "pts": 23,
+        "reb": 5,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612757",
+    "total": {
+      "pts": 118,
+      "fgm": 41,
+      "fga": 83,
+      "f2m": 26,
+      "f2a": 43,
+      "f3m": 15,
+      "f3a": 40,
+      "ftm": 21,
+      "fta": 32,
+      "reb": 52,
+      "oreb": 9,
+      "dreb": 30,
+      "ast": 23,
+      "tov": 15,
+      "stl": 7,
+      "blk": 7,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "JERAMI GRANT",
+        "min": "32:31",
+        "pts": 19,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "35:45",
+        "pts": 21,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "21:25",
+        "pts": 11,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "37:21",
+        "pts": 25,
+        "reb": 8,
+        "ast": 14
+      },
+      {
+        "no": "91",
+        "name": "SIDY CISSOKO",
+        "min": "21:43",
+        "pts": 3,
+        "reb": 2,
+        "ast": 0
+      }
+    ]
+  }
+}

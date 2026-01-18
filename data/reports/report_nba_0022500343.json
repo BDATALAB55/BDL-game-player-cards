@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500343",
+  "date": "2025.12.05",
+  "venue": "Madison Square Garden",
+  "attendance": 19812,
+  "home": {
+    "id": "1610612752",
+    "total": {
+      "pts": 146,
+      "fgm": 51,
+      "fga": 91,
+      "f2m": 30,
+      "f2a": 49,
+      "f3m": 21,
+      "f3a": 42,
+      "ftm": 23,
+      "fta": 26,
+      "reb": 55,
+      "oreb": 10,
+      "dreb": 36,
+      "ast": 30,
+      "tov": 12,
+      "stl": 9,
+      "blk": 2,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "22:43",
+        "pts": 11,
+        "reb": 0,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "27:47",
+        "pts": 8,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "22:17",
+        "pts": 18,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "19:53",
+        "pts": 10,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "30:51",
+        "pts": 33,
+        "reb": 2,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612762",
+    "total": {
+      "pts": 112,
+      "fgm": 35,
+      "fga": 87,
+      "f2m": 20,
+      "f2a": 45,
+      "f3m": 15,
+      "f3a": 42,
+      "ftm": 27,
+      "fta": 35,
+      "reb": 49,
+      "oreb": 10,
+      "dreb": 27,
+      "ast": 23,
+      "tov": 12,
+      "stl": 8,
+      "blk": 1,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LAURI MARKKANEN",
+        "min": "26:27",
+        "pts": 18,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "10",
+        "name": "SVI MYKHAILIUK",
+        "min": "18:34",
+        "pts": 3,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "30",
+        "name": "JUSUF NURKIĆ",
+        "min": "19:29",
+        "pts": 4,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "33:57",
+        "pts": 13,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "27:50",
+        "pts": 18,
+        "reb": 0,
+        "ast": 4
+      }
+    ]
+  }
+}

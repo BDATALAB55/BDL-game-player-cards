@@ -1,0 +1,134 @@
+{
+  "gameId": "0022501209",
+  "date": "2025.12.12",
+  "venue": "Spectrum Center",
+  "attendance": 16205,
+  "home": {
+    "id": "1610612766",
+    "total": {
+      "pts": 126,
+      "fgm": 51,
+      "fga": 97,
+      "f2m": 35,
+      "f2a": 60,
+      "f3m": 16,
+      "f3a": 37,
+      "ftm": 8,
+      "fta": 10,
+      "reb": 38,
+      "oreb": 8,
+      "dreb": 23,
+      "ast": 30,
+      "tov": 8,
+      "stl": 6,
+      "blk": 3,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "36:03",
+        "pts": 33,
+        "reb": 5,
+        "ast": 9
+      },
+      {
+        "no": "0",
+        "name": "MILES BRIDGES",
+        "min": "33:56",
+        "pts": 32,
+        "reb": 2,
+        "ast": 7
+      },
+      {
+        "no": "11",
+        "name": "RYAN KALKBRENNER",
+        "min": "31:06",
+        "pts": 10,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "24",
+        "name": "BRANDON MILLER",
+        "min": "34:12",
+        "pts": 18,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "25",
+        "name": "KJ SIMPSON",
+        "min": "25:18",
+        "pts": 10,
+        "reb": 4,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612741",
+    "total": {
+      "pts": 129,
+      "fgm": 52,
+      "fga": 93,
+      "f2m": 42,
+      "f2a": 65,
+      "f3m": 10,
+      "f3a": 28,
+      "ftm": 15,
+      "fta": 19,
+      "reb": 55,
+      "oreb": 11,
+      "dreb": 33,
+      "ast": 29,
+      "tov": 12,
+      "stl": 3,
+      "blk": 6,
+      "pf": 11
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "26:10",
+        "pts": 15,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "23:42",
+        "pts": 10,
+        "reb": 0,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "NIKOLA VUČEVIĆ",
+        "min": "21:38",
+        "pts": 13,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "COBY WHITE",
+        "min": "29:39",
+        "pts": 20,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "JOSH GIDDEY",
+        "min": "34:13",
+        "pts": 26,
+        "reb": 7,
+        "ast": 11
+      }
+    ]
+  }
+}

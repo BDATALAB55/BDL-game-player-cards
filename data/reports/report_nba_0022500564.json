@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500564",
+  "date": "2026.01.13",
+  "venue": "Kaseya Center",
+  "attendance": 19700,
+  "home": {
+    "id": "1610612748",
+    "total": {
+      "pts": 127,
+      "fgm": 48,
+      "fga": 92,
+      "f2m": 35,
+      "f2a": 54,
+      "f3m": 13,
+      "f3a": 38,
+      "ftm": 18,
+      "fta": 22,
+      "reb": 52,
+      "oreb": 9,
+      "dreb": 32,
+      "ast": 28,
+      "tov": 12,
+      "stl": 8,
+      "blk": 2,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "32:28",
+        "pts": 27,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "28:51",
+        "pts": 8,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "31:35",
+        "pts": 29,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "14",
+        "name": "TYLER HERRO",
+        "min": "38:51",
+        "pts": 23,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "18:30",
+        "pts": 9,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612756",
+    "total": {
+      "pts": 121,
+      "fgm": 44,
+      "fga": 102,
+      "f2m": 30,
+      "f2a": 54,
+      "f3m": 14,
+      "f3a": 48,
+      "ftm": 19,
+      "fta": 20,
+      "reb": 56,
+      "oreb": 18,
+      "dreb": 30,
+      "ast": 22,
+      "tov": 12,
+      "stl": 10,
+      "blk": 1,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "35:50",
+        "pts": 25,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "32:08",
+        "pts": 8,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "31:24",
+        "pts": 18,
+        "reb": 14,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "39:40",
+        "pts": 24,
+        "reb": 9,
+        "ast": 9
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "24:16",
+        "pts": 13,
+        "reb": 5,
+        "ast": 1
+      }
+    ]
+  }
+}

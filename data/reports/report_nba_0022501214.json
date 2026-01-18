@@ -1,0 +1,134 @@
+{
+  "gameId": "0022501214",
+  "date": "2025.12.12",
+  "venue": "American Airlines Center",
+  "attendance": 19032,
+  "home": {
+    "id": "1610612742",
+    "total": {
+      "pts": 119,
+      "fgm": 46,
+      "fga": 94,
+      "f2m": 36,
+      "f2a": 64,
+      "f3m": 10,
+      "f3a": 30,
+      "ftm": 17,
+      "fta": 22,
+      "reb": 56,
+      "oreb": 9,
+      "dreb": 31,
+      "ast": 33,
+      "tov": 14,
+      "stl": 10,
+      "blk": 8,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "34:26",
+        "pts": 22,
+        "reb": 5,
+        "ast": 8
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "24:32",
+        "pts": 13,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "ANTHONY DAVIS",
+        "min": "32:41",
+        "pts": 24,
+        "reb": 14,
+        "ast": 3
+      },
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "32:09",
+        "pts": 17,
+        "reb": 1,
+        "ast": 4
+      },
+      {
+        "no": "9",
+        "name": "RYAN NEMBHARD",
+        "min": "20:48",
+        "pts": 0,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612751",
+    "total": {
+      "pts": 111,
+      "fgm": 39,
+      "fga": 86,
+      "f2m": 22,
+      "f2a": 47,
+      "f3m": 17,
+      "f3a": 39,
+      "ftm": 16,
+      "fta": 19,
+      "reb": 47,
+      "oreb": 9,
+      "dreb": 34,
+      "ast": 26,
+      "tov": 17,
+      "stl": 8,
+      "blk": 5,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "34:29",
+        "pts": 34,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "32:56",
+        "pts": 11,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "34:34",
+        "pts": 14,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "27:14",
+        "pts": 12,
+        "reb": 4,
+        "ast": 7
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "18:10",
+        "pts": 3,
+        "reb": 1,
+        "ast": 1
+      }
+    ]
+  }
+}

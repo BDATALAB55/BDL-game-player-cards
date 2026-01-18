@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500576",
+  "date": "2026.01.14",
+  "venue": "Golden 1 Center",
+  "attendance": 15095,
+  "home": {
+    "id": "1610612758",
+    "total": {
+      "pts": 112,
+      "fgm": 35,
+      "fga": 74,
+      "f2m": 25,
+      "f2a": 47,
+      "f3m": 10,
+      "f3a": 27,
+      "ftm": 32,
+      "fta": 38,
+      "reb": 58,
+      "oreb": 9,
+      "dreb": 39,
+      "ast": 23,
+      "tov": 15,
+      "stl": 4,
+      "blk": 6,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "40:59",
+        "pts": 27,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "9",
+        "name": "PRECIOUS ACHIUWA",
+        "min": "38:34",
+        "pts": 20,
+        "reb": 14,
+        "ast": 2
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "26:37",
+        "pts": 10,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "ZACH LAVINE",
+        "min": "36:14",
+        "pts": 25,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "39:11",
+        "pts": 19,
+        "reb": 6,
+        "ast": 11
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612752",
+    "total": {
+      "pts": 101,
+      "fgm": 39,
+      "fga": 100,
+      "f2m": 31,
+      "f2a": 59,
+      "f3m": 8,
+      "f3a": 41,
+      "ftm": 15,
+      "fta": 23,
+      "reb": 56,
+      "oreb": 16,
+      "dreb": 29,
+      "ast": 23,
+      "tov": 9,
+      "stl": 11,
+      "blk": 6,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "31:44",
+        "pts": 10,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "27:20",
+        "pts": 15,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "33:19",
+        "pts": 13,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "35:50",
+        "pts": 19,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "04:59",
+        "pts": 4,
+        "reb": 0,
+        "ast": 0
+      }
+    ]
+  }
+}

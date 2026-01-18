@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500572",
+  "date": "2026.01.14",
+  "venue": "Xfinity Mobile Arena",
+  "attendance": 19746,
+  "home": {
+    "id": "1610612755",
+    "total": {
+      "pts": 107,
+      "fgm": 36,
+      "fga": 89,
+      "f2m": 24,
+      "f2a": 46,
+      "f3m": 12,
+      "f3a": 43,
+      "ftm": 23,
+      "fta": 26,
+      "reb": 46,
+      "oreb": 11,
+      "dreb": 31,
+      "ast": 22,
+      "tov": 12,
+      "stl": 9,
+      "blk": 5,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "PAUL GEORGE",
+        "min": "29:41",
+        "pts": 17,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "25",
+        "name": "DOMINICK BARLOW",
+        "min": "08:04",
+        "pts": 2,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "21",
+        "name": "JOEL EMBIID",
+        "min": "24:57",
+        "pts": 20,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "26:40",
+        "pts": 9,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "TYRESE MAXEY",
+        "min": "31:11",
+        "pts": 14,
+        "reb": 2,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612739",
+    "total": {
+      "pts": 133,
+      "fgm": 50,
+      "fga": 95,
+      "f2m": 30,
+      "f2a": 49,
+      "f3m": 20,
+      "f3a": 46,
+      "ftm": 13,
+      "fta": 18,
+      "reb": 60,
+      "oreb": 12,
+      "dreb": 40,
+      "ast": 41,
+      "tov": 15,
+      "stl": 6,
+      "blk": 5,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "JAYLON TYSON",
+        "min": "25:00",
+        "pts": 12,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "33:32",
+        "pts": 17,
+        "reb": 13,
+        "ast": 6
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "25:38",
+        "pts": 10,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "33:18",
+        "pts": 35,
+        "reb": 7,
+        "ast": 9
+      },
+      {
+        "no": "10",
+        "name": "DARIUS GARLAND",
+        "min": "23:01",
+        "pts": 20,
+        "reb": 3,
+        "ast": 7
+      }
+    ]
+  }
+}

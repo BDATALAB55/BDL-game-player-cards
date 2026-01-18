@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500527",
+  "date": "2026.01.07",
+  "venue": "Moda Center",
+  "attendance": 16144,
+  "home": {
+    "id": "1610612757",
+    "total": {
+      "pts": 103,
+      "fgm": 36,
+      "fga": 83,
+      "f2m": 24,
+      "f2a": 43,
+      "f3m": 12,
+      "f3a": 40,
+      "ftm": 19,
+      "fta": 25,
+      "reb": 51,
+      "oreb": 6,
+      "dreb": 32,
+      "ast": 21,
+      "tov": 13,
+      "stl": 7,
+      "blk": 3,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "91",
+        "name": "SIDY CISSOKO",
+        "min": "16:19",
+        "pts": 0,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "38:45",
+        "pts": 14,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "31:17",
+        "pts": 12,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "34:28",
+        "pts": 20,
+        "reb": 0,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "39:08",
+        "pts": 41,
+        "reb": 6,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612745",
+    "total": {
+      "pts": 102,
+      "fgm": 37,
+      "fga": 99,
+      "f2m": 29,
+      "f2a": 63,
+      "f3m": 8,
+      "f3a": 36,
+      "ftm": 20,
+      "fta": 29,
+      "reb": 73,
+      "oreb": 24,
+      "dreb": 33,
+      "ast": 20,
+      "tov": 14,
+      "stl": 8,
+      "blk": 7,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "37:24",
+        "pts": 37,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "36:43",
+        "pts": 6,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "12",
+        "name": "STEVEN ADAMS",
+        "min": "30:08",
+        "pts": 7,
+        "reb": 11,
+        "ast": 4
+      },
+      {
+        "no": "17",
+        "name": "TARI EASON",
+        "min": "30:58",
+        "pts": 15,
+        "reb": 13,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "39:01",
+        "pts": 24,
+        "reb": 12,
+        "ast": 6
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500379",
+  "date": "2025.12.18",
+  "venue": "Delta Center",
+  "attendance": 18186,
+  "home": {
+    "id": "1610612762",
+    "total": {
+      "pts": 135,
+      "fgm": 43,
+      "fga": 83,
+      "f2m": 25,
+      "f2a": 46,
+      "f3m": 18,
+      "f3a": 37,
+      "ftm": 31,
+      "fta": 47,
+      "reb": 53,
+      "oreb": 9,
+      "dreb": 30,
+      "ast": 31,
+      "tov": 13,
+      "stl": 4,
+      "blk": 1,
+      "pf": 29
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "SVI MYKHAILIUK",
+        "min": "16:59",
+        "pts": 11,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "22",
+        "name": "KYLE FILIPOWSKI",
+        "min": "27:13",
+        "pts": 6,
+        "reb": 13,
+        "ast": 0
+      },
+      {
+        "no": "30",
+        "name": "JUSUF NURKIĆ",
+        "min": "31:34",
+        "pts": 15,
+        "reb": 8,
+        "ast": 7
+      },
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "26:09",
+        "pts": 19,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "39:05",
+        "pts": 34,
+        "reb": 4,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612747",
+    "total": {
+      "pts": 143,
+      "fgm": 49,
+      "fga": 93,
+      "f2m": 36,
+      "f2a": 54,
+      "f3m": 13,
+      "f3a": 39,
+      "ftm": 32,
+      "fta": 39,
+      "reb": 54,
+      "oreb": 13,
+      "dreb": 35,
+      "ast": 32,
+      "tov": 7,
+      "stl": 7,
+      "blk": 2,
+      "pf": 31
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "32:37",
+        "pts": 28,
+        "reb": 7,
+        "ast": 10
+      },
+      {
+        "no": "28",
+        "name": "RUI HACHIMURA",
+        "min": "32:47",
+        "pts": 13,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "11",
+        "name": "JAXSON HAYES",
+        "min": "22:11",
+        "pts": 16,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "27:41",
+        "pts": 17,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "39:33",
+        "pts": 45,
+        "reb": 11,
+        "ast": 14
+      }
+    ]
+  }
+}

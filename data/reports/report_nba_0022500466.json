@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500466",
+  "date": "2025.12.31",
+  "venue": "United Center",
+  "attendance": 20527,
+  "home": {
+    "id": "1610612741",
+    "total": {
+      "pts": 134,
+      "fgm": 47,
+      "fga": 92,
+      "f2m": 32,
+      "f2a": 49,
+      "f3m": 15,
+      "f3a": 43,
+      "ftm": 25,
+      "fta": 34,
+      "reb": 62,
+      "oreb": 8,
+      "dreb": 41,
+      "ast": 33,
+      "tov": 7,
+      "stl": 5,
+      "blk": 7,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "35:37",
+        "pts": 24,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "25",
+        "name": "JALEN SMITH",
+        "min": "26:20",
+        "pts": 14,
+        "reb": 14,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "NIKOLA VUČEVIĆ",
+        "min": "33:30",
+        "pts": 17,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "27:01",
+        "pts": 19,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "TRE JONES",
+        "min": "27:05",
+        "pts": 20,
+        "reb": 2,
+        "ast": 12
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612740",
+    "total": {
+      "pts": 118,
+      "fgm": 42,
+      "fga": 98,
+      "f2m": 30,
+      "f2a": 60,
+      "f3m": 12,
+      "f3a": 38,
+      "ftm": 22,
+      "fta": 27,
+      "reb": 53,
+      "oreb": 12,
+      "dreb": 34,
+      "ast": 25,
+      "tov": 10,
+      "stl": 4,
+      "blk": 9,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "33:35",
+        "pts": 16,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "ZION WILLIAMSON",
+        "min": "29:27",
+        "pts": 31,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "22",
+        "name": "DERIK QUEEN",
+        "min": "25:26",
+        "pts": 9,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "25",
+        "name": "TREY MURPHY III",
+        "min": "33:35",
+        "pts": 15,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "0",
+        "name": "JEREMIAH FEARS",
+        "min": "22:31",
+        "pts": 5,
+        "reb": 0,
+        "ast": 4
+      }
+    ]
+  }
+}

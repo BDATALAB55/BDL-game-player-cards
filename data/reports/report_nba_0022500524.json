@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500524",
+  "date": "2026.01.07",
+  "venue": "FedExForum",
+  "attendance": 14268,
+  "home": {
+    "id": "1610612763",
+    "total": {
+      "pts": 98,
+      "fgm": 39,
+      "fga": 92,
+      "f2m": 27,
+      "f2a": 55,
+      "f3m": 12,
+      "f3a": 37,
+      "ftm": 8,
+      "fta": 14,
+      "reb": 56,
+      "oreb": 15,
+      "dreb": 32,
+      "ast": 23,
+      "tov": 18,
+      "stl": 9,
+      "blk": 2,
+      "pf": 11
+    },
+    "starters": [
+      {
+        "no": "45",
+        "name": "GG JACKSON",
+        "min": "25:13",
+        "pts": 11,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "29:12",
+        "pts": 19,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "31",
+        "name": "JOCK LANDALE",
+        "min": "21:00",
+        "pts": 0,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "27:24",
+        "pts": 9,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "24",
+        "name": "CAM SPENCER",
+        "min": "27:21",
+        "pts": 14,
+        "reb": 3,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612756",
+    "total": {
+      "pts": 117,
+      "fgm": 45,
+      "fga": 97,
+      "f2m": 23,
+      "f2a": 41,
+      "f3m": 22,
+      "f3a": 56,
+      "ftm": 5,
+      "fta": 8,
+      "reb": 58,
+      "oreb": 15,
+      "dreb": 36,
+      "ast": 31,
+      "tov": 16,
+      "stl": 11,
+      "blk": 5,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "24:58",
+        "pts": 21,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "26:52",
+        "pts": 12,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "26:36",
+        "pts": 12,
+        "reb": 12,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "30:31",
+        "pts": 13,
+        "reb": 1,
+        "ast": 8
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "27:39",
+        "pts": 10,
+        "reb": 8,
+        "ast": 3
+      }
+    ]
+  }
+}

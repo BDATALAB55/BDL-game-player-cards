@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500374",
+  "date": "2025.12.18",
+  "venue": "Fiserv Forum",
+  "attendance": 17341,
+  "home": {
+    "id": "1610612749",
+    "total": {
+      "pts": 105,
+      "fgm": 38,
+      "fga": 84,
+      "f2m": 23,
+      "f2a": 47,
+      "f3m": 15,
+      "f3a": 37,
+      "ftm": 14,
+      "fta": 16,
+      "reb": 44,
+      "oreb": 9,
+      "dreb": 29,
+      "ast": 25,
+      "tov": 16,
+      "stl": 10,
+      "blk": 2,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "24:25",
+        "pts": 5,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "00",
+        "name": "JERICHO SIMS",
+        "min": "25:34",
+        "pts": 6,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "30:57",
+        "pts": 21,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "GARY TRENT JR.",
+        "min": "30:26",
+        "pts": 3,
+        "reb": 0,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "KEVIN PORTER JR.",
+        "min": "40:09",
+        "pts": 22,
+        "reb": 4,
+        "ast": 13
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612761",
+    "total": {
+      "pts": 111,
+      "fgm": 42,
+      "fga": 84,
+      "f2m": 29,
+      "f2a": 49,
+      "f3m": 13,
+      "f3a": 35,
+      "ftm": 14,
+      "fta": 21,
+      "reb": 54,
+      "oreb": 12,
+      "dreb": 33,
+      "ast": 31,
+      "tov": 16,
+      "stl": 9,
+      "blk": 2,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "35:16",
+        "pts": 29,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "35:58",
+        "pts": 24,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "54",
+        "name": "SANDRO MAMUKELASHVILI",
+        "min": "36:25",
+        "pts": 18,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "OCHAI AGBAJI",
+        "min": "20:28",
+        "pts": 10,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "28:46",
+        "pts": 9,
+        "reb": 6,
+        "ast": 10
+      }
+    ]
+  }
+}

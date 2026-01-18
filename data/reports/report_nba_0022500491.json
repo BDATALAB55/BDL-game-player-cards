@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500491",
+  "date": "2026.01.03",
+  "venue": "American Airlines Center",
+  "attendance": 19703,
+  "home": {
+    "id": "1610612742",
+    "total": {
+      "pts": 110,
+      "fgm": 44,
+      "fga": 80,
+      "f2m": 36,
+      "f2a": 59,
+      "f3m": 8,
+      "f3a": 21,
+      "ftm": 14,
+      "fta": 18,
+      "reb": 51,
+      "oreb": 2,
+      "dreb": 45,
+      "ast": 24,
+      "tov": 15,
+      "stl": 6,
+      "blk": 10,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "12:00",
+        "pts": 0,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "3",
+        "name": "ANTHONY DAVIS",
+        "min": "39:02",
+        "pts": 26,
+        "reb": 12,
+        "ast": 3
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "19:07",
+        "pts": 9,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "34:54",
+        "pts": 24,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "34:37",
+        "pts": 10,
+        "reb": 7,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612745",
+    "total": {
+      "pts": 104,
+      "fgm": 41,
+      "fga": 106,
+      "f2m": 31,
+      "f2a": 65,
+      "f3m": 10,
+      "f3a": 41,
+      "ftm": 12,
+      "fta": 15,
+      "reb": 59,
+      "oreb": 17,
+      "dreb": 34,
+      "ast": 24,
+      "tov": 9,
+      "stl": 13,
+      "blk": 7,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "37:44",
+        "pts": 34,
+        "reb": 5,
+        "ast": 7
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "36:58",
+        "pts": 7,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "01:04",
+        "pts": 0,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "17",
+        "name": "TARI EASON",
+        "min": "34:15",
+        "pts": 19,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "39:22",
+        "pts": 20,
+        "reb": 12,
+        "ast": 4
+      }
+    ]
+  }
+}

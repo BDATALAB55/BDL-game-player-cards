@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500370",
+  "date": "2025.12.18",
+  "venue": "Frost Bank Center",
+  "attendance": 18754,
+  "home": {
+    "id": "1610612759",
+    "total": {
+      "pts": 119,
+      "fgm": 44,
+      "fga": 90,
+      "f2m": 29,
+      "f2a": 48,
+      "f3m": 15,
+      "f3a": 42,
+      "ftm": 16,
+      "fta": 20,
+      "reb": 58,
+      "oreb": 14,
+      "dreb": 39,
+      "ast": 29,
+      "tov": 14,
+      "stl": 6,
+      "blk": 9,
+      "pf": 12
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "26:21",
+        "pts": 18,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "18:14",
+        "pts": 2,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "LUKE KORNET",
+        "min": "23:10",
+        "pts": 10,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "25:08",
+        "pts": 17,
+        "reb": 2,
+        "ast": 7
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "24:59",
+        "pts": 6,
+        "reb": 3,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612764",
+    "total": {
+      "pts": 94,
+      "fgm": 38,
+      "fga": 94,
+      "f2m": 29,
+      "f2a": 58,
+      "f3m": 9,
+      "f3a": 36,
+      "ftm": 9,
+      "fta": 14,
+      "reb": 54,
+      "oreb": 13,
+      "dreb": 33,
+      "ast": 29,
+      "tov": 12,
+      "stl": 10,
+      "blk": 5,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "22:34",
+        "pts": 3,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "36:05",
+        "pts": 11,
+        "reb": 6,
+        "ast": 7
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "24:04",
+        "pts": 18,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "33:09",
+        "pts": 15,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "29:05",
+        "pts": 11,
+        "reb": 4,
+        "ast": 3
+      }
+    ]
+  }
+}

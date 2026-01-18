@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500321",
+  "date": "2025.12.02",
+  "venue": "Smoothie King Center",
+  "attendance": 12770,
+  "home": {
+    "id": "1610612740",
+    "total": {
+      "pts": 142,
+      "fgm": 50,
+      "fga": 91,
+      "f2m": 38,
+      "f2a": 70,
+      "f3m": 12,
+      "f3a": 21,
+      "ftm": 30,
+      "fta": 35,
+      "reb": 53,
+      "oreb": 6,
+      "dreb": 36,
+      "ast": 26,
+      "tov": 12,
+      "stl": 5,
+      "blk": 1,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "25",
+        "name": "TREY MURPHY III",
+        "min": "40:55",
+        "pts": 33,
+        "reb": 15,
+        "ast": 4
+      },
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "35:09",
+        "pts": 22,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "22",
+        "name": "DERIK QUEEN",
+        "min": "38:41",
+        "pts": 21,
+        "reb": 8,
+        "ast": 6
+      },
+      {
+        "no": "11",
+        "name": "BRYCE MCGOWENS",
+        "min": "25:47",
+        "pts": 6,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "JEREMIAH FEARS",
+        "min": "33:30",
+        "pts": 21,
+        "reb": 3,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612750",
+    "total": {
+      "pts": 149,
+      "fgm": 52,
+      "fga": 104,
+      "f2m": 32,
+      "f2a": 53,
+      "f3m": 20,
+      "f3a": 51,
+      "ftm": 25,
+      "fta": 29,
+      "reb": 49,
+      "oreb": 10,
+      "dreb": 31,
+      "ast": 29,
+      "tov": 9,
+      "stl": 7,
+      "blk": 4,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JADEN MCDANIELS",
+        "min": "33:07",
+        "pts": 17,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "JULIUS RANDLE",
+        "min": "32:43",
+        "pts": 16,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "27",
+        "name": "RUDY GOBERT",
+        "min": "38:03",
+        "pts": 26,
+        "reb": 13,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "ANTHONY EDWARDS",
+        "min": "47:27",
+        "pts": 44,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "DONTE DIVINCENZO",
+        "min": "37:50",
+        "pts": 15,
+        "reb": 4,
+        "ast": 5
+      }
+    ]
+  }
+}

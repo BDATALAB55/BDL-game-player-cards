@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500477",
+  "date": "2026.01.02",
+  "venue": "Capital One Arena",
+  "attendance": 16486,
+  "home": {
+    "id": "1610612764",
+    "total": {
+      "pts": 119,
+      "fgm": 47,
+      "fga": 92,
+      "f2m": 36,
+      "f2a": 63,
+      "f3m": 11,
+      "f3a": 29,
+      "ftm": 14,
+      "fta": 16,
+      "reb": 61,
+      "oreb": 13,
+      "dreb": 38,
+      "ast": 24,
+      "tov": 18,
+      "stl": 10,
+      "blk": 9,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "29:10",
+        "pts": 11,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "22",
+        "name": "KHRIS MIDDLETON",
+        "min": "22:50",
+        "pts": 9,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "28:38",
+        "pts": 19,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "12",
+        "name": "TRE JOHNSON",
+        "min": "28:00",
+        "pts": 12,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "31:07",
+        "pts": 17,
+        "reb": 6,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612751",
+    "total": {
+      "pts": 99,
+      "fgm": 34,
+      "fga": 86,
+      "f2m": 28,
+      "f2a": 57,
+      "f3m": 6,
+      "f3a": 29,
+      "ftm": 25,
+      "fta": 28,
+      "reb": 41,
+      "oreb": 9,
+      "dreb": 24,
+      "ast": 20,
+      "tov": 16,
+      "stl": 15,
+      "blk": 8,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "DANNY WOLF",
+        "min": "35:09",
+        "pts": 11,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "27:45",
+        "pts": 8,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "20",
+        "name": "DAY'RON SHARPE",
+        "min": "29:51",
+        "pts": 14,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "23:34",
+        "pts": 14,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "27:54",
+        "pts": 10,
+        "reb": 8,
+        "ast": 3
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500438",
+  "date": "2025.12.27",
+  "venue": "Toyota Center",
+  "attendance": 18067,
+  "home": {
+    "id": "1610612745",
+    "total": {
+      "pts": 117,
+      "fgm": 43,
+      "fga": 88,
+      "f2m": 27,
+      "f2a": 53,
+      "f3m": 16,
+      "f3a": 35,
+      "ftm": 15,
+      "fta": 21,
+      "reb": 66,
+      "oreb": 18,
+      "dreb": 33,
+      "ast": 27,
+      "tov": 15,
+      "stl": 12,
+      "blk": 9,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "28:40",
+        "pts": 30,
+        "reb": 4,
+        "ast": 7
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "26:04",
+        "pts": 15,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "12",
+        "name": "STEVEN ADAMS",
+        "min": "22:10",
+        "pts": 9,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "17",
+        "name": "TARI EASON",
+        "min": "21:08",
+        "pts": 9,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "33:22",
+        "pts": 13,
+        "reb": 9,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612739",
+    "total": {
+      "pts": 100,
+      "fgm": 41,
+      "fga": 96,
+      "f2m": 30,
+      "f2a": 60,
+      "f3m": 11,
+      "f3a": 36,
+      "ftm": 7,
+      "fta": 11,
+      "reb": 46,
+      "oreb": 15,
+      "dreb": 27,
+      "ast": 23,
+      "tov": 14,
+      "stl": 10,
+      "blk": 6,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "SAM MERRILL",
+        "min": "25:22",
+        "pts": 13,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "32",
+        "name": "DEAN WADE",
+        "min": "17:30",
+        "pts": 6,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "17:37",
+        "pts": 6,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "10",
+        "name": "DARIUS GARLAND",
+        "min": "24:25",
+        "pts": 12,
+        "reb": 0,
+        "ast": 1
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "30:27",
+        "pts": 16,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  }
+}

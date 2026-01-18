@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500476",
+  "date": "2026.01.02",
+  "venue": "Gainbridge Fieldhouse",
+  "attendance": 17013,
+  "home": {
+    "id": "1610612754",
+    "total": {
+      "pts": 113,
+      "fgm": 44,
+      "fga": 86,
+      "f2m": 32,
+      "f2a": 56,
+      "f3m": 12,
+      "f3a": 30,
+      "ftm": 13,
+      "fta": 15,
+      "reb": 44,
+      "oreb": 1,
+      "dreb": 38,
+      "ast": 26,
+      "tov": 14,
+      "stl": 9,
+      "blk": 4,
+      "pf": 28
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "AARON NESMITH",
+        "min": "29:05",
+        "pts": 9,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "35:51",
+        "pts": 23,
+        "reb": 9,
+        "ast": 5
+      },
+      {
+        "no": "11",
+        "name": "MICAH POTTER",
+        "min": "27:48",
+        "pts": 16,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "00",
+        "name": "BENNEDICT MATHURIN",
+        "min": "19:46",
+        "pts": 2,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "35:32",
+        "pts": 19,
+        "reb": 6,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 123,
+      "fgm": 44,
+      "fga": 98,
+      "f2m": 31,
+      "f2a": 52,
+      "f3m": 13,
+      "f3a": 46,
+      "ftm": 22,
+      "fta": 28,
+      "reb": 61,
+      "oreb": 12,
+      "dreb": 37,
+      "ast": 23,
+      "tov": 12,
+      "stl": 8,
+      "blk": 2,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "25:07",
+        "pts": 9,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "21:00",
+        "pts": 5,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "LUKE KORNET",
+        "min": "27:17",
+        "pts": 9,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "32:20",
+        "pts": 24,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "33:26",
+        "pts": 19,
+        "reb": 8,
+        "ast": 8
+      }
+    ]
+  }
+}

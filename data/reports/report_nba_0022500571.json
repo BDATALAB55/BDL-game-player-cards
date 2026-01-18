@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500571",
+  "date": "2026.01.14",
+  "venue": "Gainbridge Fieldhouse",
+  "attendance": 15789,
+  "home": {
+    "id": "1610612754",
+    "total": {
+      "pts": 101,
+      "fgm": 33,
+      "fga": 86,
+      "f2m": 21,
+      "f2a": 44,
+      "f3m": 12,
+      "f3a": 42,
+      "ftm": 23,
+      "fta": 31,
+      "reb": 55,
+      "oreb": 14,
+      "dreb": 32,
+      "ast": 26,
+      "tov": 10,
+      "stl": 6,
+      "blk": 7,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "JOHNNY FURPHY",
+        "min": "26:14",
+        "pts": 10,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "35:20",
+        "pts": 26,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "15:38",
+        "pts": 7,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "AARON NESMITH",
+        "min": "30:37",
+        "pts": 6,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "31:30",
+        "pts": 14,
+        "reb": 2,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612761",
+    "total": {
+      "pts": 115,
+      "fgm": 44,
+      "fga": 89,
+      "f2m": 34,
+      "f2a": 61,
+      "f3m": 10,
+      "f3a": 28,
+      "ftm": 17,
+      "fta": 26,
+      "reb": 61,
+      "oreb": 11,
+      "dreb": 38,
+      "ast": 30,
+      "tov": 11,
+      "stl": 4,
+      "blk": 5,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "38:23",
+        "pts": 26,
+        "reb": 7,
+        "ast": 13
+      },
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "36:02",
+        "pts": 30,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "12",
+        "name": "COLLIN MURRAY-BOYLES",
+        "min": "32:48",
+        "pts": 10,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "77",
+        "name": "JAMISON BATTLE",
+        "min": "19:31",
+        "pts": 5,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "JAMAL SHEAD",
+        "min": "34:24",
+        "pts": 7,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  }
+}

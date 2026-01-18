@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500403",
+  "date": "2025.12.22",
+  "venue": "TD Garden",
+  "attendance": 19156,
+  "home": {
+    "id": "1610612738",
+    "total": {
+      "pts": 103,
+      "fgm": 38,
+      "fga": 89,
+      "f2m": 27,
+      "f2a": 52,
+      "f3m": 11,
+      "f3a": 37,
+      "ftm": 16,
+      "fta": 19,
+      "reb": 63,
+      "oreb": 11,
+      "dreb": 38,
+      "ast": 19,
+      "tov": 13,
+      "stl": 6,
+      "blk": 6,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "33:12",
+        "pts": 31,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "JOSH MINOTT",
+        "min": "08:35",
+        "pts": 2,
+        "reb": 0,
+        "ast": 0
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "23:21",
+        "pts": 8,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "32:57",
+        "pts": 11,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "31:31",
+        "pts": 19,
+        "reb": 5,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612754",
+    "total": {
+      "pts": 95,
+      "fgm": 33,
+      "fga": 85,
+      "f2m": 20,
+      "f2a": 45,
+      "f3m": 13,
+      "f3a": 40,
+      "ftm": 16,
+      "fta": 18,
+      "reb": 46,
+      "oreb": 9,
+      "dreb": 27,
+      "ast": 19,
+      "tov": 12,
+      "stl": 4,
+      "blk": 3,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "00",
+        "name": "BENNEDICT MATHURIN",
+        "min": "36:48",
+        "pts": 16,
+        "reb": 9,
+        "ast": 0
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "37:20",
+        "pts": 25,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "25:09",
+        "pts": 3,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "55",
+        "name": "ETHAN THOMPSON",
+        "min": "33:35",
+        "pts": 13,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "35:47",
+        "pts": 20,
+        "reb": 2,
+        "ast": 7
+      }
+    ]
+  }
+}

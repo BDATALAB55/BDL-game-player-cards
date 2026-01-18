@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500415",
+  "date": "2025.12.23",
+  "venue": "American Airlines Center",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612742",
+    "total": {
+      "pts": 131,
+      "fgm": 53,
+      "fga": 93,
+      "f2m": 42,
+      "f2a": 66,
+      "f3m": 11,
+      "f3a": 27,
+      "ftm": 14,
+      "fta": 15,
+      "reb": 41,
+      "oreb": 11,
+      "dreb": 25,
+      "ast": 34,
+      "tov": 10,
+      "stl": 9,
+      "blk": 2,
+      "pf": 12
+    },
+    "starters": [
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "31:33",
+        "pts": 15,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "39:44",
+        "pts": 33,
+        "reb": 9,
+        "ast": 9
+      },
+      {
+        "no": "3",
+        "name": "ANTHONY DAVIS",
+        "min": "35:52",
+        "pts": 31,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "9",
+        "name": "RYAN NEMBHARD",
+        "min": "32:43",
+        "pts": 11,
+        "reb": 3,
+        "ast": 7
+      },
+      {
+        "no": "1",
+        "name": "JADEN HARDY",
+        "min": "27:50",
+        "pts": 10,
+        "reb": 2,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612743",
+    "total": {
+      "pts": 130,
+      "fgm": 50,
+      "fga": 87,
+      "f2m": 30,
+      "f2a": 46,
+      "f3m": 20,
+      "f3a": 41,
+      "ftm": 10,
+      "fta": 10,
+      "reb": 38,
+      "oreb": 7,
+      "dreb": 27,
+      "ast": 39,
+      "tov": 15,
+      "stl": 8,
+      "blk": 1,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "CAMERON JOHNSON",
+        "min": "23:53",
+        "pts": 8,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "PEYTON WATSON",
+        "min": "24:26",
+        "pts": 4,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "36:25",
+        "pts": 29,
+        "reb": 7,
+        "ast": 14
+      },
+      {
+        "no": "21",
+        "name": "SPENCER JONES",
+        "min": "26:09",
+        "pts": 6,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "37:19",
+        "pts": 31,
+        "reb": 7,
+        "ast": 14
+      }
+    ]
+  }
+}

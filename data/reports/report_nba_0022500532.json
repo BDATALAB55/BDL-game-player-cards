@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500532",
+  "date": "2026.01.09",
+  "venue": "TD Garden",
+  "attendance": 19156,
+  "home": {
+    "id": "1610612738",
+    "total": {
+      "pts": 125,
+      "fgm": 47,
+      "fga": 87,
+      "f2m": 33,
+      "f2a": 59,
+      "f3m": 14,
+      "f3a": 28,
+      "ftm": 17,
+      "fta": 19,
+      "reb": 50,
+      "oreb": 9,
+      "dreb": 31,
+      "ast": 28,
+      "tov": 7,
+      "stl": 3,
+      "blk": 5,
+      "pf": 12
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "36:31",
+        "pts": 25,
+        "reb": 8,
+        "ast": 7
+      },
+      {
+        "no": "30",
+        "name": "SAM HAUSER",
+        "min": "31:34",
+        "pts": 19,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "27:10",
+        "pts": 10,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "29:40",
+        "pts": 27,
+        "reb": 5,
+        "ast": 8
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "37:58",
+        "pts": 18,
+        "reb": 3,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612761",
+    "total": {
+      "pts": 117,
+      "fgm": 45,
+      "fga": 92,
+      "f2m": 27,
+      "f2a": 45,
+      "f3m": 18,
+      "f3a": 47,
+      "ftm": 9,
+      "fta": 10,
+      "reb": 40,
+      "oreb": 9,
+      "dreb": 22,
+      "ast": 39,
+      "tov": 6,
+      "stl": 7,
+      "blk": 6,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "14",
+        "name": "JA'KOBE WALTER",
+        "min": "31:26",
+        "pts": 19,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "54",
+        "name": "SANDRO MAMUKELASHVILI",
+        "min": "24:54",
+        "pts": 15,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "12",
+        "name": "COLLIN MURRAY-BOYLES",
+        "min": "21:07",
+        "pts": 7,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "27:53",
+        "pts": 19,
+        "reb": 4,
+        "ast": 7
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "34:48",
+        "pts": 17,
+        "reb": 2,
+        "ast": 13
+      }
+    ]
+  }
+}

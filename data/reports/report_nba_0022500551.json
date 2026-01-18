@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500551",
+  "date": "2026.01.11",
+  "venue": "Moda Center",
+  "attendance": 0,
+  "home": {
+    "id": "1610612757",
+    "total": {
+      "pts": 114,
+      "fgm": 40,
+      "fga": 84,
+      "f2m": 28,
+      "f2a": 45,
+      "f3m": 12,
+      "f3a": 39,
+      "ftm": 22,
+      "fta": 25,
+      "reb": 47,
+      "oreb": 7,
+      "dreb": 32,
+      "ast": 24,
+      "tov": 15,
+      "stl": 9,
+      "blk": 6,
+      "pf": 8
+    },
+    "starters": [
+      {
+        "no": "91",
+        "name": "SIDY CISSOKO",
+        "min": "27:52",
+        "pts": 5,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "38:51",
+        "pts": 11,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "29:36",
+        "pts": 8,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "34:44",
+        "pts": 23,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "38:05",
+        "pts": 25,
+        "reb": 5,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612752",
+    "total": {
+      "pts": 123,
+      "fgm": 50,
+      "fga": 99,
+      "f2m": 33,
+      "f2a": 53,
+      "f3m": 17,
+      "f3a": 46,
+      "ftm": 6,
+      "fta": 8,
+      "reb": 51,
+      "oreb": 13,
+      "dreb": 32,
+      "ast": 32,
+      "tov": 12,
+      "stl": 11,
+      "blk": 7,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "30:53",
+        "pts": 18,
+        "reb": 3,
+        "ast": 6
+      },
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "34:23",
+        "pts": 24,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "27:48",
+        "pts": 20,
+        "reb": 11,
+        "ast": 3
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "34:02",
+        "pts": 18,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "36:36",
+        "pts": 26,
+        "reb": 6,
+        "ast": 8
+      }
+    ]
+  }
+}

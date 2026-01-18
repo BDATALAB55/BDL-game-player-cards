@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500326",
+  "date": "2025.12.03",
+  "venue": "Kia Center",
+  "attendance": 17643,
+  "home": {
+    "id": "1610612753",
+    "total": {
+      "pts": 112,
+      "fgm": 45,
+      "fga": 99,
+      "f2m": 36,
+      "f2a": 72,
+      "f3m": 9,
+      "f3a": 27,
+      "ftm": 13,
+      "fta": 19,
+      "reb": 62,
+      "oreb": 10,
+      "dreb": 38,
+      "ast": 27,
+      "tov": 10,
+      "stl": 11,
+      "blk": 3,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "TRISTAN DA SILVA",
+        "min": "25:34",
+        "pts": 12,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "22",
+        "name": "FRANZ WAGNER",
+        "min": "35:54",
+        "pts": 25,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "28:35",
+        "pts": 5,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "37:38",
+        "pts": 14,
+        "reb": 3,
+        "ast": 6
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "27:26",
+        "pts": 24,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 114,
+      "fgm": 42,
+      "fga": 91,
+      "f2m": 29,
+      "f2a": 53,
+      "f3m": 13,
+      "f3a": 38,
+      "ftm": 17,
+      "fta": 24,
+      "reb": 56,
+      "oreb": 13,
+      "dreb": 39,
+      "ast": 20,
+      "tov": 19,
+      "stl": 5,
+      "blk": 5,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "27:58",
+        "pts": 14,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "32:32",
+        "pts": 11,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "LUKE KORNET",
+        "min": "28:23",
+        "pts": 5,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "31:30",
+        "pts": 15,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "29:23",
+        "pts": 31,
+        "reb": 5,
+        "ast": 5
+      }
+    ]
+  }
+}

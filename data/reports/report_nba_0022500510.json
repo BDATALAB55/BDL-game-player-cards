@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500510",
+  "date": "2026.01.06",
+  "venue": "Gainbridge Fieldhouse",
+  "attendance": 16007,
+  "home": {
+    "id": "1610612754",
+    "total": {
+      "pts": 116,
+      "fgm": 43,
+      "fga": 93,
+      "f2m": 27,
+      "f2a": 58,
+      "f3m": 16,
+      "f3a": 35,
+      "ftm": 14,
+      "fta": 19,
+      "reb": 43,
+      "oreb": 7,
+      "dreb": 25,
+      "ast": 32,
+      "tov": 11,
+      "stl": 10,
+      "blk": 4,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "JOHNNY FURPHY",
+        "min": "30:30",
+        "pts": 9,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "34:35",
+        "pts": 22,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "30:41",
+        "pts": 20,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "AARON NESMITH",
+        "min": "33:06",
+        "pts": 14,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "30:28",
+        "pts": 15,
+        "reb": 1,
+        "ast": 11
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612739",
+    "total": {
+      "pts": 120,
+      "fgm": 49,
+      "fga": 88,
+      "f2m": 39,
+      "f2a": 62,
+      "f3m": 10,
+      "f3a": 26,
+      "ftm": 12,
+      "fta": 18,
+      "reb": 57,
+      "oreb": 10,
+      "dreb": 38,
+      "ast": 33,
+      "tov": 19,
+      "stl": 7,
+      "blk": 6,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "DEAN WADE",
+        "min": "08:25",
+        "pts": 3,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "35:36",
+        "pts": 20,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "33:39",
+        "pts": 19,
+        "reb": 12,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "SAM MERRILL",
+        "min": "31:26",
+        "pts": 19,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "10",
+        "name": "DARIUS GARLAND",
+        "min": "32:57",
+        "pts": 29,
+        "reb": 2,
+        "ast": 6
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500377",
+  "date": "2025.12.18",
+  "venue": "Ball Arena",
+  "attendance": 19731,
+  "home": {
+    "id": "1610612743",
+    "total": {
+      "pts": 126,
+      "fgm": 49,
+      "fga": 88,
+      "f2m": 33,
+      "f2a": 52,
+      "f3m": 16,
+      "f3a": 36,
+      "ftm": 12,
+      "fta": 15,
+      "reb": 49,
+      "oreb": 5,
+      "dreb": 35,
+      "ast": 31,
+      "tov": 13,
+      "stl": 7,
+      "blk": 3,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "CAMERON JOHNSON",
+        "min": "35:41",
+        "pts": 19,
+        "reb": 11,
+        "ast": 3
+      },
+      {
+        "no": "21",
+        "name": "SPENCER JONES",
+        "min": "18:54",
+        "pts": 8,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "37:47",
+        "pts": 23,
+        "reb": 11,
+        "ast": 13
+      },
+      {
+        "no": "11",
+        "name": "BRUCE BROWN",
+        "min": "34:25",
+        "pts": 11,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "35:39",
+        "pts": 32,
+        "reb": 2,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612753",
+    "total": {
+      "pts": 115,
+      "fgm": 43,
+      "fga": 91,
+      "f2m": 32,
+      "f2a": 58,
+      "f3m": 11,
+      "f3a": 33,
+      "ftm": 18,
+      "fta": 26,
+      "reb": 50,
+      "oreb": 12,
+      "dreb": 32,
+      "ast": 30,
+      "tov": 9,
+      "stl": 9,
+      "blk": 6,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "36:24",
+        "pts": 6,
+        "reb": 2,
+        "ast": 8
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "39:17",
+        "pts": 26,
+        "reb": 16,
+        "ast": 10
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "28:34",
+        "pts": 26,
+        "reb": 8,
+        "ast": 0
+      },
+      {
+        "no": "0",
+        "name": "ANTHONY BLACK",
+        "min": "37:24",
+        "pts": 22,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "TYUS JONES",
+        "min": "19:09",
+        "pts": 5,
+        "reb": 0,
+        "ast": 4
+      }
+    ]
+  }
+}

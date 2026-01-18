@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500549",
+  "date": "2026.01.11",
+  "venue": "FedExForum",
+  "attendance": 15578,
+  "home": {
+    "id": "1610612763",
+    "total": {
+      "pts": 103,
+      "fgm": 37,
+      "fga": 88,
+      "f2m": 26,
+      "f2a": 54,
+      "f3m": 11,
+      "f3a": 34,
+      "ftm": 18,
+      "fta": 18,
+      "reb": 61,
+      "oreb": 16,
+      "dreb": 38,
+      "ast": 27,
+      "tov": 14,
+      "stl": 6,
+      "blk": 7,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "21:34",
+        "pts": 2,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "29:47",
+        "pts": 14,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "31",
+        "name": "JOCK LANDALE",
+        "min": "27:44",
+        "pts": 16,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "CEDRIC COWARD",
+        "min": "26:33",
+        "pts": 21,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "24",
+        "name": "CAM SPENCER",
+        "min": "29:34",
+        "pts": 12,
+        "reb": 4,
+        "ast": 13
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612751",
+    "total": {
+      "pts": 98,
+      "fgm": 36,
+      "fga": 88,
+      "f2m": 18,
+      "f2a": 40,
+      "f3m": 18,
+      "f3a": 48,
+      "ftm": 8,
+      "fta": 16,
+      "reb": 50,
+      "oreb": 13,
+      "dreb": 30,
+      "ast": 25,
+      "tov": 10,
+      "stl": 10,
+      "blk": 6,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "DANNY WOLF",
+        "min": "24:37",
+        "pts": 11,
+        "reb": 10,
+        "ast": 0
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "30:19",
+        "pts": 17,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "27:27",
+        "pts": 7,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "26:18",
+        "pts": 7,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "28:21",
+        "pts": 7,
+        "reb": 1,
+        "ast": 4
+      }
+    ]
+  }
+}

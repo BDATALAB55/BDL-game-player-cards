@@ -1,0 +1,134 @@
+{
+  "gameId": "0022501208",
+  "date": "2025.12.11",
+  "venue": "Golden 1 Center",
+  "attendance": 16307,
+  "home": {
+    "id": "1610612758",
+    "total": {
+      "pts": 105,
+      "fgm": 39,
+      "fga": 87,
+      "f2m": 28,
+      "f2a": 49,
+      "f3m": 11,
+      "f3a": 38,
+      "ftm": 16,
+      "fta": 23,
+      "reb": 48,
+      "oreb": 10,
+      "dreb": 28,
+      "ast": 21,
+      "tov": 16,
+      "stl": 9,
+      "blk": 4,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "21:11",
+        "pts": 11,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "13",
+        "name": "KEEGAN MURRAY",
+        "min": "27:31",
+        "pts": 15,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "36:36",
+        "pts": 15,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "NIQUE CLIFFORD",
+        "min": "28:24",
+        "pts": 2,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "26:40",
+        "pts": 17,
+        "reb": 3,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612743",
+    "total": {
+      "pts": 136,
+      "fgm": 52,
+      "fga": 88,
+      "f2m": 40,
+      "f2a": 59,
+      "f3m": 12,
+      "f3a": 29,
+      "ftm": 20,
+      "fta": 29,
+      "reb": 53,
+      "oreb": 10,
+      "dreb": 36,
+      "ast": 35,
+      "tov": 12,
+      "stl": 9,
+      "blk": 0,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "CAMERON JOHNSON",
+        "min": "32:34",
+        "pts": 16,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "SPENCER JONES",
+        "min": "21:46",
+        "pts": 2,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "29:03",
+        "pts": 36,
+        "reb": 12,
+        "ast": 8
+      },
+      {
+        "no": "8",
+        "name": "PEYTON WATSON",
+        "min": "22:49",
+        "pts": 21,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "25:42",
+        "pts": 11,
+        "reb": 3,
+        "ast": 9
+      }
+    ]
+  }
+}

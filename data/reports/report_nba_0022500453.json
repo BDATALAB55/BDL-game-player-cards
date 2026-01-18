@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500453",
+  "date": "2025.12.29",
+  "venue": "Toyota Center",
+  "attendance": 18055,
+  "home": {
+    "id": "1610612745",
+    "total": {
+      "pts": 126,
+      "fgm": 49,
+      "fga": 83,
+      "f2m": 39,
+      "f2a": 56,
+      "f3m": 10,
+      "f3a": 27,
+      "ftm": 18,
+      "fta": 24,
+      "reb": 54,
+      "oreb": 14,
+      "dreb": 36,
+      "ast": 21,
+      "tov": 16,
+      "stl": 4,
+      "blk": 6,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "33:40",
+        "pts": 30,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "33:51",
+        "pts": 21,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "12",
+        "name": "STEVEN ADAMS",
+        "min": "22:17",
+        "pts": 8,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "17",
+        "name": "TARI EASON",
+        "min": "28:38",
+        "pts": 13,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "37:22",
+        "pts": 20,
+        "reb": 8,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612754",
+    "total": {
+      "pts": 119,
+      "fgm": 44,
+      "fga": 88,
+      "f2m": 26,
+      "f2a": 54,
+      "f3m": 18,
+      "f3a": 34,
+      "ftm": 13,
+      "fta": 20,
+      "reb": 38,
+      "oreb": 7,
+      "dreb": 22,
+      "ast": 30,
+      "tov": 9,
+      "stl": 12,
+      "blk": 3,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "JOHNNY FURPHY",
+        "min": "20:27",
+        "pts": 9,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "31:13",
+        "pts": 23,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "18:34",
+        "pts": 8,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "00",
+        "name": "BENNEDICT MATHURIN",
+        "min": "25:39",
+        "pts": 14,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "29:18",
+        "pts": 11,
+        "reb": 1,
+        "ast": 2
+      }
+    ]
+  }
+}

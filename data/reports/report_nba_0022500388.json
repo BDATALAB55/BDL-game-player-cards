@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500388",
+  "date": "2025.12.20",
+  "venue": "Scotiabank Arena",
+  "attendance": 19533,
+  "home": {
+    "id": "1610612761",
+    "total": {
+      "pts": 96,
+      "fgm": 36,
+      "fga": 87,
+      "f2m": 20,
+      "f2a": 40,
+      "f3m": 16,
+      "f3a": 47,
+      "ftm": 8,
+      "fta": 11,
+      "reb": 48,
+      "oreb": 9,
+      "dreb": 28,
+      "ast": 30,
+      "tov": 12,
+      "stl": 2,
+      "blk": 7,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "35:10",
+        "pts": 24,
+        "reb": 4,
+        "ast": 7
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "33:08",
+        "pts": 12,
+        "reb": 9,
+        "ast": 6
+      },
+      {
+        "no": "54",
+        "name": "SANDRO MAMUKELASHVILI",
+        "min": "29:47",
+        "pts": 24,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "30",
+        "name": "OCHAI AGBAJI",
+        "min": "27:08",
+        "pts": 6,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "31:33",
+        "pts": 3,
+        "reb": 4,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612738",
+    "total": {
+      "pts": 112,
+      "fgm": 44,
+      "fga": 95,
+      "f2m": 32,
+      "f2a": 56,
+      "f3m": 12,
+      "f3a": 39,
+      "ftm": 12,
+      "fta": 15,
+      "reb": 61,
+      "oreb": 17,
+      "dreb": 38,
+      "ast": 22,
+      "tov": 9,
+      "stl": 7,
+      "blk": 4,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "SAM HAUSER",
+        "min": "27:21",
+        "pts": 6,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "27",
+        "name": "JORDAN WALSH",
+        "min": "12:43",
+        "pts": 0,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "22:08",
+        "pts": 14,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "37:00",
+        "pts": 33,
+        "reb": 7,
+        "ast": 10
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "35:55",
+        "pts": 15,
+        "reb": 5,
+        "ast": 7
+      }
+    ]
+  }
+}

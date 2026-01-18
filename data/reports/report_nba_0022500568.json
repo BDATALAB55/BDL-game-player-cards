@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500568",
+  "date": "2026.01.13",
+  "venue": "Paycom Center",
+  "attendance": 18203,
+  "home": {
+    "id": "1610612760",
+    "total": {
+      "pts": 119,
+      "fgm": 42,
+      "fga": 81,
+      "f2m": 31,
+      "f2a": 51,
+      "f3m": 11,
+      "f3a": 30,
+      "ftm": 24,
+      "fta": 27,
+      "reb": 52,
+      "oreb": 5,
+      "dreb": 38,
+      "ast": 26,
+      "tov": 11,
+      "stl": 7,
+      "blk": 11,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "AARON WIGGINS",
+        "min": "26:20",
+        "pts": 5,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "8",
+        "name": "JALEN WILLIAMS",
+        "min": "30:24",
+        "pts": 20,
+        "reb": 0,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "25:10",
+        "pts": 8,
+        "reb": 10,
+        "ast": 0
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "23:00",
+        "pts": 6,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "33:40",
+        "pts": 34,
+        "reb": 5,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 98,
+      "fgm": 34,
+      "fga": 85,
+      "f2m": 21,
+      "f2a": 48,
+      "f3m": 13,
+      "f3a": 37,
+      "ftm": 17,
+      "fta": 24,
+      "reb": 49,
+      "oreb": 12,
+      "dreb": 30,
+      "ast": 21,
+      "tov": 11,
+      "stl": 4,
+      "blk": 3,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "34:03",
+        "pts": 13,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "23:40",
+        "pts": 2,
+        "reb": 0,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "27:44",
+        "pts": 17,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "36:13",
+        "pts": 20,
+        "reb": 7,
+        "ast": 8
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "33:40",
+        "pts": 14,
+        "reb": 5,
+        "ast": 5
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500363",
+  "date": "2025.12.07",
+  "venue": "Delta Center",
+  "attendance": 18186,
+  "home": {
+    "id": "1610612762",
+    "total": {
+      "pts": 101,
+      "fgm": 40,
+      "fga": 85,
+      "f2m": 28,
+      "f2a": 49,
+      "f3m": 12,
+      "f3a": 36,
+      "ftm": 9,
+      "fta": 12,
+      "reb": 44,
+      "oreb": 6,
+      "dreb": 31,
+      "ast": 25,
+      "tov": 17,
+      "stl": 6,
+      "blk": 3,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "SVI MYKHAILIUK",
+        "min": "33:21",
+        "pts": 6,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "22",
+        "name": "KYLE FILIPOWSKI",
+        "min": "36:13",
+        "pts": 21,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "JUSUF NURKIĆ",
+        "min": "19:49",
+        "pts": 7,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "32:12",
+        "pts": 13,
+        "reb": 1,
+        "ast": 4
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "27:49",
+        "pts": 8,
+        "reb": 5,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612760",
+    "total": {
+      "pts": 131,
+      "fgm": 51,
+      "fga": 88,
+      "f2m": 30,
+      "f2a": 46,
+      "f3m": 21,
+      "f3a": 42,
+      "ftm": 8,
+      "fta": 18,
+      "reb": 52,
+      "oreb": 8,
+      "dreb": 36,
+      "ast": 32,
+      "tov": 13,
+      "stl": 9,
+      "blk": 3,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "6",
+        "name": "JAYLIN WILLIAMS",
+        "min": "23:47",
+        "pts": 5,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "8",
+        "name": "JALEN WILLIAMS",
+        "min": "25:02",
+        "pts": 25,
+        "reb": 3,
+        "ast": 8
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "22:35",
+        "pts": 25,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "25:24",
+        "pts": 6,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "25",
+        "name": "AJAY MITCHELL",
+        "min": "28:45",
+        "pts": 7,
+        "reb": 2,
+        "ast": 4
+      }
+    ]
+  }
+}

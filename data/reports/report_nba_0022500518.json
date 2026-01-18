@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500518",
+  "date": "2026.01.07",
+  "venue": "Xfinity Mobile Arena",
+  "attendance": 19746,
+  "home": {
+    "id": "1610612755",
+    "total": {
+      "pts": 131,
+      "fgm": 45,
+      "fga": 84,
+      "f2m": 31,
+      "f2a": 47,
+      "f3m": 14,
+      "f3a": 37,
+      "ftm": 27,
+      "fta": 32,
+      "reb": 42,
+      "oreb": 7,
+      "dreb": 27,
+      "ast": 30,
+      "tov": 10,
+      "stl": 15,
+      "blk": 5,
+      "pf": 11
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "PAUL GEORGE",
+        "min": "32:52",
+        "pts": 23,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "25",
+        "name": "DOMINICK BARLOW",
+        "min": "23:12",
+        "pts": 11,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "21",
+        "name": "JOEL EMBIID",
+        "min": "25:24",
+        "pts": 28,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "35:24",
+        "pts": 13,
+        "reb": 6,
+        "ast": 7
+      },
+      {
+        "no": "0",
+        "name": "TYRESE MAXEY",
+        "min": "28:21",
+        "pts": 22,
+        "reb": 3,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612764",
+    "total": {
+      "pts": 110,
+      "fgm": 43,
+      "fga": 87,
+      "f2m": 30,
+      "f2a": 54,
+      "f3m": 13,
+      "f3a": 33,
+      "ftm": 11,
+      "fta": 11,
+      "reb": 47,
+      "oreb": 11,
+      "dreb": 31,
+      "ast": 29,
+      "tov": 22,
+      "stl": 7,
+      "blk": 6,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "28:01",
+        "pts": 18,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "JUSTIN CHAMPAGNIE",
+        "min": "25:23",
+        "pts": 6,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "26:48",
+        "pts": 15,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "12",
+        "name": "TRE JOHNSON",
+        "min": "28:03",
+        "pts": 20,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "39:37",
+        "pts": 18,
+        "reb": 3,
+        "ast": 7
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500561",
+  "date": "2026.01.12",
+  "venue": "American Airlines Center",
+  "attendance": 18632,
+  "home": {
+    "id": "1610612742",
+    "total": {
+      "pts": 113,
+      "fgm": 43,
+      "fga": 85,
+      "f2m": 28,
+      "f2a": 51,
+      "f3m": 15,
+      "f3a": 34,
+      "ftm": 12,
+      "fta": 16,
+      "reb": 47,
+      "oreb": 9,
+      "dreb": 28,
+      "ast": 28,
+      "tov": 12,
+      "stl": 9,
+      "blk": 3,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "34:52",
+        "pts": 27,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "32:22",
+        "pts": 22,
+        "reb": 4,
+        "ast": 9
+      },
+      {
+        "no": "7",
+        "name": "DWIGHT POWELL",
+        "min": "35:27",
+        "pts": 5,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "34:18",
+        "pts": 10,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "JADEN HARDY",
+        "min": "21:41",
+        "pts": 14,
+        "reb": 2,
+        "ast": 0
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612751",
+    "total": {
+      "pts": 105,
+      "fgm": 39,
+      "fga": 86,
+      "f2m": 30,
+      "f2a": 49,
+      "f3m": 9,
+      "f3a": 37,
+      "ftm": 18,
+      "fta": 20,
+      "reb": 48,
+      "oreb": 13,
+      "dreb": 30,
+      "ast": 23,
+      "tov": 17,
+      "stl": 5,
+      "blk": 8,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "33:06",
+        "pts": 28,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "29:07",
+        "pts": 13,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "25:18",
+        "pts": 13,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "4",
+        "name": "DRAKE POWELL",
+        "min": "25:11",
+        "pts": 10,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "29:09",
+        "pts": 5,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  }
+}

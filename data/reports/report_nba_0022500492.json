@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500492",
+  "date": "2026.01.03",
+  "venue": "Chase Center",
+  "attendance": 18064,
+  "home": {
+    "id": "1610612744",
+    "total": {
+      "pts": 123,
+      "fgm": 43,
+      "fga": 87,
+      "f2m": 24,
+      "f2a": 42,
+      "f3m": 19,
+      "f3a": 45,
+      "ftm": 18,
+      "fta": 24,
+      "reb": 57,
+      "oreb": 13,
+      "dreb": 32,
+      "ast": 32,
+      "tov": 14,
+      "stl": 9,
+      "blk": 2,
+      "pf": 13
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "JIMMY BUTLER III",
+        "min": "33:31",
+        "pts": 15,
+        "reb": 3,
+        "ast": 7
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "12:04",
+        "pts": 8,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "21",
+        "name": "QUINTEN POST",
+        "min": "22:30",
+        "pts": 15,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "24:59",
+        "pts": 8,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "34:16",
+        "pts": 31,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612762",
+    "total": {
+      "pts": 114,
+      "fgm": 45,
+      "fga": 86,
+      "f2m": 32,
+      "f2a": 51,
+      "f3m": 13,
+      "f3a": 35,
+      "ftm": 11,
+      "fta": 17,
+      "reb": 41,
+      "oreb": 10,
+      "dreb": 27,
+      "ast": 32,
+      "tov": 15,
+      "stl": 7,
+      "blk": 2,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "SVI MYKHAILIUK",
+        "min": "27:52",
+        "pts": 10,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "LAURI MARKKANEN",
+        "min": "40:45",
+        "pts": 35,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "42",
+        "name": "KEVIN LOVE",
+        "min": "24:16",
+        "pts": 5,
+        "reb": 10,
+        "ast": 5
+      },
+      {
+        "no": "28",
+        "name": "BRICE SENSABAUGH",
+        "min": "27:14",
+        "pts": 12,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "36:21",
+        "pts": 22,
+        "reb": 2,
+        "ast": 9
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500335",
+  "date": "2025.12.04",
+  "venue": "Barclays Center",
+  "attendance": 16485,
+  "home": {
+    "id": "1610612751",
+    "total": {
+      "pts": 110,
+      "fgm": 35,
+      "fga": 82,
+      "f2m": 24,
+      "f2a": 40,
+      "f3m": 11,
+      "f3a": 42,
+      "ftm": 29,
+      "fta": 38,
+      "reb": 56,
+      "oreb": 14,
+      "dreb": 30,
+      "ast": 22,
+      "tov": 17,
+      "stl": 6,
+      "blk": 7,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "18:07",
+        "pts": 3,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "34:13",
+        "pts": 29,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "29:25",
+        "pts": 12,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "13",
+        "name": "TYRESE MARTIN",
+        "min": "22:20",
+        "pts": 0,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "20:23",
+        "pts": 3,
+        "reb": 1,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612762",
+    "total": {
+      "pts": 123,
+      "fgm": 42,
+      "fga": 83,
+      "f2m": 28,
+      "f2a": 58,
+      "f3m": 14,
+      "f3a": 25,
+      "ftm": 25,
+      "fta": 27,
+      "reb": 43,
+      "oreb": 9,
+      "dreb": 30,
+      "ast": 31,
+      "tov": 12,
+      "stl": 7,
+      "blk": 1,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "SVI MYKHAILIUK",
+        "min": "25:14",
+        "pts": 10,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "23",
+        "name": "LAURI MARKKANEN",
+        "min": "34:33",
+        "pts": 30,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "22",
+        "name": "KYLE FILIPOWSKI",
+        "min": "31:03",
+        "pts": 15,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "25:09",
+        "pts": 5,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "31:27",
+        "pts": 29,
+        "reb": 5,
+        "ast": 10
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500338",
+  "date": "2025.12.05",
+  "venue": "TD Garden",
+  "attendance": 19156,
+  "home": {
+    "id": "1610612738",
+    "total": {
+      "pts": 126,
+      "fgm": 46,
+      "fga": 84,
+      "f2m": 22,
+      "f2a": 39,
+      "f3m": 24,
+      "f3a": 45,
+      "ftm": 10,
+      "fta": 12,
+      "reb": 44,
+      "oreb": 8,
+      "dreb": 30,
+      "ast": 31,
+      "tov": 14,
+      "stl": 9,
+      "blk": 5,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "33:41",
+        "pts": 30,
+        "reb": 8,
+        "ast": 8
+      },
+      {
+        "no": "27",
+        "name": "JORDAN WALSH",
+        "min": "26:17",
+        "pts": 17,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "26:02",
+        "pts": 10,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "30:09",
+        "pts": 15,
+        "reb": 2,
+        "ast": 6
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "29:37",
+        "pts": 19,
+        "reb": 5,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612747",
+    "total": {
+      "pts": 105,
+      "fgm": 33,
+      "fga": 77,
+      "f2m": 19,
+      "f2a": 42,
+      "f3m": 14,
+      "f3a": 35,
+      "ftm": 25,
+      "fta": 29,
+      "reb": 46,
+      "oreb": 10,
+      "dreb": 25,
+      "ast": 15,
+      "tov": 14,
+      "stl": 8,
+      "blk": 2,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "JAKE LARAVIA",
+        "min": "20:49",
+        "pts": 6,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "28",
+        "name": "RUI HACHIMURA",
+        "min": "29:16",
+        "pts": 13,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "27:32",
+        "pts": 6,
+        "reb": 10,
+        "ast": 0
+      },
+      {
+        "no": "15",
+        "name": "AUSTIN REAVES",
+        "min": "33:19",
+        "pts": 36,
+        "reb": 3,
+        "ast": 8
+      },
+      {
+        "no": "7",
+        "name": "GABE VINCENT",
+        "min": "29:38",
+        "pts": 18,
+        "reb": 1,
+        "ast": 1
+      }
+    ]
+  }
+}

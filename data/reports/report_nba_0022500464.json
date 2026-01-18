@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500464",
+  "date": "2025.12.31",
+  "venue": "Gainbridge Fieldhouse",
+  "attendance": 16504,
+  "home": {
+    "id": "1610612754",
+    "total": {
+      "pts": 110,
+      "fgm": 36,
+      "fga": 83,
+      "f2m": 24,
+      "f2a": 48,
+      "f3m": 12,
+      "f3a": 35,
+      "ftm": 26,
+      "fta": 32,
+      "reb": 47,
+      "oreb": 5,
+      "dreb": 34,
+      "ast": 22,
+      "tov": 16,
+      "stl": 10,
+      "blk": 3,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "JOHNNY FURPHY",
+        "min": "05:15",
+        "pts": 0,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "33:49",
+        "pts": 26,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "10:31",
+        "pts": 0,
+        "reb": 0,
+        "ast": 1
+      },
+      {
+        "no": "00",
+        "name": "BENNEDICT MATHURIN",
+        "min": "37:00",
+        "pts": 23,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "30:41",
+        "pts": 19,
+        "reb": 4,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612753",
+    "total": {
+      "pts": 112,
+      "fgm": 43,
+      "fga": 90,
+      "f2m": 40,
+      "f2a": 69,
+      "f3m": 3,
+      "f3a": 21,
+      "ftm": 23,
+      "fta": 28,
+      "reb": 59,
+      "oreb": 8,
+      "dreb": 41,
+      "ast": 28,
+      "tov": 19,
+      "stl": 9,
+      "blk": 4,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "33:21",
+        "pts": 18,
+        "reb": 7,
+        "ast": 6
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "34:47",
+        "pts": 29,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "28:56",
+        "pts": 6,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "ANTHONY BLACK",
+        "min": "31:08",
+        "pts": 15,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "25:23",
+        "pts": 11,
+        "reb": 3,
+        "ast": 3
+      }
+    ]
+  }
+}

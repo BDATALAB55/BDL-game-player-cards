@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500580",
+  "date": "2026.01.15",
+  "venue": "Kaseya Center",
+  "attendance": 19700,
+  "home": {
+    "id": "1610612748",
+    "total": {
+      "pts": 114,
+      "fgm": 39,
+      "fga": 87,
+      "f2m": 24,
+      "f2a": 45,
+      "f3m": 15,
+      "f3a": 42,
+      "ftm": 21,
+      "fta": 27,
+      "reb": 50,
+      "oreb": 12,
+      "dreb": 28,
+      "ast": 25,
+      "tov": 10,
+      "stl": 7,
+      "blk": 2,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "29:42",
+        "pts": 7,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "34:51",
+        "pts": 16,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "33:04",
+        "pts": 22,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "14",
+        "name": "TYLER HERRO",
+        "min": "30:58",
+        "pts": 22,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "31:46",
+        "pts": 26,
+        "reb": 3,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612738",
+    "total": {
+      "pts": 119,
+      "fgm": 41,
+      "fga": 91,
+      "f2m": 28,
+      "f2a": 52,
+      "f3m": 13,
+      "f3a": 39,
+      "ftm": 24,
+      "fta": 25,
+      "reb": 58,
+      "oreb": 18,
+      "dreb": 33,
+      "ast": 22,
+      "tov": 13,
+      "stl": 5,
+      "blk": 5,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "30:14",
+        "pts": 27,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "30",
+        "name": "SAM HAUSER",
+        "min": "29:13",
+        "pts": 17,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "19:45",
+        "pts": 9,
+        "reb": 9,
+        "ast": 0
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "36:09",
+        "pts": 8,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "24:01",
+        "pts": 2,
+        "reb": 3,
+        "ast": 8
+      }
+    ]
+  }
+}

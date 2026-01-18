@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500581",
+  "date": "2026.01.15",
+  "venue": "Toyota Center",
+  "attendance": 18055,
+  "home": {
+    "id": "1610612745",
+    "total": {
+      "pts": 91,
+      "fgm": 35,
+      "fga": 104,
+      "f2m": 28,
+      "f2a": 80,
+      "f3m": 7,
+      "f3a": 24,
+      "ftm": 14,
+      "fta": 17,
+      "reb": 75,
+      "oreb": 23,
+      "dreb": 37,
+      "ast": 17,
+      "tov": 14,
+      "stl": 10,
+      "blk": 7,
+      "pf": 12
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "36:46",
+        "pts": 19,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "33:35",
+        "pts": 17,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "32:32",
+        "pts": 14,
+        "reb": 13,
+        "ast": 5
+      },
+      {
+        "no": "20",
+        "name": "JOSH OKOGIE",
+        "min": "22:00",
+        "pts": 5,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "39:36",
+        "pts": 13,
+        "reb": 9,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612760",
+    "total": {
+      "pts": 111,
+      "fgm": 41,
+      "fga": 89,
+      "f2m": 25,
+      "f2a": 48,
+      "f3m": 16,
+      "f3a": 41,
+      "ftm": 13,
+      "fta": 15,
+      "reb": 49,
+      "oreb": 7,
+      "dreb": 37,
+      "ast": 25,
+      "tov": 11,
+      "stl": 9,
+      "blk": 12,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "20:50",
+        "pts": 13,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "JALEN WILLIAMS",
+        "min": "31:18",
+        "pts": 6,
+        "reb": 5,
+        "ast": 10
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "28:49",
+        "pts": 18,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "AARON WIGGINS",
+        "min": "19:07",
+        "pts": 5,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "32:39",
+        "pts": 20,
+        "reb": 2,
+        "ast": 4
+      }
+    ]
+  }
+}

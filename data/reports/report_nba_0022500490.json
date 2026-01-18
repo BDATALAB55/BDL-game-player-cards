@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500490",
+  "date": "2026.01.03",
+  "venue": "Frost Bank Center",
+  "attendance": 18652,
+  "home": {
+    "id": "1610612759",
+    "total": {
+      "pts": 110,
+      "fgm": 40,
+      "fga": 93,
+      "f2m": 30,
+      "f2a": 62,
+      "f3m": 10,
+      "f3a": 31,
+      "ftm": 20,
+      "fta": 23,
+      "reb": 53,
+      "oreb": 12,
+      "dreb": 36,
+      "ast": 27,
+      "tov": 6,
+      "stl": 8,
+      "blk": 7,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "33:25",
+        "pts": 20,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "31:54",
+        "pts": 14,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "LUKE KORNET",
+        "min": "31:05",
+        "pts": 23,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "34:31",
+        "pts": 19,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "36:46",
+        "pts": 16,
+        "reb": 5,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612757",
+    "total": {
+      "pts": 115,
+      "fgm": 40,
+      "fga": 92,
+      "f2m": 21,
+      "f2a": 47,
+      "f3m": 19,
+      "f3a": 45,
+      "ftm": 16,
+      "fta": 27,
+      "reb": 68,
+      "oreb": 16,
+      "dreb": 36,
+      "ast": 24,
+      "tov": 11,
+      "stl": 3,
+      "blk": 4,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "KRIS MURRAY",
+        "min": "27:13",
+        "pts": 6,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "35:47",
+        "pts": 20,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "34:18",
+        "pts": 24,
+        "reb": 12,
+        "ast": 4
+      },
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "38:50",
+        "pts": 29,
+        "reb": 11,
+        "ast": 10
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "28:19",
+        "pts": 6,
+        "reb": 3,
+        "ast": 3
+      }
+    ]
+  }
+}

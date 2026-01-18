@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500327",
+  "date": "2025.12.03",
+  "venue": "State Farm Arena",
+  "attendance": 16470,
+  "home": {
+    "id": "1610612737",
+    "total": {
+      "pts": 92,
+      "fgm": 34,
+      "fga": 85,
+      "f2m": 21,
+      "f2a": 46,
+      "f3m": 13,
+      "f3a": 39,
+      "ftm": 11,
+      "fta": 14,
+      "reb": 44,
+      "oreb": 7,
+      "dreb": 31,
+      "ast": 20,
+      "tov": 16,
+      "stl": 9,
+      "blk": 1,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "33:13",
+        "pts": 11,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "18",
+        "name": "MOUHAMED GUEYE",
+        "min": "22:35",
+        "pts": 0,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "33:40",
+        "pts": 7,
+        "reb": 9,
+        "ast": 5
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "34:48",
+        "pts": 15,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "30:39",
+        "pts": 21,
+        "reb": 5,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612746",
+    "total": {
+      "pts": 115,
+      "fgm": 44,
+      "fga": 89,
+      "f2m": 34,
+      "f2a": 57,
+      "f3m": 10,
+      "f3a": 32,
+      "ftm": 17,
+      "fta": 20,
+      "reb": 59,
+      "oreb": 13,
+      "dreb": 41,
+      "ast": 29,
+      "tov": 12,
+      "stl": 12,
+      "blk": 1,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "35:25",
+        "pts": 21,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "32:13",
+        "pts": 15,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "33:01",
+        "pts": 14,
+        "reb": 17,
+        "ast": 5
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "20:31",
+        "pts": 8,
+        "reb": 0,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "36:43",
+        "pts": 27,
+        "reb": 4,
+        "ast": 9
+      }
+    ]
+  }
+}

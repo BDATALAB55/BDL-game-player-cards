@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500413",
+  "date": "2025.12.23",
+  "venue": "Gainbridge Fieldhouse",
+  "attendance": 16509,
+  "home": {
+    "id": "1610612754",
+    "total": {
+      "pts": 94,
+      "fgm": 33,
+      "fga": 81,
+      "f2m": 25,
+      "f2a": 50,
+      "f3m": 8,
+      "f3a": 31,
+      "ftm": 20,
+      "fta": 33,
+      "reb": 53,
+      "oreb": 7,
+      "dreb": 33,
+      "ast": 20,
+      "tov": 12,
+      "stl": 7,
+      "blk": 3,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "00",
+        "name": "BENNEDICT MATHURIN",
+        "min": "33:53",
+        "pts": 13,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "33:29",
+        "pts": 15,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "20:55",
+        "pts": 9,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "55",
+        "name": "ETHAN THOMPSON",
+        "min": "26:07",
+        "pts": 3,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "33:11",
+        "pts": 14,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612749",
+    "total": {
+      "pts": 111,
+      "fgm": 42,
+      "fga": 82,
+      "f2m": 32,
+      "f2a": 52,
+      "f3m": 10,
+      "f3a": 30,
+      "ftm": 17,
+      "fta": 24,
+      "reb": 55,
+      "oreb": 7,
+      "dreb": 41,
+      "ast": 20,
+      "tov": 15,
+      "stl": 6,
+      "blk": 7,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "18",
+        "name": "KYLE KUZMA",
+        "min": "34:36",
+        "pts": 15,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "BOBBY PORTIS",
+        "min": "31:44",
+        "pts": 14,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "27:44",
+        "pts": 10,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "26:00",
+        "pts": 4,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "KEVIN PORTER JR.",
+        "min": "37:51",
+        "pts": 24,
+        "reb": 6,
+        "ast": 5
+      }
+    ]
+  }
+}

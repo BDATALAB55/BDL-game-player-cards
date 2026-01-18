@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500314",
+  "date": "2025.12.01",
+  "venue": "Kia Center",
+  "attendance": 18096,
+  "home": {
+    "id": "1610612753",
+    "total": {
+      "pts": 125,
+      "fgm": 45,
+      "fga": 88,
+      "f2m": 36,
+      "f2a": 55,
+      "f3m": 9,
+      "f3a": 33,
+      "ftm": 26,
+      "fta": 33,
+      "reb": 52,
+      "oreb": 12,
+      "dreb": 34,
+      "ast": 25,
+      "tov": 17,
+      "stl": 12,
+      "blk": 11,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "TRISTAN DA SILVA",
+        "min": "20:50",
+        "pts": 0,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "22",
+        "name": "FRANZ WAGNER",
+        "min": "32:20",
+        "pts": 25,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "30:18",
+        "pts": 17,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "34:27",
+        "pts": 37,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "29:58",
+        "pts": 10,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612741",
+    "total": {
+      "pts": 120,
+      "fgm": 44,
+      "fga": 88,
+      "f2m": 28,
+      "f2a": 51,
+      "f3m": 16,
+      "f3a": 37,
+      "ftm": 16,
+      "fta": 22,
+      "reb": 48,
+      "oreb": 10,
+      "dreb": 33,
+      "ast": 30,
+      "tov": 20,
+      "stl": 9,
+      "blk": 4,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "13",
+        "name": "KEVIN HUERTER",
+        "min": "05:41",
+        "pts": 0,
+        "reb": 0,
+        "ast": 0
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "35:38",
+        "pts": 21,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "9",
+        "name": "NIKOLA VUČEVIĆ",
+        "min": "34:29",
+        "pts": 20,
+        "reb": 11,
+        "ast": 5
+      },
+      {
+        "no": "11",
+        "name": "AYO DOSUNMU",
+        "min": "36:44",
+        "pts": 18,
+        "reb": 3,
+        "ast": 7
+      },
+      {
+        "no": "3",
+        "name": "JOSH GIDDEY",
+        "min": "35:39",
+        "pts": 22,
+        "reb": 9,
+        "ast": 6
+      }
+    ]
+  }
+}

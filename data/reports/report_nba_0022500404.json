@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500404",
+  "date": "2025.12.22",
+  "venue": "Smoothie King Center",
+  "attendance": 16978,
+  "home": {
+    "id": "1610612740",
+    "total": {
+      "pts": 119,
+      "fgm": 44,
+      "fga": 97,
+      "f2m": 36,
+      "f2a": 63,
+      "f3m": 8,
+      "f3a": 34,
+      "ftm": 23,
+      "fta": 27,
+      "reb": 55,
+      "oreb": 14,
+      "dreb": 37,
+      "ast": 28,
+      "tov": 12,
+      "stl": 9,
+      "blk": 2,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "25",
+        "name": "TREY MURPHY III",
+        "min": "37:59",
+        "pts": 11,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "35:13",
+        "pts": 19,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "22",
+        "name": "DERIK QUEEN",
+        "min": "34:09",
+        "pts": 19,
+        "reb": 10,
+        "ast": 6
+      },
+      {
+        "no": "2",
+        "name": "HERBERT JONES",
+        "min": "21:41",
+        "pts": 9,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "JEREMIAH FEARS",
+        "min": "24:06",
+        "pts": 12,
+        "reb": 5,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612742",
+    "total": {
+      "pts": 113,
+      "fgm": 46,
+      "fga": 104,
+      "f2m": 36,
+      "f2a": 71,
+      "f3m": 10,
+      "f3a": 33,
+      "ftm": 11,
+      "fta": 21,
+      "reb": 71,
+      "oreb": 18,
+      "dreb": 39,
+      "ast": 29,
+      "tov": 16,
+      "stl": 9,
+      "blk": 5,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "35:01",
+        "pts": 16,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "28:22",
+        "pts": 8,
+        "reb": 8,
+        "ast": 0
+      },
+      {
+        "no": "3",
+        "name": "ANTHONY DAVIS",
+        "min": "35:20",
+        "pts": 35,
+        "reb": 17,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "29:03",
+        "pts": 15,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "9",
+        "name": "RYAN NEMBHARD",
+        "min": "24:39",
+        "pts": 4,
+        "reb": 4,
+        "ast": 8
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500359",
+  "date": "2025.12.07",
+  "venue": "Spectrum Center",
+  "attendance": 18416,
+  "home": {
+    "id": "1610612766",
+    "total": {
+      "pts": 106,
+      "fgm": 38,
+      "fga": 85,
+      "f2m": 24,
+      "f2a": 39,
+      "f3m": 14,
+      "f3a": 46,
+      "ftm": 16,
+      "fta": 21,
+      "reb": 57,
+      "oreb": 10,
+      "dreb": 37,
+      "ast": 24,
+      "tov": 13,
+      "stl": 7,
+      "blk": 3,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "33:28",
+        "pts": 14,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "MILES BRIDGES",
+        "min": "36:54",
+        "pts": 24,
+        "reb": 9,
+        "ast": 8
+      },
+      {
+        "no": "11",
+        "name": "RYAN KALKBRENNER",
+        "min": "24:30",
+        "pts": 6,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "24",
+        "name": "BRANDON MILLER",
+        "min": "29:32",
+        "pts": 17,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "25",
+        "name": "KJ SIMPSON",
+        "min": "29:18",
+        "pts": 16,
+        "reb": 5,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612743",
+    "total": {
+      "pts": 115,
+      "fgm": 43,
+      "fga": 83,
+      "f2m": 30,
+      "f2a": 48,
+      "f3m": 13,
+      "f3a": 35,
+      "ftm": 16,
+      "fta": 22,
+      "reb": 43,
+      "oreb": 5,
+      "dreb": 30,
+      "ast": 29,
+      "tov": 10,
+      "stl": 8,
+      "blk": 2,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "PEYTON WATSON",
+        "min": "30:25",
+        "pts": 10,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "SPENCER JONES",
+        "min": "24:37",
+        "pts": 8,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "34:50",
+        "pts": 28,
+        "reb": 9,
+        "ast": 11
+      },
+      {
+        "no": "23",
+        "name": "CAMERON JOHNSON",
+        "min": "38:38",
+        "pts": 8,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "35:28",
+        "pts": 34,
+        "reb": 3,
+        "ast": 5
+      }
+    ]
+  }
+}

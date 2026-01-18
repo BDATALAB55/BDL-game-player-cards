@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500423",
+  "date": "2025.12.26",
+  "venue": "State Farm Arena",
+  "attendance": 15664,
+  "home": {
+    "id": "1610612737",
+    "total": {
+      "pts": 111,
+      "fgm": 40,
+      "fga": 85,
+      "f2m": 28,
+      "f2a": 49,
+      "f3m": 12,
+      "f3a": 36,
+      "ftm": 19,
+      "fta": 21,
+      "reb": 47,
+      "oreb": 5,
+      "dreb": 37,
+      "ast": 26,
+      "tov": 21,
+      "stl": 6,
+      "blk": 5,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "20:21",
+        "pts": 5,
+        "reb": 0,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "37:41",
+        "pts": 24,
+        "reb": 9,
+        "ast": 10
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "34:47",
+        "pts": 12,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "35:30",
+        "pts": 8,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "11",
+        "name": "TRAE YOUNG",
+        "min": "32:01",
+        "pts": 30,
+        "reb": 2,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612748",
+    "total": {
+      "pts": 126,
+      "fgm": 49,
+      "fga": 104,
+      "f2m": 38,
+      "f2a": 68,
+      "f3m": 11,
+      "f3a": 36,
+      "ftm": 17,
+      "fta": 18,
+      "reb": 57,
+      "oreb": 13,
+      "dreb": 39,
+      "ast": 29,
+      "tov": 10,
+      "stl": 14,
+      "blk": 2,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "29:40",
+        "pts": 21,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "32:22",
+        "pts": 18,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "KEL'EL WARE",
+        "min": "32:36",
+        "pts": 16,
+        "reb": 13,
+        "ast": 0
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "32:53",
+        "pts": 25,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "29:19",
+        "pts": 6,
+        "reb": 1,
+        "ast": 7
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500481",
+  "date": "2026.01.02",
+  "venue": "Fiserv Forum",
+  "attendance": 17673,
+  "home": {
+    "id": "1610612749",
+    "total": {
+      "pts": 122,
+      "fgm": 45,
+      "fga": 87,
+      "f2m": 29,
+      "f2a": 50,
+      "f3m": 16,
+      "f3a": 37,
+      "ftm": 16,
+      "fta": 18,
+      "reb": 45,
+      "oreb": 8,
+      "dreb": 28,
+      "ast": 31,
+      "tov": 11,
+      "stl": 7,
+      "blk": 4,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "40:43",
+        "pts": 12,
+        "reb": 0,
+        "ast": 3
+      },
+      {
+        "no": "34",
+        "name": "GIANNIS ANTETOKOUNMPO",
+        "min": "29:50",
+        "pts": 30,
+        "reb": 10,
+        "ast": 5
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "22:24",
+        "pts": 1,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "KEVIN PORTER JR.",
+        "min": "36:01",
+        "pts": 10,
+        "reb": 4,
+        "ast": 10
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "36:57",
+        "pts": 29,
+        "reb": 4,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612766",
+    "total": {
+      "pts": 121,
+      "fgm": 40,
+      "fga": 82,
+      "f2m": 22,
+      "f2a": 42,
+      "f3m": 18,
+      "f3a": 40,
+      "ftm": 23,
+      "fta": 28,
+      "reb": 47,
+      "oreb": 8,
+      "dreb": 31,
+      "ast": 27,
+      "tov": 14,
+      "stl": 5,
+      "blk": 3,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "33:45",
+        "pts": 26,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "MILES BRIDGES",
+        "min": "36:37",
+        "pts": 25,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "16",
+        "name": "PJ HALL",
+        "min": "18:53",
+        "pts": 4,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "24",
+        "name": "BRANDON MILLER",
+        "min": "30:17",
+        "pts": 19,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "LAMELO BALL",
+        "min": "25:55",
+        "pts": 12,
+        "reb": 2,
+        "ast": 7
+      }
+    ]
+  }
+}

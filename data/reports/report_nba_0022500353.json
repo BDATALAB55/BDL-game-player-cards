@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500353",
+  "date": "2025.12.06",
+  "venue": "Little Caesars Arena",
+  "attendance": 19931,
+  "home": {
+    "id": "1610612765",
+    "total": {
+      "pts": 124,
+      "fgm": 43,
+      "fga": 86,
+      "f2m": 28,
+      "f2a": 46,
+      "f3m": 15,
+      "f3a": 40,
+      "ftm": 23,
+      "fta": 31,
+      "reb": 63,
+      "oreb": 16,
+      "dreb": 37,
+      "ast": 31,
+      "tov": 15,
+      "stl": 5,
+      "blk": 4,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "27:22",
+        "pts": 13,
+        "reb": 6,
+        "ast": 8
+      },
+      {
+        "no": "28",
+        "name": "ISAIAH STEWART",
+        "min": "25:31",
+        "pts": 19,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "0",
+        "name": "JALEN DUREN",
+        "min": "32:37",
+        "pts": 16,
+        "reb": 16,
+        "ast": 1
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "23:49",
+        "pts": 7,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "31:40",
+        "pts": 23,
+        "reb": 6,
+        "ast": 12
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612749",
+    "total": {
+      "pts": 112,
+      "fgm": 37,
+      "fga": 84,
+      "f2m": 21,
+      "f2a": 46,
+      "f3m": 16,
+      "f3a": 38,
+      "ftm": 22,
+      "fta": 32,
+      "reb": 47,
+      "oreb": 11,
+      "dreb": 25,
+      "ast": 24,
+      "tov": 12,
+      "stl": 11,
+      "blk": 5,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "18",
+        "name": "KYLE KUZMA",
+        "min": "28:42",
+        "pts": 15,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "00",
+        "name": "JERICHO SIMS",
+        "min": "30:35",
+        "pts": 2,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "25:08",
+        "pts": 12,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "KEVIN PORTER JR.",
+        "min": "36:27",
+        "pts": 32,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "22:52",
+        "pts": 10,
+        "reb": 6,
+        "ast": 6
+      }
+    ]
+  }
+}

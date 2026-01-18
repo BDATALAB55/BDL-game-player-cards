@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500588",
+  "date": "2026.01.16",
+  "venue": "Gainbridge Fieldhouse",
+  "attendance": 16753,
+  "home": {
+    "id": "1610612754",
+    "total": {
+      "pts": 127,
+      "fgm": 52,
+      "fga": 101,
+      "f2m": 37,
+      "f2a": 58,
+      "f3m": 15,
+      "f3a": 43,
+      "ftm": 8,
+      "fta": 12,
+      "reb": 51,
+      "oreb": 13,
+      "dreb": 30,
+      "ast": 37,
+      "tov": 7,
+      "stl": 5,
+      "blk": 7,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "JOHNNY FURPHY",
+        "min": "28:38",
+        "pts": 7,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "33:51",
+        "pts": 27,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "29:14",
+        "pts": 29,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "AARON NESMITH",
+        "min": "33:00",
+        "pts": 12,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "33:17",
+        "pts": 19,
+        "reb": 3,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612740",
+    "total": {
+      "pts": 119,
+      "fgm": 41,
+      "fga": 82,
+      "f2m": 28,
+      "f2a": 51,
+      "f3m": 13,
+      "f3a": 31,
+      "ftm": 24,
+      "fta": 30,
+      "reb": 49,
+      "oreb": 8,
+      "dreb": 34,
+      "ast": 22,
+      "tov": 8,
+      "stl": 4,
+      "blk": 4,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "31:41",
+        "pts": 20,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "ZION WILLIAMSON",
+        "min": "33:12",
+        "pts": 27,
+        "reb": 6,
+        "ast": 7
+      },
+      {
+        "no": "22",
+        "name": "DERIK QUEEN",
+        "min": "28:05",
+        "pts": 14,
+        "reb": 12,
+        "ast": 3
+      },
+      {
+        "no": "25",
+        "name": "TREY MURPHY III",
+        "min": "37:37",
+        "pts": 22,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "0",
+        "name": "JEREMIAH FEARS",
+        "min": "31:17",
+        "pts": 16,
+        "reb": 6,
+        "ast": 5
+      }
+    ]
+  }
+}

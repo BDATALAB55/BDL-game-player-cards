@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500560",
+  "date": "2026.01.12",
+  "venue": "Scotiabank Arena",
+  "attendance": 18127,
+  "home": {
+    "id": "1610612761",
+    "total": {
+      "pts": 102,
+      "fgm": 37,
+      "fga": 92,
+      "f2m": 31,
+      "f2a": 55,
+      "f3m": 6,
+      "f3a": 37,
+      "ftm": 22,
+      "fta": 25,
+      "reb": 48,
+      "oreb": 15,
+      "dreb": 23,
+      "ast": 29,
+      "tov": 9,
+      "stl": 7,
+      "blk": 2,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "34:24",
+        "pts": 17,
+        "reb": 10,
+        "ast": 7
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "35:12",
+        "pts": 15,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "12",
+        "name": "COLLIN MURRAY-BOYLES",
+        "min": "31:47",
+        "pts": 12,
+        "reb": 7,
+        "ast": 6
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "32:15",
+        "pts": 18,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "JAMAL SHEAD",
+        "min": "30:18",
+        "pts": 3,
+        "reb": 1,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612755",
+    "total": {
+      "pts": 115,
+      "fgm": 39,
+      "fga": 74,
+      "f2m": 23,
+      "f2a": 38,
+      "f3m": 16,
+      "f3a": 36,
+      "ftm": 21,
+      "fta": 23,
+      "reb": 47,
+      "oreb": 5,
+      "dreb": 31,
+      "ast": 22,
+      "tov": 16,
+      "stl": 4,
+      "blk": 2,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "PAUL GEORGE",
+        "min": "28:35",
+        "pts": 15,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "25",
+        "name": "DOMINICK BARLOW",
+        "min": "25:20",
+        "pts": 4,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "21",
+        "name": "JOEL EMBIID",
+        "min": "35:43",
+        "pts": 27,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "33:29",
+        "pts": 15,
+        "reb": 2,
+        "ast": 8
+      },
+      {
+        "no": "0",
+        "name": "TYRESE MAXEY",
+        "min": "34:55",
+        "pts": 33,
+        "reb": 4,
+        "ast": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500523",
+  "date": "2026.01.07",
+  "venue": "Frost Bank Center",
+  "attendance": 19329,
+  "home": {
+    "id": "1610612759",
+    "total": {
+      "pts": 107,
+      "fgm": 40,
+      "fga": 82,
+      "f2m": 36,
+      "f2a": 57,
+      "f3m": 4,
+      "f3a": 25,
+      "ftm": 23,
+      "fta": 28,
+      "reb": 52,
+      "oreb": 8,
+      "dreb": 42,
+      "ast": 24,
+      "tov": 14,
+      "stl": 10,
+      "blk": 5,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "33:33",
+        "pts": 11,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "29:53",
+        "pts": 7,
+        "reb": 0,
+        "ast": 6
+      },
+      {
+        "no": "7",
+        "name": "LUKE KORNET",
+        "min": "21:11",
+        "pts": 7,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "34:11",
+        "pts": 14,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "29:06",
+        "pts": 15,
+        "reb": 5,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612747",
+    "total": {
+      "pts": 91,
+      "fgm": 34,
+      "fga": 86,
+      "f2m": 25,
+      "f2a": 47,
+      "f3m": 9,
+      "f3a": 39,
+      "ftm": 14,
+      "fta": 22,
+      "reb": 56,
+      "oreb": 10,
+      "dreb": 35,
+      "ast": 16,
+      "tov": 17,
+      "stl": 9,
+      "blk": 2,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "JARRED VANDERBILT",
+        "min": "18:50",
+        "pts": 4,
+        "reb": 0,
+        "ast": 0
+      },
+      {
+        "no": "12",
+        "name": "JAKE LARAVIA",
+        "min": "38:34",
+        "pts": 16,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "28:53",
+        "pts": 9,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "34:28",
+        "pts": 2,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "38:19",
+        "pts": 38,
+        "reb": 10,
+        "ast": 10
+      }
+    ]
+  }
+}

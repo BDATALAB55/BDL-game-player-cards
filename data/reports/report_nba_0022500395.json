@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500395",
+  "date": "2025.12.20",
+  "venue": "Intuit Dome",
+  "attendance": 17927,
+  "home": {
+    "id": "1610612746",
+    "total": {
+      "pts": 103,
+      "fgm": 34,
+      "fga": 80,
+      "f2m": 18,
+      "f2a": 37,
+      "f3m": 16,
+      "f3a": 43,
+      "ftm": 19,
+      "fta": 20,
+      "reb": 59,
+      "oreb": 13,
+      "dreb": 35,
+      "ast": 22,
+      "tov": 16,
+      "stl": 8,
+      "blk": 6,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "41:53",
+        "pts": 32,
+        "reb": 12,
+        "ast": 3
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "31:37",
+        "pts": 17,
+        "reb": 12,
+        "ast": 1
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "10:47",
+        "pts": 5,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "31:36",
+        "pts": 8,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "40:56",
+        "pts": 21,
+        "reb": 4,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612747",
+    "total": {
+      "pts": 88,
+      "fgm": 34,
+      "fga": 88,
+      "f2m": 28,
+      "f2a": 50,
+      "f3m": 6,
+      "f3a": 38,
+      "ftm": 14,
+      "fta": 23,
+      "reb": 51,
+      "oreb": 14,
+      "dreb": 29,
+      "ast": 16,
+      "tov": 11,
+      "stl": 7,
+      "blk": 3,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "37:36",
+        "pts": 36,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "12",
+        "name": "JAKE LARAVIA",
+        "min": "37:12",
+        "pts": 12,
+        "reb": 11,
+        "ast": 6
+      },
+      {
+        "no": "11",
+        "name": "JAXSON HAYES",
+        "min": "30:58",
+        "pts": 8,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "30:36",
+        "pts": 5,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "19:34",
+        "pts": 12,
+        "reb": 5,
+        "ast": 2
+      }
+    ]
+  }
+}

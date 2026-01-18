@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500405",
+  "date": "2025.12.22",
+  "venue": "Ball Arena",
+  "attendance": 19887,
+  "home": {
+    "id": "1610612743",
+    "total": {
+      "pts": 135,
+      "fgm": 46,
+      "fga": 91,
+      "f2m": 22,
+      "f2a": 45,
+      "f3m": 24,
+      "f3a": 46,
+      "ftm": 19,
+      "fta": 25,
+      "reb": 56,
+      "oreb": 9,
+      "dreb": 42,
+      "ast": 37,
+      "tov": 10,
+      "stl": 8,
+      "blk": 7,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "SPENCER JONES",
+        "min": "19:51",
+        "pts": 3,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "PEYTON WATSON",
+        "min": "27:50",
+        "pts": 20,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "28:39",
+        "pts": 14,
+        "reb": 13,
+        "ast": 13
+      },
+      {
+        "no": "23",
+        "name": "CAMERON JOHNSON",
+        "min": "29:10",
+        "pts": 20,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "26:54",
+        "pts": 27,
+        "reb": 6,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612762",
+    "total": {
+      "pts": 112,
+      "fgm": 41,
+      "fga": 96,
+      "f2m": 27,
+      "f2a": 55,
+      "f3m": 14,
+      "f3a": 41,
+      "ftm": 16,
+      "fta": 19,
+      "reb": 56,
+      "oreb": 11,
+      "dreb": 38,
+      "ast": 30,
+      "tov": 14,
+      "stl": 5,
+      "blk": 1,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "SVI MYKHAILIUK",
+        "min": "14:19",
+        "pts": 6,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "LAURI MARKKANEN",
+        "min": "36:12",
+        "pts": 27,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "30",
+        "name": "JUSUF NURKIĆ",
+        "min": "34:32",
+        "pts": 17,
+        "reb": 14,
+        "ast": 6
+      },
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "24:01",
+        "pts": 10,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "33:55",
+        "pts": 20,
+        "reb": 8,
+        "ast": 7
+      }
+    ]
+  }
+}

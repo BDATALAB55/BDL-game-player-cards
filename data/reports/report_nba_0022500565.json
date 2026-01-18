@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500565",
+  "date": "2026.01.13",
+  "venue": "Toyota Center",
+  "attendance": 18055,
+  "home": {
+    "id": "1610612745",
+    "total": {
+      "pts": 119,
+      "fgm": 45,
+      "fga": 88,
+      "f2m": 38,
+      "f2a": 64,
+      "f3m": 7,
+      "f3a": 24,
+      "ftm": 22,
+      "fta": 29,
+      "reb": 61,
+      "oreb": 12,
+      "dreb": 38,
+      "ast": 24,
+      "tov": 9,
+      "stl": 5,
+      "blk": 2,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "39:40",
+        "pts": 28,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "34:25",
+        "pts": 18,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "36:08",
+        "pts": 23,
+        "reb": 7,
+        "ast": 11
+      },
+      {
+        "no": "20",
+        "name": "JOSH OKOGIE",
+        "min": "12:50",
+        "pts": 4,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "42:26",
+        "pts": 23,
+        "reb": 5,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612741",
+    "total": {
+      "pts": 113,
+      "fgm": 41,
+      "fga": 94,
+      "f2m": 29,
+      "f2a": 57,
+      "f3m": 12,
+      "f3a": 37,
+      "ftm": 19,
+      "fta": 23,
+      "reb": 47,
+      "oreb": 14,
+      "dreb": 26,
+      "ast": 24,
+      "tov": 7,
+      "stl": 5,
+      "blk": 3,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "36:39",
+        "pts": 19,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "25",
+        "name": "JALEN SMITH",
+        "min": "36:18",
+        "pts": 14,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "NIKOLA VUČEVIĆ",
+        "min": "37:04",
+        "pts": 14,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "24:46",
+        "pts": 9,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "30",
+        "name": "TRE JONES",
+        "min": "27:09",
+        "pts": 34,
+        "reb": 2,
+        "ast": 7
+      }
+    ]
+  }
+}

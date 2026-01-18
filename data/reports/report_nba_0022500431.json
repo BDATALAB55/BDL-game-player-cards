@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500431",
+  "date": "2025.12.26",
+  "venue": "Moda Center",
+  "attendance": 17839,
+  "home": {
+    "id": "1610612757",
+    "total": {
+      "pts": 103,
+      "fgm": 36,
+      "fga": 80,
+      "f2m": 20,
+      "f2a": 41,
+      "f3m": 16,
+      "f3a": 39,
+      "ftm": 15,
+      "fta": 22,
+      "reb": 51,
+      "oreb": 13,
+      "dreb": 30,
+      "ast": 23,
+      "tov": 15,
+      "stl": 6,
+      "blk": 2,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "KRIS MURRAY",
+        "min": "29:50",
+        "pts": 4,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "39:11",
+        "pts": 20,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "24:41",
+        "pts": 10,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "32:13",
+        "pts": 16,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "39:19",
+        "pts": 29,
+        "reb": 9,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612746",
+    "total": {
+      "pts": 119,
+      "fgm": 35,
+      "fga": 69,
+      "f2m": 15,
+      "f2a": 29,
+      "f3m": 20,
+      "f3a": 40,
+      "ftm": 29,
+      "fta": 31,
+      "reb": 36,
+      "oreb": 4,
+      "dreb": 28,
+      "ast": 21,
+      "tov": 12,
+      "stl": 6,
+      "blk": 5,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "41:02",
+        "pts": 28,
+        "reb": 8,
+        "ast": 6
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "18:49",
+        "pts": 8,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "11",
+        "name": "BROOK LOPEZ",
+        "min": "33:15",
+        "pts": 31,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "33:26",
+        "pts": 7,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "38:56",
+        "pts": 34,
+        "reb": 2,
+        "ast": 6
+      }
+    ]
+  }
+}

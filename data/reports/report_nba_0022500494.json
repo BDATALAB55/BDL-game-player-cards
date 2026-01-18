@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500494",
+  "date": "2026.01.04",
+  "venue": "Rocket Arena",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612739",
+    "total": {
+      "pts": 110,
+      "fgm": 35,
+      "fga": 80,
+      "f2m": 21,
+      "f2a": 38,
+      "f3m": 14,
+      "f3a": 42,
+      "ftm": 26,
+      "fta": 30,
+      "reb": 50,
+      "oreb": 11,
+      "dreb": 33,
+      "ast": 23,
+      "tov": 17,
+      "stl": 11,
+      "blk": 10,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "SAM MERRILL",
+        "min": "27:14",
+        "pts": 15,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "20",
+        "name": "JAYLON TYSON",
+        "min": "25:16",
+        "pts": 6,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "32:45",
+        "pts": 15,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "33:05",
+        "pts": 30,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "10",
+        "name": "DARIUS GARLAND",
+        "min": "32:08",
+        "pts": 16,
+        "reb": 2,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612765",
+    "total": {
+      "pts": 114,
+      "fgm": 39,
+      "fga": 95,
+      "f2m": 24,
+      "f2a": 55,
+      "f3m": 15,
+      "f3a": 40,
+      "ftm": 21,
+      "fta": 21,
+      "reb": 56,
+      "oreb": 14,
+      "dreb": 31,
+      "ast": 25,
+      "tov": 16,
+      "stl": 11,
+      "blk": 9,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "21:42",
+        "pts": 8,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "PAUL REED",
+        "min": "30:08",
+        "pts": 8,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "28",
+        "name": "ISAIAH STEWART",
+        "min": "31:28",
+        "pts": 8,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "29:30",
+        "pts": 12,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "37:02",
+        "pts": 27,
+        "reb": 6,
+        "ast": 7
+      }
+    ]
+  }
+}

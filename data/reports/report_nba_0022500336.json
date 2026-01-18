@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500336",
+  "date": "2025.12.04",
+  "venue": "Scotiabank Arena",
+  "attendance": 19800,
+  "home": {
+    "id": "1610612761",
+    "total": {
+      "pts": 120,
+      "fgm": 44,
+      "fga": 89,
+      "f2m": 29,
+      "f2a": 52,
+      "f3m": 15,
+      "f3a": 37,
+      "ftm": 17,
+      "fta": 21,
+      "reb": 53,
+      "oreb": 14,
+      "dreb": 27,
+      "ast": 39,
+      "tov": 15,
+      "stl": 9,
+      "blk": 8,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "36:19",
+        "pts": 20,
+        "reb": 7,
+        "ast": 7
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "36:08",
+        "pts": 23,
+        "reb": 11,
+        "ast": 9
+      },
+      {
+        "no": "54",
+        "name": "SANDRO MAMUKELASHVILI",
+        "min": "36:38",
+        "pts": 13,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "14",
+        "name": "JA'KOBE WALTER",
+        "min": "24:47",
+        "pts": 17,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "32:01",
+        "pts": 13,
+        "reb": 1,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612747",
+    "total": {
+      "pts": 123,
+      "fgm": 44,
+      "fga": 88,
+      "f2m": 31,
+      "f2a": 57,
+      "f3m": 13,
+      "f3a": 31,
+      "ftm": 22,
+      "fta": 26,
+      "reb": 46,
+      "oreb": 14,
+      "dreb": 24,
+      "ast": 26,
+      "tov": 11,
+      "stl": 7,
+      "blk": 7,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "35:58",
+        "pts": 8,
+        "reb": 6,
+        "ast": 11
+      },
+      {
+        "no": "28",
+        "name": "RUI HACHIMURA",
+        "min": "34:57",
+        "pts": 12,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "31:39",
+        "pts": 17,
+        "reb": 8,
+        "ast": 0
+      },
+      {
+        "no": "15",
+        "name": "AUSTIN REAVES",
+        "min": "40:48",
+        "pts": 44,
+        "reb": 5,
+        "ast": 10
+      },
+      {
+        "no": "7",
+        "name": "GABE VINCENT",
+        "min": "24:19",
+        "pts": 5,
+        "reb": 2,
+        "ast": 4
+      }
+    ]
+  }
+}

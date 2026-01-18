@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500010",
+  "date": "2025.12.25",
+  "venue": "Paycom Center",
+  "attendance": 18203,
+  "home": {
+    "id": "1610612760",
+    "total": {
+      "pts": 102,
+      "fgm": 37,
+      "fga": 95,
+      "f2m": 26,
+      "f2a": 51,
+      "f3m": 11,
+      "f3a": 44,
+      "ftm": 17,
+      "fta": 25,
+      "reb": 57,
+      "oreb": 16,
+      "dreb": 32,
+      "ast": 23,
+      "tov": 7,
+      "stl": 7,
+      "blk": 6,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "JALEN WILLIAMS",
+        "min": "29:01",
+        "pts": 12,
+        "reb": 2,
+        "ast": 6
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "30:33",
+        "pts": 10,
+        "reb": 12,
+        "ast": 2
+      },
+      {
+        "no": "55",
+        "name": "ISAIAH HARTENSTEIN",
+        "min": "23:31",
+        "pts": 13,
+        "reb": 12,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "28:34",
+        "pts": 8,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "36:08",
+        "pts": 22,
+        "reb": 6,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 117,
+      "fgm": 45,
+      "fga": 84,
+      "f2m": 34,
+      "f2a": 55,
+      "f3m": 11,
+      "f3a": 29,
+      "ftm": 16,
+      "fta": 21,
+      "reb": 54,
+      "oreb": 10,
+      "dreb": 39,
+      "ast": 20,
+      "tov": 12,
+      "stl": 3,
+      "blk": 4,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "34:08",
+        "pts": 5,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "30:25",
+        "pts": 15,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "LUKE KORNET",
+        "min": "21:34",
+        "pts": 6,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "31:37",
+        "pts": 19,
+        "reb": 4,
+        "ast": 7
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "32:52",
+        "pts": 29,
+        "reb": 4,
+        "ast": 3
+      }
+    ]
+  }
+}

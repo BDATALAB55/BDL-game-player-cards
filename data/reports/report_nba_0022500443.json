@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500443",
+  "date": "2025.12.28",
+  "venue": "Capital One Arena",
+  "attendance": 16681,
+  "home": {
+    "id": "1610612764",
+    "total": {
+      "pts": 116,
+      "fgm": 42,
+      "fga": 99,
+      "f2m": 34,
+      "f2a": 66,
+      "f3m": 8,
+      "f3a": 33,
+      "ftm": 24,
+      "fta": 25,
+      "reb": 63,
+      "oreb": 15,
+      "dreb": 39,
+      "ast": 26,
+      "tov": 19,
+      "stl": 9,
+      "blk": 12,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "28:44",
+        "pts": 14,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "KHRIS MIDDLETON",
+        "min": "22:36",
+        "pts": 10,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "26:14",
+        "pts": 20,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "12",
+        "name": "TRE JOHNSON",
+        "min": "25:31",
+        "pts": 14,
+        "reb": 0,
+        "ast": 4
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "32:31",
+        "pts": 16,
+        "reb": 4,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612763",
+    "total": {
+      "pts": 112,
+      "fgm": 43,
+      "fga": 103,
+      "f2m": 34,
+      "f2a": 71,
+      "f3m": 9,
+      "f3a": 32,
+      "ftm": 17,
+      "fta": 21,
+      "reb": 60,
+      "oreb": 10,
+      "dreb": 33,
+      "ast": 27,
+      "tov": 16,
+      "stl": 14,
+      "blk": 8,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "27:29",
+        "pts": 11,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "35:02",
+        "pts": 31,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "SANTI ALDAMA",
+        "min": "35:29",
+        "pts": 14,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "23",
+        "name": "CEDRIC COWARD",
+        "min": "22:44",
+        "pts": 11,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "12",
+        "name": "JA MORANT",
+        "min": "27:27",
+        "pts": 21,
+        "reb": 0,
+        "ast": 7
+      }
+    ]
+  }
+}

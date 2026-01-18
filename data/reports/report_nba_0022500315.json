@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500315",
+  "date": "2025.12.01",
+  "venue": "Ball Arena",
+  "attendance": 19587,
+  "home": {
+    "id": "1610612743",
+    "total": {
+      "pts": 121,
+      "fgm": 47,
+      "fga": 99,
+      "f2m": 35,
+      "f2a": 62,
+      "f3m": 12,
+      "f3a": 37,
+      "ftm": 15,
+      "fta": 18,
+      "reb": 54,
+      "oreb": 12,
+      "dreb": 35,
+      "ast": 37,
+      "tov": 7,
+      "stl": 5,
+      "blk": 5,
+      "pf": 11
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "SPENCER JONES",
+        "min": "38:53",
+        "pts": 28,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "PEYTON WATSON",
+        "min": "34:31",
+        "pts": 15,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "37:00",
+        "pts": 29,
+        "reb": 20,
+        "ast": 13
+      },
+      {
+        "no": "23",
+        "name": "CAMERON JOHNSON",
+        "min": "36:19",
+        "pts": 10,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "26:29",
+        "pts": 10,
+        "reb": 4,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612742",
+    "total": {
+      "pts": 131,
+      "fgm": 53,
+      "fga": 95,
+      "f2m": 37,
+      "f2a": 64,
+      "f3m": 16,
+      "f3a": 31,
+      "ftm": 9,
+      "fta": 14,
+      "reb": 49,
+      "oreb": 7,
+      "dreb": 36,
+      "ast": 35,
+      "tov": 8,
+      "stl": 4,
+      "blk": 4,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "33:26",
+        "pts": 24,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "32:37",
+        "pts": 9,
+        "reb": 7,
+        "ast": 6
+      },
+      {
+        "no": "3",
+        "name": "ANTHONY DAVIS",
+        "min": "32:25",
+        "pts": 32,
+        "reb": 13,
+        "ast": 4
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "29:17",
+        "pts": 9,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "RYAN NEMBHARD",
+        "min": "34:51",
+        "pts": 28,
+        "reb": 3,
+        "ast": 10
+      }
+    ]
+  }
+}

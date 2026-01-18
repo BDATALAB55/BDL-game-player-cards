@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500509",
+  "date": "2026.01.05",
+  "venue": "Moda Center",
+  "attendance": 16785,
+  "home": {
+    "id": "1610612757",
+    "total": {
+      "pts": 137,
+      "fgm": 49,
+      "fga": 93,
+      "f2m": 30,
+      "f2a": 45,
+      "f3m": 19,
+      "f3a": 48,
+      "ftm": 20,
+      "fta": 21,
+      "reb": 49,
+      "oreb": 14,
+      "dreb": 31,
+      "ast": 32,
+      "tov": 13,
+      "stl": 9,
+      "blk": 4,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "KRIS MURRAY",
+        "min": "26:40",
+        "pts": 10,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "35:16",
+        "pts": 15,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "33:03",
+        "pts": 12,
+        "reb": 17,
+        "ast": 2
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "27:20",
+        "pts": 29,
+        "reb": 5,
+        "ast": 7
+      },
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "28:46",
+        "pts": 33,
+        "reb": 8,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612762",
+    "total": {
+      "pts": 117,
+      "fgm": 45,
+      "fga": 92,
+      "f2m": 32,
+      "f2a": 61,
+      "f3m": 13,
+      "f3a": 31,
+      "ftm": 14,
+      "fta": 17,
+      "reb": 47,
+      "oreb": 14,
+      "dreb": 28,
+      "ast": 32,
+      "tov": 15,
+      "stl": 11,
+      "blk": 2,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "SVI MYKHAILIUK",
+        "min": "20:01",
+        "pts": 8,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "LAURI MARKKANEN",
+        "min": "31:39",
+        "pts": 22,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "30",
+        "name": "JUSUF NURKIĆ",
+        "min": "30:48",
+        "pts": 21,
+        "reb": 12,
+        "ast": 5
+      },
+      {
+        "no": "28",
+        "name": "BRICE SENSABAUGH",
+        "min": "22:45",
+        "pts": 8,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "32:49",
+        "pts": 15,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  }
+}

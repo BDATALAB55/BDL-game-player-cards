@@ -1,0 +1,134 @@
+{
+  "gameId": "0022501212",
+  "date": "2025.12.12",
+  "venue": "Capital One Arena",
+  "attendance": 15465,
+  "home": {
+    "id": "1610612764",
+    "total": {
+      "pts": 126,
+      "fgm": 42,
+      "fga": 86,
+      "f2m": 26,
+      "f2a": 42,
+      "f3m": 16,
+      "f3a": 44,
+      "ftm": 26,
+      "fta": 32,
+      "reb": 58,
+      "oreb": 12,
+      "dreb": 37,
+      "ast": 29,
+      "tov": 16,
+      "stl": 6,
+      "blk": 6,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "JUSTIN CHAMPAGNIE",
+        "min": "17:54",
+        "pts": 3,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "26:20",
+        "pts": 15,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "35",
+        "name": "MARVIN BAGLEY III",
+        "min": "33:16",
+        "pts": 15,
+        "reb": 13,
+        "ast": 4
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "41:28",
+        "pts": 27,
+        "reb": 6,
+        "ast": 8
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "36:39",
+        "pts": 27,
+        "reb": 4,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612739",
+    "total": {
+      "pts": 130,
+      "fgm": 41,
+      "fga": 97,
+      "f2m": 26,
+      "f2a": 44,
+      "f3m": 15,
+      "f3a": 53,
+      "ftm": 33,
+      "fta": 36,
+      "reb": 52,
+      "oreb": 15,
+      "dreb": 33,
+      "ast": 28,
+      "tov": 7,
+      "stl": 11,
+      "blk": 1,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "JAYLON TYSON",
+        "min": "30:54",
+        "pts": 13,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "12",
+        "name": "DE'ANDRE HUNTER",
+        "min": "27:07",
+        "pts": 15,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "36:14",
+        "pts": 23,
+        "reb": 13,
+        "ast": 6
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "35:13",
+        "pts": 48,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "10",
+        "name": "DARIUS GARLAND",
+        "min": "35:19",
+        "pts": 18,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  }
+}

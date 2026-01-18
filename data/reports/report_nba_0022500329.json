@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500329",
+  "date": "2025.12.03",
+  "venue": "United Center",
+  "attendance": 20633,
+  "home": {
+    "id": "1610612741",
+    "total": {
+      "pts": 103,
+      "fgm": 38,
+      "fga": 90,
+      "f2m": 31,
+      "f2a": 60,
+      "f3m": 7,
+      "f3a": 30,
+      "ftm": 20,
+      "fta": 25,
+      "reb": 52,
+      "oreb": 11,
+      "dreb": 31,
+      "ast": 20,
+      "tov": 16,
+      "stl": 14,
+      "blk": 1,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "15",
+        "name": "JULIAN PHILLIPS",
+        "min": "28:20",
+        "pts": 5,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "32:46",
+        "pts": 14,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "9",
+        "name": "NIKOLA VUČEVIĆ",
+        "min": "33:23",
+        "pts": 16,
+        "reb": 11,
+        "ast": 0
+      },
+      {
+        "no": "11",
+        "name": "AYO DOSUNMU",
+        "min": "36:04",
+        "pts": 16,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "JOSH GIDDEY",
+        "min": "36:01",
+        "pts": 28,
+        "reb": 11,
+        "ast": 11
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612751",
+    "total": {
+      "pts": 113,
+      "fgm": 38,
+      "fga": 78,
+      "f2m": 19,
+      "f2a": 32,
+      "f3m": 19,
+      "f3a": 46,
+      "ftm": 18,
+      "fta": 22,
+      "reb": 50,
+      "oreb": 7,
+      "dreb": 35,
+      "ast": 30,
+      "tov": 20,
+      "stl": 12,
+      "blk": 8,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "33:35",
+        "pts": 33,
+        "reb": 10,
+        "ast": 5
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "33:59",
+        "pts": 20,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "35:27",
+        "pts": 14,
+        "reb": 8,
+        "ast": 9
+      },
+      {
+        "no": "13",
+        "name": "TYRESE MARTIN",
+        "min": "21:31",
+        "pts": 4,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "25:00",
+        "pts": 10,
+        "reb": 0,
+        "ast": 4
+      }
+    ]
+  }
+}

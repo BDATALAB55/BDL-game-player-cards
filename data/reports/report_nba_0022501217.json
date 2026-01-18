@@ -1,0 +1,134 @@
+{
+  "gameId": "0022501217",
+  "date": "2025.12.14",
+  "venue": "State Farm Arena",
+  "attendance": 16250,
+  "home": {
+    "id": "1610612737",
+    "total": {
+      "pts": 120,
+      "fgm": 43,
+      "fga": 99,
+      "f2m": 26,
+      "f2a": 66,
+      "f3m": 17,
+      "f3a": 33,
+      "ftm": 17,
+      "fta": 21,
+      "reb": 67,
+      "oreb": 18,
+      "dreb": 39,
+      "ast": 33,
+      "tov": 16,
+      "stl": 8,
+      "blk": 6,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "21:22",
+        "pts": 15,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "35:04",
+        "pts": 12,
+        "reb": 10,
+        "ast": 12
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "36:26",
+        "pts": 20,
+        "reb": 15,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "38:42",
+        "pts": 27,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "34:05",
+        "pts": 12,
+        "reb": 7,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612755",
+    "total": {
+      "pts": 117,
+      "fgm": 38,
+      "fga": 101,
+      "f2m": 21,
+      "f2a": 60,
+      "f3m": 17,
+      "f3a": 41,
+      "ftm": 24,
+      "fta": 29,
+      "reb": 61,
+      "oreb": 21,
+      "dreb": 33,
+      "ast": 25,
+      "tov": 11,
+      "stl": 10,
+      "blk": 10,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "PAUL GEORGE",
+        "min": "33:22",
+        "pts": 35,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "25",
+        "name": "DOMINICK BARLOW",
+        "min": "27:10",
+        "pts": 11,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "JOEL EMBIID",
+        "min": "30:11",
+        "pts": 22,
+        "reb": 14,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "QUENTIN GRIMES",
+        "min": "38:38",
+        "pts": 14,
+        "reb": 2,
+        "ast": 7
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "38:36",
+        "pts": 26,
+        "reb": 6,
+        "ast": 2
+      }
+    ]
+  }
+}

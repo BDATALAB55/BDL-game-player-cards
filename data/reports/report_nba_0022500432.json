@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500432",
+  "date": "2025.12.27",
+  "venue": "Golden 1 Center",
+  "attendance": 17832,
+  "home": {
+    "id": "1610612758",
+    "total": {
+      "pts": 113,
+      "fgm": 45,
+      "fga": 104,
+      "f2m": 28,
+      "f2a": 66,
+      "f3m": 17,
+      "f3a": 38,
+      "ftm": 6,
+      "fta": 8,
+      "reb": 54,
+      "oreb": 14,
+      "dreb": 36,
+      "ast": 32,
+      "tov": 11,
+      "stl": 16,
+      "blk": 7,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "27:46",
+        "pts": 9,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "9",
+        "name": "PRECIOUS ACHIUWA",
+        "min": "25:18",
+        "pts": 5,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "26:59",
+        "pts": 19,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "KEON ELLIS",
+        "min": "32:20",
+        "pts": 21,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "27:55",
+        "pts": 21,
+        "reb": 5,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612742",
+    "total": {
+      "pts": 107,
+      "fgm": 40,
+      "fga": 87,
+      "f2m": 27,
+      "f2a": 60,
+      "f3m": 13,
+      "f3a": 27,
+      "ftm": 14,
+      "fta": 20,
+      "reb": 61,
+      "oreb": 11,
+      "dreb": 40,
+      "ast": 23,
+      "tov": 19,
+      "stl": 6,
+      "blk": 8,
+      "pf": 11
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "34:13",
+        "pts": 23,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "33:49",
+        "pts": 17,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "23:02",
+        "pts": 11,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "29:56",
+        "pts": 9,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "9",
+        "name": "RYAN NEMBHARD",
+        "min": "16:47",
+        "pts": 9,
+        "reb": 2,
+        "ast": 3
+      }
+    ]
+  }
+}

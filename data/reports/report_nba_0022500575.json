@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500575",
+  "date": "2026.01.14",
+  "venue": "American Airlines Center",
+  "attendance": 18888,
+  "home": {
+    "id": "1610612742",
+    "total": {
+      "pts": 109,
+      "fgm": 41,
+      "fga": 93,
+      "f2m": 36,
+      "f2a": 59,
+      "f3m": 5,
+      "f3a": 34,
+      "ftm": 22,
+      "fta": 33,
+      "reb": 62,
+      "oreb": 13,
+      "dreb": 34,
+      "ast": 16,
+      "tov": 6,
+      "stl": 6,
+      "blk": 3,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "14:49",
+        "pts": 6,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "30:58",
+        "pts": 12,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "17:51",
+        "pts": 6,
+        "reb": 10,
+        "ast": 0
+      },
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "38:03",
+        "pts": 24,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "JADEN HARDY",
+        "min": "28:29",
+        "pts": 8,
+        "reb": 4,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612743",
+    "total": {
+      "pts": 118,
+      "fgm": 42,
+      "fga": 85,
+      "f2m": 26,
+      "f2a": 47,
+      "f3m": 16,
+      "f3a": 38,
+      "ftm": 18,
+      "fta": 22,
+      "reb": 48,
+      "oreb": 7,
+      "dreb": 32,
+      "ast": 21,
+      "tov": 9,
+      "stl": 4,
+      "blk": 1,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "SPENCER JONES",
+        "min": "32:15",
+        "pts": 10,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "PEYTON WATSON",
+        "min": "30:39",
+        "pts": 18,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "32",
+        "name": "AARON GORDON",
+        "min": "29:55",
+        "pts": 22,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "24",
+        "name": "JALEN PICKETT",
+        "min": "27:34",
+        "pts": 9,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "38:09",
+        "pts": 33,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  }
+}

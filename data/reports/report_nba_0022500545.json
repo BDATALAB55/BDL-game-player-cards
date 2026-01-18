@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500545",
+  "date": "2026.01.10",
+  "venue": "TD Garden",
+  "attendance": 19156,
+  "home": {
+    "id": "1610612738",
+    "total": {
+      "pts": 95,
+      "fgm": 38,
+      "fga": 93,
+      "f2m": 22,
+      "f2a": 49,
+      "f3m": 16,
+      "f3a": 44,
+      "ftm": 3,
+      "fta": 4,
+      "reb": 57,
+      "oreb": 9,
+      "dreb": 43,
+      "ast": 22,
+      "tov": 10,
+      "stl": 5,
+      "blk": 5,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "43:22",
+        "pts": 27,
+        "reb": 8,
+        "ast": 7
+      },
+      {
+        "no": "28",
+        "name": "HUGO GONZÁLEZ",
+        "min": "12:44",
+        "pts": 0,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "23:48",
+        "pts": 9,
+        "reb": 13,
+        "ast": 2
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "28:31",
+        "pts": 4,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "42:05",
+        "pts": 29,
+        "reb": 9,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 100,
+      "fgm": 38,
+      "fga": 95,
+      "f2m": 28,
+      "f2a": 51,
+      "f3m": 10,
+      "f3a": 44,
+      "ftm": 14,
+      "fta": 20,
+      "reb": 62,
+      "oreb": 12,
+      "dreb": 41,
+      "ast": 22,
+      "tov": 8,
+      "stl": 5,
+      "blk": 4,
+      "pf": 13
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "34:53",
+        "pts": 12,
+        "reb": 13,
+        "ast": 3
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "26:19",
+        "pts": 6,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "LUKE KORNET",
+        "min": "24:21",
+        "pts": 5,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "36:22",
+        "pts": 21,
+        "reb": 9,
+        "ast": 6
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "26:36",
+        "pts": 9,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  }
+}

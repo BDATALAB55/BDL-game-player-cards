@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500542",
+  "date": "2026.01.10",
+  "venue": "Rocket Arena",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612739",
+    "total": {
+      "pts": 146,
+      "fgm": 55,
+      "fga": 92,
+      "f2m": 40,
+      "f2a": 61,
+      "f3m": 15,
+      "f3a": 31,
+      "ftm": 21,
+      "fta": 25,
+      "reb": 39,
+      "oreb": 8,
+      "dreb": 23,
+      "ast": 38,
+      "tov": 9,
+      "stl": 10,
+      "blk": 2,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "SAM MERRILL",
+        "min": "25:30",
+        "pts": 20,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "31:33",
+        "pts": 24,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "28:10",
+        "pts": 16,
+        "reb": 11,
+        "ast": 4
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "31:25",
+        "pts": 28,
+        "reb": 3,
+        "ast": 8
+      },
+      {
+        "no": "10",
+        "name": "DARIUS GARLAND",
+        "min": "28:42",
+        "pts": 22,
+        "reb": 0,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612750",
+    "total": {
+      "pts": 134,
+      "fgm": 51,
+      "fga": 89,
+      "f2m": 35,
+      "f2a": 57,
+      "f3m": 16,
+      "f3a": 32,
+      "ftm": 16,
+      "fta": 20,
+      "reb": 44,
+      "oreb": 11,
+      "dreb": 29,
+      "ast": 31,
+      "tov": 15,
+      "stl": 8,
+      "blk": 7,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JADEN MCDANIELS",
+        "min": "26:40",
+        "pts": 12,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "30",
+        "name": "JULIUS RANDLE",
+        "min": "30:48",
+        "pts": 20,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "27",
+        "name": "RUDY GOBERT",
+        "min": "31:24",
+        "pts": 8,
+        "reb": 12,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "ANTHONY EDWARDS",
+        "min": "35:08",
+        "pts": 25,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "DONTE DIVINCENZO",
+        "min": "34:30",
+        "pts": 15,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  }
+}

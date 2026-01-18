@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500463",
+  "date": "2025.12.31",
+  "venue": "State Farm Arena",
+  "attendance": 16345,
+  "home": {
+    "id": "1610612737",
+    "total": {
+      "pts": 126,
+      "fgm": 51,
+      "fga": 104,
+      "f2m": 35,
+      "f2a": 62,
+      "f3m": 16,
+      "f3a": 42,
+      "ftm": 8,
+      "fta": 16,
+      "reb": 62,
+      "oreb": 16,
+      "dreb": 33,
+      "ast": 38,
+      "tov": 8,
+      "stl": 9,
+      "blk": 4,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "28:20",
+        "pts": 9,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "32:13",
+        "pts": 34,
+        "reb": 10,
+        "ast": 6
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "26:59",
+        "pts": 17,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "28:19",
+        "pts": 11,
+        "reb": 8,
+        "ast": 9
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "31:11",
+        "pts": 11,
+        "reb": 0,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612750",
+    "total": {
+      "pts": 102,
+      "fgm": 37,
+      "fga": 87,
+      "f2m": 23,
+      "f2a": 47,
+      "f3m": 14,
+      "f3a": 40,
+      "ftm": 14,
+      "fta": 18,
+      "reb": 53,
+      "oreb": 11,
+      "dreb": 35,
+      "ast": 22,
+      "tov": 14,
+      "stl": 5,
+      "blk": 6,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JADEN MCDANIELS",
+        "min": "21:38",
+        "pts": 8,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "JULIUS RANDLE",
+        "min": "31:29",
+        "pts": 19,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "27",
+        "name": "RUDY GOBERT",
+        "min": "28:27",
+        "pts": 6,
+        "reb": 11,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "ANTHONY EDWARDS",
+        "min": "33:07",
+        "pts": 30,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "DONTE DIVINCENZO",
+        "min": "25:39",
+        "pts": 6,
+        "reb": 2,
+        "ast": 7
+      }
+    ]
+  }
+}

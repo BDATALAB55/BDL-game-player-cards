@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500360",
+  "date": "2025.12.07",
+  "venue": "FedExForum",
+  "attendance": 14189,
+  "home": {
+    "id": "1610612763",
+    "total": {
+      "pts": 119,
+      "fgm": 40,
+      "fga": 89,
+      "f2m": 30,
+      "f2a": 54,
+      "f3m": 10,
+      "f3a": 35,
+      "ftm": 29,
+      "fta": 39,
+      "reb": 65,
+      "oreb": 16,
+      "dreb": 35,
+      "ast": 28,
+      "tov": 22,
+      "stl": 18,
+      "blk": 4,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "25:40",
+        "pts": 16,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "23:50",
+        "pts": 6,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "14",
+        "name": "ZACH EDEY",
+        "min": "21:55",
+        "pts": 12,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "23",
+        "name": "CEDRIC COWARD",
+        "min": "24:39",
+        "pts": 11,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "VINCE WILLIAMS JR.",
+        "min": "16:13",
+        "pts": 5,
+        "reb": 2,
+        "ast": 0
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612757",
+    "total": {
+      "pts": 96,
+      "fgm": 33,
+      "fga": 83,
+      "f2m": 18,
+      "f2a": 40,
+      "f3m": 15,
+      "f3a": 43,
+      "ftm": 15,
+      "fta": 18,
+      "reb": 47,
+      "oreb": 10,
+      "dreb": 30,
+      "ast": 21,
+      "tov": 25,
+      "stl": 8,
+      "blk": 5,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "JERAMI GRANT",
+        "min": "32:08",
+        "pts": 21,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "32:44",
+        "pts": 13,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "16",
+        "name": "YANG HANSEN",
+        "min": "19:13",
+        "pts": 4,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "30:43",
+        "pts": 17,
+        "reb": 7,
+        "ast": 7
+      },
+      {
+        "no": "91",
+        "name": "SIDY CISSOKO",
+        "min": "23:41",
+        "pts": 6,
+        "reb": 4,
+        "ast": 0
+      }
+    ]
+  }
+}

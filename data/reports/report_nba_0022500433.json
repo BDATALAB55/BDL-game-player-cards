@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500433",
+  "date": "2025.12.27",
+  "venue": "Kia Center",
+  "attendance": 19151,
+  "home": {
+    "id": "1610612753",
+    "total": {
+      "pts": 127,
+      "fgm": 46,
+      "fga": 89,
+      "f2m": 36,
+      "f2a": 60,
+      "f3m": 10,
+      "f3a": 29,
+      "ftm": 25,
+      "fta": 37,
+      "reb": 44,
+      "oreb": 9,
+      "dreb": 26,
+      "ast": 32,
+      "tov": 6,
+      "stl": 8,
+      "blk": 0,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "38:05",
+        "pts": 24,
+        "reb": 1,
+        "ast": 6
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "36:00",
+        "pts": 12,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "37:49",
+        "pts": 18,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "ANTHONY BLACK",
+        "min": "30:06",
+        "pts": 38,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "2",
+        "name": "TYUS JONES",
+        "min": "22:42",
+        "pts": 0,
+        "reb": 1,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612743",
+    "total": {
+      "pts": 126,
+      "fgm": 44,
+      "fga": 86,
+      "f2m": 33,
+      "f2a": 57,
+      "f3m": 11,
+      "f3a": 29,
+      "ftm": 27,
+      "fta": 30,
+      "reb": 56,
+      "oreb": 15,
+      "dreb": 34,
+      "ast": 27,
+      "tov": 16,
+      "stl": 5,
+      "blk": 3,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "SPENCER JONES",
+        "min": "34:27",
+        "pts": 14,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "PEYTON WATSON",
+        "min": "34:33",
+        "pts": 15,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "38:01",
+        "pts": 34,
+        "reb": 21,
+        "ast": 12
+      },
+      {
+        "no": "10",
+        "name": "TIM HARDAWAY JR.",
+        "min": "32:48",
+        "pts": 20,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "36:37",
+        "pts": 24,
+        "reb": 5,
+        "ast": 3
+      }
+    ]
+  }
+}

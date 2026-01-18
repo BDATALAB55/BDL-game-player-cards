@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500471",
+  "date": "2026.01.01",
+  "venue": "Barclays Center",
+  "attendance": 18003,
+  "home": {
+    "id": "1610612751",
+    "total": {
+      "pts": 96,
+      "fgm": 34,
+      "fga": 76,
+      "f2m": 24,
+      "f2a": 46,
+      "f3m": 10,
+      "f3a": 30,
+      "ftm": 18,
+      "fta": 30,
+      "reb": 40,
+      "oreb": 10,
+      "dreb": 17,
+      "ast": 18,
+      "tov": 13,
+      "stl": 12,
+      "blk": 2,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "1",
+        "name": "ZIAIRE WILLIAMS",
+        "min": "26:53",
+        "pts": 14,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "25:48",
+        "pts": 11,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "23:58",
+        "pts": 11,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "DANNY WOLF",
+        "min": "29:17",
+        "pts": 9,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "4",
+        "name": "DRAKE POWELL",
+        "min": "25:19",
+        "pts": 8,
+        "reb": 0,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612745",
+    "total": {
+      "pts": 120,
+      "fgm": 47,
+      "fga": 82,
+      "f2m": 35,
+      "f2a": 53,
+      "f3m": 12,
+      "f3a": 29,
+      "ftm": 14,
+      "fta": 18,
+      "reb": 53,
+      "oreb": 13,
+      "dreb": 32,
+      "ast": 28,
+      "tov": 14,
+      "stl": 8,
+      "blk": 7,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "36:33",
+        "pts": 22,
+        "reb": 5,
+        "ast": 11
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "32:24",
+        "pts": 14,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "33:40",
+        "pts": 20,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "17",
+        "name": "TARI EASON",
+        "min": "22:02",
+        "pts": 15,
+        "reb": 9,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "32:27",
+        "pts": 23,
+        "reb": 4,
+        "ast": 3
+      }
+    ]
+  }
+}

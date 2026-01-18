@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500392",
+  "date": "2025.12.20",
+  "venue": "Chase Center",
+  "attendance": 18064,
+  "home": {
+    "id": "1610612744",
+    "total": {
+      "pts": 119,
+      "fgm": 42,
+      "fga": 92,
+      "f2m": 25,
+      "f2a": 43,
+      "f3m": 17,
+      "f3a": 49,
+      "ftm": 18,
+      "fta": 24,
+      "reb": 63,
+      "oreb": 17,
+      "dreb": 32,
+      "ast": 29,
+      "tov": 20,
+      "stl": 9,
+      "blk": 7,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "JIMMY BUTLER III",
+        "min": "34:52",
+        "pts": 25,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "08:14",
+        "pts": 4,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "QUINTEN POST",
+        "min": "26:24",
+        "pts": 7,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "17:33",
+        "pts": 3,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "35:05",
+        "pts": 28,
+        "reb": 10,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612756",
+    "total": {
+      "pts": 116,
+      "fgm": 42,
+      "fga": 88,
+      "f2m": 30,
+      "f2a": 53,
+      "f3m": 12,
+      "f3a": 35,
+      "ftm": 20,
+      "fta": 24,
+      "reb": 44,
+      "oreb": 9,
+      "dreb": 25,
+      "ast": 23,
+      "tov": 14,
+      "stl": 12,
+      "blk": 6,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "31:54",
+        "pts": 22,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "29:44",
+        "pts": 5,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "18:08",
+        "pts": 4,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "33:50",
+        "pts": 38,
+        "reb": 1,
+        "ast": 5
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "34:46",
+        "pts": 16,
+        "reb": 5,
+        "ast": 4
+      }
+    ]
+  }
+}

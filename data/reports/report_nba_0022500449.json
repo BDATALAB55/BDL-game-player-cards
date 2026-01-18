@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500449",
+  "date": "2025.12.29",
+  "venue": "Barclays Center",
+  "attendance": 18163,
+  "home": {
+    "id": "1610612751",
+    "total": {
+      "pts": 107,
+      "fgm": 36,
+      "fga": 80,
+      "f2m": 18,
+      "f2a": 38,
+      "f3m": 18,
+      "f3a": 42,
+      "ftm": 17,
+      "fta": 23,
+      "reb": 41,
+      "oreb": 9,
+      "dreb": 25,
+      "ast": 22,
+      "tov": 15,
+      "stl": 10,
+      "blk": 5,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "36:07",
+        "pts": 27,
+        "reb": 9,
+        "ast": 5
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "24:51",
+        "pts": 11,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "35:43",
+        "pts": 15,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "28:04",
+        "pts": 4,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "32:20",
+        "pts": 23,
+        "reb": 3,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612744",
+    "total": {
+      "pts": 120,
+      "fgm": 41,
+      "fga": 77,
+      "f2m": 31,
+      "f2a": 44,
+      "f3m": 10,
+      "f3a": 33,
+      "ftm": 28,
+      "fta": 34,
+      "reb": 51,
+      "oreb": 6,
+      "dreb": 34,
+      "ast": 26,
+      "tov": 13,
+      "stl": 11,
+      "blk": 5,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "JIMMY BUTLER III",
+        "min": "31:12",
+        "pts": 21,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "24:47",
+        "pts": 7,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "21",
+        "name": "QUINTEN POST",
+        "min": "04:52",
+        "pts": 3,
+        "reb": 0,
+        "ast": 0
+      },
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "11:40",
+        "pts": 4,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "28:36",
+        "pts": 27,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  }
+}

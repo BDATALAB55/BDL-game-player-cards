@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500506",
+  "date": "2026.01.05",
+  "venue": "Paycom Center",
+  "attendance": 18203,
+  "home": {
+    "id": "1610612760",
+    "total": {
+      "pts": 97,
+      "fgm": 34,
+      "fga": 93,
+      "f2m": 23,
+      "f2a": 54,
+      "f3m": 11,
+      "f3a": 39,
+      "ftm": 18,
+      "fta": 27,
+      "reb": 48,
+      "oreb": 13,
+      "dreb": 20,
+      "ast": 18,
+      "tov": 7,
+      "stl": 14,
+      "blk": 5,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "AARON WIGGINS",
+        "min": "24:42",
+        "pts": 11,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "JALEN WILLIAMS",
+        "min": "28:01",
+        "pts": 16,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "25:56",
+        "pts": 15,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "20:06",
+        "pts": 5,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "29:34",
+        "pts": 21,
+        "reb": 2,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612766",
+    "total": {
+      "pts": 124,
+      "fgm": 41,
+      "fga": 77,
+      "f2m": 22,
+      "f2a": 40,
+      "f3m": 19,
+      "f3a": 37,
+      "ftm": 23,
+      "fta": 25,
+      "reb": 59,
+      "oreb": 12,
+      "dreb": 40,
+      "ast": 25,
+      "tov": 21,
+      "stl": 4,
+      "blk": 7,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "27:55",
+        "pts": 23,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "0",
+        "name": "MILES BRIDGES",
+        "min": "33:41",
+        "pts": 17,
+        "reb": 11,
+        "ast": 4
+      },
+      {
+        "no": "14",
+        "name": "MOUSSA DIABATÉ",
+        "min": "28:29",
+        "pts": 9,
+        "reb": 12,
+        "ast": 5
+      },
+      {
+        "no": "24",
+        "name": "BRANDON MILLER",
+        "min": "31:03",
+        "pts": 28,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "LAMELO BALL",
+        "min": "25:12",
+        "pts": 16,
+        "reb": 2,
+        "ast": 2
+      }
+    ]
+  }
+}

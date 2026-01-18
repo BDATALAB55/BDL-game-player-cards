@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500577",
+  "date": "2026.01.14",
+  "venue": "Intuit Dome",
+  "attendance": 15452,
+  "home": {
+    "id": "1610612746",
+    "total": {
+      "pts": 119,
+      "fgm": 39,
+      "fga": 83,
+      "f2m": 25,
+      "f2a": 46,
+      "f3m": 14,
+      "f3a": 37,
+      "ftm": 27,
+      "fta": 27,
+      "reb": 47,
+      "oreb": 7,
+      "dreb": 33,
+      "ast": 25,
+      "tov": 8,
+      "stl": 9,
+      "blk": 5,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "30:10",
+        "pts": 33,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "KOBE SANDERS",
+        "min": "25:37",
+        "pts": 11,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "11",
+        "name": "BROOK LOPEZ",
+        "min": "20:58",
+        "pts": 11,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "23:14",
+        "pts": 4,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "36:35",
+        "pts": 22,
+        "reb": 5,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612764",
+    "total": {
+      "pts": 105,
+      "fgm": 41,
+      "fga": 90,
+      "f2m": 31,
+      "f2a": 52,
+      "f3m": 10,
+      "f3a": 38,
+      "ftm": 13,
+      "fta": 17,
+      "reb": 50,
+      "oreb": 11,
+      "dreb": 30,
+      "ast": 25,
+      "tov": 11,
+      "stl": 5,
+      "blk": 3,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "32:19",
+        "pts": 23,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "22",
+        "name": "KHRIS MIDDLETON",
+        "min": "27:20",
+        "pts": 17,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "13:20",
+        "pts": 4,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "12",
+        "name": "TRE JOHNSON",
+        "min": "27:21",
+        "pts": 10,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "09:46",
+        "pts": 3,
+        "reb": 2,
+        "ast": 0
+      }
+    ]
+  }
+}

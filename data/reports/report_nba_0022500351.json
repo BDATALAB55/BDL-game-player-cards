@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500351",
+  "date": "2025.12.06",
+  "venue": "Capital One Arena",
+  "attendance": 15596,
+  "home": {
+    "id": "1610612764",
+    "total": {
+      "pts": 116,
+      "fgm": 41,
+      "fga": 80,
+      "f2m": 24,
+      "f2a": 42,
+      "f3m": 17,
+      "f3a": 38,
+      "ftm": 17,
+      "fta": 19,
+      "reb": 34,
+      "oreb": 4,
+      "dreb": 22,
+      "ast": 29,
+      "tov": 20,
+      "stl": 6,
+      "blk": 5,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "JUSTIN CHAMPAGNIE",
+        "min": "32:10",
+        "pts": 16,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "36:10",
+        "pts": 15,
+        "reb": 6,
+        "ast": 7
+      },
+      {
+        "no": "35",
+        "name": "MARVIN BAGLEY III",
+        "min": "19:14",
+        "pts": 6,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "36:58",
+        "pts": 14,
+        "reb": 2,
+        "ast": 9
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "35:53",
+        "pts": 28,
+        "reb": 0,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612737",
+    "total": {
+      "pts": 131,
+      "fgm": 52,
+      "fga": 98,
+      "f2m": 39,
+      "f2a": 59,
+      "f3m": 13,
+      "f3a": 39,
+      "ftm": 14,
+      "fta": 14,
+      "reb": 54,
+      "oreb": 15,
+      "dreb": 30,
+      "ast": 36,
+      "tov": 12,
+      "stl": 13,
+      "blk": 4,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "18:45",
+        "pts": 7,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "39:07",
+        "pts": 30,
+        "reb": 12,
+        "ast": 12
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "35:59",
+        "pts": 21,
+        "reb": 9,
+        "ast": 6
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "35:54",
+        "pts": 12,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "32:01",
+        "pts": 17,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  }
+}

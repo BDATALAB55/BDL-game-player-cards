@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500401",
+  "date": "2025.12.21",
+  "venue": "Golden 1 Center",
+  "attendance": 15796,
+  "home": {
+    "id": "1610612758",
+    "total": {
+      "pts": 125,
+      "fgm": 44,
+      "fga": 95,
+      "f2m": 32,
+      "f2a": 63,
+      "f3m": 12,
+      "f3a": 32,
+      "ftm": 25,
+      "fta": 36,
+      "reb": 65,
+      "oreb": 19,
+      "dreb": 36,
+      "ast": 29,
+      "tov": 11,
+      "stl": 8,
+      "blk": 5,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "13",
+        "name": "KEEGAN MURRAY",
+        "min": "46:57",
+        "pts": 26,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "9",
+        "name": "PRECIOUS ACHIUWA",
+        "min": "18:13",
+        "pts": 5,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "37:06",
+        "pts": 12,
+        "reb": 14,
+        "ast": 0
+      },
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "40:08",
+        "pts": 27,
+        "reb": 4,
+        "ast": 9
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "29:20",
+        "pts": 21,
+        "reb": 13,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612745",
+    "total": {
+      "pts": 124,
+      "fgm": 45,
+      "fga": 94,
+      "f2m": 29,
+      "f2a": 56,
+      "f3m": 16,
+      "f3a": 38,
+      "ftm": 18,
+      "fta": 24,
+      "reb": 54,
+      "oreb": 13,
+      "dreb": 34,
+      "ast": 31,
+      "tov": 14,
+      "stl": 9,
+      "blk": 2,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "47:30",
+        "pts": 24,
+        "reb": 10,
+        "ast": 8
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "36:26",
+        "pts": 18,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "40:55",
+        "pts": 28,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "20",
+        "name": "JOSH OKOGIE",
+        "min": "33:42",
+        "pts": 3,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "45:09",
+        "pts": 18,
+        "reb": 9,
+        "ast": 8
+      }
+    ]
+  }
+}

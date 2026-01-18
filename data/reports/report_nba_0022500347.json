@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500347",
+  "date": "2025.12.05",
+  "venue": "FedExForum",
+  "attendance": 15052,
+  "home": {
+    "id": "1610612763",
+    "total": {
+      "pts": 107,
+      "fgm": 42,
+      "fga": 78,
+      "f2m": 32,
+      "f2a": 50,
+      "f3m": 10,
+      "f3a": 28,
+      "ftm": 13,
+      "fta": 18,
+      "reb": 47,
+      "oreb": 4,
+      "dreb": 38,
+      "ast": 28,
+      "tov": 15,
+      "stl": 9,
+      "blk": 4,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "27:16",
+        "pts": 17,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "30:35",
+        "pts": 13,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "14",
+        "name": "ZACH EDEY",
+        "min": "29:25",
+        "pts": 10,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "CEDRIC COWARD",
+        "min": "28:29",
+        "pts": 23,
+        "reb": 14,
+        "ast": 5
+      },
+      {
+        "no": "5",
+        "name": "VINCE WILLIAMS JR.",
+        "min": "19:12",
+        "pts": 3,
+        "reb": 1,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612746",
+    "total": {
+      "pts": 98,
+      "fgm": 35,
+      "fga": 80,
+      "f2m": 21,
+      "f2a": 36,
+      "f3m": 14,
+      "f3a": 44,
+      "ftm": 14,
+      "fta": 17,
+      "reb": 42,
+      "oreb": 5,
+      "dreb": 32,
+      "ast": 22,
+      "tov": 16,
+      "stl": 11,
+      "blk": 2,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "34:41",
+        "pts": 24,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "24:42",
+        "pts": 16,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "34:47",
+        "pts": 10,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "20:44",
+        "pts": 0,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "35:50",
+        "pts": 18,
+        "reb": 2,
+        "ast": 7
+      }
+    ]
+  }
+}

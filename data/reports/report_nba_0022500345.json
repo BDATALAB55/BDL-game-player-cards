@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500345",
+  "date": "2025.12.05",
+  "venue": "United Center",
+  "attendance": 20471,
+  "home": {
+    "id": "1610612741",
+    "total": {
+      "pts": 105,
+      "fgm": 34,
+      "fga": 77,
+      "f2m": 21,
+      "f2a": 42,
+      "f3m": 13,
+      "f3a": 35,
+      "ftm": 24,
+      "fta": 29,
+      "reb": 54,
+      "oreb": 11,
+      "dreb": 35,
+      "ast": 21,
+      "tov": 18,
+      "stl": 7,
+      "blk": 2,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "15",
+        "name": "JULIAN PHILLIPS",
+        "min": "22:39",
+        "pts": 5,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "34:43",
+        "pts": 19,
+        "reb": 12,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "NIKOLA VUČEVIĆ",
+        "min": "26:12",
+        "pts": 8,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "COBY WHITE",
+        "min": "26:26",
+        "pts": 22,
+        "reb": 3,
+        "ast": 6
+      },
+      {
+        "no": "3",
+        "name": "JOSH GIDDEY",
+        "min": "32:59",
+        "pts": 9,
+        "reb": 7,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612754",
+    "total": {
+      "pts": 120,
+      "fgm": 45,
+      "fga": 84,
+      "f2m": 27,
+      "f2a": 45,
+      "f3m": 18,
+      "f3a": 39,
+      "ftm": 12,
+      "fta": 16,
+      "reb": 39,
+      "oreb": 6,
+      "dreb": 29,
+      "ast": 24,
+      "tov": 13,
+      "stl": 13,
+      "blk": 8,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "GARRISON MATHEWS",
+        "min": "14:56",
+        "pts": 3,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "31:23",
+        "pts": 36,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "28:27",
+        "pts": 11,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "00",
+        "name": "BENNEDICT MATHURIN",
+        "min": "38:07",
+        "pts": 28,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "32:50",
+        "pts": 15,
+        "reb": 2,
+        "ast": 7
+      }
+    ]
+  }
+}

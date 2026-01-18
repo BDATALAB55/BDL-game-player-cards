@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500445",
+  "date": "2025.12.28",
+  "venue": "Intuit Dome",
+  "attendance": 17927,
+  "home": {
+    "id": "1610612746",
+    "total": {
+      "pts": 112,
+      "fgm": 35,
+      "fga": 75,
+      "f2m": 21,
+      "f2a": 41,
+      "f3m": 14,
+      "f3a": 34,
+      "ftm": 28,
+      "fta": 29,
+      "reb": 43,
+      "oreb": 8,
+      "dreb": 27,
+      "ast": 18,
+      "tov": 10,
+      "stl": 12,
+      "blk": 6,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "38:37",
+        "pts": 55,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "33",
+        "name": "NICOLAS BATUM",
+        "min": "31:22",
+        "pts": 12,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "11",
+        "name": "BROOK LOPEZ",
+        "min": "35:43",
+        "pts": 7,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "30:26",
+        "pts": 5,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "40:00",
+        "pts": 28,
+        "reb": 4,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612765",
+    "total": {
+      "pts": 99,
+      "fgm": 34,
+      "fga": 82,
+      "f2m": 27,
+      "f2a": 53,
+      "f3m": 7,
+      "f3a": 29,
+      "ftm": 24,
+      "fta": 28,
+      "reb": 53,
+      "oreb": 15,
+      "dreb": 30,
+      "ast": 18,
+      "tov": 13,
+      "stl": 9,
+      "blk": 6,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "23:41",
+        "pts": 6,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "12",
+        "name": "TOBIAS HARRIS",
+        "min": "21:37",
+        "pts": 6,
+        "reb": 0,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "JALEN DUREN",
+        "min": "31:26",
+        "pts": 18,
+        "reb": 14,
+        "ast": 2
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "26:43",
+        "pts": 5,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "32:06",
+        "pts": 27,
+        "reb": 5,
+        "ast": 9
+      }
+    ]
+  }
+}

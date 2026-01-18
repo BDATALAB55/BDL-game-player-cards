@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500408",
+  "date": "2025.12.22",
+  "venue": "Moda Center",
+  "attendance": 19335,
+  "home": {
+    "id": "1610612757",
+    "total": {
+      "pts": 102,
+      "fgm": 33,
+      "fga": 74,
+      "f2m": 26,
+      "f2a": 42,
+      "f3m": 7,
+      "f3a": 32,
+      "ftm": 29,
+      "fta": 43,
+      "reb": 59,
+      "oreb": 9,
+      "dreb": 29,
+      "ast": 21,
+      "tov": 18,
+      "stl": 6,
+      "blk": 6,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "KRIS MURRAY",
+        "min": "27:54",
+        "pts": 5,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "29:22",
+        "pts": 8,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "33:33",
+        "pts": 17,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "34:32",
+        "pts": 25,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "38:54",
+        "pts": 18,
+        "reb": 8,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612765",
+    "total": {
+      "pts": 110,
+      "fgm": 44,
+      "fga": 101,
+      "f2m": 37,
+      "f2a": 71,
+      "f3m": 7,
+      "f3a": 30,
+      "ftm": 15,
+      "fta": 24,
+      "reb": 62,
+      "oreb": 22,
+      "dreb": 26,
+      "ast": 28,
+      "tov": 8,
+      "stl": 11,
+      "blk": 7,
+      "pf": 28
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "27:50",
+        "pts": 18,
+        "reb": 12,
+        "ast": 3
+      },
+      {
+        "no": "12",
+        "name": "TOBIAS HARRIS",
+        "min": "33:00",
+        "pts": 12,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "JALEN DUREN",
+        "min": "23:37",
+        "pts": 26,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "31:37",
+        "pts": 15,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "25:53",
+        "pts": 14,
+        "reb": 6,
+        "ast": 9
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500465",
+  "date": "2025.12.31",
+  "venue": "Rocket Arena",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612739",
+    "total": {
+      "pts": 129,
+      "fgm": 48,
+      "fga": 96,
+      "f2m": 33,
+      "f2a": 58,
+      "f3m": 15,
+      "f3a": 38,
+      "ftm": 18,
+      "fta": 22,
+      "reb": 58,
+      "oreb": 14,
+      "dreb": 40,
+      "ast": 31,
+      "tov": 14,
+      "stl": 7,
+      "blk": 9,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "DEAN WADE",
+        "min": "23:23",
+        "pts": 5,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "28:40",
+        "pts": 16,
+        "reb": 10,
+        "ast": 5
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "26:36",
+        "pts": 16,
+        "reb": 11,
+        "ast": 3
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "29:52",
+        "pts": 34,
+        "reb": 10,
+        "ast": 7
+      },
+      {
+        "no": "10",
+        "name": "DARIUS GARLAND",
+        "min": "28:59",
+        "pts": 19,
+        "reb": 1,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612756",
+    "total": {
+      "pts": 113,
+      "fgm": 42,
+      "fga": 105,
+      "f2m": 27,
+      "f2a": 69,
+      "f3m": 15,
+      "f3a": 36,
+      "ftm": 14,
+      "fta": 16,
+      "reb": 61,
+      "oreb": 19,
+      "dreb": 33,
+      "ast": 23,
+      "tov": 13,
+      "stl": 8,
+      "blk": 5,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "34:29",
+        "pts": 20,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "27:07",
+        "pts": 9,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "23:42",
+        "pts": 2,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "32:42",
+        "pts": 32,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "27:14",
+        "pts": 17,
+        "reb": 6,
+        "ast": 5
+      }
+    ]
+  }
+}

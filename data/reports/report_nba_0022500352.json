@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500352",
+  "date": "2025.12.06",
+  "venue": "Rocket Arena",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612739",
+    "total": {
+      "pts": 94,
+      "fgm": 37,
+      "fga": 107,
+      "f2m": 27,
+      "f2a": 65,
+      "f3m": 10,
+      "f3a": 42,
+      "ftm": 10,
+      "fta": 12,
+      "reb": 68,
+      "oreb": 24,
+      "dreb": 37,
+      "ast": 15,
+      "tov": 12,
+      "stl": 7,
+      "blk": 4,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "JAYLON TYSON",
+        "min": "34:05",
+        "pts": 11,
+        "reb": 11,
+        "ast": 3
+      },
+      {
+        "no": "12",
+        "name": "DE'ANDRE HUNTER",
+        "min": "33:17",
+        "pts": 6,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "35:08",
+        "pts": 18,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "37:09",
+        "pts": 29,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "10",
+        "name": "DARIUS GARLAND",
+        "min": "31:59",
+        "pts": 17,
+        "reb": 5,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612744",
+    "total": {
+      "pts": 99,
+      "fgm": 33,
+      "fga": 86,
+      "f2m": 20,
+      "f2a": 51,
+      "f3m": 13,
+      "f3a": 35,
+      "ftm": 20,
+      "fta": 23,
+      "reb": 60,
+      "oreb": 8,
+      "dreb": 38,
+      "ast": 25,
+      "tov": 13,
+      "stl": 8,
+      "blk": 8,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "WILL RICHARD",
+        "min": "20:36",
+        "pts": 4,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "JONATHAN KUMINGA",
+        "min": "21:30",
+        "pts": 4,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "21",
+        "name": "QUINTEN POST",
+        "min": "31:55",
+        "pts": 12,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "BUDDY HIELD",
+        "min": "26:25",
+        "pts": 13,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "61",
+        "name": "PAT SPENCER",
+        "min": "29:28",
+        "pts": 19,
+        "reb": 4,
+        "ast": 7
+      }
+    ]
+  }
+}

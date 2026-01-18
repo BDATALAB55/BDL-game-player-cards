@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500522",
+  "date": "2026.01.07",
+  "venue": "Madison Square Garden",
+  "attendance": 19812,
+  "home": {
+    "id": "1610612752",
+    "total": {
+      "pts": 123,
+      "fgm": 47,
+      "fga": 94,
+      "f2m": 33,
+      "f2a": 61,
+      "f3m": 14,
+      "f3a": 33,
+      "ftm": 15,
+      "fta": 17,
+      "reb": 59,
+      "oreb": 16,
+      "dreb": 32,
+      "ast": 31,
+      "tov": 10,
+      "stl": 5,
+      "blk": 6,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "31:57",
+        "pts": 20,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "32:57",
+        "pts": 15,
+        "reb": 9,
+        "ast": 5
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "31:12",
+        "pts": 20,
+        "reb": 11,
+        "ast": 7
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "33:19",
+        "pts": 26,
+        "reb": 3,
+        "ast": 7
+      },
+      {
+        "no": "2",
+        "name": "MILES MCBRIDE",
+        "min": "33:29",
+        "pts": 16,
+        "reb": 1,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612746",
+    "total": {
+      "pts": 111,
+      "fgm": 40,
+      "fga": 92,
+      "f2m": 25,
+      "f2a": 50,
+      "f3m": 15,
+      "f3a": 42,
+      "ftm": 16,
+      "fta": 19,
+      "reb": 47,
+      "oreb": 15,
+      "dreb": 25,
+      "ast": 21,
+      "tov": 10,
+      "stl": 7,
+      "blk": 5,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "33:04",
+        "pts": 18,
+        "reb": 10,
+        "ast": 0
+      },
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "36:16",
+        "pts": 25,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "30:30",
+        "pts": 22,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "31:52",
+        "pts": 7,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "37:50",
+        "pts": 23,
+        "reb": 3,
+        "ast": 9
+      }
+    ]
+  }
+}

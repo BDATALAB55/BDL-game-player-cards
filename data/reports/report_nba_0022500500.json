@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500500",
+  "date": "2026.01.04",
+  "venue": "Golden 1 Center",
+  "attendance": 15892,
+  "home": {
+    "id": "1610612758",
+    "total": {
+      "pts": 98,
+      "fgm": 34,
+      "fga": 80,
+      "f2m": 29,
+      "f2a": 55,
+      "f3m": 5,
+      "f3a": 25,
+      "ftm": 25,
+      "fta": 32,
+      "reb": 49,
+      "oreb": 6,
+      "dreb": 32,
+      "ast": 17,
+      "tov": 10,
+      "stl": 10,
+      "blk": 7,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "13",
+        "name": "KEEGAN MURRAY",
+        "min": "26:42",
+        "pts": 12,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "9",
+        "name": "PRECIOUS ACHIUWA",
+        "min": "15:25",
+        "pts": 4,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "24:07",
+        "pts": 6,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "28:43",
+        "pts": 11,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "37:54",
+        "pts": 21,
+        "reb": 6,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612749",
+    "total": {
+      "pts": 115,
+      "fgm": 39,
+      "fga": 87,
+      "f2m": 29,
+      "f2a": 50,
+      "f3m": 10,
+      "f3a": 37,
+      "ftm": 27,
+      "fta": 30,
+      "reb": 56,
+      "oreb": 12,
+      "dreb": 36,
+      "ast": 23,
+      "tov": 13,
+      "stl": 4,
+      "blk": 2,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "31:33",
+        "pts": 1,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "34",
+        "name": "GIANNIS ANTETOKOUNMPO",
+        "min": "31:37",
+        "pts": 37,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "31:55",
+        "pts": 15,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "KEVIN PORTER JR.",
+        "min": "39:44",
+        "pts": 25,
+        "reb": 4,
+        "ast": 10
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "33:52",
+        "pts": 12,
+        "reb": 6,
+        "ast": 3
+      }
+    ]
+  }
+}

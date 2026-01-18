@@ -1,0 +1,134 @@
+{
+  "gameId": "0022501213",
+  "date": "2025.12.12",
+  "venue": "FedExForum",
+  "attendance": 15502,
+  "home": {
+    "id": "1610612763",
+    "total": {
+      "pts": 126,
+      "fgm": 46,
+      "fga": 99,
+      "f2m": 27,
+      "f2a": 58,
+      "f3m": 19,
+      "f3a": 41,
+      "ftm": 15,
+      "fta": 21,
+      "reb": 57,
+      "oreb": 9,
+      "dreb": 40,
+      "ast": 32,
+      "tov": 10,
+      "stl": 4,
+      "blk": 5,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "32:31",
+        "pts": 19,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "26:34",
+        "pts": 12,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "SANTI ALDAMA",
+        "min": "35:46",
+        "pts": 22,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "CEDRIC COWARD",
+        "min": "29:23",
+        "pts": 17,
+        "reb": 12,
+        "ast": 6
+      },
+      {
+        "no": "12",
+        "name": "JA MORANT",
+        "min": "25:14",
+        "pts": 21,
+        "reb": 4,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612762",
+    "total": {
+      "pts": 130,
+      "fgm": 48,
+      "fga": 104,
+      "f2m": 31,
+      "f2a": 57,
+      "f3m": 17,
+      "f3a": 47,
+      "ftm": 17,
+      "fta": 25,
+      "reb": 67,
+      "oreb": 14,
+      "dreb": 44,
+      "ast": 33,
+      "tov": 13,
+      "stl": 6,
+      "blk": 4,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "SVI MYKHAILIUK",
+        "min": "23:41",
+        "pts": 6,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "23",
+        "name": "LAURI MARKKANEN",
+        "min": "35:36",
+        "pts": 26,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "JUSUF NURKIĆ",
+        "min": "27:30",
+        "pts": 13,
+        "reb": 17,
+        "ast": 7
+      },
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "31:27",
+        "pts": 8,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "33:48",
+        "pts": 39,
+        "reb": 6,
+        "ast": 8
+      }
+    ]
+  }
+}

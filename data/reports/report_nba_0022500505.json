@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500505",
+  "date": "2026.01.05",
+  "venue": "Toyota Center",
+  "attendance": 18055,
+  "home": {
+    "id": "1610612745",
+    "total": {
+      "pts": 100,
+      "fgm": 38,
+      "fga": 87,
+      "f2m": 29,
+      "f2a": 50,
+      "f3m": 9,
+      "f3a": 37,
+      "ftm": 15,
+      "fta": 21,
+      "reb": 61,
+      "oreb": 15,
+      "dreb": 36,
+      "ast": 20,
+      "tov": 14,
+      "stl": 5,
+      "blk": 1,
+      "pf": 11
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "38:30",
+        "pts": 26,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "38:23",
+        "pts": 17,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "12",
+        "name": "STEVEN ADAMS",
+        "min": "31:19",
+        "pts": 8,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "17",
+        "name": "TARI EASON",
+        "min": "30:10",
+        "pts": 12,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "37:10",
+        "pts": 17,
+        "reb": 7,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612756",
+    "total": {
+      "pts": 97,
+      "fgm": 37,
+      "fga": 88,
+      "f2m": 23,
+      "f2a": 47,
+      "f3m": 14,
+      "f3a": 41,
+      "ftm": 9,
+      "fta": 12,
+      "reb": 48,
+      "oreb": 11,
+      "dreb": 29,
+      "ast": 23,
+      "tov": 10,
+      "stl": 11,
+      "blk": 0,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "34:15",
+        "pts": 15,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "30:36",
+        "pts": 15,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "20:58",
+        "pts": 4,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "32:50",
+        "pts": 27,
+        "reb": 0,
+        "ast": 3
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "25:25",
+        "pts": 11,
+        "reb": 6,
+        "ast": 4
+      }
+    ]
+  }
+}

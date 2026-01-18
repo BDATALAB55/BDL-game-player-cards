@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500309",
+  "date": "2025.12.01",
+  "venue": "Little Caesars Arena",
+  "attendance": 19008,
+  "home": {
+    "id": "1610612765",
+    "total": {
+      "pts": 99,
+      "fgm": 38,
+      "fga": 86,
+      "f2m": 33,
+      "f2a": 60,
+      "f3m": 5,
+      "f3a": 26,
+      "ftm": 18,
+      "fta": 24,
+      "reb": 68,
+      "oreb": 18,
+      "dreb": 42,
+      "ast": 18,
+      "tov": 22,
+      "stl": 11,
+      "blk": 9,
+      "pf": 12
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "29:37",
+        "pts": 8,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "12",
+        "name": "TOBIAS HARRIS",
+        "min": "26:10",
+        "pts": 9,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "JALEN DUREN",
+        "min": "32:19",
+        "pts": 21,
+        "reb": 11,
+        "ast": 0
+      },
+      {
+        "no": "24",
+        "name": "DANISS JENKINS",
+        "min": "26:39",
+        "pts": 6,
+        "reb": 8,
+        "ast": 6
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "38:07",
+        "pts": 18,
+        "reb": 8,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612737",
+    "total": {
+      "pts": 98,
+      "fgm": 38,
+      "fga": 89,
+      "f2m": 24,
+      "f2a": 49,
+      "f3m": 14,
+      "f3a": 40,
+      "ftm": 8,
+      "fta": 11,
+      "reb": 41,
+      "oreb": 7,
+      "dreb": 27,
+      "ast": 27,
+      "tov": 13,
+      "stl": 15,
+      "blk": 4,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "21:47",
+        "pts": 4,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "37:41",
+        "pts": 29,
+        "reb": 13,
+        "ast": 7
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "35:56",
+        "pts": 20,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "37:26",
+        "pts": 10,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "35:17",
+        "pts": 26,
+        "reb": 3,
+        "ast": 1
+      }
+    ]
+  }
+}

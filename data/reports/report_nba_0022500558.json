@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500558",
+  "date": "2026.01.12",
+  "venue": "Rocket Arena",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612739",
+    "total": {
+      "pts": 112,
+      "fgm": 41,
+      "fga": 92,
+      "f2m": 24,
+      "f2a": 51,
+      "f3m": 17,
+      "f3a": 41,
+      "ftm": 13,
+      "fta": 13,
+      "reb": 39,
+      "oreb": 6,
+      "dreb": 24,
+      "ast": 33,
+      "tov": 13,
+      "stl": 10,
+      "blk": 6,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "SAM MERRILL",
+        "min": "27:43",
+        "pts": 14,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "34:17",
+        "pts": 15,
+        "reb": 9,
+        "ast": 8
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "32:24",
+        "pts": 8,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "33:59",
+        "pts": 21,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "10",
+        "name": "DARIUS GARLAND",
+        "min": "33:35",
+        "pts": 23,
+        "reb": 2,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612762",
+    "total": {
+      "pts": 123,
+      "fgm": 40,
+      "fga": 83,
+      "f2m": 22,
+      "f2a": 42,
+      "f3m": 18,
+      "f3a": 41,
+      "ftm": 25,
+      "fta": 28,
+      "reb": 59,
+      "oreb": 8,
+      "dreb": 42,
+      "ast": 32,
+      "tov": 16,
+      "stl": 7,
+      "blk": 4,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "CODY WILLIAMS",
+        "min": "21:21",
+        "pts": 8,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "LAURI MARKKANEN",
+        "min": "36:18",
+        "pts": 28,
+        "reb": 12,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "JUSUF NURKIĆ",
+        "min": "30:10",
+        "pts": 11,
+        "reb": 17,
+        "ast": 3
+      },
+      {
+        "no": "10",
+        "name": "SVI MYKHAILIUK",
+        "min": "26:11",
+        "pts": 11,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "33:33",
+        "pts": 32,
+        "reb": 5,
+        "ast": 9
+      }
+    ]
+  }
+}

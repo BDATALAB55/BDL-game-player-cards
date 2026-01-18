@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500538",
+  "date": "2026.01.09",
+  "venue": "Mortgage Matchup Center",
+  "attendance": 17071,
+  "home": {
+    "id": "1610612756",
+    "total": {
+      "pts": 112,
+      "fgm": 38,
+      "fga": 85,
+      "f2m": 22,
+      "f2a": 43,
+      "f3m": 16,
+      "f3a": 42,
+      "ftm": 20,
+      "fta": 23,
+      "reb": 43,
+      "oreb": 9,
+      "dreb": 28,
+      "ast": 23,
+      "tov": 9,
+      "stl": 4,
+      "blk": 4,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "32:56",
+        "pts": 27,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "33:15",
+        "pts": 12,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "24:50",
+        "pts": 10,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "38:31",
+        "pts": 31,
+        "reb": 3,
+        "ast": 8
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "27:58",
+        "pts": 6,
+        "reb": 2,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612752",
+    "total": {
+      "pts": 107,
+      "fgm": 37,
+      "fga": 82,
+      "f2m": 21,
+      "f2a": 41,
+      "f3m": 16,
+      "f3a": 41,
+      "ftm": 17,
+      "fta": 21,
+      "reb": 58,
+      "oreb": 16,
+      "dreb": 34,
+      "ast": 22,
+      "tov": 17,
+      "stl": 3,
+      "blk": 1,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "37:52",
+        "pts": 15,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "32:30",
+        "pts": 11,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "32:58",
+        "pts": 15,
+        "reb": 12,
+        "ast": 5
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "37:02",
+        "pts": 27,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "2",
+        "name": "MILES MCBRIDE",
+        "min": "39:29",
+        "pts": 17,
+        "reb": 2,
+        "ast": 2
+      }
+    ]
+  }
+}

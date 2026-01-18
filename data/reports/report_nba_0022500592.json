@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500592",
+  "date": "2026.01.16",
+  "venue": "Golden 1 Center",
+  "attendance": 16339,
+  "home": {
+    "id": "1610612758",
+    "total": {
+      "pts": 128,
+      "fgm": 47,
+      "fga": 81,
+      "f2m": 32,
+      "f2a": 50,
+      "f3m": 15,
+      "f3a": 31,
+      "ftm": 19,
+      "fta": 30,
+      "reb": 58,
+      "oreb": 12,
+      "dreb": 33,
+      "ast": 36,
+      "tov": 18,
+      "stl": 5,
+      "blk": 5,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "32:47",
+        "pts": 17,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "9",
+        "name": "PRECIOUS ACHIUWA",
+        "min": "27:33",
+        "pts": 16,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "21:40",
+        "pts": 4,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "8",
+        "name": "ZACH LAVINE",
+        "min": "32:22",
+        "pts": 16,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "31:03",
+        "pts": 26,
+        "reb": 2,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612764",
+    "total": {
+      "pts": 115,
+      "fgm": 44,
+      "fga": 90,
+      "f2m": 33,
+      "f2a": 56,
+      "f3m": 11,
+      "f3a": 34,
+      "ftm": 16,
+      "fta": 21,
+      "reb": 38,
+      "oreb": 7,
+      "dreb": 27,
+      "ast": 23,
+      "tov": 11,
+      "stl": 9,
+      "blk": 2,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "23:50",
+        "pts": 15,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "9",
+        "name": "JUSTIN CHAMPAGNIE",
+        "min": "26:43",
+        "pts": 15,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "27:43",
+        "pts": 19,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "12",
+        "name": "TRE JOHNSON",
+        "min": "29:44",
+        "pts": 18,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "38:52",
+        "pts": 11,
+        "reb": 2,
+        "ast": 9
+      }
+    ]
+  }
+}

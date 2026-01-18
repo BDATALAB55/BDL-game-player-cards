@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500375",
+  "date": "2025.12.18",
+  "venue": "Smoothie King Center",
+  "attendance": 16766,
+  "home": {
+    "id": "1610612740",
+    "total": {
+      "pts": 133,
+      "fgm": 49,
+      "fga": 97,
+      "f2m": 38,
+      "f2a": 70,
+      "f3m": 11,
+      "f3a": 27,
+      "ftm": 24,
+      "fta": 28,
+      "reb": 48,
+      "oreb": 13,
+      "dreb": 28,
+      "ast": 27,
+      "tov": 12,
+      "stl": 15,
+      "blk": 7,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "25",
+        "name": "TREY MURPHY III",
+        "min": "38:28",
+        "pts": 27,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "34:19",
+        "pts": 29,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "22",
+        "name": "DERIK QUEEN",
+        "min": "35:21",
+        "pts": 16,
+        "reb": 12,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "HERBERT JONES",
+        "min": "38:13",
+        "pts": 18,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "JEREMIAH FEARS",
+        "min": "20:12",
+        "pts": 9,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612745",
+    "total": {
+      "pts": 128,
+      "fgm": 50,
+      "fga": 107,
+      "f2m": 40,
+      "f2a": 75,
+      "f3m": 10,
+      "f3a": 32,
+      "ftm": 18,
+      "fta": 27,
+      "reb": 72,
+      "oreb": 25,
+      "dreb": 33,
+      "ast": 30,
+      "tov": 18,
+      "stl": 6,
+      "blk": 8,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "42:41",
+        "pts": 32,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "44:08",
+        "pts": 12,
+        "reb": 12,
+        "ast": 2
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "35:41",
+        "pts": 28,
+        "reb": 11,
+        "ast": 8
+      },
+      {
+        "no": "20",
+        "name": "JOSH OKOGIE",
+        "min": "30:09",
+        "pts": 10,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "40:35",
+        "pts": 23,
+        "reb": 6,
+        "ast": 4
+      }
+    ]
+  }
+}

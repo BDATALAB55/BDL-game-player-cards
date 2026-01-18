@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500515",
+  "date": "2026.01.06",
+  "venue": "Golden 1 Center",
+  "attendance": 15058,
+  "home": {
+    "id": "1610612758",
+    "total": {
+      "pts": 98,
+      "fgm": 39,
+      "fga": 92,
+      "f2m": 30,
+      "f2a": 61,
+      "f3m": 9,
+      "f3a": 31,
+      "ftm": 11,
+      "fta": 17,
+      "reb": 55,
+      "oreb": 8,
+      "dreb": 35,
+      "ast": 23,
+      "tov": 12,
+      "stl": 11,
+      "blk": 6,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "36:31",
+        "pts": 21,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "9",
+        "name": "PRECIOUS ACHIUWA",
+        "min": "21:53",
+        "pts": 9,
+        "reb": 9,
+        "ast": 0
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "34:41",
+        "pts": 14,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "ZACH LAVINE",
+        "min": "37:14",
+        "pts": 20,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "31:07",
+        "pts": 11,
+        "reb": 6,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612742",
+    "total": {
+      "pts": 100,
+      "fgm": 39,
+      "fga": 96,
+      "f2m": 31,
+      "f2a": 69,
+      "f3m": 8,
+      "f3a": 27,
+      "ftm": 14,
+      "fta": 21,
+      "reb": 68,
+      "oreb": 15,
+      "dreb": 40,
+      "ast": 19,
+      "tov": 16,
+      "stl": 6,
+      "blk": 3,
+      "pf": 12
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "35:00",
+        "pts": 20,
+        "reb": 8,
+        "ast": 6
+      },
+      {
+        "no": "3",
+        "name": "ANTHONY DAVIS",
+        "min": "35:36",
+        "pts": 19,
+        "reb": 16,
+        "ast": 2
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "22:28",
+        "pts": 10,
+        "reb": 13,
+        "ast": 0
+      },
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "31:32",
+        "pts": 15,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "35:52",
+        "pts": 11,
+        "reb": 3,
+        "ast": 2
+      }
+    ]
+  }
+}

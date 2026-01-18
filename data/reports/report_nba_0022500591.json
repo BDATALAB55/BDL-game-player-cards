@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500591",
+  "date": "2026.01.16",
+  "venue": "Toyota Center",
+  "attendance": 18055,
+  "home": {
+    "id": "1610612745",
+    "total": {
+      "pts": 110,
+      "fgm": 39,
+      "fga": 84,
+      "f2m": 27,
+      "f2a": 56,
+      "f3m": 12,
+      "f3a": 28,
+      "ftm": 20,
+      "fta": 34,
+      "reb": 56,
+      "oreb": 10,
+      "dreb": 32,
+      "ast": 19,
+      "tov": 12,
+      "stl": 10,
+      "blk": 5,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "40:01",
+        "pts": 39,
+        "reb": 4,
+        "ast": 7
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "37:36",
+        "pts": 9,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "32:11",
+        "pts": 25,
+        "reb": 14,
+        "ast": 3
+      },
+      {
+        "no": "20",
+        "name": "JOSH OKOGIE",
+        "min": "33:01",
+        "pts": 1,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "35:38",
+        "pts": 14,
+        "reb": 7,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612750",
+    "total": {
+      "pts": 105,
+      "fgm": 37,
+      "fga": 81,
+      "f2m": 26,
+      "f2a": 51,
+      "f3m": 11,
+      "f3a": 30,
+      "ftm": 20,
+      "fta": 35,
+      "reb": 64,
+      "oreb": 13,
+      "dreb": 33,
+      "ast": 21,
+      "tov": 14,
+      "stl": 7,
+      "blk": 7,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JADEN MCDANIELS",
+        "min": "35:03",
+        "pts": 15,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "30",
+        "name": "JULIUS RANDLE",
+        "min": "40:13",
+        "pts": 39,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "27",
+        "name": "RUDY GOBERT",
+        "min": "32:26",
+        "pts": 10,
+        "reb": 13,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "DONTE DIVINCENZO",
+        "min": "39:53",
+        "pts": 8,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "10",
+        "name": "MIKE CONLEY",
+        "min": "26:09",
+        "pts": 6,
+        "reb": 1,
+        "ast": 1
+      }
+    ]
+  }
+}

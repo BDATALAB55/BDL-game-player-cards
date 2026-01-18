@@ -1,0 +1,134 @@
+{
+  "gameId": "0022501211",
+  "date": "2025.12.12",
+  "venue": "Xfinity Mobile Arena",
+  "attendance": 19746,
+  "home": {
+    "id": "1610612755",
+    "total": {
+      "pts": 115,
+      "fgm": 35,
+      "fga": 79,
+      "f2m": 23,
+      "f2a": 42,
+      "f3m": 12,
+      "f3a": 37,
+      "ftm": 33,
+      "fta": 43,
+      "reb": 64,
+      "oreb": 11,
+      "dreb": 39,
+      "ast": 22,
+      "tov": 12,
+      "stl": 6,
+      "blk": 4,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "PAUL GEORGE",
+        "min": "33:07",
+        "pts": 23,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "25",
+        "name": "DOMINICK BARLOW",
+        "min": "34:18",
+        "pts": 10,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "JOEL EMBIID",
+        "min": "31:56",
+        "pts": 39,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "QUENTIN GRIMES",
+        "min": "38:56",
+        "pts": 10,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "39:28",
+        "pts": 22,
+        "reb": 4,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612754",
+    "total": {
+      "pts": 105,
+      "fgm": 38,
+      "fga": 96,
+      "f2m": 25,
+      "f2a": 58,
+      "f3m": 13,
+      "f3a": 38,
+      "ftm": 16,
+      "fta": 19,
+      "reb": 52,
+      "oreb": 12,
+      "dreb": 34,
+      "ast": 26,
+      "tov": 7,
+      "stl": 6,
+      "blk": 4,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "00",
+        "name": "BENNEDICT MATHURIN",
+        "min": "29:47",
+        "pts": 7,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "33:48",
+        "pts": 20,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "27:32",
+        "pts": 13,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "55",
+        "name": "ETHAN THOMPSON",
+        "min": "32:46",
+        "pts": 12,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "35:11",
+        "pts": 18,
+        "reb": 5,
+        "ast": 7
+      }
+    ]
+  }
+}

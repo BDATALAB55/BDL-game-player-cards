@@ -1,0 +1,134 @@
+{
+  "gameId": "0062500001",
+  "date": "2025.12.16",
+  "venue": "T-Mobile Arena",
+  "attendance": 18609,
+  "home": {
+    "id": "1610612752",
+    "total": {
+      "pts": 124,
+      "fgm": 49,
+      "fga": 105,
+      "f2m": 34,
+      "f2a": 65,
+      "f3m": 15,
+      "f3a": 40,
+      "ftm": 11,
+      "fta": 15,
+      "reb": 67,
+      "oreb": 23,
+      "dreb": 36,
+      "ast": 27,
+      "tov": 10,
+      "stl": 7,
+      "blk": 6,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "29:16",
+        "pts": 11,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "40:00",
+        "pts": 28,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "29:40",
+        "pts": 16,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "32:38",
+        "pts": 11,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "41:03",
+        "pts": 25,
+        "reb": 4,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 113,
+      "fgm": 41,
+      "fga": 99,
+      "f2m": 27,
+      "f2a": 60,
+      "f3m": 14,
+      "f3a": 39,
+      "ftm": 17,
+      "fta": 22,
+      "reb": 56,
+      "oreb": 18,
+      "dreb": 24,
+      "ast": 29,
+      "tov": 8,
+      "stl": 4,
+      "blk": 5,
+      "pf": 13
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "33:17",
+        "pts": 12,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "23:28",
+        "pts": 11,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "LUKE KORNET",
+        "min": "22:45",
+        "pts": 14,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "34:54",
+        "pts": 15,
+        "reb": 7,
+        "ast": 12
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "31:40",
+        "pts": 16,
+        "reb": 2,
+        "ast": 9
+      }
+    ]
+  }
+}

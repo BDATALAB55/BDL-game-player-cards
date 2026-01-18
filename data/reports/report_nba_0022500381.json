@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500381",
+  "date": "2025.12.19",
+  "venue": "TD Garden",
+  "attendance": 19156,
+  "home": {
+    "id": "1610612738",
+    "total": {
+      "pts": 129,
+      "fgm": 44,
+      "fga": 82,
+      "f2m": 23,
+      "f2a": 39,
+      "f3m": 21,
+      "f3a": 43,
+      "ftm": 20,
+      "fta": 24,
+      "reb": 55,
+      "oreb": 6,
+      "dreb": 40,
+      "ast": 25,
+      "tov": 14,
+      "stl": 8,
+      "blk": 8,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "34:43",
+        "pts": 30,
+        "reb": 9,
+        "ast": 7
+      },
+      {
+        "no": "27",
+        "name": "JORDAN WALSH",
+        "min": "21:33",
+        "pts": 6,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "25:00",
+        "pts": 10,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "26:52",
+        "pts": 9,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "35:40",
+        "pts": 33,
+        "reb": 5,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612748",
+    "total": {
+      "pts": 116,
+      "fgm": 40,
+      "fga": 102,
+      "f2m": 21,
+      "f2a": 53,
+      "f3m": 19,
+      "f3a": 49,
+      "ftm": 17,
+      "fta": 24,
+      "reb": 58,
+      "oreb": 17,
+      "dreb": 30,
+      "ast": 27,
+      "tov": 13,
+      "stl": 6,
+      "blk": 1,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "11",
+        "name": "JAIME JAQUEZ JR.",
+        "min": "36:19",
+        "pts": 14,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "36:06",
+        "pts": 16,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "7",
+        "name": "KEL'EL WARE",
+        "min": "27:34",
+        "pts": 24,
+        "reb": 14,
+        "ast": 2
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "34:26",
+        "pts": 18,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "25",
+        "name": "KASPARAS JAKUČIONIS",
+        "min": "35:36",
+        "pts": 17,
+        "reb": 6,
+        "ast": 4
+      }
+    ]
+  }
+}

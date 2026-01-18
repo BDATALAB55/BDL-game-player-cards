@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500357",
+  "date": "2025.12.07",
+  "venue": "Madison Square Garden",
+  "attendance": 19812,
+  "home": {
+    "id": "1610612752",
+    "total": {
+      "pts": 106,
+      "fgm": 39,
+      "fga": 91,
+      "f2m": 28,
+      "f2a": 56,
+      "f3m": 11,
+      "f3a": 35,
+      "ftm": 17,
+      "fta": 20,
+      "reb": 56,
+      "oreb": 15,
+      "dreb": 37,
+      "ast": 24,
+      "tov": 11,
+      "stl": 8,
+      "blk": 7,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "27:39",
+        "pts": 21,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "33:35",
+        "pts": 17,
+        "reb": 12,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "MITCHELL ROBINSON",
+        "min": "24:35",
+        "pts": 6,
+        "reb": 13,
+        "ast": 2
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "34:14",
+        "pts": 12,
+        "reb": 6,
+        "ast": 7
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "37:40",
+        "pts": 30,
+        "reb": 2,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612753",
+    "total": {
+      "pts": 100,
+      "fgm": 36,
+      "fga": 94,
+      "f2m": 24,
+      "f2a": 52,
+      "f3m": 12,
+      "f3a": 42,
+      "ftm": 16,
+      "fta": 24,
+      "reb": 65,
+      "oreb": 17,
+      "dreb": 31,
+      "ast": 23,
+      "tov": 11,
+      "stl": 7,
+      "blk": 4,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "24:28",
+        "pts": 16,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "FRANZ WAGNER",
+        "min": "07:17",
+        "pts": 7,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "33:27",
+        "pts": 8,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "33:37",
+        "pts": 16,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "31:46",
+        "pts": 17,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  }
+}

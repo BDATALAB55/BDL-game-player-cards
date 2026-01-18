@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500419",
+  "date": "2025.12.23",
+  "venue": "Delta Center",
+  "attendance": 18186,
+  "home": {
+    "id": "1610612762",
+    "total": {
+      "pts": 128,
+      "fgm": 40,
+      "fga": 90,
+      "f2m": 24,
+      "f2a": 45,
+      "f3m": 16,
+      "f3a": 45,
+      "ftm": 32,
+      "fta": 36,
+      "reb": 50,
+      "oreb": 12,
+      "dreb": 28,
+      "ast": 29,
+      "tov": 13,
+      "stl": 9,
+      "blk": 2,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "SVI MYKHAILIUK",
+        "min": "22:14",
+        "pts": 9,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "42",
+        "name": "KEVIN LOVE",
+        "min": "28:36",
+        "pts": 6,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "22",
+        "name": "KYLE FILIPOWSKI",
+        "min": "34:49",
+        "pts": 25,
+        "reb": 13,
+        "ast": 4
+      },
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "28:59",
+        "pts": 17,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "34:03",
+        "pts": 24,
+        "reb": 2,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612763",
+    "total": {
+      "pts": 137,
+      "fgm": 49,
+      "fga": 88,
+      "f2m": 30,
+      "f2a": 43,
+      "f3m": 19,
+      "f3a": 45,
+      "ftm": 20,
+      "fta": 29,
+      "reb": 53,
+      "oreb": 8,
+      "dreb": 33,
+      "ast": 41,
+      "tov": 15,
+      "stl": 10,
+      "blk": 8,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "45",
+        "name": "GG JACKSON",
+        "min": "29:31",
+        "pts": 18,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "30:12",
+        "pts": 21,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "SANTI ALDAMA",
+        "min": "34:25",
+        "pts": 37,
+        "reb": 5,
+        "ast": 7
+      },
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "31:48",
+        "pts": 12,
+        "reb": 1,
+        "ast": 4
+      },
+      {
+        "no": "24",
+        "name": "CAM SPENCER",
+        "min": "32:13",
+        "pts": 11,
+        "reb": 3,
+        "ast": 13
+      }
+    ]
+  }
+}

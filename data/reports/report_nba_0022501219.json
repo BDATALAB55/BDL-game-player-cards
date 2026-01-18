@@ -1,0 +1,134 @@
+{
+  "gameId": "0022501219",
+  "date": "2025.12.14",
+  "venue": "Barclays Center",
+  "attendance": 16439,
+  "home": {
+    "id": "1610612751",
+    "total": {
+      "pts": 127,
+      "fgm": 45,
+      "fga": 85,
+      "f2m": 26,
+      "f2a": 42,
+      "f3m": 19,
+      "f3a": 43,
+      "ftm": 18,
+      "fta": 19,
+      "reb": 49,
+      "oreb": 6,
+      "dreb": 37,
+      "ast": 33,
+      "tov": 13,
+      "stl": 14,
+      "blk": 4,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "26:24",
+        "pts": 12,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "21:50",
+        "pts": 16,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "25:34",
+        "pts": 10,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "20:33",
+        "pts": 12,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "25:34",
+        "pts": 17,
+        "reb": 3,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612749",
+    "total": {
+      "pts": 82,
+      "fgm": 31,
+      "fga": 79,
+      "f2m": 23,
+      "f2a": 44,
+      "f3m": 8,
+      "f3a": 35,
+      "ftm": 12,
+      "fta": 16,
+      "reb": 44,
+      "oreb": 7,
+      "dreb": 30,
+      "ast": 20,
+      "tov": 20,
+      "stl": 8,
+      "blk": 1,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "18",
+        "name": "KYLE KUZMA",
+        "min": "27:40",
+        "pts": 13,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "GARY TRENT JR.",
+        "min": "28:55",
+        "pts": 20,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "23:57",
+        "pts": 9,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "KEVIN PORTER JR.",
+        "min": "29:43",
+        "pts": 5,
+        "reb": 3,
+        "ast": 7
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "22:27",
+        "pts": 11,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  }
+}

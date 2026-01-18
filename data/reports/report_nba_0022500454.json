@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500454",
+  "date": "2025.12.29",
+  "venue": "Smoothie King Center",
+  "attendance": 17041,
+  "home": {
+    "id": "1610612740",
+    "total": {
+      "pts": 125,
+      "fgm": 44,
+      "fga": 96,
+      "f2m": 30,
+      "f2a": 60,
+      "f3m": 14,
+      "f3a": 36,
+      "ftm": 23,
+      "fta": 27,
+      "reb": 58,
+      "oreb": 16,
+      "dreb": 34,
+      "ast": 27,
+      "tov": 11,
+      "stl": 6,
+      "blk": 8,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "36:33",
+        "pts": 26,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "1",
+        "name": "ZION WILLIAMSON",
+        "min": "28:51",
+        "pts": 32,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "DERIK QUEEN",
+        "min": "28:30",
+        "pts": 7,
+        "reb": 9,
+        "ast": 5
+      },
+      {
+        "no": "25",
+        "name": "TREY MURPHY III",
+        "min": "38:17",
+        "pts": 21,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "JEREMIAH FEARS",
+        "min": "22:10",
+        "pts": 4,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612752",
+    "total": {
+      "pts": 130,
+      "fgm": 46,
+      "fga": 95,
+      "f2m": 26,
+      "f2a": 51,
+      "f3m": 20,
+      "f3a": 44,
+      "ftm": 18,
+      "fta": 19,
+      "reb": 48,
+      "oreb": 10,
+      "dreb": 32,
+      "ast": 35,
+      "tov": 8,
+      "stl": 8,
+      "blk": 4,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "37:05",
+        "pts": 23,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "51",
+        "name": "MOHAMED DIAWARA",
+        "min": "17:49",
+        "pts": 18,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "29:58",
+        "pts": 12,
+        "reb": 12,
+        "ast": 4
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "34:50",
+        "pts": 6,
+        "reb": 5,
+        "ast": 10
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "35:31",
+        "pts": 28,
+        "reb": 3,
+        "ast": 10
+      }
+    ]
+  }
+}

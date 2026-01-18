@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500459",
+  "date": "2025.12.30",
+  "venue": "Delta Center",
+  "attendance": 18186,
+  "home": {
+    "id": "1610612762",
+    "total": {
+      "pts": 119,
+      "fgm": 41,
+      "fga": 87,
+      "f2m": 25,
+      "f2a": 45,
+      "f3m": 16,
+      "f3a": 42,
+      "ftm": 21,
+      "fta": 25,
+      "reb": 49,
+      "oreb": 9,
+      "dreb": 31,
+      "ast": 31,
+      "tov": 13,
+      "stl": 4,
+      "blk": 3,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LAURI MARKKANEN",
+        "min": "38:19",
+        "pts": 22,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "TAYLOR HENDRICKS",
+        "min": "17:25",
+        "pts": 3,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "JUSUF NURKIĆ",
+        "min": "33:49",
+        "pts": 26,
+        "reb": 8,
+        "ast": 8
+      },
+      {
+        "no": "28",
+        "name": "BRICE SENSABAUGH",
+        "min": "39:17",
+        "pts": 5,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "38:32",
+        "pts": 37,
+        "reb": 6,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612738",
+    "total": {
+      "pts": 129,
+      "fgm": 48,
+      "fga": 94,
+      "f2m": 35,
+      "f2a": 50,
+      "f3m": 13,
+      "f3a": 44,
+      "ftm": 20,
+      "fta": 23,
+      "reb": 51,
+      "oreb": 11,
+      "dreb": 33,
+      "ast": 27,
+      "tov": 7,
+      "stl": 8,
+      "blk": 9,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "27",
+        "name": "JORDAN WALSH",
+        "min": "13:16",
+        "pts": 6,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "33:35",
+        "pts": 23,
+        "reb": 6,
+        "ast": 10
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "28:42",
+        "pts": 12,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "36:17",
+        "pts": 27,
+        "reb": 7,
+        "ast": 6
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "35:24",
+        "pts": 18,
+        "reb": 4,
+        "ast": 6
+      }
+    ]
+  }
+}

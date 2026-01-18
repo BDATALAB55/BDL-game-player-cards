@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500543",
+  "date": "2026.01.10",
+  "venue": "Gainbridge Fieldhouse",
+  "attendance": 17274,
+  "home": {
+    "id": "1610612754",
+    "total": {
+      "pts": 123,
+      "fgm": 44,
+      "fga": 98,
+      "f2m": 27,
+      "f2a": 58,
+      "f3m": 17,
+      "f3a": 40,
+      "ftm": 18,
+      "fta": 22,
+      "reb": 61,
+      "oreb": 12,
+      "dreb": 42,
+      "ast": 37,
+      "tov": 16,
+      "stl": 13,
+      "blk": 4,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "AARON NESMITH",
+        "min": "27:13",
+        "pts": 12,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "12",
+        "name": "JOHNNY FURPHY",
+        "min": "20:27",
+        "pts": 10,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "26:22",
+        "pts": 11,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "29",
+        "name": "QUENTON JACKSON",
+        "min": "22:34",
+        "pts": 6,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "29:01",
+        "pts": 29,
+        "reb": 6,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612748",
+    "total": {
+      "pts": 99,
+      "fgm": 36,
+      "fga": 92,
+      "f2m": 32,
+      "f2a": 62,
+      "f3m": 4,
+      "f3a": 30,
+      "ftm": 23,
+      "fta": 29,
+      "reb": 60,
+      "oreb": 11,
+      "dreb": 40,
+      "ast": 17,
+      "tov": 19,
+      "stl": 6,
+      "blk": 5,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "22:01",
+        "pts": 6,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "19:57",
+        "pts": 11,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "24:48",
+        "pts": 13,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "14",
+        "name": "TYLER HERRO",
+        "min": "32:03",
+        "pts": 21,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "19:15",
+        "pts": 1,
+        "reb": 2,
+        "ast": 1
+      }
+    ]
+  }
+}

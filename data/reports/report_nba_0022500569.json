@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500569",
+  "date": "2026.01.13",
+  "venue": "Crypto.com Arena",
+  "attendance": 18757,
+  "home": {
+    "id": "1610612747",
+    "total": {
+      "pts": 141,
+      "fgm": 48,
+      "fga": 83,
+      "f2m": 29,
+      "f2a": 49,
+      "f3m": 19,
+      "f3a": 34,
+      "ftm": 26,
+      "fta": 30,
+      "reb": 58,
+      "oreb": 10,
+      "dreb": 37,
+      "ast": 36,
+      "tov": 14,
+      "stl": 2,
+      "blk": 3,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "32:35",
+        "pts": 31,
+        "reb": 9,
+        "ast": 10
+      },
+      {
+        "no": "12",
+        "name": "JAKE LARAVIA",
+        "min": "35:36",
+        "pts": 17,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "30:51",
+        "pts": 17,
+        "reb": 18,
+        "ast": 1
+      },
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "29:25",
+        "pts": 16,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "33:17",
+        "pts": 27,
+        "reb": 5,
+        "ast": 12
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612737",
+    "total": {
+      "pts": 116,
+      "fgm": 45,
+      "fga": 100,
+      "f2m": 32,
+      "f2a": 54,
+      "f3m": 13,
+      "f3a": 46,
+      "ftm": 13,
+      "fta": 18,
+      "reb": 43,
+      "oreb": 12,
+      "dreb": 20,
+      "ast": 30,
+      "tov": 6,
+      "stl": 11,
+      "blk": 1,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "27",
+        "name": "VÍT KREJČÍ",
+        "min": "21:22",
+        "pts": 11,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "30:26",
+        "pts": 13,
+        "reb": 3,
+        "ast": 6
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "33:16",
+        "pts": 7,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "32:59",
+        "pts": 8,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "33:03",
+        "pts": 26,
+        "reb": 4,
+        "ast": 3
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500422",
+  "date": "2025.12.23",
+  "venue": "Intuit Dome",
+  "attendance": 17927,
+  "home": {
+    "id": "1610612746",
+    "total": {
+      "pts": 128,
+      "fgm": 42,
+      "fga": 77,
+      "f2m": 22,
+      "f2a": 40,
+      "f3m": 20,
+      "f3a": 37,
+      "ftm": 24,
+      "fta": 27,
+      "reb": 41,
+      "oreb": 6,
+      "dreb": 28,
+      "ast": 25,
+      "tov": 8,
+      "stl": 7,
+      "blk": 4,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "36:50",
+        "pts": 41,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "29:27",
+        "pts": 13,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "11",
+        "name": "BROOK LOPEZ",
+        "min": "27:19",
+        "pts": 5,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "25:33",
+        "pts": 11,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "34:44",
+        "pts": 29,
+        "reb": 4,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612745",
+    "total": {
+      "pts": 108,
+      "fgm": 43,
+      "fga": 86,
+      "f2m": 34,
+      "f2a": 56,
+      "f3m": 9,
+      "f3a": 30,
+      "ftm": 13,
+      "fta": 18,
+      "reb": 45,
+      "oreb": 15,
+      "dreb": 27,
+      "ast": 25,
+      "tov": 13,
+      "stl": 5,
+      "blk": 6,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "29:24",
+        "pts": 22,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "31:58",
+        "pts": 16,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "28:05",
+        "pts": 19,
+        "reb": 11,
+        "ast": 7
+      },
+      {
+        "no": "20",
+        "name": "JOSH OKOGIE",
+        "min": "11:42",
+        "pts": 0,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "34:42",
+        "pts": 19,
+        "reb": 9,
+        "ast": 5
+      }
+    ]
+  }
+}

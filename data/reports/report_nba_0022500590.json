@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500590",
+  "date": "2026.01.16",
+  "venue": "Scotiabank Arena",
+  "attendance": 18934,
+  "home": {
+    "id": "1610612761",
+    "total": {
+      "pts": 117,
+      "fgm": 42,
+      "fga": 87,
+      "f2m": 31,
+      "f2a": 54,
+      "f3m": 11,
+      "f3a": 33,
+      "ftm": 22,
+      "fta": 26,
+      "reb": 46,
+      "oreb": 12,
+      "dreb": 24,
+      "ast": 30,
+      "tov": 18,
+      "stl": 4,
+      "blk": 5,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "41:19",
+        "pts": 19,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "40:36",
+        "pts": 24,
+        "reb": 7,
+        "ast": 6
+      },
+      {
+        "no": "12",
+        "name": "COLLIN MURRAY-BOYLES",
+        "min": "34:55",
+        "pts": 11,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "30",
+        "name": "OCHAI AGBAJI",
+        "min": "36:19",
+        "pts": 15,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "JAMAL SHEAD",
+        "min": "38:36",
+        "pts": 15,
+        "reb": 4,
+        "ast": 13
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612746",
+    "total": {
+      "pts": 121,
+      "fgm": 41,
+      "fga": 79,
+      "f2m": 28,
+      "f2a": 43,
+      "f3m": 13,
+      "f3a": 36,
+      "ftm": 26,
+      "fta": 30,
+      "reb": 46,
+      "oreb": 6,
+      "dreb": 30,
+      "ast": 25,
+      "tov": 16,
+      "stl": 12,
+      "blk": 3,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "4",
+        "name": "KOBE SANDERS",
+        "min": "36:41",
+        "pts": 13,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "33",
+        "name": "NICOLAS BATUM",
+        "min": "06:07",
+        "pts": 0,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "38:33",
+        "pts": 16,
+        "reb": 14,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "33:30",
+        "pts": 15,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "42:18",
+        "pts": 31,
+        "reb": 2,
+        "ast": 10
+      }
+    ]
+  }
+}

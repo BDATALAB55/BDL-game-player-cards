@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500456",
+  "date": "2025.12.29",
+  "venue": "Frost Bank Center",
+  "attendance": 19010,
+  "home": {
+    "id": "1610612759",
+    "total": {
+      "pts": 101,
+      "fgm": 32,
+      "fga": 83,
+      "f2m": 25,
+      "f2a": 52,
+      "f3m": 7,
+      "f3a": 31,
+      "ftm": 30,
+      "fta": 36,
+      "reb": 65,
+      "oreb": 10,
+      "dreb": 42,
+      "ast": 21,
+      "tov": 18,
+      "stl": 7,
+      "blk": 2,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "29:31",
+        "pts": 7,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "26:56",
+        "pts": 3,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "27:19",
+        "pts": 26,
+        "reb": 14,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "34:17",
+        "pts": 15,
+        "reb": 4,
+        "ast": 8
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "32:13",
+        "pts": 14,
+        "reb": 2,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612739",
+    "total": {
+      "pts": 113,
+      "fgm": 41,
+      "fga": 96,
+      "f2m": 28,
+      "f2a": 54,
+      "f3m": 13,
+      "f3a": 42,
+      "ftm": 18,
+      "fta": 20,
+      "reb": 51,
+      "oreb": 10,
+      "dreb": 37,
+      "ast": 29,
+      "tov": 12,
+      "stl": 12,
+      "blk": 4,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "DEAN WADE",
+        "min": "24:39",
+        "pts": 10,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "28:38",
+        "pts": 16,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "28:05",
+        "pts": 27,
+        "reb": 10,
+        "ast": 0
+      },
+      {
+        "no": "10",
+        "name": "DARIUS GARLAND",
+        "min": "31:21",
+        "pts": 15,
+        "reb": 5,
+        "ast": 11
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "35:17",
+        "pts": 10,
+        "reb": 2,
+        "ast": 7
+      }
+    ]
+  }
+}

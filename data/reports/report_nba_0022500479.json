@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500479",
+  "date": "2026.01.02",
+  "venue": "Madison Square Garden",
+  "attendance": 19812,
+  "home": {
+    "id": "1610612752",
+    "total": {
+      "pts": 99,
+      "fgm": 36,
+      "fga": 97,
+      "f2m": 27,
+      "f2a": 55,
+      "f3m": 9,
+      "f3a": 42,
+      "ftm": 18,
+      "fta": 21,
+      "reb": 62,
+      "oreb": 14,
+      "dreb": 38,
+      "ast": 27,
+      "tov": 14,
+      "stl": 8,
+      "blk": 6,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "34:59",
+        "pts": 19,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "35:08",
+        "pts": 18,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "55",
+        "name": "ARIEL HUKPORTI",
+        "min": "28:22",
+        "pts": 8,
+        "reb": 16,
+        "ast": 4
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "34:53",
+        "pts": 24,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "2",
+        "name": "MILES MCBRIDE",
+        "min": "30:44",
+        "pts": 11,
+        "reb": 1,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612737",
+    "total": {
+      "pts": 111,
+      "fgm": 42,
+      "fga": 88,
+      "f2m": 30,
+      "f2a": 52,
+      "f3m": 12,
+      "f3a": 36,
+      "ftm": 15,
+      "fta": 25,
+      "reb": 58,
+      "oreb": 9,
+      "dreb": 40,
+      "ast": 31,
+      "tov": 13,
+      "stl": 12,
+      "blk": 2,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "22:19",
+        "pts": 12,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "38:00",
+        "pts": 18,
+        "reb": 10,
+        "ast": 11
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "29:46",
+        "pts": 23,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "37:31",
+        "pts": 11,
+        "reb": 6,
+        "ast": 8
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "34:19",
+        "pts": 23,
+        "reb": 4,
+        "ast": 3
+      }
+    ]
+  }
+}

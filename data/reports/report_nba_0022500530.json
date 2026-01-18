@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500530",
+  "date": "2026.01.08",
+  "venue": "Target Center",
+  "attendance": 17274,
+  "home": {
+    "id": "1610612750",
+    "total": {
+      "pts": 131,
+      "fgm": 51,
+      "fga": 89,
+      "f2m": 31,
+      "f2a": 51,
+      "f3m": 20,
+      "f3a": 38,
+      "ftm": 9,
+      "fta": 17,
+      "reb": 56,
+      "oreb": 10,
+      "dreb": 35,
+      "ast": 33,
+      "tov": 17,
+      "stl": 8,
+      "blk": 2,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JADEN MCDANIELS",
+        "min": "38:08",
+        "pts": 26,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "30",
+        "name": "JULIUS RANDLE",
+        "min": "35:12",
+        "pts": 28,
+        "reb": 11,
+        "ast": 8
+      },
+      {
+        "no": "27",
+        "name": "RUDY GOBERT",
+        "min": "36:51",
+        "pts": 11,
+        "reb": 13,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "ANTHONY EDWARDS",
+        "min": "37:20",
+        "pts": 25,
+        "reb": 7,
+        "ast": 9
+      },
+      {
+        "no": "0",
+        "name": "DONTE DIVINCENZO",
+        "min": "34:02",
+        "pts": 22,
+        "reb": 1,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612739",
+    "total": {
+      "pts": 122,
+      "fgm": 48,
+      "fga": 91,
+      "f2m": 37,
+      "f2a": 58,
+      "f3m": 11,
+      "f3a": 33,
+      "ftm": 15,
+      "fta": 21,
+      "reb": 42,
+      "oreb": 9,
+      "dreb": 29,
+      "ast": 31,
+      "tov": 12,
+      "stl": 9,
+      "blk": 2,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "36:50",
+        "pts": 30,
+        "reb": 7,
+        "ast": 8
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "37:31",
+        "pts": 19,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "29:57",
+        "pts": 11,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "CRAIG PORTER JR.",
+        "min": "14:57",
+        "pts": 4,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "10",
+        "name": "DARIUS GARLAND",
+        "min": "36:33",
+        "pts": 16,
+        "reb": 1,
+        "ast": 8
+      }
+    ]
+  }
+}

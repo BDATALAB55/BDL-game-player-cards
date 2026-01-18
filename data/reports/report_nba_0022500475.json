@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500475",
+  "date": "2026.01.01",
+  "venue": "Intuit Dome",
+  "attendance": 17927,
+  "home": {
+    "id": "1610612746",
+    "total": {
+      "pts": 118,
+      "fgm": 40,
+      "fga": 89,
+      "f2m": 24,
+      "f2a": 38,
+      "f3m": 16,
+      "f3a": 51,
+      "ftm": 22,
+      "fta": 26,
+      "reb": 56,
+      "oreb": 16,
+      "dreb": 31,
+      "ast": 20,
+      "tov": 12,
+      "stl": 8,
+      "blk": 7,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "39:13",
+        "pts": 45,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "19:54",
+        "pts": 8,
+        "reb": 11,
+        "ast": 0
+      },
+      {
+        "no": "11",
+        "name": "BROOK LOPEZ",
+        "min": "19:53",
+        "pts": 3,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "24:21",
+        "pts": 2,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "28:53",
+        "pts": 20,
+        "reb": 3,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612762",
+    "total": {
+      "pts": 101,
+      "fgm": 36,
+      "fga": 78,
+      "f2m": 30,
+      "f2a": 51,
+      "f3m": 6,
+      "f3a": 27,
+      "ftm": 23,
+      "fta": 30,
+      "reb": 48,
+      "oreb": 7,
+      "dreb": 28,
+      "ast": 20,
+      "tov": 18,
+      "stl": 7,
+      "blk": 5,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "SVI MYKHAILIUK",
+        "min": "23:37",
+        "pts": 5,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "TAYLOR HENDRICKS",
+        "min": "16:35",
+        "pts": 5,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "22",
+        "name": "KYLE FILIPOWSKI",
+        "min": "28:25",
+        "pts": 4,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "28",
+        "name": "BRICE SENSABAUGH",
+        "min": "31:37",
+        "pts": 20,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "ISAIAH COLLIER",
+        "min": "36:57",
+        "pts": 16,
+        "reb": 6,
+        "ast": 10
+      }
+    ]
+  }
+}

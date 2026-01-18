@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500483",
+  "date": "2026.01.02",
+  "venue": "Mortgage Matchup Center",
+  "attendance": 17071,
+  "home": {
+    "id": "1610612756",
+    "total": {
+      "pts": 129,
+      "fgm": 49,
+      "fga": 87,
+      "f2m": 41,
+      "f2a": 56,
+      "f3m": 8,
+      "f3a": 31,
+      "ftm": 23,
+      "fta": 28,
+      "reb": 50,
+      "oreb": 7,
+      "dreb": 35,
+      "ast": 23,
+      "tov": 12,
+      "stl": 16,
+      "blk": 9,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "25:26",
+        "pts": 18,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "30:07",
+        "pts": 7,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "21:43",
+        "pts": 15,
+        "reb": 9,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "27:44",
+        "pts": 33,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "26:03",
+        "pts": 15,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612758",
+    "total": {
+      "pts": 102,
+      "fgm": 35,
+      "fga": 85,
+      "f2m": 25,
+      "f2a": 57,
+      "f3m": 10,
+      "f3a": 28,
+      "ftm": 22,
+      "fta": 32,
+      "reb": 53,
+      "oreb": 14,
+      "dreb": 28,
+      "ast": 20,
+      "tov": 21,
+      "stl": 6,
+      "blk": 3,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "13",
+        "name": "KEEGAN MURRAY",
+        "min": "32:37",
+        "pts": 23,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "PRECIOUS ACHIUWA",
+        "min": "18:47",
+        "pts": 3,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "25:25",
+        "pts": 6,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "29:51",
+        "pts": 13,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "26:01",
+        "pts": 17,
+        "reb": 9,
+        "ast": 6
+      }
+    ]
+  }
+}

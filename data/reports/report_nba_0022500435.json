@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500435",
+  "date": "2025.12.27",
+  "venue": "State Farm Arena",
+  "attendance": 17809,
+  "home": {
+    "id": "1610612737",
+    "total": {
+      "pts": 125,
+      "fgm": 43,
+      "fga": 89,
+      "f2m": 26,
+      "f2a": 46,
+      "f3m": 17,
+      "f3a": 43,
+      "ftm": 22,
+      "fta": 27,
+      "reb": 47,
+      "oreb": 9,
+      "dreb": 28,
+      "ast": 33,
+      "tov": 11,
+      "stl": 6,
+      "blk": 3,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "19:16",
+        "pts": 4,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "37:04",
+        "pts": 20,
+        "reb": 9,
+        "ast": 12
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "36:23",
+        "pts": 31,
+        "reb": 14,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "39:16",
+        "pts": 13,
+        "reb": 8,
+        "ast": 9
+      },
+      {
+        "no": "11",
+        "name": "TRAE YOUNG",
+        "min": "31:22",
+        "pts": 9,
+        "reb": 0,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612752",
+    "total": {
+      "pts": 128,
+      "fgm": 43,
+      "fga": 95,
+      "f2m": 28,
+      "f2a": 52,
+      "f3m": 15,
+      "f3a": 43,
+      "ftm": 27,
+      "fta": 32,
+      "reb": 63,
+      "oreb": 19,
+      "dreb": 36,
+      "ast": 27,
+      "tov": 12,
+      "stl": 9,
+      "blk": 4,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "38:11",
+        "pts": 15,
+        "reb": 10,
+        "ast": 5
+      },
+      {
+        "no": "51",
+        "name": "MOHAMED DIAWARA",
+        "min": "16:13",
+        "pts": 5,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "29:48",
+        "pts": 36,
+        "reb": 15,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "36:38",
+        "pts": 14,
+        "reb": 3,
+        "ast": 8
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "37:40",
+        "pts": 34,
+        "reb": 3,
+        "ast": 5
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500447",
+  "date": "2025.12.29",
+  "venue": "Spectrum Center",
+  "attendance": 19562,
+  "home": {
+    "id": "1610612766",
+    "total": {
+      "pts": 113,
+      "fgm": 40,
+      "fga": 93,
+      "f2m": 23,
+      "f2a": 47,
+      "f3m": 17,
+      "f3a": 46,
+      "ftm": 16,
+      "fta": 20,
+      "reb": 54,
+      "oreb": 17,
+      "dreb": 30,
+      "ast": 28,
+      "tov": 13,
+      "stl": 5,
+      "blk": 3,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "4",
+        "name": "SION JAMES",
+        "min": "28:42",
+        "pts": 0,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "MILES BRIDGES",
+        "min": "07:06",
+        "pts": 3,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "14",
+        "name": "MOUSSA DIABATÉ",
+        "min": "34:51",
+        "pts": 14,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "24",
+        "name": "BRANDON MILLER",
+        "min": "37:31",
+        "pts": 31,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "1",
+        "name": "LAMELO BALL",
+        "min": "29:05",
+        "pts": 26,
+        "reb": 2,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612749",
+    "total": {
+      "pts": 123,
+      "fgm": 44,
+      "fga": 84,
+      "f2m": 28,
+      "f2a": 50,
+      "f3m": 16,
+      "f3a": 34,
+      "ftm": 19,
+      "fta": 22,
+      "reb": 47,
+      "oreb": 5,
+      "dreb": 26,
+      "ast": 29,
+      "tov": 8,
+      "stl": 9,
+      "blk": 5,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "26:36",
+        "pts": 5,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "34",
+        "name": "GIANNIS ANTETOKOUNMPO",
+        "min": "25:17",
+        "pts": 24,
+        "reb": 4,
+        "ast": 7
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "30:52",
+        "pts": 23,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "KEVIN PORTER JR.",
+        "min": "37:37",
+        "pts": 15,
+        "reb": 5,
+        "ast": 11
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "30:52",
+        "pts": 13,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  }
+}

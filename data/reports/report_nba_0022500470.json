@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500470",
+  "date": "2025.12.31",
+  "venue": "Paycom Center",
+  "attendance": 18203,
+  "home": {
+    "id": "1610612760",
+    "total": {
+      "pts": 124,
+      "fgm": 44,
+      "fga": 90,
+      "f2m": 28,
+      "f2a": 41,
+      "f3m": 16,
+      "f3a": 49,
+      "ftm": 20,
+      "fta": 26,
+      "reb": 52,
+      "oreb": 5,
+      "dreb": 36,
+      "ast": 29,
+      "tov": 14,
+      "stl": 15,
+      "blk": 10,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "24:45",
+        "pts": 12,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "JALEN WILLIAMS",
+        "min": "25:42",
+        "pts": 13,
+        "reb": 7,
+        "ast": 7
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "24:43",
+        "pts": 12,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "26:32",
+        "pts": 5,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "28:35",
+        "pts": 30,
+        "reb": 2,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612757",
+    "total": {
+      "pts": 95,
+      "fgm": 34,
+      "fga": 87,
+      "f2m": 20,
+      "f2a": 52,
+      "f3m": 14,
+      "f3a": 35,
+      "ftm": 13,
+      "fta": 17,
+      "reb": 59,
+      "oreb": 12,
+      "dreb": 38,
+      "ast": 20,
+      "tov": 24,
+      "stl": 10,
+      "blk": 3,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "91",
+        "name": "SIDY CISSOKO",
+        "min": "27:11",
+        "pts": 19,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "33:30",
+        "pts": 6,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "17:21",
+        "pts": 6,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "31:56",
+        "pts": 17,
+        "reb": 7,
+        "ast": 7
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "28:27",
+        "pts": 14,
+        "reb": 4,
+        "ast": 1
+      }
+    ]
+  }
+}

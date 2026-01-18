@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500425",
+  "date": "2025.12.26",
+  "venue": "Capital One Arena",
+  "attendance": 15575,
+  "home": {
+    "id": "1610612764",
+    "total": {
+      "pts": 138,
+      "fgm": 54,
+      "fga": 91,
+      "f2m": 39,
+      "f2a": 58,
+      "f3m": 15,
+      "f3a": 33,
+      "ftm": 15,
+      "fta": 18,
+      "reb": 55,
+      "oreb": 6,
+      "dreb": 40,
+      "ast": 26,
+      "tov": 13,
+      "stl": 8,
+      "blk": 7,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "28:28",
+        "pts": 23,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "22",
+        "name": "KHRIS MIDDLETON",
+        "min": "19:20",
+        "pts": 6,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "23:53",
+        "pts": 15,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "25:58",
+        "pts": 21,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "30:46",
+        "pts": 21,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612761",
+    "total": {
+      "pts": 117,
+      "fgm": 40,
+      "fga": 91,
+      "f2m": 28,
+      "f2a": 55,
+      "f3m": 12,
+      "f3a": 36,
+      "ftm": 25,
+      "fta": 27,
+      "reb": 39,
+      "oreb": 8,
+      "dreb": 25,
+      "ast": 26,
+      "tov": 11,
+      "stl": 10,
+      "blk": 5,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "33:14",
+        "pts": 29,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "29:01",
+        "pts": 14,
+        "reb": 4,
+        "ast": 7
+      },
+      {
+        "no": "54",
+        "name": "SANDRO MAMUKELASHVILI",
+        "min": "32:41",
+        "pts": 13,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "OCHAI AGBAJI",
+        "min": "25:39",
+        "pts": 8,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "32:33",
+        "pts": 25,
+        "reb": 4,
+        "ast": 5
+      }
+    ]
+  }
+}

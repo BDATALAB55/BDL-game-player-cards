@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500537",
+  "date": "2026.01.09",
+  "venue": "Ball Arena",
+  "attendance": 19650,
+  "home": {
+    "id": "1610612743",
+    "total": {
+      "pts": 87,
+      "fgm": 30,
+      "fga": 72,
+      "f2m": 19,
+      "f2a": 40,
+      "f3m": 11,
+      "f3a": 32,
+      "ftm": 16,
+      "fta": 20,
+      "reb": 52,
+      "oreb": 4,
+      "dreb": 40,
+      "ast": 22,
+      "tov": 19,
+      "stl": 6,
+      "blk": 2,
+      "pf": 11
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "HUNTER TYSON",
+        "min": "27:20",
+        "pts": 10,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "8",
+        "name": "PEYTON WATSON",
+        "min": "34:00",
+        "pts": 25,
+        "reb": 11,
+        "ast": 4
+      },
+      {
+        "no": "14",
+        "name": "DARON HOLMES II",
+        "min": "15:12",
+        "pts": 6,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "0",
+        "name": "CHRISTIAN BRAUN",
+        "min": "24:47",
+        "pts": 0,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "24",
+        "name": "JALEN PICKETT",
+        "min": "33:18",
+        "pts": 7,
+        "reb": 6,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612737",
+    "total": {
+      "pts": 110,
+      "fgm": 46,
+      "fga": 94,
+      "f2m": 30,
+      "f2a": 51,
+      "f3m": 16,
+      "f3a": 43,
+      "ftm": 2,
+      "fta": 4,
+      "reb": 45,
+      "oreb": 4,
+      "dreb": 36,
+      "ast": 31,
+      "tov": 6,
+      "stl": 14,
+      "blk": 6,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "27",
+        "name": "VÍT KREJČÍ",
+        "min": "27:20",
+        "pts": 0,
+        "reb": 0,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "34:43",
+        "pts": 29,
+        "reb": 9,
+        "ast": 6
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "34:43",
+        "pts": 15,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "35:38",
+        "pts": 17,
+        "reb": 11,
+        "ast": 10
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "33:22",
+        "pts": 22,
+        "reb": 8,
+        "ast": 3
+      }
+    ]
+  }
+}

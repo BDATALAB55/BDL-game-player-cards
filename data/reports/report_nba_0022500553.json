@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500553",
+  "date": "2026.01.11",
+  "venue": "Paycom Center",
+  "attendance": 18203,
+  "home": {
+    "id": "1610612760",
+    "total": {
+      "pts": 124,
+      "fgm": 47,
+      "fga": 93,
+      "f2m": 37,
+      "f2a": 59,
+      "f3m": 10,
+      "f3a": 34,
+      "ftm": 20,
+      "fta": 28,
+      "reb": 55,
+      "oreb": 14,
+      "dreb": 32,
+      "ast": 23,
+      "tov": 13,
+      "stl": 12,
+      "blk": 5,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "19:20",
+        "pts": 4,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "JALEN WILLIAMS",
+        "min": "29:18",
+        "pts": 18,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "31:42",
+        "pts": 16,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "25:43",
+        "pts": 3,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "31:58",
+        "pts": 29,
+        "reb": 5,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612748",
+    "total": {
+      "pts": 112,
+      "fgm": 44,
+      "fga": 82,
+      "f2m": 27,
+      "f2a": 50,
+      "f3m": 17,
+      "f3a": 32,
+      "ftm": 7,
+      "fta": 13,
+      "reb": 44,
+      "oreb": 5,
+      "dreb": 32,
+      "ast": 35,
+      "tov": 23,
+      "stl": 9,
+      "blk": 4,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "27:33",
+        "pts": 16,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "36:53",
+        "pts": 23,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "31:34",
+        "pts": 6,
+        "reb": 14,
+        "ast": 4
+      },
+      {
+        "no": "14",
+        "name": "TYLER HERRO",
+        "min": "27:09",
+        "pts": 19,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "31:09",
+        "pts": 13,
+        "reb": 3,
+        "ast": 10
+      }
+    ]
+  }
+}

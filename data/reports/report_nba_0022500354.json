@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500354",
+  "date": "2025.12.06",
+  "venue": "Kaseya Center",
+  "attendance": 19700,
+  "home": {
+    "id": "1610612748",
+    "total": {
+      "pts": 111,
+      "fgm": 41,
+      "fga": 85,
+      "f2m": 32,
+      "f2a": 54,
+      "f3m": 9,
+      "f3a": 31,
+      "ftm": 20,
+      "fta": 32,
+      "reb": 52,
+      "oreb": 11,
+      "dreb": 30,
+      "ast": 23,
+      "tov": 13,
+      "stl": 5,
+      "blk": 4,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "26:07",
+        "pts": 13,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "24:35",
+        "pts": 9,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "KEL'EL WARE",
+        "min": "29:39",
+        "pts": 5,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "26:34",
+        "pts": 18,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "12",
+        "name": "DRU SMITH",
+        "min": "19:08",
+        "pts": 4,
+        "reb": 1,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612758",
+    "total": {
+      "pts": 127,
+      "fgm": 49,
+      "fga": 93,
+      "f2m": 35,
+      "f2a": 60,
+      "f3m": 14,
+      "f3a": 33,
+      "ftm": 15,
+      "fta": 21,
+      "reb": 54,
+      "oreb": 8,
+      "dreb": 37,
+      "ast": 24,
+      "tov": 10,
+      "stl": 11,
+      "blk": 5,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "39:49",
+        "pts": 13,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "13",
+        "name": "KEEGAN MURRAY",
+        "min": "32:24",
+        "pts": 16,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "25:04",
+        "pts": 12,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "ZACH LAVINE",
+        "min": "39:25",
+        "pts": 42,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "31:46",
+        "pts": 12,
+        "reb": 1,
+        "ast": 10
+      }
+    ]
+  }
+}

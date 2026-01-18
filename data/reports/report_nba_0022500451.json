@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500451",
+  "date": "2025.12.29",
+  "venue": "Scotiabank Arena",
+  "attendance": 19800,
+  "home": {
+    "id": "1610612761",
+    "total": {
+      "pts": 107,
+      "fgm": 39,
+      "fga": 99,
+      "f2m": 31,
+      "f2a": 65,
+      "f3m": 8,
+      "f3a": 34,
+      "ftm": 21,
+      "fta": 29,
+      "reb": 68,
+      "oreb": 21,
+      "dreb": 37,
+      "ast": 22,
+      "tov": 6,
+      "stl": 6,
+      "blk": 7,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "34:04",
+        "pts": 17,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "36:55",
+        "pts": 13,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "54",
+        "name": "SANDRO MAMUKELASHVILI",
+        "min": "23:16",
+        "pts": 13,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "30",
+        "name": "OCHAI AGBAJI",
+        "min": "20:07",
+        "pts": 10,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "24:42",
+        "pts": 4,
+        "reb": 5,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612753",
+    "total": {
+      "pts": 106,
+      "fgm": 37,
+      "fga": 91,
+      "f2m": 28,
+      "f2a": 59,
+      "f3m": 9,
+      "f3a": 32,
+      "ftm": 23,
+      "fta": 27,
+      "reb": 59,
+      "oreb": 15,
+      "dreb": 37,
+      "ast": 25,
+      "tov": 8,
+      "stl": 4,
+      "blk": 5,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "29:52",
+        "pts": 18,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "37:58",
+        "pts": 23,
+        "reb": 15,
+        "ast": 10
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "31:41",
+        "pts": 9,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "ANTHONY BLACK",
+        "min": "32:10",
+        "pts": 27,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "TYUS JONES",
+        "min": "28:09",
+        "pts": 10,
+        "reb": 4,
+        "ast": 2
+      }
+    ]
+  }
+}

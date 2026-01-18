@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500383",
+  "date": "2025.12.19",
+  "venue": "State Farm Arena",
+  "attendance": 15505,
+  "home": {
+    "id": "1610612737",
+    "total": {
+      "pts": 98,
+      "fgm": 38,
+      "fga": 94,
+      "f2m": 28,
+      "f2a": 54,
+      "f3m": 10,
+      "f3a": 40,
+      "ftm": 12,
+      "fta": 16,
+      "reb": 48,
+      "oreb": 10,
+      "dreb": 33,
+      "ast": 26,
+      "tov": 16,
+      "stl": 7,
+      "blk": 1,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "30:25",
+        "pts": 11,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "31:07",
+        "pts": 17,
+        "reb": 11,
+        "ast": 6
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "30:56",
+        "pts": 7,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "25:51",
+        "pts": 11,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "32:34",
+        "pts": 23,
+        "reb": 2,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 126,
+      "fgm": 51,
+      "fga": 94,
+      "f2m": 38,
+      "f2a": 58,
+      "f3m": 13,
+      "f3a": 36,
+      "ftm": 11,
+      "fta": 16,
+      "reb": 61,
+      "oreb": 12,
+      "dreb": 44,
+      "ast": 31,
+      "tov": 14,
+      "stl": 11,
+      "blk": 4,
+      "pf": 12
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "27:21",
+        "pts": 18,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "21:48",
+        "pts": 7,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "LUKE KORNET",
+        "min": "17:37",
+        "pts": 8,
+        "reb": 9,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "23:55",
+        "pts": 17,
+        "reb": 2,
+        "ast": 7
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "21:53",
+        "pts": 8,
+        "reb": 5,
+        "ast": 8
+      }
+    ]
+  }
+}

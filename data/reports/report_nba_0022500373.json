@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500373",
+  "date": "2025.12.18",
+  "venue": "Barclays Center",
+  "attendance": 17548,
+  "home": {
+    "id": "1610612751",
+    "total": {
+      "pts": 95,
+      "fgm": 38,
+      "fga": 98,
+      "f2m": 27,
+      "f2a": 49,
+      "f3m": 11,
+      "f3a": 49,
+      "ftm": 8,
+      "fta": 11,
+      "reb": 55,
+      "oreb": 15,
+      "dreb": 34,
+      "ast": 24,
+      "tov": 12,
+      "stl": 7,
+      "blk": 7,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "33:43",
+        "pts": 28,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "26:12",
+        "pts": 8,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "34:47",
+        "pts": 16,
+        "reb": 12,
+        "ast": 8
+      },
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "30:32",
+        "pts": 4,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "27:52",
+        "pts": 14,
+        "reb": 2,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612748",
+    "total": {
+      "pts": 106,
+      "fgm": 41,
+      "fga": 89,
+      "f2m": 32,
+      "f2a": 61,
+      "f3m": 9,
+      "f3a": 28,
+      "ftm": 15,
+      "fta": 19,
+      "reb": 61,
+      "oreb": 9,
+      "dreb": 42,
+      "ast": 23,
+      "tov": 14,
+      "stl": 9,
+      "blk": 8,
+      "pf": 12
+    },
+    "starters": [
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "32:54",
+        "pts": 10,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "31:03",
+        "pts": 8,
+        "reb": 17,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "KEL'EL WARE",
+        "min": "30:17",
+        "pts": 22,
+        "reb": 12,
+        "ast": 1
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "32:39",
+        "pts": 24,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "29:57",
+        "pts": 10,
+        "reb": 0,
+        "ast": 7
+      }
+    ]
+  }
+}

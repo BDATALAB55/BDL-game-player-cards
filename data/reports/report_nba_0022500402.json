@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500402",
+  "date": "2025.12.22",
+  "venue": "Rocket Arena",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612739",
+    "total": {
+      "pts": 139,
+      "fgm": 48,
+      "fga": 87,
+      "f2m": 24,
+      "f2a": 43,
+      "f3m": 24,
+      "f3a": 44,
+      "ftm": 19,
+      "fta": 19,
+      "reb": 35,
+      "oreb": 5,
+      "dreb": 25,
+      "ast": 36,
+      "tov": 13,
+      "stl": 9,
+      "blk": 2,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "JAYLON TYSON",
+        "min": "20:02",
+        "pts": 0,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "32",
+        "name": "DEAN WADE",
+        "min": "27:53",
+        "pts": 14,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "19:48",
+        "pts": 12,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "28:43",
+        "pts": 30,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "10",
+        "name": "DARIUS GARLAND",
+        "min": "30:24",
+        "pts": 27,
+        "reb": 4,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612766",
+    "total": {
+      "pts": 132,
+      "fgm": 46,
+      "fga": 94,
+      "f2m": 25,
+      "f2a": 52,
+      "f3m": 21,
+      "f3a": 42,
+      "ftm": 19,
+      "fta": 25,
+      "reb": 58,
+      "oreb": 17,
+      "dreb": 27,
+      "ast": 29,
+      "tov": 19,
+      "stl": 10,
+      "blk": 3,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "30:49",
+        "pts": 20,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "MILES BRIDGES",
+        "min": "29:33",
+        "pts": 17,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "22",
+        "name": "MASON PLUMLEE",
+        "min": "10:00",
+        "pts": 5,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "24",
+        "name": "BRANDON MILLER",
+        "min": "26:43",
+        "pts": 20,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "LAMELO BALL",
+        "min": "24:23",
+        "pts": 23,
+        "reb": 4,
+        "ast": 9
+      }
+    ]
+  }
+}

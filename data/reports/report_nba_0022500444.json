@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500444",
+  "date": "2025.12.28",
+  "venue": "Moda Center",
+  "attendance": 17949,
+  "home": {
+    "id": "1610612757",
+    "total": {
+      "pts": 114,
+      "fgm": 42,
+      "fga": 89,
+      "f2m": 24,
+      "f2a": 38,
+      "f3m": 18,
+      "f3a": 51,
+      "ftm": 12,
+      "fta": 21,
+      "reb": 61,
+      "oreb": 16,
+      "dreb": 32,
+      "ast": 26,
+      "tov": 21,
+      "stl": 8,
+      "blk": 2,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "KRIS MURRAY",
+        "min": "30:26",
+        "pts": 5,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "35:04",
+        "pts": 20,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "33:37",
+        "pts": 18,
+        "reb": 18,
+        "ast": 1
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "31:47",
+        "pts": 26,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "38:44",
+        "pts": 24,
+        "reb": 7,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612738",
+    "total": {
+      "pts": 108,
+      "fgm": 40,
+      "fga": 91,
+      "f2m": 27,
+      "f2a": 47,
+      "f3m": 13,
+      "f3a": 44,
+      "ftm": 15,
+      "fta": 19,
+      "reb": 51,
+      "oreb": 12,
+      "dreb": 28,
+      "ast": 19,
+      "tov": 20,
+      "stl": 13,
+      "blk": 5,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "27",
+        "name": "JORDAN WALSH",
+        "min": "09:46",
+        "pts": 5,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "36:57",
+        "pts": 37,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "29:20",
+        "pts": 11,
+        "reb": 8,
+        "ast": 0
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "39:53",
+        "pts": 12,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "37:36",
+        "pts": 9,
+        "reb": 5,
+        "ast": 5
+      }
+    ]
+  }
+}

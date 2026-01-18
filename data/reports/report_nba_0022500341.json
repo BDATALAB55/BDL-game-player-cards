@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500341",
+  "date": "2025.12.05",
+  "venue": "Rocket Arena",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612739",
+    "total": {
+      "pts": 130,
+      "fgm": 50,
+      "fga": 86,
+      "f2m": 42,
+      "f2a": 60,
+      "f3m": 8,
+      "f3a": 26,
+      "ftm": 22,
+      "fta": 29,
+      "reb": 56,
+      "oreb": 9,
+      "dreb": 39,
+      "ast": 32,
+      "tov": 14,
+      "stl": 10,
+      "blk": 4,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "NAE'QWAN TOMLIN",
+        "min": "18:21",
+        "pts": 13,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "12",
+        "name": "DE'ANDRE HUNTER",
+        "min": "20:33",
+        "pts": 11,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "32:18",
+        "pts": 17,
+        "reb": 10,
+        "ast": 5
+      },
+      {
+        "no": "20",
+        "name": "JAYLON TYSON",
+        "min": "32:52",
+        "pts": 24,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "31:45",
+        "pts": 28,
+        "reb": 2,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 117,
+      "fgm": 42,
+      "fga": 93,
+      "f2m": 27,
+      "f2a": 50,
+      "f3m": 15,
+      "f3a": 43,
+      "ftm": 18,
+      "fta": 26,
+      "reb": 47,
+      "oreb": 11,
+      "dreb": 27,
+      "ast": 28,
+      "tov": 14,
+      "stl": 9,
+      "blk": 3,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "34:37",
+        "pts": 11,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "28:39",
+        "pts": 7,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "18",
+        "name": "BISMACK BIYOMBO",
+        "min": "10:24",
+        "pts": 4,
+        "reb": 0,
+        "ast": 1
+      },
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "29:56",
+        "pts": 28,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "32:47",
+        "pts": 25,
+        "reb": 5,
+        "ast": 9
+      }
+    ]
+  }
+}

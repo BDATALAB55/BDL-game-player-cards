@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500399",
+  "date": "2025.12.21",
+  "venue": "Capital One Arena",
+  "attendance": 20028,
+  "home": {
+    "id": "1610612764",
+    "total": {
+      "pts": 113,
+      "fgm": 42,
+      "fga": 95,
+      "f2m": 31,
+      "f2a": 50,
+      "f3m": 11,
+      "f3a": 45,
+      "ftm": 18,
+      "fta": 24,
+      "reb": 50,
+      "oreb": 8,
+      "dreb": 35,
+      "ast": 20,
+      "tov": 5,
+      "stl": 5,
+      "blk": 7,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "JUSTIN CHAMPAGNIE",
+        "min": "20:44",
+        "pts": 5,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "33:15",
+        "pts": 14,
+        "reb": 4,
+        "ast": 7
+      },
+      {
+        "no": "00",
+        "name": "TRISTAN VUKCEVIC",
+        "min": "27:11",
+        "pts": 18,
+        "reb": 9,
+        "ast": 0
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "34:09",
+        "pts": 15,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "39:49",
+        "pts": 21,
+        "reb": 5,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 124,
+      "fgm": 43,
+      "fga": 104,
+      "f2m": 30,
+      "f2a": 63,
+      "f3m": 13,
+      "f3a": 41,
+      "ftm": 25,
+      "fta": 32,
+      "reb": 77,
+      "oreb": 20,
+      "dreb": 41,
+      "ast": 26,
+      "tov": 9,
+      "stl": 3,
+      "blk": 5,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "25:56",
+        "pts": 14,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "30:44",
+        "pts": 11,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "LUKE KORNET",
+        "min": "27:52",
+        "pts": 20,
+        "reb": 12,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "31:58",
+        "pts": 18,
+        "reb": 5,
+        "ast": 11
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "32:57",
+        "pts": 27,
+        "reb": 7,
+        "ast": 6
+      }
+    ]
+  }
+}

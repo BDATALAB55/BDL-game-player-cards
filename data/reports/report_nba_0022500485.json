@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500485",
+  "date": "2026.01.02",
+  "venue": "Crypto.com Arena",
+  "attendance": 18997,
+  "home": {
+    "id": "1610612747",
+    "total": {
+      "pts": 128,
+      "fgm": 45,
+      "fga": 77,
+      "f2m": 34,
+      "f2a": 45,
+      "f3m": 11,
+      "f3a": 32,
+      "ftm": 27,
+      "fta": 31,
+      "reb": 51,
+      "oreb": 6,
+      "dreb": 36,
+      "ast": 26,
+      "tov": 20,
+      "stl": 9,
+      "blk": 4,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "36:04",
+        "pts": 31,
+        "reb": 9,
+        "ast": 6
+      },
+      {
+        "no": "12",
+        "name": "JAKE LARAVIA",
+        "min": "37:02",
+        "pts": 21,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "24:49",
+        "pts": 4,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "34:17",
+        "pts": 13,
+        "reb": 8,
+        "ast": 7
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "37:33",
+        "pts": 34,
+        "reb": 6,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612763",
+    "total": {
+      "pts": 121,
+      "fgm": 46,
+      "fga": 96,
+      "f2m": 32,
+      "f2a": 54,
+      "f3m": 14,
+      "f3a": 42,
+      "ftm": 15,
+      "fta": 23,
+      "reb": 44,
+      "oreb": 8,
+      "dreb": 26,
+      "ast": 32,
+      "tov": 15,
+      "stl": 10,
+      "blk": 2,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "28:07",
+        "pts": 6,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "30:17",
+        "pts": 25,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "35",
+        "name": "CHRISTIAN KOLOKO",
+        "min": "21:39",
+        "pts": 3,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "CEDRIC COWARD",
+        "min": "23:50",
+        "pts": 5,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "12",
+        "name": "JA MORANT",
+        "min": "31:22",
+        "pts": 16,
+        "reb": 3,
+        "ast": 11
+      }
+    ]
+  }
+}

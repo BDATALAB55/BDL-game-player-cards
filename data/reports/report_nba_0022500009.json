@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500009",
+  "date": "2025.12.25",
+  "venue": "Madison Square Garden",
+  "attendance": 19812,
+  "home": {
+    "id": "1610612752",
+    "total": {
+      "pts": 126,
+      "fgm": 44,
+      "fga": 94,
+      "f2m": 23,
+      "f2a": 50,
+      "f3m": 21,
+      "f3a": 44,
+      "ftm": 17,
+      "fta": 22,
+      "reb": 51,
+      "oreb": 12,
+      "dreb": 31,
+      "ast": 28,
+      "tov": 13,
+      "stl": 9,
+      "blk": 4,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "33:05",
+        "pts": 8,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "26:25",
+        "pts": 15,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "27:23",
+        "pts": 11,
+        "reb": 14,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "36:10",
+        "pts": 12,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "39:13",
+        "pts": 34,
+        "reb": 1,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612739",
+    "total": {
+      "pts": 124,
+      "fgm": 45,
+      "fga": 86,
+      "f2m": 30,
+      "f2a": 52,
+      "f3m": 15,
+      "f3a": 34,
+      "ftm": 19,
+      "fta": 23,
+      "reb": 51,
+      "oreb": 9,
+      "dreb": 36,
+      "ast": 30,
+      "tov": 14,
+      "stl": 7,
+      "blk": 0,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "SAM MERRILL",
+        "min": "29:15",
+        "pts": 11,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "32",
+        "name": "DEAN WADE",
+        "min": "29:28",
+        "pts": 6,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "23:06",
+        "pts": 7,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "10",
+        "name": "DARIUS GARLAND",
+        "min": "36:00",
+        "pts": 20,
+        "reb": 1,
+        "ast": 10
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "32:51",
+        "pts": 34,
+        "reb": 7,
+        "ast": 6
+      }
+    ]
+  }
+}

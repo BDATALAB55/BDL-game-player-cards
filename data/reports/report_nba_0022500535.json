@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500535",
+  "date": "2026.01.09",
+  "venue": "Barclays Center",
+  "attendance": 17548,
+  "home": {
+    "id": "1610612751",
+    "total": {
+      "pts": 105,
+      "fgm": 40,
+      "fga": 100,
+      "f2m": 25,
+      "f2a": 53,
+      "f3m": 15,
+      "f3a": 47,
+      "ftm": 10,
+      "fta": 11,
+      "reb": 49,
+      "oreb": 19,
+      "dreb": 20,
+      "ast": 26,
+      "tov": 12,
+      "stl": 12,
+      "blk": 4,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "33:26",
+        "pts": 18,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "30:05",
+        "pts": 12,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "30:57",
+        "pts": 13,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "23:43",
+        "pts": 8,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "26:26",
+        "pts": 19,
+        "reb": 3,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612746",
+    "total": {
+      "pts": 121,
+      "fgm": 45,
+      "fga": 76,
+      "f2m": 31,
+      "f2a": 52,
+      "f3m": 14,
+      "f3a": 24,
+      "ftm": 17,
+      "fta": 19,
+      "reb": 47,
+      "oreb": 6,
+      "dreb": 31,
+      "ast": 28,
+      "tov": 15,
+      "stl": 9,
+      "blk": 8,
+      "pf": 13
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "28:22",
+        "pts": 26,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "26:14",
+        "pts": 16,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "24:55",
+        "pts": 5,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "22:11",
+        "pts": 9,
+        "reb": 1,
+        "ast": 5
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "34:31",
+        "pts": 31,
+        "reb": 4,
+        "ast": 6
+      }
+    ]
+  }
+}

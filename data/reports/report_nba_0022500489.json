@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500489",
+  "date": "2026.01.03",
+  "venue": "United Center",
+  "attendance": 21315,
+  "home": {
+    "id": "1610612741",
+    "total": {
+      "pts": 99,
+      "fgm": 39,
+      "fga": 87,
+      "f2m": 28,
+      "f2a": 46,
+      "f3m": 11,
+      "f3a": 41,
+      "ftm": 10,
+      "fta": 14,
+      "reb": 47,
+      "oreb": 6,
+      "dreb": 37,
+      "ast": 32,
+      "tov": 11,
+      "stl": 9,
+      "blk": 5,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "27:10",
+        "pts": 2,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "JALEN SMITH",
+        "min": "15:01",
+        "pts": 9,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "NIKOLA VUČEVIĆ",
+        "min": "33:59",
+        "pts": 28,
+        "reb": 7,
+        "ast": 8
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "34:21",
+        "pts": 17,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "30",
+        "name": "TRE JONES",
+        "min": "27:56",
+        "pts": 10,
+        "reb": 2,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612766",
+    "total": {
+      "pts": 112,
+      "fgm": 39,
+      "fga": 91,
+      "f2m": 24,
+      "f2a": 50,
+      "f3m": 15,
+      "f3a": 41,
+      "ftm": 19,
+      "fta": 23,
+      "reb": 62,
+      "oreb": 13,
+      "dreb": 39,
+      "ast": 23,
+      "tov": 11,
+      "stl": 7,
+      "blk": 3,
+      "pf": 12
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "32:52",
+        "pts": 18,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "MILES BRIDGES",
+        "min": "35:20",
+        "pts": 26,
+        "reb": 14,
+        "ast": 1
+      },
+      {
+        "no": "16",
+        "name": "PJ HALL",
+        "min": "22:03",
+        "pts": 10,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "24",
+        "name": "BRANDON MILLER",
+        "min": "36:20",
+        "pts": 22,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "LAMELO BALL",
+        "min": "26:26",
+        "pts": 17,
+        "reb": 6,
+        "ast": 7
+      }
+    ]
+  }
+}

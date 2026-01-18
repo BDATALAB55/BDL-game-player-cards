@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500372",
+  "date": "2025.12.18",
+  "venue": "Gainbridge Fieldhouse",
+  "attendance": 15660,
+  "home": {
+    "id": "1610612754",
+    "total": {
+      "pts": 113,
+      "fgm": 43,
+      "fga": 93,
+      "f2m": 32,
+      "f2a": 59,
+      "f3m": 11,
+      "f3a": 34,
+      "ftm": 16,
+      "fta": 18,
+      "reb": 56,
+      "oreb": 16,
+      "dreb": 36,
+      "ast": 22,
+      "tov": 14,
+      "stl": 8,
+      "blk": 6,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "00",
+        "name": "BENNEDICT MATHURIN",
+        "min": "38:28",
+        "pts": 16,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "37:33",
+        "pts": 26,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "18:06",
+        "pts": 6,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "29",
+        "name": "QUENTON JACKSON",
+        "min": "27:08",
+        "pts": 10,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "37:25",
+        "pts": 31,
+        "reb": 1,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612752",
+    "total": {
+      "pts": 114,
+      "fgm": 43,
+      "fga": 92,
+      "f2m": 26,
+      "f2a": 49,
+      "f3m": 17,
+      "f3a": 43,
+      "ftm": 11,
+      "fta": 19,
+      "reb": 54,
+      "oreb": 14,
+      "dreb": 32,
+      "ast": 31,
+      "tov": 16,
+      "stl": 10,
+      "blk": 5,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "33:42",
+        "pts": 16,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "51",
+        "name": "MOHAMED DIAWARA",
+        "min": "18:52",
+        "pts": 5,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "55",
+        "name": "ARIEL HUKPORTI",
+        "min": "26:55",
+        "pts": 4,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "37:15",
+        "pts": 22,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "34:21",
+        "pts": 25,
+        "reb": 7,
+        "ast": 7
+      }
+    ]
+  }
+}

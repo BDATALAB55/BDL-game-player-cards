@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500563",
+  "date": "2026.01.12",
+  "venue": "Intuit Dome",
+  "attendance": 17927,
+  "home": {
+    "id": "1610612746",
+    "total": {
+      "pts": 117,
+      "fgm": 41,
+      "fga": 92,
+      "f2m": 23,
+      "f2a": 43,
+      "f3m": 18,
+      "f3a": 49,
+      "ftm": 17,
+      "fta": 21,
+      "reb": 46,
+      "oreb": 9,
+      "dreb": 28,
+      "ast": 22,
+      "tov": 5,
+      "stl": 7,
+      "blk": 0,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "30:35",
+        "pts": 35,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "30:18",
+        "pts": 3,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "27:11",
+        "pts": 9,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "20:33",
+        "pts": 0,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "37:32",
+        "pts": 32,
+        "reb": 4,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612766",
+    "total": {
+      "pts": 109,
+      "fgm": 43,
+      "fga": 88,
+      "f2m": 33,
+      "f2a": 55,
+      "f3m": 10,
+      "f3a": 33,
+      "ftm": 13,
+      "fta": 17,
+      "reb": 59,
+      "oreb": 10,
+      "dreb": 39,
+      "ast": 24,
+      "tov": 10,
+      "stl": 3,
+      "blk": 4,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "35:14",
+        "pts": 18,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "MILES BRIDGES",
+        "min": "34:28",
+        "pts": 11,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "14",
+        "name": "MOUSSA DIABATÉ",
+        "min": "35:06",
+        "pts": 13,
+        "reb": 15,
+        "ast": 4
+      },
+      {
+        "no": "24",
+        "name": "BRANDON MILLER",
+        "min": "32:52",
+        "pts": 13,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "1",
+        "name": "LAMELO BALL",
+        "min": "32:15",
+        "pts": 25,
+        "reb": 9,
+        "ast": 5
+      }
+    ]
+  }
+}

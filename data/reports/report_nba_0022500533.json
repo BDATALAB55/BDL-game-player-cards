@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500533",
+  "date": "2026.01.09",
+  "venue": "Kia Center",
+  "attendance": 19271,
+  "home": {
+    "id": "1610612753",
+    "total": {
+      "pts": 91,
+      "fgm": 36,
+      "fga": 88,
+      "f2m": 32,
+      "f2a": 59,
+      "f3m": 4,
+      "f3a": 29,
+      "ftm": 15,
+      "fta": 18,
+      "reb": 56,
+      "oreb": 11,
+      "dreb": 31,
+      "ast": 21,
+      "tov": 18,
+      "stl": 5,
+      "blk": 10,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "93",
+        "name": "NOAH PENDA",
+        "min": "29:55",
+        "pts": 5,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "37:24",
+        "pts": 14,
+        "reb": 11,
+        "ast": 7
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "28:53",
+        "pts": 13,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "37:47",
+        "pts": 23,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "0",
+        "name": "ANTHONY BLACK",
+        "min": "37:20",
+        "pts": 21,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612755",
+    "total": {
+      "pts": 103,
+      "fgm": 39,
+      "fga": 95,
+      "f2m": 35,
+      "f2a": 67,
+      "f3m": 4,
+      "f3a": 28,
+      "ftm": 21,
+      "fta": 24,
+      "reb": 59,
+      "oreb": 21,
+      "dreb": 31,
+      "ast": 20,
+      "tov": 12,
+      "stl": 12,
+      "blk": 6,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "PAUL GEORGE",
+        "min": "33:14",
+        "pts": 18,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "25",
+        "name": "DOMINICK BARLOW",
+        "min": "24:19",
+        "pts": 11,
+        "reb": 9,
+        "ast": 0
+      },
+      {
+        "no": "21",
+        "name": "JOEL EMBIID",
+        "min": "31:23",
+        "pts": 22,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "39:32",
+        "pts": 6,
+        "reb": 9,
+        "ast": 7
+      },
+      {
+        "no": "0",
+        "name": "TYRESE MAXEY",
+        "min": "37:52",
+        "pts": 29,
+        "reb": 1,
+        "ast": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500317",
+  "date": "2025.12.01",
+  "venue": "Crypto.com Arena",
+  "attendance": 18997,
+  "home": {
+    "id": "1610612747",
+    "total": {
+      "pts": 108,
+      "fgm": 41,
+      "fga": 80,
+      "f2m": 28,
+      "f2a": 47,
+      "f3m": 13,
+      "f3a": 33,
+      "ftm": 13,
+      "fta": 15,
+      "reb": 43,
+      "oreb": 5,
+      "dreb": 34,
+      "ast": 18,
+      "tov": 21,
+      "stl": 1,
+      "blk": 0,
+      "pf": 13
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "31:14",
+        "pts": 10,
+        "reb": 0,
+        "ast": 3
+      },
+      {
+        "no": "28",
+        "name": "RUI HACHIMURA",
+        "min": "22:59",
+        "pts": 0,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "27:52",
+        "pts": 12,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "AUSTIN REAVES",
+        "min": "33:22",
+        "pts": 16,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "31:33",
+        "pts": 38,
+        "reb": 11,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612756",
+    "total": {
+      "pts": 125,
+      "fgm": 52,
+      "fga": 92,
+      "f2m": 35,
+      "f2a": 53,
+      "f3m": 17,
+      "f3a": 39,
+      "ftm": 4,
+      "fta": 8,
+      "reb": 42,
+      "oreb": 4,
+      "dreb": 29,
+      "ast": 35,
+      "tov": 11,
+      "stl": 16,
+      "blk": 1,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "32:55",
+        "pts": 33,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "33:00",
+        "pts": 6,
+        "reb": 7,
+        "ast": 11
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "24:52",
+        "pts": 13,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "33:50",
+        "pts": 28,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "09:55",
+        "pts": 11,
+        "reb": 2,
+        "ast": 3
+      }
+    ]
+  }
+}

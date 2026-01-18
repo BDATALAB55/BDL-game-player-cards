@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500407",
+  "date": "2025.12.22",
+  "venue": "Chase Center",
+  "attendance": 18064,
+  "home": {
+    "id": "1610612744",
+    "total": {
+      "pts": 120,
+      "fgm": 46,
+      "fga": 89,
+      "f2m": 35,
+      "f2a": 52,
+      "f3m": 11,
+      "f3a": 37,
+      "ftm": 17,
+      "fta": 24,
+      "reb": 53,
+      "oreb": 14,
+      "dreb": 33,
+      "ast": 33,
+      "tov": 13,
+      "stl": 8,
+      "blk": 6,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "JIMMY BUTLER III",
+        "min": "29:30",
+        "pts": 21,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "17:46",
+        "pts": 9,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "21",
+        "name": "QUINTEN POST",
+        "min": "25:11",
+        "pts": 8,
+        "reb": 12,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "32:25",
+        "pts": 20,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "31:08",
+        "pts": 26,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612753",
+    "total": {
+      "pts": 97,
+      "fgm": 36,
+      "fga": 87,
+      "f2m": 29,
+      "f2a": 60,
+      "f3m": 7,
+      "f3a": 27,
+      "ftm": 18,
+      "fta": 26,
+      "reb": 57,
+      "oreb": 16,
+      "dreb": 32,
+      "ast": 21,
+      "tov": 18,
+      "stl": 8,
+      "blk": 5,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "33:03",
+        "pts": 20,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "34:03",
+        "pts": 21,
+        "reb": 12,
+        "ast": 7
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "28:44",
+        "pts": 9,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "ANTHONY BLACK",
+        "min": "30:31",
+        "pts": 19,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "TYUS JONES",
+        "min": "25:57",
+        "pts": 7,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  }
+}

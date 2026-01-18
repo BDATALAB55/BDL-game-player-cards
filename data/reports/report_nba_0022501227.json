@@ -1,0 +1,134 @@
+{
+  "gameId": "0022501227",
+  "date": "2025.12.15",
+  "venue": "Kaseya Center",
+  "attendance": 19600,
+  "home": {
+    "id": "1610612748",
+    "total": {
+      "pts": 96,
+      "fgm": 35,
+      "fga": 83,
+      "f2m": 26,
+      "f2a": 52,
+      "f3m": 9,
+      "f3a": 31,
+      "ftm": 17,
+      "fta": 23,
+      "reb": 54,
+      "oreb": 11,
+      "dreb": 34,
+      "ast": 20,
+      "tov": 18,
+      "stl": 12,
+      "blk": 7,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "SIMONE FONTECCHIO",
+        "min": "26:01",
+        "pts": 3,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "32:22",
+        "pts": 10,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "33:01",
+        "pts": 20,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "34:03",
+        "pts": 20,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "31:57",
+        "pts": 12,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612761",
+    "total": {
+      "pts": 106,
+      "fgm": 42,
+      "fga": 88,
+      "f2m": 26,
+      "f2a": 48,
+      "f3m": 16,
+      "f3a": 40,
+      "ftm": 6,
+      "fta": 9,
+      "reb": 50,
+      "oreb": 11,
+      "dreb": 34,
+      "ast": 33,
+      "tov": 19,
+      "stl": 9,
+      "blk": 7,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "37:48",
+        "pts": 28,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "32:26",
+        "pts": 17,
+        "reb": 10,
+        "ast": 6
+      },
+      {
+        "no": "19",
+        "name": "JAKOB POELTL",
+        "min": "29:21",
+        "pts": 8,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "OCHAI AGBAJI",
+        "min": "21:42",
+        "pts": 5,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "34:25",
+        "pts": 15,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500585",
+  "date": "2026.01.15",
+  "venue": "Moda Center",
+  "attendance": 16196,
+  "home": {
+    "id": "1610612757",
+    "total": {
+      "pts": 117,
+      "fgm": 43,
+      "fga": 95,
+      "f2m": 29,
+      "f2a": 49,
+      "f3m": 14,
+      "f3a": 46,
+      "ftm": 17,
+      "fta": 24,
+      "reb": 61,
+      "oreb": 16,
+      "dreb": 38,
+      "ast": 23,
+      "tov": 14,
+      "stl": 13,
+      "blk": 5,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "91",
+        "name": "SIDY CISSOKO",
+        "min": "21:58",
+        "pts": 6,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "38:08",
+        "pts": 11,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "28:25",
+        "pts": 9,
+        "reb": 12,
+        "ast": 1
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "33:11",
+        "pts": 24,
+        "reb": 9,
+        "ast": 5
+      },
+      {
+        "no": "5",
+        "name": "JRUE HOLIDAY",
+        "min": "20:32",
+        "pts": 12,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612737",
+    "total": {
+      "pts": 101,
+      "fgm": 35,
+      "fga": 81,
+      "f2m": 21,
+      "f2a": 37,
+      "f3m": 14,
+      "f3a": 44,
+      "ftm": 17,
+      "fta": 22,
+      "reb": 50,
+      "oreb": 7,
+      "dreb": 33,
+      "ast": 23,
+      "tov": 18,
+      "stl": 10,
+      "blk": 4,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "27",
+        "name": "VÍT KREJČÍ",
+        "min": "20:45",
+        "pts": 8,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "37:54",
+        "pts": 12,
+        "reb": 11,
+        "ast": 6
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "36:50",
+        "pts": 26,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "33:23",
+        "pts": 10,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "29:21",
+        "pts": 11,
+        "reb": 6,
+        "ast": 7
+      }
+    ]
+  }
+}

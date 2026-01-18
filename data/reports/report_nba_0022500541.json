@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500541",
+  "date": "2026.01.09",
+  "venue": "Crypto.com Arena",
+  "attendance": 18997,
+  "home": {
+    "id": "1610612747",
+    "total": {
+      "pts": 101,
+      "fgm": 39,
+      "fga": 91,
+      "f2m": 24,
+      "f2a": 55,
+      "f3m": 15,
+      "f3a": 36,
+      "ftm": 8,
+      "fta": 14,
+      "reb": 54,
+      "oreb": 15,
+      "dreb": 30,
+      "ast": 28,
+      "tov": 12,
+      "stl": 9,
+      "blk": 0,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "32:51",
+        "pts": 26,
+        "reb": 9,
+        "ast": 10
+      },
+      {
+        "no": "12",
+        "name": "JAKE LARAVIA",
+        "min": "34:25",
+        "pts": 13,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "23:33",
+        "pts": 4,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "30:11",
+        "pts": 9,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "36:04",
+        "pts": 24,
+        "reb": 9,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612749",
+    "total": {
+      "pts": 105,
+      "fgm": 38,
+      "fga": 79,
+      "f2m": 26,
+      "f2a": 45,
+      "f3m": 12,
+      "f3a": 34,
+      "ftm": 17,
+      "fta": 22,
+      "reb": 51,
+      "oreb": 12,
+      "dreb": 32,
+      "ast": 23,
+      "tov": 16,
+      "stl": 10,
+      "blk": 3,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "35:13",
+        "pts": 11,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "34",
+        "name": "GIANNIS ANTETOKOUNMPO",
+        "min": "30:48",
+        "pts": 21,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "22:56",
+        "pts": 8,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "KEVIN PORTER JR.",
+        "min": "39:28",
+        "pts": 22,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "30:59",
+        "pts": 10,
+        "reb": 6,
+        "ast": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500570",
+  "date": "2026.01.13",
+  "venue": "Chase Center",
+  "attendance": 18064,
+  "home": {
+    "id": "1610612744",
+    "total": {
+      "pts": 119,
+      "fgm": 42,
+      "fga": 89,
+      "f2m": 19,
+      "f2a": 32,
+      "f3m": 23,
+      "f3a": 57,
+      "ftm": 12,
+      "fta": 13,
+      "reb": 46,
+      "oreb": 4,
+      "dreb": 30,
+      "ast": 34,
+      "tov": 14,
+      "stl": 16,
+      "blk": 5,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "JIMMY BUTLER III",
+        "min": "26:26",
+        "pts": 16,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "22:07",
+        "pts": 10,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "21",
+        "name": "QUINTEN POST",
+        "min": "14:14",
+        "pts": 3,
+        "reb": 0,
+        "ast": 1
+      },
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "22:49",
+        "pts": 14,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "24:30",
+        "pts": 7,
+        "reb": 4,
+        "ast": 11
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612757",
+    "total": {
+      "pts": 97,
+      "fgm": 36,
+      "fga": 83,
+      "f2m": 22,
+      "f2a": 36,
+      "f3m": 14,
+      "f3a": 47,
+      "ftm": 11,
+      "fta": 17,
+      "reb": 55,
+      "oreb": 8,
+      "dreb": 37,
+      "ast": 20,
+      "tov": 22,
+      "stl": 7,
+      "blk": 3,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "91",
+        "name": "SIDY CISSOKO",
+        "min": "26:07",
+        "pts": 3,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "28:44",
+        "pts": 6,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "22:20",
+        "pts": 7,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "28:02",
+        "pts": 19,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "CALEB LOVE",
+        "min": "33:55",
+        "pts": 17,
+        "reb": 3,
+        "ast": 7
+      }
+    ]
+  }
+}

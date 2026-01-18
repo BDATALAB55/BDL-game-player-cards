@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500536",
+  "date": "2026.01.09",
+  "venue": "FedExForum",
+  "attendance": 15717,
+  "home": {
+    "id": "1610612763",
+    "total": {
+      "pts": 116,
+      "fgm": 41,
+      "fga": 88,
+      "f2m": 27,
+      "f2a": 47,
+      "f3m": 14,
+      "f3a": 41,
+      "ftm": 20,
+      "fta": 24,
+      "reb": 64,
+      "oreb": 15,
+      "dreb": 37,
+      "ast": 35,
+      "tov": 17,
+      "stl": 4,
+      "blk": 4,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "27:52",
+        "pts": 10,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "32:21",
+        "pts": 23,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "31",
+        "name": "JOCK LANDALE",
+        "min": "28:15",
+        "pts": 13,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "CEDRIC COWARD",
+        "min": "25:30",
+        "pts": 13,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "24",
+        "name": "CAM SPENCER",
+        "min": "30:06",
+        "pts": 7,
+        "reb": 4,
+        "ast": 11
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612760",
+    "total": {
+      "pts": 117,
+      "fgm": 43,
+      "fga": 91,
+      "f2m": 34,
+      "f2a": 54,
+      "f3m": 9,
+      "f3a": 37,
+      "ftm": 22,
+      "fta": 28,
+      "reb": 43,
+      "oreb": 10,
+      "dreb": 26,
+      "ast": 24,
+      "tov": 6,
+      "stl": 9,
+      "blk": 8,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "AARON WIGGINS",
+        "min": "31:53",
+        "pts": 16,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "JALEN WILLIAMS",
+        "min": "36:16",
+        "pts": 26,
+        "reb": 5,
+        "ast": 10
+      },
+      {
+        "no": "15",
+        "name": "BRANDEN CARLSON",
+        "min": "15:50",
+        "pts": 5,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "35:10",
+        "pts": 13,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "25",
+        "name": "AJAY MITCHELL",
+        "min": "38:01",
+        "pts": 23,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  }
+}

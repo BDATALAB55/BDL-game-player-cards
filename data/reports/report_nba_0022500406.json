@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500406",
+  "date": "2025.12.22",
+  "venue": "Paycom Center",
+  "attendance": 18203,
+  "home": {
+    "id": "1610612760",
+    "total": {
+      "pts": 119,
+      "fgm": 46,
+      "fga": 94,
+      "f2m": 31,
+      "f2a": 55,
+      "f3m": 15,
+      "f3a": 39,
+      "ftm": 12,
+      "fta": 14,
+      "reb": 51,
+      "oreb": 9,
+      "dreb": 37,
+      "ast": 20,
+      "tov": 13,
+      "stl": 14,
+      "blk": 4,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "30:24",
+        "pts": 13,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "JALEN WILLIAMS",
+        "min": "34:15",
+        "pts": 24,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "BRANDEN CARLSON",
+        "min": "24:43",
+        "pts": 11,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "29:08",
+        "pts": 8,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "35:39",
+        "pts": 31,
+        "reb": 10,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612763",
+    "total": {
+      "pts": 103,
+      "fgm": 34,
+      "fga": 83,
+      "f2m": 16,
+      "f2a": 42,
+      "f3m": 18,
+      "f3a": 41,
+      "ftm": 17,
+      "fta": 23,
+      "reb": 55,
+      "oreb": 10,
+      "dreb": 36,
+      "ast": 26,
+      "tov": 21,
+      "stl": 8,
+      "blk": 5,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "32:29",
+        "pts": 12,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "31:34",
+        "pts": 11,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "31",
+        "name": "JOCK LANDALE",
+        "min": "25:45",
+        "pts": 11,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "23",
+        "name": "CEDRIC COWARD",
+        "min": "24:46",
+        "pts": 16,
+        "reb": 8,
+        "ast": 6
+      },
+      {
+        "no": "24",
+        "name": "CAM SPENCER",
+        "min": "34:47",
+        "pts": 14,
+        "reb": 5,
+        "ast": 8
+      }
+    ]
+  }
+}

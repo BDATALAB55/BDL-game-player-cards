@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500344",
+  "date": "2025.12.05",
+  "venue": "Scotiabank Arena",
+  "attendance": 19800,
+  "home": {
+    "id": "1610612761",
+    "total": {
+      "pts": 86,
+      "fgm": 34,
+      "fga": 92,
+      "f2m": 25,
+      "f2a": 63,
+      "f3m": 9,
+      "f3a": 29,
+      "ftm": 9,
+      "fta": 13,
+      "reb": 48,
+      "oreb": 12,
+      "dreb": 29,
+      "ast": 19,
+      "tov": 19,
+      "stl": 12,
+      "blk": 4,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "28:38",
+        "pts": 7,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "31:26",
+        "pts": 13,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "19",
+        "name": "JAKOB POELTL",
+        "min": "22:34",
+        "pts": 5,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "14",
+        "name": "JA'KOBE WALTER",
+        "min": "24:45",
+        "pts": 2,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "30:47",
+        "pts": 31,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612766",
+    "total": {
+      "pts": 111,
+      "fgm": 37,
+      "fga": 74,
+      "f2m": 24,
+      "f2a": 38,
+      "f3m": 13,
+      "f3a": 36,
+      "ftm": 24,
+      "fta": 33,
+      "reb": 60,
+      "oreb": 6,
+      "dreb": 41,
+      "ast": 26,
+      "tov": 24,
+      "stl": 14,
+      "blk": 6,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "31:59",
+        "pts": 21,
+        "reb": 3,
+        "ast": 7
+      },
+      {
+        "no": "0",
+        "name": "MILES BRIDGES",
+        "min": "32:03",
+        "pts": 15,
+        "reb": 9,
+        "ast": 5
+      },
+      {
+        "no": "11",
+        "name": "RYAN KALKBRENNER",
+        "min": "25:53",
+        "pts": 12,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "24",
+        "name": "BRANDON MILLER",
+        "min": "29:38",
+        "pts": 12,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "LAMELO BALL",
+        "min": "11:52",
+        "pts": 11,
+        "reb": 2,
+        "ast": 3
+      }
+    ]
+  }
+}

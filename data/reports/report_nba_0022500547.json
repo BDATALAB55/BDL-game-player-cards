@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500547",
+  "date": "2026.01.10",
+  "venue": "Delta Center",
+  "attendance": 18186,
+  "home": {
+    "id": "1610612762",
+    "total": {
+      "pts": 95,
+      "fgm": 36,
+      "fga": 88,
+      "f2m": 29,
+      "f2a": 57,
+      "f3m": 7,
+      "f3a": 31,
+      "ftm": 16,
+      "fta": 21,
+      "reb": 39,
+      "oreb": 11,
+      "dreb": 20,
+      "ast": 22,
+      "tov": 15,
+      "stl": 6,
+      "blk": 2,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "CODY WILLIAMS",
+        "min": "32:28",
+        "pts": 15,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "0",
+        "name": "TAYLOR HENDRICKS",
+        "min": "28:51",
+        "pts": 7,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "42",
+        "name": "KEVIN LOVE",
+        "min": "15:20",
+        "pts": 2,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "28",
+        "name": "BRICE SENSABAUGH",
+        "min": "29:54",
+        "pts": 26,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "23:21",
+        "pts": 4,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612766",
+    "total": {
+      "pts": 150,
+      "fgm": 53,
+      "fga": 101,
+      "f2m": 29,
+      "f2a": 42,
+      "f3m": 24,
+      "f3a": 59,
+      "ftm": 20,
+      "fta": 25,
+      "reb": 72,
+      "oreb": 21,
+      "dreb": 44,
+      "ast": 35,
+      "tov": 12,
+      "stl": 10,
+      "blk": 5,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "18:07",
+        "pts": 12,
+        "reb": 0,
+        "ast": 6
+      },
+      {
+        "no": "0",
+        "name": "MILES BRIDGES",
+        "min": "21:46",
+        "pts": 15,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "14",
+        "name": "MOUSSA DIABATÉ",
+        "min": "24:30",
+        "pts": 10,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "24",
+        "name": "BRANDON MILLER",
+        "min": "21:58",
+        "pts": 18,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "LAMELO BALL",
+        "min": "22:36",
+        "pts": 17,
+        "reb": 5,
+        "ast": 5
+      }
+    ]
+  }
+}

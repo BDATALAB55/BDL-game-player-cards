@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500484",
+  "date": "2026.01.02",
+  "venue": "Chase Center",
+  "attendance": 18064,
+  "home": {
+    "id": "1610612744",
+    "total": {
+      "pts": 94,
+      "fgm": 32,
+      "fga": 90,
+      "f2m": 19,
+      "f2a": 46,
+      "f3m": 13,
+      "f3a": 44,
+      "ftm": 17,
+      "fta": 23,
+      "reb": 50,
+      "oreb": 14,
+      "dreb": 29,
+      "ast": 23,
+      "tov": 16,
+      "stl": 8,
+      "blk": 5,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "WILL RICHARD",
+        "min": "27:12",
+        "pts": 13,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "GUI SANTOS",
+        "min": "26:12",
+        "pts": 9,
+        "reb": 8,
+        "ast": 0
+      },
+      {
+        "no": "21",
+        "name": "QUINTEN POST",
+        "min": "22:47",
+        "pts": 11,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "27:01",
+        "pts": 13,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "2",
+        "name": "BRANDIN PODZIEMSKI",
+        "min": "26:17",
+        "pts": 12,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612760",
+    "total": {
+      "pts": 131,
+      "fgm": 48,
+      "fga": 92,
+      "f2m": 32,
+      "f2a": 54,
+      "f3m": 16,
+      "f3a": 38,
+      "ftm": 19,
+      "fta": 19,
+      "reb": 58,
+      "oreb": 9,
+      "dreb": 42,
+      "ast": 34,
+      "tov": 13,
+      "stl": 10,
+      "blk": 5,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "26:13",
+        "pts": 11,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "JALEN WILLIAMS",
+        "min": "20:32",
+        "pts": 12,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "26:03",
+        "pts": 15,
+        "reb": 15,
+        "ast": 4
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "14:11",
+        "pts": 2,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "28:11",
+        "pts": 30,
+        "reb": 1,
+        "ast": 7
+      }
+    ]
+  }
+}

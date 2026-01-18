@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500550",
+  "date": "2026.01.11",
+  "venue": "Scotiabank Arena",
+  "attendance": 18130,
+  "home": {
+    "id": "1610612761",
+    "total": {
+      "pts": 116,
+      "fgm": 41,
+      "fga": 103,
+      "f2m": 36,
+      "f2a": 71,
+      "f3m": 5,
+      "f3a": 32,
+      "ftm": 29,
+      "fta": 39,
+      "reb": 69,
+      "oreb": 18,
+      "dreb": 30,
+      "ast": 29,
+      "tov": 15,
+      "stl": 14,
+      "blk": 6,
+      "pf": 28
+    },
+    "starters": [
+      {
+        "no": "14",
+        "name": "JA'KOBE WALTER",
+        "min": "04:43",
+        "pts": 2,
+        "reb": 0,
+        "ast": 1
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "43:13",
+        "pts": 31,
+        "reb": 7,
+        "ast": 8
+      },
+      {
+        "no": "12",
+        "name": "COLLIN MURRAY-BOYLES",
+        "min": "42:11",
+        "pts": 17,
+        "reb": 15,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "39:50",
+        "pts": 20,
+        "reb": 5,
+        "ast": 7
+      },
+      {
+        "no": "23",
+        "name": "JAMAL SHEAD",
+        "min": "37:00",
+        "pts": 22,
+        "reb": 1,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612755",
+    "total": {
+      "pts": 115,
+      "fgm": 41,
+      "fga": 90,
+      "f2m": 33,
+      "f2a": 59,
+      "f3m": 8,
+      "f3a": 31,
+      "ftm": 25,
+      "fta": 31,
+      "reb": 60,
+      "oreb": 12,
+      "dreb": 32,
+      "ast": 11,
+      "tov": 22,
+      "stl": 9,
+      "blk": 11,
+      "pf": 29
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "KELLY OUBRE JR.",
+        "min": "34:00",
+        "pts": 13,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "25",
+        "name": "DOMINICK BARLOW",
+        "min": "26:22",
+        "pts": 13,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "ANDRE DRUMMOND",
+        "min": "19:49",
+        "pts": 0,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "44:34",
+        "pts": 17,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "TYRESE MAXEY",
+        "min": "44:30",
+        "pts": 38,
+        "reb": 4,
+        "ast": 5
+      }
+    ]
+  }
+}

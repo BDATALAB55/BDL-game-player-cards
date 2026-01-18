@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500320",
+  "date": "2025.12.02",
+  "venue": "TD Garden",
+  "attendance": 19156,
+  "home": {
+    "id": "1610612738",
+    "total": {
+      "pts": 123,
+      "fgm": 49,
+      "fga": 87,
+      "f2m": 36,
+      "f2a": 47,
+      "f3m": 13,
+      "f3a": 40,
+      "ftm": 12,
+      "fta": 14,
+      "reb": 43,
+      "oreb": 11,
+      "dreb": 27,
+      "ast": 18,
+      "tov": 10,
+      "stl": 6,
+      "blk": 3,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "39:55",
+        "pts": 42,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "27",
+        "name": "JORDAN WALSH",
+        "min": "18:54",
+        "pts": 8,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "21:03",
+        "pts": 8,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "30:15",
+        "pts": 10,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "35:07",
+        "pts": 22,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612752",
+    "total": {
+      "pts": 117,
+      "fgm": 43,
+      "fga": 85,
+      "f2m": 24,
+      "f2a": 41,
+      "f3m": 19,
+      "f3a": 44,
+      "ftm": 12,
+      "fta": 17,
+      "reb": 47,
+      "oreb": 10,
+      "dreb": 23,
+      "ast": 29,
+      "tov": 10,
+      "stl": 5,
+      "blk": 2,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "33:35",
+        "pts": 35,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "36:15",
+        "pts": 19,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "33:14",
+        "pts": 29,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "MILES MCBRIDE",
+        "min": "36:10",
+        "pts": 9,
+        "reb": 3,
+        "ast": 6
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "39:12",
+        "pts": 15,
+        "reb": 2,
+        "ast": 11
+      }
+    ]
+  }
+}

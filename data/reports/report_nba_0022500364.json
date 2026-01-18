@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500364",
+  "date": "2025.12.08",
+  "venue": "Gainbridge Fieldhouse",
+  "attendance": 16465,
+  "home": {
+    "id": "1610612754",
+    "total": {
+      "pts": 116,
+      "fgm": 38,
+      "fga": 87,
+      "f2m": 24,
+      "f2a": 52,
+      "f3m": 14,
+      "f3a": 35,
+      "ftm": 26,
+      "fta": 28,
+      "reb": 46,
+      "oreb": 10,
+      "dreb": 31,
+      "ast": 25,
+      "tov": 13,
+      "stl": 14,
+      "blk": 7,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "00",
+        "name": "BENNEDICT MATHURIN",
+        "min": "35:07",
+        "pts": 25,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "34:35",
+        "pts": 23,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "31:25",
+        "pts": 8,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "55",
+        "name": "ETHAN THOMPSON",
+        "min": "27:46",
+        "pts": 6,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "32:43",
+        "pts": 28,
+        "reb": 4,
+        "ast": 12
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612758",
+    "total": {
+      "pts": 105,
+      "fgm": 41,
+      "fga": 88,
+      "f2m": 34,
+      "f2a": 66,
+      "f3m": 7,
+      "f3a": 22,
+      "ftm": 16,
+      "fta": 23,
+      "reb": 60,
+      "oreb": 15,
+      "dreb": 36,
+      "ast": 28,
+      "tov": 19,
+      "stl": 6,
+      "blk": 4,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "36:04",
+        "pts": 20,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "13",
+        "name": "KEEGAN MURRAY",
+        "min": "37:27",
+        "pts": 8,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "23:14",
+        "pts": 13,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "ZACH LAVINE",
+        "min": "37:59",
+        "pts": 16,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "40:17",
+        "pts": 24,
+        "reb": 12,
+        "ast": 14
+      }
+    ]
+  }
+}

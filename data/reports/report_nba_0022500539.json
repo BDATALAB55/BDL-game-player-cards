@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500539",
+  "date": "2026.01.09",
+  "venue": "Chase Center",
+  "attendance": 18064,
+  "home": {
+    "id": "1610612744",
+    "total": {
+      "pts": 137,
+      "fgm": 52,
+      "fga": 95,
+      "f2m": 33,
+      "f2a": 50,
+      "f3m": 19,
+      "f3a": 45,
+      "ftm": 14,
+      "fta": 14,
+      "reb": 52,
+      "oreb": 14,
+      "dreb": 27,
+      "ast": 39,
+      "tov": 10,
+      "stl": 4,
+      "blk": 6,
+      "pf": 13
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "JIMMY BUTLER III",
+        "min": "22:47",
+        "pts": 15,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "27:10",
+        "pts": 11,
+        "reb": 6,
+        "ast": 8
+      },
+      {
+        "no": "21",
+        "name": "QUINTEN POST",
+        "min": "13:03",
+        "pts": 11,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "21:43",
+        "pts": 7,
+        "reb": 0,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "31:54",
+        "pts": 27,
+        "reb": 0,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612758",
+    "total": {
+      "pts": 103,
+      "fgm": 43,
+      "fga": 86,
+      "f2m": 36,
+      "f2a": 59,
+      "f3m": 7,
+      "f3a": 27,
+      "ftm": 10,
+      "fta": 13,
+      "reb": 39,
+      "oreb": 10,
+      "dreb": 21,
+      "ast": 23,
+      "tov": 12,
+      "stl": 6,
+      "blk": 6,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "34:52",
+        "pts": 24,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "ZACH LAVINE",
+        "min": "30:28",
+        "pts": 15,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "26:18",
+        "pts": 8,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "KEON ELLIS",
+        "min": "25:24",
+        "pts": 5,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "28:13",
+        "pts": 13,
+        "reb": 4,
+        "ast": 7
+      }
+    ]
+  }
+}

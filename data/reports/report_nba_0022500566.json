@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500566",
+  "date": "2026.01.13",
+  "venue": "Fiserv Forum",
+  "attendance": 17341,
+  "home": {
+    "id": "1610612749",
+    "total": {
+      "pts": 106,
+      "fgm": 41,
+      "fga": 85,
+      "f2m": 28,
+      "f2a": 49,
+      "f3m": 13,
+      "f3a": 36,
+      "ftm": 11,
+      "fta": 19,
+      "reb": 41,
+      "oreb": 9,
+      "dreb": 23,
+      "ast": 29,
+      "tov": 19,
+      "stl": 12,
+      "blk": 4,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "26:29",
+        "pts": 9,
+        "reb": 0,
+        "ast": 2
+      },
+      {
+        "no": "34",
+        "name": "GIANNIS ANTETOKOUNMPO",
+        "min": "30:59",
+        "pts": 25,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "9",
+        "name": "BOBBY PORTIS",
+        "min": "27:14",
+        "pts": 14,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "KEVIN PORTER JR.",
+        "min": "29:08",
+        "pts": 13,
+        "reb": 4,
+        "ast": 8
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "30:41",
+        "pts": 11,
+        "reb": 7,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612750",
+    "total": {
+      "pts": 139,
+      "fgm": 55,
+      "fga": 92,
+      "f2m": 33,
+      "f2a": 50,
+      "f3m": 22,
+      "f3a": 42,
+      "ftm": 7,
+      "fta": 12,
+      "reb": 54,
+      "oreb": 9,
+      "dreb": 35,
+      "ast": 37,
+      "tov": 15,
+      "stl": 9,
+      "blk": 2,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JADEN MCDANIELS",
+        "min": "29:33",
+        "pts": 17,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "30",
+        "name": "JULIUS RANDLE",
+        "min": "29:55",
+        "pts": 29,
+        "reb": 8,
+        "ast": 6
+      },
+      {
+        "no": "11",
+        "name": "NAZ REID",
+        "min": "28:10",
+        "pts": 19,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "DONTE DIVINCENZO",
+        "min": "30:09",
+        "pts": 11,
+        "reb": 4,
+        "ast": 7
+      },
+      {
+        "no": "10",
+        "name": "MIKE CONLEY",
+        "min": "20:37",
+        "pts": 9,
+        "reb": 3,
+        "ast": 5
+      }
+    ]
+  }
+}

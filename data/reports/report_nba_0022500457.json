@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500457",
+  "date": "2025.12.29",
+  "venue": "Moda Center",
+  "attendance": 18067,
+  "home": {
+    "id": "1610612757",
+    "total": {
+      "pts": 125,
+      "fgm": 46,
+      "fga": 97,
+      "f2m": 30,
+      "f2a": 56,
+      "f3m": 16,
+      "f3a": 41,
+      "ftm": 17,
+      "fta": 22,
+      "reb": 57,
+      "oreb": 17,
+      "dreb": 31,
+      "ast": 27,
+      "tov": 15,
+      "stl": 3,
+      "blk": 3,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "91",
+        "name": "SIDY CISSOKO",
+        "min": "21:50",
+        "pts": 6,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "25:27",
+        "pts": 9,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "28:49",
+        "pts": 18,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "33:05",
+        "pts": 24,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "39:00",
+        "pts": 27,
+        "reb": 9,
+        "ast": 11
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612742",
+    "total": {
+      "pts": 122,
+      "fgm": 46,
+      "fga": 91,
+      "f2m": 35,
+      "f2a": 59,
+      "f3m": 11,
+      "f3a": 32,
+      "ftm": 19,
+      "fta": 24,
+      "reb": 50,
+      "oreb": 8,
+      "dreb": 33,
+      "ast": 33,
+      "tov": 12,
+      "stl": 6,
+      "blk": 7,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "35:27",
+        "pts": 15,
+        "reb": 6,
+        "ast": 8
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "29:18",
+        "pts": 8,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "25:33",
+        "pts": 17,
+        "reb": 10,
+        "ast": 0
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "28:40",
+        "pts": 25,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "9",
+        "name": "RYAN NEMBHARD",
+        "min": "17:03",
+        "pts": 0,
+        "reb": 2,
+        "ast": 6
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500461",
+  "date": "2025.12.30",
+  "venue": "Intuit Dome",
+  "attendance": 17927,
+  "home": {
+    "id": "1610612746",
+    "total": {
+      "pts": 131,
+      "fgm": 46,
+      "fga": 90,
+      "f2m": 32,
+      "f2a": 52,
+      "f3m": 14,
+      "f3a": 38,
+      "ftm": 25,
+      "fta": 32,
+      "reb": 56,
+      "oreb": 11,
+      "dreb": 31,
+      "ast": 29,
+      "tov": 3,
+      "stl": 13,
+      "blk": 9,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "32:40",
+        "pts": 33,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "21:55",
+        "pts": 16,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "11",
+        "name": "BROOK LOPEZ",
+        "min": "22:55",
+        "pts": 8,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "20:53",
+        "pts": 10,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "30:02",
+        "pts": 21,
+        "reb": 3,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612758",
+    "total": {
+      "pts": 90,
+      "fgm": 34,
+      "fga": 83,
+      "f2m": 25,
+      "f2a": 56,
+      "f3m": 9,
+      "f3a": 27,
+      "ftm": 13,
+      "fta": 14,
+      "reb": 45,
+      "oreb": 11,
+      "dreb": 28,
+      "ast": 18,
+      "tov": 18,
+      "stl": 1,
+      "blk": 8,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "13",
+        "name": "KEEGAN MURRAY",
+        "min": "29:37",
+        "pts": 11,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "PRECIOUS ACHIUWA",
+        "min": "17:11",
+        "pts": 0,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "35:04",
+        "pts": 12,
+        "reb": 12,
+        "ast": 0
+      },
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "27:38",
+        "pts": 8,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "18:55",
+        "pts": 12,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500562",
+  "date": "2026.01.12",
+  "venue": "Golden 1 Center",
+  "attendance": 17832,
+  "home": {
+    "id": "1610612758",
+    "total": {
+      "pts": 124,
+      "fgm": 48,
+      "fga": 82,
+      "f2m": 31,
+      "f2a": 56,
+      "f3m": 17,
+      "f3a": 26,
+      "ftm": 11,
+      "fta": 14,
+      "reb": 41,
+      "oreb": 6,
+      "dreb": 26,
+      "ast": 23,
+      "tov": 12,
+      "stl": 6,
+      "blk": 4,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "36:50",
+        "pts": 32,
+        "reb": 2,
+        "ast": 6
+      },
+      {
+        "no": "9",
+        "name": "PRECIOUS ACHIUWA",
+        "min": "30:23",
+        "pts": 9,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "31:19",
+        "pts": 11,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "ZACH LAVINE",
+        "min": "31:33",
+        "pts": 19,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "34:26",
+        "pts": 22,
+        "reb": 5,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612747",
+    "total": {
+      "pts": 112,
+      "fgm": 41,
+      "fga": 84,
+      "f2m": 33,
+      "f2a": 48,
+      "f3m": 8,
+      "f3a": 36,
+      "ftm": 22,
+      "fta": 28,
+      "reb": 46,
+      "oreb": 12,
+      "dreb": 27,
+      "ast": 21,
+      "tov": 10,
+      "stl": 9,
+      "blk": 2,
+      "pf": 9
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "33:13",
+        "pts": 22,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "12",
+        "name": "JAKE LARAVIA",
+        "min": "31:01",
+        "pts": 2,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "27:25",
+        "pts": 13,
+        "reb": 13,
+        "ast": 1
+      },
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "30:31",
+        "pts": 1,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "36:55",
+        "pts": 42,
+        "reb": 7,
+        "ast": 8
+      }
+    ]
+  }
+}

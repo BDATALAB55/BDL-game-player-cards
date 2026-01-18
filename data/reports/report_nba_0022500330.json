@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500330",
+  "date": "2025.12.03",
+  "venue": "Toyota Center",
+  "attendance": 18055,
+  "home": {
+    "id": "1610612745",
+    "total": {
+      "pts": 121,
+      "fgm": 48,
+      "fga": 91,
+      "f2m": 43,
+      "f2a": 75,
+      "f3m": 5,
+      "f3a": 16,
+      "ftm": 20,
+      "fta": 24,
+      "reb": 71,
+      "oreb": 17,
+      "dreb": 45,
+      "ast": 24,
+      "tov": 16,
+      "stl": 10,
+      "blk": 8,
+      "pf": 10
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "31:49",
+        "pts": 24,
+        "reb": 3,
+        "ast": 8
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "34:40",
+        "pts": 14,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "29:47",
+        "pts": 28,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "20",
+        "name": "JOSH OKOGIE",
+        "min": "26:35",
+        "pts": 3,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "36:33",
+        "pts": 20,
+        "reb": 12,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612758",
+    "total": {
+      "pts": 95,
+      "fgm": 40,
+      "fga": 97,
+      "f2m": 30,
+      "f2a": 63,
+      "f3m": 10,
+      "f3a": 34,
+      "ftm": 5,
+      "fta": 10,
+      "reb": 39,
+      "oreb": 12,
+      "dreb": 20,
+      "ast": 21,
+      "tov": 12,
+      "stl": 10,
+      "blk": 7,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "22:33",
+        "pts": 12,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "13",
+        "name": "KEEGAN MURRAY",
+        "min": "37:23",
+        "pts": 5,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "19",
+        "name": "DREW EUBANKS",
+        "min": "09:59",
+        "pts": 2,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "ZACH LAVINE",
+        "min": "18:41",
+        "pts": 2,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "28:01",
+        "pts": 12,
+        "reb": 4,
+        "ast": 9
+      }
+    ]
+  }
+}

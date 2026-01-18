@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500467",
+  "date": "2025.12.31",
+  "venue": "Frost Bank Center",
+  "attendance": 18602,
+  "home": {
+    "id": "1610612759",
+    "total": {
+      "pts": 134,
+      "fgm": 44,
+      "fga": 89,
+      "f2m": 30,
+      "f2a": 51,
+      "f3m": 14,
+      "f3a": 38,
+      "ftm": 32,
+      "fta": 40,
+      "reb": 60,
+      "oreb": 11,
+      "dreb": 37,
+      "ast": 25,
+      "tov": 11,
+      "stl": 7,
+      "blk": 3,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "36:10",
+        "pts": 36,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "25:44",
+        "pts": 7,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "23:43",
+        "pts": 31,
+        "reb": 13,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "26:45",
+        "pts": 5,
+        "reb": 2,
+        "ast": 7
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "37:41",
+        "pts": 26,
+        "reb": 1,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612752",
+    "total": {
+      "pts": 132,
+      "fgm": 46,
+      "fga": 96,
+      "f2m": 24,
+      "f2a": 44,
+      "f3m": 22,
+      "f3a": 52,
+      "ftm": 18,
+      "fta": 20,
+      "reb": 46,
+      "oreb": 10,
+      "dreb": 30,
+      "ast": 32,
+      "tov": 10,
+      "stl": 7,
+      "blk": 2,
+      "pf": 30
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "34:07",
+        "pts": 9,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "51",
+        "name": "MOHAMED DIAWARA",
+        "min": "05:45",
+        "pts": 6,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "33:28",
+        "pts": 20,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "34:35",
+        "pts": 13,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "35:39",
+        "pts": 29,
+        "reb": 4,
+        "ast": 8
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500328",
+  "date": "2025.12.03",
+  "venue": "Madison Square Garden",
+  "attendance": 19812,
+  "home": {
+    "id": "1610612752",
+    "total": {
+      "pts": 119,
+      "fgm": 42,
+      "fga": 88,
+      "f2m": 30,
+      "f2a": 50,
+      "f3m": 12,
+      "f3a": 38,
+      "ftm": 23,
+      "fta": 27,
+      "reb": 53,
+      "oreb": 13,
+      "dreb": 31,
+      "ast": 28,
+      "tov": 9,
+      "stl": 9,
+      "blk": 6,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "35:54",
+        "pts": 16,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "36:32",
+        "pts": 15,
+        "reb": 8,
+        "ast": 8
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "39:11",
+        "pts": 35,
+        "reb": 18,
+        "ast": 5
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "36:40",
+        "pts": 26,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "2",
+        "name": "MILES MCBRIDE",
+        "min": "34:01",
+        "pts": 15,
+        "reb": 2,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612766",
+    "total": {
+      "pts": 104,
+      "fgm": 36,
+      "fga": 90,
+      "f2m": 23,
+      "f2a": 48,
+      "f3m": 13,
+      "f3a": 42,
+      "ftm": 19,
+      "fta": 21,
+      "reb": 53,
+      "oreb": 12,
+      "dreb": 32,
+      "ast": 19,
+      "tov": 13,
+      "stl": 4,
+      "blk": 7,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "MILES BRIDGES",
+        "min": "28:31",
+        "pts": 8,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "33:44",
+        "pts": 13,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "14",
+        "name": "MOUSSA DIABATÉ",
+        "min": "19:55",
+        "pts": 2,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "LAMELO BALL",
+        "min": "36:55",
+        "pts": 34,
+        "reb": 8,
+        "ast": 9
+      },
+      {
+        "no": "4",
+        "name": "SION JAMES",
+        "min": "30:25",
+        "pts": 11,
+        "reb": 1,
+        "ast": 0
+      }
+    ]
+  }
+}

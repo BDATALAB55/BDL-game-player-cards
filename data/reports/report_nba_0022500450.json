@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500450",
+  "date": "2025.12.29",
+  "venue": "Kaseya Center",
+  "attendance": 20047,
+  "home": {
+    "id": "1610612748",
+    "total": {
+      "pts": 147,
+      "fgm": 53,
+      "fga": 99,
+      "f2m": 31,
+      "f2a": 53,
+      "f3m": 22,
+      "f3a": 46,
+      "ftm": 19,
+      "fta": 23,
+      "reb": 54,
+      "oreb": 15,
+      "dreb": 31,
+      "ast": 40,
+      "tov": 9,
+      "stl": 8,
+      "blk": 4,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "31:20",
+        "pts": 19,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "21:09",
+        "pts": 13,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "7",
+        "name": "KEL'EL WARE",
+        "min": "23:55",
+        "pts": 19,
+        "reb": 9,
+        "ast": 0
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "27:57",
+        "pts": 25,
+        "reb": 1,
+        "ast": 4
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "31:34",
+        "pts": 10,
+        "reb": 3,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612743",
+    "total": {
+      "pts": 123,
+      "fgm": 47,
+      "fga": 89,
+      "f2m": 36,
+      "f2a": 58,
+      "f3m": 11,
+      "f3a": 31,
+      "ftm": 18,
+      "fta": 22,
+      "reb": 43,
+      "oreb": 6,
+      "dreb": 30,
+      "ast": 29,
+      "tov": 10,
+      "stl": 5,
+      "blk": 4,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "SPENCER JONES",
+        "min": "33:06",
+        "pts": 16,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "PEYTON WATSON",
+        "min": "31:41",
+        "pts": 11,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "19:21",
+        "pts": 21,
+        "reb": 5,
+        "ast": 8
+      },
+      {
+        "no": "10",
+        "name": "TIM HARDAWAY JR.",
+        "min": "28:20",
+        "pts": 16,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "34:47",
+        "pts": 20,
+        "reb": 6,
+        "ast": 11
+      }
+    ]
+  }
+}

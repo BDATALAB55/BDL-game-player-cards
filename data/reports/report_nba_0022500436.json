@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500436",
+  "date": "2025.12.27",
+  "venue": "Kaseya Center",
+  "attendance": 19715,
+  "home": {
+    "id": "1610612748",
+    "total": {
+      "pts": 142,
+      "fgm": 55,
+      "fga": 107,
+      "f2m": 43,
+      "f2a": 76,
+      "f3m": 12,
+      "f3a": 31,
+      "ftm": 20,
+      "fta": 21,
+      "reb": 53,
+      "oreb": 17,
+      "dreb": 32,
+      "ast": 33,
+      "tov": 10,
+      "stl": 17,
+      "blk": 5,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "27:27",
+        "pts": 16,
+        "reb": 4,
+        "ast": 7
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "30:33",
+        "pts": 28,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "KEL'EL WARE",
+        "min": "28:30",
+        "pts": 15,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "28:23",
+        "pts": 23,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "19:13",
+        "pts": 0,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612754",
+    "total": {
+      "pts": 116,
+      "fgm": 46,
+      "fga": 93,
+      "f2m": 34,
+      "f2a": 55,
+      "f3m": 12,
+      "f3a": 38,
+      "ftm": 12,
+      "fta": 16,
+      "reb": 51,
+      "oreb": 15,
+      "dreb": 30,
+      "ast": 30,
+      "tov": 26,
+      "stl": 6,
+      "blk": 5,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "JOHNNY FURPHY",
+        "min": "20:47",
+        "pts": 9,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "33:42",
+        "pts": 33,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "21:56",
+        "pts": 11,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "BENNEDICT MATHURIN",
+        "min": "34:50",
+        "pts": 25,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "34:17",
+        "pts": 15,
+        "reb": 3,
+        "ast": 16
+      }
+    ]
+  }
+}

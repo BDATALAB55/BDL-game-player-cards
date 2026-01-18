@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500544",
+  "date": "2026.01.10",
+  "venue": "Little Caesars Arena",
+  "attendance": 20062,
+  "home": {
+    "id": "1610612765",
+    "total": {
+      "pts": 92,
+      "fgm": 33,
+      "fga": 83,
+      "f2m": 25,
+      "f2a": 48,
+      "f3m": 8,
+      "f3a": 35,
+      "ftm": 18,
+      "fta": 25,
+      "reb": 60,
+      "oreb": 16,
+      "dreb": 31,
+      "ast": 21,
+      "tov": 24,
+      "stl": 18,
+      "blk": 13,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "31",
+        "name": "JAVONTE GREEN",
+        "min": "32:42",
+        "pts": 7,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "34:04",
+        "pts": 6,
+        "reb": 3,
+        "ast": 6
+      },
+      {
+        "no": "7",
+        "name": "PAUL REED",
+        "min": "21:53",
+        "pts": 8,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "28:06",
+        "pts": 20,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "JADEN IVEY",
+        "min": "20:19",
+        "pts": 8,
+        "reb": 3,
+        "ast": 0
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612746",
+    "total": {
+      "pts": 98,
+      "fgm": 31,
+      "fga": 72,
+      "f2m": 20,
+      "f2a": 41,
+      "f3m": 11,
+      "f3a": 31,
+      "ftm": 25,
+      "fta": 36,
+      "reb": 49,
+      "oreb": 8,
+      "dreb": 29,
+      "ast": 17,
+      "tov": 21,
+      "stl": 18,
+      "blk": 6,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "30:54",
+        "pts": 26,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "37:17",
+        "pts": 25,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "31:30",
+        "pts": 17,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "38:24",
+        "pts": 2,
+        "reb": 1,
+        "ast": 6
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "37:26",
+        "pts": 19,
+        "reb": 7,
+        "ast": 7
+      }
+    ]
+  }
+}

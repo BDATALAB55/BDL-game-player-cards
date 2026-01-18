@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500462",
+  "date": "2025.12.31",
+  "venue": "Spectrum Center",
+  "attendance": 19685,
+  "home": {
+    "id": "1610612766",
+    "total": {
+      "pts": 125,
+      "fgm": 48,
+      "fga": 93,
+      "f2m": 32,
+      "f2a": 53,
+      "f3m": 16,
+      "f3a": 40,
+      "ftm": 13,
+      "fta": 17,
+      "reb": 46,
+      "oreb": 11,
+      "dreb": 26,
+      "ast": 35,
+      "tov": 15,
+      "stl": 11,
+      "blk": 1,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "COLLIN SEXTON",
+        "min": "27:24",
+        "pts": 16,
+        "reb": 5,
+        "ast": 8
+      },
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "32:20",
+        "pts": 20,
+        "reb": 5,
+        "ast": 8
+      },
+      {
+        "no": "14",
+        "name": "MOUSSA DIABATÉ",
+        "min": "27:53",
+        "pts": 0,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "24",
+        "name": "BRANDON MILLER",
+        "min": "36:20",
+        "pts": 33,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "LAMELO BALL",
+        "min": "30:17",
+        "pts": 27,
+        "reb": 5,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612744",
+    "total": {
+      "pts": 132,
+      "fgm": 46,
+      "fga": 83,
+      "f2m": 22,
+      "f2a": 34,
+      "f3m": 24,
+      "f3a": 49,
+      "ftm": 16,
+      "fta": 17,
+      "reb": 41,
+      "oreb": 10,
+      "dreb": 27,
+      "ast": 35,
+      "tov": 19,
+      "stl": 7,
+      "blk": 3,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "JIMMY BUTLER III",
+        "min": "30:52",
+        "pts": 19,
+        "reb": 5,
+        "ast": 7
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "28:12",
+        "pts": 10,
+        "reb": 8,
+        "ast": 12
+      },
+      {
+        "no": "21",
+        "name": "QUINTEN POST",
+        "min": "14:17",
+        "pts": 9,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "18:53",
+        "pts": 7,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "33:06",
+        "pts": 26,
+        "reb": 2,
+        "ast": 4
+      }
+    ]
+  }
+}

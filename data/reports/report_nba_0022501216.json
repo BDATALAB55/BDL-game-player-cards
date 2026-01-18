@@ -1,0 +1,134 @@
+{
+  "gameId": "0022501216",
+  "date": "2025.12.14",
+  "venue": "Gainbridge Fieldhouse",
+  "attendance": 16001,
+  "home": {
+    "id": "1610612754",
+    "total": {
+      "pts": 89,
+      "fgm": 31,
+      "fga": 84,
+      "f2m": 21,
+      "f2a": 45,
+      "f3m": 10,
+      "f3a": 39,
+      "ftm": 17,
+      "fta": 21,
+      "reb": 47,
+      "oreb": 11,
+      "dreb": 30,
+      "ast": 20,
+      "tov": 8,
+      "stl": 2,
+      "blk": 7,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "00",
+        "name": "BENNEDICT MATHURIN",
+        "min": "31:39",
+        "pts": 15,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "28:40",
+        "pts": 11,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "24:51",
+        "pts": 13,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "55",
+        "name": "ETHAN THOMPSON",
+        "min": "23:54",
+        "pts": 2,
+        "reb": 0,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "29:59",
+        "pts": 7,
+        "reb": 2,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612764",
+    "total": {
+      "pts": 108,
+      "fgm": 41,
+      "fga": 89,
+      "f2m": 31,
+      "f2a": 61,
+      "f3m": 10,
+      "f3a": 28,
+      "ftm": 16,
+      "fta": 26,
+      "reb": 70,
+      "oreb": 17,
+      "dreb": 39,
+      "ast": 19,
+      "tov": 11,
+      "stl": 5,
+      "blk": 3,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "JUSTIN CHAMPAGNIE",
+        "min": "33:01",
+        "pts": 13,
+        "reb": 14,
+        "ast": 0
+      },
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "35:53",
+        "pts": 9,
+        "reb": 8,
+        "ast": 9
+      },
+      {
+        "no": "35",
+        "name": "MARVIN BAGLEY III",
+        "min": "31:58",
+        "pts": 23,
+        "reb": 14,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "34:07",
+        "pts": 18,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "36:19",
+        "pts": 11,
+        "reb": 3,
+        "ast": 5
+      }
+    ]
+  }
+}

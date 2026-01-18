@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500396",
+  "date": "2025.12.21",
+  "venue": "State Farm Arena",
+  "attendance": 15110,
+  "home": {
+    "id": "1610612737",
+    "total": {
+      "pts": 150,
+      "fgm": 51,
+      "fga": 98,
+      "f2m": 28,
+      "f2a": 51,
+      "f3m": 23,
+      "f3a": 47,
+      "ftm": 25,
+      "fta": 32,
+      "reb": 51,
+      "oreb": 6,
+      "dreb": 29,
+      "ast": 39,
+      "tov": 10,
+      "stl": 6,
+      "blk": 7,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "24:16",
+        "pts": 17,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "35:35",
+        "pts": 36,
+        "reb": 11,
+        "ast": 9
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "39:31",
+        "pts": 23,
+        "reb": 7,
+        "ast": 6
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "39:04",
+        "pts": 8,
+        "reb": 9,
+        "ast": 9
+      },
+      {
+        "no": "11",
+        "name": "TRAE YOUNG",
+        "min": "26:21",
+        "pts": 35,
+        "reb": 1,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612741",
+    "total": {
+      "pts": 152,
+      "fgm": 53,
+      "fga": 92,
+      "f2m": 33,
+      "f2a": 50,
+      "f3m": 20,
+      "f3a": 42,
+      "ftm": 26,
+      "fta": 39,
+      "reb": 55,
+      "oreb": 11,
+      "dreb": 29,
+      "ast": 41,
+      "tov": 11,
+      "stl": 9,
+      "blk": 3,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "18:35",
+        "pts": 14,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "28:52",
+        "pts": 28,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "9",
+        "name": "NIKOLA VUČEVIĆ",
+        "min": "30:15",
+        "pts": 13,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "0",
+        "name": "COBY WHITE",
+        "min": "31:04",
+        "pts": 21,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "3",
+        "name": "JOSH GIDDEY",
+        "min": "31:51",
+        "pts": 19,
+        "reb": 9,
+        "ast": 12
+      }
+    ]
+  }
+}

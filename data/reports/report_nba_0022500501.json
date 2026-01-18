@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500501",
+  "date": "2026.01.04",
+  "venue": "Crypto.com Arena",
+  "attendance": 18997,
+  "home": {
+    "id": "1610612747",
+    "total": {
+      "pts": 120,
+      "fgm": 38,
+      "fga": 80,
+      "f2m": 27,
+      "f2a": 39,
+      "f3m": 11,
+      "f3a": 41,
+      "ftm": 33,
+      "fta": 41,
+      "reb": 57,
+      "oreb": 8,
+      "dreb": 37,
+      "ast": 30,
+      "tov": 10,
+      "stl": 4,
+      "blk": 6,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "37:17",
+        "pts": 26,
+        "reb": 7,
+        "ast": 10
+      },
+      {
+        "no": "12",
+        "name": "JAKE LARAVIA",
+        "min": "34:30",
+        "pts": 26,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "33:34",
+        "pts": 15,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "31:09",
+        "pts": 6,
+        "reb": 1,
+        "ast": 4
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "38:53",
+        "pts": 36,
+        "reb": 9,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612763",
+    "total": {
+      "pts": 114,
+      "fgm": 42,
+      "fga": 100,
+      "f2m": 32,
+      "f2a": 59,
+      "f3m": 10,
+      "f3a": 41,
+      "ftm": 20,
+      "fta": 22,
+      "reb": 53,
+      "oreb": 16,
+      "dreb": 31,
+      "ast": 29,
+      "tov": 8,
+      "stl": 6,
+      "blk": 1,
+      "pf": 31
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "24:30",
+        "pts": 23,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "33:41",
+        "pts": 14,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "31",
+        "name": "JOCK LANDALE",
+        "min": "28:36",
+        "pts": 13,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "23",
+        "name": "CEDRIC COWARD",
+        "min": "12:33",
+        "pts": 16,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "24",
+        "name": "CAM SPENCER",
+        "min": "34:02",
+        "pts": 5,
+        "reb": 2,
+        "ast": 9
+      }
+    ]
+  }
+}

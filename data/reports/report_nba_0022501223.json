@@ -1,0 +1,134 @@
+{
+  "gameId": "0022501223",
+  "date": "2025.12.14",
+  "venue": "United Center",
+  "attendance": 18372,
+  "home": {
+    "id": "1610612741",
+    "total": {
+      "pts": 104,
+      "fgm": 38,
+      "fga": 92,
+      "f2m": 25,
+      "f2a": 43,
+      "f3m": 13,
+      "f3a": 49,
+      "ftm": 15,
+      "fta": 17,
+      "reb": 47,
+      "oreb": 13,
+      "dreb": 30,
+      "ast": 26,
+      "tov": 13,
+      "stl": 10,
+      "blk": 4,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "23:31",
+        "pts": 5,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "23:35",
+        "pts": 9,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "9",
+        "name": "NIKOLA VUČEVIĆ",
+        "min": "30:46",
+        "pts": 12,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "COBY WHITE",
+        "min": "28:27",
+        "pts": 20,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "3",
+        "name": "JOSH GIDDEY",
+        "min": "24:04",
+        "pts": 11,
+        "reb": 7,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612740",
+    "total": {
+      "pts": 114,
+      "fgm": 43,
+      "fga": 93,
+      "f2m": 35,
+      "f2a": 60,
+      "f3m": 8,
+      "f3a": 33,
+      "ftm": 20,
+      "fta": 25,
+      "reb": 64,
+      "oreb": 14,
+      "dreb": 39,
+      "ast": 21,
+      "tov": 14,
+      "stl": 7,
+      "blk": 5,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "25",
+        "name": "TREY MURPHY III",
+        "min": "33:44",
+        "pts": 20,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "24:40",
+        "pts": 10,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "22",
+        "name": "DERIK QUEEN",
+        "min": "24:46",
+        "pts": 4,
+        "reb": 8,
+        "ast": 6
+      },
+      {
+        "no": "2",
+        "name": "HERBERT JONES",
+        "min": "19:47",
+        "pts": 10,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "JEREMIAH FEARS",
+        "min": "28:05",
+        "pts": 20,
+        "reb": 2,
+        "ast": 3
+      }
+    ]
+  }
+}

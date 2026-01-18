@@ -1,0 +1,134 @@
+{
+  "gameId": "0022501225",
+  "date": "2025.12.15",
+  "venue": "Ball Arena",
+  "attendance": 19596,
+  "home": {
+    "id": "1610612743",
+    "total": {
+      "pts": 128,
+      "fgm": 43,
+      "fga": 85,
+      "f2m": 28,
+      "f2a": 51,
+      "f3m": 15,
+      "f3a": 34,
+      "ftm": 27,
+      "fta": 33,
+      "reb": 46,
+      "oreb": 7,
+      "dreb": 31,
+      "ast": 24,
+      "tov": 10,
+      "stl": 10,
+      "blk": 4,
+      "pf": 28
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "SPENCER JONES",
+        "min": "40:54",
+        "pts": 11,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "PEYTON WATSON",
+        "min": "05:51",
+        "pts": 5,
+        "reb": 0,
+        "ast": 0
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "42:24",
+        "pts": 39,
+        "reb": 15,
+        "ast": 10
+      },
+      {
+        "no": "23",
+        "name": "CAMERON JOHNSON",
+        "min": "43:03",
+        "pts": 13,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "43:08",
+        "pts": 35,
+        "reb": 3,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612745",
+    "total": {
+      "pts": 125,
+      "fgm": 47,
+      "fga": 93,
+      "f2m": 35,
+      "f2a": 68,
+      "f3m": 12,
+      "f3a": 25,
+      "ftm": 19,
+      "fta": 26,
+      "reb": 56,
+      "oreb": 12,
+      "dreb": 34,
+      "ast": 29,
+      "tov": 16,
+      "stl": 7,
+      "blk": 8,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "44:04",
+        "pts": 25,
+        "reb": 5,
+        "ast": 7
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "43:25",
+        "pts": 16,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "42:29",
+        "pts": 33,
+        "reb": 10,
+        "ast": 10
+      },
+      {
+        "no": "20",
+        "name": "JOSH OKOGIE",
+        "min": "27:40",
+        "pts": 16,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "43:30",
+        "pts": 14,
+        "reb": 12,
+        "ast": 6
+      }
+    ]
+  }
+}

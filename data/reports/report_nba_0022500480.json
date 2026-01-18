@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500480",
+  "date": "2026.01.02",
+  "venue": "United Center",
+  "attendance": 21245,
+  "home": {
+    "id": "1610612741",
+    "total": {
+      "pts": 121,
+      "fgm": 45,
+      "fga": 90,
+      "f2m": 31,
+      "f2a": 49,
+      "f3m": 14,
+      "f3a": 41,
+      "ftm": 17,
+      "fta": 19,
+      "reb": 54,
+      "oreb": 9,
+      "dreb": 38,
+      "ast": 31,
+      "tov": 12,
+      "stl": 6,
+      "blk": 5,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "29:33",
+        "pts": 9,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "JALEN SMITH",
+        "min": "26:57",
+        "pts": 11,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "NIKOLA VUČEVIĆ",
+        "min": "35:11",
+        "pts": 17,
+        "reb": 10,
+        "ast": 5
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "30:23",
+        "pts": 21,
+        "reb": 9,
+        "ast": 7
+      },
+      {
+        "no": "30",
+        "name": "TRE JONES",
+        "min": "28:37",
+        "pts": 6,
+        "reb": 0,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612753",
+    "total": {
+      "pts": 114,
+      "fgm": 43,
+      "fga": 86,
+      "f2m": 29,
+      "f2a": 54,
+      "f3m": 14,
+      "f3a": 32,
+      "ftm": 14,
+      "fta": 21,
+      "reb": 43,
+      "oreb": 5,
+      "dreb": 31,
+      "ast": 28,
+      "tov": 11,
+      "stl": 10,
+      "blk": 5,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "37:46",
+        "pts": 14,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "34:51",
+        "pts": 31,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "31:46",
+        "pts": 13,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "ANTHONY BLACK",
+        "min": "33:15",
+        "pts": 18,
+        "reb": 2,
+        "ast": 7
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "20:03",
+        "pts": 11,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  }
+}

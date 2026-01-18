@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500526",
+  "date": "2026.01.07",
+  "venue": "Chase Center",
+  "attendance": 18064,
+  "home": {
+    "id": "1610612744",
+    "total": {
+      "pts": 120,
+      "fgm": 44,
+      "fga": 89,
+      "f2m": 26,
+      "f2a": 42,
+      "f3m": 18,
+      "f3a": 47,
+      "ftm": 14,
+      "fta": 18,
+      "reb": 53,
+      "oreb": 8,
+      "dreb": 33,
+      "ast": 31,
+      "tov": 9,
+      "stl": 6,
+      "blk": 2,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "JIMMY BUTLER III",
+        "min": "31:57",
+        "pts": 21,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "29:25",
+        "pts": 14,
+        "reb": 3,
+        "ast": 7
+      },
+      {
+        "no": "21",
+        "name": "QUINTEN POST",
+        "min": "18:46",
+        "pts": 11,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "27:30",
+        "pts": 9,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "34:05",
+        "pts": 31,
+        "reb": 6,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612749",
+    "total": {
+      "pts": 113,
+      "fgm": 46,
+      "fga": 85,
+      "f2m": 32,
+      "f2a": 53,
+      "f3m": 14,
+      "f3a": 32,
+      "ftm": 7,
+      "fta": 12,
+      "reb": 41,
+      "oreb": 5,
+      "dreb": 31,
+      "ast": 29,
+      "tov": 12,
+      "stl": 3,
+      "blk": 3,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "29:37",
+        "pts": 11,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "34",
+        "name": "GIANNIS ANTETOKOUNMPO",
+        "min": "30:56",
+        "pts": 34,
+        "reb": 10,
+        "ast": 5
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "24:34",
+        "pts": 13,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "KEVIN PORTER JR.",
+        "min": "40:26",
+        "pts": 15,
+        "reb": 4,
+        "ast": 9
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "35:12",
+        "pts": 16,
+        "reb": 7,
+        "ast": 4
+      }
+    ]
+  }
+}

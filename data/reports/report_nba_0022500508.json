@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500508",
+  "date": "2026.01.05",
+  "venue": "Intuit Dome",
+  "attendance": 17927,
+  "home": {
+    "id": "1610612746",
+    "total": {
+      "pts": 103,
+      "fgm": 37,
+      "fga": 77,
+      "f2m": 27,
+      "f2a": 48,
+      "f3m": 10,
+      "f3a": 29,
+      "ftm": 19,
+      "fta": 21,
+      "reb": 55,
+      "oreb": 6,
+      "dreb": 42,
+      "ast": 25,
+      "tov": 20,
+      "stl": 5,
+      "blk": 9,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "38:07",
+        "pts": 24,
+        "reb": 12,
+        "ast": 5
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "39:06",
+        "pts": 18,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "33:09",
+        "pts": 10,
+        "reb": 11,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "KOBE SANDERS",
+        "min": "35:34",
+        "pts": 20,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "33:11",
+        "pts": 16,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612744",
+    "total": {
+      "pts": 102,
+      "fgm": 35,
+      "fga": 92,
+      "f2m": 25,
+      "f2a": 51,
+      "f3m": 10,
+      "f3a": 41,
+      "ftm": 22,
+      "fta": 27,
+      "reb": 50,
+      "oreb": 12,
+      "dreb": 28,
+      "ast": 27,
+      "tov": 7,
+      "stl": 18,
+      "blk": 4,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "JIMMY BUTLER III",
+        "min": "33:25",
+        "pts": 24,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "31:56",
+        "pts": 6,
+        "reb": 5,
+        "ast": 12
+      },
+      {
+        "no": "21",
+        "name": "QUINTEN POST",
+        "min": "12:32",
+        "pts": 5,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "19:11",
+        "pts": 4,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "33:33",
+        "pts": 27,
+        "reb": 4,
+        "ast": 6
+      }
+    ]
+  }
+}

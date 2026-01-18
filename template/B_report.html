@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @charset "UTF-8";
+        body {
+            font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+            margin: 0; padding: 0; background-color: #292929; color: #FFFFFF;
+            width: 1200px; height: 1653px; overflow: hidden;
+        }
+
+        /* --- ヘッダー・スタッツ --- */
+        .header { display: flex; height: 350px; width: 100%; }
+        .team-box { width: 50%; padding: 20px 40px; position: relative; display: flex; flex-direction: column; justify-content: space-between; box-sizing: border-box; overflow: hidden; }
+        .home { background-color: __HOME_BG__ !important; color: __HOME_TEXT__ !important; }
+        .away { background-color: __AWAY_BG__ !important; color: __AWAY_TEXT__ !important; }
+
+        .accent {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 350px;
+            height: 350px;
+            z-index: 1;
+            background: linear-gradient(135deg, var(--accent-color) 50%, transparent 50%);
+            pointer-events: none;
+        }
+        .home .accent { --accent-color: __HOME_DARK__; }
+        .away .accent { --accent-color: __AWAY_DARK__; }
+
+        .city-part, .nick-part, .score-val {
+            position: relative;
+            z-index: 5;
+            text-transform: uppercase !important;
+            color: inherit !important;
+        }
+        .city-part {
+            font-size: 35px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            line-height: 1.0;
+            margin-top: 13px;
+            color: currentColor !important;
+            margin-bottom: 14px;
+        }
+
+        .nick-part {
+            font-size: 56px;
+            font-weight: 700;
+            letter-spacing: 0.13em;
+            line-height: 1;
+            margin-top: 0px;
+            color: currentColor !important;
+            white-space: nowrap;
+            display: block;
+            width: 100%;
+            overflow: visible;
+        }
+
+        .score-val {
+            font-size: 115px;
+            font-weight: 700;
+            text-align: right;
+            line-height: 0.8;
+            margin-top: auto;
+            margin-bottom: 20px;
+            letter-spacing: 0.16em;
+            margin-right: -0.16em;
+        }
+
+        .sub-header {
+            background-color: #292929;
+            height: 173px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 30px 40px 0 40px;
+            box-sizing: border-box;
+        }
+
+        .info-left {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            width: 835px;
+        }
+
+        .info-row-top {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .info-row-bottom {
+            display: flex;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: baseline;
+            margin-right: 60px;
+        }
+
+        .info-item:nth-child(2) {
+            flex-grow: 1; 
+            max-width: 550px;
+        }
+
+        .info-label {
+            color: #888;
+            font-size: 30px;
+            font-weight: 0;
+            margin-right: 20px;
+            width: auto;
+            font-family: 'Arial Black', sans-serif;
+            letter-spacing: 0.2em;
+        }
+
+        .info-value {
+            font-size: 32px;
+            font-weight: 600;
+            font-family: "Avenir Next", "AvenirNext-Bold", "Arial Black", sans-serif;
+            letter-spacing: 0.13em;
+            display: inline-block;
+            white-space: nowrap;
+            width: 520px; /* バッジにぶつからない限界の幅 */
+            overflow: hidden; /* はみ出た分を隠す（JSが動くまでの保険） */
+            text-overflow: clip;
+            
+        }
+
+        .info-right {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            align-items: flex-end;
+            margin-top: -5px;
+        }
+
+        .category-badge, .round-badge {
+            background-color: #FFFFFF;
+            color: #000000;
+            text-align: center;
+            width: 300px;
+            border-radius: 2px;
+            text-transform: uppercase;
+            font-family: "Avenir Next", "AvenirNext-Bold", "Arial Black", sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .category-badge {
+            height: 58px;
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+        }
+
+        .round-badge {
+            height: 58px;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+        }
+
+        .stats-section {
+            background-color: #292929;
+            width: 100%;
+        }
+        .stats-grid-container {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            width: 100%;
+        }
+
+        .stat-cell {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 15px 0;
+            text-align: center;
+            border-right: none;
+            background-image: linear-gradient(to bottom, #FFFFFF 40%, rgba(255,255,255,0) 0%);
+            background-position: right;
+            background-size: 2px 10px;
+            background-repeat: repeat-y;
+        }
+        .stat-cell:last-child { background-image: none; }
+
+        .home-row { background-color: __HOME_BG__ !important; color: __HOME_TEXT__!important; height: 100px; }
+        .away-row { background-color: __AWAY_BG__ !important; color: __AWAY_TEXT__!important; height: 100px; }
+        .home-row *, .away-row * { color: inherit !important; }
+
+        .label-row { background-color: #292929; height: 60px; }
+
+        .val-main {
+            font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: 0.1em;
+            color: inherit !important;
+        }
+
+        .val-sub {
+            font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+            font-size: 19px;
+            font-weight: 600;
+            color: inherit !important;
+            margin-top: 20px;
+            letter-spacing: 0.1em;
+        }
+
+        .stat-label {
+            font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+            color: #ffffff;
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+        }
+
+        /* --- グラフエリア --- */
+        .charts-area { padding: 20px 30px; display: flex; flex-direction: column; gap: 40px; }
+        .chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .chart-box { background: transparent; border: none; padding: 0; position: relative; display: flex; flex-direction: column; align-items: center; }
+
+        .chart-title {
+            width: 100%; box-sizing: border-box; text-align: center;
+            font-size: 24px; font-weight: 600; border: 2.5px solid #FFF;
+            padding: 8px 0; margin-bottom: 15px; letter-spacing: 0.2em;
+            font-family: "Avenir Next", sans-serif; text-transform: uppercase;
+        }
+
+        .charts-wrapper { display: flex; justify-content: space-around; align-items: center; width: 100%; padding: 0; height: 220px; }
+
+        .fg-container { display: flex; align-items: center; gap: 15px; width: 100%; }
+
+        .fg-label-box {
+            width: 280px; flex-shrink: 0; font-family: "Avenir Next", sans-serif;
+            font-size: 22px; font-weight: 600; border: 2.5px solid #FFF;
+            padding: 10px 0; text-align: center; letter-spacing: 0.1em; text-transform: uppercase;
+        }
+
+        .bar-row-wrapper { flex-grow: 1; }
+        .bar-row { display: flex; height: 30px; background: transparent; width: 100%; overflow: visible; gap: 20px; }
+        .bar-group { display: flex; flex-direction: column; flex: 1; position: relative; background:transparent; }
+        .bar-main-row { display: flex; height: 30px; width: 100%; background: #222; position: relative; z-index: 1; overflow: visible; }
+
+        .bar-main-row::after {
+            content: "";
+            position: absolute;
+            top: -5px; height: calc(100% + 10px); left: 0; width: 100%;
+            background-image:
+                linear-gradient(90deg, #FFF 2px, transparent 2px),
+                linear-gradient(90deg, #FFF 2px, transparent 2px),
+                linear-gradient(90deg, #FFF 2px, transparent 2px);
+            background-position: 0% 0, 50% 0, 100% 0;
+            background-size: 2px 100%; background-repeat: no-repeat;
+            pointer-events: none; z-index: 10;
+        }
+
+        .bar-group.home-side { border-right: none; }
+        .bar-item {
+            width: calc(var(--w) * 1%); height: 100%; display: flex; align-items: center;
+            font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+            font-size: 34px; font-weight: 600; z-index: 5; color: inherit !important;
+        }
+
+        .bar-item.h-2p, .bar-item.a-2p { justify-content: flex-start; padding-left: 15px; }
+        .bar-item.h-3p, .bar-item.a-3p { justify-content: flex-end; padding-right: 15px; }
+
+        .bar-sub-label { display: none; }
+
+        .bar-legend-container { display: flex; justify-content: center; gap: 30px; margin-top: 10px; }
+        .bar-legend-group { display: flex; gap: 20px; align-items: center; }
+        .legend-item { display: flex; align-items: center; font-family: "Avenir Next", sans-serif; font-size: 20px; font-weight: 600; color: #FFFFFF; white-space: nowrap; }
+        .legend-rect { width: 18px; height: 18px; margin-right: 8px; border-radius: 2px; }
+
+        .h-2p { background: __HOME_COLOR__; color: __HOME_TEXT__; }
+        .h-3p { background: __HOME_COLOR2__; color: __HOME_TEXT2__; }
+        .a-2p { background: __AWAY_COLOR__; color: __AWAY_TEXT__; border-left: 3px solid #292929; }
+        .a-3p { background: __AWAY_COLOR2__; color: __AWAY_TEXT2__; }
+
+        .pie-legend-container { display: flex; justify-content: space-around; width: 100%; margin-top: 15px; }
+        .pie-legend { display: flex; justify-content: center; gap: 15px; font-family: "Avenir Next", sans-serif; font-size: 22px; font-weight: 600; color: #FFFFFF; }
+        .dot { width: 18px; height: 18px; border-radius: 50%; display: inline-block; margin-right: 6px; }
+
+        /* --- スターターエリア --- */
+        .starter-section { padding: 0 60px; margin-top: 15px; display: flex; flex-direction: column; align-items: center;box-sizing: border-box; }
+
+        .white-dotted-line {
+            border: none !important; height: 4px; width: calc(100% + 70px); margin-left: -35px;
+            background-image: linear-gradient(to right, #FFFFFF 50%, rgba(255,255,255,0) 0%);
+            background-size: 15px 6px; background-repeat: repeat-x; margin-top: 0; margin-bottom: 25px;
+        }
+
+        .starter-title {
+            border: 2.5px solid #FFF; display: block; width: calc(104% - 0px); padding: 4px 0;
+            font-family: "Avenir Next", sans-serif; font-size: 24px; font-weight: 600;
+            margin-bottom: 20px; letter-spacing: 0.2em; text-align: center; text-transform: uppercase; box-sizing: border-box;
+        }
+
+        .starter-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; width: 105%; }
+
+        .stat-header {
+            display: flex; justify-content: flex-end; gap: 10px;
+            font-family: "Avenir Next", sans-serif; font-size: 20px; font-weight: 650;
+            color: #FFFFFF; margin-bottom: 5px; padding-right: 5px;
+        }
+        .stat-header span { width: 45px; text-align: center; }
+        .stat-header .min-label { width: 60px; }
+
+        .player-row { display: flex; align-items: center; margin-bottom: 5px; border-bottom: 0px solid #333; padding-bottom: 5px; }
+        .p-num {
+            width: 45px; height: 40px; display: flex; align-items: center; justify-content: center;
+            font-family: "Avenir Next", sans-serif; font-weight: 600; font-size: 22px; margin-right: 10px;
+        }
+
+        #home-starters .p-num { background-color: __HOME_BG__!important; color: __HOME_TEXT__!important; }
+        #away-starters .p-num { background-color: __AWAY_BG__!important; color: __AWAY_TEXT__!important; }
+
+        .p-name {
+            font-family: "Avenir Next", sans-serif; 
+            font-size: 24px; font-weight: 600;
+            letter-spacing: 0.1em; 
+            width: 280px; /* 幅を固定して判定を安定させる */
+            white-space: nowrap; 
+            overflow: visible; 
+            text-transform: none !important;
+            display: inline-block;
+        }
+
+        .p-stats {
+            font-family: "Avenir Next", sans-serif; font-size: 20px; font-weight: 700;
+            color: #FFFFFF; text-align: center; display: flex; gap: 25px; align-items: center;
+        }
+
+        .p-min { width: 50px; font-family: "Avenir Next", sans-serif; font-size: 22px; font-weight: 600; color: #FFFFFF; text-align: center; }
+        .p-val { width: 30px; font-family: "Avenir Next", sans-serif; font-size: 22px; font-weight: 600; color: #FFFFFF; text-align: center; }
+
+        .p-name, .p-stats, .p-min, .p-val, .stat-header { color: #FFFFFF !important; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="team-box home">
+            <div class="accent"></div>
+            <div>
+                <div class="city-part">__HOME_CITY__</div>
+                <div class="nick-part">__HOME_NICK__</div>
+            </div>
+            <div class="score-val home-score-val">__HOME_SCORE__</div>
+        </div>
+        <div class="team-box away">
+            <div class="accent"></div>
+            <div>
+                <div class="city-part">__AWAY_CITY__</div>
+                <div class="nick-part">__AWAY_NICK__</div>
+            </div>
+            <div class="score-val away-score-val">__AWAY_SCORE__</div>
+        </div>
+    </div>
+
+    <div class="sub-header">
+        <div class="info-left">
+            <div class="info-row-top">
+                <div class="info-item">
+                    <span class="info-label">Date</span>
+                    <span class="info-value">__DATE__</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Attendance</span>
+                    <span class="info-value">__ATTENDANCE__</span>
+                </div>
+            </div>
+            <div class="info-row-bottom">
+                <div class="info-item">
+                    <span class="info-label">Location</span>
+                    <span class="info-value">__VENUE__</span>
+                </div>
+            </div>
+        </div>
+        <div class="info-right">
+            <div class="category-badge">__LEAGUE_TYPE__</div>
+            <div class="round-badge">__ROUND__</div>
+        </div>
+    </div>
+
+    <div class="stats-section">
+        <div class="stats-grid-container home-row">
+            <div class="stat-cell"><span class="val-main">__H_FGPCT__%</span><span class="val-sub">__H_FGSTR__</span></div>
+            <div class="stat-cell"><span class="val-main">__H_2FGPCT__%</span><span class="val-sub">__H_2FGSTR__</span></div>
+            <div class="stat-cell"><span class="val-main">__H_3FGPCT__%</span><span class="val-sub">__H_3FGSTR__</span></div>
+            <div class="stat-cell"><span class="val-main">__H_FTPCT__%</span><span class="val-sub">__H_FTSTR__</span></div>
+            <div class="stat-cell"><span class="val-main">__H_REB__</span><span class="val-sub">__H_OREB__ - __H_DREB__</span></div>
+            <div class="stat-cell"><span class="val-main">__H_AST__</span></div>
+            <div class="stat-cell"><span class="val-main">__H_TOV__</span></div>
+            <div class="stat-cell"><span class="val-main">__H_STL__</span></div>
+            <div class="stat-cell"><span class="val-main">__H_BLK__</span></div>
+            <div class="stat-cell"><span class="val-main">__H_PF__</span></div>
+        </div>
+        <div class="stats-grid-container label-row">
+            <div class="stat-cell"><span class="stat-label">FG</span></div>
+            <div class="stat-cell"><span class="stat-label">2FG</span></div>
+            <div class="stat-cell"><span class="stat-label">3FG</span></div>
+            <div class="stat-cell"><span class="stat-label">FT</span></div>
+            <div class="stat-cell"><span class="stat-label">REB</span></div>
+            <div class="stat-cell"><span class="stat-label">AST</span></div>
+            <div class="stat-cell"><span class="stat-label">TOV</span></div>
+            <div class="stat-cell"><span class="stat-label">STL</span></div>
+            <div class="stat-cell"><span class="stat-label">BLK</span></div>
+            <div class="stat-cell"><span class="stat-label">PF</span></div>
+        </div>
+        <div class="stats-grid-container away-row">
+            <div class="stat-cell"><span class="val-main">__A_FGPCT__%</span><span class="val-sub">__A_FGSTR__</span></div>
+            <div class="stat-cell"><span class="val-main">__A_2FGPCT__%</span><span class="val-sub">__A_2FGSTR__</span></div>
+            <div class="stat-cell"><span class="val-main">__A_3FGPCT__%</span><span class="val-sub">__A_3FGSTR__</span></div>
+            <div class="stat-cell"><span class="val-main">__A_FTPCT__%</span><span class="val-sub">__A_FTSTR__</span></div>
+            <div class="stat-cell"><span class="val-main">__A_REB__</span><span class="val-sub">__A_OREB__ - __A_DREB__</span></div>
+            <div class="stat-cell"><span class="val-main">__A_AST__</span></div>
+            <div class="stat-cell"><span class="val-main">__A_TOV__</span></div>
+            <div class="stat-cell"><span class="val-main">__A_STL__</span></div>
+            <div class="stat-cell"><span class="val-main">__A_BLK__</span></div>
+            <div class="stat-cell"><span class="val-main">__A_PF__</span></div>
+        </div>
+    </div>
+
+    <div class="charts-area">
+        <div class="chart-grid">
+            <div class="chart-box">
+                <div class="chart-title">PTS RATIO</div>
+                <div class="charts-wrapper">
+                    <canvas id="pHome" width="250" height="250"></canvas>
+                    <canvas id="pAway" width="250" height="250"></canvas>
+                </div>
+                <div class="pie-legend-container">
+                    <div class="pie-legend">
+                        <span><span class="dot" style="background:__HOME_COLOR__"></span>2P</span>
+                        <span><span class="dot" style="background:__HOME_COLOR2__"></span>3P</span>
+                        <span><span class="dot" style="background:#888888"></span>FT</span>
+                    </div>
+                    <div class="pie-legend">
+                        <span><span class="dot" style="background:__AWAY_COLOR__"></span>2P</span>
+                        <span><span class="dot" style="background:__AWAY_COLOR2__"></span>3P</span>
+                        <span><span class="dot" style="background:#888888"></span>FT</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-box">
+                <div class="chart-title">3POINT PERCENTAGE</div>
+                <div class="charts-wrapper">
+                    <canvas id="dHome" width="235" height="235"></canvas>
+                    <canvas id="dAway" width="235" height="235"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="fg-container">
+            <div class="fg-label-box">FG Attempt RATIO</div>
+            <div class="bar-row-wrapper">
+                <div class="bar-row">
+                    <div class="bar-group home-side">
+                        <div class="bar-main-row">
+                            <div class="bar-item h-2p h-2p-val" style="--w: __H_ATT_2P__">__H_ATT_2P__%</div>
+                            <div class="bar-item h-3p h-3p-val" style="--w: __H_ATT_3P__">__H_ATT_3P__%</div>
+                        </div>
+                        <div class="bar-legend-container">
+                            <div class="legend-item"><span class="legend-rect" style="background:__HOME_COLOR__"></span>2P</div>
+                            <div class="legend-item"><span class="legend-rect" style="background:__HOME_COLOR2__"></span>3P</div>
+                        </div>
+                    </div>
+                    <div class="bar-group away-side">
+                        <div class="bar-main-row">
+                            <div class="bar-item a-2p a-2p-val" style="--w: __A_ATT_2P__">__A_ATT_2P__%</div>
+                            <div class="bar-item a-3p a-3p-val" style="--w: __A_ATT_3P__">__A_ATT_3P__%</div>
+                        </div>
+                        <div class="bar-legend-container">
+                            <div class="legend-item"><span class="legend-rect" style="background:__AWAY_COLOR__"></span>2P</div>
+                            <div class="legend-item"><span class="legend-rect" style="background:__AWAY_COLOR2__"></span>3P</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="starter-section">
+        
+        <div class="starter-title">STARTING 5</div>
+        <div class="starter-grid">
+            <div>
+                <div class="stat-header">
+                    <span class="min-label">MIN</span><span>PTS</span><span>REB</span><span>AST</span>
+                </div>
+                <div id="home-starters">__HOME_STARTERS_HTML__</div>
+            </div>
+            <div>
+                <div class="stat-header">
+                    <span class="min-label">MIN</span><span>PTS</span><span>REB</span><span>AST</span>
+                </div>
+                <div id="away-starters">__AWAY_STARTERS_HTML__</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+    <script>
+        window.drawReportCharts = (d) => {
+            // --- 1. 会場名 (Location) の調整：バッジに絶対ぶつけないロジック ---
+            const venueEl = document.querySelector('.info-row-bottom .info-value');
+            if (venueEl) {
+                const MAX_V_W = 590; 
+                let v_sp = 0.13;
+                let v_fs = 32;
+                
+                // リセット
+                venueEl.style.letterSpacing = v_sp + "em";
+                venueEl.style.fontSize = v_fs + "px";
+
+                // 間隔を詰める -> サイズを下げる の順でループ
+                while (venueEl.scrollWidth > MAX_V_W && v_fs > 18) {
+                    if (v_sp > -0.15) {
+                        v_sp -= 0.01;
+                    } else {
+                        v_fs -= 1; 
+                    }
+                    venueEl.style.letterSpacing = v_sp + "em";
+                    venueEl.style.fontSize = v_fs + "px";
+                }
+            }
+
+            // --- 2. 選手名・チーム名の調整を一括実行 ---
+            const adjustTextElements = () => {
+                // チーム名 (NICKNAME)
+                document.querySelectorAll('.team-box').forEach(box => {
+                    const nick = box.querySelector('.nick-part');
+                    if (!nick) return;
+                    const maxWidth = box.clientWidth - 80;
+                    let spacing = 0.13;
+                    nick.style.letterSpacing = spacing + "em";
+                    while (nick.scrollWidth > maxWidth && spacing > -0.25) {
+                        spacing -= 0.005;
+                        nick.style.letterSpacing = spacing + "em";
+                    }
+                });
+
+                // 選手名 (PLAYER NAME)
+                document.querySelectorAll('.player-row').forEach(row => {
+                    const nameEl = row.querySelector('.p-name');
+                    if (!nameEl) return;
+                    const maxWidth = 280;
+                    let spacing = 0.13;
+                    let fs = 24;
+                    nameEl.style.letterSpacing = spacing + "em";
+                    nameEl.style.fontSize = fs + "px";
+
+                    if (nameEl.scrollWidth > maxWidth) {
+                        // まず間隔を詰める
+                        while (nameEl.scrollWidth > maxWidth && spacing > -0.12) {
+                            spacing -= 0.01;
+                            nameEl.style.letterSpacing = spacing + "em";
+                        }
+                        // まだならサイズを下げる
+                        if (nameEl.scrollWidth > maxWidth) {
+                            nameEl.style.fontSize = "20px"; // 21pxから微調整
+                        }
+                    }
+                });
+            };
+
+            adjustTextElements();
+
+            if(!d || !d.h) return;
+
+            Chart.register(ChartDataLabels);
+
+            const colors = {
+                h_main: '__HOME_BG__',
+                h_sub: '__HOME_COLOR2__',
+                h_text: '__HOME_TEXT__',
+                h_text2: '__HOME_TEXT2__',
+                a_main: '__AWAY_BG__',
+                a_sub: '__AWAY_COLOR2__',
+                a_text: '__AWAY_TEXT__',
+                a_text2: '__AWAY_TEXT2__'
+            };
+
+            const pieCfg = (labels, data, bgColors, textColors) => ({
+                type: 'pie',
+                data: { labels, datasets: [{ data, backgroundColor: bgColors, borderWidth: 0 }] },
+                options: {
+                    responsive: false, animation: false,
+                    layout: { padding: 15 },
+                    plugins: {
+                        legend: { display: false },
+                        datalabels: {
+                            color: (ctx) => textColors[ctx.dataIndex] || '#FFFFFF',
+                            font: { family: '"Avenir Next", sans-serif', weight: '700', size: 36 },
+                            anchor: 'end', align: 'start', offset: -10,
+                            formatter: (v, ctx) => {
+                                let sum = ctx.dataset.data.reduce((a, b) => a + b, 0);
+                                if (!v || v === 0) return '';
+                                return (v * 100 / sum).toFixed(0) + "%";
+                            }
+                        }
+                    }
+                }
+            });
+
+            new Chart(document.getElementById('pHome'), pieCfg(
+                ['2P','3P','FT'], [d.h.r2, d.h.r3, d.h.rf],
+                [colors.h_main, colors.h_sub, '#888888'],
+                [colors.h_text, colors.h_text2, '#FFFFFF']
+            ));
+            new Chart(document.getElementById('pAway'), pieCfg(
+                ['2P','3P','FT'], [d.a.r2, d.a.r3, d.a.rf],
+                [colors.a_main, colors.a_sub, '#888888'],
+                [colors.a_text, colors.a_text2, '#FFFFFF']
+            ));
+
+            const drawDonut = (canvasId, val, color) => {
+                new Chart(document.getElementById(canvasId), {
+                    type: 'doughnut',
+                    data: { datasets: [{ data: [val, 100 - val], backgroundColor: [color, '#5e5e5e'], borderWidth: 0 }] },
+                    options: {
+                        responsive: false, animation: false, cutout: '70%',
+                        plugins: { datalabels: { display: false } }
+                    },
+                    plugins: [{
+                        id: 'centerText',
+                        afterDraw: (chart) => {
+                            const { ctx, width, height } = chart;
+                            ctx.save();
+                            ctx.font = "bold 40px 'Avenir Next'";
+                            ctx.fillStyle = "white";
+                            ctx.textAlign = "center"; ctx.textBaseline = "middle";
+                            ctx.fillText(val.toFixed(1) + "%", width / 2, height / 2);
+                            ctx.restore();
+                        }
+                    }]
+                });
+            };
+            drawDonut('dHome', d.h.p3, colors.h_main);
+            drawDonut('dAway', d.a.p3, colors.a_main);
+        };
+    </script>
+</body>
+</html>

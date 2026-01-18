@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500378",
+  "date": "2025.12.18",
+  "venue": "Mortgage Matchup Center",
+  "attendance": 17071,
+  "home": {
+    "id": "1610612756",
+    "total": {
+      "pts": 99,
+      "fgm": 36,
+      "fga": 88,
+      "f2m": 26,
+      "f2a": 53,
+      "f3m": 10,
+      "f3a": 35,
+      "ftm": 17,
+      "fta": 22,
+      "reb": 54,
+      "oreb": 12,
+      "dreb": 37,
+      "ast": 19,
+      "tov": 15,
+      "stl": 16,
+      "blk": 6,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "33:01",
+        "pts": 24,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "31:19",
+        "pts": 9,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "19:01",
+        "pts": 6,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "32:56",
+        "pts": 25,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "33:44",
+        "pts": 16,
+        "reb": 6,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612744",
+    "total": {
+      "pts": 98,
+      "fgm": 35,
+      "fga": 89,
+      "f2m": 23,
+      "f2a": 47,
+      "f3m": 12,
+      "f3a": 42,
+      "ftm": 16,
+      "fta": 18,
+      "reb": 60,
+      "oreb": 15,
+      "dreb": 39,
+      "ast": 27,
+      "tov": 20,
+      "stl": 9,
+      "blk": 3,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "JIMMY BUTLER III",
+        "min": "33:56",
+        "pts": 31,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "30:02",
+        "pts": 7,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "21",
+        "name": "QUINTEN POST",
+        "min": "26:37",
+        "pts": 9,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "30:26",
+        "pts": 5,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "33:14",
+        "pts": 15,
+        "reb": 9,
+        "ast": 7
+      }
+    ]
+  }
+}

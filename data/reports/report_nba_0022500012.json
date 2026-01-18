@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500012",
+  "date": "2025.12.25",
+  "venue": "Crypto.com Arena",
+  "attendance": 18997,
+  "home": {
+    "id": "1610612747",
+    "total": {
+      "pts": 96,
+      "fgm": 39,
+      "fga": 77,
+      "f2m": 28,
+      "f2a": 47,
+      "f3m": 11,
+      "f3a": 30,
+      "ftm": 7,
+      "fta": 11,
+      "reb": 31,
+      "oreb": 7,
+      "dreb": 18,
+      "ast": 19,
+      "tov": 16,
+      "stl": 7,
+      "blk": 5,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "32:26",
+        "pts": 18,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "28",
+        "name": "RUI HACHIMURA",
+        "min": "27:42",
+        "pts": 0,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "36:17",
+        "pts": 10,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "15",
+        "name": "AUSTIN REAVES",
+        "min": "14:48",
+        "pts": 12,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "33:55",
+        "pts": 25,
+        "reb": 5,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612745",
+    "total": {
+      "pts": 119,
+      "fgm": 48,
+      "fga": 90,
+      "f2m": 40,
+      "f2a": 66,
+      "f3m": 8,
+      "f3a": 24,
+      "ftm": 15,
+      "fta": 19,
+      "reb": 58,
+      "oreb": 17,
+      "dreb": 31,
+      "ast": 24,
+      "tov": 15,
+      "stl": 10,
+      "blk": 6,
+      "pf": 13
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "33:29",
+        "pts": 25,
+        "reb": 4,
+        "ast": 8
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "35:40",
+        "pts": 16,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "31:13",
+        "pts": 14,
+        "reb": 12,
+        "ast": 4
+      },
+      {
+        "no": "17",
+        "name": "TARI EASON",
+        "min": "26:05",
+        "pts": 13,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "31:51",
+        "pts": 26,
+        "reb": 7,
+        "ast": 5
+      }
+    ]
+  }
+}

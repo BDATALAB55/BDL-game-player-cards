@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500424",
+  "date": "2025.12.26",
+  "venue": "Kia Center",
+  "attendance": 19397,
+  "home": {
+    "id": "1610612753",
+    "total": {
+      "pts": 105,
+      "fgm": 37,
+      "fga": 93,
+      "f2m": 26,
+      "f2a": 58,
+      "f3m": 11,
+      "f3a": 35,
+      "ftm": 20,
+      "fta": 23,
+      "reb": 49,
+      "oreb": 16,
+      "dreb": 26,
+      "ast": 22,
+      "tov": 9,
+      "stl": 7,
+      "blk": 7,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "32:44",
+        "pts": 15,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "31:12",
+        "pts": 13,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "28:19",
+        "pts": 16,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "ANTHONY BLACK",
+        "min": "36:19",
+        "pts": 24,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "2",
+        "name": "TYUS JONES",
+        "min": "19:36",
+        "pts": 8,
+        "reb": 4,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612766",
+    "total": {
+      "pts": 120,
+      "fgm": 41,
+      "fga": 87,
+      "f2m": 22,
+      "f2a": 48,
+      "f3m": 19,
+      "f3a": 39,
+      "ftm": 19,
+      "fta": 28,
+      "reb": 68,
+      "oreb": 16,
+      "dreb": 37,
+      "ast": 23,
+      "tov": 14,
+      "stl": 3,
+      "blk": 6,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "15:13",
+        "pts": 16,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "MILES BRIDGES",
+        "min": "34:48",
+        "pts": 16,
+        "reb": 11,
+        "ast": 5
+      },
+      {
+        "no": "14",
+        "name": "MOUSSA DIABATÉ",
+        "min": "32:41",
+        "pts": 10,
+        "reb": 12,
+        "ast": 3
+      },
+      {
+        "no": "24",
+        "name": "BRANDON MILLER",
+        "min": "36:10",
+        "pts": 15,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "LAMELO BALL",
+        "min": "28:38",
+        "pts": 22,
+        "reb": 7,
+        "ast": 5
+      }
+    ]
+  }
+}

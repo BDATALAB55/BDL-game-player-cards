@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500525",
+  "date": "2026.01.07",
+  "venue": "Paycom Center",
+  "attendance": 18203,
+  "home": {
+    "id": "1610612760",
+    "total": {
+      "pts": 129,
+      "fgm": 44,
+      "fga": 101,
+      "f2m": 37,
+      "f2a": 63,
+      "f3m": 7,
+      "f3a": 38,
+      "ftm": 34,
+      "fta": 42,
+      "reb": 56,
+      "oreb": 12,
+      "dreb": 39,
+      "ast": 26,
+      "tov": 11,
+      "stl": 14,
+      "blk": 11,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "AARON WIGGINS",
+        "min": "24:56",
+        "pts": 7,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "8",
+        "name": "JALEN WILLIAMS",
+        "min": "40:57",
+        "pts": 17,
+        "reb": 6,
+        "ast": 8
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "40:05",
+        "pts": 23,
+        "reb": 12,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "23:54",
+        "pts": 6,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "41:58",
+        "pts": 46,
+        "reb": 6,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612762",
+    "total": {
+      "pts": 125,
+      "fgm": 49,
+      "fga": 111,
+      "f2m": 38,
+      "f2a": 70,
+      "f3m": 11,
+      "f3a": 41,
+      "ftm": 16,
+      "fta": 21,
+      "reb": 79,
+      "oreb": 19,
+      "dreb": 46,
+      "ast": 33,
+      "tov": 20,
+      "stl": 8,
+      "blk": 5,
+      "pf": 31
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "SVI MYKHAILIUK",
+        "min": "26:56",
+        "pts": 8,
+        "reb": 7,
+        "ast": 6
+      },
+      {
+        "no": "23",
+        "name": "LAURI MARKKANEN",
+        "min": "43:46",
+        "pts": 29,
+        "reb": 13,
+        "ast": 1
+      },
+      {
+        "no": "30",
+        "name": "JUSUF NURKIĆ",
+        "min": "32:34",
+        "pts": 15,
+        "reb": 15,
+        "ast": 4
+      },
+      {
+        "no": "28",
+        "name": "BRICE SENSABAUGH",
+        "min": "31:58",
+        "pts": 13,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "42:53",
+        "pts": 25,
+        "reb": 7,
+        "ast": 11
+      }
+    ]
+  }
+}

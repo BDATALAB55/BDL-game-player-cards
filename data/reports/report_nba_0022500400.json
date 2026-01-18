@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500400",
+  "date": "2025.12.21",
+  "venue": "Target Center",
+  "attendance": 18978,
+  "home": {
+    "id": "1610612750",
+    "total": {
+      "pts": 103,
+      "fgm": 37,
+      "fga": 87,
+      "f2m": 23,
+      "f2a": 42,
+      "f3m": 14,
+      "f3a": 45,
+      "ftm": 15,
+      "fta": 23,
+      "reb": 52,
+      "oreb": 11,
+      "dreb": 35,
+      "ast": 28,
+      "tov": 10,
+      "stl": 10,
+      "blk": 4,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JADEN MCDANIELS",
+        "min": "08:50",
+        "pts": 0,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "30",
+        "name": "JULIUS RANDLE",
+        "min": "32:21",
+        "pts": 12,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "27",
+        "name": "RUDY GOBERT",
+        "min": "39:17",
+        "pts": 11,
+        "reb": 18,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "ANTHONY EDWARDS",
+        "min": "36:39",
+        "pts": 24,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "0",
+        "name": "DONTE DIVINCENZO",
+        "min": "33:09",
+        "pts": 18,
+        "reb": 5,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612749",
+    "total": {
+      "pts": 100,
+      "fgm": 35,
+      "fga": 87,
+      "f2m": 22,
+      "f2a": 42,
+      "f3m": 13,
+      "f3a": 45,
+      "ftm": 17,
+      "fta": 20,
+      "reb": 63,
+      "oreb": 11,
+      "dreb": 40,
+      "ast": 27,
+      "tov": 16,
+      "stl": 6,
+      "blk": 2,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "18",
+        "name": "KYLE KUZMA",
+        "min": "32:10",
+        "pts": 12,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "9",
+        "name": "BOBBY PORTIS",
+        "min": "39:03",
+        "pts": 16,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "37:39",
+        "pts": 13,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "23:26",
+        "pts": 4,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "KEVIN PORTER JR.",
+        "min": "37:16",
+        "pts": 24,
+        "reb": 10,
+        "ast": 9
+      }
+    ]
+  }
+}

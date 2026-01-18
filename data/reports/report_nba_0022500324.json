@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500324",
+  "date": "2025.12.03",
+  "venue": "Rocket Arena",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612739",
+    "total": {
+      "pts": 110,
+      "fgm": 38,
+      "fga": 94,
+      "f2m": 25,
+      "f2a": 42,
+      "f3m": 13,
+      "f3a": 52,
+      "ftm": 21,
+      "fta": 24,
+      "reb": 54,
+      "oreb": 10,
+      "dreb": 35,
+      "ast": 23,
+      "tov": 7,
+      "stl": 9,
+      "blk": 11,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "JAYLON TYSON",
+        "min": "32:59",
+        "pts": 14,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "12",
+        "name": "DE'ANDRE HUNTER",
+        "min": "30:06",
+        "pts": 10,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "34:47",
+        "pts": 23,
+        "reb": 10,
+        "ast": 5
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "34:25",
+        "pts": 33,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "10",
+        "name": "DARIUS GARLAND",
+        "min": "29:14",
+        "pts": 6,
+        "reb": 2,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612757",
+    "total": {
+      "pts": 122,
+      "fgm": 37,
+      "fga": 85,
+      "f2m": 23,
+      "f2a": 51,
+      "f3m": 14,
+      "f3a": 34,
+      "ftm": 34,
+      "fta": 39,
+      "reb": 58,
+      "oreb": 12,
+      "dreb": 42,
+      "ast": 27,
+      "tov": 11,
+      "stl": 4,
+      "blk": 4,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "JERAMI GRANT",
+        "min": "33:30",
+        "pts": 16,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "35:05",
+        "pts": 17,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "25:05",
+        "pts": 5,
+        "reb": 13,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "35:55",
+        "pts": 27,
+        "reb": 8,
+        "ast": 7
+      },
+      {
+        "no": "91",
+        "name": "SIDY CISSOKO",
+        "min": "25:29",
+        "pts": 11,
+        "reb": 4,
+        "ast": 1
+      }
+    ]
+  }
+}

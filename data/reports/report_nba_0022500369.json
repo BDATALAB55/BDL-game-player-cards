@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500369",
+  "date": "2025.12.18",
+  "venue": "Paycom Center",
+  "attendance": 18203,
+  "home": {
+    "id": "1610612760",
+    "total": {
+      "pts": 122,
+      "fgm": 48,
+      "fga": 101,
+      "f2m": 35,
+      "f2a": 65,
+      "f3m": 13,
+      "f3a": 36,
+      "ftm": 13,
+      "fta": 16,
+      "reb": 43,
+      "oreb": 9,
+      "dreb": 29,
+      "ast": 28,
+      "tov": 8,
+      "stl": 18,
+      "blk": 4,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "18:04",
+        "pts": 0,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "JALEN WILLIAMS",
+        "min": "28:43",
+        "pts": 20,
+        "reb": 1,
+        "ast": 5
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "30:31",
+        "pts": 22,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "29:11",
+        "pts": 5,
+        "reb": 1,
+        "ast": 4
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "28:40",
+        "pts": 32,
+        "reb": 7,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612746",
+    "total": {
+      "pts": 101,
+      "fgm": 37,
+      "fga": 76,
+      "f2m": 27,
+      "f2a": 44,
+      "f3m": 10,
+      "f3a": 32,
+      "ftm": 17,
+      "fta": 22,
+      "reb": 58,
+      "oreb": 9,
+      "dreb": 40,
+      "ast": 25,
+      "tov": 28,
+      "stl": 6,
+      "blk": 7,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "32:09",
+        "pts": 22,
+        "reb": 8,
+        "ast": 6
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "28:26",
+        "pts": 20,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "31:41",
+        "pts": 11,
+        "reb": 11,
+        "ast": 3
+      },
+      {
+        "no": "10",
+        "name": "BOGDAN BOGDANOVIĆ",
+        "min": "24:26",
+        "pts": 14,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "31:21",
+        "pts": 14,
+        "reb": 5,
+        "ast": 4
+      }
+    ]
+  }
+}

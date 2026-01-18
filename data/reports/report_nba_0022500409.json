@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500409",
+  "date": "2025.12.23",
+  "venue": "Spectrum Center",
+  "attendance": 18679,
+  "home": {
+    "id": "1610612766",
+    "total": {
+      "pts": 126,
+      "fgm": 42,
+      "fga": 93,
+      "f2m": 22,
+      "f2a": 43,
+      "f3m": 20,
+      "f3a": 50,
+      "ftm": 22,
+      "fta": 27,
+      "reb": 60,
+      "oreb": 14,
+      "dreb": 37,
+      "ast": 35,
+      "tov": 4,
+      "stl": 3,
+      "blk": 6,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "28:26",
+        "pts": 19,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "MILES BRIDGES",
+        "min": "33:36",
+        "pts": 10,
+        "reb": 9,
+        "ast": 9
+      },
+      {
+        "no": "14",
+        "name": "MOUSSA DIABATÉ",
+        "min": "35:44",
+        "pts": 12,
+        "reb": 18,
+        "ast": 1
+      },
+      {
+        "no": "24",
+        "name": "BRANDON MILLER",
+        "min": "30:17",
+        "pts": 20,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "LAMELO BALL",
+        "min": "24:48",
+        "pts": 23,
+        "reb": 2,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612764",
+    "total": {
+      "pts": 109,
+      "fgm": 40,
+      "fga": 97,
+      "f2m": 30,
+      "f2a": 62,
+      "f3m": 10,
+      "f3a": 35,
+      "ftm": 19,
+      "fta": 23,
+      "reb": 57,
+      "oreb": 18,
+      "dreb": 31,
+      "ast": 22,
+      "tov": 6,
+      "stl": 3,
+      "blk": 7,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "31:21",
+        "pts": 2,
+        "reb": 2,
+        "ast": 6
+      },
+      {
+        "no": "22",
+        "name": "KHRIS MIDDLETON",
+        "min": "21:51",
+        "pts": 16,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "24:36",
+        "pts": 7,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "23:26",
+        "pts": 14,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "33:16",
+        "pts": 14,
+        "reb": 6,
+        "ast": 4
+      }
+    ]
+  }
+}

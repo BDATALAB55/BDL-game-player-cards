@@ -1,0 +1,134 @@
+{
+  "gameId": "0022501228",
+  "date": "2025.12.14",
+  "venue": "Mortgage Matchup Center",
+  "attendance": 17071,
+  "home": {
+    "id": "1610612756",
+    "total": {
+      "pts": 114,
+      "fgm": 40,
+      "fga": 82,
+      "f2m": 27,
+      "f2a": 45,
+      "f3m": 13,
+      "f3a": 37,
+      "ftm": 21,
+      "fta": 25,
+      "reb": 43,
+      "oreb": 10,
+      "dreb": 27,
+      "ast": 29,
+      "tov": 19,
+      "stl": 11,
+      "blk": 5,
+      "pf": 28
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "GRAYSON ALLEN",
+        "min": "35:03",
+        "pts": 13,
+        "reb": 2,
+        "ast": 7
+      },
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "24:31",
+        "pts": 18,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "28:53",
+        "pts": 20,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "31:22",
+        "pts": 27,
+        "reb": 6,
+        "ast": 7
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "36:40",
+        "pts": 10,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612747",
+    "total": {
+      "pts": 116,
+      "fgm": 38,
+      "fga": 88,
+      "f2m": 31,
+      "f2a": 51,
+      "f3m": 7,
+      "f3a": 37,
+      "ftm": 33,
+      "fta": 43,
+      "reb": 64,
+      "oreb": 24,
+      "dreb": 30,
+      "ast": 20,
+      "tov": 21,
+      "stl": 13,
+      "blk": 8,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "36:14",
+        "pts": 26,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "28",
+        "name": "RUI HACHIMURA",
+        "min": "30:58",
+        "pts": 3,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "30:08",
+        "pts": 20,
+        "reb": 13,
+        "ast": 0
+      },
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "31:36",
+        "pts": 8,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "38:11",
+        "pts": 29,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  }
+}

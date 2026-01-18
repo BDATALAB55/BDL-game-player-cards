@@ -1,0 +1,134 @@
+{
+  "gameId": "0022501224",
+  "date": "2025.12.15",
+  "venue": "Delta Center",
+  "attendance": 18186,
+  "home": {
+    "id": "1610612762",
+    "total": {
+      "pts": 140,
+      "fgm": 50,
+      "fga": 97,
+      "f2m": 37,
+      "f2a": 61,
+      "f3m": 13,
+      "f3a": 36,
+      "ftm": 27,
+      "fta": 33,
+      "reb": 50,
+      "oreb": 8,
+      "dreb": 39,
+      "ast": 33,
+      "tov": 13,
+      "stl": 8,
+      "blk": 4,
+      "pf": 32
+    },
+    "starters": [
+      {
+        "no": "28",
+        "name": "BRICE SENSABAUGH",
+        "min": "21:38",
+        "pts": 4,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "23",
+        "name": "LAURI MARKKANEN",
+        "min": "39:47",
+        "pts": 33,
+        "reb": 16,
+        "ast": 5
+      },
+      {
+        "no": "22",
+        "name": "KYLE FILIPOWSKI",
+        "min": "37:33",
+        "pts": 25,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "24:16",
+        "pts": 7,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "40:51",
+        "pts": 37,
+        "reb": 5,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612742",
+    "total": {
+      "pts": 133,
+      "fgm": 48,
+      "fga": 98,
+      "f2m": 39,
+      "f2a": 71,
+      "f3m": 9,
+      "f3a": 27,
+      "ftm": 28,
+      "fta": 41,
+      "reb": 67,
+      "oreb": 14,
+      "dreb": 40,
+      "ast": 24,
+      "tov": 14,
+      "stl": 6,
+      "blk": 6,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "41:46",
+        "pts": 42,
+        "reb": 7,
+        "ast": 6
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "39:12",
+        "pts": 25,
+        "reb": 13,
+        "ast": 0
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "12:52",
+        "pts": 2,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "36:16",
+        "pts": 15,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "RYAN NEMBHARD",
+        "min": "38:03",
+        "pts": 14,
+        "reb": 4,
+        "ast": 11
+      }
+    ]
+  }
+}

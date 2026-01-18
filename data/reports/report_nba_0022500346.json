@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500346",
+  "date": "2025.12.05",
+  "venue": "Toyota Center",
+  "attendance": 18055,
+  "home": {
+    "id": "1610612745",
+    "total": {
+      "pts": 117,
+      "fgm": 45,
+      "fga": 76,
+      "f2m": 35,
+      "f2a": 58,
+      "f3m": 10,
+      "f3a": 18,
+      "ftm": 17,
+      "fta": 19,
+      "reb": 50,
+      "oreb": 6,
+      "dreb": 34,
+      "ast": 25,
+      "tov": 21,
+      "stl": 9,
+      "blk": 8,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "32:21",
+        "pts": 28,
+        "reb": 4,
+        "ast": 8
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "27:33",
+        "pts": 16,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "12",
+        "name": "STEVEN ADAMS",
+        "min": "29:52",
+        "pts": 4,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "20",
+        "name": "JOSH OKOGIE",
+        "min": "16:24",
+        "pts": 6,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "31:50",
+        "pts": 31,
+        "reb": 4,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612756",
+    "total": {
+      "pts": 98,
+      "fgm": 39,
+      "fga": 100,
+      "f2m": 34,
+      "f2a": 64,
+      "f3m": 5,
+      "f3a": 36,
+      "ftm": 15,
+      "fta": 19,
+      "reb": 49,
+      "oreb": 15,
+      "dreb": 19,
+      "ast": 14,
+      "tov": 13,
+      "stl": 12,
+      "blk": 2,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "31:05",
+        "pts": 23,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "19:20",
+        "pts": 0,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "17:02",
+        "pts": 10,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "GRAYSON ALLEN",
+        "min": "26:09",
+        "pts": 9,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "28:58",
+        "pts": 13,
+        "reb": 2,
+        "ast": 3
+      }
+    ]
+  }
+}

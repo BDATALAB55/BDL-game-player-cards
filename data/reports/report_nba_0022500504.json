@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500504",
+  "date": "2026.01.05",
+  "venue": "Scotiabank Arena",
+  "attendance": 17194,
+  "home": {
+    "id": "1610612761",
+    "total": {
+      "pts": 118,
+      "fgm": 47,
+      "fga": 90,
+      "f2m": 35,
+      "f2a": 53,
+      "f3m": 12,
+      "f3a": 37,
+      "ftm": 12,
+      "fta": 19,
+      "reb": 54,
+      "oreb": 7,
+      "dreb": 39,
+      "ast": 34,
+      "tov": 13,
+      "stl": 10,
+      "blk": 5,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "34:40",
+        "pts": 19,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "36:45",
+        "pts": 18,
+        "reb": 8,
+        "ast": 10
+      },
+      {
+        "no": "12",
+        "name": "COLLIN MURRAY-BOYLES",
+        "min": "31:05",
+        "pts": 17,
+        "reb": 7,
+        "ast": 7
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "31:29",
+        "pts": 17,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "30:33",
+        "pts": 16,
+        "reb": 3,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612737",
+    "total": {
+      "pts": 100,
+      "fgm": 35,
+      "fga": 89,
+      "f2m": 23,
+      "f2a": 55,
+      "f3m": 12,
+      "f3a": 34,
+      "ftm": 18,
+      "fta": 21,
+      "reb": 55,
+      "oreb": 8,
+      "dreb": 38,
+      "ast": 28,
+      "tov": 14,
+      "stl": 11,
+      "blk": 1,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "22:19",
+        "pts": 16,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "36:32",
+        "pts": 13,
+        "reb": 14,
+        "ast": 7
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "36:26",
+        "pts": 17,
+        "reb": 12,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "39:00",
+        "pts": 11,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "33:40",
+        "pts": 14,
+        "reb": 5,
+        "ast": 4
+      }
+    ]
+  }
+}

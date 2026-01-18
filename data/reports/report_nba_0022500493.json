@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500493",
+  "date": "2026.01.03",
+  "venue": "Intuit Dome",
+  "attendance": 17927,
+  "home": {
+    "id": "1610612746",
+    "total": {
+      "pts": 115,
+      "fgm": 42,
+      "fga": 84,
+      "f2m": 27,
+      "f2a": 46,
+      "f3m": 15,
+      "f3a": 38,
+      "ftm": 16,
+      "fta": 17,
+      "reb": 35,
+      "oreb": 8,
+      "dreb": 22,
+      "ast": 26,
+      "tov": 9,
+      "stl": 4,
+      "blk": 4,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "34:29",
+        "pts": 22,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "28:53",
+        "pts": 22,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "11",
+        "name": "BROOK LOPEZ",
+        "min": "12:33",
+        "pts": 6,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "30:28",
+        "pts": 10,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "33:50",
+        "pts": 18,
+        "reb": 3,
+        "ast": 12
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612738",
+    "total": {
+      "pts": 146,
+      "fgm": 53,
+      "fga": 96,
+      "f2m": 29,
+      "f2a": 45,
+      "f3m": 24,
+      "f3a": 51,
+      "ftm": 16,
+      "fta": 19,
+      "reb": 54,
+      "oreb": 16,
+      "dreb": 30,
+      "ast": 30,
+      "tov": 6,
+      "stl": 4,
+      "blk": 6,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "35:08",
+        "pts": 50,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "30",
+        "name": "SAM HAUSER",
+        "min": "21:22",
+        "pts": 8,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "22:34",
+        "pts": 8,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "37:02",
+        "pts": 29,
+        "reb": 4,
+        "ast": 7
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "39:38",
+        "pts": 12,
+        "reb": 4,
+        "ast": 8
+      }
+    ]
+  }
+}

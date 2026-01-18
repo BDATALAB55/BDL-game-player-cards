@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500332",
+  "date": "2025.12.03",
+  "venue": "American Airlines Center",
+  "attendance": 19509,
+  "home": {
+    "id": "1610612742",
+    "total": {
+      "pts": 118,
+      "fgm": 46,
+      "fga": 91,
+      "f2m": 30,
+      "f2a": 59,
+      "f3m": 16,
+      "f3a": 32,
+      "ftm": 10,
+      "fta": 12,
+      "reb": 54,
+      "oreb": 10,
+      "dreb": 40,
+      "ast": 31,
+      "tov": 13,
+      "stl": 6,
+      "blk": 7,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "31:08",
+        "pts": 22,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "35:41",
+        "pts": 18,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "3",
+        "name": "ANTHONY DAVIS",
+        "min": "28:10",
+        "pts": 17,
+        "reb": 17,
+        "ast": 4
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "32:22",
+        "pts": 10,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "RYAN NEMBHARD",
+        "min": "33:56",
+        "pts": 15,
+        "reb": 5,
+        "ast": 13
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612748",
+    "total": {
+      "pts": 108,
+      "fgm": 40,
+      "fga": 101,
+      "f2m": 29,
+      "f2a": 64,
+      "f3m": 11,
+      "f3a": 37,
+      "ftm": 17,
+      "fta": 18,
+      "reb": 55,
+      "oreb": 14,
+      "dreb": 27,
+      "ast": 29,
+      "tov": 10,
+      "stl": 11,
+      "blk": 5,
+      "pf": 13
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "22:48",
+        "pts": 4,
+        "reb": 0,
+        "ast": 3
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "33:22",
+        "pts": 11,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "28:24",
+        "pts": 21,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "14",
+        "name": "TYLER HERRO",
+        "min": "33:07",
+        "pts": 20,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "30:20",
+        "pts": 4,
+        "reb": 1,
+        "ast": 9
+      }
+    ]
+  }
+}

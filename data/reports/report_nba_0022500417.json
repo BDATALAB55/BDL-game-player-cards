@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500417",
+  "date": "2025.12.23",
+  "venue": "Frost Bank Center",
+  "attendance": 19133,
+  "home": {
+    "id": "1610612759",
+    "total": {
+      "pts": 130,
+      "fgm": 48,
+      "fga": 84,
+      "f2m": 32,
+      "f2a": 48,
+      "f3m": 16,
+      "f3a": 36,
+      "ftm": 18,
+      "fta": 24,
+      "reb": 42,
+      "oreb": 10,
+      "dreb": 24,
+      "ast": 34,
+      "tov": 9,
+      "stl": 10,
+      "blk": 3,
+      "pf": 13
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "27:32",
+        "pts": 17,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "25:45",
+        "pts": 20,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "LUKE KORNET",
+        "min": "25:42",
+        "pts": 8,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "27:50",
+        "pts": 24,
+        "reb": 0,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "33:40",
+        "pts": 6,
+        "reb": 3,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612760",
+    "total": {
+      "pts": 110,
+      "fgm": 46,
+      "fga": 85,
+      "f2m": 34,
+      "f2a": 55,
+      "f3m": 12,
+      "f3a": 30,
+      "ftm": 6,
+      "fta": 7,
+      "reb": 40,
+      "oreb": 9,
+      "dreb": 27,
+      "ast": 23,
+      "tov": 13,
+      "stl": 5,
+      "blk": 1,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "JALEN WILLIAMS",
+        "min": "31:31",
+        "pts": 17,
+        "reb": 6,
+        "ast": 8
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "27:08",
+        "pts": 7,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "55",
+        "name": "ISAIAH HARTENSTEIN",
+        "min": "25:39",
+        "pts": 8,
+        "reb": 12,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "26:25",
+        "pts": 15,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "35:29",
+        "pts": 33,
+        "reb": 3,
+        "ast": 8
+      }
+    ]
+  }
+}

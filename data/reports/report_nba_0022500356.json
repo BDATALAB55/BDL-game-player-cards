@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500356",
+  "date": "2025.12.06",
+  "venue": "American Airlines Center",
+  "attendance": 19310,
+  "home": {
+    "id": "1610612742",
+    "total": {
+      "pts": 122,
+      "fgm": 49,
+      "fga": 82,
+      "f2m": 42,
+      "f2a": 63,
+      "f3m": 7,
+      "f3a": 19,
+      "ftm": 17,
+      "fta": 20,
+      "reb": 37,
+      "oreb": 7,
+      "dreb": 24,
+      "ast": 22,
+      "tov": 12,
+      "stl": 13,
+      "blk": 4,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "35:41",
+        "pts": 19,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "36:27",
+        "pts": 14,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "ANTHONY DAVIS",
+        "min": "30:16",
+        "pts": 29,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "28:10",
+        "pts": 15,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "RYAN NEMBHARD",
+        "min": "23:15",
+        "pts": 11,
+        "reb": 1,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612745",
+    "total": {
+      "pts": 109,
+      "fgm": 44,
+      "fga": 87,
+      "f2m": 34,
+      "f2a": 58,
+      "f3m": 10,
+      "f3a": 29,
+      "ftm": 11,
+      "fta": 13,
+      "reb": 45,
+      "oreb": 16,
+      "dreb": 21,
+      "ast": 22,
+      "tov": 18,
+      "stl": 8,
+      "blk": 6,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "31:16",
+        "pts": 27,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "40:54",
+        "pts": 22,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "30",
+        "name": "CLINT CAPELA",
+        "min": "29:57",
+        "pts": 8,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "20",
+        "name": "JOSH OKOGIE",
+        "min": "23:20",
+        "pts": 7,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "33:04",
+        "pts": 7,
+        "reb": 6,
+        "ast": 6
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500440",
+  "date": "2025.12.27",
+  "venue": "Frost Bank Center",
+  "attendance": 19060,
+  "home": {
+    "id": "1610612759",
+    "total": {
+      "pts": 114,
+      "fgm": 43,
+      "fga": 99,
+      "f2m": 33,
+      "f2a": 55,
+      "f3m": 10,
+      "f3a": 44,
+      "ftm": 18,
+      "fta": 21,
+      "reb": 53,
+      "oreb": 15,
+      "dreb": 31,
+      "ast": 30,
+      "tov": 11,
+      "stl": 6,
+      "blk": 7,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "25:48",
+        "pts": 4,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "22:47",
+        "pts": 3,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "27:42",
+        "pts": 32,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "35:16",
+        "pts": 11,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "33:22",
+        "pts": 20,
+        "reb": 2,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612762",
+    "total": {
+      "pts": 127,
+      "fgm": 45,
+      "fga": 83,
+      "f2m": 28,
+      "f2a": 46,
+      "f3m": 17,
+      "f3a": 37,
+      "ftm": 20,
+      "fta": 26,
+      "reb": 50,
+      "oreb": 7,
+      "dreb": 30,
+      "ast": 34,
+      "tov": 15,
+      "stl": 9,
+      "blk": 4,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "SVI MYKHAILIUK",
+        "min": "14:04",
+        "pts": 3,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "LAURI MARKKANEN",
+        "min": "34:18",
+        "pts": 29,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "30",
+        "name": "JUSUF NURKIĆ",
+        "min": "26:13",
+        "pts": 16,
+        "reb": 7,
+        "ast": 6
+      },
+      {
+        "no": "28",
+        "name": "BRICE SENSABAUGH",
+        "min": "33:37",
+        "pts": 11,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "34:46",
+        "pts": 28,
+        "reb": 5,
+        "ast": 6
+      }
+    ]
+  }
+}

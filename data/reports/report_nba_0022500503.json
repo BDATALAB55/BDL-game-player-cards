@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500503",
+  "date": "2026.01.05",
+  "venue": "TD Garden",
+  "attendance": 19156,
+  "home": {
+    "id": "1610612738",
+    "total": {
+      "pts": 115,
+      "fgm": 42,
+      "fga": 104,
+      "f2m": 22,
+      "f2a": 52,
+      "f3m": 20,
+      "f3a": 52,
+      "ftm": 11,
+      "fta": 13,
+      "reb": 64,
+      "oreb": 20,
+      "dreb": 34,
+      "ast": 22,
+      "tov": 7,
+      "stl": 7,
+      "blk": 4,
+      "pf": 11
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "34:34",
+        "pts": 14,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "30",
+        "name": "SAM HAUSER",
+        "min": "20:36",
+        "pts": 9,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "24:35",
+        "pts": 13,
+        "reb": 13,
+        "ast": 1
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "31:15",
+        "pts": 21,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "37:03",
+        "pts": 10,
+        "reb": 6,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612741",
+    "total": {
+      "pts": 101,
+      "fgm": 38,
+      "fga": 86,
+      "f2m": 22,
+      "f2a": 40,
+      "f3m": 16,
+      "f3a": 46,
+      "ftm": 9,
+      "fta": 10,
+      "reb": 49,
+      "oreb": 6,
+      "dreb": 39,
+      "ast": 25,
+      "tov": 11,
+      "stl": 2,
+      "blk": 4,
+      "pf": 13
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "24:52",
+        "pts": 5,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "30:58",
+        "pts": 26,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "NIKOLA VUČEVIĆ",
+        "min": "36:21",
+        "pts": 15,
+        "reb": 15,
+        "ast": 7
+      },
+      {
+        "no": "13",
+        "name": "KEVIN HUERTER",
+        "min": "19:39",
+        "pts": 8,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "30",
+        "name": "TRE JONES",
+        "min": "23:22",
+        "pts": 10,
+        "reb": 5,
+        "ast": 4
+      }
+    ]
+  }
+}

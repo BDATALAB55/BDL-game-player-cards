@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500517",
+  "date": "2026.01.07",
+  "venue": "Little Caesars Arena",
+  "attendance": 19501,
+  "home": {
+    "id": "1610612765",
+    "total": {
+      "pts": 108,
+      "fgm": 45,
+      "fga": 92,
+      "f2m": 33,
+      "f2a": 59,
+      "f3m": 12,
+      "f3a": 33,
+      "ftm": 6,
+      "fta": 8,
+      "reb": 50,
+      "oreb": 8,
+      "dreb": 31,
+      "ast": 35,
+      "tov": 8,
+      "stl": 10,
+      "blk": 8,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "28:52",
+        "pts": 11,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "PAUL REED",
+        "min": "26:20",
+        "pts": 9,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "28",
+        "name": "ISAIAH STEWART",
+        "min": "30:29",
+        "pts": 31,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "22:34",
+        "pts": 12,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "JADEN IVEY",
+        "min": "19:51",
+        "pts": 8,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612741",
+    "total": {
+      "pts": 93,
+      "fgm": 37,
+      "fga": 87,
+      "f2m": 24,
+      "f2a": 53,
+      "f3m": 13,
+      "f3a": 34,
+      "ftm": 6,
+      "fta": 9,
+      "reb": 52,
+      "oreb": 15,
+      "dreb": 30,
+      "ast": 27,
+      "tov": 17,
+      "stl": 5,
+      "blk": 8,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "24:58",
+        "pts": 2,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "32:54",
+        "pts": 20,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "NIKOLA VUČEVIĆ",
+        "min": "32:07",
+        "pts": 20,
+        "reb": 16,
+        "ast": 4
+      },
+      {
+        "no": "13",
+        "name": "KEVIN HUERTER",
+        "min": "30:13",
+        "pts": 8,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "30",
+        "name": "TRE JONES",
+        "min": "30:15",
+        "pts": 6,
+        "reb": 7,
+        "ast": 12
+      }
+    ]
+  }
+}

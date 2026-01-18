@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500322",
+  "date": "2025.12.02",
+  "venue": "Frost Bank Center",
+  "attendance": 18354,
+  "home": {
+    "id": "1610612759",
+    "total": {
+      "pts": 126,
+      "fgm": 42,
+      "fga": 92,
+      "f2m": 24,
+      "f2a": 53,
+      "f3m": 18,
+      "f3a": 39,
+      "ftm": 24,
+      "fta": 31,
+      "reb": 48,
+      "oreb": 11,
+      "dreb": 29,
+      "ast": 28,
+      "tov": 6,
+      "stl": 7,
+      "blk": 7,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "35:01",
+        "pts": 7,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "35:46",
+        "pts": 31,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "7",
+        "name": "LUKE KORNET",
+        "min": "27:56",
+        "pts": 4,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "27:51",
+        "pts": 12,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "31:04",
+        "pts": 29,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612763",
+    "total": {
+      "pts": 119,
+      "fgm": 45,
+      "fga": 90,
+      "f2m": 36,
+      "f2a": 64,
+      "f3m": 9,
+      "f3a": 26,
+      "ftm": 20,
+      "fta": 24,
+      "reb": 59,
+      "oreb": 9,
+      "dreb": 41,
+      "ast": 28,
+      "tov": 15,
+      "stl": 4,
+      "blk": 6,
+      "pf": 28
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "28:18",
+        "pts": 20,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "26:33",
+        "pts": 7,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "14",
+        "name": "ZACH EDEY",
+        "min": "29:40",
+        "pts": 19,
+        "reb": 15,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "CEDRIC COWARD",
+        "min": "28:49",
+        "pts": 9,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "VINCE WILLIAMS JR.",
+        "min": "26:40",
+        "pts": 12,
+        "reb": 7,
+        "ast": 7
+      }
+    ]
+  }
+}

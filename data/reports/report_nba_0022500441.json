@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500441",
+  "date": "2025.12.28",
+  "venue": "Scotiabank Arena",
+  "attendance": 19800,
+  "home": {
+    "id": "1610612761",
+    "total": {
+      "pts": 141,
+      "fgm": 56,
+      "fga": 110,
+      "f2m": 43,
+      "f2a": 68,
+      "f3m": 13,
+      "f3a": 42,
+      "ftm": 16,
+      "fta": 18,
+      "reb": 61,
+      "oreb": 18,
+      "dreb": 37,
+      "ast": 40,
+      "tov": 14,
+      "stl": 10,
+      "blk": 2,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "39:28",
+        "pts": 26,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "30",
+        "name": "OCHAI AGBAJI",
+        "min": "19:56",
+        "pts": 10,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "42:26",
+        "pts": 23,
+        "reb": 25,
+        "ast": 10
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "23:46",
+        "pts": 12,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "38:02",
+        "pts": 27,
+        "reb": 4,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612744",
+    "total": {
+      "pts": 127,
+      "fgm": 43,
+      "fga": 96,
+      "f2m": 27,
+      "f2a": 52,
+      "f3m": 16,
+      "f3a": 44,
+      "ftm": 25,
+      "fta": 28,
+      "reb": 51,
+      "oreb": 14,
+      "dreb": 28,
+      "ast": 25,
+      "tov": 20,
+      "stl": 9,
+      "blk": 9,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "JIMMY BUTLER III",
+        "min": "37:41",
+        "pts": 19,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "33:17",
+        "pts": 21,
+        "reb": 4,
+        "ast": 7
+      },
+      {
+        "no": "21",
+        "name": "QUINTEN POST",
+        "min": "18:08",
+        "pts": 8,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "29:00",
+        "pts": 3,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "41:08",
+        "pts": 39,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  }
+}

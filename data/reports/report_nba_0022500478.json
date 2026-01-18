@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500478",
+  "date": "2026.01.02",
+  "venue": "Rocket Arena",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612739",
+    "total": {
+      "pts": 113,
+      "fgm": 43,
+      "fga": 86,
+      "f2m": 27,
+      "f2a": 47,
+      "f3m": 16,
+      "f3a": 39,
+      "ftm": 11,
+      "fta": 19,
+      "reb": 63,
+      "oreb": 14,
+      "dreb": 41,
+      "ast": 32,
+      "tov": 16,
+      "stl": 7,
+      "blk": 8,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "JAYLON TYSON",
+        "min": "23:45",
+        "pts": 8,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "32:17",
+        "pts": 8,
+        "reb": 11,
+        "ast": 4
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "29:47",
+        "pts": 8,
+        "reb": 12,
+        "ast": 3
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "35:07",
+        "pts": 33,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "10",
+        "name": "DARIUS GARLAND",
+        "min": "32:09",
+        "pts": 18,
+        "reb": 2,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612743",
+    "total": {
+      "pts": 108,
+      "fgm": 40,
+      "fga": 94,
+      "f2m": 23,
+      "f2a": 47,
+      "f3m": 17,
+      "f3a": 47,
+      "ftm": 11,
+      "fta": 13,
+      "reb": 44,
+      "oreb": 5,
+      "dreb": 27,
+      "ast": 26,
+      "tov": 9,
+      "stl": 8,
+      "blk": 3,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "SPENCER JONES",
+        "min": "36:25",
+        "pts": 13,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "PEYTON WATSON",
+        "min": "40:13",
+        "pts": 21,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "14",
+        "name": "DARON HOLMES II",
+        "min": "23:59",
+        "pts": 3,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "24",
+        "name": "JALEN PICKETT",
+        "min": "18:29",
+        "pts": 9,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "38:55",
+        "pts": 34,
+        "reb": 6,
+        "ast": 7
+      }
+    ]
+  }
+}

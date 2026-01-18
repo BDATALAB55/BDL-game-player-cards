@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @charset "UTF-8";
+
+        body {
+            font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #292929;
+            color: #FFFFFF;
+            width: 1200px;
+            height: 1653px;
+            overflow: hidden;
+            
+        }
+
+        /* ヘッダー：高さを 300px → 260px に短縮 */
+        .header {
+            display: flex;
+            height: 350px;
+            width: 100%;
+        }
+        
+        .team-box {
+            flex: 1;
+            padding: 20px 40px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden; /* 三角形を枠内に収める */
+            z-index: 1;
+        }
+        /* チームカラーとテキストカラーをマスターから適用 */
+        .home { background-color: __HOME_BG__ !important; color: __HOME_TEXT__ !important; }
+        .away { background-color: __AWAY_BG__ !important; color: __AWAY_TEXT__ !important; }
+
+        
+        /* --- 各チームボックス左上のアクセント（グラデーション版） --- */
+        .accent {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 350px;
+            height: 350px;
+            z-index: 1; /* 背景より上、文字より下 */
+            background: linear-gradient(135deg, var(--accent-color) 50%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .home .accent { --accent-color: __HOME_DARK__; }
+        .away .accent { --accent-color: __AWAY_DARK__; }
+
+        .team-name-group {
+            position: relative;
+            z-index: 5;
+            color: inherit !important;
+        }
+
+        .score-val {
+            position: relative;
+            z-index: 5;
+            color: inherit !important;
+        }
+
+        .city-part {
+            font-size: 35px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            line-height: 1.0;
+            margin-top: 13px;
+            color: inherit !important;
+            margin-bottom: 14px;
+        }
+
+        .nick-part {
+            font-size: 56px;
+            font-weight: 700;
+            letter-spacing: 0.13em;
+            line-height: 1;
+            margin-top: 0px;
+            color: inherit !important;
+            white-space: nowrap;
+            display: inline-block;
+        }
+
+        .score-val { 
+          font-size: 115px; 
+          font-weight: 700; 
+          text-align: right; 
+          line-height: 0.8;
+          margin-top: auto;
+          margin-bottom: 20px;
+          letter-spacing: 0.16em;
+          margin-right: -0.16em; 
+        }
+
+        
+/* サブヘッダー全体のレイアウト */
+.sub-header {
+    background-color: #292929;
+    height: 173px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 40px 0 40px; /* 上の余白を少し調整 */
+    box-sizing: border-box;
+}
+
+/* 左側エリア */
+.info-left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* 上下の行間 */
+    width: 835px;
+}
+
+/* 1段目を横並びにする重要な設定 */
+.info-row-top {
+    display: flex;
+    flex-direction: row; /* 横に並べる */
+}
+
+/* 2段目 */
+.info-row-bottom {
+    display: flex;
+}
+
+/* 各項目（ラベルと値）のセット */
+.info-item {
+    display: flex;
+    align-items: baseline;
+    margin-right: 60px; /* Date と Attendance の間隔 */
+}
+
+.info-item:nth-child(2) {
+    width: 400px; 
+}
+
+.info-label {
+    color: #888;
+    font-size: 30px;
+    font-weight: 0;
+    margin-right: 20px; /* ラベルと値の間の隙間 */
+    width: auto; /* 幅指定を解除して中身に合わせる */
+    font-family: 'Arial Black', sans-serif;
+    letter-spacing: 0.2em;
+}
+
+.info-value {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: "Avenir Next", "AvenirNext-Bold", "Arial Black", sans-serif;
+    letter-spacing: 0.13em;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+/* 右側バッジの設定 */
+.info-right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-end;
+    margin-top: -5px; /* バッジの高さをDateに合わせる微調整 */
+}
+
+.category-badge, .round-badge {
+    background-color: #FFFFFF;
+    color: #000000;
+    text-align: center;
+    width: 300px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-family: "Avenir Next", "AvenirNext-Bold", "Arial Black", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* B1バッジ：高さを出し、文字を大きく太く */
+.category-badge {
+    height: 58px;
+    font-size: 30px;  /* 26pxから大きく */
+    font-weight: 700; /* より太く */
+    letter-spacing: 0.2em;
+}
+
+/* ROUNDバッジ：高さを抑え、文字を少し小さく */
+.round-badge {
+    height: 58px;
+    font-size: 24px;  /* 26pxから小さく */
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+        
+        .player-section {
+            background-color: __PLAYER_BG__;
+            color: __PLAYER_TEXT__;
+            height: 185px;
+            padding: 30px 40px 60px 40px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .player-no {
+          font-family: "Avenir Next", "AvenirNext-Bold", "Arial Black", sans-serif;
+            font-size: 180px;
+            font-weight: 650;
+            position: absolute;
+            top: 15px;
+            left: 60px;
+            line-height: 1;
+            color: __PLAYER_DARK__;
+            opacity: 1;
+            z-index: 1;
+            letter-spacing: -0.15em;
+            
+        }
+
+        .player-name-container {
+            position: relative;
+            z-index: 10;
+            margin-top: 180px;
+            padding-left: 60px;
+        }
+
+        .player-name {
+            font-size: 60px;
+            font-weight: 650;
+            z-index: 2;
+            letter-spacing: 0.13em;
+            color: #000000;
+            -webkit-text-stroke: 2.0px #FFFFFF;
+            line-height: 1;
+
+            bottom: 90px;
+            position: absolute;
+            left: 60px;
+            z-index: 2;
+            text-transform: uppercase;
+            white-space: nowrap; 
+            display: inline-block; /* 幅を計算可能にする */
+            transform-origin: left bottom; /* 左下を起点に縮める */
+            word-spacing: 20px;
+            }
+
+        .player-team-sub {
+            font-size: 38px;
+            font-weight: 700;
+            text-align: right;
+            margin-bottom: 5px;
+            letter-spacing: 0.1em;
+    color: __PLAYER_TEXT__;
+        }
+
+        .starter-mark {
+          position: absolute;
+          bottom: 50px;
+          right: 60px;
+            font-size: 120px; /* 右側に合わせて大きく */
+            font-weight: 700;
+            color: __PLAYER_BG__; 
+            -webkit-text-stroke: 3px __PLAYER_TEXT__;
+            font-family: "Avenir Next", "AvenirNext-Bold", "Arial Black", sans-serif;
+            line-height: 1;
+            margin-top: 50px; /* チーム名との間隔 */
+        }
+
+/* Sが入っていない時は枠も表示しない */
+.starter-mark:empty {
+    display: none;
+}
+
+
+
+        /* スタッツエリア全体の背景 */
+        .all-stats-area {
+            background-color: #292929; 
+    height: 100%;
+    display: block !important;
+    gap: 40px;              /* これでグリッド同士の間隔を強制的に作ります */
+    padding-top: 20px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+            padding: 40px 20px 40px 40px;
+        }
+
+        .stat-card {
+            background-color: transparent; 
+            align-items: center;
+            display: flex;
+    flex-direction: column;
+        }
+
+        .stat-label { 
+          font-size: 35px; 
+          font-weight: 700; 
+          letter-spacing: 0.06em;
+          color: __PLAYER_BG__;
+          -webkit-text-stroke: 1px #FFFFFF; 
+          margin-bottom: 15px;
+          text-align: left;
+          display: block;
+          width: 110%;
+        position: relative;top: -10px;
+        margin-bottom: -10px; }
+
+        .stat-value { 
+          font-size: 120px; 
+          font-weight: 700;
+          letter-spacing: 0.02em;
+         position: relative;
+         top: 45px;}
+
+         .stats-grid:first-of-type .stat-card:nth-child(1) {
+    align-items: flex-start !important; /* PTSのカード全体を左寄せ */
+    overflow: visible !important;
+}
+
+.stats-grid:first-of-type .stat-card:nth-child(1) .stat-label {
+    margin-left: 0;
+    text-align: left;
+}
+
+.stats-grid:first-of-type .stat-card:nth-child(1) .stat-value {
+  display: inline-block !important; /* 動かすために必要 */
+    transform: translateX(-40px) !important; /* 数値だけを左へ物理的にスライド */
+    text-align: left !important;
+    width: 100% !important;
+    z-index: 100 !important;
+    position: relative !important;
+}
+
+.stats-grid:nth-of-type(2) {
+    margin-top: 60px; /* 20pxから少し広げて、上下の重なりを防ぐ */
+}
+
+.stats-grid:nth-of-type(2) .stat-card {
+    align-items: center !important;
+}
+
+.stats-grid .stat-card:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 横方向の中央 */
+    text-align: center;
+}
+
+.stats-grid .stat-card:nth-child(4) .stat-label {
+    text-align: center;
+    position: relative;
+    top: -10px; /* 他のラベルと高さを合わせる */
+    margin-bottom: 0;
+}
+
+.stats-grid .stat-card:nth-child(4) .chart-container {
+    margin-top: 100px; /* 数値が大きいほど上に上がります */
+}
+
+.stats-grid .stat-card:nth-child(4) .custom-legend {
+    margin-top: 15px;
+}
+
+.reb-container {
+    display: flex;
+    align-items: baseline; /* 底辺を揃える */
+    justify-content: flex-start; /* 左寄せ（中央にしたい場合は center） */
+    gap: -50px; /* メイン数値と内訳の間隔 */
+    white-space: nowrap;
+}
+
+.main-reb {
+    font-size: 120px; /* 元のサイズを維持 */
+    font-weight: 700;
+}
+
+.sub-reb {
+    font-size: 56px;  /* 内訳は小さくして視認性を分ける */
+    font-weight: 600;
+    color: #FFFFFF;
+    letter-spacing: 0.05em;
+    position: relative;
+    top: -5px;        /* 底辺が微妙にズレる場合の微調整用 */
+    margin-left: 60px;
+}
+
+.stats-grid[style*="margin-top: -60px"] .stat-card {
+    padding-left: 20px; /* ドーナツ同士の間隔を確保 */
+}
+        
+        .bottom-stats {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 15px;
+            padding: 0 40px;
+        }
+        .mini-card {
+            background-color: transparent;
+            text-align: center;
+        }
+        .mini-label { 
+          font-size: 35px; 
+          font-weight: 700; 
+          letter-spacing: 0.15em;
+          color: __PLAYER_BG__;
+          -webkit-text-stroke: 1px #FFFFFF; 
+          margin-bottom: 5px; }
+
+        .mini-value { 
+          font-size: 60px; 
+          font-weight: 550; }
+
+        .charts-area {
+            font-size: 40px;
+            font-weight: 700;
+            color: __PLAYER_BG__;
+            -webkit-text-stroke: 1px #FFFFFF;
+            text-align: center;
+            margin-bottom: 10px;
+            }
+
+        .chart-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+        margin: 0 auto;
+    }
+
+    .custom-legend {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        font-size: 22px; /* 視認性を高めるため少し大きくしました */
+        font-weight: 600;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        margin-top: 0px; 
+        position: relative;
+        z-index: 20;
+        }
+
+    .legend-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .dot {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .stat-str-value {
+    font-size: 48px !important;    /* 30pxから一気に48pxへ */
+    font-weight: 600 !important;    /* 圧倒的な太さ */
+    margin-top: 0px !important;    /* チャートとの隙間を確保 */
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    font-family: "Avenir Next";
+    display: block;
+    text-align: center;
+}
+
+    /* 26チームのカラーを自動で引っ張る設定 */
+    .dot.p2 { background-color: __PLAYER_COLOR__; }  /* 仙台ならイエロー */
+    .dot.p3 { background-color: __PLAYER_COLOR2__; } /* 仙台ならブラック */
+    .dot.ft { background-color: #999999; }
+
+    </style>
+</head>
+<body data-color1="__PLAYER_COLOR__" data-color2="__PLAYER_COLOR2__" data-text1="__PLAYER_TEXT__" data-text2="__PLAYER_TEXT2__">
+    <div class="header">
+        <div class="team-box home">
+            <div class="accent"></div><div class="team-name-group">
+            <div class="city-part">__HOME_CITY__</div>   <div class="nick-part">__HOME_NICK__</div>   </div>
+            <div class="score-val" style="color: __HOME_SCORE_COLOR__ !important;">__HOME_SCORE__</div>
+        </div>
+        <div class="team-box away">
+            <div class="accent"></div><div class="team-name-group">
+            <div class="city-part">__AWAY_CITY__</div>   <div class="nick-part">__AWAY_NICK__</div>   </div>
+            <div class="score-val" style="color: __AWAY_SCORE_COLOR__ !important;">__AWAY_SCORE__</div>
+        </div>
+    </div>
+
+    <div class="sub-header">
+    <div class="info-left">
+        <div class="info-row-top">
+            <div class="info-item">
+                <span class="info-label">Date</span>
+                <span class="info-value">__DATE__</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Attendance</span>
+                <span class="info-value">__ATTENDANCE__</span>
+            </div>
+        </div>
+        <div class="info-row-bottom">
+            <div class="info-item">
+                <span class="info-label">Location</span>
+                <span class="info-value">__VENUE__</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-right">
+        <div class="category-badge">__LEAGUE_TYPE__</div>
+        <div class="round-badge">__ROUND__</div>
+    </div>
+</div>
+
+    <div class="player-section">
+    <div class="starter-mark">__STARTER__</div> 
+    
+    <div class="player-no">__PLAYER_NO__</div>
+    <div class="player-team-sub" style="color: __PLAYER_TEXT__; position: absolute; top: 30px; right: 40px;">
+    __PLAYER_TEAM_RAW__</div>
+    <div class="player-name">__PLAYER_NAME__</div>
+</div>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-label">PTS</div>
+            <div class="stat-value"style="margin-left: -80px">__PTS__</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label">REB</div>
+            <div class="stat-value reb-container">
+                <span class="main-reb">__REB__</span>
+                <span class="sub-reb">__OREB__ / __DREB__</span>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label"style="margin-left: 90px">AST</div>
+            <div class="stat-value">__AST__</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-label" style="text-align: center;">PTS RATIO</div>
+            <div class="chart-container" style="margin-top: 0px;">
+                <canvas id="ptsRatioChart" width="195" height="195"></canvas>
+                <div class="custom-legend">
+                    <span class="legend-item"><span class="dot p2"></span>2P</span>
+                    <span class="legend-item"><span class="dot p3"></span>3P</span>
+                    <span class="legend-item"><span class="dot ft"></span>FT</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="stats-grid" style="margin-top: -60px;">
+        <div class="stat-card">
+    <div class="stat-label"style="margin-left: -20px">2FG</div>
+    <div class="chart-container" style="position: relative;">
+        <canvas id="chart2fg" width="195" height="195"></canvas>
+        <div id="pct-label-2fg" style="position: absolute; top: 62px; width: 100%; text-align: center; font-family: 'Avenir Next', sans-serif; font-size: 56px; font-weight: 600; color:#FFFFFF;"></div>
+        <div class="stat-str-value">__FG2STR__</div>
+    </div>
+</div>
+
+<div class="stat-card">
+    <div class="stat-label">3FG</div>
+    <div class="chart-container" style="position: relative;">
+        <canvas id="chart3fg" width="195" height="195"></canvas>
+        <div id="pct-label-3fg" style="position: absolute; top: 62px; width: 100%; text-align: center; font-family: 'Avenir Next', sans-serif; font-size: 56px; font-weight: 600; color:#FFFFFF;"></div>
+        <div class="stat-str-value">__FG3STR__</div>
+    </div>
+</div>
+
+<div class="stat-card">
+    <div class="stat-label"style="margin-left: 90px">FT</div>
+    <div class="chart-container" style="position: relative;">
+        <canvas id="chartft" width="195" height="195"></canvas>
+        <div id="pct-label-ft" style="position: absolute; top: 62px; width: 100%; text-align: center; font-family: 'Avenir Next', sans-serif; font-size: 56px; font-weight: 600; color:#FFFFFF;"></div>
+        <div class="stat-str-value">__FTSTR__</div>
+    </div>
+</div>
+
+        <div class="stat-card">
+            <div class="stat-label" style="text-align: center;">Attempt RATIO</div>
+            <div class="chart-container" style="margin-top: -10px;">
+                <canvas id="attRatioChart" width="195" height="195"></canvas>
+                <div class="custom-legend">
+                    <span class="legend-item"><span class="dot p2"></span>2P</span>
+                    <span class="legend-item"><span class="dot p3"></span>3P</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div style="height: 10px;"></div> 
+        <div style="margin-top: -20px;"></div>
+        <div class="bottom-stats">
+            <div class="mini-card">
+              <div class="mini-label"style="margin-left: -100px">MIN</div>
+            <div class="mini-value">__MIN__</div></div>
+            <div class="mini-card"><div class="mini-label">TOV</div><div class="mini-value">__TO__</div></div>
+            <div class="mini-card"><div class="mini-label">STL</div><div class="mini-value">__STL__</div></div>
+            <div class="mini-card"><div class="mini-label">BLK</div><div class="mini-value">__BLK__</div></div>
+            <div class="mini-card"><div class="mini-label">PF</div><div class="mini-value">__PF__</div></div>
+            <div class="mini-card"><div class="mini-label">+/-</div><div class="mini-value">__PM__</div></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+
+<script>
+// window.drawCharts の前などに追加
+window.adjustPlayerName = function() {
+    const nameEl = document.querySelector('.player-name');
+    if (!nameEl) return;
+
+    const maxWidth = 1000; // 名前を表示できる最大横幅（px）
+    let currentSpacing = 0.13; // 初期値の letter-spacing (em)
+    
+    // 名前の幅が maxWidth を超えている間、0.01em ずつ詰める
+    // 限界値として -0.1em まで（あまり詰めすぎると読めないため）
+    while (nameEl.offsetWidth > maxWidth && currentSpacing > -0.1) {
+        currentSpacing -= 0.01;
+        nameEl.style.letterSpacing = currentSpacing + "em";
+    }
+};
+
+// 既存の関数の最後に実行を追加
+const originalDrawCharts = window.drawCharts;
+window.drawCharts = function(data) {
+    originalDrawCharts(data);
+    window.adjustPlayerName(); // 名前調整を実行
+};
+
+window.drawCharts = function(data) {
+    Chart.register(ChartDataLabels);
+    
+    // bodyから属性を取得（あなたのこだわりを維持）
+    const body = document.body;
+    const t1 = body.getAttribute('data-text1'); 
+    const t2 = body.getAttribute('data-text2'); 
+    const c1 = body.getAttribute('data-color1'); 
+    const c2 = body.getAttribute('data-color2');
+
+    const nameEl = document.querySelector('.player-name');
+    if (nameEl) {
+        const maxWidth = 1000; // 最大幅
+        const currentWidth = nameEl.offsetWidth;
+        if (currentWidth > maxWidth) {
+            // 幅を収めるための比率を計算
+            const ratio = maxWidth / currentWidth;
+            // 横幅だけをギュッと圧縮する
+            nameEl.style.transform = `scaleX(${ratio})`;
+        }
+    }
+
+    // --- PTS RATIO ---
+    new Chart(document.getElementById('ptsRatioChart'), {
+        type: 'pie',
+        data: {
+            datasets: [{
+                data: [parseInt(data.ptsRatio2P), parseInt(data.ptsRatio3P), parseInt(data.ptsRatioFT)],
+                backgroundColor: [c1, c2, '#999999'], borderWidth: 0
+            }]
+        },
+        options: {
+            responsive: false, 
+            animation: false,
+            plugins: { legend: { display: false }, 
+            datalabels: { color: (ctx) => [t1, t2, '#FFF'][ctx.dataIndex], 
+            font: { family: '"Avenir Next", "Helvetica Neue", Arial, sans-serif',size: 38, weight: '600' }, 
+            anchor: 'end',
+            align: 'start',
+            offset: -5,
+            formatter: (v) => v > 0 ? v + '%' : '' } }
+        }
+    });
+
+    // --- Attempt RATIO ---
+    new Chart(document.getElementById('attRatioChart'), {
+        type: 'pie',
+        data: {
+            datasets: [{
+                data: [parseInt(data.attRatio2P), parseInt(data.attRatio3P)],
+                backgroundColor: [c1, c2], borderWidth: 0
+            }]
+        },
+        options: {
+            responsive: false, animation: false,
+            plugins: { legend: { display: false }, datalabels: { color: (ctx) => [t1, t2][ctx.dataIndex], font: { family: '"Avenir Next", "Helvetica Neue", Arial, sans-serif',size: 38, weight: '600' },
+            anchor: 'end',
+            align: 'start',
+            offset: -5,
+             formatter: (v) => v > 0 ? v + '%' : '' } }
+        }
+    });
+
+    // --- 成功率ドーナツ（共通描画関数） ---
+    const drawDonut = (id, pct) => {
+        new Chart(document.getElementById(id), {
+            type: 'doughnut',
+            data: {
+                datasets: [{
+                    data: [parseFloat(pct) || 0, 100 - (parseFloat(pct) || 0)],
+                    backgroundColor: [c1, '#5e5e5e'], borderWidth: 0
+                }]
+            },
+            options: { cutout: '70%', responsive: false, animation: false, plugins: { legend: { display: false }, datalabels: { display: false } } }
+        });
+    };
+
+    drawDonut('chart2fg', data.fg2Pct);
+    drawDonut('chart3fg', data.fg3Pct);
+    drawDonut('chartft', data.ftPct);
+    document.getElementById('pct-label-2fg').innerText = data.fg2Str === "0/0" ? "-" : parseFloat(data.fg2Pct).toFixed(1);
+    document.getElementById('pct-label-3fg').innerText = data.fg3Str === "0/0" ? "-" : parseFloat(data.fg3Pct).toFixed(1);
+    document.getElementById('pct-label-ft').innerText = data.ftStr === "0/0" ? "-" : parseFloat(data.ftPct).toFixed(1);
+};
+</script>
+</body>
+</html>

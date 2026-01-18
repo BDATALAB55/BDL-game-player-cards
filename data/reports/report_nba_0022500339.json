@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500339",
+  "date": "2025.12.05",
+  "venue": "Kia Center",
+  "attendance": 17794,
+  "home": {
+    "id": "1610612753",
+    "total": {
+      "pts": 106,
+      "fgm": 38,
+      "fga": 92,
+      "f2m": 26,
+      "f2a": 58,
+      "f3m": 12,
+      "f3a": 34,
+      "ftm": 18,
+      "fta": 24,
+      "reb": 55,
+      "oreb": 7,
+      "dreb": 35,
+      "ast": 24,
+      "tov": 10,
+      "stl": 5,
+      "blk": 3,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "22",
+        "name": "FRANZ WAGNER",
+        "min": "34:04",
+        "pts": 32,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "20:12",
+        "pts": 9,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "27:31",
+        "pts": 7,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "32:59",
+        "pts": 5,
+        "reb": 0,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "28:26",
+        "pts": 22,
+        "reb": 3,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612748",
+    "total": {
+      "pts": 105,
+      "fgm": 40,
+      "fga": 80,
+      "f2m": 33,
+      "f2a": 61,
+      "f3m": 7,
+      "f3a": 19,
+      "ftm": 18,
+      "fta": 27,
+      "reb": 54,
+      "oreb": 4,
+      "dreb": 40,
+      "ast": 23,
+      "tov": 15,
+      "stl": 4,
+      "blk": 8,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "33:32",
+        "pts": 13,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "39:31",
+        "pts": 24,
+        "reb": 15,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "KEL'EL WARE",
+        "min": "22:04",
+        "pts": 4,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "32:17",
+        "pts": 28,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "27:32",
+        "pts": 10,
+        "reb": 2,
+        "ast": 7
+      }
+    ]
+  }
+}

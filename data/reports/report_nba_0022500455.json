@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500455",
+  "date": "2025.12.29",
+  "venue": "Paycom Center",
+  "attendance": 18203,
+  "home": {
+    "id": "1610612760",
+    "total": {
+      "pts": 140,
+      "fgm": 53,
+      "fga": 98,
+      "f2m": 41,
+      "f2a": 66,
+      "f3m": 12,
+      "f3a": 32,
+      "ftm": 22,
+      "fta": 23,
+      "reb": 58,
+      "oreb": 10,
+      "dreb": 39,
+      "ast": 27,
+      "tov": 13,
+      "stl": 9,
+      "blk": 7,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "22:35",
+        "pts": 6,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "JALEN WILLIAMS",
+        "min": "32:54",
+        "pts": 20,
+        "reb": 8,
+        "ast": 7
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "30:30",
+        "pts": 24,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "33:40",
+        "pts": 17,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "35:53",
+        "pts": 39,
+        "reb": 6,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612737",
+    "total": {
+      "pts": 129,
+      "fgm": 46,
+      "fga": 97,
+      "f2m": 21,
+      "f2a": 43,
+      "f3m": 25,
+      "f3a": 54,
+      "ftm": 12,
+      "fta": 17,
+      "reb": 44,
+      "oreb": 10,
+      "dreb": 28,
+      "ast": 32,
+      "tov": 16,
+      "stl": 11,
+      "blk": 4,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "27",
+        "name": "VÍT KREJČÍ",
+        "min": "34:11",
+        "pts": 18,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "22:44",
+        "pts": 12,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "34:59",
+        "pts": 26,
+        "reb": 14,
+        "ast": 6
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "34:33",
+        "pts": 13,
+        "reb": 6,
+        "ast": 7
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "39:56",
+        "pts": 30,
+        "reb": 4,
+        "ast": 5
+      }
+    ]
+  }
+}

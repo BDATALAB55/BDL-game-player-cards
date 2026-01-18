@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500559",
+  "date": "2026.01.12",
+  "venue": "Gainbridge Fieldhouse",
+  "attendance": 15650,
+  "home": {
+    "id": "1610612754",
+    "total": {
+      "pts": 98,
+      "fgm": 39,
+      "fga": 84,
+      "f2m": 23,
+      "f2a": 47,
+      "f3m": 16,
+      "f3a": 37,
+      "ftm": 4,
+      "fta": 6,
+      "reb": 46,
+      "oreb": 5,
+      "dreb": 35,
+      "ast": 29,
+      "tov": 11,
+      "stl": 8,
+      "blk": 3,
+      "pf": 7
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "JOHNNY FURPHY",
+        "min": "15:46",
+        "pts": 4,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "34:25",
+        "pts": 21,
+        "reb": 8,
+        "ast": 6
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "28:15",
+        "pts": 20,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "AARON NESMITH",
+        "min": "32:23",
+        "pts": 6,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "33:18",
+        "pts": 13,
+        "reb": 6,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612738",
+    "total": {
+      "pts": 96,
+      "fgm": 40,
+      "fga": 88,
+      "f2m": 31,
+      "f2a": 53,
+      "f3m": 9,
+      "f3a": 35,
+      "ftm": 7,
+      "fta": 9,
+      "reb": 52,
+      "oreb": 10,
+      "dreb": 36,
+      "ast": 22,
+      "tov": 12,
+      "stl": 9,
+      "blk": 1,
+      "pf": 7
+    },
+    "starters": [
+      {
+        "no": "55",
+        "name": "BAYLOR SCHEIERMAN",
+        "min": "20:28",
+        "pts": 2,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "30",
+        "name": "SAM HAUSER",
+        "min": "32:52",
+        "pts": 8,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "31:44",
+        "pts": 15,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "36:27",
+        "pts": 18,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "37:27",
+        "pts": 23,
+        "reb": 4,
+        "ast": 8
+      }
+    ]
+  }
+}

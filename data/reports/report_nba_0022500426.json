@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500426",
+  "date": "2025.12.26",
+  "venue": "Gainbridge Fieldhouse",
+  "attendance": 17004,
+  "home": {
+    "id": "1610612754",
+    "total": {
+      "pts": 122,
+      "fgm": 44,
+      "fga": 89,
+      "f2m": 26,
+      "f2a": 45,
+      "f3m": 18,
+      "f3a": 44,
+      "ftm": 16,
+      "fta": 20,
+      "reb": 44,
+      "oreb": 11,
+      "dreb": 24,
+      "ast": 29,
+      "tov": 14,
+      "stl": 6,
+      "blk": 3,
+      "pf": 28
+    },
+    "starters": [
+      {
+        "no": "00",
+        "name": "BENNEDICT MATHURIN",
+        "min": "29:51",
+        "pts": 13,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "28:24",
+        "pts": 11,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "21:08",
+        "pts": 9,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "29",
+        "name": "QUENTON JACKSON",
+        "min": "15:44",
+        "pts": 6,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "29:32",
+        "pts": 18,
+        "reb": 4,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612738",
+    "total": {
+      "pts": 140,
+      "fgm": 47,
+      "fga": 83,
+      "f2m": 27,
+      "f2a": 44,
+      "f3m": 20,
+      "f3a": 39,
+      "ftm": 26,
+      "fta": 34,
+      "reb": 51,
+      "oreb": 12,
+      "dreb": 31,
+      "ast": 26,
+      "tov": 12,
+      "stl": 8,
+      "blk": 3,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "27",
+        "name": "JORDAN WALSH",
+        "min": "18:57",
+        "pts": 3,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "32:10",
+        "pts": 30,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "20:43",
+        "pts": 8,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "33:06",
+        "pts": 21,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "37:42",
+        "pts": 29,
+        "reb": 9,
+        "ast": 5
+      }
+    ]
+  }
+}

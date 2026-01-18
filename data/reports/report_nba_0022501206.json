@@ -1,0 +1,134 @@
+{
+  "gameId": "0022501206",
+  "date": "2025.12.11",
+  "venue": "Fiserv Forum",
+  "attendance": 15458,
+  "home": {
+    "id": "1610612749",
+    "total": {
+      "pts": 116,
+      "fgm": 46,
+      "fga": 79,
+      "f2m": 33,
+      "f2a": 50,
+      "f3m": 13,
+      "f3a": 29,
+      "ftm": 11,
+      "fta": 14,
+      "reb": 49,
+      "oreb": 5,
+      "dreb": 35,
+      "ast": 28,
+      "tov": 15,
+      "stl": 5,
+      "blk": 5,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "GARY TRENT JR.",
+        "min": "27:47",
+        "pts": 13,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "18",
+        "name": "KYLE KUZMA",
+        "min": "30:48",
+        "pts": 31,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "28:22",
+        "pts": 4,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "25:42",
+        "pts": 10,
+        "reb": 2,
+        "ast": 7
+      },
+      {
+        "no": "7",
+        "name": "KEVIN PORTER JR.",
+        "min": "31:56",
+        "pts": 18,
+        "reb": 10,
+        "ast": 13
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612738",
+    "total": {
+      "pts": 101,
+      "fgm": 34,
+      "fga": 88,
+      "f2m": 20,
+      "f2a": 39,
+      "f3m": 14,
+      "f3a": 49,
+      "ftm": 19,
+      "fta": 25,
+      "reb": 49,
+      "oreb": 13,
+      "dreb": 26,
+      "ast": 18,
+      "tov": 13,
+      "stl": 7,
+      "blk": 1,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "28:47",
+        "pts": 30,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "27",
+        "name": "JORDAN WALSH",
+        "min": "32:02",
+        "pts": 20,
+        "reb": 8,
+        "ast": 0
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "25:24",
+        "pts": 9,
+        "reb": 10,
+        "ast": 0
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "30:41",
+        "pts": 11,
+        "reb": 5,
+        "ast": 7
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "29:18",
+        "pts": 11,
+        "reb": 2,
+        "ast": 3
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500428",
+  "date": "2025.12.26",
+  "venue": "FedExForum",
+  "attendance": 16617,
+  "home": {
+    "id": "1610612763",
+    "total": {
+      "pts": 125,
+      "fgm": 43,
+      "fga": 85,
+      "f2m": 30,
+      "f2a": 51,
+      "f3m": 13,
+      "f3a": 34,
+      "ftm": 26,
+      "fta": 32,
+      "reb": 51,
+      "oreb": 7,
+      "dreb": 35,
+      "ast": 28,
+      "tov": 13,
+      "stl": 12,
+      "blk": 9,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "29:18",
+        "pts": 14,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "30:06",
+        "pts": 24,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "SANTI ALDAMA",
+        "min": "30:01",
+        "pts": 12,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "23",
+        "name": "CEDRIC COWARD",
+        "min": "24:57",
+        "pts": 15,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "12",
+        "name": "JA MORANT",
+        "min": "25:20",
+        "pts": 17,
+        "reb": 4,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612749",
+    "total": {
+      "pts": 104,
+      "fgm": 36,
+      "fga": 84,
+      "f2m": 22,
+      "f2a": 45,
+      "f3m": 14,
+      "f3a": 39,
+      "ftm": 18,
+      "fta": 24,
+      "reb": 53,
+      "oreb": 15,
+      "dreb": 33,
+      "ast": 18,
+      "tov": 22,
+      "stl": 11,
+      "blk": 2,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "BOBBY PORTIS",
+        "min": "34:52",
+        "pts": 15,
+        "reb": 12,
+        "ast": 3
+      },
+      {
+        "no": "18",
+        "name": "KYLE KUZMA",
+        "min": "29:45",
+        "pts": 15,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "28:00",
+        "pts": 8,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "KEVIN PORTER JR.",
+        "min": "33:12",
+        "pts": 16,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "34:46",
+        "pts": 20,
+        "reb": 2,
+        "ast": 1
+      }
+    ]
+  }
+}

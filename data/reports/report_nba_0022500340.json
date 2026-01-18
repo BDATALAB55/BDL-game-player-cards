@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500340",
+  "date": "2025.12.05",
+  "venue": "State Farm Arena",
+  "attendance": 16149,
+  "home": {
+    "id": "1610612737",
+    "total": {
+      "pts": 133,
+      "fgm": 49,
+      "fga": 95,
+      "f2m": 29,
+      "f2a": 49,
+      "f3m": 20,
+      "f3a": 46,
+      "ftm": 15,
+      "fta": 16,
+      "reb": 45,
+      "oreb": 11,
+      "dreb": 34,
+      "ast": 35,
+      "tov": 12,
+      "stl": 8,
+      "blk": 2,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "20:49",
+        "pts": 9,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "37:36",
+        "pts": 21,
+        "reb": 18,
+        "ast": 16
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "27:30",
+        "pts": 13,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "33:38",
+        "pts": 15,
+        "reb": 3,
+        "ast": 8
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "33:48",
+        "pts": 30,
+        "reb": 5,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612743",
+    "total": {
+      "pts": 134,
+      "fgm": 47,
+      "fga": 89,
+      "f2m": 31,
+      "f2a": 52,
+      "f3m": 16,
+      "f3a": 37,
+      "ftm": 24,
+      "fta": 30,
+      "reb": 51,
+      "oreb": 9,
+      "dreb": 33,
+      "ast": 28,
+      "tov": 12,
+      "stl": 9,
+      "blk": 6,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "SPENCER JONES",
+        "min": "23:29",
+        "pts": 6,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "PEYTON WATSON",
+        "min": "28:15",
+        "pts": 9,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "35:36",
+        "pts": 40,
+        "reb": 9,
+        "ast": 8
+      },
+      {
+        "no": "23",
+        "name": "CAMERON JOHNSON",
+        "min": "34:43",
+        "pts": 16,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "38:10",
+        "pts": 23,
+        "reb": 5,
+        "ast": 12
+      }
+    ]
+  }
+}

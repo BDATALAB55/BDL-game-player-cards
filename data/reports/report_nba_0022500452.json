@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500452",
+  "date": "2025.12.29",
+  "venue": "United Center",
+  "attendance": 21429,
+  "home": {
+    "id": "1610612741",
+    "total": {
+      "pts": 101,
+      "fgm": 38,
+      "fga": 93,
+      "f2m": 25,
+      "f2a": 55,
+      "f3m": 13,
+      "f3a": 38,
+      "ftm": 12,
+      "fta": 14,
+      "reb": 54,
+      "oreb": 10,
+      "dreb": 32,
+      "ast": 25,
+      "tov": 16,
+      "stl": 3,
+      "blk": 7,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "20:01",
+        "pts": 4,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "23:58",
+        "pts": 13,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "NIKOLA VUČEVIĆ",
+        "min": "30:02",
+        "pts": 23,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "COBY WHITE",
+        "min": "06:35",
+        "pts": 0,
+        "reb": 0,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "JOSH GIDDEY",
+        "min": "17:52",
+        "pts": 11,
+        "reb": 4,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612750",
+    "total": {
+      "pts": 136,
+      "fgm": 51,
+      "fga": 95,
+      "f2m": 36,
+      "f2a": 58,
+      "f3m": 15,
+      "f3a": 37,
+      "ftm": 19,
+      "fta": 25,
+      "reb": 53,
+      "oreb": 7,
+      "dreb": 39,
+      "ast": 32,
+      "tov": 3,
+      "stl": 9,
+      "blk": 9,
+      "pf": 12
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JADEN MCDANIELS",
+        "min": "22:46",
+        "pts": 7,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "30",
+        "name": "JULIUS RANDLE",
+        "min": "28:01",
+        "pts": 17,
+        "reb": 5,
+        "ast": 14
+      },
+      {
+        "no": "27",
+        "name": "RUDY GOBERT",
+        "min": "29:37",
+        "pts": 9,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "ANTHONY EDWARDS",
+        "min": "32:15",
+        "pts": 23,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "DONTE DIVINCENZO",
+        "min": "26:32",
+        "pts": 12,
+        "reb": 6,
+        "ast": 3
+      }
+    ]
+  }
+}

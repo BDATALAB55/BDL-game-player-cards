@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500311",
+  "date": "2025.12.01",
+  "venue": "Capital One Arena",
+  "attendance": 13709,
+  "home": {
+    "id": "1610612764",
+    "total": {
+      "pts": 129,
+      "fgm": 53,
+      "fga": 102,
+      "f2m": 40,
+      "f2a": 66,
+      "f3m": 13,
+      "f3a": 36,
+      "ftm": 10,
+      "fta": 15,
+      "reb": 52,
+      "oreb": 14,
+      "dreb": 27,
+      "ast": 29,
+      "tov": 10,
+      "stl": 9,
+      "blk": 4,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "30:52",
+        "pts": 9,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "22",
+        "name": "KHRIS MIDDLETON",
+        "min": "31:25",
+        "pts": 15,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "35",
+        "name": "MARVIN BAGLEY III",
+        "min": "29:15",
+        "pts": 22,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "32:39",
+        "pts": 7,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "35:34",
+        "pts": 28,
+        "reb": 4,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612749",
+    "total": {
+      "pts": 126,
+      "fgm": 46,
+      "fga": 84,
+      "f2m": 25,
+      "f2a": 46,
+      "f3m": 21,
+      "f3a": 38,
+      "ftm": 13,
+      "fta": 21,
+      "reb": 50,
+      "oreb": 7,
+      "dreb": 28,
+      "ast": 29,
+      "tov": 16,
+      "stl": 5,
+      "blk": 4,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "30:56",
+        "pts": 13,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "34",
+        "name": "GIANNIS ANTETOKOUNMPO",
+        "min": "31:35",
+        "pts": 26,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "26:07",
+        "pts": 9,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "KEVIN PORTER JR.",
+        "min": "31:01",
+        "pts": 30,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "29:35",
+        "pts": 14,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  }
+}

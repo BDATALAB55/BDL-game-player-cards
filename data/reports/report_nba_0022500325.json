@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500325",
+  "date": "2025.12.03",
+  "venue": "Gainbridge Fieldhouse",
+  "attendance": 15578,
+  "home": {
+    "id": "1610612754",
+    "total": {
+      "pts": 120,
+      "fgm": 42,
+      "fga": 81,
+      "f2m": 29,
+      "f2a": 53,
+      "f3m": 13,
+      "f3a": 28,
+      "ftm": 23,
+      "fta": 29,
+      "reb": 45,
+      "oreb": 8,
+      "dreb": 30,
+      "ast": 24,
+      "tov": 12,
+      "stl": 6,
+      "blk": 5,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "00",
+        "name": "BENNEDICT MATHURIN",
+        "min": "28:12",
+        "pts": 15,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "33:42",
+        "pts": 23,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "17:44",
+        "pts": 3,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "26",
+        "name": "BEN SHEPPARD",
+        "min": "17:55",
+        "pts": 14,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "28:17",
+        "pts": 16,
+        "reb": 3,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612743",
+    "total": {
+      "pts": 135,
+      "fgm": 49,
+      "fga": 83,
+      "f2m": 32,
+      "f2a": 55,
+      "f3m": 17,
+      "f3a": 28,
+      "ftm": 20,
+      "fta": 26,
+      "reb": 42,
+      "oreb": 5,
+      "dreb": 33,
+      "ast": 23,
+      "tov": 10,
+      "stl": 6,
+      "blk": 5,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "SPENCER JONES",
+        "min": "17:22",
+        "pts": 1,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "PEYTON WATSON",
+        "min": "36:25",
+        "pts": 11,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "35:17",
+        "pts": 24,
+        "reb": 8,
+        "ast": 13
+      },
+      {
+        "no": "23",
+        "name": "CAMERON JOHNSON",
+        "min": "33:42",
+        "pts": 9,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "36:07",
+        "pts": 52,
+        "reb": 6,
+        "ast": 4
+      }
+    ]
+  }
+}

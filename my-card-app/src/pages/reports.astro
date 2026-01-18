@@ -2,10 +2,10 @@
 export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
-// --- 修正：新しいリポジトリ名 ---
+// --- 設定値 ---
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
-// 修正：reports/NBA の前に output/ を追加
-const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1`;
+// キャッシュを避けるためにタイムスタンプを付与
+const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
 const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/NBA`;
 
 const token = process.env.GITHUB_TOKEN;
@@ -13,28 +13,34 @@ const token = process.env.GITHUB_TOKEN;
 let reportGroups = [];
 
 try {
-  const res = await fetch(`${RECURSIVE_API}&t=${Date.now()}`, {
-    headers: token ? { "Authorization": `token ${token}` } : {}
+  const res = await fetch(RECURSIVE_API, {
+    headers: token ? { 
+      "Authorization": `token ${token}`,
+      "Accept": "application/vnd.github.v3+json",
+      "Cache-Control": "no-cache"
+    } : { "Accept": "application/vnd.github.v3+json" }
   });
   const data = await res.json();
 
   if (data.tree) {
-    // 修正：データのパス判定に output/ を追加
-    // 実構造: output/reports/NBA/260107/NBA_...png
+    // 判定条件を少し広げて確実に拾うように修正
     const allFiles = data.tree.filter(item => 
-      item.path.startsWith('output/reports/NBA/') && 
-      item.path.endsWith('.png')
+      item.path.includes('output/reports/NBA/') && 
+      item.path.toLowerCase().endsWith('.png')
     );
 
     const groups = {};
 
     allFiles.forEach(file => {
       const pathParts = file.path.split('/');
-      // [0]=output, [1]=reports, [2]=NBA, [3]=日付(260107), [4]=ファイル名
-      const folderName = pathParts[3]; 
-      const fileName = pathParts[4];
+      // 階層を動的に判定（outputから数えてNBAの次が日付フォルダ）
+      const nbaIndex = pathParts.indexOf('NBA');
+      if (nbaIndex === -1 || pathParts.length <= nbaIndex + 2) return;
 
-      if (!folderName || !fileName || !/^\d+$/.test(folderName)) return;
+      const folderName = pathParts[nbaIndex + 1]; // 日付フォルダ (例: 260118)
+      const fileName = pathParts[nbaIndex + 2];   // ファイル名
+
+      if (!/^\d+$/.test(folderName)) return;
 
       const nameParts = fileName.replace('.png', '').split('_');
       const fullDate = nameParts[1] || ""; 
@@ -54,7 +60,6 @@ try {
         path: `${IMAGE_BASE_URL}/${folderName}/${fileName}`,
         away: teamA,
         home: teamB,
-        // カードへのリンク。index側も同じ階層構造を期待するように修正
         link: `/?folder=${folderName}/NBA_Cards_${gameId}_${fullDate}`
       });
     });

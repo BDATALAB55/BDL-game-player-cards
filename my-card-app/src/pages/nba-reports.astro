@@ -60,7 +60,7 @@ try {
         path: `${IMAGE_BASE_URL}/${folderName}/${fileName}`,
         away: teamA,
         home: teamB,
-        link: `/?nba-cards?folder=${folderName}/NBA_Cards_${gameId}_${fullDate}`
+        link: `/nba-cards?folder=${folderName}/${fileName.replace('.png', '').replace('NBA_', 'NBA_Cards_')}`
       });
     });
 

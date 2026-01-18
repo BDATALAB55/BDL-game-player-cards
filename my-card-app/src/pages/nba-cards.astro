@@ -6,11 +6,11 @@ import Layout from '../layouts/Layout.astro';
 const { searchParams } = Astro.url;
 const queryFolder = searchParams.get('folder');
 
-// --- 修正：新しいリポジトリ情報 ---
+// --- 設定：リポジトリ情報 ---
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
-// 修正：画像があるベースパス (output/players)
+// 画像があるベースパス (output/players)
 const githubBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/players`;
 
 let folderName = queryFolder;
@@ -25,15 +25,12 @@ if (!folderName) {
     const items = await res.json();
     
     if (Array.isArray(items)) {
-      // 最新の日付フォルダ（例：260112）を特定
       const dateFolders = items
         .filter(item => item.type === 'dir' && /^\d+$/.test(item.name))
         .sort((a, b) => b.name.localeCompare(a.name));
 
       if (dateFolders.length > 0) {
         const latestDateDir = dateFolders[0].name;
-        
-        // その中の試合フォルダを取得
         const matchApi = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players/${latestDateDir}`;
         const matchRes = await fetch(matchApi, {
           headers: token ? { "Authorization": `token ${token}` } : {}
@@ -50,11 +47,10 @@ if (!folderName) {
     }
   } catch (e) {
     console.error("Auto-fetch failed:", e);
-    folderName = "251201/NBA_Cards_0022500001_20251201"; 
+    folderName = "260117/NBA_Cards_0022500593_20260117"; 
   }
 }
 
-// 選手データ取得用URLの修正
 const apiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players/${folderName}`;
 
 let awayData = [];
@@ -63,7 +59,6 @@ let teamHome = "HOME";
 let teamAway = "AWAY";
 let reportImagePath = "";
 
-// フォルダ名から日付を抽出
 const rawDate = folderName ? folderName.split('/')[0] : "";
 const formattedDate = rawDate ? `20${rawDate.substring(0,2)}.${rawDate.substring(2,4)}.${rawDate.substring(4,6)}` : "NO DATA";
 
@@ -99,7 +94,6 @@ try {
     homeData = process(teamHome);
   }
 
-  // --- 修正：レポート画像の取得パス ---
   const gameIdMatch = folderName.match(/\d{10}/);
   const gameId = gameIdMatch ? gameIdMatch[0] : "";
 
@@ -128,7 +122,9 @@ try {
   <div class="app-container bg-[#373A36] min-h-screen text-white overflow-hidden font-avenir">
     
     <header class="pt-12 pb-6 px-8 border-b border-white/5 text-center">
-      <h1 class="text-2xl font-black uppercase leading-none tracking-[0.25em]">BDL Cards</h1>
+      <a href="/" class="inline-block hover:opacity-70 transition-opacity">
+        <h1 class="text-2xl font-black uppercase leading-none tracking-[0.25em]">BDL Cards</h1>
+      </a>
       <p class="text-gray-600 text-[10px] font-bold tracking-[0.4em] mt-3 uppercase">Gameday Collection</p>
     </header>
 

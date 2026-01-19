@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500604",
+  "date": "2026.01.18",
+  "venue": "Toyota Center",
+  "attendance": 18055,
+  "home": {
+    "id": "1610612745",
+    "total": {
+      "pts": 119,
+      "fgm": 45,
+      "fga": 90,
+      "f2m": 32,
+      "f2a": 54,
+      "f3m": 13,
+      "f3a": 36,
+      "ftm": 16,
+      "fta": 22,
+      "reb": 56,
+      "oreb": 17,
+      "dreb": 30,
+      "ast": 22,
+      "tov": 15,
+      "stl": 9,
+      "blk": 4,
+      "pf": 12
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "41:17",
+        "pts": 32,
+        "reb": 8,
+        "ast": 0
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "32:58",
+        "pts": 21,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "12",
+        "name": "STEVEN ADAMS",
+        "min": "27:25",
+        "pts": 5,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "36:04",
+        "pts": 18,
+        "reb": 6,
+        "ast": 8
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "40:05",
+        "pts": 20,
+        "reb": 8,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612740",
+    "total": {
+      "pts": 110,
+      "fgm": 44,
+      "fga": 88,
+      "f2m": 34,
+      "f2a": 62,
+      "f3m": 10,
+      "f3a": 26,
+      "ftm": 12,
+      "fta": 15,
+      "reb": 44,
+      "oreb": 10,
+      "dreb": 29,
+      "ast": 27,
+      "tov": 13,
+      "stl": 10,
+      "blk": 5,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "29:13",
+        "pts": 11,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "ZION WILLIAMSON",
+        "min": "30:25",
+        "pts": 20,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "22",
+        "name": "DERIK QUEEN",
+        "min": "26:39",
+        "pts": 15,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "25",
+        "name": "TREY MURPHY III",
+        "min": "35:12",
+        "pts": 21,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "JEREMIAH FEARS",
+        "min": "10:24",
+        "pts": 2,
+        "reb": 3,
+        "ast": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500606",
+  "date": "2026.01.18",
+  "venue": "Golden 1 Center",
+  "attendance": 16241,
+  "home": {
+    "id": "1610612758",
+    "total": {
+      "pts": 110,
+      "fgm": 42,
+      "fga": 86,
+      "f2m": 31,
+      "f2a": 55,
+      "f3m": 11,
+      "f3a": 31,
+      "ftm": 15,
+      "fta": 18,
+      "reb": 45,
+      "oreb": 10,
+      "dreb": 30,
+      "ast": 29,
+      "tov": 16,
+      "stl": 8,
+      "blk": 5,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "34:52",
+        "pts": 14,
+        "reb": 2,
+        "ast": 7
+      },
+      {
+        "no": "9",
+        "name": "PRECIOUS ACHIUWA",
+        "min": "17:43",
+        "pts": 4,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "22:42",
+        "pts": 6,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "ZACH LAVINE",
+        "min": "28:55",
+        "pts": 18,
+        "reb": 0,
+        "ast": 1
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "33:31",
+        "pts": 23,
+        "reb": 3,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612757",
+    "total": {
+      "pts": 117,
+      "fgm": 40,
+      "fga": 83,
+      "f2m": 32,
+      "f2a": 51,
+      "f3m": 8,
+      "f3a": 32,
+      "ftm": 29,
+      "fta": 33,
+      "reb": 50,
+      "oreb": 11,
+      "dreb": 32,
+      "ast": 18,
+      "tov": 14,
+      "stl": 7,
+      "blk": 4,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "91",
+        "name": "SIDY CISSOKO",
+        "min": "34:20",
+        "pts": 8,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "36:24",
+        "pts": 17,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "36:58",
+        "pts": 21,
+        "reb": 17,
+        "ast": 3
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "34:01",
+        "pts": 27,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "31:46",
+        "pts": 30,
+        "reb": 8,
+        "ast": 8
+      }
+    ]
+  }
+}

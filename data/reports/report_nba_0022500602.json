@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500602",
+  "date": "2026.01.18",
+  "venue": "The O2 Arena",
+  "attendance": 18424,
+  "home": {
+    "id": "1610612763",
+    "total": {
+      "pts": 126,
+      "fgm": 48,
+      "fga": 91,
+      "f2m": 35,
+      "f2a": 56,
+      "f3m": 13,
+      "f3a": 35,
+      "ftm": 17,
+      "fta": 25,
+      "reb": 53,
+      "oreb": 9,
+      "dreb": 33,
+      "ast": 31,
+      "tov": 12,
+      "stl": 12,
+      "blk": 7,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "20:40",
+        "pts": 10,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "30:09",
+        "pts": 17,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "SANTI ALDAMA",
+        "min": "25:10",
+        "pts": 9,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "23",
+        "name": "CEDRIC COWARD",
+        "min": "23:12",
+        "pts": 13,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "12",
+        "name": "JA MORANT",
+        "min": "28:24",
+        "pts": 24,
+        "reb": 5,
+        "ast": 13
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612753",
+    "total": {
+      "pts": 109,
+      "fgm": 42,
+      "fga": 95,
+      "f2m": 32,
+      "f2a": 62,
+      "f3m": 10,
+      "f3a": 33,
+      "ftm": 15,
+      "fta": 16,
+      "reb": 52,
+      "oreb": 12,
+      "dreb": 30,
+      "ast": 30,
+      "tov": 17,
+      "stl": 5,
+      "blk": 6,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "22",
+        "name": "FRANZ WAGNER",
+        "min": "25:56",
+        "pts": 14,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "36:02",
+        "pts": 16,
+        "reb": 8,
+        "ast": 9
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "32:58",
+        "pts": 18,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "36:30",
+        "pts": 11,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "ANTHONY BLACK",
+        "min": "37:06",
+        "pts": 19,
+        "reb": 2,
+        "ast": 6
+      }
+    ]
+  }
+}

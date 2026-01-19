@@ -258,7 +258,7 @@
 
     </style>
 </head>
-<body data-color1="__PLAYER_BG__" data-color2="__PLAYER_COLOR2__" data-text1="__PLAYER_TEXT__">
+<body data-color1="__PLAYER_BG__" data-color2="__PLAYER_COLOR2__" data-text1="__PLAYER_TEXT__" data-text2="__PLAYER_TEXT2__">
     <div class="header">
         <div class="team-box away">
             <div class="accent"></div>
@@ -417,7 +417,10 @@
                 plugins: {
                     legend: { display: false },
                     datalabels: {
-                        color: '#FFF',
+                        color: (context) => {
+                const t2 = document.body.getAttribute('data-text2');
+                return context.dataIndex === 1 ? t2 : '#FFF';
+            },
                         font: { size: 36, weight: '600', family: 'Avenir Next' },
                         formatter: (v) => v > 5 ? v + '%' : ''
                     }

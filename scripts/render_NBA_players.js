@@ -74,6 +74,7 @@ async function renderNbaPlayerCards(gameId, roundText = "") {
             "__PLAYER_COLOR2__": String(pStyle.color2 || pStyle.color),
             "__PLAYER_DARK__": String(pStyle.dark || pStyle.color),
             "__PLAYER_TEXT__": String(pStyle.text || "#FFFFFF"),
+            "__PLAYER_TEXT2__": String(pStyle.text2 || "#FFFFFF"),
             "__PLAYER_NO__": String(player.no || "0"),
             "__PLAYER_NAME__": String(player.name || "PLAYER").toUpperCase(),
             "__PLAYER_TEAM_RAW__": String(pStyle.nickname).toUpperCase(),

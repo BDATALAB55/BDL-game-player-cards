@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500607",
+  "date": "2026.01.18",
+  "venue": "Crypto.com Arena",
+  "attendance": 18997,
+  "home": {
+    "id": "1610612747",
+    "total": {
+      "pts": 110,
+      "fgm": 41,
+      "fga": 85,
+      "f2m": 27,
+      "f2a": 49,
+      "f3m": 14,
+      "f3a": 36,
+      "ftm": 14,
+      "fta": 17,
+      "reb": 55,
+      "oreb": 9,
+      "dreb": 39,
+      "ast": 25,
+      "tov": 15,
+      "stl": 6,
+      "blk": 6,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "31:37",
+        "pts": 24,
+        "reb": 4,
+        "ast": 7
+      },
+      {
+        "no": "12",
+        "name": "JAKE LARAVIA",
+        "min": "19:04",
+        "pts": 2,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "32:42",
+        "pts": 25,
+        "reb": 13,
+        "ast": 1
+      },
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "25:17",
+        "pts": 8,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "33:42",
+        "pts": 25,
+        "reb": 2,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612761",
+    "total": {
+      "pts": 93,
+      "fgm": 38,
+      "fga": 91,
+      "f2m": 31,
+      "f2a": 59,
+      "f3m": 7,
+      "f3a": 32,
+      "ftm": 10,
+      "fta": 15,
+      "reb": 51,
+      "oreb": 10,
+      "dreb": 33,
+      "ast": 30,
+      "tov": 9,
+      "stl": 7,
+      "blk": 5,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "34:00",
+        "pts": 19,
+        "reb": 6,
+        "ast": 7
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "35:15",
+        "pts": 22,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "12",
+        "name": "COLLIN MURRAY-BOYLES",
+        "min": "24:38",
+        "pts": 11,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "30",
+        "name": "OCHAI AGBAJI",
+        "min": "24:39",
+        "pts": 0,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "28:33",
+        "pts": 9,
+        "reb": 3,
+        "ast": 7
+      }
+    ]
+  }
+}

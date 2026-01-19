@@ -28,7 +28,7 @@
     "1610612758": { "abbr": "SAC", "city": "SACRAMENTO", "nickname": "KINGS", "color": "#5A2D81", "dark": "#482468", "text": "#FFFFFF", "color2": "#63717A", "text2": "#FFFFFF", "winColor": "#FFD932" },
     "1610612759": { "abbr": "SAS", "city": "SAN ANTONIO", "nickname": "SPURS", "color": "#000000", "dark": "#1A1A1A", "text": "#FFFFFF", "color2": "#8C9498", "text2": "#FFFFFF", "winColor": "#FFD932" },
     "1610612761": { "abbr": "TOR", "city": "TORONTO", "nickname": "RAPTORS", "color": "#BD1B21", "dark": "#A4171D", "text": "#000000", "color2": "#000000", "text2": "#FFFFFF", "winColor": "#FFD932" },
-    "1610612762": { "abbr": "UTA", "city": "UTAH", "nickname": "JAZZ", "color": "#002B5C", "dark": "#001F42", "text": "#000000", "color2": "#000000", "text2": "#FFFFFF", "winColor": "#FFD932" },
+    "1610612762": { "abbr": "UTA", "city": "UTAH", "nickname": "JAZZ", "color": "#002B5C", "dark": "#001F42", "text": "#FFFFFF", "color2": "#000000", "text2": "#FFFFFF", "winColor": "#FFD932" },
     "1610612764": { "abbr": "WAS", "city": "WASHINGTON", "nickname": "WIZARDS", "color": "#002B5C", "dark": "#001F42", "text": "#FFFFFF", "color2": "#D2092B", "text2": "#FFFFFF", "winColor": "#FFD932" }
   }
 }

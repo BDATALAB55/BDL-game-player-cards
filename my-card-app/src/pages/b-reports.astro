@@ -6,7 +6,8 @@ import Layout from '../layouts/Layout.astro';
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 // キャッシュを避けるためにタイムスタンプを付与
 const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
-const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/NBA`;
+// NBAをB1に変更
+const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1`;
 
 const token = process.env.GITHUB_TOKEN;
 
@@ -23,8 +24,9 @@ try {
   const data = await res.json();
 
   if (data.tree) {
+    // 取得パスを B1 に変更
     const allFiles = data.tree.filter(item => 
-      item.path.includes('output/reports/NBA/') && 
+      item.path.includes('output/reports/B1/') && 
       item.path.toLowerCase().endsWith('.png')
     );
 
@@ -32,16 +34,17 @@ try {
 
     allFiles.forEach(file => {
       const pathParts = file.path.split('/');
-      const nbaIndex = pathParts.indexOf('NBA');
-      if (nbaIndex === -1 || pathParts.length <= nbaIndex + 2) return;
+      // インデックス検索を B1 に変更
+      const b1Index = pathParts.indexOf('B1');
+      if (b1Index === -1 || pathParts.length <= b1Index + 2) return;
 
-      const folderName = pathParts[nbaIndex + 1]; // 日付フォルダ (例: 260118)
-      const fileName = pathParts[nbaIndex + 2];   // ファイル名
+      const folderName = pathParts[b1Index + 1]; // 日付フォルダ (例: 260118)
+      const fileName = pathParts[b1Index + 2];   // ファイル名
 
       if (!/^\d+$/.test(folderName)) return;
 
       const nameParts = fileName.replace('.png', '').split('_');
-      // ファイル名形式: NBA_20260117_0022500593_CHA_GSW.png
+      // ファイル名形式がNBA準拠（B1_20260117_...）と想定
       const fullDate = nameParts[1] || ""; 
       const gameId = nameParts[2] || "";
       const teamA = nameParts[nameParts.length - 2] || "AWAY";
@@ -55,12 +58,12 @@ try {
         };
       }
 
-      // 【重要修正】詳細ページが期待するフォルダ形式に合わせたリンク生成
+      // リンク先を b-cards に変更
       groups[folderName].reports.push({
         path: `${IMAGE_BASE_URL}/${folderName}/${fileName}`,
         away: teamA,
         home: teamB,
-        link: `/nba-cards?folder=${folderName}/NBA_Cards_${gameId}_${fullDate}`
+        link: `/b-cards?folder=${folderName}/B1_Cards_${gameId}_${fullDate}`
       });
     });
 
@@ -74,12 +77,12 @@ const allData = reportGroups;
 const availableDates = reportGroups.map(g => g.id);
 ---
 
-<Layout title="GAME REPORT">
-  <div class="bg-[#373A36] min-h-screen text-white font-avenir overflow-x-hidden">
+<Layout title="B.LEAGUE GAME REPORT">
+  <div class="bg-[#222222] min-h-screen text-white font-avenir overflow-x-hidden">
     
     <header class="pt-12 pb-6 px-8 text-center border-b border-white/5">
       <a href="/" class="hover:opacity-70 transition-opacity">
-        <h1 class="text-2xl font-black uppercase leading-none tracking-[0.25em]">GAME REPORT</h1>
+        <h1 class="text-2xl font-black uppercase leading-none tracking-[0.25em]">B.LEAGUE REPORT</h1>
       </a>
     </header>
 
@@ -102,7 +105,7 @@ const availableDates = reportGroups.map(g => g.id);
               </div>
               <div class="mt-6 text-center">
                 <a href={report.link} class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative active:scale-95 transition-all group overflow-hidden">
-                  <div class="absolute inset-0 p-[2px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10"></div>
+                  <div class="absolute inset-0 p-[2px] rounded-full bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-400 -z-10"></div>
                   <span class="text-[14px] font-black tracking-[0.2em] uppercase text-white">
                     {report.away} <span class="text-[10px] font-medium lowercase tracking-normal mx-1 text-white/50 italic px-1">vs</span> {report.home}
                   </span>
@@ -112,7 +115,7 @@ const availableDates = reportGroups.map(g => g.id);
           ))
         ) : (
           <div class="w-full flex items-center justify-center py-20 text-gray-500 font-black text-[10px] tracking-[0.3em]">
-            NO DATA FOUND AT /output/reports/NBA
+            NO DATA FOUND AT /output/reports/B1
           </div>
         )}
       </div>
@@ -133,7 +136,6 @@ const availableDates = reportGroups.map(g => g.id);
 </Layout>
 
 <script is:inline define:vars={{ allData, availableDates }}>
-  // カレンダー・表示切り替えロジック
   let currentY = 2026;
   let currentM = 0; 
 
@@ -162,7 +164,7 @@ const availableDates = reportGroups.map(g => g.id);
         </div>
         <div class="mt-6 text-center">
           <a href="${report.link}" class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative active:scale-95 transition-all group overflow-hidden">
-            <div class="absolute inset-0 p-[2px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10"></div>
+            <div class="absolute inset-0 p-[2px] rounded-full bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-400 -z-10"></div>
             <span class="text-[14px] font-black tracking-[0.2em] uppercase text-white">
               ${report.away} <span class="text-[10px] font-medium lowercase tracking-normal mx-1 text-white/50 italic px-1">vs</span> ${report.home}
             </span>

@@ -1,0 +1,236 @@
+---
+export const prerender = false;
+import Layout from '../layouts/Layout.astro';
+
+// 1. URLから ?folder= の値を取得する
+const { searchParams } = Astro.url;
+const queryFolder = searchParams.get('folder');
+
+// --- 設定：リポジトリ情報 ---
+const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
+const token = process.env.GITHUB_TOKEN;
+
+// 画像があるベースパス (output/players)
+const githubBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/players`;
+
+let folderName = queryFolder;
+
+// --- 自動化：フォルダ名が未指定なら最新のB1フォルダを取得 ---
+if (!folderName) {
+  try {
+    const listApi = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players`;
+    const res = await fetch(listApi, {
+      headers: token ? { "Authorization": `token ${token}` } : {}
+    });
+    const items = await res.json();
+    
+    if (Array.isArray(items)) {
+      const dateFolders = items
+        .filter(item => item.type === 'dir' && /^\d+$/.test(item.name))
+        .sort((a, b) => b.name.localeCompare(a.name));
+
+      if (dateFolders.length > 0) {
+        const latestDateDir = dateFolders[0].name;
+        const matchApi = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players/${latestDateDir}`;
+        const matchRes = await fetch(matchApi, {
+          headers: token ? { "Authorization": `token ${token}` } : {}
+        });
+        const matchItems = await matchRes.json();
+        
+        if (Array.isArray(matchItems)) {
+          // NBA_Cards_ を B1_Cards_ に変更
+          const latestMatch = matchItems.find(m => m.type === 'dir' && m.name.startsWith('B1_Cards_'));
+          if (latestMatch) {
+            folderName = `${latestDateDir}/${latestMatch.name}`;
+          }
+        }
+      }
+    }
+  } catch (e) {
+    console.error("Auto-fetch failed:", e);
+    // デフォルト値もB1形式に
+    folderName = "260103/B1_Cards_default"; 
+  }
+}
+
+const apiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players/${folderName}`;
+
+let awayData = [];
+let homeData = [];
+let teamHome = "HOME";
+let teamAway = "AWAY";
+let reportImagePath = "";
+
+const rawDate = folderName ? folderName.split('/')[0] : "";
+const formattedDate = rawDate ? `20${rawDate.substring(0,2)}.${rawDate.substring(2,4)}.${rawDate.substring(4,6)}` : "NO DATA";
+
+try {
+  const response = await fetch(apiURL, {
+    headers: token ? { "Authorization": `token ${token}` } : {}
+  });
+  const files = await response.json();
+
+  if (Array.isArray(files)) {
+    const playerFiles = files.filter(f => f.name.endsWith('.png')).map(f => f.name);
+    // チーム名抽出：B1を除外するように変更
+    const detectedTeams = [...new Set(playerFiles.map(f => f.split('_')[0]))].filter(t => t && t !== 'B1' && t !== 'NBA');
+    
+    teamAway = detectedTeams[1] || "AWAY";
+    teamHome = detectedTeams[0] || "HOME";
+
+    const process = (teamName) => {
+      return playerFiles
+        .filter(f => f.startsWith(teamName))
+        .map(f => {
+          const p = f.replace('.png', '').split('_');
+          return {
+            team: p[0],
+            no: p[1],
+            name: p.slice(2).join(' '),
+            imagePath: `${githubBase}/${folderName}/${f}`,
+            playerLink: "#"
+          };
+        }).sort((a, b) => parseInt(a.no) - parseInt(b.no));
+    };
+
+    awayData = process(teamAway);
+    homeData = process(teamHome);
+  }
+
+  // フォルダ名からGameID(数字の並び)を抽出
+  const gameIdMatch = folderName.match(/\d+/g);
+  const gameId = gameIdMatch ? gameIdMatch.find(id => id.length > 5) : "";
+
+  if (gameId) {
+    // 参照先を /reports/B1 に変更
+    const reportsApiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/reports/B1/${rawDate}`;
+    const reportsRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${rawDate}`;
+
+    const reportRes = await fetch(reportsApiURL, {
+      headers: token ? { "Authorization": `token ${token}` } : {}
+    });
+    const reportFiles = await reportRes.json();
+
+    if (Array.isArray(reportFiles)) {
+      const matchFile = reportFiles.find(f => f.name.includes(gameId) && f.name.endsWith('.png'));
+      if (matchFile) {
+        reportImagePath = `${reportsRawBase}/${matchFile.name}`;
+      }
+    }
+  }
+} catch (e) {
+  console.error("Fetch Error:", e);
+}
+---
+
+<Layout title="B.LEAGUE CARDS">
+  <div class="app-container bg-[#222222] min-h-screen text-white overflow-hidden font-avenir">
+    
+    <header class="pt-12 pb-6 px-8 border-b border-white/5 text-center">
+      <a href="/" class="inline-block hover:opacity-70 transition-opacity">
+        <h1 class="text-2xl font-black uppercase leading-none tracking-[0.25em]">B.LEAGUE Cards</h1>
+      </a>
+      <p class="text-blue-500 text-[10px] font-bold tracking-[0.4em] mt-3 uppercase">Gameday Collection</p>
+    </header>
+
+    <div class="py-10 space-y-16 pb-32">
+      <div class="px-8">
+        <div class="flex flex-col gap-1">
+          <span class="text-gray-500 text-[12px] font-black uppercase tracking-[0.3em]">Gameday</span>
+          <span class="text-white text-[28px] font-bold uppercase leading-none tracking-[0.1em]">{formattedDate}</span>
+        </div>
+      </div>
+
+      <section class="px-8 flex flex-col items-center">
+        {reportImagePath ? (
+          <div class="w-full md:w-[50%] mx-auto cursor-pointer card-trigger rounded-xl overflow-hidden border border-white/20 shadow-2xl" data-img={reportImagePath}>
+            <img src={reportImagePath} alt="Game Report" class="w-full h-auto block" />
+          </div>
+        ) : (
+          <div class="w-full py-10 text-center text-white/20 text-[10px] tracking-widest uppercase border border-dashed border-white/10 rounded-xl">
+            B1 Report Image Not Found
+          </div>
+        )}
+        <div class="mt-4 text-center">
+          <span class="text-[13px] font-black tracking-[0.2em] uppercase text-white/90">
+            {teamAway} <span class="text-[9px] font-medium text-white/40 mx-1 italic">vs</span> {teamHome}
+          </span>
+        </div>
+      </section>
+
+      {[awayData, homeData].map((team) => team.length > 0 && (
+        <section>
+          <div class="px-8 mb-6">
+            <span class="bg-blue-600 text-white px-4 py-1.5 text-[16px] font-black uppercase rounded-sm inline-block shadow-lg">
+              {team[0].team}
+            </span>
+          </div>
+
+          <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-8 no-scrollbar pb-4">
+            {team.map((p) => (
+              <div class="flex-none w-[78vw] max-w-[340px] snap-center">
+                <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-xl" data-img={p.imagePath}>
+                  <img src={p.imagePath} alt={p.name} class="w-full h-auto block" loading="lazy" />
+                </div>
+                
+                <div class="mt-6 flex flex-col items-center px-1">
+                    <button class="w-full inline-flex items-center justify-between px-6 py-4 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative active:scale-95 transition-all group overflow-hidden shadow-lg">
+                      <div class="absolute inset-0 p-[1.5px] rounded-full bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-400 -z-10 opacity-80"></div>
+                      <div class="flex items-center">
+                        <span class="text-[14px] font-black tracking-[0.15em] uppercase text-white">{p.name}</span>
+                      </div>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-white/40 group-hover:text-white transition-colors" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                    </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+
+    <div id="modal" class="fixed inset-0 bg-black/98 z-50 hidden flex-col items-center justify-center p-6 backdrop-blur-md">
+      <div class="absolute top-8 right-8 text-white/40 text-4xl font-light cursor-pointer p-4" id="close">&times;</div>
+      <img id="modal-img" src="" class="max-w-full max-h-[85vh] shadow-2xl rounded-xl mb-12" />
+      <a id="download-btn" href="" download class="bg-blue-600 text-white px-14 py-4 rounded-full font-black uppercase tracking-widest text-[11px] shadow-xl">Download Card</a>
+    </div>
+
+    <div class="fixed bottom-8 left-0 right-0 flex justify-center z-40 pointer-events-none">
+      <a href="/b-reports" class="pointer-events-auto bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 transition-transform border border-white/10">
+        B1 Report Archive
+      </a>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modal-img') as HTMLImageElement;
+  const close = document.getElementById('close');
+  const downloadBtn = document.getElementById('download-btn') as HTMLAnchorElement;
+
+  document.querySelectorAll('.card-trigger').forEach(card => {
+    card.addEventListener('click', () => {
+      const imgSrc = card.getAttribute('data-img');
+      if (imgSrc && modalImg && downloadBtn) {
+        modalImg.src = imgSrc;
+        downloadBtn.href = imgSrc;
+        modal?.classList.remove('hidden');
+        modal?.classList.add('flex');
+      }
+    });
+  });
+
+  close?.addEventListener('click', () => {
+    modal?.classList.add('hidden');
+    modal?.classList.remove('flex');
+  });
+</script>
+
+<style is:global>
+  :root { font-family: "Avenir Next", sans-serif; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>

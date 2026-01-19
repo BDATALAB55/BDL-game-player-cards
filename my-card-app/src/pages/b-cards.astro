@@ -11,17 +11,17 @@ const cityNameMap = {
   "BREX": "UTSUNOMIYA", "UTSUNOMIYA": "UTSUNOMIYA",
   "CRANETHUNDERS": "GUNMA", "GUNMA": "GUNMA",
   "ALPHAS": "KOSHIGAYA", "KOSHIGAYA": "KOSHIGAYA",
-  "ALTIRI": "A-CHIBA", "ACHIBA": "CHIBA",
-  "JETS": "CHIBA-J", "CHIBAJ": "CHIBAJ",
-  "ALVARK": "A-TOKYO", "ATOKYO": "ATOKYO",
-  "SUNROCKERS": "SR-SHIBUYA", "SHIBUYA": "SHIBUYA",
+  "ALTIRI": "A-CHIBA", "ACHIBA": "A-CHIBA",
+  "JETS": "CHIBA-J", "CHIBAJ": "CHIBA-J",
+  "ALVARK": "A-TOKYO", "ATOKYO": "A-TOKYO",
+  "SUNROCKERS": "SR-SHIBUYA", "SHIBUYA": "SR-SHIBUYA",
   "BRAVETHUNDERS": "KAWASAKI", "KAWASAKI": "KAWASAKI",
-  "BCORSAIRS": "YOKOHAMA-BC", "YOKOHAMABC": "YOKOHAMABC",
+  "BCORSAIRS": "YOKOHAMA-BC", "YOKOHAMABC": "YOKOHAMA-BC",
   "GROUSES": "TOYAMA", "TOYAMA": "TOYAMA",
-  "NEOPHOENIX": "SAN-EN", "SANEN": "SANEN",
+  "NEOPHOENIX": "SAN-EN", "SANEN": "SAN-EN",
   "SEAHORSES": "MIKAWA", "MIKAWA": "MIKAWA",
-  "FIGHTINGEAGLES": "FE-NAGOYA", "FENAGOYA": "FENAGOYA",
-  "DOLPHINS": "NAGOYA-D", "DIAMONDDOLPHINS": "NAGOYAD", "NAGOYA": "NAGOYAD",
+  "FIGHTINGEAGLES": "FE-NAGOYA", "FENAGOYA": "FE-NAGOYA",
+  "DOLPHINS": "NAGOYA-D", "DIAMONDDOLPHINS": "NAGOYA-D", "NAGOYA": "NAGOYA-D",
   "LAKES": "SHIGA", "SHIGA": "SHIGA",
   "HANNARYZ": "KYOTO", "KYOTO": "KYOTO",
   "EVESSA": "OSAKA", "OSAKA": "OSAKA",
@@ -34,18 +34,26 @@ const cityNameMap = {
 
 const folderParam = Astro.url.searchParams.get('folder') || ""; 
 
-// --- チーム名の解析ロジックを強化 ---
-// URLの末尾（フォルダ名部分）だけを見るように修正
-const folderNameOnly = folderParam.split('/').pop() || "";
-const parts = folderNameOnly.split('_');
+// --- パスの補正ロジック ---
+// スクリーンショットに合わせて、フォルダ名の頭に "B1 " がなければ付与する
+let correctedFolder = folderParam;
+if (folderParam && !folderParam.startsWith("B1 ")) {
+    const parts = folderParam.split('/');
+    if (parts.length > 0) {
+        parts[0] = "B1 " + parts[part[0].length === 6 ? 0 : 0]; // 日付フォルダを補正
+        correctedFolder = parts.join('/');
+    }
+}
 
+// --- チーム名の解析 ---
+const folderNameOnly = folderParam.split('/').pop() || "";
+const teamParts = folderNameOnly.split('_');
 let rawAway = "AWAY";
 let rawHome = "HOME";
 
-// game_id_AWAY_HOME_date の形式を想定
-if (parts.length >= 4) {
-  rawAway = parts[2].toUpperCase();
-  rawHome = parts[3].toUpperCase();
+if (teamParts.length >= 4) {
+  rawAway = teamParts[2].toUpperCase();
+  rawHome = teamParts[3].toUpperCase();
 }
 
 const awayName = cityNameMap[rawAway] || rawAway;
@@ -53,10 +61,11 @@ const homeName = cityNameMap[rawHome] || rawHome;
 
 // --- 画像取得 ---
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
-// 日本語が含まれるため encodeURIComponent を使用
-const baseDir = "output/ゲーム別選手スタッツ";
-const fullPath = `${baseDir}/${folderParam}`;
-const API_URL = `https://api.github.com/repos/${GITHUB_REPO}/contents/${encodeURIComponent(fullPath)}`;
+// フォルダ名を「Bplayers」に変更した前提
+const baseDir = "output/Bplayers/B1"; 
+const fullPath = `${baseDir}/${folderParam}`; // ここを実際の階層に合わせて調整
+
+const API_URL = `https://api.github.com/repos/${GITHUB_REPO}/contents/${fullPath}`;
 const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${fullPath}`;
 
 const token = process.env.GITHUB_TOKEN;
@@ -69,7 +78,7 @@ try {
   });
   
   if (!res.ok) {
-    debugInfo = `API Error: ${res.status} ${res.statusText}`;
+    debugInfo = `404 Error: Could not find folder at [${fullPath}]. Please check if the folder name in GitHub matches exactly.`;
   } else {
     const data = await res.json();
     if (Array.isArray(data)) {
@@ -82,11 +91,11 @@ try {
     }
   }
 } catch (e) {
-  debugInfo = `Fetch Exception: ${e.message}`;
+  debugInfo = `Error: ${e.message}`;
 }
 ---
 
-<Layout title={`${awayName} vs ${homeName} - Player Cards`}>
+<Layout title={`${awayName} vs ${homeName}`}>
   <div class="bg-[#1a1a1a] min-h-screen text-white font-avenir">
     <header class="pt-12 pb-6 px-8 text-center">
       <div class="inline-block border-b-2 border-blue-500 pb-2">
@@ -102,14 +111,8 @@ try {
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {images.map((img) => (
             <div class="group">
-              <div class="rounded-2xl overflow-hidden shadow-2xl bg-gray-900 border border-white/5 transition-all duration-500 hover:scale-[1.02] hover:border-blue-500/30">
-                <img 
-                  src={img.path} 
-                  alt={img.name}
-                  class="w-full h-auto block"
-                  loading="lazy"
-                  onerror="this.style.display='none'; console.error('Image load failed:', this.src);"
-                />
+              <div class="rounded-2xl overflow-hidden shadow-2xl bg-gray-900 border border-white/5 transition-all duration-500 hover:scale-[1.02]">
+                <img src={img.path} alt={img.name} class="w-full h-auto block" loading="lazy" />
               </div>
             </div>
           ))}
@@ -117,16 +120,19 @@ try {
       ) : (
         <div class="text-center py-20 bg-gray-900/50 rounded-3xl border border-white/5 mx-4">
           <p class="text-gray-500 font-black text-xs uppercase tracking-widest">No player cards found</p>
-          <div class="mt-6 text-[9px] text-gray-600 font-mono space-y-1">
-            <p>Target Folder: {folderParam}</p>
-            {debugInfo && <p class="text-red-900">{debugInfo}</p>}
+          <div class="mt-6 text-[10px] text-gray-400 font-mono px-10 leading-loose">
+            <p class="text-red-500 mb-2">{debugInfo}</p>
+            <hr class="border-white/10 my-4" />
+            <p>1. GitHubのフォルダ名を「Bplayers」に変えましたか？</p>
+            <p>2. その中に「B1」フォルダがありますか？</p>
+            <p>3. 階層は [output/Bplayers/B1/日付フォルダ/試合フォルダ] ですか？</p>
           </div>
         </div>
       )}
     </main>
 
     <div class="fixed bottom-8 left-0 right-0 flex justify-center z-50">
-      <a href="/b-reports" class="bg-gray-800/80 backdrop-blur-md text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest border border-white/10 hover:bg-white hover:text-black transition-all shadow-2xl active:scale-95">
+      <a href="/b-reports" class="bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest border border-white/10 shadow-2xl active:scale-95">
         Back to Reports
       </a>
     </div>

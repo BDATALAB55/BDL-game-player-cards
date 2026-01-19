@@ -2,7 +2,7 @@
 export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
-// 1. URLから ?folder= を取得
+// 1. URLからパラメータ取得
 const { searchParams } = Astro.url;
 const queryFolder = searchParams.get('folder') || ""; 
 
@@ -10,66 +10,52 @@ const queryFolder = searchParams.get('folder') || "";
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
-// 2. URL文字列の分解 (例: "260103/20260103_505092_SENDAI_UTSUNOMIYA")
+// 2. 【最重要】URLの文字列から直接チーム名を解析する（APIより信頼する）
+// 例: "260103/game_505094_ACHIBA_SHIMANE_20260103"
 const segments = queryFolder.split('/');
-const datePart = segments[0] || ""; // "260103"
-const urlMatchDir = segments[1] || ""; // クリックされた試合のディレクトリ情報
+const datePart = segments[0] || ""; 
+const urlMatchDir = segments[1] || "";
 
-// 試合IDを抽出 (例: 505092)
+const folderParts = urlMatchDir.split('_');
+// フォルダ名(game_ID_AWAY_HOME_DATE)から抽出
+const teamAway = folderParts[2] || "AWAY"; 
+const teamHome = folderParts[3] || "HOME"; 
 const gameIdMatch = urlMatchDir.match(/\d{6}/);
 const gameId = gameIdMatch ? gameIdMatch[0] : "";
 
-// --- 3. パス構築 (画像16, 20枚目の階層に完全準拠) ---
-const correctedDateFolder = `B1 ${datePart}`; // "B1 260103"
-const githubBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/B1`;
+// --- 3. データ取得 (キャッシュを完全に殺す) ---
+const correctedDateFolder = `B1 ${datePart}`;
+const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/B1/${encodeURIComponent(correctedDateFolder)}/${encodeURIComponent(urlMatchDir)}`;
 
-let finalMatchDir = "";
 let images = [];
-let teamAway = "AWAY";
-let teamHome = "HOME";
 
 try {
-  // 日付フォルダ内を一覧取得して、試合IDが一致する「本物のフォルダ名」を探す
-  const listApi = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${encodeURIComponent(correctedDateFolder)}`;
-  const listRes = await fetch(listApi, {
-    headers: token ? { "Authorization": `token ${token}` } : {}
-  });
-  const items = await listRes.json();
-
-  if (Array.isArray(items)) {
-    // フォルダ名(game_505092...)にgameIdが含まれるものを探す
-    const found = items.find(item => item.type === 'dir' && item.name.includes(gameId));
-    
-    if (found) {
-      finalMatchDir = found.name;
-      // 実際のフォルダ名からチーム名を抽出 (game, ID, AWAY, HOME, DATEの順)
-      const parts = finalMatchDir.split('_');
-      teamAway = parts[2] || "AWAY";
-      teamHome = parts[3] || "HOME";
-
-      // そのフォルダ内の画像を取得
-      const imgApi = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${encodeURIComponent(correctedDateFolder)}/${encodeURIComponent(finalMatchDir)}`;
-      const imgRes = await fetch(imgApi, {
-        headers: token ? { "Authorization": `token ${token}` } : {}
-      });
-      const files = await imgRes.json();
-
-      if (Array.isArray(files)) {
-        images = files
-          .filter(f => f.name.endsWith('.png'))
-          .map(f => ({
-            path: `${githubBase}/${correctedDateFolder}/${finalMatchDir}/${f.name}`,
-            name: f.name,
-            team: f.name.split('_')[0] // ファイル名の先頭をチーム名として取得
-          }));
-      }
+  // キャッシュを無効化するためにランダムなクエリ (?t=...) を追加
+  const apiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${encodeURIComponent(correctedDateFolder)}/${encodeURIComponent(urlMatchDir)}?t=${Date.now()}`;
+  
+  const res = await fetch(apiURL, {
+    headers: {
+      ...(token ? { "Authorization": `token ${token}` } : {}),
+      "Cache-Control": "no-cache" // キャッシュさせない
     }
+  });
+  
+  const files = await res.json();
+
+  if (Array.isArray(files)) {
+    images = files
+      .filter(f => f.name.endsWith('.png'))
+      .map(f => ({
+        path: `${githubRawBase}/${f.name}`,
+        name: f.name,
+        team: f.name.split('_')[0]
+      }));
   }
 } catch (e) {
   console.error("Fetch Error:", e);
 }
 
-// チームごとに分ける
+// 4. 【確実なフィルタリング】さっきURLから抜いたチーム名で分ける
 const awayPlayers = images.filter(img => img.team === teamAway);
 const homePlayers = images.filter(img => img.team === teamHome);
 
@@ -77,32 +63,33 @@ const formattedDate = datePart ? `20${datePart.substring(0,2)}.${datePart.substr
 ---
 
 <Layout title={`${teamAway} vs ${teamHome}`}>
-  <div class="bg-[#1a1a1a] min-h-screen text-white font-avenir pb-32">
+  <div class="bg-[#111111] min-h-screen text-white font-avenir pb-32">
     
     <header class="pt-12 pb-6 px-8 text-center border-b border-white/5">
-      <h1 class="text-2xl font-black uppercase tracking-[0.2em]">BDL B-Cards</h1>
-      <p class="text-gray-600 text-[10px] font-bold tracking-[0.4em] mt-3 uppercase">{formattedDate}</p>
+      <h1 class="text-xl font-black uppercase tracking-[0.3em] text-blue-500">BDL B-Cards</h1>
+      <div class="mt-4 flex items-center justify-center gap-4">
+        <span class="text-lg font-bold">{teamAway}</span>
+        <span class="text-gray-600 text-xs italic">vs</span>
+        <span class="text-lg font-bold">{teamHome}</span>
+      </div>
     </header>
 
-    <div class="py-10 space-y-16">
-      <div class="text-center">
-        <span class="text-sm font-black text-blue-500 uppercase tracking-widest">{teamAway}</span>
-        <span class="mx-3 text-gray-700 italic">VS</span>
-        <span class="text-sm font-black text-blue-500 uppercase tracking-widest">{teamHome}</span>
-      </div>
-
+    <div class="py-10 space-y-20">
+      
       {awayPlayers.length > 0 && (
         <section>
-          <div class="px-8 mb-6">
-            <span class="bg-white text-black px-4 py-1 text-xs font-black uppercase tracking-tighter">
-              {teamAway}
-            </span>
+          <div class="px-8 mb-6 flex justify-between items-end">
+            <span class="text-3xl font-black italic opacity-10 absolute left-4 -mt-4 uppercase">{teamAway}</span>
+            <span class="bg-white text-black px-4 py-1 text-[10px] font-black uppercase tracking-widest relative z-10">Away Team</span>
           </div>
           <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-8 no-scrollbar">
             {awayPlayers.map((p) => (
-              <div class="flex-none w-[75vw] max-w-[320px] snap-center">
-                <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-2xl" data-img={p.path}>
-                  <img src={p.path} alt={p.name} class="w-full h-auto block" loading="lazy" />
+              <div class="flex-none w-[80vw] max-w-[340px] snap-center">
+                <div class="cursor-pointer card-trigger group" data-img={p.path}>
+                  <div class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl transition-all duration-300 group-hover:border-blue-500/50">
+                    <img src={p.path} alt={p.name} class="w-full h-auto block" loading="lazy" />
+                  </div>
+                  <p class="mt-4 text-center text-[10px] text-gray-500 font-bold tracking-widest uppercase">{p.name.replace('.png','')}</p>
                 </div>
               </div>
             ))}
@@ -112,16 +99,18 @@ const formattedDate = datePart ? `20${datePart.substring(0,2)}.${datePart.substr
 
       {homePlayers.length > 0 && (
         <section>
-          <div class="px-8 mb-6 text-right">
-            <span class="bg-blue-600 text-white px-4 py-1 text-xs font-black uppercase tracking-tighter">
-              {teamHome}
-            </span>
+          <div class="px-8 mb-6 flex justify-between items-end">
+             <span class="text-3xl font-black italic opacity-10 absolute left-4 -mt-4 uppercase">{teamHome}</span>
+             <span class="bg-blue-600 text-white px-4 py-1 text-[10px] font-black uppercase tracking-widest relative z-10">Home Team</span>
           </div>
           <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-8 no-scrollbar">
             {homePlayers.map((p) => (
-              <div class="flex-none w-[75vw] max-w-[320px] snap-center">
-                <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-2xl" data-img={p.path}>
-                  <img src={p.path} alt={p.name} class="w-full h-auto block" loading="lazy" />
+              <div class="flex-none w-[80vw] max-w-[340px] snap-center">
+                <div class="cursor-pointer card-trigger group" data-img={p.path}>
+                  <div class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl transition-all duration-300 group-hover:border-blue-500/50">
+                    <img src={p.path} alt={p.name} class="w-full h-auto block" loading="lazy" />
+                  </div>
+                  <p class="mt-4 text-center text-[10px] text-gray-500 font-bold tracking-widest uppercase">{p.name.replace('.png','')}</p>
                 </div>
               </div>
             ))}
@@ -130,15 +119,15 @@ const formattedDate = datePart ? `20${datePart.substring(0,2)}.${datePart.substr
       )}
     </div>
 
-    <div id="modal" class="fixed inset-0 bg-black/95 z-50 hidden flex-col items-center justify-center p-6">
-      <div id="close" class="absolute top-8 right-8 text-white text-4xl cursor-pointer">&times;</div>
-      <img id="modal-img" src="" class="max-w-full max-h-[85vh] rounded-lg shadow-2xl mb-8" />
-      <a id="download-btn" href="" download class="bg-white text-black px-10 py-3 rounded-full font-black uppercase text-[10px] tracking-widest">Download</a>
+    <div id="modal" class="fixed inset-0 bg-black/98 z-50 hidden flex-col items-center justify-center p-6 backdrop-blur-xl">
+      <div id="close" class="absolute top-8 right-8 text-white/50 text-4xl cursor-pointer p-4 hover:text-white transition-colors">&times;</div>
+      <img id="modal-img" src="" class="max-w-full max-h-[82vh] rounded-xl shadow-2xl mb-10" />
+      <a id="download-btn" href="" download class="bg-blue-600 hover:bg-blue-500 text-white px-16 py-4 rounded-full font-black uppercase tracking-[0.2em] text-[11px] transition-all shadow-lg shadow-blue-600/20">Download Card</a>
     </div>
 
     <div class="fixed bottom-8 left-0 right-0 flex justify-center z-40">
-      <a href="/b-reports" class="bg-white/5 backdrop-blur-md text-white/50 px-8 py-3 rounded-full text-[10px] font-bold uppercase tracking-widest border border-white/10">
-        Back
+      <a href="/b-reports" class="bg-white/5 hover:bg-white/10 backdrop-blur-md text-white px-10 py-4 rounded-full font-black text-[10px] uppercase tracking-widest border border-white/10 transition-all">
+        Back to Archives
       </a>
     </div>
   </div>
@@ -156,12 +145,16 @@ const formattedDate = datePart ? `20${datePart.substring(0,2)}.${datePart.substr
       if (src && modalImg && downloadBtn) {
         modalImg.src = src;
         downloadBtn.href = src;
-        modal?.classList.replace('hidden', 'flex');
+        modal?.classList.remove('hidden');
+        modal?.classList.add('flex');
       }
     });
   });
 
-  close?.addEventListener('click', () => modal?.classList.replace('flex', 'hidden'));
+  close?.addEventListener('click', () => {
+    modal?.classList.add('hidden');
+    modal?.classList.remove('flex');
+  });
 </script>
 
 <style is:global>

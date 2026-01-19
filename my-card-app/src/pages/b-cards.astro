@@ -2,138 +2,110 @@
 export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
-// --- 手動変換辞書 ---
-const cityNameMap = {
-  "HOKKAIDO": "HOKKAIDO", "LEVANGA": "HOKKAIDO",
-  "89ERS": "SENDAI", "SENDAI": "SENDAI",
-  "AKITA": "AKITA", "NORTHERNHAPPINETS": "AKITA",
-  "IBARAKI": "IBARAKI", "ROBOTS": "IBARAKI",
-  "BREX": "UTSUNOMIYA", "UTSUNOMIYA": "UTSUNOMIYA",
-  "GUNMA": "GUNMA", "CRANETHUNDERS": "GUNMA",
-  "ALPHAS": "KOSHIGAYA", "KOSHIGAYA": "KOSHIGAYA",
-  "ALTIRI": "A-CHIBA", "ACHIBA": "A-CHIBA",
-  "JETS": "CHIBA-J", "CHIBAJ": "CHIBA-J",
-  "ALVARK": "A-TOKYO", "ATOKYO": "A-TOKYO",
-  "SUNROCKERS": "SR-SHIBUYA", "SHIBUYA": "SR-SHIBUYA",
-  "BRAVETHUNDERS": "KAWASAKI", "KAWASAKI": "KAWASAKI",
-  "BCORSAIRS": "YOKOHAMA-BC", "YOKOHAMABC": "YOKOHAMA-BC",
-  "GROUSES": "TOYAMA", "TOYAMA": "TOYAMA",
-  "NEOPHOENIX": "SAN-EN", "SANEN": "SAN-EN",
-  "SEAHORSES": "MIKAWA", "MIKAWA": "MIKAWA",
-  "FIGHTINGEAGLES": "FE-NAGOYA", "FENAGOYA": "FE-NAGOYA",
-  "DOLPHINS": "NAGOYA-D", "DIAMONDDOLPHINS": "NAGOYA-D", "NAGOYA": "NAGOYA-D",
-  "LAKES": "SHIGA", "SHIGA": "SHIGA",
-  "HANNARYZ": "KYOTO", "KYOTO": "KYOTO",
-  "EVESSA": "OSAKA", "OSAKA": "OSAKA",
-  "SUSANOOMAGIC": "SHIMANE", "SHIMANE": "SHIMANE",
-  "DRAGONFLIES": "HIROSHIMA", "HIROSHIMA": "HIROSHIMA",
-  "BALLOONERS": "SAGA", "SAGA": "SAGA",
-  "VELCA": "NAGASAKI", "NAGASAKI": "NAGASAKI",
-  "GOLDENKINGS": "RYUKYU", "RYUKYU": "RYUKYU"
-};
-
+// --- 1. URLパラメータ取得 ---
 const folderParam = Astro.url.searchParams.get('folder') || ""; 
 
-// --- パス解析と補正 ---
-// folderParam は "260103/game_..." という形式で来ると想定
-const pathSegments = folderParam.split('/');
-const datePart = pathSegments[0] || ""; // 例: "260103"
-const gameFolderName = pathSegments[1] || ""; // 例: "game_..."
+// --- 2. フォルダ名の解析と補正 ---
+// 期待される入力: "260104/20260104_505093_89ERS_BREX"
+const segments = folderParam.split('/');
+const datePart = segments[0] || ""; // "260104"
+const rawMatchDir = segments[1] || ""; // "20260104_505093_89ERS_BREX"
 
-// 画像16枚目の通り、Bplayers/B1/ の下は "B1 260103" という形式
-const correctedDateFolder = datePart.startsWith("B1 ") ? datePart : `B1 ${datePart}`;
+// GitHub上の実際の「日付フォルダ」名は "B1 260104"
+const correctedDateFolder = `B1 ${datePart}`;
 
-// --- チーム名の解析 ---
-const teamParts = gameFolderName.split('_');
-let rawAway = "AWAY";
-let rawHome = "HOME";
-if (teamParts.length >= 4) {
-  rawAway = teamParts[2].toUpperCase();
-  rawHome = teamParts[3].toUpperCase();
-}
-const awayName = cityNameMap[rawAway] || rawAway;
-const homeName = cityNameMap[rawHome] || rawHome;
-
-// --- GitHubパス設定 ---
+// --- 重要：試合フォルダ名のマッチングロジック ---
+// 入力が "20260104_505093..." でも GitHub上の "game_505093..." を見つけられるようにする
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
-// スペースを含むため、リクエスト時に適切に処理されるよう構築
-const baseDir = "output/Bplayers/B1";
-const fullPath = `${baseDir}/${correctedDateFolder}/${gameFolderName}`;
-
-// API用（日本語やスペースをエンコード）
-const API_URL = `https://api.github.com/repos/${GITHUB_REPO}/contents/${encodeURIComponent(fullPath)}`;
-// 画像表示用
-const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${fullPath}`;
-
 const token = process.env.GITHUB_TOKEN;
+const baseDir = `output/Bplayers/B1/${correctedDateFolder}`;
+
+let finalGameDir = rawMatchDir; // デフォルト
 let images = [];
 let debugInfo = "";
 
 try {
-  const res = await fetch(API_URL, {
+  // まず日付フォルダの中身を一覧取得して、正しいフォルダ名を探す
+  const listRes = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/${baseDir}`, {
     headers: token ? { "Authorization": `token ${token}` } : {}
   });
-  
-  if (!res.ok) {
-    debugInfo = `Status ${res.status}: Not Found at [${fullPath}]`;
-  } else {
-    const data = await res.json();
-    if (Array.isArray(data)) {
-      images = data
-        .filter(file => file.name.toLowerCase().endsWith('.png'))
-        .map(file => ({
-          path: `${IMAGE_BASE_URL}/${encodeURIComponent(file.name)}`,
-          name: file.name
-        }));
+  const items = await listRes.json();
+
+  if (Array.isArray(items)) {
+    // フォルダ名に含まれる「試合ID（505093等）」で検索
+    const gameIdMatch = rawMatchDir.match(/\d{6}/); // 6桁のIDを探す
+    const gameId = gameIdMatch ? gameIdMatch[0] : "";
+    
+    const matchedFolder = items.find(item => item.type === 'dir' && item.name.includes(gameId));
+    
+    if (matchedFolder) {
+      finalGameDir = matchedFolder.name; // ここで "game_505093..." がセットされる
+    } else {
+      debugInfo = `Game ID ${gameId} not found in ${baseDir}`;
     }
   }
+
+  // --- 3. 正しいパスで画像を取得 ---
+  const fullPath = `${baseDir}/${finalGameDir}`;
+  const apiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/${fullPath}`;
+  const rawBaseURL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${fullPath}`;
+
+  const imgRes = await fetch(apiURL, {
+    headers: token ? { "Authorization": `token ${token}` } : {}
+  });
+  const files = await imgRes.json();
+
+  if (Array.isArray(files)) {
+    images = files
+      .filter(f => f.name.toLowerCase().endsWith('.png'))
+      .map(f => ({
+        path: `${rawBaseURL}/${f.name}`,
+        name: f.name
+      }));
+  }
 } catch (e) {
-  debugInfo = `Exception: ${e.message}`;
+  debugInfo = `Fetch Error: ${e.message}`;
 }
+
+// チーム名の表示用
+const teamNames = finalGameDir.split('_');
+const awayName = teamNames[2] || "AWAY";
+const homeName = teamNames[3] || "HOME";
 ---
 
 <Layout title={`${awayName} vs ${homeName}`}>
-  <div class="bg-[#1a1a1a] min-h-screen text-white font-avenir">
-    <header class="pt-12 pb-6 px-8 text-center">
-      <div class="inline-block border-b-2 border-blue-500 pb-2">
-        <h1 class="text-xl font-black uppercase tracking-widest leading-relaxed">
-          {awayName} <span class="text-gray-500 text-sm mx-2 italic font-medium">vs</span> {homeName}
-        </h1>
-      </div>
-      <p class="text-[10px] text-gray-500 mt-4 tracking-[0.3em] uppercase">Player Stats Cards</p>
+  <div class="bg-[#1a1a1a] min-h-screen text-white font-avenir pb-20">
+    <header class="pt-12 pb-6 px-8 text-center border-b border-white/5">
+      <h1 class="text-2xl font-black uppercase tracking-widest">
+        {awayName} <span class="text-gray-600 text-sm mx-2 italic font-medium">vs</span> {homeName}
+      </h1>
+      <p class="text-[10px] text-gray-500 mt-4 tracking-[0.4em] uppercase">Player Statistics Cards</p>
     </header>
 
-    <main class="max-w-7xl mx-auto px-4 py-12">
+    <main class="max-w-7xl mx-auto px-6 py-12">
       {images.length > 0 ? (
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {images.map((img) => (
-            <div class="group">
-              <div class="rounded-2xl overflow-hidden shadow-2xl bg-gray-900 border border-white/5 transition-all duration-500 hover:scale-[1.02] hover:border-blue-500/30">
-                <img 
-                  src={img.path} 
-                  alt={img.name} 
-                  class="w-full h-auto block" 
-                  loading="lazy" 
-                />
-              </div>
+            <div class="rounded-2xl overflow-hidden shadow-2xl bg-gray-900 border border-white/5">
+              <img src={img.path} alt={img.name} class="w-full h-auto block" loading="lazy" />
             </div>
           ))}
         </div>
       ) : (
-        <div class="text-center py-20 bg-gray-800/20 rounded-3xl border border-white/5 mx-4">
-          <p class="text-gray-500 font-black text-xs uppercase tracking-widest italic">No player cards found</p>
-          <div class="mt-8 text-[10px] text-gray-600 font-mono px-6 leading-relaxed bg-black/30 py-4 rounded-xl inline-block text-left">
-            <p class="text-blue-400 mb-1">🔍 Debug Path Info:</p>
-            <p>Repo: {GITHUB_REPO}</p>
-            <p>Path: {fullPath}</p>
-            {debugInfo && <p class="text-red-500 mt-2">Error: {debugInfo}</p>}
+        <div class="text-center py-20 bg-black/20 rounded-3xl border border-white/5">
+          <p class="text-gray-500 text-xs font-bold uppercase tracking-widest">No player cards found</p>
+          <div class="mt-6 text-[10px] text-gray-600 font-mono inline-block text-left bg-black/40 p-4 rounded-lg">
+             <p>Requested: {folderParam}</p>
+             <p>Corrected Date Dir: {correctedDateFolder}</p>
+             <p>Final Game Dir: {finalGameDir}</p>
+             {debugInfo && <p class="text-red-900 mt-2">{debugInfo}</p>}
           </div>
         </div>
       )}
     </main>
 
     <div class="fixed bottom-8 left-0 right-0 flex justify-center z-50">
-      <a href="/b-reports" class="bg-gray-800/90 backdrop-blur-md text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest border border-white/10 shadow-2xl active:scale-95 transition-all hover:bg-white hover:text-black">
+      <a href="/b-reports" class="bg-blue-600 hover:bg-blue-500 text-white px-10 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl transition-all active:scale-95">
         Back to Reports
       </a>
     </div>

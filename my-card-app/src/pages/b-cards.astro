@@ -2,7 +2,7 @@
 export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
-// --- 手動変換辞書（b-reportsと同じもの） ---
+// --- 手動変換辞書 ---
 const cityNameMap = {
   "HOKKAIDO": "HOKKAIDO", "LEVANGA": "HOKKAIDO",
   "89ERS": "SENDAI", "SENDAI": "SENDAI",
@@ -11,17 +11,17 @@ const cityNameMap = {
   "BREX": "UTSUNOMIYA", "UTSUNOMIYA": "UTSUNOMIYA",
   "CRANETHUNDERS": "GUNMA", "GUNMA": "GUNMA",
   "ALPHAS": "KOSHIGAYA", "KOSHIGAYA": "KOSHIGAYA",
-  "ALTIRI": "CHIBA", "ACHIBA": "CHIBA",
-  "JETS": "CHIBAJ", "CHIBAJ": "CHIBAJ",
-  "ALVARK": "ATOKYO", "ATOKYO": "ATOKYO",
-  "SUNROCKERS": "SHIBUYA", "SHIBUYA": "SHIBUYA",
+  "ALTIRI": "A-CHIBA", "ACHIBA": "CHIBA",
+  "JETS": "CHIBA-J", "CHIBAJ": "CHIBAJ",
+  "ALVARK": "A-TOKYO", "ATOKYO": "ATOKYO",
+  "SUNROCKERS": "SR-SHIBUYA", "SHIBUYA": "SHIBUYA",
   "BRAVETHUNDERS": "KAWASAKI", "KAWASAKI": "KAWASAKI",
-  "BCORSAIRS": "YOKOHAMABC", "YOKOHAMABC": "YOKOHAMABC",
+  "BCORSAIRS": "YOKOHAMA-BC", "YOKOHAMABC": "YOKOHAMABC",
   "GROUSES": "TOYAMA", "TOYAMA": "TOYAMA",
-  "NEOPHOENIX": "SANEN", "SANEN": "SANEN",
+  "NEOPHOENIX": "SAN-EN", "SANEN": "SANEN",
   "SEAHORSES": "MIKAWA", "MIKAWA": "MIKAWA",
-  "FIGHTINGEAGLES": "FENAGOYA", "FENAGOYA": "FENAGOYA",
-  "DOLPHINS": "NAGOYAD", "DIAMONDDOLPHINS": "NAGOYAD", "NAGOYA": "NAGOYAD",
+  "FIGHTINGEAGLES": "FE-NAGOYA", "FENAGOYA": "FENAGOYA",
+  "DOLPHINS": "NAGOYA-D", "DIAMONDDOLPHINS": "NAGOYAD", "NAGOYA": "NAGOYAD",
   "LAKES": "SHIGA", "SHIGA": "SHIGA",
   "HANNARYZ": "KYOTO", "KYOTO": "KYOTO",
   "EVESSA": "OSAKA", "OSAKA": "OSAKA",
@@ -33,41 +33,56 @@ const cityNameMap = {
 };
 
 const folderParam = Astro.url.searchParams.get('folder') || ""; 
-// folderParam は "B1 260103/game_505092_SENDAI_UTSUNOMIYA_20260103" のような形式を想定
 
-// --- チーム名の解析 ---
-const parts = folderParam.split('_');
-// parts[2] = SENDAI, parts[3] = UTSUNOMIYA を取得
-const rawAway = (parts[2] || "AWAY").toUpperCase();
-const rawHome = (parts[3] || "HOME").toUpperCase();
+// --- チーム名の解析ロジックを強化 ---
+// URLの末尾（フォルダ名部分）だけを見るように修正
+const folderNameOnly = folderParam.split('/').pop() || "";
+const parts = folderNameOnly.split('_');
+
+let rawAway = "AWAY";
+let rawHome = "HOME";
+
+// game_id_AWAY_HOME_date の形式を想定
+if (parts.length >= 4) {
+  rawAway = parts[2].toUpperCase();
+  rawHome = parts[3].toUpperCase();
+}
 
 const awayName = cityNameMap[rawAway] || rawAway;
 const homeName = cityNameMap[rawHome] || rawHome;
 
-// --- 画像取得用設定 ---
+// --- 画像取得 ---
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
-// 重要：スクリーンショットに基づき、階層を「ゲーム別選手スタッツ」に変更
-const API_URL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/ゲーム別選手スタッツ/${folderParam}`;
-const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/ゲーム別選手スタッツ/${folderParam}`;
+// 日本語が含まれるため encodeURIComponent を使用
+const baseDir = "output/ゲーム別選手スタッツ";
+const fullPath = `${baseDir}/${folderParam}`;
+const API_URL = `https://api.github.com/repos/${GITHUB_REPO}/contents/${encodeURIComponent(fullPath)}`;
+const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${fullPath}`;
 
 const token = process.env.GITHUB_TOKEN;
 let images = [];
+let debugInfo = "";
 
 try {
   const res = await fetch(API_URL, {
     headers: token ? { "Authorization": `token ${token}` } : {}
   });
-  const data = await res.json();
-  if (Array.isArray(data)) {
-    images = data
-      .filter(file => file.name.toLowerCase().endsWith('.png'))
-      .map(file => ({
-        path: `${IMAGE_BASE_URL}/${file.name}`,
-        name: file.name
-      }));
+  
+  if (!res.ok) {
+    debugInfo = `API Error: ${res.status} ${res.statusText}`;
+  } else {
+    const data = await res.json();
+    if (Array.isArray(data)) {
+      images = data
+        .filter(file => file.name.toLowerCase().endsWith('.png'))
+        .map(file => ({
+          path: `${IMAGE_BASE_URL}/${file.name}`,
+          name: file.name
+        }));
+    }
   }
 } catch (e) {
-  console.error("Fetch Error:", e);
+  debugInfo = `Fetch Exception: ${e.message}`;
 }
 ---
 
@@ -87,27 +102,31 @@ try {
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {images.map((img) => (
             <div class="group">
-              <div class="rounded-2xl overflow-hidden shadow-2xl bg-gray-900 border border-white/5 transition-transform duration-500 hover:scale-[1.02]">
+              <div class="rounded-2xl overflow-hidden shadow-2xl bg-gray-900 border border-white/5 transition-all duration-500 hover:scale-[1.02] hover:border-blue-500/30">
                 <img 
                   src={img.path} 
                   alt={img.name}
                   class="w-full h-auto block"
                   loading="lazy"
+                  onerror="this.style.display='none'; console.error('Image load failed:', this.src);"
                 />
               </div>
             </div>
           ))}
         </div>
       ) : (
-        <div class="text-center py-20">
-          <p class="text-gray-600 font-black text-xs uppercase tracking-widest">No player cards found in:</p>
-          <p class="text-gray-400 text-[10px] mt-2 opacity-50">{folderParam}</p>
+        <div class="text-center py-20 bg-gray-900/50 rounded-3xl border border-white/5 mx-4">
+          <p class="text-gray-500 font-black text-xs uppercase tracking-widest">No player cards found</p>
+          <div class="mt-6 text-[9px] text-gray-600 font-mono space-y-1">
+            <p>Target Folder: {folderParam}</p>
+            {debugInfo && <p class="text-red-900">{debugInfo}</p>}
+          </div>
         </div>
       )}
     </main>
 
     <div class="fixed bottom-8 left-0 right-0 flex justify-center z-50">
-      <a href="/b-reports" class="bg-white/10 backdrop-blur-md text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest border border-white/20 hover:bg-white hover:text-black transition-all">
+      <a href="/b-reports" class="bg-gray-800/80 backdrop-blur-md text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest border border-white/10 hover:bg-white hover:text-black transition-all shadow-2xl active:scale-95">
         Back to Reports
       </a>
     </div>

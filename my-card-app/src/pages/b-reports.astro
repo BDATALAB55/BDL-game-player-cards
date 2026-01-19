@@ -1,12 +1,27 @@
 ---
 export const prerender = false;
 import Layout from '../layouts/Layout.astro';
+// team_colors.jsonをインポート
+import teamColorsData from '../../data/team_colors.json';
+
+// --- 日本語変換用の逆引き辞書を作成 ---
+// 例: { "HOKKAIDO": "北海道", "89ERS": "仙台", "BREX": "宇都宮" ... }
+const reverseAliases = {};
+if (teamColorsData && teamColorsData.aliases) {
+  Object.entries(teamColorsData.aliases).forEach(([japanese, aliasArray]) => {
+    if (Array.isArray(aliasArray)) {
+      aliasArray.forEach(alias => {
+        reverseAliases[alias.toUpperCase()] = japanese;
+      });
+    } else if (typeof aliasArray === 'string') {
+      reverseAliases[aliasArray.toUpperCase()] = japanese;
+    }
+  });
+}
 
 // --- 設定値 ---
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
-// キャッシュを避けるためにタイムスタンプを付与
 const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
-// NBAをB1に変更
 const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1`;
 
 const token = process.env.GITHUB_TOKEN;
@@ -24,7 +39,6 @@ try {
   const data = await res.json();
 
   if (data.tree) {
-    // 取得パスを B1 に変更
     const allFiles = data.tree.filter(item => 
       item.path.includes('output/reports/B1/') && 
       item.path.toLowerCase().endsWith('.png')
@@ -34,21 +48,25 @@ try {
 
     allFiles.forEach(file => {
       const pathParts = file.path.split('/');
-      // インデックス検索を B1 に変更
       const b1Index = pathParts.indexOf('B1');
       if (b1Index === -1 || pathParts.length <= b1Index + 2) return;
 
-      const folderName = pathParts[b1Index + 1]; // 日付フォルダ (例: 260118)
-      const fileName = pathParts[b1Index + 2];   // ファイル名
+      const folderName = pathParts[b1Index + 1]; 
+      const fileName = pathParts[b1Index + 2];   
 
       if (!/^\d+$/.test(folderName)) return;
 
       const nameParts = fileName.replace('.png', '').split('_');
-      // ファイル名形式がNBA準拠（B1_20260117_...）と想定
       const fullDate = nameParts[1] || ""; 
       const gameId = nameParts[2] || "";
-      const teamA = nameParts[nameParts.length - 2] || "AWAY";
-      const teamB = nameParts[nameParts.length - 1] || "HOME";
+      
+      // 英字のチーム名を取得
+      const teamA_raw = nameParts[nameParts.length - 2] || "AWAY";
+      const teamB_raw = nameParts[nameParts.length - 1] || "HOME";
+
+      // JSON辞書を使って日本語に変換（なければ英字そのまま）
+      const teamA = reverseAliases[teamA_raw.toUpperCase()] || teamA_raw;
+      const teamB = reverseAliases[teamB_raw.toUpperCase()] || teamB_raw;
 
       if (!groups[folderName]) {
         groups[folderName] = {
@@ -58,7 +76,6 @@ try {
         };
       }
 
-      // リンク先を b-cards に変更
       groups[folderName].reports.push({
         path: `${IMAGE_BASE_URL}/${folderName}/${fileName}`,
         away: teamA,
@@ -189,12 +206,12 @@ const availableDates = reportGroups.map(g => g.id);
     const daysInMonth = new Date(y, m + 1, 0).getDate();
     const monthNames = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
     
-    let html = `<div class="flex justify-between items-center mb-6 px-2 text-white"><button onclick="changeMonth(-1)">←</button><div class="font-black text-sm tracking-widest">${monthNames[m]} ${y}</div><button onclick="changeMonth(1)">→</button></div><div class="grid grid-cols-7 gap-1 text-center text-[9px] font-bold text-gray-600 mb-4 uppercase"><div>S</div><div>M</div><div>T</div><div>W</div><div>T</div><div>F</div><div>S</div></div><div class="grid grid-cols-7 gap-y-3">`;
+    let html = `<div class="flex justify-between items-center mb-6 px-2 text-white"><button onclick="changeMonth(-1)">←</button><div class="font-black text-sm tracking-widest">\${monthNames[m]} \${y}</div><button onclick="changeMonth(1)">→</button></div><div class="grid grid-cols-7 gap-1 text-center text-[9px] font-bold text-gray-600 mb-4 uppercase"><div>S</div><div>M</div><div>T</div><div>W</div><div>T</div><div>F</div><div>S</div></div><div class="grid grid-cols-7 gap-y-3">`;
     for (let i = 0; i < firstDay; i++) html += `<div></div>`;
     for (let d = 1; d <= daysInMonth; d++) {
-      const dateStr = `${String(y).substring(2)}${String(m + 1).padStart(2, '0')}${String(d).padStart(2, '0')}`;
+      const dateStr = `\${String(y).substring(2)}\${String(m + 1).padStart(2, '0')}\${String(d).padStart(2, '0')}`;
       const hasReport = availableDates.includes(dateStr);
-      html += `<div class="aspect-square flex items-center justify-center rounded-full text-[12px] transition-all ${hasReport ? "bg-blue-600 text-white font-black cursor-pointer shadow-lg" : "text-gray-700"}" ${hasReport ? `onclick="updateReports('${dateStr}')"` : ''}>${d}</div>`;
+      html += `<div class="aspect-square flex items-center justify-center rounded-full text-[12px] transition-all \${hasReport ? "bg-blue-600 text-white font-black cursor-pointer shadow-lg" : "text-gray-700"}" \${hasReport ? \`onclick="updateReports('\${dateStr}')"\` : ''}>\${d}</div>`;
     }
     calendarEl.innerHTML = html + `</div>`;
   }

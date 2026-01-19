@@ -2,7 +2,7 @@
 export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
-// --- 手動変換辞書：[ファイル名のキーワード]: "表示したい都市名" ---
+// --- 手動変換辞書 ---
 const cityNameMap = {
   "HOKKAIDO": "HOKKAIDO", "LEVANGA": "HOKKAIDO", "LEVANGAHOKKAIDO": "HOKKAIDO",
   "89ERS": "SENDAI", "SENDAI": "SENDAI", "SENDAI89ERS": "SENDAI",
@@ -11,17 +11,17 @@ const cityNameMap = {
   "BREX": "UTSUNOMIYA", "UTSUNOMIYA": "UTSUNOMIYA",
   "CRANETHUNDERS": "GUNMA", "GUNMA": "GUNMA",
   "ALPHAS": "KOSHIGAYA", "KOSHIGAYA": "KOSHIGAYA",
-  "ALTIRI": "CHIBA", "ACHIBA": "A CHIBA",
-  "JETS": "CHIBAJ", "CHIBAJ": "CHIBA J",
-  "ALVARK": "ATOKYO", "ATOKYO": "A TOKYO",
-  "SUNROCKERS": "SHIBUYA", "SHIBUYA": "SR SHIBUYA",
+  "ALTIRI": "CHIBA", "ACHIBA": "CHIBA",
+  "JETS": "CHIBAJ", "CHIBAJ": "CHIBAJ",
+  "ALVARK": "ATOKYO", "ATOKYO": "ATOKYO",
+  "SUNROCKERS": "SHIBUYA", "SHIBUYA": "SHIBUYA",
   "BRAVETHUNDERS": "KAWASAKI", "KAWASAKI": "KAWASAKI",
-  "BCORSAIRS": "YOKOHAMABC", "YOKOHAMABC": "YOKOHAMA BC",
+  "BCORSAIRS": "YOKOHAMABC", "YOKOHAMABC": "YOKOHAMABC",
   "GROUSES": "TOYAMA", "TOYAMA": "TOYAMA",
-  "NEOPHOENIX": "SANEN", "SANEN": "SANEN", "SAN-EN": "SAN-EN",
+  "NEOPHOENIX": "SANEN", "SANEN": "SANEN", "SAN-EN": "SANEN",
   "SEAHORSES": "MIKAWA", "MIKAWA": "MIKAWA",
-  "FIGHTINGEAGLES": "FENAGOYA", "FENAGOYA": "FE NAGOYA",
-  "DOLPHINS": "NAGOYAD", "DIAMONDDOLPHINS": "NAGOYAD", "NAGOYA": "NAGOYA D",
+  "FIGHTINGEAGLES": "FENAGOYA", "FENAGOYA": "FENAGOYA",
+  "DOLPHINS": "NAGOYAD", "DIAMONDDOLPHINS": "NAGOYAD", "NAGOYA": "NAGOYAD",
   "LAKES": "SHIGA", "SHIGA": "SHIGA",
   "HANNARYZ": "KYOTO", "KYOTO": "KYOTO",
   "EVESSA": "OSAKA", "OSAKA": "OSAKA",
@@ -33,15 +33,15 @@ const cityNameMap = {
 };
 
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
-const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
-const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1`;
+const RECURSIVE_API = "https://api.github.com/repos/" + GITHUB_REPO + "/git/trees/main?recursive=1&t=" + Date.now();
+const IMAGE_BASE_URL = "https://raw.githubusercontent.com/" + GITHUB_REPO + "/main/output/reports/B1";
 
 const token = process.env.GITHUB_TOKEN;
 let reportGroups = [];
 
 try {
   const res = await fetch(RECURSIVE_API, {
-    headers: token ? { "Authorization": `token ${token}` } : {}
+    headers: token ? { "Authorization": "token " + token } : {}
   });
   const data = await res.json();
 
@@ -53,32 +53,31 @@ try {
     const groups = {};
     allFiles.forEach(file => {
       const pathParts = file.path.split('/');
-      const folderName = pathParts[pathParts.indexOf('B1') + 1]; 
+      const b1Pos = pathParts.indexOf('B1');
+      const folderName = pathParts[b1Pos + 1]; 
       const fileName = pathParts[pathParts.length - 1];
 
-      if (!/^\d+$/.test(folderName)) return;
+      if (!folderName || !/^\d+$/.test(folderName)) return;
 
       const nameParts = fileName.replace('.png', '').split('_');
-      // ファイル名の末尾からチーム名を取得
       const teamA_raw = (nameParts[nameParts.length - 2] || "AWAY").toUpperCase().replace(/[\s\-_]/g, '');
       const teamB_raw = (nameParts[nameParts.length - 1] || "HOME").toUpperCase().replace(/[\s\-_]/g, '');
 
-      // 辞書引き（見つからなければ元の名前）
       const teamA = cityNameMap[teamA_raw] || teamA_raw;
       const teamB = cityNameMap[teamB_raw] || teamB_raw;
 
       if (!groups[folderName]) {
         groups[folderName] = {
           id: folderName,
-          date: `20${folderName.substring(0,2)}.${folderName.substring(2,4)}.${folderName.substring(4,6)}`,
+          date: "20" + folderName.substring(0,2) + "." + folderName.substring(2,4) + "." + folderName.substring(4,6),
           reports: []
         };
       }
       groups[folderName].reports.push({
-        path: `${IMAGE_BASE_URL}/${folderName}/${fileName}`,
+        path: IMAGE_BASE_URL + "/" + folderName + "/" + fileName,
         away: teamA,
         home: teamB,
-        link: `/b-cards?folder=${folderName}/${fileName.replace('.png', '')}`
+        link: "/b-cards?folder=" + folderName + "/" + fileName.replace('.png', '')
       });
     });
     reportGroups = Object.values(groups).sort((a, b) => b.id.localeCompare(a.id));
@@ -143,29 +142,34 @@ const availableDates = reportGroups.map(g => g.id);
 </Layout>
 
 <script is:inline define:vars={{ allData, availableDates }}>
-  let currentY = 2026;
-  let currentM = 0; 
+  // 初期化用の数値を取得
+  var currentY = 2026;
+  var currentM = 0; 
 
-  if (availableDates.length > 0) {
-    const latest = availableDates[0];
+  if (availableDates && availableDates.length > 0) {
+    var latest = availableDates[0];
     currentY = 2000 + parseInt(latest.substring(0,2));
     currentM = parseInt(latest.substring(2,4)) - 1;
   }
 
   window.updateReports = function(dateId) {
-    const sliderEl = document.getElementById('report-slider');
-    const dateTitleEl = document.getElementById('display-date');
-    const labelEl = document.getElementById('display-label');
-    const group = allData.find(g => g.id === dateId);
+    var sliderEl = document.getElementById('report-slider');
+    var dateTitleEl = document.getElementById('display-date');
+    var labelEl = document.getElementById('display-label');
+    
+    var group = null;
+    for(var i=0; i<allData.length; i++) {
+      if(allData[i].id === dateId) { group = allData[i]; break; }
+    }
     if (!group || !sliderEl) return;
 
     dateTitleEl.innerText = group.date;
-    const isLatest = (dateId === availableDates[0]);
+    var isLatest = (dateId === availableDates[0]);
     labelEl.innerText = isLatest ? "Latest Update" : "Archive Data";
     labelEl.className = "text-[10px] font-black uppercase tracking-[0.3em] " + (isLatest ? 'text-blue-500' : 'text-gray-500');
 
-    let reportsHtml = '';
-    group.reports.forEach(report => {
+    var reportsHtml = '';
+    group.reports.forEach(function(report) {
       reportsHtml += 
         '<div class="flex-none w-[85vw] max-w-[400px] snap-center">' +
           '<div class="rounded-2xl overflow-hidden border border-white/10 bg-gray-900 shadow-2xl">' +
@@ -193,30 +197,42 @@ const availableDates = reportGroups.map(g => g.id);
   };
 
   function renderCalendar(y, m) {
-    const calendarEl = document.getElementById('calendar');
+    var calendarEl = document.getElementById('calendar');
     if (!calendarEl) return;
-    const firstDay = new Date(y, m, 1).getDay();
-    const daysInMonth = new Date(y, m + 1, 0).getDate();
-    const monthNames = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
+    var firstDay = new Date(y, m, 1).getDay();
+    var daysInMonth = new Date(y, m + 1, 0).getDate();
+    var monthNames = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
     
-    let html = '<div class="flex justify-between items-center mb-6 px-2 text-white">';
-    html += '<button onclick="changeMonth(-1)">←</button>';
+    var html = '<div class="flex justify-between items-center mb-6 px-2 text-white">';
+    html += '<button type="button" onclick="changeMonth(-1)">←</button>';
     html += '<div class="font-black text-sm tracking-widest">' + monthNames[m] + ' ' + y + '</div>';
-    html += '<button onclick="changeMonth(1)">→</button></div>';
+    html += '<button type="button" onclick="changeMonth(1)">→</button></div>';
     html += '<div class="grid grid-cols-7 gap-1 text-center text-[9px] font-bold text-gray-600 mb-4 uppercase"><div>S</div><div>M</div><div>T</div><div>W</div><div>T</div><div>F</div><div>S</div></div><div class="grid grid-cols-7 gap-y-3">';
     
-    for (let i = 0; i < firstDay; i++) html += '<div></div>';
+    for (var i = 0; i < firstDay; i++) {
+      html += '<div></div>';
+    }
     
-    for (let d = 1; d <= daysInMonth; d++) {
-      const dateId = String(y).substring(2) + String(m + 1).padStart(2, '0') + String(d).padStart(2, '0');
-      const hasReport = availableDates.includes(dateId);
-      const activeClass = hasReport ? "bg-blue-600 text-white font-black cursor-pointer shadow-lg" : "text-gray-700";
-      const onClick = hasReport ? 'onclick="updateReports(\'' + dateId + '\')"' : '';
-      html += '<div class="aspect-square flex items-center justify-center rounded-full text-[12px] transition-all ' + activeClass + '" ' + onClick + '>' + d + '</div>';
+    for (var d = 1; d <= daysInMonth; d++) {
+      var mm = ('0' + (m + 1)).slice(-2);
+      var dd = ('0' + d).slice(-2);
+      var yy = String(y).substring(2);
+      var dateId = yy + mm + dd;
+      
+      var hasReport = false;
+      for(var j=0; j<availableDates.length; j++){
+        if(availableDates[j] === dateId) { hasReport = true; break; }
+      }
+      
+      var activeClass = hasReport ? "bg-blue-600 text-white font-black cursor-pointer shadow-lg" : "text-gray-700";
+      var onClickAction = hasReport ? 'onclick="updateReports(\'' + dateId + '\')"' : '';
+      
+      html += '<div class="aspect-square flex items-center justify-center rounded-full text-[12px] transition-all ' + activeClass + '" ' + onClickAction + '>' + d + '</div>';
     }
     calendarEl.innerHTML = html + '</div>';
   }
 
+  // 初期レンダリング
   renderCalendar(currentY, currentM);
 </script>
 

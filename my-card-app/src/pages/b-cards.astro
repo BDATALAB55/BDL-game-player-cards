@@ -5,45 +5,31 @@ import Layout from '../layouts/Layout.astro';
 // 1. URLから ?folder= を取得
 const { searchParams } = Astro.url;
 const queryFolder = searchParams.get('folder') || ""; 
-// 例: "260104/20260104_505093_89ERS_BREX"
 
 // --- 設定 ---
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
-// 2. URLの文字列から直接情報を抜き出す (APIに頼らない)
+// 2. URL文字列の分解 (例: "260103/20260103_505092_SENDAI_UTSUNOMIYA")
 const segments = queryFolder.split('/');
-const rawDate = segments[0] || ""; // "260104"
-const matchDirName = segments[1] || ""; // "20260104_505093_89ERS_BREX"
+const datePart = segments[0] || ""; // "260103"
+const urlMatchDir = segments[1] || ""; // クリックされた試合のディレクトリ情報
 
-// チーム名をURLから直接抽出 (3番目と4番目の要素)
-const folderParts = matchDirName.split('_');
-// URLが "game_" で始まる場合と日付で始まる場合の両方に対応
+// 試合IDを抽出 (例: 505092)
+const gameIdMatch = urlMatchDir.match(/\d{6}/);
+const gameId = gameIdMatch ? gameIdMatch[0] : "";
+
+// --- 3. パス構築 (画像16, 20枚目の階層に完全準拠) ---
+const correctedDateFolder = `B1 ${datePart}`; // "B1 260103"
+const githubBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/B1`;
+
+let finalMatchDir = "";
+let images = [];
 let teamAway = "AWAY";
 let teamHome = "HOME";
 
-if (matchDirName.startsWith('game_')) {
-  teamAway = folderParts[2] || "AWAY";
-  teamHome = folderParts[3] || "HOME";
-} else {
-  teamAway = folderParts[2] || "AWAY";
-  teamHome = folderParts[3] || "HOME";
-}
-
-// 試合IDを抽出
-const gameIdMatch = matchDirName.match(/\d{6}/);
-const gameId = gameIdMatch ? gameIdMatch[0] : "";
-
-// --- 3. 正しいフォルダパスの構築 ---
-const correctedDateFolder = rawDate.startsWith("B1 ") ? rawDate : `B1 ${rawDate}`;
-const githubBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/B1`;
-
-// APIでそのフォルダ内のファイル一覧だけを取得
-// ここで matchDirName そのものではなく、APIで「本物のフォルダ名」を探す
-let finalMatchDir = matchDirName;
-let images = [];
-
 try {
+  // 日付フォルダ内を一覧取得して、試合IDが一致する「本物のフォルダ名」を探す
   const listApi = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${encodeURIComponent(correctedDateFolder)}`;
   const listRes = await fetch(listApi, {
     headers: token ? { "Authorization": `token ${token}` } : {}
@@ -51,46 +37,43 @@ try {
   const items = await listRes.json();
 
   if (Array.isArray(items)) {
-    // 試合IDが一致するフォルダを確実に見つける
-    const found = items.find(item => item.name.includes(gameId));
+    // フォルダ名(game_505092...)にgameIdが含まれるものを探す
+    const found = items.find(item => item.type === 'dir' && item.name.includes(gameId));
+    
     if (found) {
       finalMatchDir = found.name;
-      // チーム名もフォルダ名から再取得して上書き（確実性を高める）
-      const fParts = finalMatchDir.split('_');
-      teamAway = fParts[2] || teamAway;
-      teamHome = fParts[3] || teamHome;
+      // 実際のフォルダ名からチーム名を抽出 (game, ID, AWAY, HOME, DATEの順)
+      const parts = finalMatchDir.split('_');
+      teamAway = parts[2] || "AWAY";
+      teamHome = parts[3] || "HOME";
+
+      // そのフォルダ内の画像を取得
+      const imgApi = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${encodeURIComponent(correctedDateFolder)}/${encodeURIComponent(finalMatchDir)}`;
+      const imgRes = await fetch(imgApi, {
+        headers: token ? { "Authorization": `token ${token}` } : {}
+      });
+      const files = await imgRes.json();
+
+      if (Array.isArray(files)) {
+        images = files
+          .filter(f => f.name.endsWith('.png'))
+          .map(f => ({
+            path: `${githubBase}/${correctedDateFolder}/${finalMatchDir}/${f.name}`,
+            name: f.name,
+            team: f.name.split('_')[0] // ファイル名の先頭をチーム名として取得
+          }));
+      }
     }
-  }
-
-  // 画像ファイル取得
-  const apiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${encodeURIComponent(correctedDateFolder)}/${encodeURIComponent(finalMatchDir)}`;
-  const res = await fetch(apiURL, {
-    headers: token ? { "Authorization": `token ${token}` } : {}
-  });
-  const files = await res.json();
-
-  if (Array.isArray(files)) {
-    images = files
-      .filter(f => f.name.endsWith('.png'))
-      .map(f => ({
-        path: `${githubBase}/${correctedDateFolder}/${finalMatchDir}/${f.name}`,
-        name: f.name,
-        teamPrefix: f.name.split('_')[0]
-      }));
   }
 } catch (e) {
   console.error("Fetch Error:", e);
 }
 
-// データをチームごとに分ける
-const awayData = images.filter(img => img.name.startsWith(teamAway)).sort();
-const homeData = images.filter(img => img.name.startsWith(teamHome)).sort();
+// チームごとに分ける
+const awayPlayers = images.filter(img => img.team === teamAway);
+const homePlayers = images.filter(img => img.team === teamHome);
 
-// 日付表示
-const formattedDate = rawDate ? `20${rawDate.substring(0,2)}.${rawDate.substring(2,4)}.${rawDate.substring(4,6)}` : "";
-
-// レポート画像
-const reportImagePath = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${rawDate}/${gameId}.png`;
+const formattedDate = datePart ? `20${datePart.substring(0,2)}.${datePart.substring(2,4)}.${datePart.substring(4,6)}` : "";
 ---
 
 <Layout title={`${teamAway} vs ${teamHome}`}>
@@ -102,56 +85,60 @@ const reportImagePath = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/o
     </header>
 
     <div class="py-10 space-y-16">
-      <section class="px-8 text-center">
-        <div class="flex items-center justify-center gap-4 mb-8">
-          <span class="text-xl font-black">{teamAway}</span>
-          <span class="text-gray-600 italic font-medium text-sm">vs</span>
-          <span class="text-xl font-black">{teamHome}</span>
-        </div>
-        
-        <div class="w-full md:w-[60%] mx-auto rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
-           <img src={reportImagePath} class="w-full h-auto" onerror="this.parentElement.style.display='none'" />
-        </div>
-      </section>
+      <div class="text-center">
+        <span class="text-sm font-black text-blue-500 uppercase tracking-widest">{teamAway}</span>
+        <span class="mx-3 text-gray-700 italic">VS</span>
+        <span class="text-sm font-black text-blue-500 uppercase tracking-widest">{teamHome}</span>
+      </div>
 
-      {[
-        { name: teamAway, data: awayData },
-        { name: teamHome, data: homeData }
-      ].map((team) => team.data.length > 0 && (
+      {awayPlayers.length > 0 && (
         <section>
           <div class="px-8 mb-6">
-            <span class="bg-blue-600 text-white px-6 py-2 text-sm font-black uppercase tracking-widest rounded-full">
-              {team.name}
+            <span class="bg-white text-black px-4 py-1 text-xs font-black uppercase tracking-tighter">
+              {teamAway}
             </span>
           </div>
-
           <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-8 no-scrollbar">
-            {team.data.map((p) => (
-              <div class="flex-none w-[80vw] max-w-[340px] snap-center">
-                <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-xl" data-img={p.path}>
+            {awayPlayers.map((p) => (
+              <div class="flex-none w-[75vw] max-w-[320px] snap-center">
+                <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-2xl" data-img={p.path}>
                   <img src={p.path} alt={p.name} class="w-full h-auto block" loading="lazy" />
-                </div>
-                <div class="mt-4 px-2">
-                  <div class="w-full py-3 rounded-full bg-white/5 border border-white/10 text-center text-[11px] font-bold tracking-widest uppercase">
-                    {p.name.split('_').slice(2).join(' ').replace('.png', '')}
-                  </div>
                 </div>
               </div>
             ))}
           </div>
         </section>
-      ))}
+      )}
+
+      {homePlayers.length > 0 && (
+        <section>
+          <div class="px-8 mb-6 text-right">
+            <span class="bg-blue-600 text-white px-4 py-1 text-xs font-black uppercase tracking-tighter">
+              {teamHome}
+            </span>
+          </div>
+          <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-8 no-scrollbar">
+            {homePlayers.map((p) => (
+              <div class="flex-none w-[75vw] max-w-[320px] snap-center">
+                <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-2xl" data-img={p.path}>
+                  <img src={p.path} alt={p.name} class="w-full h-auto block" loading="lazy" />
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
     </div>
 
     <div id="modal" class="fixed inset-0 bg-black/95 z-50 hidden flex-col items-center justify-center p-6">
-      <div id="close" class="absolute top-8 right-8 text-white text-4xl cursor-pointer p-4">&times;</div>
-      <img id="modal-img" src="" class="max-w-full max-h-[80vh] rounded-xl shadow-2xl mb-8" />
-      <a id="download-btn" href="" download class="bg-blue-600 text-white px-12 py-4 rounded-full font-black uppercase tracking-widest text-[11px]">Download</a>
+      <div id="close" class="absolute top-8 right-8 text-white text-4xl cursor-pointer">&times;</div>
+      <img id="modal-img" src="" class="max-w-full max-h-[85vh] rounded-lg shadow-2xl mb-8" />
+      <a id="download-btn" href="" download class="bg-white text-black px-10 py-3 rounded-full font-black uppercase text-[10px] tracking-widest">Download</a>
     </div>
 
     <div class="fixed bottom-8 left-0 right-0 flex justify-center z-40">
-      <a href="/b-reports" class="bg-white/10 backdrop-blur-lg text-white px-10 py-4 rounded-full font-black text-[11px] uppercase tracking-widest border border-white/20 shadow-2xl">
-        Back to Archive
+      <a href="/b-reports" class="bg-white/5 backdrop-blur-md text-white/50 px-8 py-3 rounded-full text-[10px] font-bold uppercase tracking-widest border border-white/10">
+        Back
       </a>
     </div>
   </div>
@@ -169,16 +156,12 @@ const reportImagePath = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/o
       if (src && modalImg && downloadBtn) {
         modalImg.src = src;
         downloadBtn.href = src;
-        modal?.classList.remove('hidden');
-        modal?.classList.add('flex');
+        modal?.classList.replace('hidden', 'flex');
       }
     });
   });
 
-  close?.addEventListener('click', () => {
-    modal?.classList.add('hidden');
-    modal?.classList.remove('flex');
-  });
+  close?.addEventListener('click', () => modal?.classList.replace('flex', 'hidden'));
 </script>
 
 <style is:global>

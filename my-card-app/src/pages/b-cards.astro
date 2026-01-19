@@ -9,7 +9,7 @@ const cityNameMap = {
   "AKITA": "AKITA", "NORTHERNHAPPINETS": "AKITA",
   "IBARAKI": "IBARAKI", "ROBOTS": "IBARAKI",
   "BREX": "UTSUNOMIYA", "UTSUNOMIYA": "UTSUNOMIYA",
-  "CRANETHUNDERS": "GUNMA", "GUNMA": "GUNMA",
+  "GUNMA": "GUNMA", "CRANETHUNDERS": "GUNMA",
   "ALPHAS": "KOSHIGAYA", "KOSHIGAYA": "KOSHIGAYA",
   "ALTIRI": "A-CHIBA", "ACHIBA": "A-CHIBA",
   "JETS": "CHIBA-J", "CHIBAJ": "CHIBA-J",
@@ -34,38 +34,35 @@ const cityNameMap = {
 
 const folderParam = Astro.url.searchParams.get('folder') || ""; 
 
-// --- パスの補正ロジック ---
-// スクリーンショットに合わせて、フォルダ名の頭に "B1 " がなければ付与する
-let correctedFolder = folderParam;
-if (folderParam && !folderParam.startsWith("B1 ")) {
-    const parts = folderParam.split('/');
-    if (parts.length > 0) {
-        parts[0] = "B1 " + parts[part[0].length === 6 ? 0 : 0]; // 日付フォルダを補正
-        correctedFolder = parts.join('/');
-    }
-}
+// --- パス解析と補正 ---
+// folderParam は "260103/game_..." という形式で来ると想定
+const pathSegments = folderParam.split('/');
+const datePart = pathSegments[0] || ""; // 例: "260103"
+const gameFolderName = pathSegments[1] || ""; // 例: "game_..."
+
+// 画像16枚目の通り、Bplayers/B1/ の下は "B1 260103" という形式
+const correctedDateFolder = datePart.startsWith("B1 ") ? datePart : `B1 ${datePart}`;
 
 // --- チーム名の解析 ---
-const folderNameOnly = folderParam.split('/').pop() || "";
-const teamParts = folderNameOnly.split('_');
+const teamParts = gameFolderName.split('_');
 let rawAway = "AWAY";
 let rawHome = "HOME";
-
 if (teamParts.length >= 4) {
   rawAway = teamParts[2].toUpperCase();
   rawHome = teamParts[3].toUpperCase();
 }
-
 const awayName = cityNameMap[rawAway] || rawAway;
 const homeName = cityNameMap[rawHome] || rawHome;
 
-// --- 画像取得 ---
+// --- GitHubパス設定 ---
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
-// フォルダ名を「Bplayers」に変更した前提
-const baseDir = "output/Bplayers/B1"; 
-const fullPath = `${baseDir}/${folderParam}`; // ここを実際の階層に合わせて調整
+// スペースを含むため、リクエスト時に適切に処理されるよう構築
+const baseDir = "output/Bplayers/B1";
+const fullPath = `${baseDir}/${correctedDateFolder}/${gameFolderName}`;
 
-const API_URL = `https://api.github.com/repos/${GITHUB_REPO}/contents/${fullPath}`;
+// API用（日本語やスペースをエンコード）
+const API_URL = `https://api.github.com/repos/${GITHUB_REPO}/contents/${encodeURIComponent(fullPath)}`;
+// 画像表示用
 const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${fullPath}`;
 
 const token = process.env.GITHUB_TOKEN;
@@ -78,20 +75,20 @@ try {
   });
   
   if (!res.ok) {
-    debugInfo = `404 Error: Could not find folder at [${fullPath}]. Please check if the folder name in GitHub matches exactly.`;
+    debugInfo = `Status ${res.status}: Not Found at [${fullPath}]`;
   } else {
     const data = await res.json();
     if (Array.isArray(data)) {
       images = data
         .filter(file => file.name.toLowerCase().endsWith('.png'))
         .map(file => ({
-          path: `${IMAGE_BASE_URL}/${file.name}`,
+          path: `${IMAGE_BASE_URL}/${encodeURIComponent(file.name)}`,
           name: file.name
         }));
     }
   }
 } catch (e) {
-  debugInfo = `Error: ${e.message}`;
+  debugInfo = `Exception: ${e.message}`;
 }
 ---
 
@@ -99,7 +96,7 @@ try {
   <div class="bg-[#1a1a1a] min-h-screen text-white font-avenir">
     <header class="pt-12 pb-6 px-8 text-center">
       <div class="inline-block border-b-2 border-blue-500 pb-2">
-        <h1 class="text-xl font-black uppercase tracking-widest">
+        <h1 class="text-xl font-black uppercase tracking-widest leading-relaxed">
           {awayName} <span class="text-gray-500 text-sm mx-2 italic font-medium">vs</span> {homeName}
         </h1>
       </div>
@@ -111,28 +108,32 @@ try {
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {images.map((img) => (
             <div class="group">
-              <div class="rounded-2xl overflow-hidden shadow-2xl bg-gray-900 border border-white/5 transition-all duration-500 hover:scale-[1.02]">
-                <img src={img.path} alt={img.name} class="w-full h-auto block" loading="lazy" />
+              <div class="rounded-2xl overflow-hidden shadow-2xl bg-gray-900 border border-white/5 transition-all duration-500 hover:scale-[1.02] hover:border-blue-500/30">
+                <img 
+                  src={img.path} 
+                  alt={img.name} 
+                  class="w-full h-auto block" 
+                  loading="lazy" 
+                />
               </div>
             </div>
           ))}
         </div>
       ) : (
-        <div class="text-center py-20 bg-gray-900/50 rounded-3xl border border-white/5 mx-4">
-          <p class="text-gray-500 font-black text-xs uppercase tracking-widest">No player cards found</p>
-          <div class="mt-6 text-[10px] text-gray-400 font-mono px-10 leading-loose">
-            <p class="text-red-500 mb-2">{debugInfo}</p>
-            <hr class="border-white/10 my-4" />
-            <p>1. GitHubのフォルダ名を「Bplayers」に変えましたか？</p>
-            <p>2. その中に「B1」フォルダがありますか？</p>
-            <p>3. 階層は [output/Bplayers/B1/日付フォルダ/試合フォルダ] ですか？</p>
+        <div class="text-center py-20 bg-gray-800/20 rounded-3xl border border-white/5 mx-4">
+          <p class="text-gray-500 font-black text-xs uppercase tracking-widest italic">No player cards found</p>
+          <div class="mt-8 text-[10px] text-gray-600 font-mono px-6 leading-relaxed bg-black/30 py-4 rounded-xl inline-block text-left">
+            <p class="text-blue-400 mb-1">🔍 Debug Path Info:</p>
+            <p>Repo: {GITHUB_REPO}</p>
+            <p>Path: {fullPath}</p>
+            {debugInfo && <p class="text-red-500 mt-2">Error: {debugInfo}</p>}
           </div>
         </div>
       )}
     </main>
 
     <div class="fixed bottom-8 left-0 right-0 flex justify-center z-50">
-      <a href="/b-reports" class="bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest border border-white/10 shadow-2xl active:scale-95">
+      <a href="/b-reports" class="bg-gray-800/90 backdrop-blur-md text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest border border-white/10 shadow-2xl active:scale-95 transition-all hover:bg-white hover:text-black">
         Back to Reports
       </a>
     </div>

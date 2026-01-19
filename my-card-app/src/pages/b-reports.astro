@@ -1,20 +1,23 @@
 ---
 export const prerender = false;
 import Layout from '../layouts/Layout.astro';
-// team_colors.jsonをインポート
-import teamColorsData from '../../data/team_colors.json';
+
+// --- 重要: JSONの読み込みパスを調整 ---
+// フォルダ構造に基づき、pages -> src -> my-card-app の外へ2回出たところにある data を指定
+import teamColorsData from '../../../data/team_colors.json';
 
 // --- 日本語変換用の逆引き辞書を作成 ---
-// 例: { "HOKKAIDO": "北海道", "89ERS": "仙台", "BREX": "宇都宮" ... }
 const reverseAliases = {};
 if (teamColorsData && teamColorsData.aliases) {
-  Object.entries(teamColorsData.aliases).forEach(([japanese, aliasArray]) => {
-    if (Array.isArray(aliasArray)) {
-      aliasArray.forEach(alias => {
+  Object.entries(teamColorsData.aliases).forEach(([japanese, aliasValue]) => {
+    // aliases の値が配列（["Hokkaido", "LEVANGA"...]）の場合
+    if (Array.isArray(aliasValue)) {
+      aliasValue.forEach(alias => {
         reverseAliases[alias.toUpperCase()] = japanese;
       });
-    } else if (typeof aliasArray === 'string') {
-      reverseAliases[aliasArray.toUpperCase()] = japanese;
+    } else if (typeof aliasValue === 'string') {
+      // 値が単一の文字列の場合
+      reverseAliases[aliasValue.toUpperCase()] = japanese;
     }
   });
 }
@@ -60,11 +63,11 @@ try {
       const fullDate = nameParts[1] || ""; 
       const gameId = nameParts[2] || "";
       
-      // 英字のチーム名を取得
+      // ファイル名末尾からチーム名（英字）を取得
       const teamA_raw = nameParts[nameParts.length - 2] || "AWAY";
       const teamB_raw = nameParts[nameParts.length - 1] || "HOME";
 
-      // JSON辞書を使って日本語に変換（なければ英字そのまま）
+      // --- ここで日本語変換を適用 ---
       const teamA = reverseAliases[teamA_raw.toUpperCase()] || teamA_raw;
       const teamB = reverseAliases[teamB_raw.toUpperCase()] || teamB_raw;
 
@@ -96,7 +99,6 @@ const availableDates = reportGroups.map(g => g.id);
 
 <Layout title="B.LEAGUE GAME REPORT">
   <div class="bg-[#222222] min-h-screen text-white font-avenir overflow-x-hidden">
-    
     <header class="pt-12 pb-6 px-8 text-center border-b border-white/5">
       <a href="/" class="hover:opacity-70 transition-opacity">
         <h1 class="text-2xl font-black uppercase leading-none tracking-[0.25em]">B.LEAGUE REPORT</h1>

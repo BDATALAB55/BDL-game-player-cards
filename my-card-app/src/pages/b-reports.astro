@@ -2,81 +2,68 @@
 export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
-// --- 手動変換辞書（ご提示のリストに基づく英字都市名） ---
+// --- 手動変換辞書：[ファイル名のキーワード]: "表示したい都市名" ---
 const cityNameMap = {
-  "HOKKAIDO": "Hokkaido", "LEVANGA": "Hokkaido",
-  "SENDAI": "Sendai", "89ERS": "Sendai",
-  "AKITA": "Akita", "NORTHERNHAPPINETS": "Akita",
-  "IBARAKI": "Ibaraki", "ROBOTS": "Ibaraki",
-  "UTSUNOMIYA": "Utsunomiya", "BREX": "Utsunomiya",
-  "GUNMA": "Gunma", "CRANETHUNDERS": "Gunma",
-  "KOSHIGAYA": "Koshigaya", "ALPHAS": "Koshigaya",
-  "ACHIBA": "AChiba", "ALTIRI": "AChiba",
-  "CHIBAJ": "ChibaJ", "JETS": "ChibaJ",
-  "ATOKYO": "ATokyo", "ALVARK": "ATokyo",
-  "SHIBUYA": "Shibuya", "SUNROCKERS": "Shibuya",
-  "KAWASAKI": "Kawasaki", "BRAVETHUNDERS": "Kawasaki",
-  "YOKOHAMABC": "YokohamaBC", "BCORSAIRS": "YokohamaBC",
-  "TOYAMA": "Toyama", "GROUSES": "Toyama",
-  "SANEN": "SanEn", "SAN-EN": "SanEn", "NEOPHOENIX": "SanEn",
-  "MIKAWA": "Mikawa", "SEAHORSES": "Mikawa",
-  "FENAGOYA": "FENagoya", "FIGHTINGEAGLES": "FENagoya", "NAGOYA_FE": "FENagoya",
-  "NAGOYAD": "NagoyaD", "DIAMONDDOLPHINS": "NagoyaD", "NAGOYA_D": "NagoyaD", "NAGOYA": "NagoyaD",
-  "SHIGA": "Shiga", "LAKES": "Shiga",
-  "KYOTO": "Kyoto", "HANNARYZ": "Kyoto",
-  "OSAKA": "Osaka", "EVESSA": "Osaka",
-  "SHIMANE": "Shimane", "SUSANOOMAGIC": "Shimane",
-  "HIROSHIMA": "Hiroshima", "DRAGONFLIES": "Hiroshima",
-  "SAGA": "Saga", "BALLOONERS": "Saga",
-  "NAGASAKI": "Nagasaki", "VELCA": "Nagasaki",
-  "RYUKYU": "Ryukyu", "GOLDENKINGS": "Ryukyu"
+  "HOKKAIDO": "HOKKAIDO", "LEVANGA": "HOKKAIDO", "LEVANGAHOKKAIDO": "HOKKAIDO",
+  "89ERS": "SENDAI", "SENDAI": "SENDAI", "SENDAI89ERS": "SENDAI",
+  "AKITA": "AKITA", "NORTHERNHAPPINETS": "AKITA",
+  "ROBOTS": "IBARAKI", "IBARAKI": "IBARAKI",
+  "BREX": "UTSUNOMIYA", "UTSUNOMIYA": "UTSUNOMIYA",
+  "CRANETHUNDERS": "GUNMA", "GUNMA": "GUNMA",
+  "ALPHAS": "KOSHIGAYA", "KOSHIGAYA": "KOSHIGAYA",
+  "ALTIRI": "CHIBA", "ACHIBA": "A CHIBA",
+  "JETS": "CHIBAJ", "CHIBAJ": "CHIBA J",
+  "ALVARK": "ATOKYO", "ATOKYO": "A TOKYO",
+  "SUNROCKERS": "SHIBUYA", "SHIBUYA": "SR SHIBUYA",
+  "BRAVETHUNDERS": "KAWASAKI", "KAWASAKI": "KAWASAKI",
+  "BCORSAIRS": "YOKOHAMABC", "YOKOHAMABC": "YOKOHAMA BC",
+  "GROUSES": "TOYAMA", "TOYAMA": "TOYAMA",
+  "NEOPHOENIX": "SANEN", "SANEN": "SANEN", "SAN-EN": "SAN-EN",
+  "SEAHORSES": "MIKAWA", "MIKAWA": "MIKAWA",
+  "FIGHTINGEAGLES": "FENAGOYA", "FENAGOYA": "FE NAGOYA",
+  "DOLPHINS": "NAGOYAD", "DIAMONDDOLPHINS": "NAGOYAD", "NAGOYA": "NAGOYA D",
+  "LAKES": "SHIGA", "SHIGA": "SHIGA",
+  "HANNARYZ": "KYOTO", "KYOTO": "KYOTO",
+  "EVESSA": "OSAKA", "OSAKA": "OSAKA",
+  "SUSANOOMAGIC": "SHIMANE", "SHIMANE": "SHIMANE",
+  "DRAGONFLIES": "HIROSHIMA", "HIROSHIMA": "HIROSHIMA",
+  "BALLOONERS": "SAGA", "SAGA": "SAGA",
+  "VELCA": "NAGASAKI", "NAGASAKI": "NAGASAKI",
+  "GOLDENKINGS": "RYUKYU", "RYUKYU": "RYUKYU"
 };
 
-// --- 設定値 ---
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
 const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1`;
 
 const token = process.env.GITHUB_TOKEN;
-
 let reportGroups = [];
 
 try {
   const res = await fetch(RECURSIVE_API, {
-    headers: token ? { 
-      "Authorization": `token ${token}`,
-      "Accept": "application/vnd.github.v3+json",
-      "Cache-Control": "no-cache"
-    } : { "Accept": "application/vnd.github.v3+json" }
+    headers: token ? { "Authorization": `token ${token}` } : {}
   });
   const data = await res.json();
 
   if (data.tree) {
     const allFiles = data.tree.filter(item => 
-      item.path.includes('output/reports/B1/') && 
-      item.path.toLowerCase().endsWith('.png')
+      item.path.includes('output/reports/B1/') && item.path.toLowerCase().endsWith('.png')
     );
 
     const groups = {};
-
     allFiles.forEach(file => {
       const pathParts = file.path.split('/');
-      const b1Index = pathParts.indexOf('B1');
-      if (b1Index === -1 || pathParts.length <= b1Index + 2) return;
-
-      const folderName = pathParts[b1Index + 1]; 
-      const fileName = pathParts[b1Index + 2];   
+      const folderName = pathParts[pathParts.indexOf('B1') + 1]; 
+      const fileName = pathParts[pathParts.length - 1];
 
       if (!/^\d+$/.test(folderName)) return;
 
       const nameParts = fileName.replace('.png', '').split('_');
-      const fullDate = nameParts[1] || ""; 
-      const gameId = nameParts[2] || "";
-      
-      // キーの揺れ（スペースや記号）を消して大文字で比較
+      // ファイル名の末尾からチーム名を取得
       const teamA_raw = (nameParts[nameParts.length - 2] || "AWAY").toUpperCase().replace(/[\s\-_]/g, '');
       const teamB_raw = (nameParts[nameParts.length - 1] || "HOME").toUpperCase().replace(/[\s\-_]/g, '');
 
+      // 辞書引き（見つからなければ元の名前）
       const teamA = cityNameMap[teamA_raw] || teamA_raw;
       const teamB = cityNameMap[teamB_raw] || teamB_raw;
 
@@ -87,20 +74,16 @@ try {
           reports: []
         };
       }
-
       groups[folderName].reports.push({
         path: `${IMAGE_BASE_URL}/${folderName}/${fileName}`,
         away: teamA,
         home: teamB,
-        link: `/b-cards?folder=${folderName}/B1_Cards_${gameId}_${fullDate}`
+        link: `/b-cards?folder=${folderName}/${fileName.replace('.png', '')}`
       });
     });
-
     reportGroups = Object.values(groups).sort((a, b) => b.id.localeCompare(a.id));
   }
-} catch (e) {
-  console.error("Fetch Error:", e);
-}
+} catch (e) { console.error(e); }
 
 const allData = reportGroups;
 const availableDates = reportGroups.map(g => g.id);
@@ -110,7 +93,7 @@ const availableDates = reportGroups.map(g => g.id);
   <div class="bg-[#222222] min-h-screen text-white font-avenir overflow-x-hidden">
     <header class="pt-12 pb-6 px-8 text-center border-b border-white/5">
       <a href="/" class="hover:opacity-70 transition-opacity">
-        <h1 class="text-2xl font-black uppercase leading-none tracking-[0.25em]">B.LEAGUE REPORT</h1>
+        <h1 class="text-2xl font-black uppercase tracking-[0.25em]">B.LEAGUE REPORT</h1>
       </a>
     </header>
 
@@ -118,7 +101,7 @@ const availableDates = reportGroups.map(g => g.id);
       <div class="px-8 mb-4 min-h-[80px]">
         <div class="flex flex-col gap-1">
           <span id="display-label" class="text-blue-500 text-[10px] font-black uppercase tracking-[0.3em]">Latest Update</span>
-          <span id="display-date" class="text-white text-[32px] font-bold uppercase leading-none tracking-[0.05em] text-shadow-xl">
+          <span id="display-date" class="text-white text-[32px] font-bold tracking-[0.05em]">
             {reportGroups.length > 0 ? reportGroups[0].date : "NO DATA"}
           </span>
         </div>
@@ -129,29 +112,25 @@ const availableDates = reportGroups.map(g => g.id);
           reportGroups[0].reports.map((report) => (
             <div class="flex-none w-[85vw] max-w-[400px] snap-center">
               <div class="rounded-2xl overflow-hidden border border-white/10 bg-gray-900 shadow-2xl">
-                <img src={report.path} alt="Report" class="w-full h-auto block" loading="lazy" />
+                <img src={report.path} class="w-full h-auto block" loading="lazy" />
               </div>
               <div class="mt-6 text-center">
                 <a href={report.link} class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative active:scale-95 transition-all group overflow-hidden">
                   <div class="absolute inset-0 p-[2px] rounded-full bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-400 -z-10"></div>
                   <span class="text-[14px] font-black tracking-[0.2em] uppercase text-white">
-                    {report.away} <span class="text-[10px] font-medium lowercase tracking-normal mx-1 text-white/50 italic px-1">vs</span> {report.home}
+                    {report.away} <span class="text-[10px] font-medium lowercase mx-1 text-white/50 italic px-1">vs</span> {report.home}
                   </span>
                 </a>
               </div>
             </div>
           ))
-        ) : (
-          <div class="w-full flex items-center justify-center py-20 text-gray-500 font-black text-[10px] tracking-[0.3em]">
-            NO DATA FOUND AT /output/reports/B1
-          </div>
-        )}
+        ) : null}
       </div>
     </section>
 
     <section class="px-8 pb-40">
       <div class="max-w-md mx-auto">
-        <div id="calendar" class="bg-gray-900/40 p-6 rounded-3xl border border-white/5 shadow-inner"></div>
+        <div id="calendar" class="bg-gray-900/40 p-6 rounded-3xl border border-white/5"></div>
       </div>
     </section>
 
@@ -177,29 +156,32 @@ const availableDates = reportGroups.map(g => g.id);
     const sliderEl = document.getElementById('report-slider');
     const dateTitleEl = document.getElementById('display-date');
     const labelEl = document.getElementById('display-label');
-    const data = allData.find(g => g.id === dateId);
-    if (!data || !sliderEl) return;
+    const group = allData.find(g => g.id === dateId);
+    if (!group || !sliderEl) return;
 
-    dateTitleEl.innerText = data.date;
-    const isLatest = (allData.length > 0 && dateId === availableDates[0]);
+    dateTitleEl.innerText = group.date;
+    const isLatest = (dateId === availableDates[0]);
     labelEl.innerText = isLatest ? "Latest Update" : "Archive Data";
-    labelEl.className = `text-[10px] font-black uppercase tracking-[0.3em] \${isLatest ? 'text-blue-500' : 'text-gray-500'}`;
+    labelEl.className = "text-[10px] font-black uppercase tracking-[0.3em] " + (isLatest ? 'text-blue-500' : 'text-gray-500');
 
-    sliderEl.innerHTML = data.reports.map(report => `
-      <div class="flex-none w-[85vw] max-w-[400px] snap-center">
-        <div class="rounded-2xl overflow-hidden border border-white/10 bg-gray-900 shadow-2xl">
-          <img src="\${report.path}" class="w-full h-auto block" />
-        </div>
-        <div class="mt-6 text-center">
-          <a href="\${report.link}" class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative active:scale-95 transition-all group overflow-hidden">
-            <div class="absolute inset-0 p-[2px] rounded-full bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-400 -z-10"></div>
-            <span class="text-[14px] font-black tracking-[0.2em] uppercase text-white">
-              \${report.away} <span class="text-[10px] font-medium lowercase tracking-normal mx-1 text-white/50 italic px-1">vs</span> \${report.home}
-            </span>
-          </a>
-        </div>
-      </div>
-    `).join('');
+    let reportsHtml = '';
+    group.reports.forEach(report => {
+      reportsHtml += 
+        '<div class="flex-none w-[85vw] max-w-[400px] snap-center">' +
+          '<div class="rounded-2xl overflow-hidden border border-white/10 bg-gray-900 shadow-2xl">' +
+            '<img src="' + report.path + '" class="w-full h-auto block" />' +
+          '</div>' +
+          '<div class="mt-6 text-center">' +
+            '<a href="' + report.link + '" class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative active:scale-95 transition-all group overflow-hidden">' +
+              '<div class="absolute inset-0 p-[2px] rounded-full bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-400 -z-10"></div>' +
+              '<span class="text-[14px] font-black tracking-[0.2em] uppercase text-white">' +
+                report.away + ' <span class="text-[10px] font-medium lowercase mx-1 text-white/50 italic px-1">vs</span> ' + report.home +
+              '</span>' +
+            '</a>' +
+          '</div>' +
+        '</div>';
+    });
+    sliderEl.innerHTML = reportsHtml;
     sliderEl.scrollTo({ left: 0, behavior: 'smooth' });
   };
 
@@ -217,15 +199,24 @@ const availableDates = reportGroups.map(g => g.id);
     const daysInMonth = new Date(y, m + 1, 0).getDate();
     const monthNames = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
     
-    let html = `<div class="flex justify-between items-center mb-6 px-2 text-white"><button onclick="changeMonth(-1)">←</button><div class="font-black text-sm tracking-widest">\${monthNames[m]} \${y}</div><button onclick="changeMonth(1)">→</button></div><div class="grid grid-cols-7 gap-1 text-center text-[9px] font-bold text-gray-600 mb-4 uppercase"><div>S</div><div>M</div><div>T</div><div>W</div><div>T</div><div>F</div><div>S</div></div><div class="grid grid-cols-7 gap-y-3">`;
-    for (let i = 0; i < firstDay; i++) html += `<div></div>`;
+    let html = '<div class="flex justify-between items-center mb-6 px-2 text-white">';
+    html += '<button onclick="changeMonth(-1)">←</button>';
+    html += '<div class="font-black text-sm tracking-widest">' + monthNames[m] + ' ' + y + '</div>';
+    html += '<button onclick="changeMonth(1)">→</button></div>';
+    html += '<div class="grid grid-cols-7 gap-1 text-center text-[9px] font-bold text-gray-600 mb-4 uppercase"><div>S</div><div>M</div><div>T</div><div>W</div><div>T</div><div>F</div><div>S</div></div><div class="grid grid-cols-7 gap-y-3">';
+    
+    for (let i = 0; i < firstDay; i++) html += '<div></div>';
+    
     for (let d = 1; d <= daysInMonth; d++) {
-      const dateStr = `\${String(y).substring(2)}\${String(m + 1).padStart(2, '0')}\${String(d).padStart(2, '0')}`;
-      const hasReport = availableDates.includes(dateStr);
-      html += `<div class="aspect-square flex items-center justify-center rounded-full text-[12px] transition-all \${hasReport ? "bg-blue-600 text-white font-black cursor-pointer shadow-lg" : "text-gray-700"}" \${hasReport ? \`onclick="updateReports('\${dateStr}')"\` : ''}>\${d}</div>`;
+      const dateId = String(y).substring(2) + String(m + 1).padStart(2, '0') + String(d).padStart(2, '0');
+      const hasReport = availableDates.includes(dateId);
+      const activeClass = hasReport ? "bg-blue-600 text-white font-black cursor-pointer shadow-lg" : "text-gray-700";
+      const onClick = hasReport ? 'onclick="updateReports(\'' + dateId + '\')"' : '';
+      html += '<div class="aspect-square flex items-center justify-center rounded-full text-[12px] transition-all ' + activeClass + '" ' + onClick + '>' + d + '</div>';
     }
-    calendarEl.innerHTML = html + `</div>`;
+    calendarEl.innerHTML = html + '</div>';
   }
+
   renderCalendar(currentY, currentM);
 </script>
 

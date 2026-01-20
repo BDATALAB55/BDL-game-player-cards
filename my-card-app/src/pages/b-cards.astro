@@ -2,17 +2,19 @@
 export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
+// URLから ?folder= を取得 (例: "260103/game_505092_SENDAI_UTSUNOMIYA_20260103")
 const { searchParams } = Astro.url;
-const queryFolder = searchParams.get('folder'); // 例: "260103/game_505092_SENDAI_UTSUNOMIYA_20260103"
+const queryFolder = searchParams.get('folder') || "";
 
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
 // パス解析
-const segments = queryFolder ? queryFolder.split('/') : [];
+const segments = queryFolder.split('/');
 const dateId = segments[0] || "";  
 const gameDir = segments[1] || ""; 
 
+// 【修正ポイント】ベースパスに /B1 を明示的に追加
 const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/B1`;
 const apiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}/${gameDir}`;
 
@@ -31,29 +33,29 @@ try {
   const files = await response.json();
 
   if (Array.isArray(files)) {
-    // フォルダ名 "game_505092_SENDAI_UTSUNOMIYA_20260103" からチーム名を抽出
+    // フォルダ名からチーム名を抽出
     const nameParts = gameDir.split('_');
+    // game_505092_AWAY_HOME_date なので index 2 と 3
     teamAway = nameParts[2] || "AWAY";
     teamHome = nameParts[3] || "HOME";
 
     const process = (teamName) => {
       return files
-        .filter(f => f.name.includes(teamName) && f.name.endsWith('.png'))
+        .filter(f => f.name.endsWith('.png') && f.name.toUpperCase().includes(teamName.toUpperCase()))
         .map(f => {
-          // B1形式: [TEAM]_[SUBTEAM]_[NO]_[FIRSTNAME]_[LASTNAME].png 
-          // 例: SENDAI_89ERS_11_HIROHIDE_ABE.png
           const p = f.name.replace('.png', '').split('_');
           
-          // 数値（背番号）の位置を探す
+          // 背番号(数字)を特定
           const noIndex = p.findIndex(val => /^\d+$/.test(val));
           const number = noIndex !== -1 ? p[noIndex] : "0";
           
-          // 背番号より後ろを名前として結合
+          // 名前を特定（背番号より後ろ）
           const fullName = noIndex !== -1 ? p.slice(noIndex + 1).join(' ') : "PLAYER";
 
           return {
             no: number,
             name: fullName,
+            // 【重要】ここのパスを B1 フォルダ構成に完全一致させる
             imagePath: `${githubRawBase}/${dateId}/${gameDir}/${f.name}`,
           };
         }).sort((a, b) => parseInt(a.no) - parseInt(b.no));
@@ -63,9 +65,9 @@ try {
     homeData = process(teamHome);
   }
 
-  // ゲームレポート画像 (output/reports/B1/260103/505092.png)
+  // レポート画像 (output/reports/B1/260103/505092.png)
   const gameId = gameDir.split('_')[1];
-  if (gameId) {
+  if (gameId && dateId) {
     reportImagePath = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateId}/${gameId}.png`;
   }
 } catch (e) {
@@ -94,7 +96,7 @@ try {
       <section class="px-8 flex flex-col items-center">
         {reportImagePath ? (
           <div class="w-full md:w-[50%] mx-auto cursor-pointer card-trigger rounded-xl overflow-hidden border border-white/20 shadow-2xl" data-img={reportImagePath}>
-            <img src={reportImagePath} alt="Game Report" class="w-full h-auto block" onerror="this.style.display='none';" />
+            <img src={reportImagePath} alt="Game Report" class="w-full h-auto block" onerror="this.parentElement.style.display='none';" />
           </div>
         ) : null}
         <div class="mt-4 text-center">
@@ -119,7 +121,7 @@ try {
             {team.data.map((p) => (
               <div class="flex-none w-[78vw] max-w-[340px] snap-center">
                 <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-xl" data-img={p.imagePath}>
-                  <img src={p.imagePath} alt={p.name} class="w-full h-auto block" loading="lazy" />
+                  <img src={p.imagePath} alt={p.name} class="w-full h-auto block" loading="lazy" onerror="this.src='/no-image.png'" />
                 </div>
                 
                 <div class="mt-6 flex flex-col items-center px-1">
@@ -143,11 +145,16 @@ try {
       <img id="modal-img" src="" class="max-w-full max-h-[85vh] shadow-2xl rounded-xl mb-12" />
       <a id="download-btn" href="" download class="bg-white text-black px-14 py-4 rounded-full font-black uppercase tracking-widest text-[11px]">Download Card</a>
     </div>
+
+    <div class="fixed bottom-8 left-0 right-0 flex justify-center z-40 pointer-events-none">
+      <a href="/b-reports" class="pointer-events-auto bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 transition-transform border border-white/10">
+        Back to Archive
+      </a>
+    </div>
   </div>
 </Layout>
 
 <script>
-  // モダル操作
   const modal = document.getElementById('modal');
   const modalImg = document.getElementById('modal-img') as HTMLImageElement;
   const close = document.getElementById('close');

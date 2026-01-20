@@ -8,22 +8,21 @@ const queryFolder = searchParams.get('folder');
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
-// 1. URL解析 (例: folder=260103/game_505094_...)
+// 1. URLパス解析 (例: folder=260104/game_505093_...)
 const segments = queryFolder ? queryFolder.split('/') : [];
-const dateOnly = segments[0] || ""; // "260103"
-const matchSubDir = segments[1] || ""; // "game_505094_..."
+const dateOnly = segments[0] || ""; 
+const matchSubDir = segments[1] || ""; 
 
-// GitHub上の実際のフォルダ名「B1 260103」を構築
+// 親フォルダ名「B1 260104」形式
 const actualDateDir = `B1 ${dateOnly}`; 
 
-// 画像取得用パス
 const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/B1/${encodeURIComponent(actualDateDir)}/${encodeURIComponent(matchSubDir)}`;
 const apiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${encodeURIComponent(actualDateDir)}/${encodeURIComponent(matchSubDir)}`;
 
 let awayData = [];
 let homeData = [];
-let teamAway = "AWAY";
-let teamHome = "HOME";
+let teamAwayFull = "AWAY";
+let teamHomeFull = "HOME";
 let reportImagePath = "";
 
 const formattedDate = dateOnly ? `20${dateOnly.substring(0,2)}.${dateOnly.substring(2,4)}.${dateOnly.substring(4,6)}` : "NO DATA";
@@ -35,32 +34,44 @@ try {
   const files = await response.json();
 
   if (Array.isArray(files)) {
-    // フォルダ名からチーム名を抽出
+    // フォルダ名(game_505093_SENDAI_UTSUNOMIYA_...)から「地名」を抽出
     const folderParts = matchSubDir.split('_');
-    teamAway = folderParts[2] || "AWAY";
-    teamHome = folderParts[3] || "HOME";
+    const awayCity = folderParts[2]; // SENDAI
+    const homeCity = folderParts[3]; // UTSUNOMIYA
 
-    const process = (teamName) => {
+    const process = (cityPrefix) => {
       return files
-        .filter(f => f.name.startsWith(teamName) && f.name.endsWith('.png'))
+        .filter(f => f.name.startsWith(cityPrefix) && f.name.endsWith('.png'))
         .map(f => {
-          const p = f.name.replace('.png', '').split('_');
+          const nameParts = f.name.replace('.png', '').split('_');
+          
+          // 背番号(数字のみのセグメント)を動的に探す
+          const numberIndex = nameParts.findIndex(p => /^\d+$/.test(p));
+          const playerNo = numberIndex !== -1 ? nameParts[numberIndex] : "0";
+          
+          // 表示用のチーム名（地名＋愛称があれば結合）
+          const displayName = numberIndex > 1 ? `${nameParts[0]} ${nameParts[1]}` : nameParts[0];
+
           return {
-            team: p[0],
-            no: p[2] || "0", // Bリーグのファイル名規則（チーム名_愛称_番号...）に合わせて3番目を番号として取得
-            name: p.slice(3).join(' ') || p[1], // ニックネームやフルネーム
+            teamLabel: displayName,
+            no: playerNo,
+            // 背番号以降を名前として結合
+            name: nameParts.slice(numberIndex + 1).join(' '), 
             imagePath: `${githubRawBase}/${f.name}`
           };
         })
-        // NBAと同じく背番号順に並べ替え
         .sort((a, b) => parseInt(a.no) - parseInt(b.no));
     };
 
-    awayData = process(teamAway);
-    homeData = process(teamHome);
+    awayData = process(awayCity);
+    homeData = process(homeCity);
+
+    // 見出し用のチーム名を設定
+    if (awayData.length > 0) teamAwayFull = awayData[0].teamLabel;
+    if (homeData.length > 0) teamHomeFull = homeData[0].teamLabel;
   }
 
-  // 試合レポート画像 (reports/B1/日付/ID.png)
+  // レポート画像
   const gameIdMatch = matchSubDir.match(/\d{6}/);
   const gameId = gameIdMatch ? gameIdMatch[0] : "";
   if (gameId) {
@@ -73,44 +84,45 @@ try {
 ---
 
 <Layout title="BDL B-CARDS">
-  <div class="app-container bg-[#1a1a1a] min-h-screen text-white overflow-hidden font-avenir">
+  <div class="app-container bg-[#0a0a0a] min-h-screen text-white font-avenir">
     
     <header class="pt-12 pb-6 px-8 border-b border-white/5 text-center">
-      <h1 class="text-2xl font-black uppercase leading-none tracking-[0.25em]">BDL B-Cards</h1>
-      <p class="text-gray-600 text-[10px] font-bold tracking-[0.4em] mt-3 uppercase">{formattedDate}</p>
+      <h1 class="text-2xl font-black uppercase tracking-[0.25em] text-blue-500">BDL B-Cards</h1>
+      <p class="text-gray-500 text-[10px] font-bold tracking-[0.4em] mt-3 uppercase">{formattedDate}</p>
     </header>
 
     <div class="py-10 space-y-16 pb-32">
-      <section class="px-8 flex flex-col items-center">
-        {reportImagePath && (
-          <div class="w-full md:w-[50%] mx-auto cursor-pointer card-trigger rounded-xl overflow-hidden border border-white/10 shadow-2xl" data-img={reportImagePath}>
-            <img src={reportImagePath} alt="Game Report" class="w-full h-auto block" onerror="this.style.display='none'" />
+      {reportImagePath && (
+        <section class="px-8 flex flex-col items-center">
+          <div class="w-full md:w-[60%] mx-auto rounded-xl overflow-hidden border border-white/10 shadow-2xl card-trigger cursor-pointer" data-img={reportImagePath}>
+            <img src={reportImagePath} alt="Game Report" class="w-full h-auto" onerror="this.style.display='none'" />
           </div>
-        )}
-        <div class="mt-6 text-center">
-          <span class="text-[14px] font-black tracking-[0.2em] uppercase text-blue-500">
-            {teamAway} <span class="text-[10px] text-white/40 mx-2 italic">vs</span> {teamHome}
-          </span>
-        </div>
-      </section>
+          <div class="mt-8 text-center">
+            <div class="flex items-center justify-center gap-4">
+                <span class="text-[20px] font-black tracking-tighter uppercase">{teamAwayFull}</span>
+                <span class="text-blue-500 font-black italic text-[14px]">VS</span>
+                <span class="text-[20px] font-black tracking-tighter uppercase">{teamHomeFull}</span>
+            </div>
+          </div>
+        </section>
+      )}
 
       {awayData.length > 0 && (
         <section>
           <div class="px-8 mb-6">
-            <span class="bg-white text-black px-4 py-1.5 text-[14px] font-black uppercase rounded-sm inline-block">
-              {teamAway}
+            <span class="bg-white text-black px-5 py-1.5 text-[14px] font-black uppercase rounded-full shadow-lg">
+              {teamAwayFull}
             </span>
           </div>
-          <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-8 no-scrollbar pb-4">
+          <div class="flex overflow-x-auto gap-6 px-8 no-scrollbar pb-8 snap-x">
             {awayData.map((p) => (
-              <div class="flex-none w-[78vw] max-w-[340px] snap-center">
-                <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-xl" data-img={p.imagePath}>
+              <div class="flex-none w-[82vw] max-w-[340px] snap-center group">
+                <div class="card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-2xl transition-transform duration-300 group-active:scale-95" data-img={p.imagePath}>
                   <img src={p.imagePath} alt={p.name} class="w-full h-auto block" loading="lazy" />
                 </div>
-                <div class="mt-6 px-1">
-                    <div class="w-full inline-flex items-center justify-between px-6 py-4 rounded-full bg-black/40 border border-white/10">
-                        <span class="text-[14px] font-black tracking-[0.15em] uppercase text-white">#{p.no} {p.name}</span>
-                    </div>
+                <div class="mt-4 flex items-center gap-3 px-2">
+                    <span class="text-[24px] font-black text-blue-500 tabular-nums">#{p.no}</span>
+                    <span class="text-[14px] font-bold tracking-widest uppercase text-white/90 truncate">{p.name}</span>
                 </div>
               </div>
             ))}
@@ -121,20 +133,19 @@ try {
       {homeData.length > 0 && (
         <section>
           <div class="px-8 mb-6 text-right">
-            <span class="bg-blue-600 text-white px-4 py-1.5 text-[14px] font-black uppercase rounded-sm inline-block">
-              {teamHome}
+            <span class="bg-blue-600 text-white px-5 py-1.5 text-[14px] font-black uppercase rounded-full shadow-lg">
+              {teamHomeFull}
             </span>
           </div>
-          <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-8 no-scrollbar pb-4">
+          <div class="flex overflow-x-auto gap-6 px-8 no-scrollbar pb-8 snap-x">
             {homeData.map((p) => (
-              <div class="flex-none w-[78vw] max-w-[340px] snap-center">
-                <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-xl" data-img={p.imagePath}>
+              <div class="flex-none w-[82vw] max-w-[340px] snap-center group">
+                <div class="card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-2xl transition-transform duration-300 group-active:scale-95" data-img={p.imagePath}>
                   <img src={p.imagePath} alt={p.name} class="w-full h-auto block" loading="lazy" />
                 </div>
-                <div class="mt-6 px-1">
-                    <div class="w-full inline-flex items-center justify-between px-6 py-4 rounded-full bg-black/40 border border-white/10">
-                        <span class="text-[14px] font-black tracking-[0.15em] uppercase text-white">#{p.no} {p.name}</span>
-                    </div>
+                <div class="mt-4 flex items-center gap-3 px-2">
+                    <span class="text-[24px] font-black text-blue-500 tabular-nums">#{p.no}</span>
+                    <span class="text-[14px] font-bold tracking-widest uppercase text-white/90 truncate">{p.name}</span>
                 </div>
               </div>
             ))}
@@ -143,10 +154,10 @@ try {
       )}
     </div>
 
-    <div id="modal" class="fixed inset-0 bg-black/98 z-50 hidden flex-col items-center justify-center p-6 backdrop-blur-md">
-      <div class="absolute top-8 right-8 text-white/40 text-4xl font-light cursor-pointer p-4" id="close">&times;</div>
-      <img id="modal-img" src="" class="max-w-full max-h-[85vh] shadow-2xl rounded-xl mb-12" />
-      <a id="download-btn" href="" download class="bg-blue-600 text-white px-14 py-4 rounded-full font-black uppercase tracking-widest text-[11px]">Download Card</a>
+    <div id="modal" class="fixed inset-0 bg-black/95 z-50 hidden flex-col items-center justify-center p-6 backdrop-blur-xl">
+      <div class="absolute top-8 right-8 text-white/40 text-4xl font-light cursor-pointer p-4 hover:text-white transition-colors" id="close">&times;</div>
+      <img id="modal-img" src="" class="max-w-full max-h-[80vh] shadow-2xl rounded-xl mb-12 object-contain" />
+      <a id="download-btn" href="" download class="bg-blue-600 text-white px-16 py-4 rounded-full font-black uppercase tracking-[0.2em] text-[12px] shadow-2xl active:scale-95 transition-all">Download Card</a>
     </div>
   </div>
 </Layout>
@@ -178,4 +189,5 @@ try {
 <style is:global>
   .no-scrollbar::-webkit-scrollbar { display: none; }
   .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  body { background-color: #0a0a0a; }
 </style>

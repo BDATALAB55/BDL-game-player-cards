@@ -1,12 +1,12 @@
 {
-  "attendance": "0",
-  "date": "",
-  "venueRaw": "",
-  "leagueType": "",
-  "round": "ROUND1",
-  "venue": "Tokyu Dresse Todoroki Arena",
-  "homeName": "HIROSHIMA DRAGONFLIES",
-  "awayName": "IBARAKI ROBOTS",
+  "attendance": "4357",
+  "date": "2025.12.28",
+  "venueRaw": "Venue: Hiroshima Sun Plaza Hall",
+  "leagueType": "B1",
+  "round": "ROUND17",
+  "venue": "Hiroshima Sun Plaza Hall",
+  "homeName": "広島ドラゴンフライズ",
+  "awayName": "茨城ロボッツ",
   "home": {
     "total": {
       "pts": 98,
@@ -28,7 +28,7 @@
     "starters": [
       {
         "no": "3",
-        "nameJp": "Tatsuya Ito​ ​",
+        "nameJp": "伊藤 達哉",
         "min": "09:15",
         "pts": 3,
         "f2m": 0,
@@ -46,12 +46,12 @@
         "blk": 0,
         "pf": 1,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=10849",
-        "name": "Tatsuya Ito​ ​"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=10849",
+        "name": "Tatsuya Ito"
       },
       {
         "no": "8",
-        "nameJp": "Christopher Smith",
+        "nameJp": "クリストファー・スミス",
         "min": "25:47",
         "pts": 22,
         "f2m": 2,
@@ -69,12 +69,12 @@
         "blk": 0,
         "pf": 3,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=5100000055",
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=5100000055",
         "name": "Christopher Smith"
       },
       {
         "no": "13",
-        "nameJp": "Dwayne Evans II",
+        "nameJp": "ドウェイン・エバンス",
         "min": "24:34",
         "pts": 16,
         "f2m": 3,
@@ -92,12 +92,12 @@
         "blk": 2,
         "pf": 1,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=33097",
-        "name": "Dwayne Evans II"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=33097",
+        "name": "Dwayne Evans Ii"
       },
       {
         "no": "24",
-        "nameJp": "Mayo​ ​",
+        "nameJp": "メイヨ ニック",
         "min": "16:41",
         "pts": 6,
         "f2m": 0,
@@ -115,12 +115,12 @@
         "blk": 0,
         "pf": 0,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=26890",
-        "name": "Mayo​ ​"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=26890",
+        "name": "Nick Mayo"
       },
       {
         "no": "34",
-        "nameJp": "Keijiro Mitani",
+        "nameJp": "三谷 桂司朗",
         "min": "29:22",
         "pts": 9,
         "f2m": 0,
@@ -138,7 +138,7 @@
         "blk": 0,
         "pf": 4,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=30396",
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=30396",
         "name": "Keijiro Mitani"
       }
     ]
@@ -182,8 +182,8 @@
         "blk": 0,
         "pf": 1,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=51000277",
-        "name": "ロバート・フランクス"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=51000277",
+        "name": "Robert Franks"
       },
       {
         "no": "3",
@@ -205,8 +205,8 @@
         "blk": 0,
         "pf": 0,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=15829",
-        "name": "長谷川 暢"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=15829",
+        "name": "Noboru Hasegawa"
       },
       {
         "no": "7",
@@ -228,8 +228,8 @@
         "blk": 0,
         "pf": 4,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=5100000032",
-        "name": "駒沢 颯"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=5100000032",
+        "name": "Hayate Komasawa"
       },
       {
         "no": "10",
@@ -251,8 +251,8 @@
         "blk": 0,
         "pf": 3,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=51000479",
-        "name": "陳岡 流羽"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=51000479",
+        "name": "Ru Jingaoka"
       },
       {
         "no": "21",
@@ -274,8 +274,8 @@
         "blk": 1,
         "pf": 4,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=12634",
-        "name": "エリック・ジェイコブセン"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=12634",
+        "name": "Eric Jacobsen"
       }
     ]
   }

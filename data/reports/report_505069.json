@@ -1,12 +1,12 @@
 {
-  "attendance": "0",
-  "date": "",
-  "venueRaw": "",
-  "leagueType": "",
-  "round": "ROUND1",
-  "venue": "Tokyu Dresse Todoroki Arena",
-  "homeName": "AKITA NORTHERN HAPPINETS",
-  "awayName": "FIGHTING EAGLES NAGOYA",
+  "attendance": "4736",
+  "date": "2025.12.28",
+  "venueRaw": "Venue: CNA Arena ☆ Akita",
+  "leagueType": "B1",
+  "round": "ROUND17",
+  "venue": "CNA Arena☆Akita",
+  "homeName": "秋田ノーザンハピネッツ",
+  "awayName": "ファイティングイーグルス名古屋",
   "home": {
     "total": {
       "pts": 87,
@@ -46,8 +46,8 @@
         "blk": 0,
         "pf": 2,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=30515",
-        "name": "ジャメール・マクリーン"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=30515",
+        "name": "Jamel Mclean"
       },
       {
         "no": "2",
@@ -69,8 +69,8 @@
         "blk": 0,
         "pf": 1,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=30397",
-        "name": "栗原 翼"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=30397",
+        "name": "Tsubasa Kurihara"
       },
       {
         "no": "12",
@@ -92,8 +92,8 @@
         "blk": 0,
         "pf": 2,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=51000361",
-        "name": "元田 大陽"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=51000361",
+        "name": "Taiyo Motoda"
       },
       {
         "no": "17",
@@ -115,12 +115,12 @@
         "blk": 0,
         "pf": 3,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=10848",
-        "name": "中山 拓哉"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=10848",
+        "name": "Takuya Nakayama"
       },
       {
         "no": "25",
-        "nameJp": "Keanu​ ​",
+        "nameJp": "キアヌ・ピンダー",
         "min": "29:45",
         "pts": 17,
         "f2m": 5,
@@ -138,8 +138,8 @@
         "blk": 0,
         "pf": 5,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=51000523",
-        "name": "Keanu​ ​"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=51000523",
+        "name": "Keanu Pinder"
       }
     ]
   },
@@ -164,7 +164,7 @@
     "starters": [
       {
         "no": "0",
-        "nameJp": "Jamorko​ ​",
+        "nameJp": "ジャモルコ・ピケット",
         "min": "25:51",
         "pts": 25,
         "f2m": 3,
@@ -182,8 +182,8 @@
         "blk": 1,
         "pf": 2,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=51000536",
-        "name": "Jamorko​ ​"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=51000536",
+        "name": "Jamorko Pickett"
       },
       {
         "no": "10",
@@ -205,8 +205,8 @@
         "blk": 1,
         "pf": 0,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=30512",
-        "name": "杉本 天昇"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=30512",
+        "name": "Tensho Sugimoto"
       },
       {
         "no": "21",
@@ -228,8 +228,8 @@
         "blk": 0,
         "pf": 1,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=8517",
-        "name": "笹山 貴哉"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=8517",
+        "name": "Takaya Sasayama"
       },
       {
         "no": "23",
@@ -251,8 +251,8 @@
         "blk": 0,
         "pf": 2,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=10878",
-        "name": "保岡 龍斗"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=10878",
+        "name": "Ryuto Yasuoka"
       },
       {
         "no": "54",
@@ -274,7 +274,7 @@
         "blk": 1,
         "pf": 2,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=26912",
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=26912",
         "name": "ショーン・オマラ"
       }
     ]

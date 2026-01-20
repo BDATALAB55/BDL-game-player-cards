@@ -1,12 +1,12 @@
 {
-  "attendance": "0",
-  "date": "",
-  "venueRaw": "",
-  "leagueType": "",
-  "round": "ROUND1",
-  "venue": "Tokyu Dresse Todoroki Arena",
-  "homeName": "NAGASAKI VELCA",
-  "awayName": "CHIBA JETS",
+  "attendance": "5875",
+  "date": "2025.12.28",
+  "venueRaw": "Venue: HAPPINESS ARENA",
+  "leagueType": "B1",
+  "round": "ROUND17",
+  "venue": "Happiness Arena",
+  "homeName": "長崎ヴェルカ",
+  "awayName": "千葉ジェッツ",
   "home": {
     "total": {
       "pts": 93,
@@ -28,7 +28,7 @@
     "starters": [
       {
         "no": "5",
-        "nameJp": "Lee Hyun-jun",
+        "nameJp": "イ ヒョンジュン",
         "min": "30:44",
         "pts": 21,
         "f2m": 3,
@@ -46,12 +46,12 @@
         "blk": 0,
         "pf": 3,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=51000379",
-        "name": "Lee Hyun-jun"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=51000379",
+        "name": "Hyunjung Lee"
       },
       {
         "no": "7",
-        "nameJp": "Jarrell Brantley",
+        "nameJp": "ジャレル・ブラントリー",
         "min": "27:49",
         "pts": 20,
         "f2m": 3,
@@ -69,12 +69,12 @@
         "blk": 0,
         "pf": 4,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=51000304",
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=51000304",
         "name": "Jarrell Brantley"
       },
       {
         "no": "14",
-        "nameJp": "Johnson​ ​",
+        "nameJp": "スタンリー・ジョンソン",
         "min": "37:11",
         "pts": 27,
         "f2m": 9,
@@ -92,8 +92,8 @@
         "blk": 0,
         "pf": 2,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=51000529",
-        "name": "Johnson​ ​"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=51000529",
+        "name": "Stanley Johnson"
       },
       {
         "no": "17",
@@ -115,12 +115,12 @@
         "blk": 0,
         "pf": 1,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=30437",
-        "name": "山口 颯斗"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=30437",
+        "name": "Hayato Yamaguchi"
       },
       {
         "no": "18",
-        "nameJp": "Yudai Baba",
+        "nameJp": "馬場 雄大",
         "min": "38:58",
         "pts": 7,
         "f2m": 3,
@@ -138,7 +138,7 @@
         "blk": 1,
         "pf": 1,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=12577",
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=12577",
         "name": "Yudai Baba"
       }
     ]
@@ -164,7 +164,7 @@
     "starters": [
       {
         "no": "1",
-        "nameJp": "Yuta Watanabe",
+        "nameJp": "渡邊 雄太",
         "min": "33:24",
         "pts": 15,
         "f2m": 4,
@@ -182,12 +182,12 @@
         "blk": 2,
         "pf": 1,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=51000428",
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=51000428",
         "name": "Yuta Watanabe"
       },
       {
         "no": "2",
-        "nameJp": "Yuki Togashi",
+        "nameJp": "富樫 勇樹",
         "min": "30:25",
         "pts": 6,
         "f2m": 1,
@@ -205,7 +205,7 @@
         "blk": 0,
         "pf": 1,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=9055",
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=9055",
         "name": "Yuki Togashi"
       },
       {
@@ -228,8 +228,8 @@
         "blk": 1,
         "pf": 3,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=51000430",
-        "name": "ディー・ジェイ・ホグ"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=51000430",
+        "name": "D.J. Hogg"
       },
       {
         "no": "31",
@@ -251,12 +251,12 @@
         "blk": 0,
         "pf": 0,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=8584",
-        "name": "原 修太"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=8584",
+        "name": "Shuta Hara"
       },
       {
         "no": "33",
-        "nameJp": "John Mooney",
+        "nameJp": "ジョン・ムーニー",
         "min": "27:00",
         "pts": 14,
         "f2m": 6,
@@ -274,7 +274,7 @@
         "blk": 0,
         "pf": 1,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=5100000054",
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=5100000054",
         "name": "John Mooney"
       }
     ]

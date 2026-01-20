@@ -2,24 +2,25 @@
 export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
-// 1. URLからパラメータ取得 (?folder=260103/game_505104_...)
 const { searchParams } = Astro.url;
-const queryFolder = searchParams.get('folder') || "";
+const queryFolder = searchParams.get('folder'); // 例: "260103/game_505094_..."
 
-// --- 設定 ---
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
-// 2. パス解析
-// queryFolder は "260103/game_505104_SANEN_AKITA_20260103" の形式を想定
-const segments = queryFolder.split('/');
-const rawDate = segments[0] || ""; // "260103"
-const subDir = segments[1] || "";  // "game_505104_..."
+// 1. パス解析
+const segments = queryFolder ? queryFolder.split('/') : [];
+const datePart = segments[0] || ""; // "260103"
+const gameDir = segments[1] || "";  // "game_505094_..."
 
-// Bリーグ用の階層構築
-const b1DateFolder = `B1 ${rawDate}`; 
-const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/B1/${encodeURIComponent(b1DateFolder)}/${encodeURIComponent(subDir)}`;
-const apiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${encodeURIComponent(b1DateFolder)}/${encodeURIComponent(subDir)}`;
+// Bリーグ特有の「B1 260103」というスペース込みのフォルダ名を生成
+const b1DateDir = `B1 ${datePart}`;
+
+// 画像表示用のベースURL (RAW)
+const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/B1/${encodeURIComponent(b1DateDir)}/${encodeURIComponent(gameDir)}`;
+
+// API取得用のURL
+const apiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${encodeURIComponent(b1DateDir)}/${encodeURIComponent(gameDir)}`;
 
 let awayData = [];
 let homeData = [];
@@ -27,39 +28,45 @@ let teamAway = "AWAY";
 let teamHome = "HOME";
 let reportImagePath = "";
 
-const formattedDate = rawDate ? `20${rawDate.substring(0,2)}.${rawDate.substring(2,4)}.${rawDate.substring(4,6)}` : "";
+const formattedDate = datePart ? `20${datePart.substring(0,2)}.${datePart.substring(2,4)}.${datePart.substring(4,6)}` : "NO DATA";
 
 try {
-  // 3. 選手カード取得
-  const response = await fetch(`${apiURL}?t=${Date.now()}`, { // キャッシュ対策
+  // 2. 選手カード取得
+  const response = await fetch(`${apiURL}?t=${Date.now()}`, {
     headers: token ? { "Authorization": `token ${token}` } : {}
   });
   const files = await response.json();
 
   if (Array.isArray(files)) {
-    // フォルダ名からチーム名を抽出 (例: game_505104_SANEN_AKITA_...)
-    const folderParts = subDir.split('_');
+    // フォルダ名からチーム名を抽出 (game_ID_AWAY_HOME_...)
+    const folderParts = gameDir.split('_');
     teamAway = folderParts[2] || "AWAY";
     teamHome = folderParts[3] || "HOME";
 
     const process = (teamName) => {
       return files
         .filter(f => f.name.startsWith(teamName) && f.name.endsWith('.png'))
-        .map(f => ({
-          name: f.name.replace('.png', '').split('_').slice(2).join(' '),
-          imagePath: `${githubRawBase}/${f.name}`,
-        }));
+        .map(f => {
+          const p = f.name.replace('.png', '').split('_');
+          return {
+            team: p[0],
+            no: p[1] || "",
+            name: p.slice(2).join(' '),
+            imagePath: `${githubRawBase}/${f.name}`
+          };
+        }).sort((a, b) => parseInt(a.no) - parseInt(b.no));
     };
 
     awayData = process(teamAway);
     homeData = process(teamHome);
   }
 
-  // 4. レポート画像取得 (画像16枚目の reports/B1/260103/ID.png)
-  const gameIdMatch = subDir.match(/\d{6}/);
+  // 3. 試合レポート画像 (reports/B1/日付/ID.png)
+  const gameIdMatch = gameDir.match(/\d{6}/);
   const gameId = gameIdMatch ? gameIdMatch[0] : "";
   if (gameId) {
-     reportImagePath = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${rawDate}/${gameId}.png`;
+    // reports フォルダはスペースなしの "B1/日付" 階層
+    reportImagePath = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${datePart}/${gameId}.png`;
   }
 
 } catch (e) {
@@ -67,44 +74,43 @@ try {
 }
 ---
 
-<Layout title={`${teamAway} vs ${teamHome}`}>
-  <div class="bg-[#111] min-h-screen text-white font-avenir pb-32">
+<Layout title="BDL B-CARDS">
+  <div class="app-container bg-[#111] min-h-screen text-white overflow-hidden font-avenir">
     
-    <header class="pt-12 pb-6 px-8 text-center border-b border-white/5">
-      <h1 class="text-2xl font-black uppercase tracking-[0.2em]">BDL B-Cards</h1>
+    <header class="pt-12 pb-6 px-8 border-b border-white/5 text-center">
+      <h1 class="text-2xl font-black uppercase leading-none tracking-[0.25em]">BDL B-Cards</h1>
       <p class="text-gray-600 text-[10px] font-bold tracking-[0.4em] mt-3 uppercase">{formattedDate}</p>
     </header>
 
-    <div class="py-10 space-y-16">
-      
+    <div class="py-10 space-y-16 pb-32">
       <section class="px-8 flex flex-col items-center">
-        <div class="w-full md:w-[60%] mx-auto cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-2xl" data-img={reportImagePath}>
-          <img src={reportImagePath} class="w-full h-auto" onerror="this.style.display='none'" />
-        </div>
-        <div class="mt-6 flex items-center gap-4 text-lg font-black tracking-widest uppercase">
-          <span class="text-blue-500">{teamAway}</span>
-          <span class="text-xs text-gray-600 italic">vs</span>
-          <span class="text-blue-500">{teamHome}</span>
+        {reportImagePath ? (
+          <div class="w-full md:w-[50%] mx-auto cursor-pointer card-trigger rounded-xl overflow-hidden border border-white/10 shadow-2xl" data-img={reportImagePath}>
+            <img src={reportImagePath} alt="Game Report" class="w-full h-auto block" onerror="this.parentElement.style.display='none'" />
+          </div>
+        ) : null}
+        <div class="mt-6 text-center">
+          <span class="text-[14px] font-black tracking-[0.2em] uppercase text-blue-500">
+            {teamAway} <span class="text-[10px] text-white/40 mx-2 italic">vs</span> {teamHome}
+          </span>
         </div>
       </section>
 
       {awayData.length > 0 && (
         <section>
-          <div class="px-8 mb-4">
-            <span class="bg-white text-black px-4 py-1 text-xs font-black uppercase tracking-tighter">
+          <div class="px-8 mb-6">
+            <span class="bg-white text-black px-4 py-1.5 text-[14px] font-black uppercase rounded-sm inline-block">
               {teamAway}
             </span>
           </div>
-          <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-8 no-scrollbar">
+          <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-8 no-scrollbar pb-4">
             {awayData.map((p) => (
-              <div class="flex-none w-[80vw] max-w-[340px] snap-center">
-                <div class="cursor-pointer card-trigger group" data-img={p.imagePath}>
-                  <div class="rounded-2xl overflow-hidden border border-white/10 shadow-xl group-hover:border-blue-500/50 transition-all">
-                    <img src={p.imagePath} alt={p.name} class="w-full h-auto block" loading="lazy" />
-                  </div>
-                  <div class="mt-4 py-3 rounded-full bg-white/5 text-center text-[11px] font-bold tracking-widest uppercase border border-white/5">
-                    {p.name}
-                  </div>
+              <div class="flex-none w-[78vw] max-w-[340px] snap-center">
+                <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-xl" data-img={p.imagePath}>
+                  <img src={p.imagePath} alt={p.name} class="w-full h-auto block" loading="lazy" />
+                </div>
+                <div class="mt-4 text-center text-[11px] font-bold tracking-widest text-gray-400 uppercase">
+                  {p.name}
                 </div>
               </div>
             ))}
@@ -114,21 +120,19 @@ try {
 
       {homeData.length > 0 && (
         <section>
-          <div class="px-8 mb-4 text-right">
-            <span class="bg-blue-600 text-white px-4 py-1 text-xs font-black uppercase tracking-tighter">
+          <div class="px-8 mb-6 text-right">
+            <span class="bg-blue-600 text-white px-4 py-1.5 text-[14px] font-black uppercase rounded-sm inline-block">
               {teamHome}
             </span>
           </div>
-          <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-8 no-scrollbar">
+          <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-8 no-scrollbar pb-4">
             {homeData.map((p) => (
-              <div class="flex-none w-[80vw] max-w-[340px] snap-center">
-                <div class="cursor-pointer card-trigger group" data-img={p.imagePath}>
-                  <div class="rounded-2xl overflow-hidden border border-white/10 shadow-xl group-hover:border-blue-500/50 transition-all">
-                    <img src={p.imagePath} alt={p.name} class="w-full h-auto block" loading="lazy" />
-                  </div>
-                  <div class="mt-4 py-3 rounded-full bg-white/5 text-center text-[11px] font-bold tracking-widest uppercase border border-white/5">
-                    {p.name}
-                  </div>
+              <div class="flex-none w-[78vw] max-w-[340px] snap-center">
+                <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-xl" data-img={p.imagePath}>
+                  <img src={p.imagePath} alt={p.name} class="w-full h-auto block" loading="lazy" />
+                </div>
+                <div class="mt-4 text-center text-[11px] font-bold tracking-widest text-gray-400 uppercase">
+                  {p.name}
                 </div>
               </div>
             ))}
@@ -137,14 +141,14 @@ try {
       )}
     </div>
 
-    <div id="modal" class="fixed inset-0 bg-black/95 z-50 hidden flex-col items-center justify-center p-6 backdrop-blur-xl">
-      <div id="close" class="absolute top-8 right-8 text-white/50 text-4xl cursor-pointer p-4 hover:text-white">&times;</div>
-      <img id="modal-img" src="" class="max-w-full max-h-[80vh] rounded-xl shadow-2xl mb-10" />
-      <a id="download-btn" href="" download class="bg-blue-600 text-white px-16 py-4 rounded-full font-black uppercase tracking-widest text-[11px] shadow-lg">Download Card</a>
+    <div id="modal" class="fixed inset-0 bg-black/98 z-50 hidden flex-col items-center justify-center p-6 backdrop-blur-md">
+      <div class="absolute top-8 right-8 text-white/40 text-4xl font-light cursor-pointer p-4" id="close">&times;</div>
+      <img id="modal-img" src="" class="max-w-full max-h-[85vh] shadow-2xl rounded-xl mb-12" />
+      <a id="download-btn" href="" download class="bg-white text-black px-14 py-4 rounded-full font-black uppercase tracking-widest text-[11px]">Download Card</a>
     </div>
 
     <div class="fixed bottom-8 left-0 right-0 flex justify-center z-40">
-      <a href="/b-reports" class="bg-white/10 backdrop-blur-lg text-white px-8 py-3 rounded-full font-bold text-[11px] uppercase tracking-widest border border-white/10">
+      <a href="/b-reports" class="bg-white/10 backdrop-blur-md text-white px-8 py-3 rounded-full font-bold text-[10px] uppercase tracking-widest border border-white/10">
         Back to Archive
       </a>
     </div>
@@ -159,10 +163,10 @@ try {
 
   document.querySelectorAll('.card-trigger').forEach(card => {
     card.addEventListener('click', () => {
-      const src = card.getAttribute('data-img');
-      if (src && modalImg && downloadBtn) {
-        modalImg.src = src;
-        downloadBtn.href = src;
+      const imgSrc = card.getAttribute('data-img');
+      if (imgSrc && modalImg && downloadBtn) {
+        modalImg.src = imgSrc;
+        downloadBtn.href = imgSrc;
         modal?.classList.remove('hidden');
         modal?.classList.add('flex');
       }

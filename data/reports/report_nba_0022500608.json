@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500608",
+  "date": "2026.01.19",
+  "venue": "Capital One Arena",
+  "attendance": 16630,
+  "home": {
+    "id": "1610612764",
+    "total": {
+      "pts": 106,
+      "fgm": 37,
+      "fga": 86,
+      "f2m": 24,
+      "f2a": 51,
+      "f3m": 13,
+      "f3a": 35,
+      "ftm": 19,
+      "fta": 22,
+      "reb": 55,
+      "oreb": 15,
+      "dreb": 30,
+      "ast": 27,
+      "tov": 19,
+      "stl": 7,
+      "blk": 5,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "33:32",
+        "pts": 18,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "22",
+        "name": "KHRIS MIDDLETON",
+        "min": "27:49",
+        "pts": 11,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "30:55",
+        "pts": 28,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "12",
+        "name": "TRE JOHNSON",
+        "min": "30:27",
+        "pts": 15,
+        "reb": 1,
+        "ast": 5
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "37:15",
+        "pts": 17,
+        "reb": 6,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612746",
+    "total": {
+      "pts": 110,
+      "fgm": 36,
+      "fga": 78,
+      "f2m": 31,
+      "f2a": 50,
+      "f3m": 5,
+      "f3a": 28,
+      "ftm": 33,
+      "fta": 38,
+      "reb": 46,
+      "oreb": 12,
+      "dreb": 31,
+      "ast": 20,
+      "tov": 16,
+      "stl": 12,
+      "blk": 6,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "4",
+        "name": "KOBE SANDERS",
+        "min": "22:16",
+        "pts": 8,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "26:08",
+        "pts": 11,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "30:16",
+        "pts": 14,
+        "reb": 12,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "36:57",
+        "pts": 36,
+        "reb": 7,
+        "ast": 9
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "39:06",
+        "pts": 10,
+        "reb": 5,
+        "ast": 4
+      }
+    ]
+  }
+}

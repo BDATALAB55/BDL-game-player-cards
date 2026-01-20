@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500016",
+  "date": "2026.01.19",
+  "venue": "Madison Square Garden",
+  "attendance": 19812,
+  "home": {
+    "id": "1610612752",
+    "total": {
+      "pts": 97,
+      "fgm": 38,
+      "fga": 95,
+      "f2m": 29,
+      "f2a": 64,
+      "f3m": 9,
+      "f3a": 31,
+      "ftm": 12,
+      "fta": 20,
+      "reb": 57,
+      "oreb": 17,
+      "dreb": 36,
+      "ast": 22,
+      "tov": 17,
+      "stl": 10,
+      "blk": 5,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "31:25",
+        "pts": 9,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "27:38",
+        "pts": 8,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "30:17",
+        "pts": 22,
+        "reb": 18,
+        "ast": 4
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "33:07",
+        "pts": 7,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "33:40",
+        "pts": 22,
+        "reb": 0,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612742",
+    "total": {
+      "pts": 114,
+      "fgm": 40,
+      "fga": 82,
+      "f2m": 25,
+      "f2a": 50,
+      "f3m": 15,
+      "f3a": 32,
+      "ftm": 19,
+      "fta": 28,
+      "reb": 59,
+      "oreb": 7,
+      "dreb": 42,
+      "ast": 25,
+      "tov": 17,
+      "stl": 9,
+      "blk": 5,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "27:46",
+        "pts": 18,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "16",
+        "name": "CALEB MARTIN",
+        "min": "23:50",
+        "pts": 3,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "DWIGHT POWELL",
+        "min": "28:11",
+        "pts": 2,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "35:18",
+        "pts": 26,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "33:29",
+        "pts": 19,
+        "reb": 8,
+        "ast": 4
+      }
+    ]
+  }
+}

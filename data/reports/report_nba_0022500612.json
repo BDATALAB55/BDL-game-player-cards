@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500612",
+  "date": "2026.01.19",
+  "venue": "Chase Center",
+  "attendance": 18064,
+  "home": {
+    "id": "1610612744",
+    "total": {
+      "pts": 135,
+      "fgm": 49,
+      "fga": 95,
+      "f2m": 25,
+      "f2a": 44,
+      "f3m": 24,
+      "f3a": 51,
+      "ftm": 13,
+      "fta": 17,
+      "reb": 53,
+      "oreb": 8,
+      "dreb": 38,
+      "ast": 38,
+      "tov": 13,
+      "stl": 11,
+      "blk": 3,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "WILL RICHARD",
+        "min": "26:00",
+        "pts": 5,
+        "reb": 3,
+        "ast": 7
+      },
+      {
+        "no": "10",
+        "name": "JIMMY BUTLER III",
+        "min": "20:50",
+        "pts": 17,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "21",
+        "name": "QUINTEN POST",
+        "min": "21:16",
+        "pts": 15,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "29:12",
+        "pts": 13,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "27:48",
+        "pts": 19,
+        "reb": 3,
+        "ast": 11
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612748",
+    "total": {
+      "pts": 112,
+      "fgm": 39,
+      "fga": 99,
+      "f2m": 26,
+      "f2a": 54,
+      "f3m": 13,
+      "f3a": 45,
+      "ftm": 21,
+      "fta": 24,
+      "reb": 60,
+      "oreb": 20,
+      "dreb": 34,
+      "ast": 30,
+      "tov": 19,
+      "stl": 6,
+      "blk": 2,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "27:41",
+        "pts": 9,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "26:53",
+        "pts": 18,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "25:51",
+        "pts": 4,
+        "reb": 12,
+        "ast": 3
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "30:18",
+        "pts": 21,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "25:02",
+        "pts": 7,
+        "reb": 6,
+        "ast": 3
+      }
+    ]
+  }
+}

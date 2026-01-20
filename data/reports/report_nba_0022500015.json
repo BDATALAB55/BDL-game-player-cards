@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500015",
+  "date": "2026.01.19",
+  "venue": "Rocket Arena",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612739",
+    "total": {
+      "pts": 104,
+      "fgm": 34,
+      "fga": 91,
+      "f2m": 26,
+      "f2a": 56,
+      "f3m": 8,
+      "f3a": 35,
+      "ftm": 28,
+      "fta": 35,
+      "reb": 61,
+      "oreb": 19,
+      "dreb": 35,
+      "ast": 20,
+      "tov": 21,
+      "stl": 8,
+      "blk": 5,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "DEAN WADE",
+        "min": "16:30",
+        "pts": 0,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "31:07",
+        "pts": 16,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "28:33",
+        "pts": 16,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "20",
+        "name": "JAYLON TYSON",
+        "min": "32:40",
+        "pts": 16,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "35:01",
+        "pts": 19,
+        "reb": 4,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612760",
+    "total": {
+      "pts": 136,
+      "fgm": 50,
+      "fga": 90,
+      "f2m": 27,
+      "f2a": 43,
+      "f3m": 23,
+      "f3a": 47,
+      "ftm": 13,
+      "fta": 20,
+      "reb": 50,
+      "oreb": 6,
+      "dreb": 32,
+      "ast": 32,
+      "tov": 11,
+      "stl": 11,
+      "blk": 6,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "AARON WIGGINS",
+        "min": "30:39",
+        "pts": 12,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "6",
+        "name": "JAYLIN WILLIAMS",
+        "min": "07:33",
+        "pts": 6,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "31:25",
+        "pts": 28,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "33:30",
+        "pts": 18,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "33:40",
+        "pts": 30,
+        "reb": 1,
+        "ast": 3
+      }
+    ]
+  }
+}

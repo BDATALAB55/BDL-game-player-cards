@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500611",
+  "date": "2026.01.19",
+  "venue": "Frost Bank Center",
+  "attendance": 18354,
+  "home": {
+    "id": "1610612759",
+    "total": {
+      "pts": 123,
+      "fgm": 44,
+      "fga": 79,
+      "f2m": 28,
+      "f2a": 41,
+      "f3m": 16,
+      "f3a": 38,
+      "ftm": 19,
+      "fta": 25,
+      "reb": 47,
+      "oreb": 3,
+      "dreb": 35,
+      "ast": 32,
+      "tov": 13,
+      "stl": 9,
+      "blk": 12,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "28:23",
+        "pts": 13,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "22:24",
+        "pts": 10,
+        "reb": 1,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "26:23",
+        "pts": 33,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "33:26",
+        "pts": 14,
+        "reb": 5,
+        "ast": 8
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "31:04",
+        "pts": 18,
+        "reb": 2,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612762",
+    "total": {
+      "pts": 110,
+      "fgm": 37,
+      "fga": 92,
+      "f2m": 24,
+      "f2a": 55,
+      "f3m": 13,
+      "f3a": 37,
+      "ftm": 23,
+      "fta": 27,
+      "reb": 54,
+      "oreb": 15,
+      "dreb": 27,
+      "ast": 31,
+      "tov": 13,
+      "stl": 10,
+      "blk": 1,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "CODY WILLIAMS",
+        "min": "23:32",
+        "pts": 5,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "26:31",
+        "pts": 8,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "30",
+        "name": "JUSUF NURKIĆ",
+        "min": "26:23",
+        "pts": 20,
+        "reb": 9,
+        "ast": 5
+      },
+      {
+        "no": "10",
+        "name": "SVI MYKHAILIUK",
+        "min": "23:39",
+        "pts": 10,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "33:38",
+        "pts": 30,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  }
+}

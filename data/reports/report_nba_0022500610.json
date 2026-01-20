@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500610",
+  "date": "2026.01.19",
+  "venue": "Barclays Center",
+  "attendance": 17344,
+  "home": {
+    "id": "1610612751",
+    "total": {
+      "pts": 117,
+      "fgm": 41,
+      "fga": 81,
+      "f2m": 26,
+      "f2a": 43,
+      "f3m": 15,
+      "f3a": 38,
+      "ftm": 20,
+      "fta": 21,
+      "reb": 34,
+      "oreb": 7,
+      "dreb": 21,
+      "ast": 28,
+      "tov": 7,
+      "stl": 7,
+      "blk": 1,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "36:35",
+        "pts": 23,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "27:55",
+        "pts": 16,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "37:28",
+        "pts": 12,
+        "reb": 8,
+        "ast": 6
+      },
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "26:19",
+        "pts": 10,
+        "reb": 4,
+        "ast": 8
+      },
+      {
+        "no": "4",
+        "name": "DRAKE POWELL",
+        "min": "24:47",
+        "pts": 11,
+        "reb": 1,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612756",
+    "total": {
+      "pts": 126,
+      "fgm": 44,
+      "fga": 77,
+      "f2m": 24,
+      "f2a": 38,
+      "f3m": 20,
+      "f3a": 39,
+      "ftm": 18,
+      "fta": 23,
+      "reb": 47,
+      "oreb": 7,
+      "dreb": 28,
+      "ast": 29,
+      "tov": 12,
+      "stl": 4,
+      "blk": 4,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "34:03",
+        "pts": 27,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "28:35",
+        "pts": 11,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "28:59",
+        "pts": 16,
+        "reb": 8,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "33:07",
+        "pts": 24,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "28:10",
+        "pts": 22,
+        "reb": 5,
+        "ast": 5
+      }
+    ]
+  }
+}

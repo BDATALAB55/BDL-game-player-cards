@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500609",
+  "date": "2026.01.19",
+  "venue": "Xfinity Mobile Arena",
+  "attendance": 18005,
+  "home": {
+    "id": "1610612755",
+    "total": {
+      "pts": 113,
+      "fgm": 42,
+      "fga": 88,
+      "f2m": 37,
+      "f2a": 71,
+      "f3m": 5,
+      "f3a": 17,
+      "ftm": 24,
+      "fta": 36,
+      "reb": 49,
+      "oreb": 15,
+      "dreb": 25,
+      "ast": 22,
+      "tov": 8,
+      "stl": 18,
+      "blk": 5,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "KELLY OUBRE JR.",
+        "min": "35:06",
+        "pts": 18,
+        "reb": 1,
+        "ast": 5
+      },
+      {
+        "no": "25",
+        "name": "DOMINICK BARLOW",
+        "min": "24:00",
+        "pts": 11,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "21",
+        "name": "JOEL EMBIID",
+        "min": "33:18",
+        "pts": 30,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "35:17",
+        "pts": 11,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "TYRESE MAXEY",
+        "min": "40:12",
+        "pts": 29,
+        "reb": 4,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612754",
+    "total": {
+      "pts": 104,
+      "fgm": 40,
+      "fga": 84,
+      "f2m": 27,
+      "f2a": 50,
+      "f3m": 13,
+      "f3a": 34,
+      "ftm": 11,
+      "fta": 14,
+      "reb": 56,
+      "oreb": 12,
+      "dreb": 34,
+      "ast": 24,
+      "tov": 22,
+      "stl": 4,
+      "blk": 9,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "JOHNNY FURPHY",
+        "min": "13:34",
+        "pts": 3,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "34:46",
+        "pts": 24,
+        "reb": 6,
+        "ast": 7
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "22:35",
+        "pts": 10,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "AARON NESMITH",
+        "min": "32:21",
+        "pts": 7,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "36:21",
+        "pts": 25,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  }
+}

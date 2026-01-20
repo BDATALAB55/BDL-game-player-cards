@@ -2,73 +2,81 @@
 export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
-// URLから ?folder= を取得 (例: "260103/game_505092_SENDAI_UTSUNOMIYA_20260103")
 const { searchParams } = Astro.url;
 const queryFolder = searchParams.get('folder') || "";
 
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
-// パス解析
+// パス解析 (260104/20260104_505093_89ERS_BREX などの形式に対応)
 const segments = queryFolder.split('/');
 const dateId = segments[0] || "";  
-const gameDir = segments[1] || ""; 
+const urlGameDir = segments[1] || ""; 
 
-// 【修正ポイント】ベースパスに /B1 を明示的に追加
 const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/B1`;
-const apiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}/${gameDir}`;
+const apiParentURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}`;
 
 let awayData = [];
 let homeData = [];
 let teamHome = "HOME";
 let teamAway = "AWAY";
 let reportImagePath = "";
+let gameDir = ""; // 実際にGitHub上で見つかったフォルダ名
 
 const formattedDate = dateId ? `20${dateId.substring(0,2)}.${dateId.substring(2,4)}.${dateId.substring(4,6)}` : "NO DATA";
 
 try {
-  const response = await fetch(`${apiURL}?t=${Date.now()}`, {
+  // 1. まず日付フォルダの中身を一覧取得して、正しいゲームフォルダを探す
+  const parentRes = await fetch(`${apiParentURL}?t=${Date.now()}`, {
     headers: token ? { "Authorization": `token ${token}` } : {}
   });
-  const files = await response.json();
+  const folders = await parentRes.json();
+  
+  if (Array.isArray(folders)) {
+    // URLに含まれるGameID (例: 505093) を含むフォルダを特定
+    const gameId = urlGameDir.split('_').find(s => s.length === 6 && /^\d+$/.test(s));
+    const targetFolder = folders.find(f => f.type === 'dir' && f.name.includes(gameId));
+    
+    if (targetFolder) {
+      gameDir = targetFolder.name; // game_505093_SENDAI_UTSUNOMIYA_20260104 を取得
+      
+      // 2. 特定したフォルダ内のファイルを取得
+      const filesRes = await fetch(`${targetFolder.url}&t=${Date.now()}`, {
+        headers: token ? { "Authorization": `token ${token}` } : {}
+      });
+      const files = await filesRes.json();
 
-  if (Array.isArray(files)) {
-    // フォルダ名からチーム名を抽出
-    const nameParts = gameDir.split('_');
-    // game_505092_AWAY_HOME_date なので index 2 と 3
-    teamAway = nameParts[2] || "AWAY";
-    teamHome = nameParts[3] || "HOME";
+      if (Array.isArray(files)) {
+        const nameParts = gameDir.split('_');
+        teamAway = nameParts[2] || "AWAY"; // SENDAI
+        teamHome = nameParts[3] || "HOME"; // UTSUNOMIYA
 
-    const process = (teamName) => {
-      return files
-        .filter(f => f.name.endsWith('.png') && f.name.toUpperCase().includes(teamName.toUpperCase()))
-        .map(f => {
-          const p = f.name.replace('.png', '').split('_');
-          
-          // 背番号(数字)を特定
-          const noIndex = p.findIndex(val => /^\d+$/.test(val));
-          const number = noIndex !== -1 ? p[noIndex] : "0";
-          
-          // 名前を特定（背番号より後ろ）
-          const fullName = noIndex !== -1 ? p.slice(noIndex + 1).join(' ') : "PLAYER";
+        const process = (teamName) => {
+          return files
+            .filter(f => f.name.endsWith('.png') && f.name.toUpperCase().includes(teamName.toUpperCase()))
+            .map(f => {
+              const p = f.name.replace('.png', '').split('_');
+              const noIndex = p.findIndex(val => /^\d+$/.test(val));
+              const number = noIndex !== -1 ? p[noIndex] : "0";
+              const fullName = noIndex !== -1 ? p.slice(noIndex + 1).join(' ') : "PLAYER";
 
-          return {
-            no: number,
-            name: fullName,
-            // 【重要】ここのパスを B1 フォルダ構成に完全一致させる
-            imagePath: `${githubRawBase}/${dateId}/${gameDir}/${f.name}`,
-          };
-        }).sort((a, b) => parseInt(a.no) - parseInt(b.no));
-    };
+              return {
+                no: number,
+                name: fullName,
+                imagePath: `${githubRawBase}/${dateId}/${gameDir}/${f.name}`,
+              };
+            }).sort((a, b) => parseInt(a.no) - parseInt(b.no));
+        };
 
-    awayData = process(teamAway);
-    homeData = process(teamHome);
-  }
-
-  // レポート画像 (output/reports/B1/260103/505092.png)
-  const gameId = gameDir.split('_')[1];
-  if (gameId && dateId) {
-    reportImagePath = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateId}/${gameId}.png`;
+        awayData = process(teamAway);
+        homeData = process(teamHome);
+        
+        // レポート画像パス
+        if (gameId) {
+          reportImagePath = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateId}/${gameId}.png`;
+        }
+      }
+    }
   }
 } catch (e) {
   console.error("Fetch Error:", e);
@@ -76,17 +84,16 @@ try {
 ---
 
 <Layout title="BDL B-CARDS">
-  <div class="app-container bg-[#373A36] min-h-screen text-white overflow-hidden font-avenir">
-    
+  <div class="app-container bg-[#1a1a1a] min-h-screen text-white overflow-hidden font-avenir">
     <header class="pt-12 pb-6 px-8 border-b border-white/5 text-center">
-      <a href="/" class="inline-block hover:opacity-70 transition-opacity">
+      <a href="/b-reports" class="inline-block hover:opacity-70 transition-opacity">
         <h1 class="text-2xl font-black uppercase leading-none tracking-[0.25em]">BDL B-Cards</h1>
       </a>
       <p class="text-gray-600 text-[10px] font-bold tracking-[0.4em] mt-3 uppercase">Gameday Collection</p>
     </header>
 
     <div class="py-10 space-y-16 pb-32">
-      <div class="px-8">
+      <div class="px-8 text-center">
         <div class="flex flex-col gap-1">
           <span class="text-gray-500 text-[12px] font-black uppercase tracking-[0.3em]">Gameday</span>
           <span class="text-white text-[28px] font-bold uppercase leading-none tracking-[0.1em]">{formattedDate}</span>
@@ -94,14 +101,14 @@ try {
       </div>
 
       <section class="px-8 flex flex-col items-center">
-        {reportImagePath ? (
-          <div class="w-full md:w-[50%] mx-auto cursor-pointer card-trigger rounded-xl overflow-hidden border border-white/20 shadow-2xl" data-img={reportImagePath}>
-            <img src={reportImagePath} alt="Game Report" class="w-full h-auto block" onerror="this.parentElement.style.display='none';" />
+        {reportImagePath && (
+          <div class="w-full md:w-[60%] mx-auto cursor-pointer card-trigger rounded-xl overflow-hidden border border-white/10 shadow-2xl" data-img={reportImagePath}>
+            <img src={reportImagePath} class="w-full h-auto" onerror="this.parentElement.style.display='none';" />
           </div>
-        ) : null}
-        <div class="mt-4 text-center">
-          <span class="text-[13px] font-black tracking-[0.2em] uppercase text-white/90">
-            {teamAway} <span class="text-[9px] font-medium text-white/40 mx-1 italic">vs</span> {teamHome}
+        )}
+        <div class="mt-6 text-center">
+          <span class="text-[16px] font-black tracking-[0.2em] uppercase text-white">
+            {teamAway} <span class="text-blue-500 mx-2">VS</span> {teamHome}
           </span>
         </div>
       </section>
@@ -112,26 +119,22 @@ try {
       ].map((team) => team.data.length > 0 && (
         <section>
           <div class="px-8 mb-6">
-            <span class={`${team.color} px-4 py-1.5 text-[16px] font-black uppercase rounded-sm inline-block`}>
+            <span class={`${team.color} px-4 py-1.5 text-[14px] font-black uppercase rounded-sm`}>
               {team.label}
             </span>
           </div>
 
-          <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-8 no-scrollbar pb-4">
+          <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-8 no-scrollbar pb-8">
             {team.data.map((p) => (
-              <div class="flex-none w-[78vw] max-w-[340px] snap-center">
-                <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-xl" data-img={p.imagePath}>
-                  <img src={p.imagePath} alt={p.name} class="w-full h-auto block" loading="lazy" onerror="this.src='/no-image.png'" />
+              <div class="flex-none w-[80vw] max-w-[320px] snap-center">
+                <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-xl bg-black/20" data-img={p.imagePath}>
+                  <img src={p.imagePath} alt={p.name} class="w-full h-auto" loading="lazy" />
                 </div>
-                
-                <div class="mt-6 flex flex-col items-center px-1">
-                    <button class="w-full inline-flex items-center justify-between px-6 py-4 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative active:scale-95 transition-all group overflow-hidden shadow-lg">
-                      <div class="absolute inset-0 p-[1.5px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10 opacity-80"></div>
-                      <div class="flex items-center gap-3">
-                        <span class="text-blue-500 font-black italic text-lg">#{p.no}</span>
-                        <span class="text-[14px] font-black tracking-[0.15em] uppercase text-white">{p.name}</span>
-                      </div>
-                    </button>
+                <div class="mt-4 flex flex-col items-center">
+                   <div class="w-full py-4 rounded-full bg-white/5 border border-white/10 flex items-center justify-center gap-3">
+                     <span class="text-blue-500 font-black italic text-lg">#{p.no}</span>
+                     <span class="text-[14px] font-black uppercase tracking-widest">{p.name}</span>
+                   </div>
                 </div>
               </div>
             ))}
@@ -140,16 +143,10 @@ try {
       ))}
     </div>
 
-    <div id="modal" class="fixed inset-0 bg-black/98 z-50 hidden flex-col items-center justify-center p-6 backdrop-blur-md">
-      <div class="absolute top-8 right-8 text-white/40 text-4xl font-light cursor-pointer p-4" id="close">&times;</div>
-      <img id="modal-img" src="" class="max-w-full max-h-[85vh] shadow-2xl rounded-xl mb-12" />
-      <a id="download-btn" href="" download class="bg-white text-black px-14 py-4 rounded-full font-black uppercase tracking-widest text-[11px]">Download Card</a>
-    </div>
-
-    <div class="fixed bottom-8 left-0 right-0 flex justify-center z-40 pointer-events-none">
-      <a href="/b-reports" class="pointer-events-auto bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 transition-transform border border-white/10">
-        Back to Archive
-      </a>
+    <div id="modal" class="fixed inset-0 bg-black/95 z-50 hidden flex-col items-center justify-center p-6 backdrop-blur-md">
+      <div class="absolute top-8 right-8 text-white/40 text-4xl cursor-pointer" id="close">&times;</div>
+      <img id="modal-img" src="" class="max-w-full max-h-[80vh] rounded-lg shadow-2xl mb-8" />
+      <a id="download-btn" href="" download class="bg-white text-black px-10 py-4 rounded-full font-black uppercase text-[12px] tracking-widest">Download Card</a>
     </div>
   </div>
 </Layout>

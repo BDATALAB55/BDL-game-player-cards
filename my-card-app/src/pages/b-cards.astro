@@ -2,77 +2,27 @@
 export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
-// 1. URLから ?folder= の値を取得
 const { searchParams } = Astro.url;
-const queryFolder = searchParams.get('folder');
+const queryFolder = searchParams.get('folder'); // 例: "260103/game_505092_SENDAI_UTSUNOMIYA_20260103"
 
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
-// --- B1専用設定：パスの修正 ---
-const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main`;
+// パス解析
+const segments = queryFolder ? queryFolder.split('/') : [];
+const dateId = segments[0] || "";  
+const gameDir = segments[1] || ""; 
 
-// 提供いただいた手動変換辞書
-const cityNameMap = {
-  "HOKKAIDO": "HOKKAIDO", "LEVANGA": "HOKKAIDO", "LEVANGAHOKKAIDO": "HOKKAIDO",
-  "89ERS": "SENDAI", "SENDAI": "SENDAI", "SENDAI89ERS": "SENDAI",
-  "AKITA": "AKITA", "NORTHERNHAPPINETS": "AKITA",
-  "ROBOTS": "IBARAKI", "IBARAKI": "IBARAKI",
-  "BREX": "UTSUNOMIYA", "UTSUNOMIYA": "UTSUNOMIYA",
-  "CRANETHUNDERS": "GUNMA", "GUNMA": "GUNMA",
-  "ALPHAS": "KOSHIGAYA", "KOSHIGAYA": "KOSHIGAYA",
-  "ALTIRI": "A-CHIBA", "ACHIBA": "A-CHIBA",
-  "JETS": "CHIBA-J", "CHIBAJ": "CHIBA-J",
-  "ALVARK": "A-TOKYO", "ATOKYO": "A-TOKYO",
-  "SUNROCKERS": "SR-SHIBUYA", "SHIBUYA": "SR-SHIBUYA",
-  "BRAVETHUNDERS": "KAWASAKI", "KAWASAKI": "KAWASAKI",
-  "BCORSAIRS": "YOKOHAMA-BC", "YOKOHAMABC": "YOKOHAMA-BC",
-  "GROUSES": "TOYAMA", "TOYAMA": "TOYAMA",
-  "NEOPHOENIX": "SAN-EN", "SANEN": "SAN-EN", "SAN-EN": "SAN-EN",
-  "SEAHORSES": "MIKAWA", "MIKAWA": "MIKAWA",
-  "FIGHTINGEAGLES": "FE-NAGOYA", "FENAGOYA": "FE-NAGOYA",
-  "DOLPHINS": "NAGOYA-D", "DIAMONDDOLPHINS": "NAGOYA-D", "NAGOYA": "NAGOYA-D",
-  "LAKES": "SHIGA", "SHIGA": "SHIGA",
-  "HANNARYZ": "KYOTO", "KYOTO": "KYOTO",
-  "EVESSA": "OSAKA", "OSAKA": "OSAKA",
-  "SUSANOOMAGIC": "SHIMANE", "SHIMANE": "SHIMANE",
-  "DRAGONFLIES": "HIROSHIMA", "HIROSHIMA": "HIROSHIMA",
-  "BALLOONERS": "SAGA", "SAGA": "SAGA",
-  "VELCA": "NAGASAKI", "NAGASAKI": "NAGASAKI",
-  "GOLDENKINGS": "RYUKYU", "RYUKYU": "RYUKYU"
-};
+const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/B1`;
+const apiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}/${gameDir}`;
 
-let folderName = queryFolder;
 let awayData = [];
 let homeData = [];
 let teamHome = "HOME";
 let teamAway = "AWAY";
 let reportImagePath = "";
 
-// 2. 自動取得ロジック (B1用)
-if (!folderName) {
-  try {
-    const listApi = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1`;
-    const res = await fetch(listApi, { headers: token ? { "Authorization": `token ${token}` } : {} });
-    const items = await res.json();
-    if (Array.isArray(items)) {
-      const dateFolders = items.filter(i => /^\d+$/.test(i.name)).sort((a, b) => b.name.localeCompare(a.name));
-      if (dateFolders.length > 0) {
-        const latestDate = dateFolders[0].name;
-        const matchApi = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${latestDate}`;
-        const matchRes = await fetch(matchApi, { headers: token ? { "Authorization": `token ${token}` } : {} });
-        const matchItems = await matchRes.json();
-        const latestMatch = matchItems.find(m => m.name.startsWith('game_'));
-        if (latestMatch) folderName = `${latestDate}/${latestMatch.name}`;
-      }
-    }
-  } catch (e) { console.error(e); }
-}
-
-const apiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${folderName}`;
-const rawDate = folderName ? folderName.split('/')[0] : "";
-const gameDir = folderName ? folderName.split('/')[1] : "";
-const formattedDate = rawDate ? `20${rawDate.substring(0,2)}.${rawDate.substring(2,4)}.${rawDate.substring(4,6)}` : "NO DATA";
+const formattedDate = dateId ? `20${dateId.substring(0,2)}.${dateId.substring(2,4)}.${dateId.substring(4,6)}` : "NO DATA";
 
 try {
   const response = await fetch(`${apiURL}?t=${Date.now()}`, {
@@ -81,27 +31,30 @@ try {
   const files = await response.json();
 
   if (Array.isArray(files)) {
-    // フォルダ名からチーム略称を取得
+    // フォルダ名 "game_505092_SENDAI_UTSUNOMIYA_20260103" からチーム名を抽出
     const nameParts = gameDir.split('_');
-    const rawAway = (nameParts[2] || "").toUpperCase();
-    const rawHome = (nameParts[3] || "").toUpperCase();
+    teamAway = nameParts[2] || "AWAY";
+    teamHome = nameParts[3] || "HOME";
 
-    teamAway = cityNameMap[rawAway] || rawAway;
-    teamHome = cityNameMap[rawHome] || rawHome;
-
-    const process = (cityName) => {
-      // 辞書引きした後の名前、または元の略称でファイル名マッチング
+    const process = (teamName) => {
       return files
-        .filter(f => (f.name.includes(rawAway) || f.name.includes(rawHome)) && f.name.endsWith('.png'))
-        .filter(f => f.name.includes(cityName.replace('-', ''))) // チーム名を含むか
+        .filter(f => f.name.includes(teamName) && f.name.endsWith('.png'))
         .map(f => {
+          // B1形式: [TEAM]_[SUBTEAM]_[NO]_[FIRSTNAME]_[LASTNAME].png 
+          // 例: SENDAI_89ERS_11_HIROHIDE_ABE.png
           const p = f.name.replace('.png', '').split('_');
-          const number = p.find(val => /^\d+$/.test(val)) || "0";
+          
+          // 数値（背番号）の位置を探す
+          const noIndex = p.findIndex(val => /^\d+$/.test(val));
+          const number = noIndex !== -1 ? p[noIndex] : "0";
+          
+          // 背番号より後ろを名前として結合
+          const fullName = noIndex !== -1 ? p.slice(noIndex + 1).join(' ') : "PLAYER";
+
           return {
-            team: cityName,
             no: number,
-            name: p.slice(p.indexOf(number) + 1).join(' ').replace(/_/g, ' '),
-            imagePath: `${githubRawBase}/output/Bplayers/B1/${folderName}/${f.name}`,
+            name: fullName,
+            imagePath: `${githubRawBase}/${dateId}/${gameDir}/${f.name}`,
           };
         }).sort((a, b) => parseInt(a.no) - parseInt(b.no));
     };
@@ -110,12 +63,14 @@ try {
     homeData = process(teamHome);
   }
 
-  // 3. レポート画像 (reports/B1を参照)
+  // ゲームレポート画像 (output/reports/B1/260103/505092.png)
   const gameId = gameDir.split('_')[1];
   if (gameId) {
-    reportImagePath = `${githubRawBase}/output/reports/B1/${rawDate}/${gameId}.png`;
+    reportImagePath = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateId}/${gameId}.png`;
   }
-} catch (e) { console.error("Fetch Error:", e); }
+} catch (e) {
+  console.error("Fetch Error:", e);
+}
 ---
 
 <Layout title="BDL B-CARDS">
@@ -139,13 +94,9 @@ try {
       <section class="px-8 flex flex-col items-center">
         {reportImagePath ? (
           <div class="w-full md:w-[50%] mx-auto cursor-pointer card-trigger rounded-xl overflow-hidden border border-white/20 shadow-2xl" data-img={reportImagePath}>
-            <img src={reportImagePath} alt="Game Report" class="w-full h-auto block" onerror="this.style.display='none'" />
+            <img src={reportImagePath} alt="Game Report" class="w-full h-auto block" onerror="this.style.display='none';" />
           </div>
-        ) : (
-          <div class="w-full py-10 text-center text-white/20 text-[10px] tracking-widest uppercase border border-dashed border-white/10 rounded-xl">
-            Report Image Not Found
-          </div>
-        )}
+        ) : null}
         <div class="mt-4 text-center">
           <span class="text-[13px] font-black tracking-[0.2em] uppercase text-white/90">
             {teamAway} <span class="text-[9px] font-medium text-white/40 mx-1 italic">vs</span> {teamHome}
@@ -153,31 +104,31 @@ try {
         </div>
       </section>
 
-      {[awayData, homeData].map((team) => team.length > 0 && (
+      {[
+        { data: awayData, label: teamAway, color: "bg-white text-black" },
+        { data: homeData, label: teamHome, color: "bg-blue-600 text-white" }
+      ].map((team) => team.data.length > 0 && (
         <section>
           <div class="px-8 mb-6">
-            <span class="bg-white text-black px-4 py-1.5 text-[16px] font-black uppercase rounded-sm inline-block">
-              {team[0].team}
+            <span class={`${team.color} px-4 py-1.5 text-[16px] font-black uppercase rounded-sm inline-block`}>
+              {team.label}
             </span>
           </div>
 
           <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-8 no-scrollbar pb-4">
-            {team.map((p) => (
+            {team.data.map((p) => (
               <div class="flex-none w-[78vw] max-w-[340px] snap-center">
-                <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-xl active:scale-95 transition-transform" data-img={p.imagePath}>
+                <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-xl" data-img={p.imagePath}>
                   <img src={p.imagePath} alt={p.name} class="w-full h-auto block" loading="lazy" />
                 </div>
                 
                 <div class="mt-6 flex flex-col items-center px-1">
                     <button class="w-full inline-flex items-center justify-between px-6 py-4 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative active:scale-95 transition-all group overflow-hidden shadow-lg">
                       <div class="absolute inset-0 p-[1.5px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10 opacity-80"></div>
-                      <div class="flex items-center gap-2">
-                        <span class="text-blue-500 font-black italic text-[16px]">#{p.no}</span>
+                      <div class="flex items-center gap-3">
+                        <span class="text-blue-500 font-black italic text-lg">#{p.no}</span>
                         <span class="text-[14px] font-black tracking-[0.15em] uppercase text-white">{p.name}</span>
                       </div>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-white/40" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                      </svg>
                     </button>
                 </div>
               </div>
@@ -196,6 +147,7 @@ try {
 </Layout>
 
 <script>
+  // モダル操作
   const modal = document.getElementById('modal');
   const modalImg = document.getElementById('modal-img') as HTMLImageElement;
   const close = document.getElementById('close');
@@ -218,9 +170,3 @@ try {
     modal?.classList.remove('flex');
   });
 </script>
-
-<style is:global>
-  @import url('https://fonts.cdnfonts.com/css/avenir-next-lt-pro');
-  .no-scrollbar::-webkit-scrollbar { display: none; }
-  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-</style>

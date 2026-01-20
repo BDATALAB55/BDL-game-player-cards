@@ -2,127 +2,125 @@
 export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
+// 1. URLからパラメータ取得 (例: folder=260103/game_505094_ACHIBA_SHIMANE_20260103)
 const { searchParams } = Astro.url;
 const queryFolder = searchParams.get('folder'); 
 
+// --- 設定 ---
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
-// 1. URLパス解析 (例: folder=260104/game_505093_...)
+// アーカイブ側と同じ変換辞書を導入
+const cityNameMap = {
+  "ACHIBA": "A-CHIBA", "ALVARK": "A-TOKYO", "ATOKYO": "A-TOKYO", "JETS": "CHIBA-J",
+  "BREX": "UTSUNOMIYA", "UTSUNOMIYA": "UTSUNOMIYA", "89ERS": "SENDAI", "SENDAI": "SENDAI",
+  "SANEN": "SAN-EN", "SAN-EN": "SAN-EN", "NEOPHOENIX": "SAN-EN",
+  "SUSANOOMAGIC": "SHIMANE", "SHIMANE": "SHIMANE", "GOLDENKINGS": "RYUKYU", "RYUKYU": "RYUKYU"
+  // ...必要に応じて追加
+};
+
+// 2. パス解析
 const segments = queryFolder ? queryFolder.split('/') : [];
-const dateOnly = segments[0] || ""; 
-const matchSubDir = segments[1] || ""; 
+const datePart = segments[0] || ""; 
+const urlMatchDir = segments[1] || ""; 
 
-// 親フォルダ名「B1 260104」形式
-const actualDateDir = `B1 ${dateOnly}`; 
-
-const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/B1/${encodeURIComponent(actualDateDir)}/${encodeURIComponent(matchSubDir)}`;
-const apiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${encodeURIComponent(actualDateDir)}/${encodeURIComponent(matchSubDir)}`;
+// Bリーグ特有のフォルダ構成に対応
+const actualDateDir = `B1 ${datePart}`;
+const apiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${encodeURIComponent(actualDateDir)}/${encodeURIComponent(urlMatchDir)}`;
+const rawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/B1/${encodeURIComponent(actualDateDir)}/${encodeURIComponent(urlMatchDir)}`;
 
 let awayData = [];
 let homeData = [];
-let teamAwayFull = "AWAY";
-let teamHomeFull = "HOME";
+let teamAway = "AWAY";
+let teamHome = "HOME";
 let reportImagePath = "";
 
-const formattedDate = dateOnly ? `20${dateOnly.substring(0,2)}.${dateOnly.substring(2,4)}.${dateOnly.substring(4,6)}` : "NO DATA";
-
 try {
-  const response = await fetch(`${apiURL}?t=${Date.now()}`, {
+  const res = await fetch(`${apiURL}?t=${Date.now()}`, {
     headers: token ? { "Authorization": `token ${token}` } : {}
   });
-  const files = await response.json();
+  const files = await res.json();
 
   if (Array.isArray(files)) {
-    // フォルダ名(game_505093_SENDAI_UTSUNOMIYA_...)から「地名」を抽出
-    const folderParts = matchSubDir.split('_');
-    const awayCity = folderParts[2]; // SENDAI
-    const homeCity = folderParts[3]; // UTSUNOMIYA
+    // アーカイブ側のリンク生成と同じ方法でチーム名を抽出
+    const nameParts = urlMatchDir.split('_');
+    const rawAway = nameParts[2] || "AWAY";
+    const rawHome = nameParts[3] || "HOME";
 
-    const process = (cityPrefix) => {
+    // 辞書を通して正規の名前（SENDAI, SHIMANE等）に変換
+    teamAway = cityNameMap[rawAway.toUpperCase()] || rawAway;
+    teamHome = cityNameMap[rawHome.toUpperCase()] || rawHome;
+
+    const process = (cityName) => {
+      // ファイル名がその「地名」で始まるものを抽出
       return files
-        .filter(f => f.name.startsWith(cityPrefix) && f.name.endsWith('.png'))
+        .filter(f => f.name.toUpperCase().startsWith(cityName.toUpperCase()) && f.name.endsWith('.png'))
         .map(f => {
-          const nameParts = f.name.replace('.png', '').split('_');
-          
-          // 背番号(数字のみのセグメント)を動的に探す
-          const numberIndex = nameParts.findIndex(p => /^\d+$/.test(p));
-          const playerNo = numberIndex !== -1 ? nameParts[numberIndex] : "0";
-          
-          // 表示用のチーム名（地名＋愛称があれば結合）
-          const displayName = numberIndex > 1 ? `${nameParts[0]} ${nameParts[1]}` : nameParts[0];
-
+          const p = f.name.replace('.png', '').split('_');
+          // 数字の部分を背番号として探す
+          const noPart = p.find(val => /^\d+$/.test(val)) || "0";
           return {
-            teamLabel: displayName,
-            no: playerNo,
-            // 背番号以降を名前として結合
-            name: nameParts.slice(numberIndex + 1).join(' '), 
-            imagePath: `${githubRawBase}/${f.name}`
+            no: noPart,
+            name: p.slice(p.indexOf(noPart) + 1).join(' '),
+            path: `${rawBase}/${f.name}`
           };
-        })
-        .sort((a, b) => parseInt(a.no) - parseInt(b.no));
+        }).sort((a, b) => parseInt(a.no) - parseInt(b.no));
     };
 
-    awayData = process(awayCity);
-    homeData = process(homeCity);
-
-    // 見出し用のチーム名を設定
-    if (awayData.length > 0) teamAwayFull = awayData[0].teamLabel;
-    if (homeData.length > 0) teamHomeFull = homeData[0].teamLabel;
+    awayData = process(teamAway);
+    homeData = process(teamHome);
   }
 
-  // レポート画像
-  const gameIdMatch = matchSubDir.match(/\d{6}/);
-  const gameId = gameIdMatch ? gameIdMatch[0] : "";
-  if (gameId) {
-    reportImagePath = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateOnly}/${gameId}.png`;
+  // 試合レポート画像のパス (reports/B1/日付/ID.png)
+  const gameIdMatch = urlMatchDir.match(/\d{6}/);
+  if (gameIdMatch) {
+    reportImagePath = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${datePart}/${gameIdMatch[0]}.png`;
   }
 
 } catch (e) {
-  console.error("Fetch Error:", e);
+  console.error(e);
 }
+
+const formattedDate = datePart ? `20${datePart.substring(0,2)}.${datePart.substring(2,4)}.${datePart.substring(4,6)}` : "";
 ---
 
-<Layout title="BDL B-CARDS">
-  <div class="app-container bg-[#0a0a0a] min-h-screen text-white font-avenir">
+<Layout title={`${teamAway} vs ${teamHome}`}>
+  <div class="bg-[#111111] min-h-screen text-white font-avenir pb-32">
     
-    <header class="pt-12 pb-6 px-8 border-b border-white/5 text-center">
-      <h1 class="text-2xl font-black uppercase tracking-[0.25em] text-blue-500">BDL B-Cards</h1>
-      <p class="text-gray-500 text-[10px] font-bold tracking-[0.4em] mt-3 uppercase">{formattedDate}</p>
+    <header class="pt-12 pb-6 px-8 text-center border-b border-white/5">
+      <h1 class="text-xl font-black uppercase tracking-[0.3em] text-blue-500">BDL B-Cards</h1>
+      <div class="mt-4 text-[10px] text-gray-500 font-bold uppercase tracking-widest">{formattedDate}</div>
     </header>
 
-    <div class="py-10 space-y-16 pb-32">
+    <div class="py-10 space-y-20">
+      
       {reportImagePath && (
-        <section class="px-8 flex flex-col items-center">
-          <div class="w-full md:w-[60%] mx-auto rounded-xl overflow-hidden border border-white/10 shadow-2xl card-trigger cursor-pointer" data-img={reportImagePath}>
-            <img src={reportImagePath} alt="Game Report" class="w-full h-auto" onerror="this.style.display='none'" />
+        <div class="px-8 flex flex-col items-center">
+          <div class="w-full md:w-[50%] rounded-xl overflow-hidden border border-white/10 shadow-2xl">
+            <img src={reportImagePath} class="w-full h-auto" onerror="this.style.display='none'" />
           </div>
-          <div class="mt-8 text-center">
-            <div class="flex items-center justify-center gap-4">
-                <span class="text-[20px] font-black tracking-tighter uppercase">{teamAwayFull}</span>
-                <span class="text-blue-500 font-black italic text-[14px]">VS</span>
-                <span class="text-[20px] font-black tracking-tighter uppercase">{teamHomeFull}</span>
-            </div>
+          <div class="mt-6 font-black italic text-lg tracking-tighter">
+            {teamAway} <span class="text-blue-500 text-xs mx-2">VS</span> {teamHome}
           </div>
-        </section>
+        </div>
       )}
 
       {awayData.length > 0 && (
         <section>
           <div class="px-8 mb-6">
-            <span class="bg-white text-black px-5 py-1.5 text-[14px] font-black uppercase rounded-full shadow-lg">
-              {teamAwayFull}
-            </span>
+            <span class="bg-white text-black px-4 py-1 text-[10px] font-black uppercase tracking-widest">{teamAway}</span>
           </div>
-          <div class="flex overflow-x-auto gap-6 px-8 no-scrollbar pb-8 snap-x">
+          <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-8 no-scrollbar">
             {awayData.map((p) => (
-              <div class="flex-none w-[82vw] max-w-[340px] snap-center group">
-                <div class="card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-2xl transition-transform duration-300 group-active:scale-95" data-img={p.imagePath}>
-                  <img src={p.imagePath} alt={p.name} class="w-full h-auto block" loading="lazy" />
-                </div>
-                <div class="mt-4 flex items-center gap-3 px-2">
-                    <span class="text-[24px] font-black text-blue-500 tabular-nums">#{p.no}</span>
-                    <span class="text-[14px] font-bold tracking-widest uppercase text-white/90 truncate">{p.name}</span>
+              <div class="flex-none w-[80vw] max-w-[340px] snap-center">
+                <div class="cursor-pointer card-trigger group" data-img={p.path}>
+                  <div class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl group-hover:border-blue-500/50 transition-all">
+                    <img src={p.path} alt={p.name} class="w-full h-auto block" loading="lazy" />
+                  </div>
+                  <div class="mt-4 flex items-center justify-between px-2">
+                    <span class="text-blue-500 font-black text-xl">#{p.no}</span>
+                    <span class="text-[10px] text-gray-400 font-bold uppercase truncate max-w-[150px]">{p.name}</span>
+                  </div>
                 </div>
               </div>
             ))}
@@ -133,19 +131,19 @@ try {
       {homeData.length > 0 && (
         <section>
           <div class="px-8 mb-6 text-right">
-            <span class="bg-blue-600 text-white px-5 py-1.5 text-[14px] font-black uppercase rounded-full shadow-lg">
-              {teamHomeFull}
-            </span>
+            <span class="bg-blue-600 text-white px-4 py-1 text-[10px] font-black uppercase tracking-widest">{teamHome}</span>
           </div>
-          <div class="flex overflow-x-auto gap-6 px-8 no-scrollbar pb-8 snap-x">
+          <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-8 no-scrollbar">
             {homeData.map((p) => (
-              <div class="flex-none w-[82vw] max-w-[340px] snap-center group">
-                <div class="card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-2xl transition-transform duration-300 group-active:scale-95" data-img={p.imagePath}>
-                  <img src={p.imagePath} alt={p.name} class="w-full h-auto block" loading="lazy" />
-                </div>
-                <div class="mt-4 flex items-center gap-3 px-2">
-                    <span class="text-[24px] font-black text-blue-500 tabular-nums">#{p.no}</span>
-                    <span class="text-[14px] font-bold tracking-widest uppercase text-white/90 truncate">{p.name}</span>
+              <div class="flex-none w-[80vw] max-w-[340px] snap-center">
+                <div class="cursor-pointer card-trigger group" data-img={p.path}>
+                  <div class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl group-hover:border-blue-500/50 transition-all">
+                    <img src={p.path} alt={p.name} class="w-full h-auto block" loading="lazy" />
+                  </div>
+                  <div class="mt-4 flex items-center justify-between px-2">
+                    <span class="text-blue-500 font-black text-xl">#{p.no}</span>
+                    <span class="text-[10px] text-gray-400 font-bold uppercase truncate max-w-[150px]">{p.name}</span>
+                  </div>
                 </div>
               </div>
             ))}
@@ -154,10 +152,10 @@ try {
       )}
     </div>
 
-    <div id="modal" class="fixed inset-0 bg-black/95 z-50 hidden flex-col items-center justify-center p-6 backdrop-blur-xl">
-      <div class="absolute top-8 right-8 text-white/40 text-4xl font-light cursor-pointer p-4 hover:text-white transition-colors" id="close">&times;</div>
-      <img id="modal-img" src="" class="max-w-full max-h-[80vh] shadow-2xl rounded-xl mb-12 object-contain" />
-      <a id="download-btn" href="" download class="bg-blue-600 text-white px-16 py-4 rounded-full font-black uppercase tracking-[0.2em] text-[12px] shadow-2xl active:scale-95 transition-all">Download Card</a>
+    <div id="modal" class="fixed inset-0 bg-black/98 z-50 hidden flex-col items-center justify-center p-6 backdrop-blur-xl">
+      <div id="close" class="absolute top-8 right-8 text-white/50 text-4xl cursor-pointer p-4">&times;</div>
+      <img id="modal-img" src="" class="max-w-full max-h-[80vh] rounded-xl shadow-2xl mb-10" />
+      <a id="download-btn" href="" download class="bg-blue-600 text-white px-16 py-4 rounded-full font-black uppercase tracking-widest text-[11px]">Download Card</a>
     </div>
   </div>
 </Layout>
@@ -170,10 +168,10 @@ try {
 
   document.querySelectorAll('.card-trigger').forEach(card => {
     card.addEventListener('click', () => {
-      const imgSrc = card.getAttribute('data-img');
-      if (imgSrc && modalImg && downloadBtn) {
-        modalImg.src = imgSrc;
-        downloadBtn.href = imgSrc;
+      const src = card.getAttribute('data-img');
+      if (src && modalImg && downloadBtn) {
+        modalImg.src = src;
+        downloadBtn.href = src;
         modal?.classList.remove('hidden');
         modal?.classList.add('flex');
       }
@@ -189,5 +187,4 @@ try {
 <style is:global>
   .no-scrollbar::-webkit-scrollbar { display: none; }
   .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-  body { background-color: #0a0a0a; }
 </style>

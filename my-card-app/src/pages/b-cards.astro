@@ -3,24 +3,22 @@ export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
 const { searchParams } = Astro.url;
-const queryFolder = searchParams.get('folder'); // 例: "260103/game_505094_..."
+const queryFolder = searchParams.get('folder'); 
 
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
-// 1. パス解析
+// 1. URL解析 (例: folder=260103/game_505094_...)
 const segments = queryFolder ? queryFolder.split('/') : [];
-const datePart = segments[0] || ""; // "260103"
-const gameDir = segments[1] || "";  // "game_505094_..."
+const dateOnly = segments[0] || ""; // "260103"
+const matchSubDir = segments[1] || ""; // "game_505094_..."
 
-// Bリーグ特有の「B1 260103」というスペース込みのフォルダ名を生成
-const b1DateDir = `B1 ${datePart}`;
+// GitHub上の実際のフォルダ名「B1 260103」を構築
+const actualDateDir = `B1 ${dateOnly}`; 
 
-// 画像表示用のベースURL (RAW)
-const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/B1/${encodeURIComponent(b1DateDir)}/${encodeURIComponent(gameDir)}`;
-
-// API取得用のURL
-const apiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${encodeURIComponent(b1DateDir)}/${encodeURIComponent(gameDir)}`;
+// 画像取得用パス
+const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/B1/${encodeURIComponent(actualDateDir)}/${encodeURIComponent(matchSubDir)}`;
+const apiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${encodeURIComponent(actualDateDir)}/${encodeURIComponent(matchSubDir)}`;
 
 let awayData = [];
 let homeData = [];
@@ -28,18 +26,17 @@ let teamAway = "AWAY";
 let teamHome = "HOME";
 let reportImagePath = "";
 
-const formattedDate = datePart ? `20${datePart.substring(0,2)}.${datePart.substring(2,4)}.${datePart.substring(4,6)}` : "NO DATA";
+const formattedDate = dateOnly ? `20${dateOnly.substring(0,2)}.${dateOnly.substring(2,4)}.${dateOnly.substring(4,6)}` : "NO DATA";
 
 try {
-  // 2. 選手カード取得
   const response = await fetch(`${apiURL}?t=${Date.now()}`, {
     headers: token ? { "Authorization": `token ${token}` } : {}
   });
   const files = await response.json();
 
   if (Array.isArray(files)) {
-    // フォルダ名からチーム名を抽出 (game_ID_AWAY_HOME_...)
-    const folderParts = gameDir.split('_');
+    // フォルダ名からチーム名を抽出
+    const folderParts = matchSubDir.split('_');
     teamAway = folderParts[2] || "AWAY";
     teamHome = folderParts[3] || "HOME";
 
@@ -50,23 +47,24 @@ try {
           const p = f.name.replace('.png', '').split('_');
           return {
             team: p[0],
-            no: p[1] || "",
-            name: p.slice(2).join(' '),
+            no: p[2] || "0", // Bリーグのファイル名規則（チーム名_愛称_番号...）に合わせて3番目を番号として取得
+            name: p.slice(3).join(' ') || p[1], // ニックネームやフルネーム
             imagePath: `${githubRawBase}/${f.name}`
           };
-        }).sort((a, b) => parseInt(a.no) - parseInt(b.no));
+        })
+        // NBAと同じく背番号順に並べ替え
+        .sort((a, b) => parseInt(a.no) - parseInt(b.no));
     };
 
     awayData = process(teamAway);
     homeData = process(teamHome);
   }
 
-  // 3. 試合レポート画像 (reports/B1/日付/ID.png)
-  const gameIdMatch = gameDir.match(/\d{6}/);
+  // 試合レポート画像 (reports/B1/日付/ID.png)
+  const gameIdMatch = matchSubDir.match(/\d{6}/);
   const gameId = gameIdMatch ? gameIdMatch[0] : "";
   if (gameId) {
-    // reports フォルダはスペースなしの "B1/日付" 階層
-    reportImagePath = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${datePart}/${gameId}.png`;
+    reportImagePath = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateOnly}/${gameId}.png`;
   }
 
 } catch (e) {
@@ -75,7 +73,7 @@ try {
 ---
 
 <Layout title="BDL B-CARDS">
-  <div class="app-container bg-[#111] min-h-screen text-white overflow-hidden font-avenir">
+  <div class="app-container bg-[#1a1a1a] min-h-screen text-white overflow-hidden font-avenir">
     
     <header class="pt-12 pb-6 px-8 border-b border-white/5 text-center">
       <h1 class="text-2xl font-black uppercase leading-none tracking-[0.25em]">BDL B-Cards</h1>
@@ -84,11 +82,11 @@ try {
 
     <div class="py-10 space-y-16 pb-32">
       <section class="px-8 flex flex-col items-center">
-        {reportImagePath ? (
+        {reportImagePath && (
           <div class="w-full md:w-[50%] mx-auto cursor-pointer card-trigger rounded-xl overflow-hidden border border-white/10 shadow-2xl" data-img={reportImagePath}>
-            <img src={reportImagePath} alt="Game Report" class="w-full h-auto block" onerror="this.parentElement.style.display='none'" />
+            <img src={reportImagePath} alt="Game Report" class="w-full h-auto block" onerror="this.style.display='none'" />
           </div>
-        ) : null}
+        )}
         <div class="mt-6 text-center">
           <span class="text-[14px] font-black tracking-[0.2em] uppercase text-blue-500">
             {teamAway} <span class="text-[10px] text-white/40 mx-2 italic">vs</span> {teamHome}
@@ -109,8 +107,10 @@ try {
                 <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-xl" data-img={p.imagePath}>
                   <img src={p.imagePath} alt={p.name} class="w-full h-auto block" loading="lazy" />
                 </div>
-                <div class="mt-4 text-center text-[11px] font-bold tracking-widest text-gray-400 uppercase">
-                  {p.name}
+                <div class="mt-6 px-1">
+                    <div class="w-full inline-flex items-center justify-between px-6 py-4 rounded-full bg-black/40 border border-white/10">
+                        <span class="text-[14px] font-black tracking-[0.15em] uppercase text-white">#{p.no} {p.name}</span>
+                    </div>
                 </div>
               </div>
             ))}
@@ -131,8 +131,10 @@ try {
                 <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-xl" data-img={p.imagePath}>
                   <img src={p.imagePath} alt={p.name} class="w-full h-auto block" loading="lazy" />
                 </div>
-                <div class="mt-4 text-center text-[11px] font-bold tracking-widest text-gray-400 uppercase">
-                  {p.name}
+                <div class="mt-6 px-1">
+                    <div class="w-full inline-flex items-center justify-between px-6 py-4 rounded-full bg-black/40 border border-white/10">
+                        <span class="text-[14px] font-black tracking-[0.15em] uppercase text-white">#{p.no} {p.name}</span>
+                    </div>
                 </div>
               </div>
             ))}
@@ -144,13 +146,7 @@ try {
     <div id="modal" class="fixed inset-0 bg-black/98 z-50 hidden flex-col items-center justify-center p-6 backdrop-blur-md">
       <div class="absolute top-8 right-8 text-white/40 text-4xl font-light cursor-pointer p-4" id="close">&times;</div>
       <img id="modal-img" src="" class="max-w-full max-h-[85vh] shadow-2xl rounded-xl mb-12" />
-      <a id="download-btn" href="" download class="bg-white text-black px-14 py-4 rounded-full font-black uppercase tracking-widest text-[11px]">Download Card</a>
-    </div>
-
-    <div class="fixed bottom-8 left-0 right-0 flex justify-center z-40">
-      <a href="/b-reports" class="bg-white/10 backdrop-blur-md text-white px-8 py-3 rounded-full font-bold text-[10px] uppercase tracking-widest border border-white/10">
-        Back to Archive
-      </a>
+      <a id="download-btn" href="" download class="bg-blue-600 text-white px-14 py-4 rounded-full font-black uppercase tracking-widest text-[11px]">Download Card</a>
     </div>
   </div>
 </Layout>

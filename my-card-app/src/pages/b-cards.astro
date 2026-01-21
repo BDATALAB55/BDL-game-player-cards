@@ -44,24 +44,25 @@ try {
 
       if (Array.isArray(files)) {
         const nameParts = gameDir.split('_');
+        // URLのフォルダ名からチーム名を抽出
         teamAway = nameParts[2] || "AWAY"; 
         teamHome = nameParts[3] || "HOME";
 
         const process = (teamName) => {
-          const upperTeamName = teamName.toUpperCase();
-          // ハイフンを除去したチーム名 (A-CHIBA -> ACHIBA)
-          const cleanTeamName = upperTeamName.replace(/-/g, '');
-          // 特定チームのエイリアス対応 (SR-SHIBUYA -> SHIBUYA)
-          const aliasTeamName = upperTeamName === 'SR-SHIBUYA' ? 'SHIBUYA' : cleanTeamName;
+          // 1. ハイフンを完全に除去 (A-CHIBA -> ACHIBA)
+          let cleanTarget = teamName.toUpperCase().replace(/-/g, '');
           
+          // 2. 特殊ケースの個別対応
+          if (cleanTarget === "SRSHIBUYA") cleanTarget = "SHIBUYA";
+
           return files
             .filter(f => {
               if (!f.name.endsWith('.png')) return false;
-              const upperFileName = f.name.toUpperCase();
+              const fileName = f.name.toUpperCase();
               
-              return upperFileName.includes(upperTeamName) || 
-                     upperFileName.includes(cleanTeamName) ||
-                     upperFileName.includes(aliasTeamName);
+              // ファイル名の先頭がチーム名（ハイフンなし）で始まっているか、
+              // もしくはアンダースコアに囲まれて含まれているかを確認
+              return fileName.startsWith(cleanTarget) || fileName.includes(`_${cleanTarget}_`);
             })
             .map(f => {
               const p = f.name.replace('.png', '').split('_');
@@ -111,7 +112,7 @@ try {
       <section class="px-8 flex flex-col items-center">
         {reportImagePath && (
           <div class="w-full md:w-[60%] mx-auto cursor-pointer card-trigger rounded-xl overflow-hidden border border-white/10 shadow-2xl" data-img={reportImagePath}>
-            <img src={reportImagePath} class="w-full h-auto" onerror="this.closest('section').style.display='none';" />
+            <img src={reportImagePath} class="w-full h-auto" onerror="this.style.display='none';" />
           </div>
         )}
         <div class="mt-6 text-center">
@@ -148,9 +149,9 @@ try {
                 </div>
               ))
             ) : (
-              <div class="px-8 py-10">
-                <div class="text-white/20 text-[10px] tracking-[0.3em] uppercase border border-dashed border-white/10 rounded-xl p-8 text-center">
-                  No Player Cards Found
+              <div class="px-8 w-full">
+                <div class="w-full py-12 border border-dashed border-white/10 rounded-2xl flex items-center justify-center">
+                  <span class="text-white/20 text-[10px] font-black uppercase tracking-[0.4em]">No Player Cards: {team.label}</span>
                 </div>
               </div>
             )}
@@ -168,6 +169,7 @@ try {
 </Layout>
 
 <script>
+  // スクリプト省略（変更なし）
   const modal = document.getElementById('modal');
   const modalImg = document.getElementById('modal-img') as HTMLImageElement;
   const close = document.getElementById('close');
@@ -190,8 +192,3 @@ try {
     modal?.classList.remove('flex');
   });
 </script>
-
-<style is:global>
-  .no-scrollbar::-webkit-scrollbar { display: none; }
-  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-</style>

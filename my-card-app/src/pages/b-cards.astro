@@ -71,7 +71,6 @@ try {
         const process = (teamName) => {
           const upperTeam = teamName.toUpperCase();
           const cleanTeam = upperTeam.replace(/-/g, '');
-          
           const config = TEAM_CONFIG[upperTeam] || TEAM_CONFIG[cleanTeam];
           const searchKeyword = config ? config.file : cleanTeam;
           const displayLabel = config ? config.display : upperTeam;
@@ -82,8 +81,6 @@ try {
               const p = f.name.replace('.png', '').split('_');
               const noIndex = p.findIndex(val => /^\d+$/.test(val));
               const number = noIndex !== -1 ? p[noIndex] : "0";
-              
-              // 選手名の抽出: 日付(20260104等)を除外し、背番号より後のパーツを結合
               let nameParts = noIndex !== -1 ? p.slice(noIndex + 1) : ["PLAYER"];
               const fullName = nameParts.filter(part => !(/^\d{8}$/.test(part))).join(' ');
 
@@ -163,9 +160,10 @@ try {
                   <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-xl bg-black/20" data-img={p.imagePath}>
                     <img src={p.imagePath} alt={p.name} class="w-full h-auto" loading="lazy" />
                   </div>
-                  <div class="mt-4 flex flex-col items-center">
-                     <div class="w-full py-4 rounded-full bg-white/5 border border-white/10 flex items-center justify-center">
-                       <span class="text-[14px] font-black uppercase tracking-widest">{p.name}</span>
+                  <div class="mt-4">
+                     <div class="w-full py-4 px-6 rounded-full bg-white/5 border border-white/10 flex items-center justify-between group cursor-pointer card-trigger" data-img={p.imagePath}>
+                       <span class="text-[13px] font-black uppercase tracking-widest truncate">{p.name}</span>
+                       <span class="text-blue-500 text-lg font-light">›</span>
                      </div>
                   </div>
                 </div>
@@ -173,7 +171,7 @@ try {
             ) : (
               <div class="px-8 w-full">
                 <div class="w-full py-12 border border-dashed border-white/10 rounded-2xl flex items-center justify-center">
-                  <span class="text-white/20 text-[10px] font-black uppercase tracking-[0.4em]">No Player Cards: {team.label}</span>
+                  <span class="text-white/20 text-[10px] font-black uppercase tracking-[0.4em]">No Player Cards</span>
                 </div>
               </div>
             )}
@@ -189,6 +187,17 @@ try {
     </div>
   </div>
 </Layout>
+
+<style>
+  /* スクロールバー非表示の設定 */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
 
 <script>
   const modal = document.getElementById('modal');

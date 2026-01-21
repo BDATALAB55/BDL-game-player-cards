@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500618",
+  "date": "2026.01.20",
+  "venue": "Chase Center",
+  "attendance": 18064,
+  "home": {
+    "id": "1610612744",
+    "total": {
+      "pts": 127,
+      "fgm": 47,
+      "fga": 91,
+      "f2m": 31,
+      "f2a": 48,
+      "f3m": 16,
+      "f3a": 43,
+      "ftm": 17,
+      "fta": 26,
+      "reb": 47,
+      "oreb": 14,
+      "dreb": 22,
+      "ast": 28,
+      "tov": 17,
+      "stl": 7,
+      "blk": 1,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "17:37",
+        "pts": 10,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "22:26",
+        "pts": 6,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "21",
+        "name": "QUINTEN POST",
+        "min": "18:26",
+        "pts": 12,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "2",
+        "name": "BRANDIN PODZIEMSKI",
+        "min": "21:59",
+        "pts": 11,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "24:41",
+        "pts": 16,
+        "reb": 3,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612761",
+    "total": {
+      "pts": 145,
+      "fgm": 51,
+      "fga": 86,
+      "f2m": 30,
+      "f2a": 52,
+      "f3m": 21,
+      "f3a": 34,
+      "ftm": 22,
+      "fta": 22,
+      "reb": 41,
+      "oreb": 9,
+      "dreb": 28,
+      "ast": 42,
+      "tov": 15,
+      "stl": 7,
+      "blk": 3,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "1",
+        "name": "GRADEY DICK",
+        "min": "23:18",
+        "pts": 10,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "36:05",
+        "pts": 22,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "38:52",
+        "pts": 26,
+        "reb": 7,
+        "ast": 11
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "33:36",
+        "pts": 40,
+        "reb": 2,
+        "ast": 10
+      },
+      {
+        "no": "23",
+        "name": "JAMAL SHEAD",
+        "min": "30:18",
+        "pts": 10,
+        "reb": 1,
+        "ast": 8
+      }
+    ]
+  }
+}

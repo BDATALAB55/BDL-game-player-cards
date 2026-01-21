@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500616",
+  "date": "2026.01.20",
+  "venue": "Delta Center",
+  "attendance": 18186,
+  "home": {
+    "id": "1610612762",
+    "total": {
+      "pts": 127,
+      "fgm": 48,
+      "fga": 87,
+      "f2m": 36,
+      "f2a": 58,
+      "f3m": 12,
+      "f3a": 29,
+      "ftm": 19,
+      "fta": 26,
+      "reb": 51,
+      "oreb": 8,
+      "dreb": 37,
+      "ast": 31,
+      "tov": 16,
+      "stl": 8,
+      "blk": 4,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "33:10",
+        "pts": 20,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "CODY WILLIAMS",
+        "min": "28:51",
+        "pts": 8,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "30",
+        "name": "JUSUF NURKIĆ",
+        "min": "30:46",
+        "pts": 16,
+        "reb": 18,
+        "ast": 10
+      },
+      {
+        "no": "10",
+        "name": "SVI MYKHAILIUK",
+        "min": "17:14",
+        "pts": 4,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "39:29",
+        "pts": 43,
+        "reb": 0,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612750",
+    "total": {
+      "pts": 122,
+      "fgm": 44,
+      "fga": 100,
+      "f2m": 30,
+      "f2a": 53,
+      "f3m": 14,
+      "f3a": 47,
+      "ftm": 20,
+      "fta": 27,
+      "reb": 59,
+      "oreb": 15,
+      "dreb": 31,
+      "ast": 28,
+      "tov": 11,
+      "stl": 12,
+      "blk": 6,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JADEN MCDANIELS",
+        "min": "34:55",
+        "pts": 18,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "30",
+        "name": "JULIUS RANDLE",
+        "min": "33:55",
+        "pts": 19,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "27",
+        "name": "RUDY GOBERT",
+        "min": "29:16",
+        "pts": 11,
+        "reb": 10,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "ANTHONY EDWARDS",
+        "min": "39:12",
+        "pts": 38,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "DONTE DIVINCENZO",
+        "min": "33:01",
+        "pts": 15,
+        "reb": 5,
+        "ast": 8
+      }
+    ]
+  }
+}

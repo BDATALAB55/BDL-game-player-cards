@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500617",
+  "date": "2026.01.20",
+  "venue": "Ball Arena",
+  "attendance": 19974,
+  "home": {
+    "id": "1610612743",
+    "total": {
+      "pts": 107,
+      "fgm": 39,
+      "fga": 87,
+      "f2m": 24,
+      "f2a": 50,
+      "f3m": 15,
+      "f3a": 37,
+      "ftm": 14,
+      "fta": 19,
+      "reb": 42,
+      "oreb": 5,
+      "dreb": 26,
+      "ast": 27,
+      "tov": 5,
+      "stl": 6,
+      "blk": 7,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "SPENCER JONES",
+        "min": "36:47",
+        "pts": 16,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "PEYTON WATSON",
+        "min": "37:45",
+        "pts": 18,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "32",
+        "name": "AARON GORDON",
+        "min": "31:51",
+        "pts": 18,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "24",
+        "name": "JALEN PICKETT",
+        "min": "26:13",
+        "pts": 7,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "36:05",
+        "pts": 28,
+        "reb": 2,
+        "ast": 11
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612747",
+    "total": {
+      "pts": 115,
+      "fgm": 42,
+      "fga": 83,
+      "f2m": 32,
+      "f2a": 58,
+      "f3m": 10,
+      "f3a": 25,
+      "ftm": 21,
+      "fta": 32,
+      "reb": 63,
+      "oreb": 10,
+      "dreb": 41,
+      "ast": 24,
+      "tov": 12,
+      "stl": 3,
+      "blk": 2,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "34:25",
+        "pts": 19,
+        "reb": 9,
+        "ast": 8
+      },
+      {
+        "no": "12",
+        "name": "JAKE LARAVIA",
+        "min": "26:45",
+        "pts": 7,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "14:48",
+        "pts": 4,
+        "reb": 8,
+        "ast": 0
+      },
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "31:15",
+        "pts": 15,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "35:39",
+        "pts": 38,
+        "reb": 13,
+        "ast": 10
+      }
+    ]
+  }
+}

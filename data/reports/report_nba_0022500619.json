@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500619",
+  "date": "2026.01.20",
+  "venue": "Golden 1 Center",
+  "attendance": 11381,
+  "home": {
+    "id": "1610612758",
+    "total": {
+      "pts": 117,
+      "fgm": 44,
+      "fga": 87,
+      "f2m": 33,
+      "f2a": 57,
+      "f3m": 11,
+      "f3a": 30,
+      "ftm": 18,
+      "fta": 21,
+      "reb": 54,
+      "oreb": 8,
+      "dreb": 41,
+      "ast": 27,
+      "tov": 15,
+      "stl": 6,
+      "blk": 4,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "34:57",
+        "pts": 23,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "9",
+        "name": "PRECIOUS ACHIUWA",
+        "min": "22:04",
+        "pts": 6,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "17:50",
+        "pts": 7,
+        "reb": 8,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "ZACH LAVINE",
+        "min": "22:14",
+        "pts": 18,
+        "reb": 1,
+        "ast": 5
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "31:13",
+        "pts": 22,
+        "reb": 2,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612748",
+    "total": {
+      "pts": 130,
+      "fgm": 47,
+      "fga": 98,
+      "f2m": 26,
+      "f2a": 56,
+      "f3m": 21,
+      "f3a": 42,
+      "ftm": 15,
+      "fta": 24,
+      "reb": 53,
+      "oreb": 12,
+      "dreb": 34,
+      "ast": 33,
+      "tov": 10,
+      "stl": 6,
+      "blk": 2,
+      "pf": 13
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "26:14",
+        "pts": 16,
+        "reb": 6,
+        "ast": 9
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "29:33",
+        "pts": 19,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "30:21",
+        "pts": 25,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "30:49",
+        "pts": 22,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "19:29",
+        "pts": 6,
+        "reb": 3,
+        "ast": 7
+      }
+    ]
+  }
+}

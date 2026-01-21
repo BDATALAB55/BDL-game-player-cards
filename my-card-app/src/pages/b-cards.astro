@@ -13,9 +13,13 @@ const dateId = segments[0] || "";
 const urlGameDir = segments[1] || ""; 
 
 const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/B1`;
+// ゲームレポートのベースURL
+const reportRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateId}`;
+// APIでフォルダ内のファイル一覧を取得
+const reportApiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/reports/B1/${dateId}`;
+
 const apiParentURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}`;
 
-// チーム名変換・表示辞書（ハイフン強制表示用）
 const TEAM_CONFIG = {
   "ACHIBA": { file: "ALTIRI", display: "A-CHIBA" },
   "A-CHIBA": { file: "ALTIRI", display: "A-CHIBA" },
@@ -51,8 +55,9 @@ try {
   const folders = await parentRes.json();
   
   if (Array.isArray(folders)) {
+    // 1. URLのディレクトリ名（20260104_505093_89ERS_BREX）を取得
     const gameId = urlGameDir.split('_').find(s => s.length === 6 && /^\d+$/.test(s));
-    const targetFolder = folders.find(f => f.type === 'dir' && f.name.includes(gameId));
+    const targetFolder = folders.find(f => f.type === 'dir' && f.name.includes(urlGameDir));
     
     if (targetFolder) {
       gameDir = targetFolder.name;
@@ -71,7 +76,7 @@ try {
           const cleanTeam = upperTeam.replace(/-/g, '');
           const config = TEAM_CONFIG[upperTeam] || TEAM_CONFIG[cleanTeam];
           const searchKeyword = config ? config.file : cleanTeam;
-          const displayLabel = config ? config.display : (upperTeam.includes('-') ? upperTeam : upperTeam); // 基本はそのまま
+          const displayLabel = config ? config.display : upperTeam;
 
           const data = files
             .filter(f => f.name.endsWith('.png') && f.name.toUpperCase().includes(searchKeyword))
@@ -79,15 +84,9 @@ try {
               const p = f.name.replace('.png', '').split('_');
               const noIndex = p.findIndex(val => /^\d+$/.test(val));
               let playerParts = noIndex !== -1 ? p.slice(noIndex + 1) : ["PLAYER"];
-              // 8桁の数字（日付）を除去
               const fullName = playerParts.filter(part => !(/^\d{8}$/.test(part))).join(' ');
-
-              return {
-                name: fullName,
-                imagePath: `${githubRawBase}/${dateId}/${gameDir}/${f.name}`,
-              };
+              return { name: fullName, imagePath: `${githubRawBase}/${dateId}/${gameDir}/${f.name}` };
             });
-            
           return { data, displayLabel };
         };
 
@@ -98,8 +97,20 @@ try {
         homeData = homeResult.data;
         displayTeamHome = homeResult.displayLabel;
         
-        if (gameId) {
-          reportImagePath = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateId}/${gameId}.png`;
+        // --- ゲームレポート画像取得の修正ポイント ---
+        // フォルダ名（20260104_505093_89ERS_BREX）と同じ名前のpngファイルを探す
+        const reportListRes = await fetch(`${reportApiURL}?t=${Date.now()}`, {
+          headers: token ? { "Authorization": `token ${token}` } : {}
+        });
+        const reportFiles = await reportListRes.json();
+        if (Array.isArray(reportFiles)) {
+          // フォルダ名(urlGameDir)と完全一致、またはIDが含まれるpngを検索
+          const matchFile = reportFiles.find(f => 
+            f.name.endsWith('.png') && (f.name.includes(urlGameDir) || (gameId && f.name.includes(gameId)))
+          );
+          if (matchFile) {
+            reportImagePath = `${reportRawBase}/${matchFile.name}`;
+          }
         }
       }
     }
@@ -111,7 +122,6 @@ try {
 
 <Layout title="BDL B-CARDS">
   <div class="app-container bg-[#1a1a1a] min-h-screen text-white overflow-hidden font-avenir">
-    
     <header class="pt-12 pb-6 px-8 border-b border-white/5 text-center">
       <a href="/b-reports" class="inline-block hover:opacity-70 transition-opacity">
         <h1 class="text-2xl font-black uppercase leading-none tracking-[0.25em]">BDL B-Cards</h1>
@@ -120,7 +130,7 @@ try {
     </header>
 
     <div class="py-10 space-y-16 pb-32">
-      <div class="px-8">
+      <div class="px-8 text-center sm:text-left">
         <div class="flex flex-col gap-1">
           <span class="text-gray-500 text-[12px] font-black uppercase tracking-[0.3em]">Gameday</span>
           <span class="text-white text-[28px] font-bold uppercase leading-none tracking-[0.1em]">{formattedDate}</span>
@@ -128,9 +138,13 @@ try {
       </div>
 
       <section class="px-8 flex flex-col items-center">
-        {reportImagePath && (
+        {reportImagePath ? (
           <div class="w-full md:w-[60%] mx-auto cursor-pointer card-trigger rounded-xl overflow-hidden border border-white/10 shadow-2xl" data-img={reportImagePath}>
-            <img src={reportImagePath} class="w-full h-auto" />
+            <img src={reportImagePath} class="w-full h-auto block" alt="Game Report" />
+          </div>
+        ) : (
+          <div class="w-full md:w-[60%] py-20 border border-dashed border-white/10 rounded-xl flex items-center justify-center">
+            <span class="text-white/20 text-[10px] font-black uppercase tracking-widest">Report Image Not Found</span>
           </div>
         )}
         <div class="mt-6 text-center">
@@ -157,7 +171,6 @@ try {
                 <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-xl bg-black/20" data-img={p.imagePath}>
                   <img src={p.imagePath} alt={p.name} class="w-full h-auto" loading="lazy" />
                 </div>
-                
                 <div class="mt-6 px-1">
                   <button class="w-full inline-flex items-center justify-between px-6 py-4 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative active:scale-95 transition-all group overflow-hidden shadow-lg card-trigger" data-img={p.imagePath}>
                     <div class="absolute inset-0 p-[1.5px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10 opacity-60"></div>
@@ -179,35 +192,26 @@ try {
       <img id="modal-img" src="" class="max-w-full max-h-[85vh] shadow-2xl rounded-xl mb-12" />
       <a id="download-btn" href="" download class="bg-white text-black px-14 py-4 rounded-full font-black uppercase tracking-widest text-[11px]">Download Card</a>
     </div>
-
   </div>
 </Layout>
 
 <style is:global>
   @import url('https://fonts.cdnfonts.com/css/avenir-next-lt-pro');
-  
   :root { font-family: 'Avenir Next LT Pro', sans-serif; }
-
-  /* スクロールバーを完全に非表示 */
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 </style>
 
 <script>
   const modal = document.getElementById('modal');
-  const modalImg = document.getElementById('modal-img') as HTMLElement;
+  const modalImg = document.getElementById('modal-img') as HTMLImageElement;
   const close = document.getElementById('close');
   const downloadBtn = document.getElementById('download-btn') as HTMLAnchorElement;
 
   document.querySelectorAll('.card-trigger').forEach(card => {
     card.addEventListener('click', () => {
       const imgSrc = card.getAttribute('data-img');
-      if (imgSrc && modalImg instanceof HTMLImageElement && downloadBtn) {
+      if (imgSrc && modalImg && downloadBtn) {
         modalImg.src = imgSrc;
         downloadBtn.href = imgSrc;
         modal?.classList.remove('hidden');

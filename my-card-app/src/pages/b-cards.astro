@@ -8,39 +8,41 @@ const queryFolder = searchParams.get('folder') || "";
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
-// パス解析 (260104/20260104_505093_89ERS_BREX などの形式に対応)
+// パス解析
 const segments = queryFolder.split('/');
 const dateId = segments[0] || "";  
 const urlGameDir = segments[1] || ""; 
 
 const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/B1`;
-const apiParentURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}`;
+// レポート画像用のベースパス
+const reportsRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateId}`;
 
 let awayData = [];
 let homeData = [];
 let teamHome = "HOME";
 let teamAway = "AWAY";
 let reportImagePath = "";
-let gameDir = ""; // 実際にGitHub上で見つかったフォルダ名
+let gameDir = "";
 
 const formattedDate = dateId ? `20${dateId.substring(0,2)}.${dateId.substring(2,4)}.${dateId.substring(4,6)}` : "NO DATA";
 
 try {
-  // 1. まず日付フォルダの中身を一覧取得して、正しいゲームフォルダを探す
+  // 1. 正しいゲームフォルダを探す
+  const apiParentURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}`;
   const parentRes = await fetch(`${apiParentURL}?t=${Date.now()}`, {
     headers: token ? { "Authorization": `token ${token}` } : {}
   });
   const folders = await parentRes.json();
   
   if (Array.isArray(folders)) {
-    // URLに含まれるGameID (例: 505093) を含むフォルダを特定
+    // GameID (例: 505093) を抽出
     const gameId = urlGameDir.split('_').find(s => s.length === 6 && /^\d+$/.test(s));
     const targetFolder = folders.find(f => f.type === 'dir' && f.name.includes(gameId));
     
     if (targetFolder) {
-      gameDir = targetFolder.name; // game_505093_SENDAI_UTSUNOMIYA_20260104 を取得
+      gameDir = targetFolder.name;
       
-      // 2. 特定したフォルダ内のファイルを取得
+      // 2. 選手ファイル取得
       const filesRes = await fetch(`${targetFolder.url}&t=${Date.now()}`, {
         headers: token ? { "Authorization": `token ${token}` } : {}
       });
@@ -48,8 +50,8 @@ try {
 
       if (Array.isArray(files)) {
         const nameParts = gameDir.split('_');
-        teamAway = nameParts[2] || "AWAY"; // SENDAI
-        teamHome = nameParts[3] || "HOME"; // UTSUNOMIYA
+        teamAway = nameParts[2] || "AWAY"; 
+        teamHome = nameParts[3] || "HOME";
 
         const process = (teamName) => {
           return files
@@ -71,9 +73,9 @@ try {
         awayData = process(teamAway);
         homeData = process(teamHome);
         
-        // レポート画像パス
+        // --- 修正ポイント：ゲームレポート画像の特定 ---
         if (gameId) {
-          reportImagePath = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateId}/${gameId}.png`;
+          reportImagePath = `${reportsRawBase}/${gameId}.png`;
         }
       }
     }
@@ -101,10 +103,17 @@ try {
       </div>
 
       <section class="px-8 flex flex-col items-center">
-        {reportImagePath && (
-          <div class="w-full md:w-[60%] mx-auto cursor-pointer card-trigger rounded-xl overflow-hidden border border-white/10 shadow-2xl" data-img={reportImagePath}>
-            <img src={reportImagePath} class="w-full h-auto" onerror="this.parentElement.style.display='none';" />
+        {reportImagePath ? (
+          <div class="w-full md:w-[60%] mx-auto cursor-pointer card-trigger rounded-xl overflow-hidden border border-white/10 shadow-2xl transition-transform active:scale-95" data-img={reportImagePath}>
+            <img 
+                src={reportImagePath} 
+                alt="Game Report" 
+                class="w-full h-auto block" 
+                onerror="this.closest('section').style.display='none';"
+            />
           </div>
+        ) : (
+          <div class="text-gray-500 text-[10px] tracking-widest uppercase">Report Loading...</div>
         )}
         <div class="mt-6 text-center">
           <span class="text-[16px] font-black tracking-[0.2em] uppercase text-white">
@@ -119,7 +128,7 @@ try {
       ].map((team) => team.data.length > 0 && (
         <section>
           <div class="px-8 mb-6">
-            <span class={`${team.color} px-4 py-1.5 text-[14px] font-black uppercase rounded-sm`}>
+            <span class={`${team.color} px-4 py-1.5 text-[14px] font-black uppercase rounded-sm inline-block`}>
               {team.label}
             </span>
           </div>
@@ -146,7 +155,7 @@ try {
     <div id="modal" class="fixed inset-0 bg-black/95 z-50 hidden flex-col items-center justify-center p-6 backdrop-blur-md">
       <div class="absolute top-8 right-8 text-white/40 text-4xl cursor-pointer" id="close">&times;</div>
       <img id="modal-img" src="" class="max-w-full max-h-[80vh] rounded-lg shadow-2xl mb-8" />
-      <a id="download-btn" href="" download class="bg-white text-black px-10 py-4 rounded-full font-black uppercase text-[12px] tracking-widest">Download Card</a>
+      <a id="download-btn" href="" download class="bg-white text-black px-10 py-4 rounded-full font-black uppercase text-[12px] tracking-widest">Download Image</a>
     </div>
   </div>
 </Layout>
@@ -174,3 +183,8 @@ try {
     modal?.classList.remove('flex');
   });
 </script>
+
+<style is:global>
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>

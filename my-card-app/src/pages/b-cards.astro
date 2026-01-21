@@ -8,14 +8,12 @@ const queryFolder = searchParams.get('folder') || "";
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
-// パス解析
 const segments = queryFolder.split('/');
 const dateId = segments[0] || "";  
 const urlGameDir = segments[1] || ""; 
 
 const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/B1`;
-// レポート画像用のベースパス
-const reportsRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateId}`;
+const apiParentURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}`;
 
 let awayData = [];
 let homeData = [];
@@ -27,22 +25,18 @@ let gameDir = "";
 const formattedDate = dateId ? `20${dateId.substring(0,2)}.${dateId.substring(2,4)}.${dateId.substring(4,6)}` : "NO DATA";
 
 try {
-  // 1. 正しいゲームフォルダを探す
-  const apiParentURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}`;
   const parentRes = await fetch(`${apiParentURL}?t=${Date.now()}`, {
     headers: token ? { "Authorization": `token ${token}` } : {}
   });
   const folders = await parentRes.json();
   
   if (Array.isArray(folders)) {
-    // GameID (例: 505093) を抽出
     const gameId = urlGameDir.split('_').find(s => s.length === 6 && /^\d+$/.test(s));
     const targetFolder = folders.find(f => f.type === 'dir' && f.name.includes(gameId));
     
     if (targetFolder) {
       gameDir = targetFolder.name;
       
-      // 2. 選手ファイル取得
       const filesRes = await fetch(`${targetFolder.url}&t=${Date.now()}`, {
         headers: token ? { "Authorization": `token ${token}` } : {}
       });
@@ -54,8 +48,21 @@ try {
         teamHome = nameParts[3] || "HOME";
 
         const process = (teamName) => {
+          const upperTeamName = teamName.toUpperCase();
+          // ハイフンを除去したチーム名 (A-CHIBA -> ACHIBA)
+          const cleanTeamName = upperTeamName.replace(/-/g, '');
+          // 特定チームのエイリアス対応 (SR-SHIBUYA -> SHIBUYA)
+          const aliasTeamName = upperTeamName === 'SR-SHIBUYA' ? 'SHIBUYA' : cleanTeamName;
+          
           return files
-            .filter(f => f.name.endsWith('.png') && f.name.toUpperCase().includes(teamName.toUpperCase()))
+            .filter(f => {
+              if (!f.name.endsWith('.png')) return false;
+              const upperFileName = f.name.toUpperCase();
+              
+              return upperFileName.includes(upperTeamName) || 
+                     upperFileName.includes(cleanTeamName) ||
+                     upperFileName.includes(aliasTeamName);
+            })
             .map(f => {
               const p = f.name.replace('.png', '').split('_');
               const noIndex = p.findIndex(val => /^\d+$/.test(val));
@@ -73,9 +80,8 @@ try {
         awayData = process(teamAway);
         homeData = process(teamHome);
         
-        // --- 修正ポイント：ゲームレポート画像の特定 ---
         if (gameId) {
-          reportImagePath = `${reportsRawBase}/${gameId}.png`;
+          reportImagePath = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateId}/${gameId}.png`;
         }
       }
     }
@@ -103,17 +109,10 @@ try {
       </div>
 
       <section class="px-8 flex flex-col items-center">
-        {reportImagePath ? (
-          <div class="w-full md:w-[60%] mx-auto cursor-pointer card-trigger rounded-xl overflow-hidden border border-white/10 shadow-2xl transition-transform active:scale-95" data-img={reportImagePath}>
-            <img 
-                src={reportImagePath} 
-                alt="Game Report" 
-                class="w-full h-auto block" 
-                onerror="this.closest('section').style.display='none';"
-            />
+        {reportImagePath && (
+          <div class="w-full md:w-[60%] mx-auto cursor-pointer card-trigger rounded-xl overflow-hidden border border-white/10 shadow-2xl" data-img={reportImagePath}>
+            <img src={reportImagePath} class="w-full h-auto" onerror="this.closest('section').style.display='none';" />
           </div>
-        ) : (
-          <div class="text-gray-500 text-[10px] tracking-widest uppercase">Report Loading...</div>
         )}
         <div class="mt-6 text-center">
           <span class="text-[16px] font-black tracking-[0.2em] uppercase text-white">
@@ -125,7 +124,7 @@ try {
       {[
         { data: awayData, label: teamAway, color: "bg-white text-black" },
         { data: homeData, label: teamHome, color: "bg-blue-600 text-white" }
-      ].map((team) => team.data.length > 0 && (
+      ].map((team) => (
         <section>
           <div class="px-8 mb-6">
             <span class={`${team.color} px-4 py-1.5 text-[14px] font-black uppercase rounded-sm inline-block`}>
@@ -134,19 +133,27 @@ try {
           </div>
 
           <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-8 no-scrollbar pb-8">
-            {team.data.map((p) => (
-              <div class="flex-none w-[80vw] max-w-[320px] snap-center">
-                <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-xl bg-black/20" data-img={p.imagePath}>
-                  <img src={p.imagePath} alt={p.name} class="w-full h-auto" loading="lazy" />
+            {team.data.length > 0 ? (
+              team.data.map((p) => (
+                <div class="flex-none w-[80vw] max-w-[320px] snap-center">
+                  <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-xl bg-black/20" data-img={p.imagePath}>
+                    <img src={p.imagePath} alt={p.name} class="w-full h-auto" loading="lazy" />
+                  </div>
+                  <div class="mt-4 flex flex-col items-center">
+                     <div class="w-full py-4 rounded-full bg-white/5 border border-white/10 flex items-center justify-center gap-3">
+                       <span class="text-blue-500 font-black italic text-lg">#{p.no}</span>
+                       <span class="text-[14px] font-black uppercase tracking-widest">{p.name}</span>
+                     </div>
+                  </div>
                 </div>
-                <div class="mt-4 flex flex-col items-center">
-                   <div class="w-full py-4 rounded-full bg-white/5 border border-white/10 flex items-center justify-center gap-3">
-                     <span class="text-blue-500 font-black italic text-lg">#{p.no}</span>
-                     <span class="text-[14px] font-black uppercase tracking-widest">{p.name}</span>
-                   </div>
+              ))
+            ) : (
+              <div class="px-8 py-10">
+                <div class="text-white/20 text-[10px] tracking-[0.3em] uppercase border border-dashed border-white/10 rounded-xl p-8 text-center">
+                  No Player Cards Found
                 </div>
               </div>
-            ))}
+            )}
           </div>
         </section>
       ))}

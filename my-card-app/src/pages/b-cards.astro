@@ -15,6 +15,23 @@ const urlGameDir = segments[1] || "";
 const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/B1`;
 const apiParentURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}`;
 
+// 【重要】URLのチーム名と、実際のファイル名の「ズレ」を直す辞書
+const TEAM_NAME_MAP = {
+  "ACHIBA": "ALTIRI",
+  "A-CHIBA": "ALTIRI",
+  "CHIBAJ": "JETS",
+  "CHIBA-J": "JETS",
+  "SR-SHIBUYA": "SHIBUYA",
+  "ATOKYO": "ALVARK",
+  "A-TOKYO": "ALVARK",
+  "SANEN": "NEOPHOENIX",
+  "SAN-EN": "NEOPHOENIX",
+  "NAGOYAD": "DIAMOND",
+  "NAGOYA-D": "DIAMOND",
+  "FENAGOYA": "FIGHTING",
+  "FE-NAGOYA": "FIGHTING"
+};
+
 let awayData = [];
 let homeData = [];
 let teamHome = "HOME";
@@ -36,7 +53,6 @@ try {
     
     if (targetFolder) {
       gameDir = targetFolder.name;
-      
       const filesRes = await fetch(`${targetFolder.url}&t=${Date.now()}`, {
         headers: token ? { "Authorization": `token ${token}` } : {}
       });
@@ -44,25 +60,22 @@ try {
 
       if (Array.isArray(files)) {
         const nameParts = gameDir.split('_');
-        // URLのフォルダ名からチーム名を抽出
         teamAway = nameParts[2] || "AWAY"; 
         teamHome = nameParts[3] || "HOME";
 
         const process = (teamName) => {
-          // 1. ハイフンを完全に除去 (A-CHIBA -> ACHIBA)
-          let cleanTarget = teamName.toUpperCase().replace(/-/g, '');
+          const upperTeam = teamName.toUpperCase();
+          const cleanTeam = upperTeam.replace(/-/g, '');
           
-          // 2. 特殊ケースの個別対応
-          if (cleanTarget === "SRSHIBUYA") cleanTarget = "SHIBUYA";
+          // 辞書にあれば変換、なければそのまま（ハイフンなし）を使用
+          const searchKeyword = TEAM_NAME_MAP[upperTeam] || TEAM_NAME_MAP[cleanTeam] || cleanTeam;
 
           return files
             .filter(f => {
               if (!f.name.endsWith('.png')) return false;
               const fileName = f.name.toUpperCase();
-              
-              // ファイル名の先頭がチーム名（ハイフンなし）で始まっているか、
-              // もしくはアンダースコアに囲まれて含まれているかを確認
-              return fileName.startsWith(cleanTarget) || fileName.includes(`_${cleanTarget}_`);
+              // ファイル名の中にキーワードが含まれているかチェック
+              return fileName.includes(searchKeyword);
             })
             .map(f => {
               const p = f.name.replace('.png', '').split('_');
@@ -159,7 +172,7 @@ try {
         </section>
       ))}
     </div>
-
+    
     <div id="modal" class="fixed inset-0 bg-black/95 z-50 hidden flex-col items-center justify-center p-6 backdrop-blur-md">
       <div class="absolute top-8 right-8 text-white/40 text-4xl cursor-pointer" id="close">&times;</div>
       <img id="modal-img" src="" class="max-w-full max-h-[80vh] rounded-lg shadow-2xl mb-8" />
@@ -169,7 +182,6 @@ try {
 </Layout>
 
 <script>
-  // スクリプト省略（変更なし）
   const modal = document.getElementById('modal');
   const modalImg = document.getElementById('modal-img') as HTMLImageElement;
   const close = document.getElementById('close');

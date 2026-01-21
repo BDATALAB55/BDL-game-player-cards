@@ -15,27 +15,32 @@ const urlGameDir = segments[1] || "";
 const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/B1`;
 const apiParentURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}`;
 
-// 【重要】URLのチーム名と、実際のファイル名の「ズレ」を直す辞書
-const TEAM_NAME_MAP = {
-  "ACHIBA": "ALTIRI",
-  "A-CHIBA": "ALTIRI",
-  "CHIBAJ": "JETS",
-  "CHIBA-J": "JETS",
-  "SR-SHIBUYA": "SHIBUYA",
-  "ATOKYO": "ALVARK",
-  "A-TOKYO": "ALVARK",
-  "SANEN": "NEOPHOENIX",
-  "SAN-EN": "NEOPHOENIX",
-  "NAGOYAD": "DIAMOND",
-  "NAGOYA-D": "DIAMOND",
-  "FENAGOYA": "FIGHTING",
-  "FE-NAGOYA": "FIGHTING"
+// チーム名変換・表示辞書
+const TEAM_CONFIG = {
+  "ACHIBA": { file: "ALTIRI", display: "A-CHIBA" },
+  "A-CHIBA": { file: "ALTIRI", display: "A-CHIBA" },
+  "CHIBAJ": { file: "JETS", display: "CHIBA-J" },
+  "CHIBA-J": { file: "JETS", display: "CHIBA-J" },
+  "ATOKYO": { file: "ALVARK", display: "A-TOKYO" },
+  "A-TOKYO": { file: "ALVARK", display: "A-TOKYO" },
+  "SHIBUYA": { file: "SHIBUYA", display: "SR-SHIBUYA" },
+  "SR-SHIBUYA": { file: "SHIBUYA", display: "SR-SHIBUYA" },
+  "SANEN": { file: "NEOPHOENIX", display: "SAN-EN" },
+  "SAN-EN": { file: "NEOPHOENIX", display: "SAN-EN" },
+  "NAGOYAD": { file: "DIAMOND", display: "NAGOYA-D" },
+  "NAGOYA-D": { file: "DIAMOND", display: "NAGOYA-D" },
+  "FENAGOYA": { file: "FIGHTING", display: "FE-NAGOYA" },
+  "FE-NAGOYA": { file: "FIGHTING", display: "FE-NAGOYA" },
+  "YOKOHAMA-BC": { file: "YOKOHAMA", display: "YOKOHAMA-BC" },
+  "YOKOHAMABC": { file: "YOKOHAMA", display: "YOKOHAMA-BC" }
 };
 
 let awayData = [];
 let homeData = [];
 let teamHome = "HOME";
 let teamAway = "AWAY";
+let displayTeamHome = "HOME";
+let displayTeamAway = "AWAY";
 let reportImagePath = "";
 let gameDir = "";
 
@@ -67,21 +72,20 @@ try {
           const upperTeam = teamName.toUpperCase();
           const cleanTeam = upperTeam.replace(/-/g, '');
           
-          // 辞書にあれば変換、なければそのまま（ハイフンなし）を使用
-          const searchKeyword = TEAM_NAME_MAP[upperTeam] || TEAM_NAME_MAP[cleanTeam] || cleanTeam;
+          const config = TEAM_CONFIG[upperTeam] || TEAM_CONFIG[cleanTeam];
+          const searchKeyword = config ? config.file : cleanTeam;
+          const displayLabel = config ? config.display : upperTeam;
 
-          return files
-            .filter(f => {
-              if (!f.name.endsWith('.png')) return false;
-              const fileName = f.name.toUpperCase();
-              // ファイル名の中にキーワードが含まれているかチェック
-              return fileName.includes(searchKeyword);
-            })
+          const data = files
+            .filter(f => f.name.endsWith('.png') && f.name.toUpperCase().includes(searchKeyword))
             .map(f => {
               const p = f.name.replace('.png', '').split('_');
               const noIndex = p.findIndex(val => /^\d+$/.test(val));
               const number = noIndex !== -1 ? p[noIndex] : "0";
-              const fullName = noIndex !== -1 ? p.slice(noIndex + 1).join(' ') : "PLAYER";
+              
+              // 選手名の抽出: 日付(20260104等)を除外し、背番号より後のパーツを結合
+              let nameParts = noIndex !== -1 ? p.slice(noIndex + 1) : ["PLAYER"];
+              const fullName = nameParts.filter(part => !(/^\d{8}$/.test(part))).join(' ');
 
               return {
                 no: number,
@@ -89,10 +93,16 @@ try {
                 imagePath: `${githubRawBase}/${dateId}/${gameDir}/${f.name}`,
               };
             }).sort((a, b) => parseInt(a.no) - parseInt(b.no));
+            
+          return { data, displayLabel };
         };
 
-        awayData = process(teamAway);
-        homeData = process(teamHome);
+        const awayResult = process(teamAway);
+        const homeResult = process(teamHome);
+        awayData = awayResult.data;
+        displayTeamAway = awayResult.displayLabel;
+        homeData = homeResult.data;
+        displayTeamHome = homeResult.displayLabel;
         
         if (gameId) {
           reportImagePath = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateId}/${gameId}.png`;
@@ -130,14 +140,14 @@ try {
         )}
         <div class="mt-6 text-center">
           <span class="text-[16px] font-black tracking-[0.2em] uppercase text-white">
-            {teamAway} <span class="text-blue-500 mx-2">VS</span> {teamHome}
+            {displayTeamAway} <span class="text-blue-500 mx-2">VS</span> {displayTeamHome}
           </span>
         </div>
       </section>
 
       {[
-        { data: awayData, label: teamAway, color: "bg-white text-black" },
-        { data: homeData, label: teamHome, color: "bg-blue-600 text-white" }
+        { data: awayData, label: displayTeamAway, color: "bg-white text-black" },
+        { data: homeData, label: displayTeamHome, color: "bg-blue-600 text-white" }
       ].map((team) => (
         <section>
           <div class="px-8 mb-6">
@@ -154,8 +164,7 @@ try {
                     <img src={p.imagePath} alt={p.name} class="w-full h-auto" loading="lazy" />
                   </div>
                   <div class="mt-4 flex flex-col items-center">
-                     <div class="w-full py-4 rounded-full bg-white/5 border border-white/10 flex items-center justify-center gap-3">
-                       <span class="text-blue-500 font-black italic text-lg">#{p.no}</span>
+                     <div class="w-full py-4 rounded-full bg-white/5 border border-white/10 flex items-center justify-center">
                        <span class="text-[14px] font-black uppercase tracking-widest">{p.name}</span>
                      </div>
                   </div>
@@ -172,7 +181,7 @@ try {
         </section>
       ))}
     </div>
-    
+
     <div id="modal" class="fixed inset-0 bg-black/95 z-50 hidden flex-col items-center justify-center p-6 backdrop-blur-md">
       <div class="absolute top-8 right-8 text-white/40 text-4xl cursor-pointer" id="close">&times;</div>
       <img id="modal-img" src="" class="max-w-full max-h-[80vh] rounded-lg shadow-2xl mb-8" />

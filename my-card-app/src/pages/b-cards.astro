@@ -13,11 +13,7 @@ const dateId = segments[0] || "";
 const urlGameDir = segments[1] || ""; 
 
 const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/B1`;
-// ゲームレポートのベースURL
 const reportRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateId}`;
-// APIでフォルダ内のファイル一覧を取得
-const reportApiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/reports/B1/${dateId}`;
-
 const apiParentURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}`;
 
 const TEAM_CONFIG = {
@@ -55,9 +51,9 @@ try {
   const folders = await parentRes.json();
   
   if (Array.isArray(folders)) {
-    // 1. URLのディレクトリ名（20260104_505093_89ERS_BREX）を取得
+    // 1. フォルダ判定を柔軟に（IDが含まれていればOK）
     const gameId = urlGameDir.split('_').find(s => s.length === 6 && /^\d+$/.test(s));
-    const targetFolder = folders.find(f => f.type === 'dir' && f.name.includes(urlGameDir));
+    const targetFolder = folders.find(f => f.name.includes(urlGameDir) || (gameId && f.name.includes(gameId)));
     
     if (targetFolder) {
       gameDir = targetFolder.name;
@@ -97,21 +93,9 @@ try {
         homeData = homeResult.data;
         displayTeamHome = homeResult.displayLabel;
         
-        // --- ゲームレポート画像取得の修正ポイント ---
-        // フォルダ名（20260104_505093_89ERS_BREX）と同じ名前のpngファイルを探す
-        const reportListRes = await fetch(`${reportApiURL}?t=${Date.now()}`, {
-          headers: token ? { "Authorization": `token ${token}` } : {}
-        });
-        const reportFiles = await reportListRes.json();
-        if (Array.isArray(reportFiles)) {
-          // フォルダ名(urlGameDir)と完全一致、またはIDが含まれるpngを検索
-          const matchFile = reportFiles.find(f => 
-            f.name.endsWith('.png') && (f.name.includes(urlGameDir) || (gameId && f.name.includes(gameId)))
-          );
-          if (matchFile) {
-            reportImagePath = `${reportRawBase}/${matchFile.name}`;
-          }
-        }
+        // --- 2. ゲームレポートのファイル名を直接指定 ---
+        // 教えていただいた通り フォルダ名.png の形式でパスを作成
+        reportImagePath = `${reportRawBase}/${urlGameDir}.png`;
       }
     }
   }
@@ -122,6 +106,7 @@ try {
 
 <Layout title="BDL B-CARDS">
   <div class="app-container bg-[#1a1a1a] min-h-screen text-white overflow-hidden font-avenir">
+    
     <header class="pt-12 pb-6 px-8 border-b border-white/5 text-center">
       <a href="/b-reports" class="inline-block hover:opacity-70 transition-opacity">
         <h1 class="text-2xl font-black uppercase leading-none tracking-[0.25em]">BDL B-Cards</h1>
@@ -130,7 +115,7 @@ try {
     </header>
 
     <div class="py-10 space-y-16 pb-32">
-      <div class="px-8 text-center sm:text-left">
+      <div class="px-8">
         <div class="flex flex-col gap-1">
           <span class="text-gray-500 text-[12px] font-black uppercase tracking-[0.3em]">Gameday</span>
           <span class="text-white text-[28px] font-bold uppercase leading-none tracking-[0.1em]">{formattedDate}</span>
@@ -140,13 +125,9 @@ try {
       <section class="px-8 flex flex-col items-center">
         {reportImagePath ? (
           <div class="w-full md:w-[60%] mx-auto cursor-pointer card-trigger rounded-xl overflow-hidden border border-white/10 shadow-2xl" data-img={reportImagePath}>
-            <img src={reportImagePath} class="w-full h-auto block" alt="Game Report" />
+            <img src={reportImagePath} class="w-full h-auto block" alt="Game Report" onerror="this.parentElement.style.display='none'" />
           </div>
-        ) : (
-          <div class="w-full md:w-[60%] py-20 border border-dashed border-white/10 rounded-xl flex items-center justify-center">
-            <span class="text-white/20 text-[10px] font-black uppercase tracking-widest">Report Image Not Found</span>
-          </div>
-        )}
+        ) : null}
         <div class="mt-6 text-center">
           <span class="text-[16px] font-black tracking-[0.2em] uppercase text-white">
             {displayTeamAway} <span class="text-blue-500 mx-2 text-[12px]">vs</span> {displayTeamHome}
@@ -166,22 +147,30 @@ try {
           </div>
 
           <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-8 no-scrollbar pb-8">
-            {team.data.map((p) => (
-              <div class="flex-none w-[80vw] max-w-[320px] snap-center">
-                <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-xl bg-black/20" data-img={p.imagePath}>
-                  <img src={p.imagePath} alt={p.name} class="w-full h-auto" loading="lazy" />
+            {team.data.length > 0 ? (
+              team.data.map((p) => (
+                <div class="flex-none w-[80vw] max-w-[320px] snap-center">
+                  <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-xl bg-black/20" data-img={p.imagePath}>
+                    <img src={p.imagePath} alt={p.name} class="w-full h-auto" loading="lazy" />
+                  </div>
+                  <div class="mt-6 px-1">
+                    <button class="w-full inline-flex items-center justify-between px-6 py-4 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative active:scale-95 transition-all group overflow-hidden shadow-lg card-trigger" data-img={p.imagePath}>
+                      <div class="absolute inset-0 p-[1.5px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10 opacity-60"></div>
+                      <span class="text-[13px] font-black tracking-[0.15em] uppercase text-white truncate">{p.name}</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="text-white/40 group-hover:text-white transition-colors" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                      </svg>
+                    </button>
+                  </div>
                 </div>
-                <div class="mt-6 px-1">
-                  <button class="w-full inline-flex items-center justify-between px-6 py-4 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative active:scale-95 transition-all group overflow-hidden shadow-lg card-trigger" data-img={p.imagePath}>
-                    <div class="absolute inset-0 p-[1.5px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10 opacity-60"></div>
-                    <span class="text-[13px] font-black tracking-[0.15em] uppercase text-white truncate">{p.name}</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="text-white/40 group-hover:text-white transition-colors" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                    </svg>
-                  </button>
+              ))
+            ) : (
+               <div class="px-8 w-full">
+                <div class="w-full py-12 border border-dashed border-white/10 rounded-2xl flex items-center justify-center">
+                  <span class="text-white/20 text-[10px] font-black uppercase tracking-[0.4em]">No Player Cards</span>
                 </div>
               </div>
-            ))}
+            )}
           </div>
         </section>
       ))}
@@ -208,18 +197,22 @@ try {
   const close = document.getElementById('close');
   const downloadBtn = document.getElementById('download-btn') as HTMLAnchorElement;
 
-  document.querySelectorAll('.card-trigger').forEach(card => {
-    card.addEventListener('click', () => {
-      const imgSrc = card.getAttribute('data-img');
-      if (imgSrc && modalImg && downloadBtn) {
-        modalImg.src = imgSrc;
-        downloadBtn.href = imgSrc;
-        modal?.classList.remove('hidden');
-        modal?.classList.add('flex');
-      }
+  function setupTriggers() {
+    document.querySelectorAll('.card-trigger').forEach(card => {
+      card.addEventListener('click', (e) => {
+        e.preventDefault();
+        const imgSrc = card.getAttribute('data-img');
+        if (imgSrc && modalImg && downloadBtn) {
+          modalImg.src = imgSrc;
+          downloadBtn.href = imgSrc;
+          modal?.classList.remove('hidden');
+          modal?.classList.add('flex');
+        }
+      });
     });
-  });
+  }
 
+  setupTriggers();
   close?.addEventListener('click', () => {
     modal?.classList.add('hidden');
     modal?.classList.remove('flex');

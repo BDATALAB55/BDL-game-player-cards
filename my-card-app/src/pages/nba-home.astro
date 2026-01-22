@@ -1,7 +1,64 @@
 ---
+export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
-// チームリスト：サイズアップに合わせて調整
+// --- GitHub API 設定 (アーカイブ側から移植) ---
+const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
+const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
+const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/NBA`;
+const token = process.env.GITHUB_TOKEN;
+
+let reportGroups = [];
+
+try {
+  const res = await fetch(RECURSIVE_API, {
+    headers: token ? { "Authorization": `token ${token}`, "Accept": "application/vnd.github.v3+json" } : { "Accept": "application/vnd.github.v3+json" }
+  });
+  const data = await res.json();
+
+  if (data.tree) {
+    const allFiles = data.tree.filter(item => 
+      item.path.includes('output/reports/NBA/') && item.path.toLowerCase().endsWith('.png')
+    );
+
+    const groups = {};
+    allFiles.forEach(file => {
+      const pathParts = file.path.split('/');
+      const nbaIndex = pathParts.indexOf('NBA');
+      if (nbaIndex === -1 || pathParts.length <= nbaIndex + 2) return;
+
+      const folderName = pathParts[nbaIndex + 1]; // 例: 260121
+      const fileName = pathParts[nbaIndex + 2];
+      if (!/^\d+$/.test(folderName)) return;
+
+      const nameParts = fileName.replace('.png', '').split('_');
+      const gameId = nameParts[2] || "";
+      const fullDate = nameParts[1] || "";
+      const teamA = nameParts[nameParts.length - 2] || "AWAY";
+      const teamB = nameParts[nameParts.length - 1] || "HOME";
+
+      if (!groups[folderName]) {
+        groups[folderName] = {
+          id: folderName,
+          date: `20${folderName.substring(0,2)}.${folderName.substring(2,4)}.${folderName.substring(4,6)}`,
+          reports: []
+        };
+      }
+      groups[folderName].reports.push({
+        path: `${IMAGE_BASE_URL}/${folderName}/${fileName}`,
+        away: teamA,
+        home: teamB,
+        link: `/nba-cards?folder=${folderName}/NBA_Cards_${gameId}_${fullDate}`
+      });
+    });
+    // 日付順にソートして最新を取得
+    reportGroups = Object.values(groups).sort((a, b) => b.id.localeCompare(a.id));
+  }
+} catch (e) {
+  console.error("Fetch Error:", e);
+}
+
+// チームリスト
 const teams = [
   { id: 'ATL', color: 'bg-[#E03A3E]' }, { id: 'BOS', color: 'bg-[#007A33]' },
   { id: 'BKN', color: 'bg-black border border-white/20' }, { id: 'CHA', color: 'bg-[#1D1160]' },
@@ -19,31 +76,23 @@ const teams = [
   { id: 'SAS', color: 'bg-black border border-white/20' }, { id: 'TOR', color: 'bg-[#CE1141]' },
   { id: 'UTA', color: 'bg-[#002B5C]' }, { id: 'WAS', color: 'bg-[#002B5C]' },
 ];
-
-// ゲームレポート（画像パスは実際の保存場所に合わせて調整してください）
-const reports = [
-  { id: "20260120_PHX_PHI", away: "PHX", home: "PHI", img: "https://raw.githubusercontent.com/BDATALAB55/BDL-game-player-cards/main/output/reports/NBA/20260120_PHX_PHI.png" },
-  { id: "20260120_CHI_LAC", away: "CHI", home: "LAC", img: "https://raw.githubusercontent.com/BDATALAB55/BDL-game-player-cards/main/output/reports/NBA/20260120_CHI_LAC.png" },
-  { id: "20260120_HOU_SAS", away: "HOU", home: "SAS", img: "https://raw.githubusercontent.com/BDATALAB55/BDL-game-player-cards/main/output/reports/NBA/20260120_HOU_SAS.png" },
-];
 ---
 
 <Layout title="NBA HOME | B-Data Lab">
-  <main class="bg-[#222222] min-h-screen text-white font-avenir pb-20">
+  <main class="bg-[#222222] min-h-screen text-white font-sans pb-20 overflow-x-hidden">
     
     <header class="pt-16 pb-8 text-center px-6">
       <h1 class="text-7xl font-black tracking-tighter italic uppercase">NBA</h1>
-      <div class="h-[15px] w-full max-w-5xl mx-auto bg-[#333333] mt-4 border-b border-white/5"></div>
+      <div class="h-[15px] w-full max-w-5xl mx-auto bg-[#333333] mt-4"></div>
     </header>
 
     <div class="max-w-6xl mx-auto px-6">
-      
       <section class="mt-12">
-        <h2 class="text-3xl font-black uppercase tracking-wider mb-8">TEAM</h2>
+        <h2 class="text-3xl font-black uppercase tracking-wider mb-8 italic">TEAM</h2>
         <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-y-5 gap-x-4">
           {teams.map(t => (
             <div class="flex justify-center">
-              <button class={`${t.color} w-[100px] h-[45px] rounded-full text-[14px] font-black tracking-wider shadow-xl hover:scale-110 transition-transform italic`}>
+              <button class={`${t.color} w-[105px] h-[45px] rounded-full text-[13px] font-black tracking-wider shadow-xl hover:scale-110 transition-transform italic`}>
                 {t.id}
               </button>
             </div>
@@ -52,31 +101,38 @@ const reports = [
       </section>
 
       <section class="mt-24">
-        <h2 class="text-4xl font-black uppercase tracking-wider mb-2">GAME REPORT</h2>
-        <p class="text-[11px] font-bold text-blue-500 tracking-[0.2em] mb-10">LATEST UPDATE <span class="ml-2 text-white/60">2026.01.20</span></p>
+        <h2 class="text-4xl font-black uppercase tracking-tight mb-4">GAME REPORT</h2>
+        
+        <div class="mb-10">
+          <div class="flex flex-col gap-1">
+            <span class="text-blue-500 text-[10px] font-black uppercase tracking-[0.3em]">Latest Update</span>
+            <span class="text-white text-[32px] font-bold uppercase leading-none tracking-[0.05em]">
+              {reportGroups.length > 0 ? reportGroups[0].date : "LOADING..."}
+            </span>
+          </div>
+        </div>
 
         <div class="flex overflow-x-auto gap-8 no-scrollbar snap-x pb-4">
-          {reports.map(r => (
-            <div class="flex-none w-[300px] snap-center">
-              <div class="rounded-xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 bg-black/20 aspect-[2/3]">
-                <img 
-                  src={r.img} 
-                  alt={`${r.away} vs ${r.home}`} 
-                  class="w-full h-full object-cover" 
-                  onerror="this.src='https://placehold.jp/24/333333/ffffff/400x600.png?text=REPORT%0ACOMING%20SOON'"
-                />
-              </div>
-              <div class="mt-6 flex justify-center">
-                <div class="bg-black/80 px-6 py-2 rounded-full border border-white/10 text-[11px] font-black uppercase tracking-[0.2em]">
-                  {r.away} <span class="text-blue-500 mx-1">vs</span> {r.home}
+          {reportGroups.length > 0 ? (
+            reportGroups[0].reports.map(r => (
+              <div class="flex-none w-[300px] snap-center">
+                <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-black/40 aspect-[3/4.2]">
+                  <img src={r.path} alt="Report" class="w-full h-full object-cover" />
+                </div>
+                <div class="mt-6 flex justify-center">
+                  <div class="bg-black/80 px-6 py-2 rounded-full border border-white/10 text-[11px] font-black uppercase tracking-[0.2em]">
+                    {r.away} <span class="text-blue-500 mx-1">vs</span> {r.home}
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))
+          ) : (
+            <div class="text-gray-500 italic">No reports found.</div>
+          )}
         </div>
 
         <div class="mt-16 flex justify-center">
-          <a href="/nba-reports" class="bg-[#CE1141] hover:bg-red-700 text-white px-12 py-5 rounded-full text-sm font-black uppercase tracking-[0.25em] shadow-2xl transition-all active:scale-95 inline-block">
+          <a href="/nba-reports" class="bg-[#CE1141] hover:bg-red-700 text-white px-12 py-5 rounded-full text-sm font-black uppercase tracking-[0.25em] shadow-2xl transition-all">
             Game Report Archive
           </a>
         </div>
@@ -84,29 +140,17 @@ const reports = [
 
       <section class="mt-32">
         <h2 class="text-4xl font-black uppercase tracking-tighter mb-10 italic">STANDING</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <button class="bg-[#555555] py-5 rounded-xl text-black font-black uppercase tracking-widest text-left px-10 hover:bg-gray-300 transition-colors shadow-lg">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl">
+          <button class="bg-[#555555] py-5 rounded-xl text-black font-black uppercase tracking-widest text-left px-10 hover:bg-gray-300 transition-colors">
             Eastern Conference
           </button>
-          <button class="bg-[#555555] py-5 rounded-xl text-black font-black uppercase tracking-widest text-left px-10 hover:bg-gray-300 transition-colors shadow-lg">
+          <button class="bg-[#555555] py-5 rounded-xl text-black font-black uppercase tracking-widest text-left px-10 hover:bg-gray-300 transition-colors">
             Western Conference
           </button>
         </div>
       </section>
 
-      <section class="mt-24 mb-20">
-        <h2 class="text-4xl font-black uppercase tracking-tighter mb-10 italic">Today's RANK10</h2>
-        <div class="flex gap-4">
-          <button class="bg-[#555555] px-10 py-4 rounded-xl text-black font-black uppercase tracking-widest text-sm shadow-lg">PTS</button>
-          <button class="bg-[#555555] px-10 py-4 rounded-xl text-black font-black uppercase tracking-widest text-sm shadow-lg">REB</button>
-        </div>
-      </section>
-
     </div>
-
-    <footer class="py-12 text-center opacity-20 border-t border-white/5">
-      <p class="text-[10px] font-black tracking-[0.5em] uppercase">B-Data Lab / NBA Portal</p>
-    </footer>
   </main>
 </Layout>
 

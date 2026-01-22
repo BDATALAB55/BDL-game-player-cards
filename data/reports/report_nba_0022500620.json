@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500620",
+  "date": "2026.01.21",
+  "venue": "Spectrum Center",
+  "attendance": 17619,
+  "home": {
+    "id": "1610612766",
+    "total": {
+      "pts": 87,
+      "fgm": 33,
+      "fga": 98,
+      "f2m": 25,
+      "f2a": 51,
+      "f3m": 8,
+      "f3a": 47,
+      "ftm": 13,
+      "fta": 18,
+      "reb": 60,
+      "oreb": 17,
+      "dreb": 30,
+      "ast": 20,
+      "tov": 12,
+      "stl": 12,
+      "blk": 4,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "31:26",
+        "pts": 21,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "MILES BRIDGES",
+        "min": "26:00",
+        "pts": 11,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "14",
+        "name": "MOUSSA DIABATÉ",
+        "min": "29:10",
+        "pts": 4,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "24",
+        "name": "BRANDON MILLER",
+        "min": "33:59",
+        "pts": 24,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "SION JAMES",
+        "min": "21:39",
+        "pts": 0,
+        "reb": 1,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612739",
+    "total": {
+      "pts": 94,
+      "fgm": 34,
+      "fga": 87,
+      "f2m": 26,
+      "f2a": 47,
+      "f3m": 8,
+      "f3a": 40,
+      "ftm": 18,
+      "fta": 24,
+      "reb": 71,
+      "oreb": 17,
+      "dreb": 43,
+      "ast": 20,
+      "tov": 20,
+      "stl": 6,
+      "blk": 8,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "DEAN WADE",
+        "min": "27:07",
+        "pts": 4,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "35:31",
+        "pts": 14,
+        "reb": 14,
+        "ast": 0
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "34:37",
+        "pts": 13,
+        "reb": 9,
+        "ast": 0
+      },
+      {
+        "no": "20",
+        "name": "JAYLON TYSON",
+        "min": "30:38",
+        "pts": 14,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "37:29",
+        "pts": 24,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  }
+}

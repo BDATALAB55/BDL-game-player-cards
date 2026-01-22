@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500626",
+  "date": "2026.01.21",
+  "venue": "Golden 1 Center",
+  "attendance": 16182,
+  "home": {
+    "id": "1610612758",
+    "total": {
+      "pts": 109,
+      "fgm": 41,
+      "fga": 88,
+      "f2m": 32,
+      "f2a": 55,
+      "f3m": 9,
+      "f3a": 33,
+      "ftm": 18,
+      "fta": 22,
+      "reb": 53,
+      "oreb": 12,
+      "dreb": 33,
+      "ast": 25,
+      "tov": 14,
+      "stl": 6,
+      "blk": 6,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "33:19",
+        "pts": 9,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "PRECIOUS ACHIUWA",
+        "min": "20:43",
+        "pts": 11,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "22:08",
+        "pts": 8,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "ZACH LAVINE",
+        "min": "37:33",
+        "pts": 19,
+        "reb": 1,
+        "ast": 5
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "34:31",
+        "pts": 23,
+        "reb": 3,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612761",
+    "total": {
+      "pts": 122,
+      "fgm": 43,
+      "fga": 94,
+      "f2m": 30,
+      "f2a": 61,
+      "f3m": 13,
+      "f3a": 33,
+      "ftm": 23,
+      "fta": 25,
+      "reb": 52,
+      "oreb": 15,
+      "dreb": 32,
+      "ast": 30,
+      "tov": 10,
+      "stl": 11,
+      "blk": 3,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "34:41",
+        "pts": 23,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "31:51",
+        "pts": 23,
+        "reb": 8,
+        "ast": 7
+      },
+      {
+        "no": "54",
+        "name": "SANDRO MAMUKELASHVILI",
+        "min": "32:20",
+        "pts": 22,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "23",
+        "name": "JAMAL SHEAD",
+        "min": "33:12",
+        "pts": 15,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "35:42",
+        "pts": 18,
+        "reb": 6,
+        "ast": 8
+      }
+    ]
+  }
+}

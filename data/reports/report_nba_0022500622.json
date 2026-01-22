@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500622",
+  "date": "2026.01.21",
+  "venue": "Madison Square Garden",
+  "attendance": 19812,
+  "home": {
+    "id": "1610612752",
+    "total": {
+      "pts": 120,
+      "fgm": 46,
+      "fga": 80,
+      "f2m": 30,
+      "f2a": 48,
+      "f3m": 16,
+      "f3a": 32,
+      "ftm": 12,
+      "fta": 17,
+      "reb": 63,
+      "oreb": 8,
+      "dreb": 48,
+      "ast": 28,
+      "tov": 12,
+      "stl": 10,
+      "blk": 6,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "29:51",
+        "pts": 5,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "25:13",
+        "pts": 11,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "20:19",
+        "pts": 14,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "24:33",
+        "pts": 11,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "30:32",
+        "pts": 20,
+        "reb": 4,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612751",
+    "total": {
+      "pts": 66,
+      "fgm": 23,
+      "fga": 79,
+      "f2m": 12,
+      "f2a": 39,
+      "f3m": 11,
+      "f3a": 40,
+      "ftm": 9,
+      "fta": 13,
+      "reb": 36,
+      "oreb": 4,
+      "dreb": 23,
+      "ast": 15,
+      "tov": 14,
+      "stl": 5,
+      "blk": 4,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "25:31",
+        "pts": 12,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "23:19",
+        "pts": 8,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "23:15",
+        "pts": 4,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "4",
+        "name": "DRAKE POWELL",
+        "min": "25:13",
+        "pts": 6,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "20:52",
+        "pts": 6,
+        "reb": 1,
+        "ast": 3
+      }
+    ]
+  }
+}

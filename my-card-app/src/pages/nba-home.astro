@@ -1,0 +1,106 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// イメージ通りのチームリストとカラー
+const teams = [
+  { id: 'ATL', color: 'bg-[#E03A3E]' }, { id: 'BOS', color: 'bg-[#007A33]' },
+  { id: 'BKN', color: 'bg-black border border-white/20' }, { id: 'CHA', color: 'bg-[#1D1160]' },
+  { id: 'CHI', color: 'bg-[#CE1141]' }, { id: 'CLE', color: 'bg-[#6F263D]' },
+  { id: 'DAL', color: 'bg-[#00538C]' }, { id: 'DEN', color: 'bg-[#0E2240]' },
+  { id: 'DET', color: 'bg-[#C8102E]' }, { id: 'GSW', color: 'bg-[#1D428A]' },
+  { id: 'HOU', color: 'bg-[#CE1141]' }, { id: 'IND', color: 'bg-[#FDB927] text-black' },
+  { id: 'LAC', color: 'bg-[#1D428A]' }, { id: 'LAL', color: 'bg-[#552583]' },
+  { id: 'MEM', color: 'bg-[#5D76A9]' }, { id: 'MIA', color: 'bg-[#98002E]' },
+  { id: 'MIL', color: 'bg-[#00471B]' }, { id: 'MIN', color: 'bg-[#0C2340]' },
+  { id: 'NOP', color: 'bg-[#0C2340]' }, { id: 'NYK', color: 'bg-[#F58426]' },
+  { id: 'OKC', color: 'bg-[#007AC1]' }, { id: 'ORL', color: 'bg-[#0077C0]' },
+  { id: 'PHI', color: 'bg-[#006BB6]' }, { id: 'PHX', color: 'bg-[#1D1160]' },
+  { id: 'POR', color: 'bg-[#E03A3E]' }, { id: 'SAC', color: 'bg-[#5A2D81]' },
+  { id: 'SAS', color: 'bg-black border border-white/20' }, { id: 'TOR', color: 'bg-[#CE1141]' },
+  { id: 'UTA', color: 'bg-[#002B5C]' }, { id: 'WAS', color: 'bg-[#002B5C]' },
+];
+
+const reports = [
+  { id: "1", away: "PHX", home: "PHI", img: "/api/placeholder/400/600" },
+  { id: "2", away: "CHI", home: "LAC", img: "/api/placeholder/400/600" },
+  { id: "3", away: "HOU", home: "SAS", img: "/api/placeholder/400/600" },
+];
+---
+
+<Layout title="NBA HOME | B-Data Lab">
+  <main class="bg-[#333333] min-h-screen text-white font-avenir pb-20">
+    
+    <header class="pt-16 pb-8 text-center">
+      <h1 class="text-7xl font-black tracking-tighter italic">NBA</h1>
+      <div class="h-[15px] w-full max-w-4xl mx-auto bg-[#555555] mt-4"></div>
+    </header>
+
+    <div class="max-w-5xl mx-auto px-6">
+      
+      <section class="mt-12">
+        <h2 class="text-3xl font-black uppercase tracking-wider mb-8">TEAM</h2>
+        <div class="grid grid-cols-5 sm:grid-cols-5 md:grid-cols-5 gap-y-4 gap-x-2">
+          {teams.map(t => (
+            <div class="flex justify-center">
+              <button class={`${t.color} w-[65px] h-[35px] rounded-full text-[13px] font-black tracking-wider shadow-xl hover:scale-110 transition-transform italic`}>
+                {t.id}
+              </button>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section class="mt-24">
+        <h2 class="text-3xl font-black uppercase tracking-wider mb-2">GAME REPORT</h2>
+        <p class="text-[10px] font-bold text-blue-400 tracking-[0.2em] mb-8">LATEST UPDATE <span class="ml-1 text-white">2026.01.20</span></p>
+
+        <div class="flex overflow-x-auto gap-6 no-scrollbar snap-x pb-4">
+          {reports.map(r => (
+            <div class="flex-none w-[280px] snap-center">
+              <div class="rounded-xl overflow-hidden shadow-2xl border border-white/10">
+                <img src={r.img} alt="Report" class="w-full h-auto" />
+              </div>
+              <div class="mt-4 flex justify-center">
+                <div class="bg-black/80 px-5 py-1.5 rounded-full border border-white/20 text-[10px] font-black uppercase tracking-[0.2em]">
+                  {r.away} <span class="text-blue-500 mx-1">vs</span> {r.home}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div class="mt-12 flex justify-center">
+          <a href="/nba-game" class="bg-[#CE1141] hover:bg-red-700 text-white px-10 py-4 rounded-full text-sm font-black uppercase tracking-widest shadow-lg transition-all active:scale-95">
+            Game Report Archive
+          </a>
+        </div>
+      </section>
+
+      <section class="mt-24">
+        <h2 class="text-4xl font-black uppercase tracking-tighter mb-8 italic">STANDING</h2>
+        <div class="space-y-4 max-w-md">
+          <button class="w-full bg-[#888888] py-4 rounded-lg text-black font-black uppercase tracking-widest text-left px-8 hover:bg-gray-300 transition-colors">
+            Eastern Conference
+          </button>
+          <button class="w-full bg-[#888888] py-4 rounded-lg text-black font-black uppercase tracking-widest text-left px-8 hover:bg-gray-300 transition-colors">
+            Western Conference
+          </button>
+        </div>
+      </section>
+
+      <section class="mt-24">
+        <h2 class="text-4xl font-black uppercase tracking-tighter mb-8 italic text-white/90">Today's RANK10</h2>
+        <div class="flex gap-4">
+          <button class="bg-[#888888] px-8 py-3 rounded-lg text-black font-black uppercase tracking-widest text-sm">PTS</button>
+          <button class="bg-[#888888] px-8 py-3 rounded-lg text-black font-black uppercase tracking-widest text-sm">REB</button>
+        </div>
+      </section>
+
+    </div>
+  </main>
+</Layout>
+
+<style>
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>

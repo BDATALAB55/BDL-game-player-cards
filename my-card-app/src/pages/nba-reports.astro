@@ -55,7 +55,6 @@ try {
         };
       }
 
-      // 【重要修正】詳細ページが期待するフォルダ形式に合わせたリンク生成
       groups[folderName].reports.push({
         path: `${IMAGE_BASE_URL}/${folderName}/${fileName}`,
         away: teamA,
@@ -78,7 +77,7 @@ const availableDates = reportGroups.map(g => g.id);
   <div class="bg-[#373A36] min-h-screen text-white font-avenir overflow-x-hidden">
     
     <header class="pt-12 pb-6 px-8 text-center border-b border-white/5">
-      <a href="/" class="hover:opacity-70 transition-opacity">
+      <a href="/nba-home" class="hover:opacity-70 transition-opacity">
         <h1 class="text-2xl font-black uppercase leading-none tracking-[0.25em]">GAME REPORT</h1>
       </a>
     </header>
@@ -124,9 +123,9 @@ const availableDates = reportGroups.map(g => g.id);
       </div>
     </section>
 
-    <div class="fixed bottom-8 left-0 right-0 flex justify-center z-40 pointer-events-none">
-      <a href="/" class="pointer-events-auto bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 transition-transform border border-white/10">
-        Back to Home
+    <div class="fixed bottom-8 right-8 z-40 pointer-events-none">
+      <a href="/nba-home" class="pointer-events-auto bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 transition-transform border border-white/10">
+        Back to NBA Home
       </a>
     </div>
   </div>

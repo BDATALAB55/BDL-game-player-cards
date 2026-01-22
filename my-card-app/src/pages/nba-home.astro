@@ -2,26 +2,33 @@
 export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
-// --- GitHub API 設定 (アーカイブ側から移植) ---
+// --- 設定値 (アーカイブ側と共通) ---
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
 const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/NBA`;
+
 const token = process.env.GITHUB_TOKEN;
 
 let reportGroups = [];
 
 try {
   const res = await fetch(RECURSIVE_API, {
-    headers: token ? { "Authorization": `token ${token}`, "Accept": "application/vnd.github.v3+json" } : { "Accept": "application/vnd.github.v3+json" }
+    headers: token ? { 
+      "Authorization": `token ${token}`,
+      "Accept": "application/vnd.github.v3+json",
+      "Cache-Control": "no-cache"
+    } : { "Accept": "application/vnd.github.v3+json" }
   });
   const data = await res.json();
 
   if (data.tree) {
     const allFiles = data.tree.filter(item => 
-      item.path.includes('output/reports/NBA/') && item.path.toLowerCase().endsWith('.png')
+      item.path.includes('output/reports/NBA/') && 
+      item.path.toLowerCase().endsWith('.png')
     );
 
     const groups = {};
+
     allFiles.forEach(file => {
       const pathParts = file.path.split('/');
       const nbaIndex = pathParts.indexOf('NBA');
@@ -29,11 +36,12 @@ try {
 
       const folderName = pathParts[nbaIndex + 1]; // 例: 260121
       const fileName = pathParts[nbaIndex + 2];
+
       if (!/^\d+$/.test(folderName)) return;
 
       const nameParts = fileName.replace('.png', '').split('_');
+      const fullDate = nameParts[1] || ""; 
       const gameId = nameParts[2] || "";
-      const fullDate = nameParts[1] || "";
       const teamA = nameParts[nameParts.length - 2] || "AWAY";
       const teamB = nameParts[nameParts.length - 1] || "HOME";
 
@@ -44,6 +52,8 @@ try {
           reports: []
         };
       }
+
+      // リンク生成ロジックをアーカイブ側と完全に一致させる
       groups[folderName].reports.push({
         path: `${IMAGE_BASE_URL}/${folderName}/${fileName}`,
         away: teamA,
@@ -51,14 +61,15 @@ try {
         link: `/nba-cards?folder=${folderName}/NBA_Cards_${gameId}_${fullDate}`
       });
     });
-    // 日付順にソートして最新を取得
+
+    // 最新順に並び替え
     reportGroups = Object.values(groups).sort((a, b) => b.id.localeCompare(a.id));
   }
 } catch (e) {
   console.error("Fetch Error:", e);
 }
 
-// チームリスト
+// チームボタン用のデータ
 const teams = [
   { id: 'ATL', color: 'bg-[#E03A3E]' }, { id: 'BOS', color: 'bg-[#007A33]' },
   { id: 'BKN', color: 'bg-black border border-white/20' }, { id: 'CHA', color: 'bg-[#1D1160]' },
@@ -79,14 +90,15 @@ const teams = [
 ---
 
 <Layout title="NBA HOME | B-Data Lab">
-  <main class="bg-[#222222] min-h-screen text-white font-sans pb-20 overflow-x-hidden">
+  <main class="bg-[#373A36] min-h-screen text-white font-avenir pb-20 overflow-x-hidden">
     
     <header class="pt-16 pb-8 text-center px-6">
       <h1 class="text-7xl font-black tracking-tighter italic uppercase">NBA</h1>
-      <div class="h-[15px] w-full max-w-5xl mx-auto bg-[#333333] mt-4"></div>
+      <div class="h-[15px] w-full max-w-5xl mx-auto bg-black/20 mt-4 border-b border-white/5"></div>
     </header>
 
     <div class="max-w-6xl mx-auto px-6">
+      
       <section class="mt-12">
         <h2 class="text-3xl font-black uppercase tracking-wider mb-8 italic">TEAM</h2>
         <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-y-5 gap-x-4">
@@ -101,7 +113,7 @@ const teams = [
       </section>
 
       <section class="mt-24">
-        <h2 class="text-4xl font-black uppercase tracking-tight mb-4">GAME REPORT</h2>
+        <h2 class="text-4xl font-black uppercase tracking-tight mb-4 italic">GAME REPORT</h2>
         
         <div class="mb-10">
           <div class="flex flex-col gap-1">
@@ -119,10 +131,14 @@ const teams = [
                 <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-black/40 aspect-[3/4.2]">
                   <img src={r.path} alt="Report" class="w-full h-full object-cover" />
                 </div>
+                
                 <div class="mt-6 flex justify-center">
-                  <div class="bg-black/80 px-6 py-2 rounded-full border border-white/10 text-[11px] font-black uppercase tracking-[0.2em]">
-                    {r.away} <span class="text-blue-500 mx-1">vs</span> {r.home}
-                  </div>
+                  <a href={r.link} class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative active:scale-95 transition-all group overflow-hidden">
+                    <div class="absolute inset-0 p-[2px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10"></div>
+                    <span class="text-[12px] font-black tracking-[0.2em] uppercase text-white">
+                      {r.away} <span class="text-[9px] font-medium lowercase tracking-normal mx-1 text-white/50 italic px-1">vs</span> {r.home}
+                    </span>
+                  </a>
                 </div>
               </div>
             ))
@@ -141,10 +157,10 @@ const teams = [
       <section class="mt-32">
         <h2 class="text-4xl font-black uppercase tracking-tighter mb-10 italic">STANDING</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl">
-          <button class="bg-[#555555] py-5 rounded-xl text-black font-black uppercase tracking-widest text-left px-10 hover:bg-gray-300 transition-colors">
+          <button class="bg-black/20 py-5 rounded-xl text-white/80 font-black uppercase tracking-widest text-left px-10 hover:bg-white/10 transition-colors border border-white/5">
             Eastern Conference
           </button>
-          <button class="bg-[#555555] py-5 rounded-xl text-black font-black uppercase tracking-widest text-left px-10 hover:bg-gray-300 transition-colors">
+          <button class="bg-black/20 py-5 rounded-xl text-white/80 font-black uppercase tracking-widest text-left px-10 hover:bg-white/10 transition-colors border border-white/5">
             Western Conference
           </button>
         </div>

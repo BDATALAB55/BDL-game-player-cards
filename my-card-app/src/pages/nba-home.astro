@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
-// イメージ通りのチームリストとカラー
+// チームリスト：サイズアップに合わせて調整
 const teams = [
   { id: 'ATL', color: 'bg-[#E03A3E]' }, { id: 'BOS', color: 'bg-[#007A33]' },
   { id: 'BKN', color: 'bg-black border border-white/20' }, { id: 'CHA', color: 'bg-[#1D1160]' },
@@ -20,29 +20,30 @@ const teams = [
   { id: 'UTA', color: 'bg-[#002B5C]' }, { id: 'WAS', color: 'bg-[#002B5C]' },
 ];
 
+// ゲームレポート（画像パスは実際の保存場所に合わせて調整してください）
 const reports = [
-  { id: "1", away: "PHX", home: "PHI", img: "/api/placeholder/400/600" },
-  { id: "2", away: "CHI", home: "LAC", img: "/api/placeholder/400/600" },
-  { id: "3", away: "HOU", home: "SAS", img: "/api/placeholder/400/600" },
+  { id: "20260120_PHX_PHI", away: "PHX", home: "PHI", img: "https://raw.githubusercontent.com/BDATALAB55/BDL-game-player-cards/main/output/reports/NBA/20260120_PHX_PHI.png" },
+  { id: "20260120_CHI_LAC", away: "CHI", home: "LAC", img: "https://raw.githubusercontent.com/BDATALAB55/BDL-game-player-cards/main/output/reports/NBA/20260120_CHI_LAC.png" },
+  { id: "20260120_HOU_SAS", away: "HOU", home: "SAS", img: "https://raw.githubusercontent.com/BDATALAB55/BDL-game-player-cards/main/output/reports/NBA/20260120_HOU_SAS.png" },
 ];
 ---
 
 <Layout title="NBA HOME | B-Data Lab">
-  <main class="bg-[#333333] min-h-screen text-white font-avenir pb-20">
+  <main class="bg-[#222222] min-h-screen text-white font-avenir pb-20">
     
-    <header class="pt-16 pb-8 text-center">
-      <h1 class="text-7xl font-black tracking-tighter italic">NBA</h1>
-      <div class="h-[15px] w-full max-w-4xl mx-auto bg-[#555555] mt-4"></div>
+    <header class="pt-16 pb-8 text-center px-6">
+      <h1 class="text-7xl font-black tracking-tighter italic uppercase">NBA</h1>
+      <div class="h-[15px] w-full max-w-5xl mx-auto bg-[#333333] mt-4 border-b border-white/5"></div>
     </header>
 
-    <div class="max-w-5xl mx-auto px-6">
+    <div class="max-w-6xl mx-auto px-6">
       
       <section class="mt-12">
         <h2 class="text-3xl font-black uppercase tracking-wider mb-8">TEAM</h2>
-        <div class="grid grid-cols-5 sm:grid-cols-5 md:grid-cols-5 gap-y-4 gap-x-2">
+        <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-y-5 gap-x-4">
           {teams.map(t => (
             <div class="flex justify-center">
-              <button class={`${t.color} w-[65px] h-[35px] rounded-full text-[13px] font-black tracking-wider shadow-xl hover:scale-110 transition-transform italic`}>
+              <button class={`${t.color} w-[100px] h-[45px] rounded-full text-[14px] font-black tracking-wider shadow-xl hover:scale-110 transition-transform italic`}>
                 {t.id}
               </button>
             </div>
@@ -51,17 +52,22 @@ const reports = [
       </section>
 
       <section class="mt-24">
-        <h2 class="text-3xl font-black uppercase tracking-wider mb-2">GAME REPORT</h2>
-        <p class="text-[10px] font-bold text-blue-400 tracking-[0.2em] mb-8">LATEST UPDATE <span class="ml-1 text-white">2026.01.20</span></p>
+        <h2 class="text-4xl font-black uppercase tracking-wider mb-2">GAME REPORT</h2>
+        <p class="text-[11px] font-bold text-blue-500 tracking-[0.2em] mb-10">LATEST UPDATE <span class="ml-2 text-white/60">2026.01.20</span></p>
 
-        <div class="flex overflow-x-auto gap-6 no-scrollbar snap-x pb-4">
+        <div class="flex overflow-x-auto gap-8 no-scrollbar snap-x pb-4">
           {reports.map(r => (
-            <div class="flex-none w-[280px] snap-center">
-              <div class="rounded-xl overflow-hidden shadow-2xl border border-white/10">
-                <img src={r.img} alt="Report" class="w-full h-auto" />
+            <div class="flex-none w-[300px] snap-center">
+              <div class="rounded-xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 bg-black/20 aspect-[2/3]">
+                <img 
+                  src={r.img} 
+                  alt={`${r.away} vs ${r.home}`} 
+                  class="w-full h-full object-cover" 
+                  onerror="this.src='https://placehold.jp/24/333333/ffffff/400x600.png?text=REPORT%0ACOMING%20SOON'"
+                />
               </div>
-              <div class="mt-4 flex justify-center">
-                <div class="bg-black/80 px-5 py-1.5 rounded-full border border-white/20 text-[10px] font-black uppercase tracking-[0.2em]">
+              <div class="mt-6 flex justify-center">
+                <div class="bg-black/80 px-6 py-2 rounded-full border border-white/10 text-[11px] font-black uppercase tracking-[0.2em]">
                   {r.away} <span class="text-blue-500 mx-1">vs</span> {r.home}
                 </div>
               </div>
@@ -69,34 +75,38 @@ const reports = [
           ))}
         </div>
 
-        <div class="mt-12 flex justify-center">
-          <a href="/nba-game" class="bg-[#CE1141] hover:bg-red-700 text-white px-10 py-4 rounded-full text-sm font-black uppercase tracking-widest shadow-lg transition-all active:scale-95">
+        <div class="mt-16 flex justify-center">
+          <a href="/nba-reports" class="bg-[#CE1141] hover:bg-red-700 text-white px-12 py-5 rounded-full text-sm font-black uppercase tracking-[0.25em] shadow-2xl transition-all active:scale-95 inline-block">
             Game Report Archive
           </a>
         </div>
       </section>
 
-      <section class="mt-24">
-        <h2 class="text-4xl font-black uppercase tracking-tighter mb-8 italic">STANDING</h2>
-        <div class="space-y-4 max-w-md">
-          <button class="w-full bg-[#888888] py-4 rounded-lg text-black font-black uppercase tracking-widest text-left px-8 hover:bg-gray-300 transition-colors">
+      <section class="mt-32">
+        <h2 class="text-4xl font-black uppercase tracking-tighter mb-10 italic">STANDING</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <button class="bg-[#555555] py-5 rounded-xl text-black font-black uppercase tracking-widest text-left px-10 hover:bg-gray-300 transition-colors shadow-lg">
             Eastern Conference
           </button>
-          <button class="w-full bg-[#888888] py-4 rounded-lg text-black font-black uppercase tracking-widest text-left px-8 hover:bg-gray-300 transition-colors">
+          <button class="bg-[#555555] py-5 rounded-xl text-black font-black uppercase tracking-widest text-left px-10 hover:bg-gray-300 transition-colors shadow-lg">
             Western Conference
           </button>
         </div>
       </section>
 
-      <section class="mt-24">
-        <h2 class="text-4xl font-black uppercase tracking-tighter mb-8 italic text-white/90">Today's RANK10</h2>
+      <section class="mt-24 mb-20">
+        <h2 class="text-4xl font-black uppercase tracking-tighter mb-10 italic">Today's RANK10</h2>
         <div class="flex gap-4">
-          <button class="bg-[#888888] px-8 py-3 rounded-lg text-black font-black uppercase tracking-widest text-sm">PTS</button>
-          <button class="bg-[#888888] px-8 py-3 rounded-lg text-black font-black uppercase tracking-widest text-sm">REB</button>
+          <button class="bg-[#555555] px-10 py-4 rounded-xl text-black font-black uppercase tracking-widest text-sm shadow-lg">PTS</button>
+          <button class="bg-[#555555] px-10 py-4 rounded-xl text-black font-black uppercase tracking-widest text-sm shadow-lg">REB</button>
         </div>
       </section>
 
     </div>
+
+    <footer class="py-12 text-center opacity-20 border-t border-white/5">
+      <p class="text-[10px] font-black tracking-[0.5em] uppercase">B-Data Lab / NBA Portal</p>
+    </footer>
   </main>
 </Layout>
 

@@ -34,7 +34,7 @@ try {
       const nbaIndex = pathParts.indexOf('NBA');
       if (nbaIndex === -1 || pathParts.length <= nbaIndex + 2) return;
 
-      const folderName = pathParts[nbaIndex + 1]; // 例: 260121
+      const folderName = pathParts[nbaIndex + 1]; 
       const fileName = pathParts[nbaIndex + 2];
 
       if (!/^\d+$/.test(folderName)) return;
@@ -53,7 +53,6 @@ try {
         };
       }
 
-      // リンク生成ロジックをアーカイブ側と完全に一致させる
       groups[folderName].reports.push({
         path: `${IMAGE_BASE_URL}/${folderName}/${fileName}`,
         away: teamA,
@@ -62,14 +61,12 @@ try {
       });
     });
 
-    // 最新順に並び替え
     reportGroups = Object.values(groups).sort((a, b) => b.id.localeCompare(a.id));
   }
 } catch (e) {
   console.error("Fetch Error:", e);
 }
 
-// チームボタン用のデータ
 const teams = [
   { id: 'ATL', color: 'bg-[#E03A3E]' }, { id: 'BOS', color: 'bg-[#007A33]' },
   { id: 'BKN', color: 'bg-black border border-white/20' }, { id: 'CHA', color: 'bg-[#00788C]' },
@@ -112,7 +109,7 @@ const teams = [
         </div>
       </section>
 
-      <section class="mt-24">
+      <section class="mt-24 relative">
         <h2 class="text-4xl font-black uppercase tracking-tight mb-4 italic">GAME REPORT</h2>
         
         <div class="mb-10">
@@ -147,8 +144,8 @@ const teams = [
           )}
         </div>
 
-        <div class="mt-16 flex justify-center">
-          <a href="/nba-reports" class="bg-[#CE1141] hover:bg-red-700 text-white px-12 py-5 rounded-full text-sm font-black uppercase tracking-[0.25em] shadow-2xl transition-all">
+        <div class="mt-12 flex justify-end">
+          <a href="/nba-reports" class="bg-[#CE1141] hover:bg-red-700 text-white px-8 py-4 rounded-full text-[11px] font-black uppercase tracking-[0.2em] shadow-2xl transition-all">
             Game Report Archive
           </a>
         </div>
@@ -156,12 +153,12 @@ const teams = [
 
       <section class="mt-32">
         <h2 class="text-4xl font-black uppercase tracking-tighter mb-10 italic">STANDING</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl">
-          <button class="bg-black/20 py-5 rounded-xl text-white/80 font-black uppercase tracking-widest text-left px-10 hover:bg-white/10 transition-colors border border-white/5">
-            Eastern Conference
+        <div class="grid grid-cols-2 gap-3 max-w-sm">
+          <button class="bg-black/20 py-4 rounded-xl text-white/80 text-[12px] font-black uppercase tracking-widest text-center hover:bg-white/10 transition-colors border border-white/5">
+            Eastern
           </button>
-          <button class="bg-black/20 py-5 rounded-xl text-white/80 font-black uppercase tracking-widest text-left px-10 hover:bg-white/10 transition-colors border border-white/5">
-            Western Conference
+          <button class="bg-black/20 py-4 rounded-xl text-white/80 text-[12px] font-black uppercase tracking-widest text-center hover:bg-white/10 transition-colors border border-white/5">
+            Western
           </button>
         </div>
       </section>

@@ -87,7 +87,7 @@ const teams = [
 ---
 
 <Layout title="NBA HOME | B-Data Lab">
-  <main class="bg-[#373A36] min-h-screen text-white font-avenir pb-20 overflow-x-hidden">
+  <main class="bg-[#373A36] min-h-screen text-white font-avenir pb-20 overflow-x-hidden relative">
     
     <header class="pt-16 pb-8 text-center px-6">
       <h1 class="text-7xl font-black tracking-tighter italic uppercase">NBA</h1>
@@ -163,6 +163,12 @@ const teams = [
         </div>
       </section>
 
+    </div>
+
+    <div class="fixed bottom-8 right-8 z-40 pointer-events-none">
+      <a href="/" class="pointer-events-auto bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 hover:scale-105 transition-all border border-white/10">
+        Back to Home
+      </a>
     </div>
   </main>
 </Layout>

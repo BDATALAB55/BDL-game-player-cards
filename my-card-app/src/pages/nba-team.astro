@@ -1,0 +1,179 @@
+---
+export const prerender = false;
+import Layout from '../layouts/Layout.astro';
+
+// --- URLからチームIDを取得 (例: /nba-team?team=LAL) ---
+const { searchParams } = Astro.url;
+const teamId = searchParams.get('team') || 'LAL';
+
+// --- チーム名マッピング (都市名 + チーム名) ---
+const teamInfo = {
+  ATL: { city: "Atlanta", name: "Hawks", color: "bg-[#E03A3E]" },
+  BOS: { city: "Boston", name: "Celtics", color: "bg-[#007A33]" },
+  BKN: { city: "Brooklyn", name: "Nets", color: "bg-black" },
+  CHA: { city: "Charlotte", name: "Hornets", color: "bg-[#00788C]" },
+  CHI: { city: "Chicago", name: "Bulls", color: "bg-[#CE1141]" },
+  CLE: { city: "Cleveland", name: "Cavaliers", color: "bg-[#6F263D]" },
+  DAL: { city: "Dallas", name: "Mavericks", color: "bg-[#0053BC]" },
+  DEN: { city: "Denver", name: "Nuggets", color: "bg-[#0E2240]" },
+  DET: { city: "Detroit", name: "Pistons", color: "bg-[#1D428A]" },
+  GSW: { city: "Golden State", name: "Warriors", color: "bg-[#006BB6]" },
+  HOU: { city: "Houston", name: "Rockets", color: "bg-[#CE1141]" },
+  IND: { city: "Indiana", name: "Pacers", color: "bg-[#002D62]" },
+  LAC: { city: "LA", name: "Clippers", color: "bg-[#12173F]" },
+  LAL: { city: "Los Angeles", name: "Lakers", color: "bg-[#552583]" },
+  MEM: { city: "Memphis", name: "Grizzlies", color: "bg-[#5D76A9]" },
+  MIA: { city: "Miami", name: "Heat", color: "bg-[#98002E]" },
+  MIL: { city: "Milwaukee", name: "Bucks", color: "bg-[#00471B]" },
+  MIN: { city: "Minnesota", name: "Timberwolves", color: "bg-[#0C2340]" },
+  NOP: { city: "New Orleans", name: "Pelicans", color: "bg-[#0C2340]" },
+  NYK: { city: "New York", name: "Knicks", color: "bg-[#F58426]" },
+  OKC: { city: "Oklahoma City", name: "Thunder", color: "bg-[#007AC1]" },
+  ORL: { city: "Orlando", name: "Magic", color: "bg-[#0077C0]" },
+  PHI: { city: "Philadelphia", name: "76ers", color: "bg-[#006BB6]" },
+  PHX: { city: "Phoenix", name: "Suns", color: "bg-[#1D1160]" },
+  POR: { city: "Portland", name: "Trail Blazers", color: "bg-[#E03A3E]" },
+  SAC: { city: "Sacramento", name: "Kings", color: "bg-[#5A2D81]" },
+  SAS: { city: "San Antonio", name: "Spurs", color: "bg-black" },
+  TOR: { city: "Toronto", name: "Raptors", color: "bg-[#CE1141]" },
+  UTA: { city: "Utah", name: "Jazz", color: "bg-[#002B5C]" },
+  WAS: { city: "Washington", name: "Wizards", color: "bg-[#002B5C]" },
+};
+
+const currentTeam = teamInfo[teamId] || { city: "NBA", name: "TEAM", color: "bg-gray-800" };
+
+// --- データ取得 ---
+const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
+const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
+const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/NBA`;
+const token = process.env.GITHUB_TOKEN;
+
+let teamReports = [];
+
+try {
+  const res = await fetch(RECURSIVE_API, {
+    headers: token ? { "Authorization": `token ${token}` } : {}
+  });
+  const data = await res.json();
+
+  if (data.tree) {
+    const allFiles = data.tree.filter(item => 
+      item.path.includes('output/reports/NBA/') && 
+      item.path.toLowerCase().endsWith('.png')
+    );
+
+    allFiles.forEach(file => {
+      const pathParts = file.path.split('/');
+      const folderName = pathParts[pathParts.indexOf('NBA') + 1];
+      const fileName = pathParts[pathParts.indexOf('NBA') + 2];
+      const nameParts = fileName.replace('.png', '').split('_');
+      
+      const gameId = nameParts[2] || "";
+      const fullDate = nameParts[1] || "";
+      const teamA = nameParts[nameParts.length - 2];
+      const teamB = nameParts[nameParts.length - 1];
+
+      // 選択されたチームが含まれる試合だけを抽出
+      if (teamA === teamId || teamB === teamId) {
+        teamReports.push({
+          folderId: folderName,
+          date: `20${folderName.substring(0,2)}.${folderName.substring(2,4)}.${folderName.substring(4,6)}`,
+          path: `${IMAGE_BASE_URL}/${folderName}/${fileName}`,
+          away: teamA,
+          home: teamB,
+          link: `/nba-cards?folder=${folderName}/NBA_Cards_${gameId}_${fullDate}`
+        });
+      }
+    });
+
+    // 日付順に並び替え
+    teamReports.sort((a, b) => b.folderId.localeCompare(a.folderId));
+  }
+} catch (e) {
+  console.error(e);
+}
+---
+
+<Layout title={`${teamId} | B-Data Lab`}>
+  <main class="bg-[#373A36] min-h-screen text-white font-avenir pb-20 overflow-x-hidden relative">
+    
+    <header class="pt-20 pb-12 text-center px-6 relative">
+      <div class="absolute top-10 left-1/2 -translate-x-1/2 text-[120px] font-black opacity-5 select-none italic uppercase tracking-tighter w-full leading-none">
+        {currentTeam.name}
+      </div>
+      <div class="relative z-10">
+        <p class="text-blue-500 font-black tracking-[0.5em] uppercase text-sm mb-2 italic">{currentTeam.city}</p>
+        <h1 class="text-7xl md:text-8xl font-black tracking-tighter italic uppercase leading-tight">
+          {currentTeam.name}
+        </h1>
+      </div>
+      <div class="h-[2px] w-24 mx-auto bg-white/20 mt-8"></div>
+    </header>
+
+    <div class="max-w-6xl mx-auto px-6">
+      
+      <section class="mt-16">
+        <div class="flex justify-between items-end mb-10">
+          <div>
+            <h2 class="text-3xl font-black uppercase tracking-tight italic">Game Reports</h2>
+            <p class="text-white/40 text-[10px] font-bold tracking-widest uppercase mt-1">Filtered by {teamId}</p>
+          </div>
+          <div class="text-right">
+            <span class="text-4xl font-black italic opacity-20">{teamReports.length}</span>
+            <span class="text-[10px] font-bold block opacity-40 uppercase tracking-widest">Games</span>
+          </div>
+        </div>
+
+        <div class="flex overflow-x-auto gap-8 no-scrollbar snap-x pb-12">
+          {teamReports.length > 0 ? (
+            teamReports.map(r => (
+              <div class="flex-none w-[320px] snap-center">
+                <div class="mb-4 flex items-center gap-2">
+                  <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+                  <span class="text-[14px] font-black tracking-wider text-white/80">{r.date}</span>
+                </div>
+
+                <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-black/40 aspect-[3/4.2] group relative">
+                   <img src={r.path} alt="Report" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                   <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+                
+                <div class="mt-6 flex justify-center">
+                  <a href={r.link} class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative active:scale-95 hover:scale-110 transition-transform group overflow-hidden">
+                    <div class="absolute inset-0 p-[2px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10"></div>
+                    <span class="text-[12px] font-black tracking-[0.2em] uppercase text-white">
+                      {r.away} <span class="text-[9px] font-medium lowercase tracking-normal mx-1 text-white/50 italic px-1">vs</span> {r.home}
+                    </span>
+                  </a>
+                </div>
+              </div>
+            ))
+          ) : (
+            <div class="py-20 text-center w-full bg-black/10 rounded-3xl border border-white/5">
+              <p class="text-white/20 italic font-black uppercase tracking-widest">No reports available for this team</p>
+            </div>
+          )}
+        </div>
+      </section>
+
+    </div>
+
+    <div class="fixed bottom-8 left-8 z-40">
+       <button onclick="history.back()" class="bg-white/10 backdrop-blur-md text-white px-6 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl hover:bg-white/20 transition-all border border-white/10">
+        ← Back
+      </button>
+    </div>
+
+    <div class="fixed bottom-8 right-8 z-40">
+      <a href="/nba" class="bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 hover:scale-105 transition-all border border-white/10">
+        NBA Home
+      </a>
+    </div>
+
+  </main>
+</Layout>
+
+<style>
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>

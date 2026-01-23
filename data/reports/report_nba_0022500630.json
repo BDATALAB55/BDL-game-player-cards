@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500630",
+  "date": "2026.01.22",
+  "venue": "American Airlines Center",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612742",
+    "total": {
+      "pts": 123,
+      "fgm": 43,
+      "fga": 86,
+      "f2m": 30,
+      "f2a": 51,
+      "f3m": 13,
+      "f3a": 35,
+      "ftm": 24,
+      "fta": 30,
+      "reb": 65,
+      "oreb": 11,
+      "dreb": 43,
+      "ast": 25,
+      "tov": 21,
+      "stl": 6,
+      "blk": 6,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "30:11",
+        "pts": 21,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "16",
+        "name": "CALEB MARTIN",
+        "min": "19:54",
+        "pts": 0,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "DWIGHT POWELL",
+        "min": "27:03",
+        "pts": 10,
+        "reb": 12,
+        "ast": 1
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "35:49",
+        "pts": 21,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "33:44",
+        "pts": 30,
+        "reb": 7,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612744",
+    "total": {
+      "pts": 115,
+      "fgm": 43,
+      "fga": 96,
+      "f2m": 28,
+      "f2a": 50,
+      "f3m": 15,
+      "f3a": 46,
+      "ftm": 14,
+      "fta": 18,
+      "reb": 44,
+      "oreb": 4,
+      "dreb": 31,
+      "ast": 29,
+      "tov": 10,
+      "stl": 15,
+      "blk": 7,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "23:14",
+        "pts": 12,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "15",
+        "name": "GUI SANTOS",
+        "min": "16:39",
+        "pts": 5,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "23:24",
+        "pts": 4,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "2",
+        "name": "BRANDIN PODZIEMSKI",
+        "min": "32:35",
+        "pts": 9,
+        "reb": 4,
+        "ast": 10
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "34:26",
+        "pts": 38,
+        "reb": 4,
+        "ast": 1
+      }
+    ]
+  }
+}

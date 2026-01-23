@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500628",
+  "date": "2026.01.22",
+  "venue": "Xfinity Mobile Arena",
+  "attendance": 19746,
+  "home": {
+    "id": "1610612755",
+    "total": {
+      "pts": 128,
+      "fgm": 49,
+      "fga": 89,
+      "f2m": 38,
+      "f2a": 57,
+      "f3m": 11,
+      "f3a": 32,
+      "ftm": 19,
+      "fta": 22,
+      "reb": 48,
+      "oreb": 9,
+      "dreb": 37,
+      "ast": 41,
+      "tov": 15,
+      "stl": 13,
+      "blk": 4,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "KELLY OUBRE JR.",
+        "min": "41:19",
+        "pts": 26,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "PAUL GEORGE",
+        "min": "36:31",
+        "pts": 10,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "21",
+        "name": "JOEL EMBIID",
+        "min": "45:36",
+        "pts": 32,
+        "reb": 15,
+        "ast": 10
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "39:57",
+        "pts": 9,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "TYRESE MAXEY",
+        "min": "42:42",
+        "pts": 36,
+        "reb": 2,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612745",
+    "total": {
+      "pts": 122,
+      "fgm": 46,
+      "fga": 99,
+      "f2m": 28,
+      "f2a": 59,
+      "f3m": 18,
+      "f3a": 40,
+      "ftm": 12,
+      "fta": 24,
+      "reb": 61,
+      "oreb": 15,
+      "dreb": 31,
+      "ast": 33,
+      "tov": 16,
+      "stl": 13,
+      "blk": 5,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "44:02",
+        "pts": 36,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "38:14",
+        "pts": 13,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "37:33",
+        "pts": 13,
+        "reb": 8,
+        "ast": 7
+      },
+      {
+        "no": "20",
+        "name": "JOSH OKOGIE",
+        "min": "22:25",
+        "pts": 8,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "41:54",
+        "pts": 17,
+        "reb": 6,
+        "ast": 9
+      }
+    ]
+  }
+}

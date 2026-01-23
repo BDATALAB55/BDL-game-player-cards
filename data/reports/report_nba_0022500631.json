@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500631",
+  "date": "2026.01.22",
+  "venue": "Target Center",
+  "attendance": 17463,
+  "home": {
+    "id": "1610612750",
+    "total": {
+      "pts": 115,
+      "fgm": 43,
+      "fga": 93,
+      "f2m": 28,
+      "f2a": 52,
+      "f3m": 15,
+      "f3a": 41,
+      "ftm": 14,
+      "fta": 15,
+      "reb": 48,
+      "oreb": 9,
+      "dreb": 36,
+      "ast": 29,
+      "tov": 14,
+      "stl": 6,
+      "blk": 9,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JADEN MCDANIELS",
+        "min": "35:41",
+        "pts": 16,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "30",
+        "name": "JULIUS RANDLE",
+        "min": "30:31",
+        "pts": 30,
+        "reb": 7,
+        "ast": 6
+      },
+      {
+        "no": "27",
+        "name": "RUDY GOBERT",
+        "min": "33:42",
+        "pts": 10,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "ANTHONY EDWARDS",
+        "min": "34:40",
+        "pts": 20,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "DONTE DIVINCENZO",
+        "min": "35:22",
+        "pts": 11,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612741",
+    "total": {
+      "pts": 120,
+      "fgm": 38,
+      "fga": 86,
+      "f2m": 21,
+      "f2a": 47,
+      "f3m": 17,
+      "f3a": 39,
+      "ftm": 27,
+      "fta": 33,
+      "reb": 59,
+      "oreb": 5,
+      "dreb": 38,
+      "ast": 28,
+      "tov": 11,
+      "stl": 7,
+      "blk": 1,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "27:53",
+        "pts": 12,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "25",
+        "name": "JALEN SMITH",
+        "min": "26:53",
+        "pts": 17,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "9",
+        "name": "NIKOLA VUČEVIĆ",
+        "min": "31:04",
+        "pts": 10,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "26:17",
+        "pts": 10,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "COBY WHITE",
+        "min": "29:56",
+        "pts": 22,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  }
+}

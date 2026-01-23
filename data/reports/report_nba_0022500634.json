@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500634",
+  "date": "2026.01.22",
+  "venue": "Moda Center",
+  "attendance": 16824,
+  "home": {
+    "id": "1610612757",
+    "total": {
+      "pts": 127,
+      "fgm": 48,
+      "fga": 96,
+      "f2m": 28,
+      "f2a": 46,
+      "f3m": 20,
+      "f3a": 50,
+      "ftm": 11,
+      "fta": 13,
+      "reb": 59,
+      "oreb": 14,
+      "dreb": 36,
+      "ast": 26,
+      "tov": 18,
+      "stl": 10,
+      "blk": 5,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "17:46",
+        "pts": 20,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "35:22",
+        "pts": 16,
+        "reb": 8,
+        "ast": 6
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "26:55",
+        "pts": 7,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "33:57",
+        "pts": 27,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "JRUE HOLIDAY",
+        "min": "18:57",
+        "pts": 15,
+        "reb": 2,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612748",
+    "total": {
+      "pts": 110,
+      "fgm": 43,
+      "fga": 94,
+      "f2m": 34,
+      "f2a": 49,
+      "f3m": 9,
+      "f3a": 45,
+      "ftm": 15,
+      "fta": 19,
+      "reb": 48,
+      "oreb": 14,
+      "dreb": 26,
+      "ast": 27,
+      "tov": 15,
+      "stl": 12,
+      "blk": 4,
+      "pf": 10
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "28:51",
+        "pts": 6,
+        "reb": 3,
+        "ast": 6
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "31:11",
+        "pts": 14,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "37:09",
+        "pts": 32,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "27:59",
+        "pts": 18,
+        "reb": 0,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "KASPARAS JAKUČIONIS",
+        "min": "11:06",
+        "pts": 3,
+        "reb": 0,
+        "ast": 3
+      }
+    ]
+  }
+}

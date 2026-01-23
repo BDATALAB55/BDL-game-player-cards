@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500632",
+  "date": "2026.01.22",
+  "venue": "Delta Center",
+  "attendance": 18186,
+  "home": {
+    "id": "1610612762",
+    "total": {
+      "pts": 109,
+      "fgm": 43,
+      "fga": 90,
+      "f2m": 31,
+      "f2a": 60,
+      "f3m": 12,
+      "f3a": 30,
+      "ftm": 11,
+      "fta": 13,
+      "reb": 48,
+      "oreb": 11,
+      "dreb": 33,
+      "ast": 31,
+      "tov": 16,
+      "stl": 5,
+      "blk": 3,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "32:19",
+        "pts": 25,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "CODY WILLIAMS",
+        "min": "22:43",
+        "pts": 12,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "30",
+        "name": "JUSUF NURKIĆ",
+        "min": "34:48",
+        "pts": 17,
+        "reb": 11,
+        "ast": 14
+      },
+      {
+        "no": "10",
+        "name": "SVI MYKHAILIUK",
+        "min": "18:53",
+        "pts": 9,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "35:17",
+        "pts": 23,
+        "reb": 4,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 126,
+      "fgm": 44,
+      "fga": 87,
+      "f2m": 26,
+      "f2a": 44,
+      "f3m": 18,
+      "f3a": 43,
+      "ftm": 20,
+      "fta": 24,
+      "reb": 48,
+      "oreb": 7,
+      "dreb": 34,
+      "ast": 30,
+      "tov": 10,
+      "stl": 8,
+      "blk": 11,
+      "pf": 13
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "33:45",
+        "pts": 17,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "21:51",
+        "pts": 2,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "32:37",
+        "pts": 26,
+        "reb": 14,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "35:06",
+        "pts": 31,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "37:49",
+        "pts": 16,
+        "reb": 6,
+        "ast": 8
+      }
+    ]
+  }
+}

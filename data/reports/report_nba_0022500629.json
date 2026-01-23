@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500629",
+  "date": "2026.01.22",
+  "venue": "Capital One Arena",
+  "attendance": 15040,
+  "home": {
+    "id": "1610612764",
+    "total": {
+      "pts": 97,
+      "fgm": 32,
+      "fga": 84,
+      "f2m": 19,
+      "f2a": 41,
+      "f3m": 13,
+      "f3a": 43,
+      "ftm": 20,
+      "fta": 24,
+      "reb": 50,
+      "oreb": 14,
+      "dreb": 28,
+      "ast": 20,
+      "tov": 14,
+      "stl": 9,
+      "blk": 6,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "34:15",
+        "pts": 20,
+        "reb": 12,
+        "ast": 7
+      },
+      {
+        "no": "22",
+        "name": "KHRIS MIDDLETON",
+        "min": "27:59",
+        "pts": 9,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "36:27",
+        "pts": 15,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "12",
+        "name": "TRE JOHNSON",
+        "min": "34:04",
+        "pts": 19,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "38:05",
+        "pts": 13,
+        "reb": 2,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612743",
+    "total": {
+      "pts": 107,
+      "fgm": 37,
+      "fga": 83,
+      "f2m": 28,
+      "f2a": 57,
+      "f3m": 9,
+      "f3a": 26,
+      "ftm": 24,
+      "fta": 26,
+      "reb": 54,
+      "oreb": 11,
+      "dreb": 35,
+      "ast": 22,
+      "tov": 11,
+      "stl": 9,
+      "blk": 6,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "PEYTON WATSON",
+        "min": "40:01",
+        "pts": 35,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "32",
+        "name": "AARON GORDON",
+        "min": "33:25",
+        "pts": 16,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "17",
+        "name": "JONAS VALANČIŪNAS",
+        "min": "21:57",
+        "pts": 16,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "24",
+        "name": "JALEN PICKETT",
+        "min": "32:34",
+        "pts": 2,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "36:02",
+        "pts": 24,
+        "reb": 4,
+        "ast": 5
+      }
+    ]
+  }
+}

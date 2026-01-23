@@ -2,30 +2,20 @@
 export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
-// --- 設定値 ---
+// --- 設定値 (GitHub API) ---
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
 const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/NBA`;
-
 const token = process.env.GITHUB_TOKEN;
 
 let reportGroups = [];
-
 try {
   const res = await fetch(RECURSIVE_API, {
-    headers: token ? { 
-      "Authorization": `token ${token}`,
-      "Accept": "application/vnd.github.v3+json"
-    } : { "Accept": "application/vnd.github.v3+json" }
+    headers: token ? { "Authorization": `token ${token}`, "Accept": "application/vnd.github.v3+json" } : { "Accept": "application/vnd.github.v3+json" }
   });
   const data = await res.json();
-
   if (data.tree) {
-    const allFiles = data.tree.filter(item => 
-      item.path.includes('output/reports/NBA/') && 
-      item.path.toLowerCase().endsWith('.png')
-    );
-
+    const allFiles = data.tree.filter(item => item.path.includes('output/reports/NBA/') && item.path.toLowerCase().endsWith('.png'));
     const groups = {};
     allFiles.forEach(file => {
       const pathParts = file.path.split('/');
@@ -39,45 +29,36 @@ try {
       const gameId = nameParts[2] || "";
       const teamA = nameParts[nameParts.length - 2] || "AWAY";
       const teamB = nameParts[nameParts.length - 1] || "HOME";
-
       if (!groups[folderName]) {
-        groups[folderName] = {
-          id: folderName,
-          date: `20${folderName.substring(0,2)}.${folderName.substring(2,4)}.${folderName.substring(4,6)}`,
-          reports: []
-        };
+        groups[folderName] = { id: folderName, date: `20${folderName.substring(0,2)}.${folderName.substring(2,4)}.${folderName.substring(4,6)}`, reports: [] };
       }
-      groups[folderName].reports.push({
-        path: `${IMAGE_BASE_URL}/${folderName}/${fileName}`,
-        away: teamA, home: teamB,
-        link: `/nba-cards?folder=${folderName}/NBA_Cards_${gameId}_${fullDate}`
-      });
+      groups[folderName].reports.push({ path: `${IMAGE_BASE_URL}/${folderName}/${fileName}`, away: teamA, home: teamB, link: `/nba-cards?folder=${folderName}/NBA_Cards_${gameId}_${fullDate}` });
     });
     reportGroups = Object.values(groups).sort((a, b) => b.id.localeCompare(a.id));
   }
-} catch (e) {
-  console.error("Fetch Error:", e);
-}
+} catch (e) { console.error("Fetch Error:", e); }
 
+// チームリスト
 const teams = [
-  { id: 'ATL', color: 'bg-[#E03A3E]' }, { id: 'BOS', color: 'bg-[#007A33]' },
-  { id: 'BKN', color: 'bg-black border border-white/20' }, { id: 'CHA', color: 'bg-[#00788C]' },
-  { id: 'CHI', color: 'bg-[#CE1141]' }, { id: 'CLE', color: 'bg-[#6F263D]' },
-  { id: 'DAL', color: 'bg-[#0053BC]' }, { id: 'DEN', color: 'bg-[#0E2240]' },
-  { id: 'DET', color: 'bg-[#1D428A]' }, { id: 'GSW', color: 'bg-[#006BB6]' },
-  { id: 'HOU', color: 'bg-[#CE1141]' }, { id: 'IND', color: 'bg-[#002D62]' },
-  { id: 'LAC', color: 'bg-[#12173F]' }, { id: 'LAL', color: 'bg-[#552583]' },
-  { id: 'MEM', color: 'bg-[#5D76A9]' }, { id: 'MIA', color: 'bg-[#98002E]' },
-  { id: 'MIL', color: 'bg-[#00471B]' }, { id: 'MIN', color: 'bg-[#0C2340]' },
-  { id: 'NOP', color: 'bg-[#0C2340]' }, { id: 'NYK', color: 'bg-[#F58426]' },
-  { id: 'OKC', color: 'bg-[#007AC1]' }, { id: 'ORL', color: 'bg-[#0077C0]' },
-  { id: 'PHI', color: 'bg-[#006BB6]' }, { id: 'PHX', color: 'bg-[#1D1160]' },
-  { id: 'POR', color: 'bg-[#E03A3E]' }, { id: 'SAC', color: 'bg-[#5A2D81]' },
-  { id: 'SAS', color: 'bg-black border border-white/20' }, { id: 'TOR', color: 'bg-[#CE1141]' },
-  { id: 'UTA', color: 'bg-[#002B5C]' }, { id: 'WAS', color: 'bg-[#002B5C]' },
+  { id: 'ATL', color: 'bg-[#E03A3E]' }, { id: 'BOS', color: 'bg-[#007A33]' }, { id: 'BKN', color: 'bg-black border border-white/20' }, 
+  { id: 'CHA', color: 'bg-[#00788C]' }, { id: 'CHI', color: 'bg-[#CE1141]' }, { id: 'CLE', color: 'bg-[#6F263D]' },
+  { id: 'DAL', color: 'bg-[#0053BC]' }, { id: 'DEN', color: 'bg-[#0E2240]' }, { id: 'DET', color: 'bg-[#1D428A]' }, 
+  { id: 'GSW', color: 'bg-[#006BB6]' }, { id: 'HOU', color: 'bg-[#CE1141]' }, { id: 'IND', color: 'bg-[#002D62]' },
+  { id: 'LAC', color: 'bg-[#12173F]' }, { id: 'LAL', color: 'bg-[#552583]' }, { id: 'MEM', color: 'bg-[#5D76A9]' }, 
+  { id: 'MIA', color: 'bg-[#98002E]' }, { id: 'MIL', color: 'bg-[#00471B]' }, { id: 'MIN', color: 'bg-[#0C2340]' },
+  { id: 'NOP', color: 'bg-[#0C2340]' }, { id: 'NYK', color: 'bg-[#F58426]' }, { id: 'OKC', color: 'bg-[#007AC1]' }, 
+  { id: 'ORL', color: 'bg-[#0077C0]' }, { id: 'PHI', color: 'bg-[#006BB6]' }, { id: 'PHX', color: 'bg-[#1D1160]' },
+  { id: 'POR', color: 'bg-[#E03A3E]' }, { id: 'SAC', color: 'bg-[#5A2D81]' }, { id: 'SAS', color: 'bg-black border border-white/20' }, 
+  { id: 'TOR', color: 'bg-[#CE1141]' }, { id: 'UTA', color: 'bg-[#002B5C]' }, { id: 'WAS', color: 'bg-[#002B5C]' },
 ];
 
 const today = reportGroups.length > 0 ? reportGroups[0].date : "2026.01.24";
+
+// 9チームずつに分割（モバイル用）
+const teamChunks = [];
+for (let i = 0; i < teams.length; i += 9) {
+  teamChunks.push(teams.slice(i, i + 9));
+}
 ---
 
 <Layout title="NBA HOME | B-Data Lab">
@@ -115,16 +96,36 @@ const today = reportGroups.length > 0 ? reportGroups[0].date : "2026.01.24";
       
       <section class="mt-12">
         <h2 class="text-4xl font-black uppercase tracking-tighter mb-8">TEAM</h2>
-        <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-y-5 gap-x-4">
+        
+        <div class="hidden md:grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
           {teams.map(t => (
-            <div class="flex justify-center">
-              <a href={`/nba-team?team=${t.id}`} class="block">
-                <button class={`${t.color} w-[105px] h-[45px] rounded-full text-[13px] font-black tracking-wider shadow-xl hover:scale-110 active:scale-95 transition-transform uppercase`}>
-                  {t.id}
-                </button>
-              </a>
-            </div>
+            <a href={`/nba-team?team=${t.id}`} class="block group">
+              <button class={`${t.color} w-full aspect-[2/1] rounded-2xl text-[18px] font-black tracking-widest shadow-xl group-hover:scale-105 active:scale-95 transition-all uppercase`}>
+                {t.id}
+              </button>
+            </a>
           ))}
+        </div>
+
+        <div class="md:hidden">
+          <div id="team-carousel" class="flex overflow-x-auto snap-x snap-mandatory no-scrollbar gap-4">
+            {teamChunks.map((chunk, index) => (
+              <div class="min-w-full snap-center grid grid-cols-3 gap-3">
+                {chunk.map(t => (
+                  <a href={`/nba-team?team=${t.id}`} class="block">
+                    <button class={`${t.color} w-full aspect-square rounded-2xl text-[14px] font-black tracking-wider shadow-lg active:scale-90 transition-transform uppercase`}>
+                      {t.id}
+                    </button>
+                  </a>
+                ))}
+              </div>
+            ))}
+          </div>
+          <div class="flex justify-center gap-2 mt-6">
+            {teamChunks.map((_, i) => (
+              <div class={`h-1.5 rounded-full transition-all duration-300 ${i === 0 ? 'w-6 bg-white' : 'w-1.5 bg-white/20'}`} data-dot={i}></div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -144,7 +145,7 @@ const today = reportGroups.length > 0 ? reportGroups[0].date : "2026.01.24";
               </div>
               <div class="mt-6 flex justify-center">
                 <a href={r.link} class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative active:scale-95 hover:scale-110 transition-transform group overflow-hidden">
-                  <div class="absolute inset-0 p-[2px] rounded-full bg-gradient-r from-blue-500 via-purple-500 to-red-500 -z-10"></div>
+                  <div class="absolute inset-0 p-[2px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10"></div>
                   <span class="text-[12px] font-black tracking-[0.2em] uppercase text-white">
                     {r.away} <span class="text-[9px] font-medium lowercase tracking-normal mx-1 text-white/50 px-1">vs</span> {r.home}
                   </span>
@@ -152,11 +153,6 @@ const today = reportGroups.length > 0 ? reportGroups[0].date : "2026.01.24";
               </div>
             </div>
           )) : <div class="text-gray-500 px-4">No reports found.</div>}
-        </div>
-        <div class="mt-16 flex justify-center">
-          <a href="/nba-reports" class="bg-[#CE1141] hover:bg-red-700 hover:scale-105 text-white px-12 py-5 rounded-full text-sm font-black uppercase tracking-[0.25em] shadow-2xl transition-all">
-            Game Report Archive
-          </a>
         </div>
       </section>
 
@@ -166,35 +162,13 @@ const today = reportGroups.length > 0 ? reportGroups[0].date : "2026.01.24";
           <span class="text-[10px] font-bold text-white/40 tracking-widest uppercase">Updated: {today}</span>
         </div>
         <div class="grid grid-cols-2 gap-4 max-w-sm mb-10">
-          <button data-tab="standing" data-target="eastern" class="tab-btn bg-white text-black py-4 rounded-xl text-[12px] font-black uppercase tracking-widest text-center hover:scale-105 transition-all">Eastern</button>
-          <button data-tab="standing" data-target="western" class="tab-btn bg-black/20 text-white/80 py-4 rounded-xl text-[12px] font-black uppercase tracking-widest text-center hover:bg-white/10 hover:scale-105 transition-all border border-white/5">Western</button>
+          <button data-tab="standing" data-target="eastern" class="tab-btn bg-white text-black py-4 rounded-xl text-[12px] font-black uppercase tracking-widest text-center">Eastern</button>
+          <button data-tab="standing" data-target="western" class="tab-btn bg-black/20 text-white/80 py-4 rounded-xl text-[12px] font-black uppercase tracking-widest text-center border border-white/5">Western</button>
         </div>
         <div id="standing-container" class="flex overflow-x-auto gap-6 no-scrollbar snap-x pb-4 min-h-[300px]">
           {Array.from({ length: 15 }).map((_, i) => (
             <div class="flex-none w-[220px] snap-center aspect-[3/4] bg-black/40 border border-white/5 rounded-2xl flex flex-col items-center justify-center gap-4 group transition-all hover:bg-black/60">
               <div class="text-[40px] font-black text-white/10 group-hover:text-white/20 transition-colors">{i + 1}</div>
-              <span class="text-[10px] font-black tracking-[0.3em] uppercase text-white/30">Coming Soon</span>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section class="mt-32">
-        <h2 class="text-4xl font-black uppercase tracking-tighter mb-8">Today's RANK 10</h2>
-        <div class="flex gap-3 mb-10 overflow-x-auto no-scrollbar pb-2">
-          {['PTS', 'REB', 'AST'].map((stat, i) => (
-            <button data-tab="rank" data-target={stat.toLowerCase()} class={`rank-btn flex-none px-10 py-4 rounded-full text-[12px] font-black tracking-widest uppercase transition-all hover:scale-105 ${i === 0 ? 'bg-blue-600 text-white shadow-lg shadow-blue-900/20' : 'bg-black/20 text-white/60 border border-white/5'}`}>
-              {stat}
-            </button>
-          ))}
-        </div>
-        <div id="rank-container" class="flex overflow-x-auto gap-6 no-scrollbar snap-x pb-4">
-          {Array.from({ length: 10 }).map((_, i) => (
-            <div class="flex-none w-[260px] snap-center aspect-[3/4.2] bg-black/40 border border-white/5 rounded-2xl flex flex-col items-center justify-center gap-4 relative overflow-hidden group">
-              <div class="absolute top-4 left-6 text-[32px] font-black text-white/10">#{i + 1}</div>
-              <div class="w-20 h-20 rounded-full bg-white/5 flex items-center justify-center">
-                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-white/10" viewBox="0 0 16 16"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/></svg>
-              </div>
               <span class="text-[10px] font-black tracking-[0.3em] uppercase text-white/30">Coming Soon</span>
             </div>
           ))}
@@ -210,6 +184,26 @@ const today = reportGroups.length > 0 ? reportGroups[0].date : "2026.01.24";
 </Layout>
 
 <script>
+  // Mobile Carousel Dots Logic
+  const carousel = document.getElementById('team-carousel');
+  const dots = document.querySelectorAll('[data-dot]');
+  
+  if (carousel) {
+    carousel.addEventListener('scroll', () => {
+      const index = Math.round(carousel.scrollLeft / carousel.offsetWidth);
+      dots.forEach((dot, i) => {
+        if (i === index) {
+          dot.classList.add('w-6', 'bg-white');
+          dot.classList.remove('w-1.5', 'bg-white/20');
+        } else {
+          dot.classList.remove('w-6', 'bg-white');
+          dot.classList.add('w-1.5', 'bg-white/20');
+        }
+      });
+    });
+  }
+
+  // Tabs Logic
   const initTabs = (btnClassName) => {
     const btns = document.querySelectorAll(`.${btnClassName}`);
     btns.forEach(btn => {
@@ -222,15 +216,11 @@ const today = reportGroups.length > 0 ? reportGroups[0].date : "2026.01.24";
         if (tabGroup === 'standing') {
           btn.classList.add('bg-white', 'text-black');
           btn.classList.remove('bg-black/20', 'text-white/80');
-        } else {
-          btn.classList.add('bg-blue-600', 'text-white', 'shadow-lg');
-          btn.classList.remove('bg-black/20', 'text-white/60');
         }
       });
     });
   };
   initTabs('tab-btn');
-  initTabs('rank-btn');
 </script>
 
 <style>

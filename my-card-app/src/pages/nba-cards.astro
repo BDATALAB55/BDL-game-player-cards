@@ -140,7 +140,7 @@ try {
   <div class="app-container bg-[#373A36] min-h-screen text-white overflow-hidden font-avenir relative">
     
     <header class="pt-12 pb-6 px-8 border-b border-white/5 text-center">
-      <a href="/nba" class="inline-block hover:opacity-70 transition-opacity">
+      <a href="/nba-home" class="inline-block hover:opacity-70 transition-opacity">
         <h1 class="text-2xl font-black uppercase leading-none tracking-[0.25em]">BDL Cards</h1>
       </a>
       <p class="text-gray-600 text-[10px] font-bold tracking-[0.4em] mt-3 uppercase">Gameday Collection</p>
@@ -165,8 +165,8 @@ try {
           </div>
         )}
         <div class="mt-4 text-center">
-          <span class="text-[13px] font-black tracking-[0.2em] uppercase text-white/90 italic">
-            {teamAway} <span class="text-[9px] font-medium text-white/40 mx-1 italic">vs</span> {teamHome}
+          <span class="text-[13px] font-black tracking-[0.2em] uppercase text-white/90">
+            {teamAway} <span class="text-[9px] font-medium text-white/40 mx-1">vs</span> {teamHome}
           </span>
         </div>
       </section>
@@ -176,11 +176,11 @@ try {
           <div class="px-8 mb-8">
             <a href={`/nba-team?team=${team[0].team}`} class="inline-block group">
               <button class={`${getTeamStyle(team[0].team)} font-avenir w-[115px] h-[48px] rounded-full text-[15px] font-black tracking-tighter shadow-xl hover:scale-110 active:scale-95 transition-transform text-white flex items-center justify-center gap-1.5`}>
-      {team[0].team}
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 opacity-40 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M9 5l7 7-7 7" />
-      </svg>
-    </button>
+                {team[0].team}
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 opacity-40 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
             </a>
           </div>
 
@@ -211,7 +211,7 @@ try {
     </div>
 
     <div class="fixed bottom-8 right-8 z-40">
-      <a href="/nba" class="bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 hover:bg-gray-700 transition-all border border-white/10">
+      <a href="/nba-home" class="bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 hover:bg-gray-700 transition-all border border-white/10">
         Back to NBA Home
       </a>
     </div>
@@ -241,7 +241,6 @@ try {
     modal?.classList.remove('flex');
   });
 
-  // モダンの背景クリックでも閉じるように
   modal?.addEventListener('click', (e) => {
     if (e.target === modal) {
       modal?.classList.add('hidden');

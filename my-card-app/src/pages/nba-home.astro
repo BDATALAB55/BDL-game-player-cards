@@ -281,16 +281,13 @@ for (let i = 0; i < teams.length; i += 9) {
       btn.addEventListener('click', () => {
         const tabGroup = btn.getAttribute('data-tab');
         document.querySelectorAll(`[data-tab="${tabGroup}"]`).forEach(b => {
-          b.classList.remove('bg-white', 'text-black', 'bg-blue-600', 'shadow-lg');
+          // すべて解除
+          b.classList.remove('bg-white', 'text-black');
           b.classList.add('bg-black/20', 'text-white/80');
         });
-        if (tabGroup === 'standing') {
-          btn.classList.add('bg-white', 'text-black');
-          btn.classList.remove('bg-black/20', 'text-white/80');
-        } else {
-          btn.classList.add('bg-blue-600', 'text-white', 'shadow-lg');
-          btn.classList.remove('bg-black/20', 'text-white/60');
-        }
+        // 選択されたボタンを「白背景・黒文字」に
+        btn.classList.add('bg-white', 'text-black');
+        btn.classList.remove('bg-black/20', 'text-white/80');
       });
     });
   };

@@ -3,7 +3,7 @@ export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
 const { searchParams } = Astro.url;
-// B1ではデフォルトを「HOKKAIDO」などに設定（または空）
+// デフォルトは「HOKKAIDO」
 const teamId = searchParams.get('team') || 'HOKKAIDO';
 
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
@@ -28,8 +28,8 @@ const teamInfo = {
   TOYAMA: { city: "Toyama", name: "Grouses", color: "#e21f26" },
   'SAN-EN': { city: "San-en", name: "NeoPhoenix", color: "#d31118" },
   MIKAWA: { city: "SeaHorses", name: "Mikawa", color: "#3356b9" },
-  'FE NAGOYA': { city: "FE", name: "Nagoya", color: "#003882" },
-  'NAGOYA D': { city: "Nagoya", name: "Dolphins", color: "#e31d20" },
+  'FE NAGOYA': { city: "FIGHTING EAGLES", name: "Nagoya", color: "#003882" },
+  'NAGOYA D': { city: "Nagoya", name: "DIAMOND DOLPHINS", color: "#e31d20" },
   SHIGA: { city: "Shiga", name: "Lakes", color: "#1a448e" },
   KYOTO: { city: "Kyoto", name: "Hannaryz", color: "#5ea1b4" },
   OSAKA: { city: "Osaka", name: "Evessa", color: "#d11c1d" },
@@ -41,6 +41,10 @@ const teamInfo = {
 };
 
 const currentTeam = teamInfo[teamId] || { city: "B.LEAGUE", name: "TEAM", color: "#FFFFFF" };
+
+// ★サイズをテレコ（逆転）にする判定ロジック
+const reverseTeams = ['HOKKAIDO', 'A CHIBA', 'A TOKYO', 'SR SHIBUYA', 'MIKAWA', 'FE NAGOYA'];
+const isReversed = reverseTeams.includes(teamId);
 
 let allTeamReports = [];
 let availableDatesMap = {};
@@ -73,7 +77,6 @@ try {
       const teamB = nameParts[nameParts.length - 1];
 
       if (teamA === teamId || teamB === teamId) {
-        // カードフォルダ名をB1の命名規則に合わせる
         const targetCardFolder = `B1_Cards_${gameId}_${fullDate}`;
         const reportObj = {
           id: folderName,
@@ -102,10 +105,14 @@ try {
       <div class="flex items-end justify-between w-full relative mb-1">
         <div class="flex-shrink-0">
           <div class="flex flex-col md:flex-row md:items-end md:gap-4 leading-none md:leading-[0.8] font-black uppercase">
-            <span class="text-2xl tracking-tight md:text-3xl md:font-bold md:opacity-60 md:tracking-[0.2em]">
+            <span class={isReversed 
+              ? "text-5xl tracking-tight md:text-7xl md:tracking-[0.1em]" 
+              : "text-2xl tracking-tight md:text-3xl md:font-bold md:opacity-60 md:tracking-[0.2em]"}>
               {currentTeam.city}
             </span>
-            <span class="text-5xl tracking-tight md:text-7xl md:tracking-[0.1em]">
+            <span class={isReversed 
+              ? "text-2xl tracking-tight md:text-3xl md:font-bold md:opacity-60 md:tracking-[0.2em]" 
+              : "text-5xl tracking-tight md:text-7xl md:tracking-[0.1em]"}>
               {currentTeam.name}
             </span>
           </div>
@@ -241,32 +248,4 @@ try {
     const daysInMonth = new Date(y, m + 1, 0).getDate();
     let html = `
       <div class="flex justify-between items-center mb-10 px-2">
-        <button onclick="changeMonth(-1)" class="text-white/30 hover:text-white transition-colors text-lg">←</button>
-        <div class="font-black text-[13px] tracking-[0.3em] uppercase">${monthNames[m]} ${y}</div>
-        <button onclick="changeMonth(1)" class="text-white/30 hover:text-white transition-colors text-lg">→</button>
-      </div>
-      <div class="grid grid-cols-7 gap-1 text-center text-[9px] font-black text-white/10 mb-6 tracking-widest">
-        <div>SUN</div><div>MON</div><div>TUE</div><div>WED</div><div>THU</div><div>FRI</div><div>SAT</div>
-      </div>
-      <div class="grid grid-cols-7 gap-y-4 gap-x-2">`;
-    for (let i = 0; i < firstDay; i++) html += `<div></div>`;
-    for (let d = 1; d <= daysInMonth; d++) {
-      const dateStr = `${String(y).substring(2)}${String(m + 1).padStart(2, '0')}${String(d).padStart(2, '0')}`;
-      const link = availableDatesMap[dateStr];
-      html += `
-        <div class="flex items-center justify-center">
-          ${link ? 
-            `<a href="${link}" class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-600 text-white text-[12px] font-black shadow-[0_0_20px_rgba(37,99,235,0.4)] transition-all border border-white/20">${d}</a>` : 
-            `<span class="text-white/10 text-[12px] font-bold">${d}</span>`
-          }
-        </div>`;
-    }
-    calendarEl.innerHTML = html + `</div>`;
-  }
-  renderCalendar(currentY, currentM);
-</script>
-
-<style>
-  .no-scrollbar::-webkit-scrollbar { display: none; }
-  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-</style>
+        <button onclick="changeMonth(-

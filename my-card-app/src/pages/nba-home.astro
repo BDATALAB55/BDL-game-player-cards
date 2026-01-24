@@ -2,12 +2,10 @@
 export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
-// --- 設定値 ---
+// --- ロジック修正部分 ---
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
-// 常に最新データを取得するためタイムスタンプを付与
 const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
 const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/NBA`;
-
 const token = process.env.GITHUB_TOKEN;
 
 let reportGroups = [];
@@ -34,13 +32,11 @@ try {
       const nbaIndex = pathParts.indexOf('NBA');
       if (nbaIndex === -1 || pathParts.length <= nbaIndex + 2) return;
       
-      const folderName = pathParts[nbaIndex + 1]; // YYMMDD
+      const folderName = pathParts[nbaIndex + 1]; 
       const fileName = pathParts[nbaIndex + 2];   
-      
       if (!/^\d+$/.test(folderName)) return;
 
       const nameParts = fileName.replace('.png', '').split('_');
-      // 正確なインデックス指定: [2]=YYYYMMDD, [3]=GameID
       const fullDate = nameParts[2] || ""; 
       const gameId = nameParts[3] || "";
       const teamA = nameParts[nameParts.length - 2] || "AWAY";
@@ -54,12 +50,11 @@ try {
         };
       }
       
-      // 次のページ(cards)が確実に読み込めるパスを生成
       const cardFolderName = `NBA_Cards_${gameId}_${fullDate}`;
 
       groups[folderName].reports.push({
         path: `${IMAGE_BASE_URL}/${folderName}/${fileName}?t=${Date.now()}`,
-        away: teamA,
+        away: teamA, 
         home: teamB,
         link: `/nba-cards?folder=${folderName}/${cardFolderName}`
       });
@@ -70,6 +65,7 @@ try {
   console.error("Fetch Error:", e);
 }
 
+// --- 元の定数と設定 ---
 const teams = [
   { id: 'ATL', color: 'bg-[#E03A3E]' }, { id: 'BOS', color: 'bg-[#007A33]' },
   { id: 'BKN', color: 'bg-black border border-white/20' }, { id: 'CHA', color: 'bg-[#00788C]' },
@@ -88,13 +84,8 @@ const teams = [
   { id: 'UTA', color: 'bg-[#002B5C]' }, { id: 'WAS', color: 'bg-[#002B5C]' },
 ];
 
-const today = reportGroups.length > 0 ? reportGroups[0].date : "NO DATA";
+const today = reportGroups.length > 0 ? reportGroups[0].date : "2026.01.24";
 const todayGameCount = reportGroups.length > 0 ? reportGroups[0].reports.length : 0;
-
-const teamChunks = [];
-for (let i = 0; i < teams.length; i += 9) {
-  teamChunks.push(teams.slice(i, i + 9));
-}
 ---
 
 <Layout title="NBA HOME | B-Data Lab">
@@ -151,21 +142,42 @@ for (let i = 0; i < teams.length; i += 9) {
         </div>
       </section>
 
-      <section class="mt-32 border-t border-white/5 pt-24 pb-40">
-        <h3 class="text-center text-[10px] font-black tracking-[0.6em] uppercase mb-16 text-white/20 italic">Select Franchise</h3>
+      <section class="mt-32 grid grid-cols-1 md:grid-cols-2 gap-12 px-4">
+        <div class="bg-black/20 rounded-3xl p-10 border border-white/5 backdrop-blur-sm relative overflow-hidden group">
+          <div class="absolute -right-4 -top-4 text-8xl font-black italic text-white/5 group-hover:text-blue-500/10 transition-colors">RANK</div>
+          <h3 class="text-blue-500 text-[10px] font-black tracking-[0.4em] uppercase mb-2">Performance</h3>
+          <p class="text-3xl font-black italic uppercase tracking-tighter mb-8">Statistical Leaders</p>
+          <a href="/nba-rank" class="inline-flex items-center gap-4 text-[11px] font-black uppercase tracking-widest bg-white text-black px-8 py-4 rounded-full hover:bg-blue-500 hover:text-white transition-all">
+            View Ranking
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+          </a>
+        </div>
+
+        <div class="bg-black/20 rounded-3xl p-10 border border-white/5 backdrop-blur-sm relative overflow-hidden group">
+          <div class="absolute -right-4 -top-4 text-8xl font-black italic text-white/5 group-hover:text-purple-500/10 transition-colors">LIVE</div>
+          <h3 class="text-purple-500 text-[10px] font-black tracking-[0.4em] uppercase mb-2">Competition</h3>
+          <p class="text-3xl font-black italic uppercase tracking-tighter mb-8">Conference Standing</p>
+          <a href="/nba-standing" class="inline-flex items-center gap-4 text-[11px] font-black uppercase tracking-widest bg-white text-black px-8 py-4 rounded-full hover:bg-purple-500 hover:text-white transition-all">
+            Check Standing
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="mt-40 border-t border-white/5 pt-24 pb-40">
+        <h3 class="text-center text-[10px] font-black tracking-[0.6em] uppercase mb-20 text-white/20 italic">Select Franchise</h3>
         
-        <div class="space-y-6">
-          {teamChunks.map((chunk) => (
-            <div class="flex flex-wrap justify-center gap-4">
-              {chunk.map((team) => (
-                <a href={`/nba-team?team=${team.id}`} class="group">
-                  <div class={`${team.color} w-[110px] h-[54px] rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:-rotate-3 group-active:scale-95 shadow-lg relative overflow-hidden`}>
-                    <div class="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                    <span class="text-[18px] font-black italic tracking-tighter text-white z-10">{team.id}</span>
-                  </div>
-                </a>
-              ))}
-            </div>
+        <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6 md:gap-8">
+          {teams.map((team) => (
+            <a href={`/nba-team?team=${team.id}`} class="group">
+              <div class="flex flex-col items-center gap-4">
+                <div class={`${team.color} w-full aspect-square rounded-3xl flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:-rotate-6 group-active:scale-95 shadow-2xl relative overflow-hidden`}>
+                  <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                  <span class="text-2xl md:text-3xl font-black italic tracking-tighter text-white z-10">{team.id}</span>
+                </div>
+                <span class="text-[10px] font-black tracking-[0.3em] text-white/20 group-hover:text-blue-500 transition-colors uppercase">{team.id}</span>
+              </div>
+            </a>
           ))}
         </div>
       </section>
@@ -183,4 +195,5 @@ for (let i = 0; i < teams.length; i += 9) {
 <style>
   .no-scrollbar::-webkit-scrollbar { display: none; }
   .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  .font-avenir { font-family: "Avenir Next", sans-serif; }
 </style>

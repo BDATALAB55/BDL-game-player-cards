@@ -26,7 +26,7 @@ const getTeamStyle = (id) => teamColorMap[id] || 'bg-gray-700';
 
 let folderName = queryFolder;
 
-// --- 自動取得ロジック ---
+// フォルダが指定されていない場合の自動取得
 if (!folderName) {
   try {
     const listApi = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players?t=${Date.now()}`;
@@ -46,7 +46,7 @@ if (!folderName) {
   } catch (e) { console.error(e); }
 }
 
-let teamsData = []; // チームごとのデータを格納する配列
+let teamsData = []; 
 let reportImagePath = "";
 const rawDate = folderName ? folderName.split('/')[0] : "";
 const formattedDate = rawDate.length === 6 ? `20${rawDate.substring(0,2)}.${rawDate.substring(2,4)}.${rawDate.substring(4,6)}` : rawDate;
@@ -57,11 +57,11 @@ try {
   const files = await response.json();
 
   if (Array.isArray(files)) {
-    // 1. ファイル名からチーム名を抽出 (例: "ATL", "DET")
+    // 1. ファイル名からチーム名を抽出 (例: ATL, DET)
     const playerFiles = files.filter(f => f.name.endsWith('.png') && !f.name.toLowerCase().includes('report'));
     const detectedTeamNames = [...new Set(playerFiles.map(f => f.name.split('_')[0]))];
 
-    // 2. チームごとに選手データを整理
+    // 2. 抽出したチーム名に基づいてデータを整理
     teamsData = detectedTeamNames.map(teamName => {
       const players = playerFiles
         .filter(f => f.name.startsWith(teamName))
@@ -80,7 +80,7 @@ try {
     });
   }
 
-  // レポート画像取得
+  // ゲームレポート画像の取得ロジック
   const gameId = folderName?.match(/\d{10}/)?.[0];
   if (gameId && rawDate) {
     const reportsApiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/reports/NBA/${rawDate}?t=${Date.now()}`;
@@ -124,14 +124,9 @@ try {
       {teamsData.map((team) => (
         <section>
           <div class="px-8 mb-8">
-            <a href={`/nba-team?team=${team.teamName}`} class="inline-block group">
-              <button class={`${getTeamStyle(team.teamName)} w-[115px] h-[48px] rounded-full text-[15px] font-black shadow-xl transition-transform hover:scale-110 active:scale-95 text-white flex items-center justify-center gap-1.5`}>
-                {team.teamName}
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 opacity-40 group-hover:opacity-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M9 5l7 7-7 7" />
-                </svg>
-              </button>
-            </a>
+            <div class={`${getTeamStyle(team.teamName)} w-[115px] h-[48px] rounded-full text-[15px] font-black shadow-xl flex items-center justify-center text-white`}>
+              {team.teamName}
+            </div>
           </div>
 
           <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-8 no-scrollbar pb-4">
@@ -141,13 +136,10 @@ try {
                   <img src={p.imagePath} alt={p.name} class="w-full h-auto block" loading="lazy" />
                 </div>
                 <div class="mt-6 flex flex-col items-center px-1">
-                  <a href={`/nba-players?name=${encodeURIComponent(p.name)}`} class="w-full block group">
-                    <div class="w-full inline-flex items-center justify-between px-6 py-4 rounded-full bg-black/40 border-2 border-transparent relative overflow-hidden shadow-lg group-hover:scale-105 active:scale-95 transition-all">
-                      <div class="absolute inset-0 p-[1.5px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10 opacity-60"></div>
-                      <span class="text-[13px] font-black tracking-[0.15em] uppercase text-white/90">{p.name}</span>
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white/30 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" /></svg>
-                    </div>
-                  </a>
+                  <div class="w-full inline-flex items-center justify-between px-6 py-4 rounded-full bg-black/40 border-2 border-transparent relative overflow-hidden shadow-lg">
+                    <div class="absolute inset-0 p-[1.5px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10 opacity-60"></div>
+                    <span class="text-[13px] font-black tracking-[0.15em] uppercase text-white/90">{p.name}</span>
+                  </div>
                 </div>
               </div>
             ))}
@@ -191,13 +183,6 @@ try {
   close?.addEventListener('click', () => {
     modal?.classList.add('hidden');
     modal?.classList.remove('flex');
-  });
-
-  modal?.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      modal?.classList.add('hidden');
-      modal?.classList.remove('flex');
-    }
   });
 </script>
 

@@ -83,7 +83,7 @@ const availableDates = reportGroups.map(g => g.id);
     </header>
 
     <section class="py-10">
-      <div class="px-8 mb-4 min-h-[80px] flex justify-between items-start">
+      <div class="px-8 mb-4 min-h-[80px] flex justify-between items-end">
         <div class="flex flex-col gap-1">
           <span id="display-label" class="text-blue-500 text-[10px] font-black uppercase tracking-[0.3em]">Latest Update</span>
           <span id="display-date" class="text-white text-[32px] font-bold uppercase leading-none tracking-[0.05em] text-shadow-xl">
@@ -91,13 +91,11 @@ const availableDates = reportGroups.map(g => g.id);
           </span>
         </div>
 
-        <div class="flex flex-col items-center leading-none">
-          <span id="display-count" class="text-6xl font-black text-white/20 italic tracking-tighter">
+        <div class="flex flex-col items-end leading-none">
+          <span id="display-count" class="text-7xl font-black italic opacity-20 block tracking-[-0.1em]">
             {reportGroups.length > 0 ? reportGroups[0].reports.length : 0}
           </span>
-          <span class="text-[10px] font-black text-white/20 uppercase tracking-[0.4em] mt-1 italic">
-            Games
-          </span>
+          <span class="text-[12px] font-bold opacity-40 uppercase tracking-[0.3em]">Games</span>
         </div>
       </div>
 
@@ -160,7 +158,7 @@ const availableDates = reportGroups.map(g => g.id);
     if (!data || !sliderEl) return;
 
     dateTitleEl.innerText = data.date;
-    countEl.innerText = data.reports.length; // 試合数を更新
+    countEl.innerText = data.reports.length;
 
     const isLatest = (allData.length > 0 && dateId === availableDates[0]);
     labelEl.innerText = isLatest ? "Latest Update" : "Archive Data";

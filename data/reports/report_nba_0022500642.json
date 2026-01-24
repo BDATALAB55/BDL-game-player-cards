@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500642",
+  "date": "2026.01.23",
+  "venue": "Moda Center",
+  "attendance": 17438,
+  "home": {
+    "id": "1610612757",
+    "total": {
+      "pts": 98,
+      "fgm": 39,
+      "fga": 98,
+      "f2m": 26,
+      "f2a": 53,
+      "f3m": 13,
+      "f3a": 45,
+      "ftm": 7,
+      "fta": 10,
+      "reb": 57,
+      "oreb": 14,
+      "dreb": 31,
+      "ast": 22,
+      "tov": 13,
+      "stl": 7,
+      "blk": 3,
+      "pf": 11
+    },
+    "starters": [
+      {
+        "no": "91",
+        "name": "SIDY CISSOKO",
+        "min": "32:34",
+        "pts": 3,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "37:04",
+        "pts": 16,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "28:56",
+        "pts": 13,
+        "reb": 16,
+        "ast": 2
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "32:20",
+        "pts": 21,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "JRUE HOLIDAY",
+        "min": "22:20",
+        "pts": 21,
+        "reb": 1,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612761",
+    "total": {
+      "pts": 110,
+      "fgm": 45,
+      "fga": 85,
+      "f2m": 36,
+      "f2a": 56,
+      "f3m": 9,
+      "f3a": 29,
+      "ftm": 11,
+      "fta": 17,
+      "reb": 51,
+      "oreb": 10,
+      "dreb": 36,
+      "ast": 28,
+      "tov": 16,
+      "stl": 7,
+      "blk": 9,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "35:24",
+        "pts": 20,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "35:13",
+        "pts": 15,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "54",
+        "name": "SANDRO MAMUKELASHVILI",
+        "min": "34:51",
+        "pts": 22,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "21:21",
+        "pts": 10,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "34:17",
+        "pts": 20,
+        "reb": 8,
+        "ast": 7
+      }
+    ]
+  }
+}

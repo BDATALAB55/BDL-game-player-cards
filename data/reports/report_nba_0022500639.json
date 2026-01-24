@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500639",
+  "date": "2026.01.23",
+  "venue": "FedExForum",
+  "attendance": 14174,
+  "home": {
+    "id": "1610612763",
+    "total": {
+      "pts": 127,
+      "fgm": 45,
+      "fga": 92,
+      "f2m": 27,
+      "f2a": 45,
+      "f3m": 18,
+      "f3a": 47,
+      "ftm": 19,
+      "fta": 22,
+      "reb": 54,
+      "oreb": 14,
+      "dreb": 33,
+      "ast": 34,
+      "tov": 19,
+      "stl": 4,
+      "blk": 10,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "25:08",
+        "pts": 11,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "32:05",
+        "pts": 26,
+        "reb": 12,
+        "ast": 3
+      },
+      {
+        "no": "31",
+        "name": "JOCK LANDALE",
+        "min": "31:58",
+        "pts": 24,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "CEDRIC COWARD",
+        "min": "28:17",
+        "pts": 13,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "24",
+        "name": "CAM SPENCER",
+        "min": "27:59",
+        "pts": 21,
+        "reb": 5,
+        "ast": 11
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612740",
+    "total": {
+      "pts": 133,
+      "fgm": 46,
+      "fga": 99,
+      "f2m": 33,
+      "f2a": 63,
+      "f3m": 13,
+      "f3a": 36,
+      "ftm": 28,
+      "fta": 33,
+      "reb": 54,
+      "oreb": 18,
+      "dreb": 31,
+      "ast": 29,
+      "tov": 10,
+      "stl": 14,
+      "blk": 4,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "31:44",
+        "pts": 36,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "ZION WILLIAMSON",
+        "min": "33:08",
+        "pts": 24,
+        "reb": 11,
+        "ast": 4
+      },
+      {
+        "no": "22",
+        "name": "DERIK QUEEN",
+        "min": "26:41",
+        "pts": 8,
+        "reb": 9,
+        "ast": 5
+      },
+      {
+        "no": "25",
+        "name": "TREY MURPHY III",
+        "min": "36:18",
+        "pts": 32,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "HERBERT JONES",
+        "min": "24:33",
+        "pts": 0,
+        "reb": 0,
+        "ast": 5
+      }
+    ]
+  }
+}

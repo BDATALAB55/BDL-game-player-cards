@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500635",
+  "date": "2026.01.23",
+  "venue": "Little Caesars Arena",
+  "attendance": 20062,
+  "home": {
+    "id": "1610612765",
+    "total": {
+      "pts": 104,
+      "fgm": 40,
+      "fga": 84,
+      "f2m": 33,
+      "f2a": 52,
+      "f3m": 7,
+      "f3a": 32,
+      "ftm": 17,
+      "fta": 24,
+      "reb": 44,
+      "oreb": 9,
+      "dreb": 26,
+      "ast": 22,
+      "tov": 16,
+      "stl": 9,
+      "blk": 4,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "23:35",
+        "pts": 12,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "12",
+        "name": "TOBIAS HARRIS",
+        "min": "25:31",
+        "pts": 4,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "JALEN DUREN",
+        "min": "26:17",
+        "pts": 18,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "26:03",
+        "pts": 9,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "37:52",
+        "pts": 12,
+        "reb": 1,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612745",
+    "total": {
+      "pts": 111,
+      "fgm": 39,
+      "fga": 79,
+      "f2m": 30,
+      "f2a": 53,
+      "f3m": 9,
+      "f3a": 26,
+      "ftm": 24,
+      "fta": 30,
+      "reb": 54,
+      "oreb": 12,
+      "dreb": 31,
+      "ast": 21,
+      "tov": 15,
+      "stl": 11,
+      "blk": 7,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "40:40",
+        "pts": 32,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "37:01",
+        "pts": 11,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "30:22",
+        "pts": 19,
+        "reb": 1,
+        "ast": 5
+      },
+      {
+        "no": "20",
+        "name": "JOSH OKOGIE",
+        "min": "34:49",
+        "pts": 7,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "39:36",
+        "pts": 15,
+        "reb": 9,
+        "ast": 7
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500636",
+  "date": "2026.01.23",
+  "venue": "State Farm Arena",
+  "attendance": 15461,
+  "home": {
+    "id": "1610612737",
+    "total": {
+      "pts": 110,
+      "fgm": 43,
+      "fga": 81,
+      "f2m": 30,
+      "f2a": 55,
+      "f3m": 13,
+      "f3a": 26,
+      "ftm": 11,
+      "fta": 16,
+      "reb": 51,
+      "oreb": 9,
+      "dreb": 39,
+      "ast": 28,
+      "tov": 21,
+      "stl": 5,
+      "blk": 3,
+      "pf": 13
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "COREY KISPERT",
+        "min": "15:23",
+        "pts": 8,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "39:13",
+        "pts": 23,
+        "reb": 18,
+        "ast": 9
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "36:25",
+        "pts": 25,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "37:19",
+        "pts": 8,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "33:20",
+        "pts": 13,
+        "reb": 0,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612756",
+    "total": {
+      "pts": 103,
+      "fgm": 42,
+      "fga": 95,
+      "f2m": 31,
+      "f2a": 61,
+      "f3m": 11,
+      "f3a": 34,
+      "ftm": 8,
+      "fta": 9,
+      "reb": 46,
+      "oreb": 11,
+      "dreb": 31,
+      "ast": 24,
+      "tov": 12,
+      "stl": 15,
+      "blk": 3,
+      "pf": 12
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "33:51",
+        "pts": 11,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "27:34",
+        "pts": 5,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "20:55",
+        "pts": 6,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "28:24",
+        "pts": 31,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "35:09",
+        "pts": 16,
+        "reb": 6,
+        "ast": 4
+      }
+    ]
+  }
+}

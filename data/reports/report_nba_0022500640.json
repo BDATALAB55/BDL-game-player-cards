@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500640",
+  "date": "2026.01.23",
+  "venue": "Fiserv Forum",
+  "attendance": 17341,
+  "home": {
+    "id": "1610612749",
+    "total": {
+      "pts": 100,
+      "fgm": 34,
+      "fga": 85,
+      "f2m": 22,
+      "f2a": 46,
+      "f3m": 12,
+      "f3a": 39,
+      "ftm": 20,
+      "fta": 27,
+      "reb": 60,
+      "oreb": 11,
+      "dreb": 40,
+      "ast": 24,
+      "tov": 10,
+      "stl": 7,
+      "blk": 8,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "18",
+        "name": "KYLE KUZMA",
+        "min": "35:04",
+        "pts": 11,
+        "reb": 10,
+        "ast": 6
+      },
+      {
+        "no": "34",
+        "name": "GIANNIS ANTETOKOUNMPO",
+        "min": "32:09",
+        "pts": 22,
+        "reb": 13,
+        "ast": 7
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "29:09",
+        "pts": 17,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "11",
+        "name": "GARY HARRIS",
+        "min": "27:58",
+        "pts": 4,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "35:11",
+        "pts": 21,
+        "reb": 4,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612743",
+    "total": {
+      "pts": 102,
+      "fgm": 35,
+      "fga": 87,
+      "f2m": 23,
+      "f2a": 46,
+      "f3m": 12,
+      "f3a": 41,
+      "ftm": 20,
+      "fta": 23,
+      "reb": 55,
+      "oreb": 6,
+      "dreb": 41,
+      "ast": 27,
+      "tov": 7,
+      "stl": 8,
+      "blk": 3,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "SPENCER JONES",
+        "min": "38:16",
+        "pts": 5,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "32",
+        "name": "AARON GORDON",
+        "min": "16:06",
+        "pts": 13,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "22",
+        "name": "ZEKE NNAJI",
+        "min": "36:58",
+        "pts": 11,
+        "reb": 12,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "JULIAN STRAWTHER",
+        "min": "26:39",
+        "pts": 20,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "24",
+        "name": "JALEN PICKETT",
+        "min": "33:57",
+        "pts": 13,
+        "reb": 3,
+        "ast": 7
+      }
+    ]
+  }
+}

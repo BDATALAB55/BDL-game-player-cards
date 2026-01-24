@@ -1,12 +1,12 @@
 {
-  "attendance": "0",
-  "date": "",
-  "venueRaw": "",
-  "leagueType": "",
-  "round": "ROUND1",
-  "venue": "Tokyu Dresse Todoroki Arena",
-  "homeName": "SHIGA LAKES",
-  "awayName": "TOYAMA GROUSES",
+  "attendance": "4230",
+  "date": "2025.12.27",
+  "venueRaw": "Venue: Shiga Daihatsu Arena",
+  "leagueType": "B1",
+  "round": "ROUND17",
+  "venue": "Shiga Daihatsu Arena",
+  "homeName": "滋賀レイクス",
+  "awayName": "富山グラウジーズ",
   "home": {
     "total": {
       "pts": 99,
@@ -28,7 +28,7 @@
     "starters": [
       {
         "no": "0",
-        "nameJp": "Zach Auguste​ ​",
+        "nameJp": "ザック・オーガスト",
         "min": "45:00",
         "pts": 21,
         "f2m": 7,
@@ -46,12 +46,12 @@
         "blk": 1,
         "pf": 3,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=51000312",
-        "name": "Zach Auguste​ ​"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=51000312",
+        "name": "Zach Auguste"
       },
       {
         "no": "4",
-        "nameJp": "Ryan Kriener",
+        "nameJp": "ライアン・クリーナー",
         "min": "02:50",
         "pts": 2,
         "f2m": 1,
@@ -69,12 +69,12 @@
         "blk": 0,
         "pf": 0,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=51000101",
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=51000101",
         "name": "Ryan Kriener"
       },
       {
         "no": "7",
-        "nameJp": "Ai-Che Yu",
+        "nameJp": "游 艾喆",
         "min": "18:44",
         "pts": 8,
         "f2m": 4,
@@ -92,8 +92,8 @@
         "blk": 0,
         "pf": 1,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=51000382",
-        "name": "Ai-Che Yu"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=51000382",
+        "name": "Ai-che Yu"
       },
       {
         "no": "17",
@@ -115,8 +115,8 @@
         "blk": 0,
         "pf": 5,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=5100000040",
-        "name": "常田 耕平"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=5100000040",
+        "name": "Kohei Tsuneta"
       },
       {
         "no": "25",
@@ -138,8 +138,8 @@
         "blk": 0,
         "pf": 0,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=51000343",
-        "name": "江原 信太朗"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=51000343",
+        "name": "Shintaro Ehara"
       }
     ]
   },
@@ -164,7 +164,7 @@
     "starters": [
       {
         "no": "3",
-        "nameJp": "Yuzo Okada​ ​",
+        "nameJp": "岡田 雄三",
         "min": "30:37",
         "pts": 4,
         "f2m": 1,
@@ -182,12 +182,12 @@
         "blk": 0,
         "pf": 4,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=15752",
-        "name": "Yuzo Okada​ ​"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=15752",
+        "name": "Yuzo Okada"
       },
       {
         "no": "6",
-        "nameJp": "Nyika Williams​ ​",
+        "nameJp": "ウィリアムス ニカ",
         "min": "31:33",
         "pts": 12,
         "f2m": 5,
@@ -205,12 +205,12 @@
         "blk": 1,
         "pf": 4,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=9345",
-        "name": "Nyika Williams​ ​"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=9345",
+        "name": "Nyika Williams"
       },
       {
         "no": "12",
-        "nameJp": "Brock Motum",
+        "nameJp": "ブロック・モータム",
         "min": "37:28",
         "pts": 30,
         "f2m": 9,
@@ -228,7 +228,7 @@
         "blk": 0,
         "pf": 3,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=51000158",
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=51000158",
         "name": "Brock Motum"
       },
       {
@@ -251,8 +251,8 @@
         "blk": 0,
         "pf": 4,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=51000435",
-        "name": "田中 晴瑛"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=51000435",
+        "name": "Haruaki Tanaka"
       },
       {
         "no": "24",
@@ -274,8 +274,8 @@
         "blk": 2,
         "pf": 1,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=51000390",
-        "name": "ヤニス・モラン"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=51000390",
+        "name": "Yannis Morin"
       }
     ]
   }

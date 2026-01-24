@@ -10,63 +10,47 @@ const playerName = searchParams.get('name') || "";
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/players`;
-// キャッシュ対策：APIベースURLにタイムスタンプを付与
-const githubApiBase = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players`;
+const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
 
 let playerCards = [];
 let totalGames = 0;
 
 if (playerName) {
   try {
-    // 2. 日付フォルダの一覧を取得 (キャッシュを回避)
-    const dateRes = await fetch(`${githubApiBase}?t=${Date.now()}`, {
+    // 1回のリクエストで全ディレクトリ構造を取得
+    const res = await fetch(RECURSIVE_API, {
       headers: {
         ...(token ? { "Authorization": `token ${token}` } : {}),
-        "Cache-Control": "no-cache"
-      }
+        "Accept": "application/vnd.github.v3+json"
+      },
+      cache: 'no-store'
     });
-    const dateFolders = await dateRes.json();
+    const data = await res.json();
 
-    if (Array.isArray(dateFolders)) {
-      for (const dateDir of dateFolders.filter(d => d.type === 'dir').reverse()) {
-        // 各フォルダの中身もキャッシュを回避して取得
-        const matchApi = `${githubApiBase}/${dateDir.name}?t=${Date.now()}`;
-        const matchRes = await fetch(matchApi, {
-          headers: {
-            ...(token ? { "Authorization": `token ${token}` } : {}),
-            "Cache-Control": "no-cache"
-          }
-        });
-        const matchFolders = await matchRes.json();
+    if (data.tree) {
+      // 選手名に含まれるスペースをアンダースコアに置換した検索用文字列
+      const searchPattern = playerName.replace(/\s+/g, '_').toLowerCase();
 
-        if (Array.isArray(matchFolders)) {
-          for (const matchDir of matchFolders.filter(m => m.name.startsWith('NBA_Cards_'))) {
-            const fileApi = `${githubApiBase}/${dateDir.name}/${matchDir.name}?t=${Date.now()}`;
-            const fileRes = await fetch(fileApi, {
-              headers: {
-                ...(token ? { "Authorization": `token ${token}` } : {}),
-                "Cache-Control": "no-cache"
-              }
-            });
-            const files = await fileRes.json();
+      // 該当選手の画像ファイルを一括抽出
+      const matchedFiles = data.tree.filter(item => {
+        const path = item.path.toLowerCase();
+        return (
+          path.includes('output/players/') && 
+          path.endsWith('.png') && 
+          path.includes(searchPattern)
+        );
+      });
 
-            if (Array.isArray(files)) {
-              const normalizedSearchName = playerName.replace(/\s+/g, '_');
-              const foundFile = files.find(f => 
-                f.name.endsWith('.png') && 
-                (f.name.includes(normalizedSearchName) || f.name.includes(playerName.replace(' ', '_')))
-              );
-
-              if (foundFile) {
-                playerCards.push({
-                  date: dateDir.name,
-                  imagePath: `${githubRawBase}/${dateDir.name}/${matchDir.name}/${foundFile.name}?t=${Date.now()}`
-                });
-              }
-            }
-          }
-        }
-      }
+      // 抽出したファイルを整形
+      playerCards = matchedFiles.map(file => {
+        const parts = file.path.split('/');
+        // parts[2] = 日付(YYMMDD), parts[3] = 試合フォルダ, parts[4] = ファイル名
+        const dateStr = parts[2] || "";
+        return {
+          date: dateStr,
+          imagePath: `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${file.path}?t=${Date.now()}`
+        };
+      }).sort((a, b) => b.date.localeCompare(a.date)); // 新しい日付順
     }
     totalGames = playerCards.length;
   } catch (e) {
@@ -108,7 +92,9 @@ if (playerName) {
             <div class="group">
               <div class="mb-3 flex items-center gap-2">
                 <span class="h-[1px] w-4 bg-blue-500"></span>
-                <span class="text-[11px] font-black text-white/60 tracking-widest">20{card.date.substring(0,2)}.{card.date.substring(2,4)}.{card.date.substring(4,6)}</span>
+                <span class="text-[11px] font-black text-white/60 tracking-widest">
+                  20{card.date.substring(0,2)}.{card.date.substring(2,4)}.{card.date.substring(4,6)}
+                </span>
               </div>
               <div class="relative rounded-xl overflow-hidden shadow-2xl transition-all duration-500 group-hover:scale-[1.03] group-hover:shadow-blue-500/20 border border-white/5">
                 <img src={card.imagePath} alt={playerName} class="w-full h-auto block" loading="lazy" />
@@ -125,7 +111,7 @@ if (playerName) {
 
       <div class="mt-32 pt-20 border-t border-white/5">
          <p class="text-center text-[10px] font-black tracking-[0.5em] text-white/20 uppercase mb-10">Active Calendar</p>
-         </div>
+      </div>
     </main>
 
     <nav class="fixed bottom-8 left-0 w-full px-8 flex justify-between items-center z-50">

@@ -4,7 +4,6 @@ import Layout from '../layouts/Layout.astro';
 
 // --- 設定値 ---
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
-// キャッシュを避けるためにタイムスタンプを付与
 const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
 const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/NBA`;
 
@@ -14,11 +13,11 @@ let reportGroups = [];
 
 try {
   const res = await fetch(RECURSIVE_API, {
-    headers: token ? { 
-      "Authorization": `token ${token}`,
-      "Accept": "application/vnd.github.v3+json",
-      "Cache-Control": "no-cache"
-    } : { "Accept": "application/vnd.github.v3+json" }
+    headers: {
+      ...(token ? { "Authorization": `token ${token}` } : {}),
+      "Accept": "application/vnd.github.v3+json"
+    },
+    cache: 'no-store'
   });
   const data = await res.json();
 
@@ -35,15 +34,15 @@ try {
       const nbaIndex = pathParts.indexOf('NBA');
       if (nbaIndex === -1 || pathParts.length <= nbaIndex + 2) return;
 
-      const folderName = pathParts[nbaIndex + 1]; // 日付フォルダ (例: 260118)
-      const fileName = pathParts[nbaIndex + 2];   // ファイル名
+      const folderName = pathParts[nbaIndex + 1]; // YYMMDD
+      const fileName = pathParts[nbaIndex + 2];
 
       if (!/^\d+$/.test(folderName)) return;
 
       const nameParts = fileName.replace('.png', '').split('_');
-      // ファイル名形式: NBA_20260117_0022500593_CHA_GSW.png
-      const fullDate = nameParts[1] || ""; 
-      const gameId = nameParts[2] || "";
+      // インデックスを修正: NBA_Report_YYYYMMDD_GameID...
+      const fullDate = nameParts[2] || ""; 
+      const gameId = nameParts[3] || "";
       const teamA = nameParts[nameParts.length - 2] || "AWAY";
       const teamB = nameParts[nameParts.length - 1] || "HOME";
 
@@ -55,11 +54,13 @@ try {
         };
       }
 
+      const cardFolderName = `NBA_Cards_${gameId}_${fullDate}`;
+
       groups[folderName].reports.push({
-        path: `${IMAGE_BASE_URL}/${folderName}/${fileName}`,
+        path: `${IMAGE_BASE_URL}/${folderName}/${fileName}?t=${Date.now()}`,
         away: teamA,
         home: teamB,
-        link: `/nba-cards?folder=${folderName}/NBA_Cards_${gameId}_${fullDate}`
+        link: `/nba-cards?folder=${folderName}/${cardFolderName}`
       });
     });
 

@@ -2,222 +2,146 @@
 export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
+// 1. URLから ?team= の値を取得
 const { searchParams } = Astro.url;
-const teamId = searchParams.get('team') || 'LAL';
+const teamId = searchParams.get('team') || "GSW";
 
+// --- 設定：リポジトリ情報 ---
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
-// 常に最新データを取得するためタイムスタンプを付与
 const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
 const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/NBA`;
+
 const token = process.env.GITHUB_TOKEN;
 
-const teamInfo = {
-  ATL: { city: "Atlanta", name: "Hawks" }, BOS: { city: "Boston", name: "Celtics" },
-  BKN: { city: "Brooklyn", name: "Nets" }, CHA: { city: "Charlotte", name: "Hornets" },
-  CHI: { city: "Chicago", name: "Bulls" }, CLE: { city: "Cleveland", name: "Cavaliers" },
-  DAL: { city: "Dallas", name: "Mavericks" }, DEN: { city: "Denver", name: "Nuggets" },
-  DET: { city: "Detroit", name: "Pistons" }, GSW: { city: "Golden State", name: "Warriors" },
-  HOU: { city: "Houston", name: "Rockets" }, IND: { city: "Indiana", name: "Pacers" },
-  LAC: { city: "LA", name: "Clippers" }, LAL: { city: "Los Angeles", name: "Lakers" },
-  MEM: { city: "Memphis", name: "Grizzlies" }, MIA: { city: "Miami", name: "Heat" },
-  MIL: { city: "Milwaukee", name: "Bucks" }, MIN: { city: "Minnesota", name: "Timberwolves" },
-  NOP: { city: "New Orleans", name: "Pelicans" }, NYK: { city: "New York", name: "Knicks" },
-  OKC: { city: "Oklahoma City", name: "Thunder" }, ORL: { city: "Orlando", name: "Magic" },
-  PHI: { city: "Philadelphia", name: "76ers" }, PHX: { city: "Phoenix", name: "Suns" },
-  POR: { city: "Portland", name: "Trail Blazers" }, SAC: { city: "Sacramento", name: "Kings" },
-  SAS: { city: "San Antonio", name: "Spurs" }, TOR: { city: "Toronto", name: "Raptors" },
-  UTA: { city: "Utah", name: "Jazz" }, WAS: { city: "Washington", name: "Wizards" },
-};
-
-const currentTeam = teamInfo[teamId] || { city: "NBA", name: "TEAM" };
-
-let allTeamReports = [];
-let availableDatesMap = {};
+let teamReports = [];
 
 try {
   const res = await fetch(RECURSIVE_API, {
     headers: {
       ...(token ? { "Authorization": `token ${token}` } : {}),
-      "Accept": "application/vnd.github.v3+json",
-      "Cache-Control": "no-cache",
-      "Pragma": "no-cache"
-    }
+      "Accept": "application/vnd.github.v3+json"
+    },
+    cache: 'no-store'
   });
   const data = await res.json();
 
   if (data.tree) {
-    const reportFiles = data.tree.filter(item => 
-      item.path.startsWith('output/reports/NBA/') && 
-      item.path.endsWith('.png')
+    const allFiles = data.tree.filter(item => 
+      item.path.includes('output/reports/NBA/') && 
+      item.path.toLowerCase().endsWith('.png')
     );
 
-    reportFiles.forEach(file => {
-      const parts = file.path.split('/');
-      const fileName = parts[parts.length - 1];
-      const folderName = parts[parts.length - 2];
-      
-      const nameParts = fileName.replace('.png', '').split('_');
-      
-      const fullDate = nameParts[2];
-      const gameId = nameParts[3];
-      const teamA = nameParts[nameParts.length - 2];
-      const teamB = nameParts[nameParts.length - 1];
+    allFiles.forEach(file => {
+      const pathParts = file.path.split('/');
+      const nbaIndex = pathParts.indexOf('NBA');
+      if (nbaIndex === -1 || pathParts.length <= nbaIndex + 2) return;
 
+      const folderName = pathParts[nbaIndex + 1]; 
+      const fileName = pathParts[nbaIndex + 2];   
+
+      if (!/^\d+$/.test(folderName)) return;
+
+      const nameParts = fileName.replace('.png', '').split('_');
+      // インデックスを修正: [2]=Date, [3]=GameID, [4]=Away, [5]=Home
+      const fullDate = nameParts[2] || ""; 
+      const gameId = nameParts[3] || "";
+      const teamA = nameParts[nameParts.length - 2] || "";
+      const teamB = nameParts[nameParts.length - 1] || "";
+
+      // 指定されたチームが含まれる試合のみ抽出
       if (teamA === teamId || teamB === teamId) {
-        const reportObj = {
+        const cardFolderName = `NBA_Cards_${gameId}_${fullDate}`;
+        
+        teamReports.push({
           id: folderName,
           date: `20${folderName.substring(0,2)}.${folderName.substring(2,4)}.${folderName.substring(4,6)}`,
-          // 画像URLにもタイムスタンプを付与してキャッシュを回避
           path: `${IMAGE_BASE_URL}/${folderName}/${fileName}?t=${Date.now()}`,
-          fileName: fileName,
           away: teamA,
           home: teamB,
-          link: `/nba-cards?folder=${folderName}/NBA_Cards_${gameId}_${fullDate}`
-        };
-        allTeamReports.push(reportObj);
-        if (!availableDatesMap[folderName]) availableDatesMap[folderName] = reportObj.link;
+          link: `/nba-cards?folder=${folderName}/${cardFolderName}`
+        });
       }
     });
-    allTeamReports.sort((a, b) => b.id.localeCompare(a.id));
+
+    // 新しい順にソート
+    teamReports.sort((a, b) => b.id.localeCompare(a.id));
   }
 } catch (e) {
-  console.error("Fetch failed:", e);
+  console.error("Fetch Error:", e);
 }
+
+const teamColorMap = {
+  ATL: 'bg-[#E03A3E]', BOS: 'bg-[#007A33]', BKN: 'bg-black border border-white/20',
+  CHA: 'bg-[#00788C]', CHI: 'bg-[#CE1141]', CLE: 'bg-[#6F263D]',
+  DAL: 'bg-[#0053BC]', DEN: 'bg-[#0E2240]', DET: 'bg-[#1D428A]',
+  GSW: 'bg-[#006BB6]', HOU: 'bg-[#CE1141]', IND: 'bg-[#002D62]',
+  LAC: 'bg-[#12173F]', LAL: 'bg-[#552583]', MEM: 'bg-[#5D76A9]',
+  MIA: 'bg-[#98002E]', MIL: 'bg-[#00471B]', MIN: 'bg-[#0C2340]',
+  NOP: 'bg-[#0C2340]', NYK: 'bg-[#F58426]', OKC: 'bg-[#007AC1]',
+  ORL: 'bg-[#0077C0]', PHI: 'bg-[#006BB6]', PHX: 'bg-[#1D1160]',
+  POR: 'bg-[#E03A3E]', SAC: 'bg-[#5A2D81]', SAS: 'bg-black border border-white/20',
+  TOR: 'bg-[#CE1141]', UTA: 'bg-[#002B5C]', WAS: 'bg-[#002B5C]',
+};
+const currentTeamColor = teamColorMap[teamId] || 'bg-gray-700';
 ---
 
-<Layout title={`${teamId} | B-Data Lab`}>
-  <main class="bg-[#373A36] min-h-screen text-white font-avenir pb-40 overflow-x-hidden relative">
+<Layout title={`${teamId} Reports`}>
+  <div class="bg-[#373A36] min-h-screen text-white font-avenir pb-32">
     
-    <header class="pt-20 pb-12 text-center px-6 relative">
-      <div class="absolute top-10 left-1/2 -translate-x-1/2 text-[120px] font-black opacity-5 select-none italic uppercase tracking-tighter w-full leading-none">{currentTeam.name}</div>
+    <header class="pt-20 pb-12 px-8 border-b border-white/5 relative overflow-hidden">
+      <div class="absolute top-4 left-8 text-[120px] font-black opacity-[0.03] select-none italic tracking-tighter z-0 uppercase">
+        {teamId}
+      </div>
       <div class="relative z-10">
-        <p class="text-blue-500 font-black tracking-[0.5em] uppercase text-sm mb-2 italic">{currentTeam.city}</p>
-        <h1 class="text-7xl md:text-8xl font-black tracking-tighter italic uppercase leading-tight">{currentTeam.name}</h1>
+        <div class="flex items-center gap-4 mb-4">
+          <div class={`w-12 h-1.5 ${currentTeamColor} rounded-full`}></div>
+          <span class="text-blue-500 font-black tracking-[0.4em] uppercase text-[10px]">Team Archive</span>
+        </div>
+        <h1 class="text-7xl font-black italic uppercase tracking-tighter leading-none">{teamId}</h1>
       </div>
     </header>
 
-    <div class="max-w-6xl mx-auto px-6">
-      
-      <section class="mt-16">
-        <div class="flex justify-between items-end mb-10">
-          <div>
-            <h2 class="text-3xl font-black uppercase tracking-tight italic">Game Reports</h2>
-            <p class="text-white/40 text-[10px] font-bold tracking-widest uppercase mt-1">Click card to download</p>
-          </div>
-          <div class="text-right leading-none">
-            <span class="text-7xl font-black italic opacity-20 block">{allTeamReports.length}</span>
-            <span class="text-[12px] font-bold opacity-40 uppercase tracking-[0.3em]">Games</span>
-          </div>
-        </div>
+    <main class="max-w-7xl mx-auto px-8 mt-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-20">
+        {teamReports.length > 0 ? teamReports.map((report) => (
+          <div class="group">
+            <div class="flex items-center justify-between mb-4 px-1">
+              <span class="text-[11px] font-black tracking-[0.2em] text-white/40 uppercase">{report.date}</span>
+              <div class="h-[1px] flex-grow mx-4 bg-white/5"></div>
+            </div>
 
-        {allTeamReports.length > 0 ? (
-          <div class="flex overflow-x-auto gap-8 no-scrollbar snap-x pb-12">
-            {allTeamReports.map(r => (
-              <div class="flex-none w-[320px] snap-center">
-                <div class="mb-4 flex items-center gap-2 px-2">
-                  <div class="w-2 h-2 rounded-full bg-blue-500"></div>
-                  <span class="text-[14px] font-black tracking-wider text-white/80">{r.date}</span>
-                </div>
-
-                <a href={r.path} download={r.fileName} class="block cursor-pointer active:scale-95 transition-transform">
-                  <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-black/40 aspect-[3/4.2] relative group">
-                     <img src={r.path} alt="Report" class="w-full h-full object-cover" />
-                     <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                        <span class="bg-black/60 px-4 py-2 rounded-full text-[10px] font-black uppercase tracking-widest border border-white/20">Download PNG</span>
-                     </div>
-                  </div>
-                </a>
-                
-                <div class="mt-6 flex justify-center">
-                  <a href={r.link} class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative hover:scale-110 transition-transform group">
-                    <div class="absolute inset-0 p-[2px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10"></div>
-                    <span class="text-[12px] font-black tracking-[0.2em] uppercase text-white">
-                      {r.away} <span class="text-[9px] font-medium lowercase mx-1 text-white/50 italic px-1">vs</span> {r.home}
-                    </span>
-                  </a>
-                </div>
+            <a href={report.link} class="block mb-8 relative">
+              <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-black/40 aspect-[3/4.2] relative transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-blue-500/10">
+                <img src={report.path} alt="Team Report" class="w-full h-full object-cover" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60"></div>
               </div>
-            ))}
+            </a>
+
+            <div class="flex flex-col items-center">
+              <a href={report.link} class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative hover:scale-110 transition-transform group/btn overflow-hidden">
+                <div class="absolute inset-0 p-[2px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10"></div>
+                <span class="text-[12px] font-black tracking-[0.2em] uppercase text-white">
+                  {report.away} <span class="text-[9px] font-medium lowercase mx-1 text-white/50 italic px-1">vs</span> {report.home}
+                </span>
+              </a>
+            </div>
           </div>
-        ) : (
-          <div class="py-20 text-center border-2 border-dashed border-white/5 rounded-3xl">
-            <p class="text-white/20 font-black uppercase tracking-widest italic">No game reports found</p>
+        )) : (
+          <div class="col-span-full py-40 text-center border-2 border-dashed border-white/5 rounded-3xl">
+             <p class="text-white/20 font-black italic uppercase tracking-[0.3em] text-sm">No report found for this franchise</p>
           </div>
         )}
-      </section>
+      </div>
+    </main>
 
-      <section class="mt-24">
-        <div class="max-w-md mx-auto">
-          <h3 class="text-center text-[10px] font-black tracking-[0.4em] uppercase mb-8 text-white/30 italic">Game Calendar</h3>
-          <div id="calendar" class="bg-black/30 p-8 rounded-[40px] border border-white/5 shadow-inner"></div>
-        </div>
-      </section>
-
+    <div class="fixed bottom-10 right-10 z-40">
+      <a href="/nba-home" class="bg-gray-800 text-white px-10 py-4 rounded-full font-black text-[11px] uppercase tracking-[0.3em] shadow-2xl hover:bg-gray-700 active:scale-95 transition-all border border-white/10 block">
+        Back to Home
+      </a>
     </div>
-
-    <div class="fixed bottom-8 left-8 z-40">
-       <button onclick="history.back()" class="bg-white/10 backdrop-blur-md text-white px-6 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl hover:bg-white/20 transition-all border border-white/10">← Back</button>
-    </div>
-    <div class="fixed bottom-8 right-8 z-40">
-      <a href="/nba" class="bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 hover:scale-105 transition-all border border-white/10">NBA Home</a>
-    </div>
-
-  </main>
+  </div>
 </Layout>
 
-<script is:inline define:vars={{ availableDatesMap }}>
-  let currentY = 2026;
-  let currentM = 0;
-
-  const dates = Object.keys(availableDatesMap).sort((a,b) => b.localeCompare(a));
-  if (dates.length > 0) {
-    currentY = 2000 + parseInt(dates[0].substring(0,2));
-    currentM = parseInt(dates[0].substring(2,4)) - 1;
-  }
-
-  window.changeMonth = function(delta) {
-    currentM += delta;
-    if (currentM < 0) { currentM = 11; currentY--; }
-    else if (currentM > 11) { currentM = 0; currentY++; }
-    renderCalendar(currentY, currentM);
-  };
-
-  function renderCalendar(y, m) {
-    const calendarEl = document.getElementById('calendar');
-    const monthNames = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
-    const firstDay = new Date(y, m, 1).getDay();
-    const daysInMonth = new Date(y, m + 1, 0).getDate();
-    
-    let html = `
-      <div class="flex justify-between items-center mb-10 px-2">
-        <button onclick="changeMonth(-1)" class="text-white/30 hover:text-white transition-colors text-lg">←</button>
-        <div class="font-black text-[13px] tracking-[0.3em] uppercase">${monthNames[m]} ${y}</div>
-        <button onclick="changeMonth(1)" class="text-white/30 hover:text-white transition-colors text-lg">→</button>
-      </div>
-      <div class="grid grid-cols-7 gap-1 text-center text-[9px] font-black text-white/10 mb-6 tracking-widest">
-        <div>SUN</div><div>MON</div><div>TUE</div><div>WED</div><div>THU</div><div>FRI</div><div>SAT</div>
-      </div>
-      <div class="grid grid-cols-7 gap-y-4 gap-x-2">`;
-
-    for (let i = 0; i < firstDay; i++) html += `<div></div>`;
-    for (let d = 1; d <= daysInMonth; d++) {
-      const dateStr = `${String(y).substring(2)}${String(m + 1).padStart(2, '0')}${String(d).padStart(2, '0')}`;
-      const link = availableDatesMap[dateStr];
-      
-      html += `
-        <div class="flex items-center justify-center">
-          ${link ? 
-            `<a href="${link}" class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-600 text-white text-[12px] font-black shadow-[0_0_20px_rgba(37,99,235,0.4)] hover:scale-125 hover:rotate-6 active:scale-90 transition-all cursor-pointer border border-white/20">${d}</a>` : 
-            `<span class="text-white/10 text-[12px] font-bold">${d}</span>`
-          }
-        </div>`;
-    }
-    calendarEl.innerHTML = html + `</div>`;
-  }
-  renderCalendar(currentY, currentM);
-</script>
-
-<style>
-  .no-scrollbar::-webkit-scrollbar { display: none; }
-  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+<style is:global>
+  :root { font-family: "Avenir Next", sans-serif; }
 </style>

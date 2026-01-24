@@ -34,12 +34,13 @@ const getTeamStyle = (id) => teamColorMap[id] || 'bg-gray-700';
 
 let folderName = queryFolder;
 
-// --- 修正：キャッシュ対策を施した自動取得 ---
+// --- 自動取得ロジック ---
 if (!folderName) {
   try {
     const listApi = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players?t=${Date.now()}`;
     const res = await fetch(listApi, {
-      headers: token ? { "Authorization": `token ${token}`, "Cache-Control": "no-cache" } : { "Cache-Control": "no-cache" }
+      headers: token ? { "Authorization": `token ${token}` } : {},
+      cache: 'no-store'
     });
     const items = await res.json();
     
@@ -52,7 +53,8 @@ if (!folderName) {
         const latestDateDir = dateFolders[0].name;
         const matchApi = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players/${latestDateDir}?t=${Date.now()}`;
         const matchRes = await fetch(matchApi, {
-          headers: token ? { "Authorization": `token ${token}`, "Cache-Control": "no-cache" } : { "Cache-Control": "no-cache" }
+          headers: token ? { "Authorization": `token ${token}` } : {},
+          cache: 'no-store'
         });
         const matchItems = await matchRes.json();
         
@@ -69,7 +71,6 @@ if (!folderName) {
   }
 }
 
-// フォルダ名からチーム名を抽出するロジックを強化
 let awayData = [];
 let homeData = [];
 let teamHome = "HOME";
@@ -80,20 +81,19 @@ const rawDate = folderName ? folderName.split('/')[0] : "";
 const formattedDate = rawDate ? `20${rawDate.substring(0,2)}.${rawDate.substring(2,4)}.${rawDate.substring(4,6)}` : "NO DATA";
 
 try {
-  // キャッシュ対策を追加
   const apiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players/${folderName}?t=${Date.now()}`;
   const response = await fetch(apiURL, {
-    headers: token ? { "Authorization": `token ${token}`, "Cache-Control": "no-cache" } : { "Cache-Control": "no-cache" }
+    headers: token ? { "Authorization": `token ${token}` } : {},
+    cache: 'no-store'
   });
   const files = await response.json();
 
   if (Array.isArray(files)) {
     const playerFiles = files.filter(f => f.name.endsWith('.png')).map(f => f.name);
     
-    // 修正：ファイル名からチーム名を正確に抽出 (例: GSW_30_Stephen_Curry.png -> GSW)
-    const detectedTeams = [...new Set(playerFiles.map(f => f.split('_')[0]))].filter(t => t && t !== 'NBA');
+    // チーム名の抽出を正確に行う
+    const detectedTeams = [...new Set(playerFiles.map(f => f.split('_')[0]))].filter(t => t && t !== 'NBA' && t.length <= 3);
     
-    // チームAとチームBを割り当て
     teamAway = detectedTeams[0] || "AWAY";
     teamHome = detectedTeams[1] || "HOME";
 
@@ -105,7 +105,6 @@ try {
           return {
             team: p[0],
             no: p[1],
-            // 修正：名前部分（インデックス2以降すべて）を結合
             name: p.slice(2).join(' '),
             imagePath: `${githubBase}/${folderName}/${f}?t=${Date.now()}`
           };
@@ -116,16 +115,17 @@ try {
     homeData = process(teamHome);
   }
 
-  // レポート画像の取得
-  const gameIdMatch = folderName.match(/\d{10}/);
+  // レポート画像の取得 (GameIDをフォルダ名から正確に抽出)
+  const gameIdMatch = folderName ? folderName.match(/\d{10}/) : null;
   const gameId = gameIdMatch ? gameIdMatch[0] : "";
 
-  if (gameId) {
+  if (gameId && rawDate) {
     const reportsApiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/reports/NBA/${rawDate}?t=${Date.now()}`;
     const reportsRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/NBA/${rawDate}`;
 
     const reportRes = await fetch(reportsApiURL, {
-      headers: token ? { "Authorization": `token ${token}`, "Cache-Control": "no-cache" } : { "Cache-Control": "no-cache" }
+      headers: token ? { "Authorization": `token ${token}` } : {},
+      cache: 'no-store'
     });
     const reportFiles = await reportRes.json();
 

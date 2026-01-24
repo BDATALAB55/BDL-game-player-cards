@@ -79,7 +79,6 @@ const teams = [
 
 const today = reportGroups.length > 0 ? reportGroups[0].date : "2026.01.24";
 
-// 9チームずつに分割
 const teamChunks = [];
 for (let i = 0; i < teams.length; i += 9) {
   teamChunks.push(teams.slice(i, i + 9));
@@ -122,20 +121,20 @@ for (let i = 0; i < teams.length; i += 9) {
       <section class="mt-12">
         <h2 class="text-4xl font-black uppercase tracking-tighter mb-8">TEAM</h2>
         
-        <div class="hidden md:grid grid-cols-5 lg:grid-cols-6 gap-1">
+        <div class="hidden md:grid grid-cols-4 lg:grid-cols-5 gap-2">
           {teams.map(t => (
             <a href={`/nba-team?team=${t.id}`} class="group">
-              <div class={`${t.color} aspect-square rounded-lg flex items-center justify-center text-2xl font-black tracking-widest transition-all group-hover:brightness-110 group-active:scale-95 uppercase`}>
-                {t.id}
+              <div class={`${t.color} aspect-square rounded-2xl flex items-center justify-center text-3xl font-black tracking-widest transition-all duration-300 group-hover:scale-105 group-hover:brightness-125 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] uppercase`}>
+                <span class="group-hover:scale-110 transition-transform">{t.id}</span>
               </div>
             </a>
           ))}
         </div>
 
         <div class="md:hidden -mx-6">
-          <div id="team-carousel" class="flex overflow-x-auto snap-x snap-mandatory no-scrollbar px-6 gap-1">
+          <div id="team-carousel" class="flex overflow-x-auto snap-x snap-mandatory no-scrollbar px-6 gap-1.5">
             {teamChunks.map((chunk) => (
-              <div class="min-w-full snap-center grid grid-cols-3 gap-1">
+              <div class="min-w-full snap-center grid grid-cols-3 gap-1.5">
                 {chunk.map(t => (
                   <a href={`/nba-team?team=${t.id}`}>
                     <div class={`${t.color} aspect-square rounded-lg flex items-center justify-center text-xl font-black tracking-widest transition-all active:scale-95 uppercase`}>

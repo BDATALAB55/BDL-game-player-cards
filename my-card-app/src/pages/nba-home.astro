@@ -37,9 +37,8 @@ try {
 
       const nameParts = fileName.replace('.png', '').split('_');
       
-      // 【ロジック修正点】ファイル名構造 NBA_Report_YYYYMMDD_GameID... に合わせてインデックスを変更
-      const fullDate = nameParts[2] || "";  // 3番目が日付
-      const gameId = nameParts[3] || "";    // 4番目がGameID
+      const fullDate = nameParts[2] || "";
+      const gameId = nameParts[3] || "";
       const teamA = nameParts[nameParts.length - 2] || "AWAY";
       const teamB = nameParts[nameParts.length - 1] || "HOME";
 
@@ -51,7 +50,6 @@ try {
         };
       }
       
-      // 【ロジック修正点】リンク先フォルダ名を正確に生成
       const cardFolderName = `NBA_Cards_${gameId}_${fullDate}`;
 
       groups[folderName].reports.push({
@@ -127,41 +125,6 @@ for (let i = 0; i < teams.length; i += 9) {
     <div class="max-w-6xl mx-auto px-6">
       
       <section class="mt-12">
-        <h2 class="text-4xl font-black uppercase tracking-tighter mb-8">TEAM</h2>
-        
-        <div class="hidden md:grid grid-cols-4 lg:grid-cols-6 gap-2">
-          {teams.map(t => (
-            <a href={`/nba-team?team=${t.id}`} class="group">
-              <div class={`${t.color} aspect-[2/1] rounded-2xl flex items-center justify-center text-3xl font-black tracking-widest transition-all duration-300 group-hover:scale-105 group-hover:brightness-125 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] uppercase`}>
-                <span class="group-hover:scale-110 transition-transform">{t.id}</span>
-              </div>
-            </a>
-          ))}
-        </div>
-
-        <div class="md:hidden -mx-6">
-          <div id="team-carousel" class="flex overflow-x-auto snap-x snap-mandatory no-scrollbar px-6 gap-1.5">
-            {teamChunks.map((chunk) => (
-              <div class="min-w-full snap-center grid grid-cols-3 gap-1.5">
-                {chunk.map(t => (
-                  <a href={`/nba-team?team=${t.id}`}>
-                    <div class={`${t.color} aspect-square rounded-lg flex items-center justify-center text-xl font-black tracking-widest transition-all active:scale-95 uppercase`}>
-                      {t.id}
-                    </div>
-                  </a>
-                ))}
-              </div>
-            ))}
-          </div>
-          <div class="flex justify-center gap-1.5 mt-6">
-            {teamChunks.map((_, i) => (
-              <div class={`h-[2px] rounded-full transition-all duration-300 ${i === 0 ? 'w-6 bg-white' : 'w-2 bg-white/10'}`} data-dot={i}></div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section class="mt-24">
         <div class="flex justify-between items-end mb-8">
           <div>
             <h2 class="text-4xl font-black uppercase tracking-tighter mb-4">GAME REPORT</h2>
@@ -197,6 +160,41 @@ for (let i = 0; i < teams.length; i += 9) {
           <a href="/nba-reports" class="bg-[#CE1141] hover:bg-red-700 hover:scale-105 text-white px-12 py-5 rounded-full text-sm font-black uppercase tracking-[0.25em] shadow-2xl transition-all">
             Game Report Archive
           </a>
+        </div>
+      </section>
+
+      <section class="mt-24">
+        <h2 class="text-4xl font-black uppercase tracking-tighter mb-8">TEAM</h2>
+        
+        <div class="hidden md:grid grid-cols-4 lg:grid-cols-6 gap-2">
+          {teams.map(t => (
+            <a href={`/nba-team?team=${t.id}`} class="group">
+              <div class={`${t.color} aspect-[2/1] rounded-2xl flex items-center justify-center text-3xl font-black tracking-widest transition-all duration-300 group-hover:scale-105 group-hover:brightness-125 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] uppercase`}>
+                <span class="group-hover:scale-110 transition-transform">{t.id}</span>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <div class="md:hidden -mx-6">
+          <div id="team-carousel" class="flex overflow-x-auto snap-x snap-mandatory no-scrollbar px-6 gap-1.5">
+            {teamChunks.map((chunk) => (
+              <div class="min-w-full snap-center grid grid-cols-3 gap-1.5">
+                {chunk.map(t => (
+                  <a href={`/nba-team?team=${t.id}`}>
+                    <div class={`${t.color} aspect-square rounded-lg flex items-center justify-center text-xl font-black tracking-widest transition-all active:scale-95 uppercase`}>
+                      {t.id}
+                    </div>
+                  </a>
+                ))}
+              </div>
+            ))}
+          </div>
+          <div class="flex justify-center gap-1.5 mt-6">
+            {teamChunks.map((_, i) => (
+              <div class={`h-[2px] rounded-full transition-all duration-300 ${i === 0 ? 'w-6 bg-white' : 'w-2 bg-white/10'}`} data-dot={i}></div>
+            ))}
+          </div>
         </div>
       </section>
 

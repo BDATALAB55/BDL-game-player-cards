@@ -10,6 +10,7 @@ const playerName = searchParams.get('name') || "";
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/players`;
+// キャッシュ対策：APIベースURLにタイムスタンプを付与
 const githubApiBase = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players`;
 
 let playerCards = [];
@@ -17,34 +18,40 @@ let totalGames = 0;
 
 if (playerName) {
   try {
-    // 2. 日付フォルダの一覧を取得
-    const dateRes = await fetch(githubApiBase, {
-      headers: token ? { "Authorization": `token ${token}` } : {}
+    // 2. 日付フォルダの一覧を取得 (キャッシュを回避)
+    const dateRes = await fetch(`${githubApiBase}?t=${Date.now()}`, {
+      headers: {
+        ...(token ? { "Authorization": `token ${token}` } : {}),
+        "Cache-Control": "no-cache"
+      }
     });
     const dateFolders = await dateRes.json();
 
     if (Array.isArray(dateFolders)) {
-      // 日付フォルダを降順（新しい順）にループ
       for (const dateDir of dateFolders.filter(d => d.type === 'dir').reverse()) {
-        const matchApi = `${githubApiBase}/${dateDir.name}`;
+        // 各フォルダの中身もキャッシュを回避して取得
+        const matchApi = `${githubApiBase}/${dateDir.name}?t=${Date.now()}`;
         const matchRes = await fetch(matchApi, {
-          headers: token ? { "Authorization": `token ${token}` } : {}
+          headers: {
+            ...(token ? { "Authorization": `token ${token}` } : {}),
+            "Cache-Control": "no-cache"
+          }
         });
         const matchFolders = await matchRes.json();
 
         if (Array.isArray(matchFolders)) {
           for (const matchDir of matchFolders.filter(m => m.name.startsWith('NBA_Cards_'))) {
-            const fileApi = `${githubApiBase}/${dateDir.name}/${matchDir.name}`;
+            const fileApi = `${githubApiBase}/${dateDir.name}/${matchDir.name}?t=${Date.now()}`;
             const fileRes = await fetch(fileApi, {
-              headers: token ? { "Authorization": `token ${token}` } : {}
+              headers: {
+                ...(token ? { "Authorization": `token ${token}` } : {}),
+                "Cache-Control": "no-cache"
+              }
             });
             const files = await fileRes.json();
 
             if (Array.isArray(files)) {
-              // 検索用に名前を変換 (例: "Tyus Jones" -> "Tyus_Jones")
               const normalizedSearchName = playerName.replace(/\s+/g, '_');
-
-              // ファイル名に選手名が含まれているかチェック
               const foundFile = files.find(f => 
                 f.name.endsWith('.png') && 
                 (f.name.includes(normalizedSearchName) || f.name.includes(playerName.replace(' ', '_')))
@@ -53,7 +60,7 @@ if (playerName) {
               if (foundFile) {
                 playerCards.push({
                   date: dateDir.name,
-                  imagePath: `${githubRawBase}/${dateDir.name}/${matchDir.name}/${foundFile.name}`
+                  imagePath: `${githubRawBase}/${dateDir.name}/${matchDir.name}/${foundFile.name}?t=${Date.now()}`
                 });
               }
             }

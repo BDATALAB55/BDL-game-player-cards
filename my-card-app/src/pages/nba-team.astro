@@ -6,6 +6,7 @@ const { searchParams } = Astro.url;
 const teamId = searchParams.get('team') || 'LAL';
 
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
+// 常に最新データを取得するためタイムスタンプを付与
 const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
 const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/NBA`;
 const token = process.env.GITHUB_TOKEN;
@@ -35,40 +36,42 @@ let availableDatesMap = {};
 
 try {
   const res = await fetch(RECURSIVE_API, {
-    headers: token ? { "Authorization": `token ${token}`, "Accept": "application/vnd.github.v3+json" } : { "Accept": "application/vnd.github.v3+json" }
+    headers: {
+      ...(token ? { "Authorization": `token ${token}` } : {}),
+      "Accept": "application/vnd.github.v3+json",
+      "Cache-Control": "no-cache",
+      "Pragma": "no-cache"
+    }
   });
   const data = await res.json();
 
   if (data.tree) {
-    // 修正：正規表現を使用して、NBAレポート用フォルダ内のPNGのみを抽出
     const reportFiles = data.tree.filter(item => 
       item.path.startsWith('output/reports/NBA/') && 
       item.path.endsWith('.png')
     );
 
     reportFiles.forEach(file => {
-      // 例: output/reports/NBA/260117/NBA_Report_20260117_0022500593_GSW_DAL.png
       const parts = file.path.split('/');
       const fileName = parts[parts.length - 1];
-      const folderName = parts[parts.length - 2]; // 日付フォルダ (260117)
+      const folderName = parts[parts.length - 2];
       
       const nameParts = fileName.replace('.png', '').split('_');
       
-      // NBA_Report_20260117_0022500593_GSW_DAL.png の構造に基づく
-      const fullDate = nameParts[2]; // 20260117
-      const gameId = nameParts[3];   // 0022500593
-      const teamA = nameParts[nameParts.length - 2]; // GSW
-      const teamB = nameParts[nameParts.length - 1]; // DAL
+      const fullDate = nameParts[2];
+      const gameId = nameParts[3];
+      const teamA = nameParts[nameParts.length - 2];
+      const teamB = nameParts[nameParts.length - 1];
 
       if (teamA === teamId || teamB === teamId) {
         const reportObj = {
           id: folderName,
           date: `20${folderName.substring(0,2)}.${folderName.substring(2,4)}.${folderName.substring(4,6)}`,
-          path: `${IMAGE_BASE_URL}/${folderName}/${fileName}`,
+          // 画像URLにもタイムスタンプを付与してキャッシュを回避
+          path: `${IMAGE_BASE_URL}/${folderName}/${fileName}?t=${Date.now()}`,
           fileName: fileName,
           away: teamA,
           home: teamB,
-          // 詳細ページへのリンク
           link: `/nba-cards?folder=${folderName}/NBA_Cards_${gameId}_${fullDate}`
         };
         allTeamReports.push(reportObj);

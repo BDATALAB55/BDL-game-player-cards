@@ -53,8 +53,7 @@ try {
     headers: {
       ...(token ? { "Authorization": `token ${token}` } : {}),
       "Accept": "application/vnd.github.v3+json",
-      "Cache-Control": "no-cache",
-      "Pragma": "no-cache"
+      "Cache-Control": "no-cache"
     }
   });
   const data = await res.json();
@@ -103,8 +102,8 @@ try {
     <header class="pt-12 pb-6 px-6 max-w-6xl mx-auto w-full relative">
       <div class="flex items-end justify-between w-full relative pb-4">
         <div class="flex-shrink-0">
-          <div class="flex flex-col md:flex-row md:items-end md:gap-4 leading-none font-black uppercase tracking-tight">
-            <span class="text-2xl md:text-7xl opacity-90 md:opacity-100">
+          <div class="flex flex-col md:flex-row md:items-end md:gap-4 leading-none md:leading-[0.85] font-black uppercase tracking-tight">
+            <span class="text-2xl md:text-3xl md:font-bold md:opacity-60">
               {currentTeam.city}
             </span>
             <span class="text-5xl md:text-7xl">
@@ -146,7 +145,7 @@ try {
             <p class="text-white/40 text-[10px] font-bold tracking-widest uppercase mt-1">Click card to download</p>
           </div>
           <div class="text-right leading-none">
-            <span class="text-7xl font-black italic opacity-20 block">{allTeamReports.length}</span>
+            <span class="text-7xl font-black italic opacity-20 block tracking-[-0.1em]">{allTeamReports.length}</span>
             <span class="text-[12px] font-bold opacity-40 uppercase tracking-[0.3em]">Games</span>
           </div>
         </div>
@@ -191,25 +190,6 @@ try {
           <div id="calendar" class="bg-black/30 p-8 rounded-[40px] border border-white/5 shadow-inner"></div>
         </div>
       </section>
-    </div>
-
-    <div class="md:hidden mt-20 pb-20 flex flex-col items-center text-center space-y-3">
-      <h2 class="text-xl font-black tracking-widest uppercase leading-none">BDATALAB</h2>
-      <div class="flex items-center gap-3">
-        <a href="https://x.com/BDataLab5x5" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 transition-all">
-          <div class="w-7 h-7 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-white/20 transition-colors">
-            <svg class="w-3.5 h-3.5 fill-white" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </div>
-          <span class="text-[10px] font-black tracking-widest uppercase text-white/40 group-hover:text-white transition-colors">X</span>
-        </a>
-        <div class="h-3 w-[1px] bg-white/20"></div>
-        <a href="https://note.com/bdatalab5x5" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 transition-all">
-          <div class="w-7 h-7 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-[#23bb9d] transition-colors">
-             <span class="text-[12px] font-black text-white">n</span>
-          </div>
-          <span class="text-[10px] font-black tracking-widest lowercase text-white/40 group-hover:text-white transition-colors">note</span>
-        </a>
-      </div>
     </div>
 
     <div class="fixed bottom-8 left-8 z-40">

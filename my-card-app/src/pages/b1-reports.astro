@@ -73,11 +73,13 @@ try {
           reports: []
         };
       }
+
+      // リンク先を b1_cards (b1-cards) に変更
       groups[folderName].reports.push({
         path: IMAGE_BASE_URL + "/" + folderName + "/" + fileName,
         away: teamA,
         home: teamB,
-        link: "/b-cards?folder=" + folderName + "/" + fileName.replace('.png', '')
+        link: "/b1-cards?folder=" + folderName + "/B1_Cards_" + nameParts[3] + "_" + nameParts[2]
       });
     });
     reportGroups = Object.values(groups).sort((a, b) => b.id.localeCompare(a.id));
@@ -88,11 +90,11 @@ const allData = reportGroups;
 const availableDates = reportGroups.map(g => g.id);
 ---
 
-<Layout title="B.LEAGUE GAME REPORT">
-  <div class="bg-[#222222] min-h-screen text-white font-avenir overflow-x-hidden">
+<Layout title="B1 GAME REPORT | B-Data Lab">
+  <div class="bg-[#373A36] min-h-screen text-white font-avenir overflow-x-hidden">
     <header class="pt-12 pb-6 px-8 text-center border-b border-white/5">
-      <a href="/" class="hover:opacity-70 transition-opacity">
-        <h1 class="text-2xl font-black uppercase tracking-[0.25em]">B.LEAGUE REPORT</h1>
+      <a href="/b1-home" class="hover:opacity-70 transition-opacity">
+        <h1 class="text-2xl font-black uppercase tracking-[0.25em]">B1 GAME REPORT</h1>
       </a>
     </header>
 
@@ -110,7 +112,7 @@ const availableDates = reportGroups.map(g => g.id);
         {reportGroups.length > 0 ? (
           reportGroups[0].reports.map((report) => (
             <div class="flex-none w-[85vw] max-w-[400px] snap-center">
-              <div class="rounded-2xl overflow-hidden border border-white/10 bg-gray-900 shadow-2xl">
+              <div class="rounded-2xl overflow-hidden border border-white/10 bg-black/40 shadow-2xl">
                 <img src={report.path} class="w-full h-auto block" loading="lazy" />
               </div>
               <div class="mt-6 text-center">
@@ -129,13 +131,13 @@ const availableDates = reportGroups.map(g => g.id);
 
     <section class="px-8 pb-40">
       <div class="max-w-md mx-auto">
-        <div id="calendar" class="bg-gray-900/40 p-6 rounded-3xl border border-white/5"></div>
+        <div id="calendar" class="bg-black/20 p-6 rounded-3xl border border-white/5 shadow-inner"></div>
       </div>
     </section>
 
     <div class="fixed bottom-8 left-0 right-0 flex justify-center z-40 pointer-events-none">
-      <a href="/" class="pointer-events-auto bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 transition-transform border border-white/10">
-        Back to Home
+      <a href="/b1-home" class="pointer-events-auto bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 transition-transform border border-white/10">
+        Back to B1 Home
       </a>
     </div>
   </div>
@@ -172,7 +174,7 @@ const availableDates = reportGroups.map(g => g.id);
     group.reports.forEach(function(report) {
       reportsHtml += 
         '<div class="flex-none w-[85vw] max-w-[400px] snap-center">' +
-          '<div class="rounded-2xl overflow-hidden border border-white/10 bg-gray-900 shadow-2xl">' +
+          '<div class="rounded-2xl overflow-hidden border border-white/10 bg-black/40 shadow-2xl">' +
             '<img src="' + report.path + '" class="w-full h-auto block" />' +
           '</div>' +
           '<div class="mt-6 text-center">' +
@@ -232,12 +234,10 @@ const availableDates = reportGroups.map(g => g.id);
     calendarEl.innerHTML = html + '</div>';
   }
 
-  // 初期レンダリング
   renderCalendar(currentY, currentM);
 </script>
 
 <style is:global>
-  :root { font-family: "Avenir Next", sans-serif; }
   .no-scrollbar::-webkit-scrollbar { display: none; }
   .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 </style>

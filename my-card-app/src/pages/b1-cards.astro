@@ -51,7 +51,6 @@ try {
   const folders = await parentRes.json();
   
   if (Array.isArray(folders)) {
-    // 1. フォルダ判定を柔軟に（IDが含まれていればOK）
     const gameId = urlGameDir.split('_').find(s => s.length === 6 && /^\d+$/.test(s));
     const targetFolder = folders.find(f => f.name.includes(urlGameDir) || (gameId && f.name.includes(gameId)));
     
@@ -93,8 +92,6 @@ try {
         homeData = homeResult.data;
         displayTeamHome = homeResult.displayLabel;
         
-        // --- 2. ゲームレポートのファイル名を直接指定 ---
-        // 教えていただいた通り フォルダ名.png の形式でパスを作成
         reportImagePath = `${reportRawBase}/${urlGameDir}.png`;
       }
     }
@@ -104,12 +101,12 @@ try {
 }
 ---
 
-<Layout title="BDL B-CARDS">
+<Layout title="B1 CARDS | B-Data Lab">
   <div class="app-container bg-[#1a1a1a] min-h-screen text-white overflow-hidden font-avenir">
     
     <header class="pt-12 pb-6 px-8 border-b border-white/5 text-center">
-      <a href="/b-reports" class="inline-block hover:opacity-70 transition-opacity">
-        <h1 class="text-2xl font-black uppercase leading-none tracking-[0.25em]">BDL B-Cards</h1>
+      <a href="/b1-reports" class="inline-block hover:opacity-70 transition-opacity">
+        <h1 class="text-2xl font-black uppercase leading-none tracking-[0.25em]">B1 CARDS</h1>
       </a>
       <p class="text-gray-600 text-[10px] font-bold tracking-[0.4em] mt-3 uppercase">Gameday Collection</p>
     </header>

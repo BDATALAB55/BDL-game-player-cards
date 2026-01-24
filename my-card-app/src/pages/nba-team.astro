@@ -6,30 +6,44 @@ const { searchParams } = Astro.url;
 const teamId = searchParams.get('team') || 'LAL';
 
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
-// 常に最新データを取得するためタイムスタンプを付与
 const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
 const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/NBA`;
 const token = process.env.GITHUB_TOKEN;
 
 const teamInfo = {
-  ATL: { city: "Atlanta", name: "Hawks" }, BOS: { city: "Boston", name: "Celtics" },
-  BKN: { city: "Brooklyn", name: "Nets" }, CHA: { city: "Charlotte", name: "Hornets" },
-  CHI: { city: "Chicago", name: "Bulls" }, CLE: { city: "Cleveland", name: "Cavaliers" },
-  DAL: { city: "Dallas", name: "Mavericks" }, DEN: { city: "Denver", name: "Nuggets" },
-  DET: { city: "Detroit", name: "Pistons" }, GSW: { city: "Golden State", name: "Warriors" },
-  HOU: { city: "Houston", name: "Rockets" }, IND: { city: "Indiana", name: "Pacers" },
-  LAC: { city: "LA", name: "Clippers" }, LAL: { city: "Los Angeles", name: "Lakers" },
-  MEM: { city: "Memphis", name: "Grizzlies" }, MIA: { city: "Miami", name: "Heat" },
-  MIL: { city: "Milwaukee", name: "Bucks" }, MIN: { city: "Minnesota", name: "Timberwolves" },
-  NOP: { city: "New Orleans", name: "Pelicans" }, NYK: { city: "New York", name: "Knicks" },
-  OKC: { city: "Oklahoma City", name: "Thunder" }, ORL: { city: "Orlando", name: "Magic" },
-  PHI: { city: "Philadelphia", name: "76ers" }, PHX: { city: "Phoenix", name: "Suns" },
-  POR: { city: "Portland", name: "Trail Blazers" }, SAC: { city: "Sacramento", name: "Kings" },
-  SAS: { city: "San Antonio", name: "Spurs" }, TOR: { city: "Toronto", name: "Raptors" },
-  UTA: { city: "Utah", name: "Jazz" }, WAS: { city: "Washington", name: "Wizards" },
+  ATL: { city: "Atlanta", name: "Hawks", color: "#E03A3E" },
+  BOS: { city: "Boston", name: "Celtics", color: "#007A33" },
+  BKN: { city: "Brooklyn", name: "Nets", color: "#FFFFFF" },
+  CHA: { city: "Charlotte", name: "Hornets", color: "#00788C" },
+  CHI: { city: "Chicago", name: "Bulls", color: "#CE1141" },
+  CLE: { city: "Cleveland", name: "Cavaliers", color: "#6F263D" },
+  DAL: { city: "Dallas", name: "Mavericks", color: "#0053BC" },
+  DEN: { city: "Denver", name: "Nuggets", color: "#0E2240" },
+  DET: { city: "Detroit", name: "Pistons", color: "#1D428A" },
+  GSW: { city: "Golden State", name: "Warriors", color: "#006BB6" },
+  HOU: { city: "Houston", name: "Rockets", color: "#CE1141" },
+  IND: { city: "Indiana", name: "Pacers", color: "#002D62" },
+  LAC: { city: "LA", name: "Clippers", color: "#12173F" },
+  LAL: { city: "Los Angeles", name: "Lakers", color: "#552583" },
+  MEM: { city: "Memphis", name: "Grizzlies", color: "#5D76A9" },
+  MIA: { city: "Miami", name: "Heat", color: "#98002E" },
+  MIL: { city: "Milwaukee", name: "Bucks", color: "#00471B" },
+  MIN: { city: "Minnesota", name: "Timberwolves", color: "#0C2340" },
+  NOP: { city: "New Orleans", name: "Pelicans", color: "#0C2340" },
+  NYK: { city: "New York", name: "Knicks", color: "#F58426" },
+  OKC: { city: "Oklahoma City", name: "Thunder", color: "#007AC1" },
+  ORL: { city: "Orlando", name: "Magic", color: "#0077C0" },
+  PHI: { city: "Philadelphia", name: "76ers", color: "#006BB6" },
+  PHX: { city: "Phoenix", name: "Suns", color: "#1D1160" },
+  POR: { city: "Portland", name: "Trail Blazers", color: "#E03A3E" },
+  SAC: { city: "Sacramento", name: "Kings", color: "#5A2D81" },
+  SAS: { city: "San Antonio", name: "Spurs", color: "#FFFFFF" },
+  TOR: { city: "Toronto", name: "Raptors", color: "#CE1141" },
+  UTA: { city: "Utah", name: "Jazz", color: "#002B5C" },
+  WAS: { city: "Washington", name: "Wizards", color: "#002B5C" },
 };
 
-const currentTeam = teamInfo[teamId] || { city: "NBA", name: "TEAM" };
+const currentTeam = teamInfo[teamId] || { city: "NBA", name: "TEAM", color: "#FFFFFF" };
 
 let allTeamReports = [];
 let availableDatesMap = {};
@@ -58,14 +72,12 @@ try {
       
       const nameParts = fileName.replace('.png', '').split('_');
       
-      // 【ロジック修正】NBA_Report_YYYYMMDD_GameID... の構造に合わせてインデックスを修正
-      const fullDate = nameParts[2]; // 3番目が日付
-      const gameId = nameParts[3];   // 4番目がGameID
+      const fullDate = nameParts[2];
+      const gameId = nameParts[3];
       const teamA = nameParts[nameParts.length - 2];
       const teamB = nameParts[nameParts.length - 1];
 
       if (teamA === teamId || teamB === teamId) {
-        // 【重要】詳細ページ用リンクの生成 (NBA_Cards_GameID_FullDate)
         const targetCardFolder = `NBA_Cards_${gameId}_${fullDate}`;
 
         const reportObj = {
@@ -92,42 +104,42 @@ try {
   <main class="bg-[#373A36] min-h-screen text-white font-avenir pb-40 overflow-x-hidden relative">
     
     <header class="pt-12 pb-6 px-6 max-w-6xl mx-auto w-full">
-  <div class="flex items-end justify-between w-full border-b border-white/10 pb-6 relative">
-    <div class="flex-shrink-0 relative pb-4">
-      <div class="flex flex-col md:flex-row md:items-end md:gap-4 leading-none">
-        <span class="text-xl md:text-7xl font-black uppercase tracking-tight opacity-90 md:opacity-100 italic">
-          {currentTeam.city}
-        </span>
-        <span class="text-5xl md:text-7xl font-black uppercase tracking-tight italic">
-          {currentTeam.name}
-        </span>
-      </div>
-      <div 
-        class="absolute bottom-[-1px] left-0 h-[2px] md:h-[4px] w-full" 
-        style={`background-color: ${currentTeam.color}; box-shadow: 0 2px 12px ${currentTeam.color}66;`}
-      ></div>
-    </div>
+      <div class="flex items-end justify-between w-full border-b border-white/10 pb-6 relative">
+        <div class="flex-shrink-0 relative pb-4">
+          <div class="flex flex-col md:flex-row md:items-end md:gap-4 leading-none font-black uppercase tracking-tight">
+            <span class="text-xl md:text-7xl opacity-90 md:opacity-100">
+              {currentTeam.city}
+            </span>
+            <span class="text-5xl md:text-7xl">
+              {currentTeam.name}
+            </span>
+          </div>
+          <div 
+            class="absolute bottom-[-1px] left-0 h-[3px] md:h-[5px] w-full" 
+            style={`background-color: ${currentTeam.color}; box-shadow: 0 4px 15px ${currentTeam.color}66;`}
+          ></div>
+        </div>
 
-    <div class="flex flex-col items-end text-right space-y-3 mb-1">
-      <h2 class="text-xl md:text-3xl font-black tracking-widest uppercase leading-none">BDATALAB</h2>
-      <div class="flex items-center gap-3 md:gap-5">
-        <a href="https://x.com/BDataLab5x5" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 transition-all">
-          <div class="w-7 h-7 md:w-8 md:h-8 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-white/20 transition-colors">
-            <svg class="w-3.5 h-3.5 md:w-4 md:h-4 fill-white" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        <div class="flex flex-col items-end text-right space-y-3 mb-1">
+          <h2 class="text-xl md:text-3xl font-black tracking-widest uppercase leading-none">BDATALAB</h2>
+          <div class="flex items-center gap-3 md:gap-5">
+            <a href="https://x.com/BDataLab5x5" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 transition-all">
+              <div class="w-7 h-7 md:w-8 md:h-8 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-white/20 transition-colors">
+                <svg class="w-3.5 h-3.5 md:w-4 md:h-4 fill-white" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </div>
+              <span class="hidden sm:inline text-[10px] font-black tracking-widest uppercase text-white/40 group-hover:text-white transition-colors">X</span>
+            </a>
+            <div class="h-3 w-[1px] bg-white/20"></div>
+            <a href="https://note.com/bdatalab5x5" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 transition-all">
+              <div class="w-7 h-7 md:w-8 md:h-8 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-[#23bb9d] transition-colors">
+                 <span class="text-[12px] font-black text-white">n</span>
+              </div>
+              <span class="text-[10px] font-black tracking-widest lowercase text-white/40 group-hover:text-white transition-colors">note</span>
+            </a>
           </div>
-          <span class="hidden sm:inline text-[10px] font-black tracking-widest uppercase text-white/40 group-hover:text-white transition-colors">X</span>
-        </a>
-        <div class="h-3 w-[1px] bg-white/20"></div>
-        <a href="https://note.com/bdatalab5x5" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 transition-all">
-          <div class="w-7 h-7 md:w-8 md:h-8 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-[#23bb9d] transition-colors">
-             <span class="text-[12px] font-black text-white">n</span>
-          </div>
-          <span class="text-[10px] font-black tracking-widest lowercase text-white/40 group-hover:text-white transition-colors">note</span>
-        </a>
+        </div>
       </div>
-    </div>
-  </div>
-</header>
+    </header>
 
     <div class="max-w-6xl mx-auto px-6">
       

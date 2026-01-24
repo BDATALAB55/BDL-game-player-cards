@@ -30,8 +30,8 @@ const teamInfo = {
 
 const currentTeam = teamInfo[teamId] || { city: "NBA", name: "TEAM" };
 
-let allTeamReports = []; // 全試合フラットリスト（スライダー用）
-let availableDatesMap = {}; // カレンダーからリンクへ飛ぶためのマッピング
+let allTeamReports = [];
+let availableDatesMap = {};
 
 try {
   const res = await fetch(RECURSIVE_API, {
@@ -40,18 +40,25 @@ try {
   const data = await res.json();
 
   if (data.tree) {
-    const allFiles = data.tree.filter(item => item.path.includes('output/reports/NBA/') && item.path.toLowerCase().endsWith('.png'));
+    // 修正：正規表現を使用して、NBAレポート用フォルダ内のPNGのみを抽出
+    const reportFiles = data.tree.filter(item => 
+      item.path.startsWith('output/reports/NBA/') && 
+      item.path.endsWith('.png')
+    );
 
-    allFiles.forEach(file => {
-      const pathParts = file.path.split('/');
-      const folderName = pathParts[pathParts.indexOf('NBA') + 1];
-      const fileName = pathParts[pathParts.indexOf('NBA') + 2];
+    reportFiles.forEach(file => {
+      // 例: output/reports/NBA/260117/NBA_Report_20260117_0022500593_GSW_DAL.png
+      const parts = file.path.split('/');
+      const fileName = parts[parts.length - 1];
+      const folderName = parts[parts.length - 2]; // 日付フォルダ (260117)
+      
       const nameParts = fileName.replace('.png', '').split('_');
       
-      const gameId = nameParts[2];
-      const fullDate = nameParts[1];
-      const teamA = nameParts[nameParts.length - 2];
-      const teamB = nameParts[nameParts.length - 1];
+      // NBA_Report_20260117_0022500593_GSW_DAL.png の構造に基づく
+      const fullDate = nameParts[2]; // 20260117
+      const gameId = nameParts[3];   // 0022500593
+      const teamA = nameParts[nameParts.length - 2]; // GSW
+      const teamB = nameParts[nameParts.length - 1]; // DAL
 
       if (teamA === teamId || teamB === teamId) {
         const reportObj = {
@@ -61,17 +68,17 @@ try {
           fileName: fileName,
           away: teamA,
           home: teamB,
+          // 詳細ページへのリンク
           link: `/nba-cards?folder=${folderName}/NBA_Cards_${gameId}_${fullDate}`
         };
         allTeamReports.push(reportObj);
-        // カレンダー用：その日の最初の試合リンクを保存
         if (!availableDatesMap[folderName]) availableDatesMap[folderName] = reportObj.link;
       }
     });
     allTeamReports.sort((a, b) => b.id.localeCompare(a.id));
   }
 } catch (e) {
-  console.error(e);
+  console.error("Fetch failed:", e);
 }
 ---
 
@@ -100,34 +107,40 @@ try {
           </div>
         </div>
 
-        <div class="flex overflow-x-auto gap-8 no-scrollbar snap-x pb-12">
-          {allTeamReports.map(r => (
-            <div class="flex-none w-[320px] snap-center">
-              <div class="mb-4 flex items-center gap-2 px-2">
-                <div class="w-2 h-2 rounded-full bg-blue-500"></div>
-                <span class="text-[14px] font-black tracking-wider text-white/80">{r.date}</span>
-              </div>
-
-              <a href={r.path} download={r.fileName} class="block cursor-pointer active:scale-95 transition-transform">
-                <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-black/40 aspect-[3/4.2] relative group">
-                   <img src={r.path} alt="Report" class="w-full h-full object-cover" />
-                   <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                      <span class="bg-black/60 px-4 py-2 rounded-full text-[10px] font-black uppercase tracking-widest border border-white/20">Download PNG</span>
-                   </div>
+        {allTeamReports.length > 0 ? (
+          <div class="flex overflow-x-auto gap-8 no-scrollbar snap-x pb-12">
+            {allTeamReports.map(r => (
+              <div class="flex-none w-[320px] snap-center">
+                <div class="mb-4 flex items-center gap-2 px-2">
+                  <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+                  <span class="text-[14px] font-black tracking-wider text-white/80">{r.date}</span>
                 </div>
-              </a>
-              
-              <div class="mt-6 flex justify-center">
-                <a href={r.link} class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative hover:scale-110 transition-transform group">
-                  <div class="absolute inset-0 p-[2px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10"></div>
-                  <span class="text-[12px] font-black tracking-[0.2em] uppercase text-white">
-                    {r.away} <span class="text-[9px] font-medium lowercase mx-1 text-white/50 italic px-1">vs</span> {r.home}
-                  </span>
+
+                <a href={r.path} download={r.fileName} class="block cursor-pointer active:scale-95 transition-transform">
+                  <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-black/40 aspect-[3/4.2] relative group">
+                     <img src={r.path} alt="Report" class="w-full h-full object-cover" />
+                     <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="bg-black/60 px-4 py-2 rounded-full text-[10px] font-black uppercase tracking-widest border border-white/20">Download PNG</span>
+                     </div>
+                  </div>
                 </a>
+                
+                <div class="mt-6 flex justify-center">
+                  <a href={r.link} class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative hover:scale-110 transition-transform group">
+                    <div class="absolute inset-0 p-[2px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10"></div>
+                    <span class="text-[12px] font-black tracking-[0.2em] uppercase text-white">
+                      {r.away} <span class="text-[9px] font-medium lowercase mx-1 text-white/50 italic px-1">vs</span> {r.home}
+                    </span>
+                  </a>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        ) : (
+          <div class="py-20 text-center border-2 border-dashed border-white/5 rounded-3xl">
+            <p class="text-white/20 font-black uppercase tracking-widest italic">No game reports found</p>
+          </div>
+        )}
       </section>
 
       <section class="mt-24">
@@ -153,7 +166,6 @@ try {
   let currentY = 2026;
   let currentM = 0;
 
-  // 最新の試合がある月から開始
   const dates = Object.keys(availableDatesMap).sort((a,b) => b.localeCompare(a));
   if (dates.length > 0) {
     currentY = 2000 + parseInt(dates[0].substring(0,2));

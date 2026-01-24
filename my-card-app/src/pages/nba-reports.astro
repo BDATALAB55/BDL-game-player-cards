@@ -40,7 +40,6 @@ try {
       if (!/^\d+$/.test(folderName)) return;
 
       const nameParts = fileName.replace('.png', '').split('_');
-      // インデックスを修正: NBA_Report_YYYYMMDD_GameID...
       const fullDate = nameParts[2] || ""; 
       const gameId = nameParts[3] || "";
       const teamA = nameParts[nameParts.length - 2] || "AWAY";
@@ -84,11 +83,20 @@ const availableDates = reportGroups.map(g => g.id);
     </header>
 
     <section class="py-10">
-      <div class="px-8 mb-4 min-h-[80px]">
+      <div class="px-8 mb-4 min-h-[80px] flex justify-between items-start">
         <div class="flex flex-col gap-1">
           <span id="display-label" class="text-blue-500 text-[10px] font-black uppercase tracking-[0.3em]">Latest Update</span>
           <span id="display-date" class="text-white text-[32px] font-bold uppercase leading-none tracking-[0.05em] text-shadow-xl">
             {reportGroups.length > 0 ? reportGroups[0].date : "NO DATA"}
+          </span>
+        </div>
+
+        <div class="flex flex-col items-center leading-none">
+          <span id="display-count" class="text-6xl font-black text-white/20 italic tracking-tighter">
+            {reportGroups.length > 0 ? reportGroups[0].reports.length : 0}
+          </span>
+          <span class="text-[10px] font-black text-white/20 uppercase tracking-[0.4em] mt-1 italic">
+            Games
           </span>
         </div>
       </div>
@@ -133,7 +141,6 @@ const availableDates = reportGroups.map(g => g.id);
 </Layout>
 
 <script is:inline define:vars={{ allData, availableDates }}>
-  // カレンダー・表示切り替えロジック
   let currentY = 2026;
   let currentM = 0; 
 
@@ -147,10 +154,14 @@ const availableDates = reportGroups.map(g => g.id);
     const sliderEl = document.getElementById('report-slider');
     const dateTitleEl = document.getElementById('display-date');
     const labelEl = document.getElementById('display-label');
+    const countEl = document.getElementById('display-count');
     const data = allData.find(g => g.id === dateId);
+    
     if (!data || !sliderEl) return;
 
     dateTitleEl.innerText = data.date;
+    countEl.innerText = data.reports.length; // 試合数を更新
+
     const isLatest = (allData.length > 0 && dateId === availableDates[0]);
     labelEl.innerText = isLatest ? "Latest Update" : "Archive Data";
     labelEl.className = `text-[10px] font-black uppercase tracking-[0.3em] ${isLatest ? 'text-blue-500' : 'text-gray-500'}`;

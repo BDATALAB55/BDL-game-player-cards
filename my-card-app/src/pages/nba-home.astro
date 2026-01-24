@@ -219,13 +219,23 @@ for (let i = 0; i < teams.length; i += 9) {
 
       <section class="mt-32">
         <h2 class="text-4xl font-black uppercase tracking-tighter mb-8">Today's RANK 10</h2>
-        <div class="flex gap-3 mb-10 overflow-x-auto no-scrollbar pb-2">
+        
+        <div class="flex flex-nowrap gap-2 mb-10 max-w-sm">
           {['PTS', 'REB', 'AST'].map((stat, i) => (
-            <button data-tab="rank" data-target={stat.toLowerCase()} class={`rank-btn flex-none px-10 py-4 rounded-full text-[12px] font-black tracking-widest uppercase transition-all hover:scale-105 ${i === 0 ? 'bg-blue-600 text-white shadow-lg shadow-blue-900/20' : 'bg-black/20 text-white/60 border border-white/5'}`}>
+            <button 
+              data-tab="rank" 
+              data-target={stat.toLowerCase()} 
+              class={`rank-btn flex-1 py-4 rounded-xl text-[12px] font-black tracking-widest uppercase transition-all border border-white/5 
+                ${i === 0 
+                  ? 'bg-white text-black' 
+                  : 'bg-black/20 text-white/80 hover:bg-white/10'
+                }`}
+            >
               {stat}
             </button>
           ))}
         </div>
+
         <div id="rank-container" class="flex overflow-x-auto gap-6 no-scrollbar snap-x pb-4">
           {Array.from({ length: 10 }).map((_, i) => (
             <div class="flex-none w-[260px] snap-center aspect-[3/4.2] bg-black/40 border border-white/5 rounded-2xl flex flex-col items-center justify-center gap-4 relative overflow-hidden group">

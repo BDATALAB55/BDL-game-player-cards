@@ -3,167 +3,224 @@ export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
 const { searchParams } = Astro.url;
-// b1-home から渡される ID（例: 'UTSUNOMIYA'）を取得
-const teamId = searchParams.get('team') || '';
+// B1ではデフォルトを「HOKKAIDO」などに設定（または空）
+const teamId = searchParams.get('team') || 'HOKKAIDO';
 
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
 const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1`;
 const token = process.env.GITHUB_TOKEN;
 
-// NBA風のチーム設定（b1-homeのIDと完全一致させる）
 const teamInfo = {
-  'HOKKAIDO': { city: "Levanga", name: "Hokkaido", color: "#91ad10" },
-  'SENDAI': { city: "Sendai", name: "89ers", color: "#f7e000" },
-  'AKITA': { city: "Akita", name: "Happinets", color: "#dd0055" },
-  'IBARAKI': { city: "Ibaraki", name: "Robots", color: "#002e95" },
-  'UTSUNOMIYA': { city: "Utsunomiya", name: "Brex", color: "#12284b" },
-  'GUNMA': { city: "Gunma", name: "Crane Thunders", color: "#ffda00" },
-  'KOSHIGAYA': { city: "Koshigaya", name: "Alphas", color: "#610d0d" },
+  HOKKAIDO: { city: "Levanga", name: "Hokkaido", color: "#91ad10" },
+  SENDAI: { city: "Sendai", name: "89ers", color: "#f7e000" },
+  AKITA: { city: "Akita", name: "Northern Happinets", color: "#dd0055" },
+  IBARAKI: { city: "Ibaraki", name: "Robots", color: "#002e95" },
+  UTSUNOMIYA: { city: "Utsunomiya", name: "Brex", color: "#12284b" },
+  GUNMA: { city: "Gunma", name: "Crane Thunders", color: "#ffda00" },
+  KOSHIGAYA: { city: "Koshigaya", name: "Alphas", color: "#610d0d" },
   'A CHIBA': { city: "Altiri", name: "Chiba", color: "#212836" },
   'CHIBA J': { city: "Chiba", name: "Jets", color: "#e33216" },
   'A TOKYO': { city: "Alvark", name: "Tokyo", color: "#000000" },
   'SR SHIBUYA': { city: "Sunrockers", name: "Shibuya", color: "#ffea00" },
-  'KAWASAKI': { city: "Kawasaki", name: "Brave Thunders", color: "#7a1231" },
+  KAWASAKI: { city: "Kawasaki", name: "Brave Thunders", color: "#7a1231" },
   'YOKOHAMA BC': { city: "Yokohama", name: "B-Corsairs", color: "#000f31" },
-  'SAN-EN': { city: "San-En", name: "NeoPhoenix", color: "#d31118" },
-  'MIKAWA': { city: "Seahorses", name: "Mikawa", color: "#3356b9" },
+  TOYAMA: { city: "Toyama", name: "Grouses", color: "#e21f26" },
+  'SAN-EN': { city: "San-en", name: "NeoPhoenix", color: "#d31118" },
+  MIKAWA: { city: "SeaHorses", name: "Mikawa", color: "#3356b9" },
   'FE NAGOYA': { city: "FE", name: "Nagoya", color: "#003882" },
   'NAGOYA D': { city: "Nagoya", name: "Dolphins", color: "#e31d20" },
-  'SHIGA': { city: "Shiga", name: "Lakes", color: "#1a448e" },
-  'KYOTO': { city: "Kyoto", name: "Hannaryz", color: "#5ea1b4" },
-  'OSAKA': { city: "Osaka", name: "Evessa", color: "#d11c1d" },
-  'SHIMANE': { city: "Shimane", name: "Susanoo Magic", color: "#1c71be" },
-  'HIROSHIMA': { city: "Hiroshima", name: "Dragonflies", color: "#f05a22" },
-  'SAGA': { city: "Saga", name: "Ballooners", color: "#4da9df" },
-  'NAGASAKI': { city: "Nagasaki", name: "Velca", color: "#2b3754" },
-  'RYUKYU': { city: "Ryukyu", name: "Golden Kings", color: "#b69e63" },
+  SHIGA: { city: "Shiga", name: "Lakes", color: "#1a448e" },
+  KYOTO: { city: "Kyoto", name: "Hannaryz", color: "#5ea1b4" },
+  OSAKA: { city: "Osaka", name: "Evessa", color: "#d11c1d" },
+  SHIMANE: { city: "Shimane", name: "Susanoo Magic", color: "#1c71be" },
+  HIROSHIMA: { city: "Hiroshima", name: "Dragonflies", color: "#f05a22" },
+  SAGA: { city: "Saga", name: "Ballooners", color: "#4da9df" },
+  NAGASAKI: { city: "Nagasaki", name: "Velca", color: "#2b3754" },
+  RYUKYU: { city: "Ryukyu", name: "Golden Kings", color: "#b69e63" },
 };
 
-const currentTeam = teamInfo[teamId] || { city: "B.LEAGUE", name: teamId || "TEAM", color: "#373A36" };
+const currentTeam = teamInfo[teamId] || { city: "B.LEAGUE", name: "TEAM", color: "#FFFFFF" };
 
 let allTeamReports = [];
 let availableDatesMap = {};
 
 try {
   const res = await fetch(RECURSIVE_API, {
-    headers: token ? { "Authorization": `token ${token}`, "Accept": "application/vnd.github.v3+json" } : { "Accept": "application/vnd.github.v3+json" }
+    headers: {
+      ...(token ? { "Authorization": `token ${token}` } : {}),
+      "Accept": "application/vnd.github.v3+json",
+      "Cache-Control": "no-cache"
+    }
   });
   const data = await res.json();
 
   if (data.tree) {
-    // B1ディレクトリ内のPNGを抽出
     const reportFiles = data.tree.filter(item => 
-      item.path.includes('output/reports/B1/') && item.path.toLowerCase().endsWith('.png')
+      item.path.startsWith('output/reports/B1/') && 
+      item.path.endsWith('.png')
     );
 
     reportFiles.forEach(file => {
       const parts = file.path.split('/');
-      const fileName = parts[parts.length - 1]; // 例: 20250125_1234_TEAM_TEAM.png
-      const folderName = parts[parts.length - 2]; // 例: 250125
+      const fileName = parts[parts.length - 1];
+      const folderName = parts[parts.length - 2];
+      const nameParts = fileName.replace('.png', '').split('_');
       
-      // ファイル名にチームIDが含まれているかチェック
-      if (fileName.toUpperCase().includes(teamId.replace(' ', ''))) {
-        const nameParts = fileName.replace('.png', '').split('_');
-        const fullDate = nameParts[2] || "";
-        const gameId = nameParts[3] || "";
-        
+      const fullDate = nameParts[2];
+      const gameId = nameParts[3];
+      const teamA = nameParts[nameParts.length - 2];
+      const teamB = nameParts[nameParts.length - 1];
+
+      if (teamA === teamId || teamB === teamId) {
+        // カードフォルダ名をB1の命名規則に合わせる
+        const targetCardFolder = `B1_Cards_${gameId}_${fullDate}`;
         const reportObj = {
           id: folderName,
           date: `20${folderName.substring(0,2)}.${folderName.substring(2,4)}.${folderName.substring(4,6)}`,
           path: `${IMAGE_BASE_URL}/${folderName}/${fileName}?t=${Date.now()}`,
           fileName: fileName,
-          link: `/b1-cards?folder=${folderName}/B1_Cards_${gameId}_${fullDate}`
+          away: teamA,
+          home: teamB,
+          link: `/b1_cards?folder=${folderName}/${targetCardFolder}`
         };
         allTeamReports.push(reportObj);
-        availableDatesMap[folderName] = reportObj.link;
+        if (!availableDatesMap[folderName]) availableDatesMap[folderName] = reportObj.link;
       }
     });
     allTeamReports.sort((a, b) => b.id.localeCompare(a.id));
   }
 } catch (e) {
-  console.error("Fetch Error:", e);
+  console.error("Fetch failed:", e);
 }
 ---
 
-<Layout title={`${currentTeam.name} | B-Data Lab`}>
-  <main class="bg-[#111111] min-h-screen text-white font-avenir pb-40 overflow-x-hidden relative">
+<Layout title={`${teamId} | B-Data Lab`}>
+  <main class="bg-[#373A36] min-h-screen text-white font-avenir pb-80 overflow-x-hidden relative">
     
-    <header class="pt-20 pb-10 px-6 border-b-8 shadow-2xl relative bg-black" style={`border-color: ${currentTeam.color}`}>
-      <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-6">
-        <div>
-          <h2 class="text-2xl font-bold uppercase tracking-[0.2em] opacity-50 leading-none mb-3">
-            {currentTeam.city}
-          </h2>
-          <h1 class="text-6xl md:text-8xl font-black uppercase tracking-tighter leading-[0.8] mb-1">
-            {currentTeam.name}
-          </h1>
-        </div>
-        
-        <div class="flex items-center gap-8 border-l border-white/10 pl-8 h-fit">
-          <div class="text-center">
-            <span class="block text-5xl font-black italic leading-none">{allTeamReports.length}</span>
-            <span class="text-[10px] font-bold opacity-40 uppercase tracking-widest mt-2 block">Archive</span>
+    <header class="pt-12 pb-6 px-6 max-w-6xl mx-auto w-full relative">
+      <div class="flex items-end justify-between w-full relative mb-1">
+        <div class="flex-shrink-0">
+          <div class="flex flex-col md:flex-row md:items-end md:gap-4 leading-none md:leading-[0.8] font-black uppercase">
+            <span class="text-2xl tracking-tight md:text-3xl md:font-bold md:opacity-60 md:tracking-[0.2em]">
+              {currentTeam.city}
+            </span>
+            <span class="text-5xl tracking-tight md:text-7xl md:tracking-[0.1em]">
+              {currentTeam.name}
+            </span>
           </div>
-          <div class="flex flex-col gap-2">
-            <a href="https://x.com/BDataLab5x5" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-white/10 transition-colors">
-              <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </div>
+
+        <div class="hidden md:flex flex-col items-end text-right space-y-3 mb-1">
+          <h2 class="text-3xl font-black tracking-widest uppercase leading-none">BDATALAB</h2>
+          <div class="flex items-center gap-5">
+            <a href="https://x.com/BDataLab5x5" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5">
+              <div class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-white/20 transition-colors">
+                <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </div>
+              <span class="text-[10px] font-black tracking-widest uppercase text-white/40 group-hover:text-white transition-colors">X</span>
+            </a>
+            <div class="h-3 w-[1px] bg-white/20"></div>
+            <a href="https://note.com/bdatalab5x5" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5">
+              <div class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-[#23bb9d] transition-colors">
+                 <span class="text-[12px] font-black text-white">n</span>
+              </div>
+              <span class="text-[10px] font-black tracking-widest lowercase text-white/40 group-hover:text-white transition-colors">note</span>
             </a>
           </div>
         </div>
       </div>
+      <div 
+        class="absolute bottom-1 left-6 right-6 h-[3px] md:h-[5px]" 
+        style={`background-color: ${currentTeam.color}; box-shadow: 0 4px 15px ${currentTeam.color}66;`}
+      ></div>
     </header>
 
-    <div class="max-w-7xl mx-auto px-6 mt-20">
-      <section>
-        <div class="flex items-center gap-6 mb-16">
-          <h3 class="text-2xl font-black uppercase italic tracking-tight">Game Reports</h3>
-          <div class="h-px flex-grow bg-white/10"></div>
+    <div class="max-w-6xl mx-auto px-6">
+      <section class="mt-16">
+        <div class="flex justify-between items-end mb-10">
+          <div>
+            <h2 class="text-3xl font-black uppercase tracking-tight italic">Game Reports</h2>
+            <p class="text-white/40 text-[10px] font-bold tracking-widest uppercase mt-1">Click card to download</p>
+          </div>
+          <div class="text-right leading-none">
+            <span class="text-7xl font-black italic opacity-20 block tracking-[-0.1em]">{allTeamReports.length}</span>
+            <span class="text-[12px] font-bold opacity-40 uppercase tracking-[0.3em]">Games</span>
+          </div>
         </div>
 
         {allTeamReports.length > 0 ? (
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-20">
+          <div class="flex overflow-x-auto gap-8 no-scrollbar snap-x pb-12">
             {allTeamReports.map(r => (
-              <div class="group">
-                <div class="flex justify-between items-center mb-4 px-1">
-                  <span class="text-sm font-black text-white/40">{r.date}</span>
-                  <div class="w-2 h-2 rounded-full" style={`background-color: ${currentTeam.color}`}></div>
+              <div class="flex-none w-[320px] snap-center">
+                <div class="mb-4 flex items-center gap-2 px-2">
+                  <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+                  <span class="text-[14px] font-black tracking-wider text-white/80">{r.date}</span>
                 </div>
-                
-                <a href={`/b_players?name=REPORT&img=${encodeURIComponent(r.path)}`} class="block aspect-[3/4.2] rounded-sm overflow-hidden shadow-2xl transition-transform duration-500 group-hover:scale-[1.03]">
-                  <img src={r.path} alt="Report" class="w-full h-full object-cover" loading="lazy" />
+                <a href={r.path} download={r.fileName} class="block cursor-pointer active:scale-95 transition-transform">
+                  <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-black/40 aspect-[3/4.2] relative group">
+                     <img src={r.path} alt="Report" class="w-full h-full object-cover" />
+                     <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="bg-black/60 px-4 py-2 rounded-full text-[10px] font-black uppercase tracking-widest border border-white/20">Download PNG</span>
+                     </div>
+                  </div>
                 </a>
-
-                <div class="mt-8">
-                  <a href={r.link} class="block w-full py-4 bg-white text-black text-center font-black uppercase tracking-widest text-[11px] hover:bg-gray-200 transition-colors rounded-sm">
-                    View Player Cards
+                <div class="mt-6 flex justify-center">
+                  <a href={r.link} class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative hover:scale-110 transition-transform group">
+                    <div class="absolute inset-0 p-[2px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10"></div>
+                    <span class="text-[12px] font-black tracking-[0.2em] uppercase text-white">
+                      {r.away} <span class="text-[9px] font-medium lowercase mx-1 text-white/50 italic px-1">vs</span> {r.home}
+                    </span>
                   </a>
                 </div>
               </div>
             ))}
           </div>
         ) : (
-          <div class="py-40 text-center bg-white/[0.02] border border-dashed border-white/10 rounded-lg">
-            <p class="text-white/20 font-black uppercase tracking-widest">No reports found for this team</p>
+          <div class="py-20 text-center border-2 border-dashed border-white/5 rounded-3xl">
+            <p class="text-white/20 font-black uppercase tracking-widest italic">No game reports found</p>
           </div>
         )}
       </section>
 
-      <section class="mt-40 max-w-sm mx-auto">
-        <h4 class="text-center text-[10px] font-black tracking-[0.4em] uppercase opacity-20 mb-10">History Calendar</h4>
-        <div id="calendar" class="bg-white/[0.03] p-8 border border-white/5 rounded-sm"></div>
+      <section class="mt-24">
+        <div class="max-w-md mx-auto">
+          <h3 class="text-center text-[10px] font-black tracking-[0.4em] uppercase mb-8 text-white/30 italic">Game Calendar</h3>
+          <div id="calendar" class="bg-black/30 p-8 rounded-[40px] border border-white/5 shadow-inner"></div>
+        </div>
       </section>
     </div>
 
-    <div class="fixed bottom-10 left-10 z-50">
-      <button onclick="history.back()" class="w-14 h-14 bg-white text-black rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>
-      </button>
+    <div class="md:hidden flex flex-col items-center justify-center w-full py-20 gap-4">
+      <h2 class="text-4xl font-black tracking-[0.2em] uppercase leading-none opacity-80">BDATALAB</h2>
+      <div class="flex items-center gap-8">
+        <a href="https://x.com/BDataLab5x5" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2">
+          <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center active:bg-white/20 transition-colors border border-white/5">
+            <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </div>
+          <span class="text-[11px] font-black tracking-widest uppercase text-white/40">X</span>
+        </a>
+        <div class="h-6 w-[1px] bg-white/10"></div>
+        <a href="https://note.com/bdatalab5x5" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2">
+          <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center active:bg-[#23bb9d] transition-colors border border-white/5">
+             <span class="text-[16px] font-black text-white">n</span>
+          </div>
+          <span class="text-[11px] font-black tracking-widest uppercase text-white/40">note</span>
+        </a>
+      </div>
     </div>
+
+    <div class="fixed bottom-8 left-8 z-40">
+        <button onclick="history.back()" class="bg-white/10 backdrop-blur-md text-white px-6 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 border border-white/10">← Back</button>
+    </div>
+    <div class="fixed bottom-8 right-8 z-40">
+      <a href="/b1_home" class="bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 border border-white/10">B1 Home</a>
+    </div>
+
   </main>
 </Layout>
 
-<script is:inline define:vars={{ availableDatesMap, currentTeam }}>
+<script is:inline define:vars={{ availableDatesMap }}>
   let currentY = 2026;
   let currentM = 0;
   const dates = Object.keys(availableDatesMap).sort((a,b) => b.localeCompare(a));
@@ -179,18 +236,37 @@ try {
   };
   function renderCalendar(y, m) {
     const calendarEl = document.getElementById('calendar');
-    if(!calendarEl) return;
-    const monthNames = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+    const monthNames = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
     const firstDay = new Date(y, m, 1).getDay();
     const daysInMonth = new Date(y, m + 1, 0).getDate();
-    let html = `<div class="flex justify-between items-center mb-8"><button onclick="changeMonth(-1)" class="opacity-40 hover:opacity-100">←</button><div class="font-black text-xs tracking-widest">${monthNames[m]} ${y}</div><button onclick="changeMonth(1)" class="opacity-40 hover:opacity-100">→</button></div><div class="grid grid-cols-7 gap-1 text-[8px] font-black opacity-20 mb-4 text-center"><div>S</div><div>M</div><div>T</div><div>W</div><div>T</div><div>F</div><div>S</div></div><div class="grid grid-cols-7 gap-2">`;
+    let html = `
+      <div class="flex justify-between items-center mb-10 px-2">
+        <button onclick="changeMonth(-1)" class="text-white/30 hover:text-white transition-colors text-lg">←</button>
+        <div class="font-black text-[13px] tracking-[0.3em] uppercase">${monthNames[m]} ${y}</div>
+        <button onclick="changeMonth(1)" class="text-white/30 hover:text-white transition-colors text-lg">→</button>
+      </div>
+      <div class="grid grid-cols-7 gap-1 text-center text-[9px] font-black text-white/10 mb-6 tracking-widest">
+        <div>SUN</div><div>MON</div><div>TUE</div><div>WED</div><div>THU</div><div>FRI</div><div>SAT</div>
+      </div>
+      <div class="grid grid-cols-7 gap-y-4 gap-x-2">`;
     for (let i = 0; i < firstDay; i++) html += `<div></div>`;
     for (let d = 1; d <= daysInMonth; d++) {
       const dateStr = `${String(y).substring(2)}${String(m + 1).padStart(2, '0')}${String(d).padStart(2, '0')}`;
       const link = availableDatesMap[dateStr];
-      html += `<div class="aspect-square flex items-center justify-center">${link ? `<a href="${link}" class="w-full h-full flex items-center justify-center text-[10px] font-black rounded-sm" style="background-color:${currentTeam.color}">${d}</a>` : `<span class="text-[10px] font-bold opacity-10">${d}</span>`}</div>`;
+      html += `
+        <div class="flex items-center justify-center">
+          ${link ? 
+            `<a href="${link}" class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-600 text-white text-[12px] font-black shadow-[0_0_20px_rgba(37,99,235,0.4)] transition-all border border-white/20">${d}</a>` : 
+            `<span class="text-white/10 text-[12px] font-bold">${d}</span>`
+          }
+        </div>`;
     }
     calendarEl.innerHTML = html + `</div>`;
   }
   renderCalendar(currentY, currentM);
 </script>
+
+<style>
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>

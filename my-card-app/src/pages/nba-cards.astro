@@ -34,25 +34,27 @@ const getTeamStyle = (id) => teamColorMap[id] || 'bg-gray-700';
 
 let folderName = queryFolder;
 
-// --- 自動取得ロジック (最新データを取得) ---
+// --- 【修正】自動取得ロジックの強化 ---
 if (!folderName) {
   try {
     const listApi = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players?t=${Date.now()}`;
     const res = await fetch(listApi, {
-      headers: token ? { "Authorization": `token ${token}`, "Cache-Control": "no-cache" } : { "Cache-Control": "no-cache" }
+      headers: token ? { "Authorization": `token ${token}` } : {}
     });
     const items = await res.json();
     
     if (Array.isArray(items)) {
+      // 日付フォルダ（251201など）を取得して最新順に
       const dateFolders = items
-        .filter(item => item.type === 'dir' && /^\d+$/.test(item.name))
+        .filter(item => item.type === 'dir')
         .sort((a, b) => b.name.localeCompare(a.name));
 
       if (dateFolders.length > 0) {
         const latestDateDir = dateFolders[0].name;
+        // 日付フォルダの中にある NBA_Cards_ フォルダを探す
         const matchApi = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players/${latestDateDir}?t=${Date.now()}`;
         const matchRes = await fetch(matchApi, {
-          headers: token ? { "Authorization": `token ${token}`, "Cache-Control": "no-cache" } : { "Cache-Control": "no-cache" }
+          headers: token ? { "Authorization": `token ${token}` } : {}
         });
         const matchItems = await matchRes.json();
         
@@ -75,63 +77,61 @@ let teamHome = "HOME";
 let teamAway = "AWAY";
 let reportImagePath = "";
 
+// 日付表示の修正（6桁 251201 -> 2025.12.01 対応）
 const rawDate = folderName ? folderName.split('/')[0] : "";
-const formattedDate = rawDate ? `20${rawDate.substring(0,2)}.${rawDate.substring(2,4)}.${rawDate.substring(4,6)}` : "NO DATA";
+const formattedDate = rawDate.length === 6 
+  ? `20${rawDate.substring(0,2)}.${rawDate.substring(2,4)}.${rawDate.substring(4,6)}`
+  : rawDate;
 
 try {
-  // 選手スタッツカードの取得
   const apiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players/${folderName}?t=${Date.now()}`;
   const response = await fetch(apiURL, {
-    headers: token ? { "Authorization": `token ${token}`, "Cache-Control": "no-cache" } : { "Cache-Control": "no-cache" }
+    headers: token ? { "Authorization": `token ${token}` } : {}
   });
   const files = await response.json();
 
   if (Array.isArray(files)) {
-    // チームA/Bのフォルダ名を特定するためのマッチング
-    // 命名規則: TEAM_Number_FirstName_LastName.png
-    const playerFiles = files.filter(f => f.name.endsWith('.png') && !f.name.includes('Report')).map(f => f.name);
+    // PNGファイルのみ、かつReportを除外
+    const playerFiles = files.filter(f => f.name.endsWith('.png') && !f.name.toLowerCase().includes('report'));
     
-    // 全画像からチーム名のリストを抽出
-    const detectedTeams = [...new Set(playerFiles.map(f => f.split('_')[0]))].filter(t => t && t !== 'NBA');
-    
+    // チーム名をファイル名から取得
+    const detectedTeams = [...new Set(playerFiles.map(f => f.name.split('_')[0]))];
     teamAway = detectedTeams[0] || "AWAY";
     teamHome = detectedTeams[1] || "HOME";
 
-    const process = (teamName) => {
+    const processTeam = (teamName) => {
       return playerFiles
-        .filter(f => f.startsWith(teamName))
+        .filter(f => f.name.startsWith(teamName))
         .map(f => {
-          const p = f.replace('.png', '').split('_');
+          const parts = f.name.replace('.png', '').split('_');
           return {
-            team: p[0],
-            no: p[1],
-            name: p.slice(2).join(' '),
-            imagePath: `${githubBase}/${folderName}/${f}?t=${Date.now()}`
+            team: parts[0],
+            no: parts[1],
+            name: parts.slice(2).join(' '),
+            imagePath: `${githubBase}/${folderName}/${f.name}?t=${Date.now()}`
           };
         }).sort((a, b) => parseInt(a.no) - parseInt(b.no));
     };
 
-    awayData = process(teamAway);
-    homeData = process(teamHome);
+    awayData = processTeam(teamAway);
+    homeData = processTeam(teamHome);
   }
 
-  // ゲームレポート画像の取得 (output/reports/NBA/ から取得)
-  const gameIdMatch = folderName.match(/\d{10}/);
+  // レポート画像 (output/reports/NBA/日付/ 内を探索)
+  const gameIdMatch = folderName?.match(/\d{10}/);
   const gameId = gameIdMatch ? gameIdMatch[0] : "";
 
-  if (gameId) {
+  if (gameId && rawDate) {
     const reportsApiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/reports/NBA/${rawDate}?t=${Date.now()}`;
-    const reportsRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/NBA/${rawDate}`;
-
     const reportRes = await fetch(reportsApiURL, {
-      headers: token ? { "Authorization": `token ${token}`, "Cache-Control": "no-cache" } : { "Cache-Control": "no-cache" }
+      headers: token ? { "Authorization": `token ${token}` } : {}
     });
     const reportFiles = await reportRes.json();
 
     if (Array.isArray(reportFiles)) {
       const matchFile = reportFiles.find(f => f.name.includes(gameId) && f.name.endsWith('.png'));
       if (matchFile) {
-        reportImagePath = `${reportsRawBase}/${matchFile.name}?t=${Date.now()}`;
+        reportImagePath = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/NBA/${rawDate}/${matchFile.name}?t=${Date.now()}`;
       }
     }
   }
@@ -259,7 +259,8 @@ try {
 </script>
 
 <style is:global>
-  :root { font-family: "Avenir Next", sans-serif; }
+  @import url('https://fonts.cdnfonts.com/css/avenir-next-lt-pro');
+  :root { font-family: 'Avenir Next LT Pro', sans-serif; }
   .no-scrollbar::-webkit-scrollbar { display: none; }
   .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 </style>

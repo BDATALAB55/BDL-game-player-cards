@@ -177,8 +177,15 @@ for (let i = 0; i < teams.length; i += 9) {
               <div class="min-w-full snap-center grid grid-cols-3 gap-1.5">
                 {chunk.map(t => (
                   <a href={`/b1_team?team=${t.id}`}>
-                    <div class={`${t.color} aspect-square rounded-lg flex items-center justify-center text-[12px] font-black tracking-tighter transition-all active:scale-95 uppercase px-1 text-center leading-tight`}>
-                      {t.id}
+                    <div class={`${t.color} aspect-square rounded-lg flex items-center justify-center font-black tracking-tighter transition-all active:scale-95 uppercase px-1 text-center leading-[0.85]`}>
+                      {/* iPhone用：横浜BCは改行、他は文字数でサイズ調整 */}
+                      <span class={t.id.length > 10 ? "text-[12px]" : "text-[15px]"}>
+                        {t.id === 'YOKOHAMA BC' ? (
+                          <>YOKOHAMA<br/>BC</>
+                        ) : (
+                          t.id
+                        )}
+                      </span>
                     </div>
                   </a>
                 ))}

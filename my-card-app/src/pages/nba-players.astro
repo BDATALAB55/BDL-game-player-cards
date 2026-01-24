@@ -1,0 +1,199 @@
+---
+export const prerender = false;
+import Layout from '../layouts/Layout.astro';
+
+const { searchParams } = Astro.url;
+// 選手名（例: Anthony Black）を取得
+const playerName = searchParams.get('name') || '';
+
+const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
+const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
+const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/NBA`;
+const token = process.env.GITHUB_TOKEN;
+
+let playerReports = []; // その選手のカードのみ格納
+let availableDatesMap = {}; // カレンダー用
+
+try {
+  const res = await fetch(RECURSIVE_API, {
+    headers: token ? { "Authorization": `token ${token}`, "Accept": "application/vnd.github.v3+json" } : { "Accept": "application/vnd.github.v3+json" }
+  });
+  const data = await res.json();
+
+  if (data.tree) {
+    // 全てのPNGファイル（NBAフォルダ内）を取得
+    const allFiles = data.tree.filter(item => 
+      item.path.includes('output/reports/NBA/') && 
+      item.path.toLowerCase().endsWith('.png')
+    );
+
+    allFiles.forEach(file => {
+      const pathParts = file.path.split('/');
+      const folderName = pathParts[pathParts.indexOf('NBA') + 1];
+      const fileName = pathParts[pathParts.indexOf('NBA') + 2];
+      
+      // ファイル名から情報を抽出
+      // 例: NBA_Cards_21500001_260122_Anthony_Black.png
+      const nameParts = fileName.replace('.png', '').split('_');
+      const gameId = nameParts[2];
+      const fullDate = nameParts[1];
+      
+      // ファイル名の後半部分を結合して選手名を特定（スペースをアンダースコアに置換して比較）
+      const filePlayerName = nameParts.slice(4).join(' ');
+      
+      // 選手名が一致する場合のみリストに追加
+      if (filePlayerName.toLowerCase() === playerName.toLowerCase()) {
+        const reportObj = {
+          id: folderName,
+          date: `20${folderName.substring(0,2)}.${folderName.substring(2,4)}.${folderName.substring(4,6)}`,
+          path: `${IMAGE_BASE_URL}/${folderName}/${fileName}`,
+          fileName: fileName,
+          link: `/nba-cards?folder=${folderName}/NBA_Cards_${gameId}_${fullDate}`
+        };
+        playerReports.push(reportObj);
+        // カレンダー用：その日のリンクを保存
+        if (!availableDatesMap[folderName]) availableDatesMap[folderName] = reportObj.link;
+      }
+    });
+    // 日付が新しい順にソート
+    playerReports.sort((a, b) => b.id.localeCompare(a.id));
+  }
+} catch (e) {
+  console.error(e);
+}
+---
+
+<Layout title={`${playerName} | B-Data Lab`}>
+  <main class="bg-[#373A36] min-h-screen text-white font-avenir pb-40 overflow-x-hidden relative">
+    
+    <header class="pt-20 pb-12 text-center px-6 relative">
+      <div class="absolute top-10 left-1/2 -translate-x-1/2 text-[100px] md:text-[140px] font-black opacity-5 select-none italic uppercase tracking-tighter w-full leading-none truncate px-4">
+        {playerName}
+      </div>
+      <div class="relative z-10">
+        <p class="text-blue-500 font-black tracking-[0.5em] uppercase text-sm mb-2 italic">NBA PLAYER</p>
+        <h1 class="text-5xl md:text-8xl font-black tracking-tighter italic uppercase leading-tight">{playerName}</h1>
+      </div>
+    </header>
+
+    <div class="max-w-6xl mx-auto px-6">
+      
+      <section class="mt-16">
+        <div class="flex justify-between items-end mb-10">
+          <div>
+            <h2 class="text-3xl font-black uppercase tracking-tight italic">Performance Cards</h2>
+            <p class="text-white/40 text-[10px] font-bold tracking-widest uppercase mt-1">Personal Game Stats</p>
+          </div>
+          <div class="text-right leading-none">
+            <span class="text-7xl font-black italic opacity-20 block">{playerReports.length}</span>
+            <span class="text-[12px] font-bold opacity-40 uppercase tracking-[0.3em]">Games</span>
+          </div>
+        </div>
+
+        <div class="flex overflow-x-auto gap-8 no-scrollbar snap-x pb-12">
+          {playerReports.length > 0 ? playerReports.map(r => (
+            <div class="flex-none w-[320px] snap-center">
+              <div class="mb-4 flex items-center gap-2 px-2">
+                <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+                <span class="text-[14px] font-black tracking-wider text-white/80">{r.date}</span>
+              </div>
+
+              <a href={r.path} download={r.fileName} class="block cursor-pointer active:scale-95 transition-transform">
+                <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-black/40 aspect-[3/4.2] relative group">
+                   <img src={r.path} alt={`${playerName} stats`} class="w-full h-full object-cover" />
+                   <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                      <span class="bg-black/60 px-4 py-2 rounded-full text-[10px] font-black uppercase tracking-widest border border-white/20">Download PNG</span>
+                   </div>
+                </div>
+              </a>
+              
+              <div class="mt-6 flex justify-center">
+                <a href={r.link} class="inline-flex items-center gap-3 px-8 py-2.5 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative hover:scale-110 transition-transform group">
+                  <div class="absolute inset-0 p-[2px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10"></div>
+                  <span class="text-[12px] font-black tracking-[0.2em] uppercase text-white">View Full Game Report</span>
+                </a>
+              </div>
+            </div>
+          )) : (
+            <div class="w-full text-center py-20 bg-black/10 rounded-3xl border border-white/5">
+              <p class="text-white/20 font-black uppercase tracking-widest italic">No Data Found for this Player</p>
+            </div>
+          )}
+        </div>
+      </section>
+
+      <section class="mt-24">
+        <div class="max-w-md mx-auto">
+          <h3 class="text-center text-[10px] font-black tracking-[0.4em] uppercase mb-8 text-white/30 italic">Active Calendar</h3>
+          <div id="calendar" class="bg-black/30 p-8 rounded-[40px] border border-white/5 shadow-inner"></div>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="fixed bottom-8 left-8 z-40">
+       <button onclick="history.back()" class="bg-white/10 backdrop-blur-md text-white px-6 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl hover:bg-white/20 transition-all border border-white/10">← Back</button>
+    </div>
+    <div class="fixed bottom-8 right-8 z-40">
+      <a href="/nba-home" class="bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 hover:scale-105 transition-all border border-white/10">NBA Home</a>
+    </div>
+
+  </main>
+</Layout>
+
+<script is:inline define:vars={{ availableDatesMap }}>
+  let currentY = 2026;
+  let currentM = 0;
+
+  const dates = Object.keys(availableDatesMap).sort((a,b) => b.localeCompare(a));
+  if (dates.length > 0) {
+    currentY = 2000 + parseInt(dates[0].substring(0,2));
+    currentM = parseInt(dates[0].substring(2,4)) - 1;
+  }
+
+  window.changeMonth = function(delta) {
+    currentM += delta;
+    if (currentM < 0) { currentM = 11; currentY--; }
+    else if (currentM > 11) { currentM = 0; currentY++; }
+    renderCalendar(currentY, currentM);
+  };
+
+  function renderCalendar(y, m) {
+    const calendarEl = document.getElementById('calendar');
+    const monthNames = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
+    const firstDay = new Date(y, m, 1).getDay();
+    const daysInMonth = new Date(y, m + 1, 0).getDate();
+    
+    let html = `
+      <div class="flex justify-between items-center mb-10 px-2">
+        <button onclick="changeMonth(-1)" class="text-white/30 hover:text-white transition-colors text-lg">←</button>
+        <div class="font-black text-[13px] tracking-[0.3em] uppercase">${monthNames[m]} ${y}</div>
+        <button onclick="changeMonth(1)" class="text-white/30 hover:text-white transition-colors text-lg">→</button>
+      </div>
+      <div class="grid grid-cols-7 gap-1 text-center text-[9px] font-black text-white/10 mb-6 tracking-widest">
+        <div>SUN</div><div>MON</div><div>TUE</div><div>WED</div><div>THU</div><div>FRI</div><div>SAT</div>
+      </div>
+      <div class="grid grid-cols-7 gap-y-4 gap-x-2">`;
+
+    for (let i = 0; i < firstDay; i++) html += `<div></div>`;
+    for (let d = 1; d <= daysInMonth; d++) {
+      const dateStr = `${String(y).substring(2)}${String(m + 1).padStart(2, '0')}${String(d).padStart(2, '0')}`;
+      const link = availableDatesMap[dateStr];
+      
+      html += `
+        <div class="flex items-center justify-center">
+          ${link ? 
+            `<a href="${link}" class="w-10 h-10 flex items-center justify-center rounded-full bg-red-600 text-white text-[12px] font-black shadow-[0_0_20px_rgba(220,38,38,0.4)] hover:scale-125 hover:rotate-6 active:scale-90 transition-all cursor-pointer border border-white/20">${d}</a>` : 
+            `<span class="text-white/10 text-[12px] font-bold">${d}</span>`
+          }
+        </div>`;
+    }
+    calendarEl.innerHTML = html + `</div>`;
+  }
+  renderCalendar(currentY, currentM);
+</script>
+
+<style>
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>

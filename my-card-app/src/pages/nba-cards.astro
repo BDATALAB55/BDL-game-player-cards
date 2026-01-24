@@ -192,10 +192,16 @@ try {
                 </div>
                 
                 <div class="mt-6 flex flex-col items-center px-1">
-                    <div class="w-full inline-flex items-center justify-between px-6 py-4 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative group overflow-hidden shadow-lg">
-                      <div class="absolute inset-0 p-[1.5px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10 opacity-60"></div>
-                      <span class="text-[13px] font-black tracking-[0.15em] uppercase text-white/90">{p.name}</span>
-                    </div>
+                    {/* 修正箇所：選手名ボタンをリンクに変更 */}
+                    <a href={`/nba-players?name=${encodeURIComponent(p.name)}`} class="w-full block group">
+                      <div class="w-full inline-flex items-center justify-between px-6 py-4 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative overflow-hidden shadow-lg transition-all group-hover:scale-105 active:scale-95">
+                        <div class="absolute inset-0 p-[1.5px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10 opacity-60"></div>
+                        <span class="text-[13px] font-black tracking-[0.15em] uppercase text-white/90">{p.name}</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white/30 group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                    </a>
                 </div>
               </div>
             ))}

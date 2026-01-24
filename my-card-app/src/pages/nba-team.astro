@@ -13,7 +13,7 @@ const token = process.env.GITHUB_TOKEN;
 const teamInfo = {
   ATL: { city: "Atlanta", name: "Hawks", color: "#E03A3E" },
   BOS: { city: "Boston", name: "Celtics", color: "#007A33" },
-  BKN: { city: "Brooklyn", name: "Nets", color: "#FFFFFF" },
+  BKN: { city: "Brooklyn", name: "Nets", color: "#000000" },
   CHA: { city: "Charlotte", name: "Hornets", color: "#00788C" },
   CHI: { city: "Chicago", name: "Bulls", color: "#CE1141" },
   CLE: { city: "Cleveland", name: "Cavaliers", color: "#6F263D" },
@@ -37,7 +37,7 @@ const teamInfo = {
   PHX: { city: "Phoenix", name: "Suns", color: "#1D1160" },
   POR: { city: "Portland", name: "Trail Blazers", color: "#E03A3E" },
   SAC: { city: "Sacramento", name: "Kings", color: "#5A2D81" },
-  SAS: { city: "San Antonio", name: "Spurs", color: "#FFFFFF" },
+  SAS: { city: "San Antonio", name: "Spurs", color: "#000000" },
   TOR: { city: "Toronto", name: "Raptors", color: "#CE1141" },
   UTA: { city: "Utah", name: "Jazz", color: "#002B5C" },
   WAS: { city: "Washington", name: "Wizards", color: "#002B5C" },
@@ -69,9 +69,7 @@ try {
       const parts = file.path.split('/');
       const fileName = parts[parts.length - 1];
       const folderName = parts[parts.length - 2];
-      
       const nameParts = fileName.replace('.png', '').split('_');
-      
       const fullDate = nameParts[2];
       const gameId = nameParts[3];
       const teamA = nameParts[nameParts.length - 2];
@@ -79,7 +77,6 @@ try {
 
       if (teamA === teamId || teamB === teamId) {
         const targetCardFolder = `NBA_Cards_${gameId}_${fullDate}`;
-
         const reportObj = {
           id: folderName,
           date: `20${folderName.substring(0,2)}.${folderName.substring(2,4)}.${folderName.substring(4,6)}`,
@@ -101,13 +98,13 @@ try {
 ---
 
 <Layout title={`${teamId} | B-Data Lab`}>
-  <main class="bg-[#373A36] min-h-screen text-white font-avenir pb-40 overflow-x-hidden relative">
+  <main class="bg-[#373A36] min-h-screen text-white font-avenir pb-60 overflow-x-hidden relative">
     
     <header class="pt-12 pb-6 px-6 max-w-6xl mx-auto w-full">
-      <div class="flex items-end justify-between w-full border-b border-white/10 pb-6 relative">
-        <div class="flex-shrink-0 relative pb-4">
+      <div class="flex items-end justify-between w-full relative">
+        <div class="flex-shrink-0 relative pb-4 w-full md:w-auto">
           <div class="flex flex-col md:flex-row md:items-end md:gap-4 leading-none font-black uppercase tracking-tight">
-            <span class="text-xl md:text-7xl opacity-90 md:opacity-100">
+            <span class="text-2xl md:text-7xl opacity-90 md:opacity-100">
               {currentTeam.city}
             </span>
             <span class="text-5xl md:text-7xl">
@@ -115,23 +112,23 @@ try {
             </span>
           </div>
           <div 
-            class="absolute bottom-[-1px] left-0 h-[3px] md:h-[5px] w-full" 
+            class="absolute bottom-0 left-0 h-[3px] md:h-[5px] w-full" 
             style={`background-color: ${currentTeam.color}; box-shadow: 0 4px 15px ${currentTeam.color}66;`}
           ></div>
         </div>
 
-        <div class="flex flex-col items-end text-right space-y-3 mb-1">
-          <h2 class="text-xl md:text-3xl font-black tracking-widest uppercase leading-none">BDATALAB</h2>
-          <div class="flex items-center gap-3 md:gap-5">
-            <a href="https://x.com/BDataLab5x5" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 transition-all">
-              <div class="w-7 h-7 md:w-8 md:h-8 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-white/20 transition-colors">
-                <svg class="w-3.5 h-3.5 md:w-4 md:h-4 fill-white" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        <div class="hidden md:flex flex-col items-end text-right space-y-3 mb-1">
+          <h2 class="text-3xl font-black tracking-widest uppercase leading-none">BDATALAB</h2>
+          <div class="flex items-center gap-5">
+            <a href="https://x.com/BDataLab5x5" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5">
+              <div class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-white/20 transition-colors">
+                <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
               </div>
-              <span class="hidden sm:inline text-[10px] font-black tracking-widest uppercase text-white/40 group-hover:text-white transition-colors">X</span>
+              <span class="text-[10px] font-black tracking-widest uppercase text-white/40 group-hover:text-white transition-colors">X</span>
             </a>
             <div class="h-3 w-[1px] bg-white/20"></div>
-            <a href="https://note.com/bdatalab5x5" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 transition-all">
-              <div class="w-7 h-7 md:w-8 md:h-8 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-[#23bb9d] transition-colors">
+            <a href="https://note.com/bdatalab5x5" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5">
+              <div class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-[#23bb9d] transition-colors">
                  <span class="text-[12px] font-black text-white">n</span>
               </div>
               <span class="text-[10px] font-black tracking-widest lowercase text-white/40 group-hover:text-white transition-colors">note</span>
@@ -142,7 +139,6 @@ try {
     </header>
 
     <div class="max-w-6xl mx-auto px-6">
-      
       <section class="mt-16">
         <div class="flex justify-between items-end mb-10">
           <div>
@@ -163,7 +159,6 @@ try {
                   <div class="w-2 h-2 rounded-full bg-blue-500"></div>
                   <span class="text-[14px] font-black tracking-wider text-white/80">{r.date}</span>
                 </div>
-
                 <a href={r.path} download={r.fileName} class="block cursor-pointer active:scale-95 transition-transform">
                   <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-black/40 aspect-[3/4.2] relative group">
                      <img src={r.path} alt="Report" class="w-full h-full object-cover" />
@@ -172,7 +167,6 @@ try {
                      </div>
                   </div>
                 </a>
-                
                 <div class="mt-6 flex justify-center">
                   <a href={r.link} class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative hover:scale-110 transition-transform group">
                     <div class="absolute inset-0 p-[2px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10"></div>
@@ -197,14 +191,31 @@ try {
           <div id="calendar" class="bg-black/30 p-8 rounded-[40px] border border-white/5 shadow-inner"></div>
         </div>
       </section>
+    </div>
 
+    <div class="md:hidden mt-20 pb-20 flex flex-col items-center text-center space-y-4">
+      <h2 class="text-2xl font-black tracking-[0.3em] uppercase opacity-40">BDATALAB</h2>
+      <div class="flex items-center gap-8">
+        <a href="https://x.com/BDataLab5x5" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2">
+          <div class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center border border-white/10">
+            <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </div>
+          <span class="text-[9px] font-black tracking-widest uppercase opacity-40">Twitter</span>
+        </a>
+        <a href="https://note.com/bdatalab5x5" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-2">
+          <div class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center border border-white/10">
+             <span class="text-[14px] font-black text-white">n</span>
+          </div>
+          <span class="text-[9px] font-black tracking-widest uppercase opacity-40">Note</span>
+        </a>
+      </div>
     </div>
 
     <div class="fixed bottom-8 left-8 z-40">
-       <button onclick="history.back()" class="bg-white/10 backdrop-blur-md text-white px-6 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl hover:bg-white/20 transition-all border border-white/10">← Back</button>
+       <button onclick="history.back()" class="bg-white/10 backdrop-blur-md text-white px-6 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 border border-white/10">← Back</button>
     </div>
     <div class="fixed bottom-8 right-8 z-40">
-      <a href="/nba-home" class="bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 hover:scale-105 transition-all border border-white/10">NBA Home</a>
+      <a href="/nba-home" class="bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 border border-white/10">NBA Home</a>
     </div>
 
   </main>
@@ -213,26 +224,22 @@ try {
 <script is:inline define:vars={{ availableDatesMap }}>
   let currentY = 2026;
   let currentM = 0;
-
   const dates = Object.keys(availableDatesMap).sort((a,b) => b.localeCompare(a));
   if (dates.length > 0) {
     currentY = 2000 + parseInt(dates[0].substring(0,2));
     currentM = parseInt(dates[0].substring(2,4)) - 1;
   }
-
   window.changeMonth = function(delta) {
     currentM += delta;
     if (currentM < 0) { currentM = 11; currentY--; }
     else if (currentM > 11) { currentM = 0; currentY++; }
     renderCalendar(currentY, currentM);
   };
-
   function renderCalendar(y, m) {
     const calendarEl = document.getElementById('calendar');
     const monthNames = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
     const firstDay = new Date(y, m, 1).getDay();
     const daysInMonth = new Date(y, m + 1, 0).getDate();
-    
     let html = `
       <div class="flex justify-between items-center mb-10 px-2">
         <button onclick="changeMonth(-1)" class="text-white/30 hover:text-white transition-colors text-lg">←</button>
@@ -243,16 +250,14 @@ try {
         <div>SUN</div><div>MON</div><div>TUE</div><div>WED</div><div>THU</div><div>FRI</div><div>SAT</div>
       </div>
       <div class="grid grid-cols-7 gap-y-4 gap-x-2">`;
-
     for (let i = 0; i < firstDay; i++) html += `<div></div>`;
     for (let d = 1; d <= daysInMonth; d++) {
       const dateStr = `${String(y).substring(2)}${String(m + 1).padStart(2, '0')}${String(d).padStart(2, '0')}`;
       const link = availableDatesMap[dateStr];
-      
       html += `
         <div class="flex items-center justify-center">
           ${link ? 
-            `<a href="${link}" class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-600 text-white text-[12px] font-black shadow-[0_0_20px_rgba(37,99,235,0.4)] hover:scale-125 hover:rotate-6 active:scale-90 transition-all cursor-pointer border border-white/20">${d}</a>` : 
+            `<a href="${link}" class="w-10 h-10 flex items-center justify-center rounded-full bg-blue-600 text-white text-[12px] font-black shadow-[0_0_20px_rgba(37,99,235,0.4)] transition-all border border-white/20">${d}</a>` : 
             `<span class="text-white/10 text-[12px] font-bold">${d}</span>`
           }
         </div>`;

@@ -2,182 +2,264 @@
 export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
-// 1. URLパラメータからフォルダ名を取得 (例: 241022/NBA_Cards_0022400062_20241022)
+// 1. URLから ?folder= の値を取得する
 const { searchParams } = Astro.url;
-const folderPath = searchParams.get('folder') || "";
+const queryFolder = searchParams.get('folder');
 
 // --- 設定：リポジトリ情報 ---
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
-const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/players`;
+const githubBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/players`;
 
-let reportImage = "";
-let playerCardImages = [];
-let gameDate = "";
-let gameMatchup = "";
+// --- チームカラーマップ ---
+const teamColorMap = {
+  ATL: 'bg-[#E03A3E]', BOS: 'bg-[#007A33]', 
+  BKN: 'bg-black border border-white/20', CHA: 'bg-[#00788C]',
+  CHI: 'bg-[#CE1141]', CLE: 'bg-[#6F263D]', 
+  DAL: 'bg-[#0053BC]', DEN: 'bg-[#0E2240]',
+  DET: 'bg-[#1D428A]', GSW: 'bg-[#006BB6]', 
+  HOU: 'bg-[#CE1141]', IND: 'bg-[#002D62]',
+  LAC: 'bg-[#12173F]', LAL: 'bg-[#552583]', 
+  MEM: 'bg-[#5D76A9]', MIA: 'bg-[#98002E]',
+  MIL: 'bg-[#00471B]', MIN: 'bg-[#0C2340]', 
+  NOP: 'bg-[#0C2340]', NYK: 'bg-[#F58426]',
+  OKC: 'bg-[#007AC1]', ORL: 'bg-[#0077C0]', 
+  PHI: 'bg-[#006BB6]', PHX: 'bg-[#1D1160]',
+  POR: 'bg-[#E03A3E]', SAC: 'bg-[#5A2D81]', 
+  SAS: 'bg-black border border-white/20', TOR: 'bg-[#CE1141]',
+  UTA: 'bg-[#002B5C]', WAS: 'bg-[#002B5C]',
+};
 
-if (folderPath) {
+const getTeamStyle = (id) => teamColorMap[id] || 'bg-gray-700';
+
+let folderName = queryFolder;
+
+// --- 自動取得ロジック (最新データを取得) ---
+if (!folderName) {
   try {
-    // フォルダ内のファイルを一括取得するためのAPI
-    const apiUrl = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players/${folderPath}?t=${Date.now()}`;
-    
-    const res = await fetch(apiUrl, {
-      headers: {
-        ...(token ? { "Authorization": `token ${token}` } : {}),
-        "Accept": "application/vnd.github.v3+json"
-      },
-      cache: 'no-store'
+    const listApi = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players?t=${Date.now()}`;
+    const res = await fetch(listApi, {
+      headers: token ? { "Authorization": `token ${token}`, "Cache-Control": "no-cache" } : { "Cache-Control": "no-cache" }
     });
+    const items = await res.json();
     
-    const files = await res.json();
+    if (Array.isArray(items)) {
+      const dateFolders = items
+        .filter(item => item.type === 'dir' && /^\d+$/.test(item.name))
+        .sort((a, b) => b.name.localeCompare(a.name));
 
-    if (Array.isArray(files)) {
-      // 1. レポート画像の抽出 (Reportが含まれるファイル)
-      const reportFile = files.find(f => f.name.toLowerCase().includes('report') && f.name.endsWith('.png'));
-      if (reportFile) {
-        reportImage = `${reportFile.download_url}?t=${Date.now()}`;
+      if (dateFolders.length > 0) {
+        const latestDateDir = dateFolders[0].name;
+        const matchApi = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players/${latestDateDir}?t=${Date.now()}`;
+        const matchRes = await fetch(matchApi, {
+          headers: token ? { "Authorization": `token ${token}`, "Cache-Control": "no-cache" } : { "Cache-Control": "no-cache" }
+        });
+        const matchItems = await matchRes.json();
         
-        // ファイル名から日付と対戦カードを推測 (NBA_Report_20241022_0022400062_NYK_BOS.png)
-        const nameParts = reportFile.name.replace('.png', '').split('_');
-        gameDate = nameParts[2] || "";
-        const teamA = nameParts[nameParts.length - 2] || "";
-        const teamB = nameParts[nameParts.length - 1] || "";
-        gameMatchup = teamA && teamB ? `${teamA} vs ${teamB}` : "Game Stats";
+        if (Array.isArray(matchItems)) {
+          const latestMatch = matchItems.find(m => m.type === 'dir' && m.name.startsWith('NBA_Cards_'));
+          if (latestMatch) {
+            folderName = `${latestDateDir}/${latestMatch.name}`;
+          }
+        }
       }
-
-      // 2. 選手スタッツ画像の抽出 (Report以外、かつ.png)
-      playerCardImages = files
-        .filter(f => !f.name.toLowerCase().includes('report') && f.name.endsWith('.png'))
-        .map(f => ({
-          name: f.name.split('_')[0], // 選手名
-          url: `${f.download_url}?t=${Date.now()}`
-        }));
     }
   } catch (e) {
-    console.error("Fetch error:", e);
+    console.error("Auto-fetch failed:", e);
   }
 }
 
-// チームボタン用のリスト (以前の見た目を維持)
-const teams = [
-  { id: 'ATL', color: 'bg-[#E03A3E]' }, { id: 'BOS', color: 'bg-[#007A33]' },
-  { id: 'BKN', color: 'bg-black border border-white/20' }, { id: 'CHA', color: 'bg-[#00788C]' },
-  { id: 'CHI', color: 'bg-[#CE1141]' }, { id: 'CLE', color: 'bg-[#6F263D]' },
-  { id: 'DAL', color: 'bg-[#0053BC]' }, { id: 'DEN', color: 'bg-[#0E2240]' },
-  { id: 'DET', color: 'bg-[#1D428A]' }, { id: 'GSW', color: 'bg-[#006BB6]' },
-  { id: 'HOU', color: 'bg-[#CE1141]' }, { id: 'IND', color: 'bg-[#002D62]' },
-  { id: 'LAC', color: 'bg-[#12173F]' }, { id: 'LAL', color: 'bg-[#552583]' },
-  { id: 'MEM', color: 'bg-[#5D76A9]' }, { id: 'MIA', color: 'bg-[#98002E]' },
-  { id: 'MIL', color: 'bg-[#00471B]' }, { id: 'MIN', color: 'bg-[#0C2340]' },
-  { id: 'NOP', color: 'bg-[#0C2340]' }, { id: 'NYK', color: 'bg-[#F58426]' },
-  { id: 'OKC', color: 'bg-[#007AC1]' }, { id: 'ORL', color: 'bg-[#0077C0]' },
-  { id: 'PHI', color: 'bg-[#006BB6]' }, { id: 'PHX', color: 'bg-[#1D1160]' },
-  { id: 'POR', color: 'bg-[#E03A3E]' }, { id: 'SAC', color: 'bg-[#5A2D81]' },
-  { id: 'SAS', color: 'bg-black border border-white/20' }, { id: 'TOR', color: 'bg-[#CE1141]' },
-  { id: 'UTA', color: 'bg-[#002B5C]' }, { id: 'WAS', color: 'bg-[#002B5C]' },
-];
+let awayData = [];
+let homeData = [];
+let teamHome = "HOME";
+let teamAway = "AWAY";
+let reportImagePath = "";
+
+const rawDate = folderName ? folderName.split('/')[0] : "";
+const formattedDate = rawDate ? `20${rawDate.substring(0,2)}.${rawDate.substring(2,4)}.${rawDate.substring(4,6)}` : "NO DATA";
+
+try {
+  // 選手スタッツカードの取得
+  const apiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players/${folderName}?t=${Date.now()}`;
+  const response = await fetch(apiURL, {
+    headers: token ? { "Authorization": `token ${token}`, "Cache-Control": "no-cache" } : { "Cache-Control": "no-cache" }
+  });
+  const files = await response.json();
+
+  if (Array.isArray(files)) {
+    // チームA/Bのフォルダ名を特定するためのマッチング
+    // 命名規則: TEAM_Number_FirstName_LastName.png
+    const playerFiles = files.filter(f => f.name.endsWith('.png') && !f.name.includes('Report')).map(f => f.name);
+    
+    // 全画像からチーム名のリストを抽出
+    const detectedTeams = [...new Set(playerFiles.map(f => f.split('_')[0]))].filter(t => t && t !== 'NBA');
+    
+    teamAway = detectedTeams[0] || "AWAY";
+    teamHome = detectedTeams[1] || "HOME";
+
+    const process = (teamName) => {
+      return playerFiles
+        .filter(f => f.startsWith(teamName))
+        .map(f => {
+          const p = f.replace('.png', '').split('_');
+          return {
+            team: p[0],
+            no: p[1],
+            name: p.slice(2).join(' '),
+            imagePath: `${githubBase}/${folderName}/${f}?t=${Date.now()}`
+          };
+        }).sort((a, b) => parseInt(a.no) - parseInt(b.no));
+    };
+
+    awayData = process(teamAway);
+    homeData = process(teamHome);
+  }
+
+  // ゲームレポート画像の取得 (output/reports/NBA/ から取得)
+  const gameIdMatch = folderName.match(/\d{10}/);
+  const gameId = gameIdMatch ? gameIdMatch[0] : "";
+
+  if (gameId) {
+    const reportsApiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/reports/NBA/${rawDate}?t=${Date.now()}`;
+    const reportsRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/NBA/${rawDate}`;
+
+    const reportRes = await fetch(reportsApiURL, {
+      headers: token ? { "Authorization": `token ${token}`, "Cache-Control": "no-cache" } : { "Cache-Control": "no-cache" }
+    });
+    const reportFiles = await reportRes.json();
+
+    if (Array.isArray(reportFiles)) {
+      const matchFile = reportFiles.find(f => f.name.includes(gameId) && f.name.endsWith('.png'));
+      if (matchFile) {
+        reportImagePath = `${reportsRawBase}/${matchFile.name}?t=${Date.now()}`;
+      }
+    }
+  }
+} catch (e) {
+  console.error("Fetch Error:", e);
+}
 ---
 
-<Layout title="Game Cards | B-Data Lab">
-  <main class="bg-[#373A36] min-h-screen text-white font-avenir pb-32">
+<Layout title="BDL CARDS">
+  <div class="app-container bg-[#373A36] min-h-screen text-white overflow-hidden font-avenir relative">
     
-    <header class="pt-20 pb-12 text-center px-6 border-b border-white/5 relative overflow-hidden">
-      <div class="absolute top-0 left-1/2 -translate-x-1/2 text-[15vw] font-black opacity-[0.03] select-none italic uppercase tracking-tighter whitespace-nowrap leading-none">
-        {gameMatchup}
-      </div>
-      <div class="relative z-10">
-        <p class="text-blue-500 font-black tracking-[0.5em] uppercase text-[10px] mb-4 italic">Game Detail Report</p>
-        <h1 class="text-5xl md:text-7xl font-black tracking-tighter italic uppercase leading-tight mb-2">{gameMatchup}</h1>
-        <p class="text-white/40 font-bold tracking-widest text-sm uppercase italic">20{folderPath.substring(0,2)}.{folderPath.substring(2,4)}.{folderPath.substring(4,6)}</p>
-      </div>
+    <header class="pt-12 pb-6 px-8 border-b border-white/5 text-center">
+      <a href="/nba-home" class="inline-block hover:opacity-70 transition-opacity">
+        <h1 class="text-2xl font-black uppercase leading-none tracking-[0.25em]">BDL Cards</h1>
+      </a>
+      <p class="text-gray-600 text-[10px] font-bold tracking-[0.4em] mt-3 uppercase">Gameday Collection</p>
     </header>
 
-    <div class="max-w-7xl mx-auto px-6 mt-20">
-      
-      <section class="mb-32 max-w-4xl mx-auto">
-        <div class="flex items-center gap-4 mb-10 justify-center">
-          <span class="h-[1px] w-12 bg-white/20"></span>
-          <h2 class="text-xs font-black tracking-[0.6em] uppercase text-white/40 italic">Main Report</h2>
-          <span class="h-[1px] w-12 bg-white/20"></span>
+    <div class="py-10 space-y-16 pb-32">
+      <div class="px-8">
+        <div class="flex flex-col gap-1">
+          <span class="text-blue-500 text-[12px] font-black uppercase tracking-[0.3em]">Gameday</span>
+          <span class="text-white text-[28px] font-bold uppercase leading-none tracking-[0.1em]">{formattedDate}</span>
         </div>
-        {reportImage ? (
-          <div class="rounded-3xl overflow-hidden shadow-[0_40px_100px_rgba(0,0,0,0.6)] border border-white/10 group bg-black/40 relative">
-             <img src={reportImage} alt="Game Report" class="w-full h-auto block" />
-             <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+      </div>
+
+      <section class="px-8 flex flex-col items-center">
+        {reportImagePath ? (
+          <div class="w-full md:w-[50%] mx-auto cursor-pointer card-trigger rounded-xl overflow-hidden border border-white/20 shadow-2xl active:scale-95 transition-transform" data-img={reportImagePath}>
+            <img src={reportImagePath} alt="Game Report" class="w-full h-auto block" />
           </div>
         ) : (
-          <div class="aspect-[3/4.2] rounded-3xl border-2 border-dashed border-white/5 flex items-center justify-center bg-black/10">
-            <p class="text-white/20 font-black italic uppercase tracking-widest">Loading Report...</p>
+          <div class="w-full py-10 text-center text-white/20 text-[10px] tracking-widest uppercase border border-dashed border-white/10 rounded-xl">
+            Report Image Not Found
           </div>
         )}
+        <div class="mt-4 text-center">
+          <span class="text-[13px] font-black tracking-[0.2em] uppercase text-white/90">
+            {teamAway} <span class="text-[9px] font-medium text-white/40 mx-1">vs</span> {teamHome}
+          </span>
+        </div>
       </section>
 
-      <section class="mb-40">
-        <div class="flex justify-between items-end mb-16 px-4">
-          <div>
-            <h3 class="text-3xl font-black italic uppercase tracking-tight">Player Performance</h3>
-            <p class="text-[10px] text-white/40 font-bold tracking-[0.4em] uppercase mt-2">Individual Stats Archive</p>
+      {[awayData, homeData].map((team) => team.length > 0 && (
+        <section>
+          <div class="px-8 mb-8">
+            <a href={`/nba-team?team=${team[0].team}`} class="inline-block group">
+              <button class={`${getTeamStyle(team[0].team)} font-avenir w-[115px] h-[48px] rounded-full text-[15px] font-black tracking-tighter shadow-xl hover:scale-110 active:scale-95 transition-transform text-white flex items-center justify-center gap-1.5`}>
+                {team[0].team}
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 opacity-40 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            </a>
           </div>
-          <div class="text-right">
-            <span class="text-6xl font-black italic leading-none opacity-20">{playerCardImages.length}</span>
-            <p class="text-[10px] text-white/40 font-bold tracking-widest uppercase">Cards</p>
-          </div>
-        </div>
 
-        {playerCardImages.length > 0 ? (
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
-            {playerCardImages.map((card) => (
-              <div class="group">
-                <div class="mb-4 flex items-center gap-3">
-                  <span class="h-4 w-[2px] bg-blue-500"></span>
-                  <span class="text-[11px] font-black tracking-[0.2em] uppercase text-white/60">{card.name}</span>
+          <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-8 no-scrollbar pb-4">
+            {team.map((p) => (
+              <div class="flex-none w-[78vw] max-w-[340px] snap-center">
+                <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-xl active:scale-95 transition-transform" data-img={p.imagePath}>
+                  <img src={p.imagePath} alt={p.name} class="w-full h-auto block" loading="lazy" />
                 </div>
-                <div class="relative rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 group-hover:scale-[1.05] group-hover:shadow-blue-500/20 border border-white/5 bg-black/40">
-                  <img src={card.url} alt={card.name} class="w-full h-auto block" loading="lazy" />
-                  <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                
+                <div class="mt-6 flex flex-col items-center px-1">
+                    <a href={`/nba-players?name=${encodeURIComponent(p.name)}`} class="w-full block group">
+                      <div class="w-full inline-flex items-center justify-between px-6 py-4 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative overflow-hidden shadow-lg transition-all group-hover:scale-105 active:scale-95">
+                        <div class="absolute inset-0 p-[1.5px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10 opacity-60"></div>
+                        <span class="text-[13px] font-black tracking-[0.15em] uppercase text-white/90">{p.name}</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white/30 group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                    </a>
                 </div>
               </div>
             ))}
           </div>
-        ) : (
-          <div class="py-32 rounded-3xl border-2 border-dashed border-white/5 flex flex-col items-center justify-center bg-black/10 backdrop-blur-sm">
-            <p class="text-white/20 font-black italic uppercase tracking-[0.3em] text-sm">Scanning for player stats...</p>
-          </div>
-        )}
-      </section>
-
-      <section class="border-t border-white/5 pt-32 pb-20">
-        <h3 class="text-center text-[10px] font-black tracking-[0.6em] uppercase mb-16 text-white/20 italic">Switch Team</h3>
-        <div class="grid grid-cols-5 md:grid-cols-10 gap-4">
-          {teams.map((team) => (
-            <a href={`/nba-team?team=${team.id}`} class="group">
-              <div class={`${team.color} aspect-square rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-active:scale-95 shadow-lg`}>
-                <span class="text-[11px] font-black italic tracking-tighter text-white">{team.id}</span>
-              </div>
-            </a>
-          ))}
-        </div>
-      </section>
+        </section>
+      ))}
     </div>
 
-    <nav class="fixed bottom-8 left-0 w-full px-8 flex justify-between items-center z-50">
-      <button onclick="history.back()" class="bg-white/10 backdrop-blur-md hover:bg-white/20 text-white px-8 py-4 rounded-2xl border border-white/10 transition-all active:scale-95 group shadow-2xl">
-        <span class="text-[10px] font-black uppercase tracking-[0.3em] flex items-center gap-3">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
-          Back
-        </span>
-      </button>
+    <div id="modal" class="fixed inset-0 bg-black/98 z-50 hidden flex-col items-center justify-center p-6 backdrop-blur-md">
+      <div class="absolute top-8 right-8 text-white/40 text-4xl font-light cursor-pointer p-4 hover:text-white transition-colors" id="close">&times;</div>
+      <img id="modal-img" src="" class="max-w-full max-h-[80vh] shadow-2xl rounded-xl mb-12 border border-white/10" />
+      <a id="download-btn" href="" download class="bg-white text-black px-14 py-4 rounded-full font-black uppercase tracking-widest text-[11px] hover:bg-gray-200 transition-colors">Download Card</a>
+    </div>
 
-      <a href="/nba-home" class="bg-blue-600 hover:bg-blue-500 text-white px-10 py-4 rounded-2xl shadow-xl shadow-blue-600/20 transition-all active:scale-95 border border-blue-400/20">
-        <span class="text-[10px] font-black uppercase tracking-[0.3em]">NBA Home</span>
+    <div class="fixed bottom-8 right-8 z-40">
+      <a href="/nba-home" class="bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 hover:bg-gray-700 transition-all border border-white/10">
+        Back to NBA Home
       </a>
-    </nav>
-
-  </main>
+    </div>
+  </div>
 </Layout>
 
+<script>
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modal-img') as HTMLImageElement;
+  const close = document.getElementById('close');
+  const downloadBtn = document.getElementById('download-btn') as HTMLAnchorElement;
+
+  document.querySelectorAll('.card-trigger').forEach(card => {
+    card.addEventListener('click', () => {
+      const imgSrc = card.getAttribute('data-img');
+      if (imgSrc && modalImg && downloadBtn) {
+        modalImg.src = imgSrc;
+        downloadBtn.href = imgSrc;
+        modal?.classList.remove('hidden');
+        modal?.classList.add('flex');
+      }
+    });
+  });
+
+  close?.addEventListener('click', () => {
+    modal?.classList.add('hidden');
+    modal?.classList.remove('flex');
+  });
+
+  modal?.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal?.classList.add('hidden');
+      modal?.classList.remove('flex');
+    }
+  });
+</script>
+
 <style is:global>
-  @import url('https://fonts.cdnfonts.com/css/avenir-next-lt-pro');
-  :root { font-family: 'Avenir Next LT Pro', sans-serif; }
-  .font-avenir { font-family: 'Avenir Next LT Pro', sans-serif; }
+  :root { font-family: "Avenir Next", sans-serif; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 </style>

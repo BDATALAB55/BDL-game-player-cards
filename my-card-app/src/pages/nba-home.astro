@@ -2,21 +2,21 @@
 export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
-// --- ロジック修正部分 ---
+// --- 設定値 ---
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
 const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/NBA`;
+
 const token = process.env.GITHUB_TOKEN;
 
 let reportGroups = [];
 
 try {
   const res = await fetch(RECURSIVE_API, {
-    headers: {
-      ...(token ? { "Authorization": `token ${token}` } : {}),
+    headers: token ? { 
+      "Authorization": `token ${token}`,
       "Accept": "application/vnd.github.v3+json"
-    },
-    cache: 'no-store'
+    } : { "Accept": "application/vnd.github.v3+json" }
   });
   const data = await res.json();
 
@@ -31,14 +31,15 @@ try {
       const pathParts = file.path.split('/');
       const nbaIndex = pathParts.indexOf('NBA');
       if (nbaIndex === -1 || pathParts.length <= nbaIndex + 2) return;
-      
       const folderName = pathParts[nbaIndex + 1]; 
-      const fileName = pathParts[nbaIndex + 2];   
+      const fileName = pathParts[nbaIndex + 2];
       if (!/^\d+$/.test(folderName)) return;
 
       const nameParts = fileName.replace('.png', '').split('_');
-      const fullDate = nameParts[2] || ""; 
-      const gameId = nameParts[3] || "";
+      
+      // 【ロジック修正点】ファイル名構造 NBA_Report_YYYYMMDD_GameID... に合わせてインデックスを変更
+      const fullDate = nameParts[2] || "";  // 3番目が日付
+      const gameId = nameParts[3] || "";    // 4番目がGameID
       const teamA = nameParts[nameParts.length - 2] || "AWAY";
       const teamB = nameParts[nameParts.length - 1] || "HOME";
 
@@ -50,12 +51,12 @@ try {
         };
       }
       
+      // 【ロジック修正点】リンク先フォルダ名を正確に生成
       const cardFolderName = `NBA_Cards_${gameId}_${fullDate}`;
 
       groups[folderName].reports.push({
         path: `${IMAGE_BASE_URL}/${folderName}/${fileName}?t=${Date.now()}`,
-        away: teamA, 
-        home: teamB,
+        away: teamA, home: teamB,
         link: `/nba-cards?folder=${folderName}/${cardFolderName}`
       });
     });
@@ -65,7 +66,6 @@ try {
   console.error("Fetch Error:", e);
 }
 
-// --- 元の定数と設定 ---
 const teams = [
   { id: 'ATL', color: 'bg-[#E03A3E]' }, { id: 'BOS', color: 'bg-[#007A33]' },
   { id: 'BKN', color: 'bg-black border border-white/20' }, { id: 'CHA', color: 'bg-[#00788C]' },
@@ -86,114 +86,211 @@ const teams = [
 
 const today = reportGroups.length > 0 ? reportGroups[0].date : "2026.01.24";
 const todayGameCount = reportGroups.length > 0 ? reportGroups[0].reports.length : 0;
+
+const teamChunks = [];
+for (let i = 0; i < teams.length; i += 9) {
+  teamChunks.push(teams.slice(i, i + 9));
+}
 ---
 
 <Layout title="NBA HOME | B-Data Lab">
-  <main class="bg-[#373A36] min-h-screen text-white font-avenir pb-20 overflow-x-hidden relative">
+  <main class="bg-[#373A36] min-h-screen text-white font-avenir pb-32 overflow-x-hidden relative">
     
-    <header class="pt-24 pb-12 text-center px-6 relative border-b border-white/5">
-      <div class="absolute top-10 left-1/2 -translate-x-1/2 text-[160px] font-black opacity-[0.03] select-none italic uppercase tracking-tighter w-full leading-none">GAMEDAY</div>
-      <div class="relative z-10">
-        <div class="flex items-center justify-center gap-4 mb-4">
-          <span class="h-[1px] w-8 bg-blue-500"></span>
-          <p class="text-blue-500 font-black tracking-[0.5em] uppercase text-[10px] italic">{today}</p>
-          <span class="h-[1px] w-8 bg-blue-500"></span>
+    <header class="pt-12 pb-6 px-6 max-w-6xl mx-auto w-full">
+      <div class="flex items-end justify-between w-full border-b border-white/10 pb-6">
+        <div class="flex-shrink-0">
+          <a href="/nba-home" class="hover:opacity-80 transition-opacity">
+            <h1 class="text-5xl md:text-7xl font-black tracking-normal uppercase leading-none">NBA</h1>
+          </a>
         </div>
-        <h1 class="text-6xl md:text-8xl font-black tracking-tighter italic uppercase leading-tight mb-2">NBA CARDS</h1>
-        <p class="text-white/30 text-[10px] font-bold tracking-[0.4em] uppercase">B-Data Lab Performance Archive</p>
+        <div class="flex flex-col items-end text-right space-y-3">
+          <h2 class="text-xl md:text-3xl font-black tracking-widest uppercase leading-none">BDATALAB</h2>
+          <div class="flex items-center gap-3 md:gap-5">
+            <a href="https://x.com/BDataLab5x5" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 transition-all">
+              <div class="w-7 h-7 md:w-8 md:h-8 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-white/20 transition-colors">
+                <svg class="w-3.5 h-3.5 md:w-4 md:h-4 fill-white" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </div>
+              <span class="hidden sm:inline text-[10px] font-black tracking-widest uppercase text-white/40 group-hover:text-white transition-colors">X</span>
+            </a>
+            <div class="h-3 w-[1px] bg-white/20"></div>
+            <a href="https://note.com/bdatalab5x5" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 transition-all">
+              <div class="w-7 h-7 md:w-8 md:h-8 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-[#23bb9d] transition-colors">
+                 <span class="text-[12px] font-black text-white">n</span>
+              </div>
+              <span class="text-[10px] font-black tracking-widest lowercase text-white/40 group-hover:text-white transition-colors">note</span>
+            </a>
+          </div>
+        </div>
       </div>
     </header>
 
-    <div class="max-w-[1600px] mx-auto px-6">
+    <div class="max-w-6xl mx-auto px-6">
       
-      <section class="mt-20">
-        <div class="flex justify-between items-end mb-10 px-4">
-          <div>
-            <h2 class="text-2xl font-black uppercase tracking-tight italic flex items-center gap-3">
-              Latest Games
-              <span class="bg-blue-600 text-[10px] not-italic px-2 py-0.5 rounded-full">{todayGameCount}</span>
-            </h2>
+      <section class="mt-12">
+        <h2 class="text-4xl font-black uppercase tracking-tighter mb-8">TEAM</h2>
+        
+        <div class="hidden md:grid grid-cols-4 lg:grid-cols-6 gap-2">
+          {teams.map(t => (
+            <a href={`/nba-team?team=${t.id}`} class="group">
+              <div class={`${t.color} aspect-[2/1] rounded-2xl flex items-center justify-center text-3xl font-black tracking-widest transition-all duration-300 group-hover:scale-105 group-hover:brightness-125 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] uppercase`}>
+                <span class="group-hover:scale-110 transition-transform">{t.id}</span>
+              </div>
+            </a>
+          ))}
+        </div>
+
+        <div class="md:hidden -mx-6">
+          <div id="team-carousel" class="flex overflow-x-auto snap-x snap-mandatory no-scrollbar px-6 gap-1.5">
+            {teamChunks.map((chunk) => (
+              <div class="min-w-full snap-center grid grid-cols-3 gap-1.5">
+                {chunk.map(t => (
+                  <a href={`/nba-team?team=${t.id}`}>
+                    <div class={`${t.color} aspect-square rounded-lg flex items-center justify-center text-xl font-black tracking-widest transition-all active:scale-95 uppercase`}>
+                      {t.id}
+                    </div>
+                  </a>
+                ))}
+              </div>
+            ))}
           </div>
-          <div class="hidden md:block">
-            <a href="/nba-reports" class="text-[10px] font-black uppercase tracking-widest text-white/40 hover:text-white transition-colors">View All Reports →</a>
+          <div class="flex justify-center gap-1.5 mt-6">
+            {teamChunks.map((_, i) => (
+              <div class={`h-[2px] rounded-full transition-all duration-300 ${i === 0 ? 'w-6 bg-white' : 'w-2 bg-white/10'}`} data-dot={i}></div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-24">
+        <div class="flex justify-between items-end mb-8">
+          <div>
+            <h2 class="text-4xl font-black uppercase tracking-tighter mb-4">GAME REPORT</h2>
+            <div class="flex flex-col gap-1">
+              <span class="text-blue-500 text-[10px] font-black uppercase tracking-[0.3em]">Latest Update</span>
+              <span class="text-white text-[32px] font-bold uppercase leading-none tracking-[0.05em]">{today}</span>
+            </div>
+          </div>
+          <div class="text-right leading-none">
+            <span class="text-7xl font-black italic opacity-20 block">{todayGameCount}</span>
+            <span class="text-[12px] font-bold opacity-40 uppercase tracking-[0.3em]">Games</span>
           </div>
         </div>
 
-        <div class="flex overflow-x-auto gap-8 no-scrollbar snap-x pb-12">
-          {reportGroups.length > 0 && reportGroups[0].reports.map((r) => (
-            <div class="flex-none w-[320px] snap-center group">
-              <a href={r.link} class="block mb-6 relative">
-                <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-black/40 aspect-[3/4.2] relative transition-transform duration-500 group-hover:scale-[1.02]">
-                  <img src={r.path} alt="Game Report" class="w-full h-full object-cover" />
-                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60"></div>
-                </div>
-              </a>
-              
-              <div class="flex flex-col items-center">
-                <a href={r.link} class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative hover:scale-110 transition-transform group/btn">
+        <div class="flex overflow-x-auto gap-8 no-scrollbar snap-x pb-4">
+          {reportGroups.length > 0 ? reportGroups[0].reports.map(r => (
+            <div class="flex-none w-[300px] snap-center">
+              <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-black/40 aspect-[3/4.2]">
+                <img src={r.path} alt="Report" class="w-full h-full object-cover" />
+              </div>
+              <div class="mt-6 flex justify-center">
+                <a href={r.link} class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative active:scale-95 hover:scale-110 transition-transform group overflow-hidden">
                   <div class="absolute inset-0 p-[2px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10"></div>
                   <span class="text-[12px] font-black tracking-[0.2em] uppercase text-white">
-                    {r.away} <span class="text-[9px] font-medium lowercase mx-1 text-white/50 italic px-1">vs</span> {r.home}
+                    {r.away} <span class="text-[9px] font-medium lowercase tracking-normal mx-1 text-white/50 px-1">vs</span> {r.home}
                   </span>
                 </a>
               </div>
+            </div>
+          )) : <div class="text-gray-500 px-4">No reports found.</div>}
+        </div>
+        <div class="mt-16 flex justify-center">
+          <a href="/nba-reports" class="bg-[#CE1141] hover:bg-red-700 hover:scale-105 text-white px-12 py-5 rounded-full text-sm font-black uppercase tracking-[0.25em] shadow-2xl transition-all">
+            Game Report Archive
+          </a>
+        </div>
+      </section>
+
+      <section class="mt-32">
+        <div class="flex items-baseline gap-4 mb-8">
+          <h2 class="text-4xl font-black uppercase tracking-tighter">STANDING</h2>
+          <span class="text-[10px] font-bold text-white/40 tracking-widest uppercase">Updated: {today}</span>
+        </div>
+        <div class="grid grid-cols-2 gap-4 max-w-sm mb-10">
+          <button data-tab="standing" data-target="eastern" class="tab-btn bg-white text-black py-4 rounded-xl text-[12px] font-black uppercase tracking-widest text-center hover:scale-105 transition-all">Eastern</button>
+          <button data-tab="standing" data-target="western" class="tab-btn bg-black/20 text-white/80 py-4 rounded-xl text-[12px] font-black uppercase tracking-widest text-center hover:bg-white/10 hover:scale-105 transition-all border border-white/5">Western</button>
+        </div>
+        <div id="standing-container" class="flex overflow-x-auto gap-6 no-scrollbar snap-x pb-4 min-h-[300px]">
+          {Array.from({ length: 15 }).map((_, i) => (
+            <div class="flex-none w-[220px] snap-center aspect-[3/4] bg-black/40 border border-white/5 rounded-2xl flex flex-col items-center justify-center gap-4 group transition-all hover:bg-black/60">
+              <div class="text-[40px] font-black text-white/10 group-hover:text-white/20 transition-colors">{i + 1}</div>
+              <span class="text-[10px] font-black tracking-[0.3em] uppercase text-white/30">Coming Soon</span>
             </div>
           ))}
         </div>
       </section>
 
-      <section class="mt-32 grid grid-cols-1 md:grid-cols-2 gap-12 px-4">
-        <div class="bg-black/20 rounded-3xl p-10 border border-white/5 backdrop-blur-sm relative overflow-hidden group">
-          <div class="absolute -right-4 -top-4 text-8xl font-black italic text-white/5 group-hover:text-blue-500/10 transition-colors">RANK</div>
-          <h3 class="text-blue-500 text-[10px] font-black tracking-[0.4em] uppercase mb-2">Performance</h3>
-          <p class="text-3xl font-black italic uppercase tracking-tighter mb-8">Statistical Leaders</p>
-          <a href="/nba-rank" class="inline-flex items-center gap-4 text-[11px] font-black uppercase tracking-widest bg-white text-black px-8 py-4 rounded-full hover:bg-blue-500 hover:text-white transition-all">
-            View Ranking
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
-          </a>
+      <section class="mt-32">
+        <h2 class="text-4xl font-black uppercase tracking-tighter mb-8">Today's RANK 10</h2>
+        <div class="flex gap-3 mb-10 overflow-x-auto no-scrollbar pb-2">
+          {['PTS', 'REB', 'AST'].map((stat, i) => (
+            <button data-tab="rank" data-target={stat.toLowerCase()} class={`rank-btn flex-none px-10 py-4 rounded-full text-[12px] font-black tracking-widest uppercase transition-all hover:scale-105 ${i === 0 ? 'bg-blue-600 text-white shadow-lg shadow-blue-900/20' : 'bg-black/20 text-white/60 border border-white/5'}`}>
+              {stat}
+            </button>
+          ))}
         </div>
-
-        <div class="bg-black/20 rounded-3xl p-10 border border-white/5 backdrop-blur-sm relative overflow-hidden group">
-          <div class="absolute -right-4 -top-4 text-8xl font-black italic text-white/5 group-hover:text-purple-500/10 transition-colors">LIVE</div>
-          <h3 class="text-purple-500 text-[10px] font-black tracking-[0.4em] uppercase mb-2">Competition</h3>
-          <p class="text-3xl font-black italic uppercase tracking-tighter mb-8">Conference Standing</p>
-          <a href="/nba-standing" class="inline-flex items-center gap-4 text-[11px] font-black uppercase tracking-widest bg-white text-black px-8 py-4 rounded-full hover:bg-purple-500 hover:text-white transition-all">
-            Check Standing
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
-          </a>
-        </div>
-      </section>
-
-      <section class="mt-40 border-t border-white/5 pt-24 pb-40">
-        <h3 class="text-center text-[10px] font-black tracking-[0.6em] uppercase mb-20 text-white/20 italic">Select Franchise</h3>
-        
-        <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6 md:gap-8">
-          {teams.map((team) => (
-            <a href={`/nba-team?team=${team.id}`} class="group">
-              <div class="flex flex-col items-center gap-4">
-                <div class={`${team.color} w-full aspect-square rounded-3xl flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:-rotate-6 group-active:scale-95 shadow-2xl relative overflow-hidden`}>
-                  <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                  <span class="text-2xl md:text-3xl font-black italic tracking-tighter text-white z-10">{team.id}</span>
-                </div>
-                <span class="text-[10px] font-black tracking-[0.3em] text-white/20 group-hover:text-blue-500 transition-colors uppercase">{team.id}</span>
+        <div id="rank-container" class="flex overflow-x-auto gap-6 no-scrollbar snap-x pb-4">
+          {Array.from({ length: 10 }).map((_, i) => (
+            <div class="flex-none w-[260px] snap-center aspect-[3/4.2] bg-black/40 border border-white/5 rounded-2xl flex flex-col items-center justify-center gap-4 relative overflow-hidden group">
+              <div class="absolute top-4 left-6 text-[32px] font-black text-white/10">#{i + 1}</div>
+              <div class="w-20 h-20 rounded-full bg-white/5 flex items-center justify-center">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="text-white/10" viewBox="0 0 16 16"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/></svg>
               </div>
-            </a>
+              <span class="text-[10px] font-black tracking-[0.3em] uppercase text-white/30">Coming Soon</span>
+            </div>
           ))}
         </div>
       </section>
+
     </div>
 
-    <div class="fixed bottom-10 left-1/2 -translate-x-1/2 z-40">
-      <a href="/nba-reports" class="bg-white text-black px-10 py-4 rounded-full font-black text-[11px] uppercase tracking-[0.3em] shadow-2xl hover:scale-105 active:scale-95 transition-all block text-center whitespace-nowrap">
-        Archive Reports
-      </a>
+    <div class="fixed bottom-8 right-8 z-40 pointer-events-none">
+      <a href="/" class="pointer-events-auto bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 hover:scale-105 transition-all border border-white/10">Back to Home</a>
     </div>
-
   </main>
 </Layout>
+
+<script>
+  const carousel = document.getElementById('team-carousel');
+  const dots = document.querySelectorAll('[data-dot]');
+  if (carousel) {
+    carousel.addEventListener('scroll', () => {
+      const index = Math.round(carousel.scrollLeft / carousel.offsetWidth);
+      dots.forEach((dot, i) => {
+        if (i === index) {
+          dot.classList.add('w-6', 'bg-white');
+          dot.classList.remove('w-2', 'bg-white/10');
+        } else {
+          dot.classList.remove('w-6', 'bg-white');
+          dot.classList.add('w-2', 'bg-white/10');
+        }
+      });
+    });
+  }
+
+  const initTabs = (btnClassName) => {
+    const btns = document.querySelectorAll(`.${btnClassName}`);
+    btns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tabGroup = btn.getAttribute('data-tab');
+        document.querySelectorAll(`[data-tab="${tabGroup}"]`).forEach(b => {
+          b.classList.remove('bg-white', 'text-black', 'bg-blue-600', 'shadow-lg');
+          b.classList.add('bg-black/20', 'text-white/80');
+        });
+        if (tabGroup === 'standing') {
+          btn.classList.add('bg-white', 'text-black');
+          btn.classList.remove('bg-black/20', 'text-white/80');
+        } else {
+          btn.classList.add('bg-blue-600', 'text-white', 'shadow-lg');
+          btn.classList.remove('bg-black/20', 'text-white/60');
+        }
+      });
+    });
+  };
+  initTabs('tab-btn');
+  initTabs('rank-btn');
+</script>
 
 <style>
   .no-scrollbar::-webkit-scrollbar { display: none; }
   .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-  .font-avenir { font-family: "Avenir Next", sans-serif; }
 </style>

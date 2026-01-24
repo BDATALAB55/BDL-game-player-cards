@@ -2,105 +2,68 @@
 export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
-// 1. URLから ?folder= の値を取得する
 const { searchParams } = Astro.url;
 const queryFolder = searchParams.get('folder');
 
-// --- 設定：リポジトリ情報 ---
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 const githubBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/players`;
 
-// --- チームカラーマップ ---
 const teamColorMap = {
-  ATL: 'bg-[#E03A3E]', BOS: 'bg-[#007A33]', 
-  BKN: 'bg-black border border-white/20', CHA: 'bg-[#00788C]',
-  CHI: 'bg-[#CE1141]', CLE: 'bg-[#6F263D]', 
-  DAL: 'bg-[#0053BC]', DEN: 'bg-[#0E2240]',
-  DET: 'bg-[#1D428A]', GSW: 'bg-[#006BB6]', 
-  HOU: 'bg-[#CE1141]', IND: 'bg-[#002D62]',
-  LAC: 'bg-[#12173F]', LAL: 'bg-[#552583]', 
-  MEM: 'bg-[#5D76A9]', MIA: 'bg-[#98002E]',
-  MIL: 'bg-[#00471B]', MIN: 'bg-[#0C2340]', 
-  NOP: 'bg-[#0C2340]', NYK: 'bg-[#F58426]',
-  OKC: 'bg-[#007AC1]', ORL: 'bg-[#0077C0]', 
-  PHI: 'bg-[#006BB6]', PHX: 'bg-[#1D1160]',
-  POR: 'bg-[#E03A3E]', SAC: 'bg-[#5A2D81]', 
-  SAS: 'bg-black border border-white/20', TOR: 'bg-[#CE1141]',
-  UTA: 'bg-[#002B5C]', WAS: 'bg-[#002B5C]',
+  ATL: 'bg-[#E03A3E]', BOS: 'bg-[#007A33]', BKN: 'bg-black border border-white/20',
+  CHA: 'bg-[#00788C]', CHI: 'bg-[#CE1141]', CLE: 'bg-[#6F263D]',
+  DAL: 'bg-[#0053BC]', DEN: 'bg-[#0E2240]', DET: 'bg-[#1D428A]',
+  GSW: 'bg-[#006BB6]', HOU: 'bg-[#CE1141]', IND: 'bg-[#002D62]',
+  LAC: 'bg-[#12173F]', LAL: 'bg-[#552583]', MEM: 'bg-[#5D76A9]',
+  MIA: 'bg-[#98002E]', MIL: 'bg-[#00471B]', MIN: 'bg-[#0C2340]',
+  NOP: 'bg-[#0C2340]', NYK: 'bg-[#F58426]', OKC: 'bg-[#007AC1]',
+  ORL: 'bg-[#0077C0]', PHI: 'bg-[#006BB6]', PHX: 'bg-[#1D1160]',
+  POR: 'bg-[#E03A3E]', SAC: 'bg-[#5A2D81]', SAS: 'bg-black border border-white/20',
+  TOR: 'bg-[#CE1141]', UTA: 'bg-[#002B5C]', WAS: 'bg-[#002B5C]',
 };
 
 const getTeamStyle = (id) => teamColorMap[id] || 'bg-gray-700';
 
 let folderName = queryFolder;
 
-// --- 【修正】自動取得ロジックの強化 ---
+// --- 自動取得ロジック ---
 if (!folderName) {
   try {
     const listApi = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players?t=${Date.now()}`;
-    const res = await fetch(listApi, {
-      headers: token ? { "Authorization": `token ${token}` } : {}
-    });
+    const res = await fetch(listApi, { headers: token ? { "Authorization": `token ${token}` } : {} });
     const items = await res.json();
-    
     if (Array.isArray(items)) {
-      // 日付フォルダ（251201など）を取得して最新順に
-      const dateFolders = items
-        .filter(item => item.type === 'dir')
-        .sort((a, b) => b.name.localeCompare(a.name));
-
+      const dateFolders = items.filter(i => i.type === 'dir').sort((a, b) => b.name.localeCompare(a.name));
       if (dateFolders.length > 0) {
         const latestDateDir = dateFolders[0].name;
-        // 日付フォルダの中にある NBA_Cards_ フォルダを探す
         const matchApi = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players/${latestDateDir}?t=${Date.now()}`;
-        const matchRes = await fetch(matchApi, {
-          headers: token ? { "Authorization": `token ${token}` } : {}
-        });
+        const matchRes = await fetch(matchApi, { headers: token ? { "Authorization": `token ${token}` } : {} });
         const matchItems = await matchRes.json();
-        
-        if (Array.isArray(matchItems)) {
-          const latestMatch = matchItems.find(m => m.type === 'dir' && m.name.startsWith('NBA_Cards_'));
-          if (latestMatch) {
-            folderName = `${latestDateDir}/${latestMatch.name}`;
-          }
-        }
+        const latestMatch = Array.isArray(matchItems) ? matchItems.find(m => m.name.startsWith('NBA_Cards_')) : null;
+        if (latestMatch) folderName = `${latestDateDir}/${latestMatch.name}`;
       }
     }
-  } catch (e) {
-    console.error("Auto-fetch failed:", e);
-  }
+  } catch (e) { console.error(e); }
 }
 
-let awayData = [];
-let homeData = [];
-let teamHome = "HOME";
-let teamAway = "AWAY";
+let teamsData = []; // チームごとのデータを格納する配列
 let reportImagePath = "";
-
-// 日付表示の修正（6桁 251201 -> 2025.12.01 対応）
 const rawDate = folderName ? folderName.split('/')[0] : "";
-const formattedDate = rawDate.length === 6 
-  ? `20${rawDate.substring(0,2)}.${rawDate.substring(2,4)}.${rawDate.substring(4,6)}`
-  : rawDate;
+const formattedDate = rawDate.length === 6 ? `20${rawDate.substring(0,2)}.${rawDate.substring(2,4)}.${rawDate.substring(4,6)}` : rawDate;
 
 try {
   const apiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players/${folderName}?t=${Date.now()}`;
-  const response = await fetch(apiURL, {
-    headers: token ? { "Authorization": `token ${token}` } : {}
-  });
+  const response = await fetch(apiURL, { headers: token ? { "Authorization": `token ${token}` } : {} });
   const files = await response.json();
 
   if (Array.isArray(files)) {
-    // PNGファイルのみ、かつReportを除外
+    // 1. ファイル名からチーム名を抽出 (例: "ATL", "DET")
     const playerFiles = files.filter(f => f.name.endsWith('.png') && !f.name.toLowerCase().includes('report'));
-    
-    // チーム名をファイル名から取得
-    const detectedTeams = [...new Set(playerFiles.map(f => f.name.split('_')[0]))];
-    teamAway = detectedTeams[0] || "AWAY";
-    teamHome = detectedTeams[1] || "HOME";
+    const detectedTeamNames = [...new Set(playerFiles.map(f => f.name.split('_')[0]))];
 
-    const processTeam = (teamName) => {
-      return playerFiles
+    // 2. チームごとに選手データを整理
+    teamsData = detectedTeamNames.map(teamName => {
+      const players = playerFiles
         .filter(f => f.name.startsWith(teamName))
         .map(f => {
           const parts = f.name.replace('.png', '').split('_');
@@ -110,78 +73,61 @@ try {
             name: parts.slice(2).join(' '),
             imagePath: `${githubBase}/${folderName}/${f.name}?t=${Date.now()}`
           };
-        }).sort((a, b) => parseInt(a.no) - parseInt(b.no));
-    };
-
-    awayData = processTeam(teamAway);
-    homeData = processTeam(teamHome);
+        })
+        .sort((a, b) => parseInt(a.no) - parseInt(b.no));
+      
+      return { teamName, players };
+    });
   }
 
-  // レポート画像 (output/reports/NBA/日付/ 内を探索)
-  const gameIdMatch = folderName?.match(/\d{10}/);
-  const gameId = gameIdMatch ? gameIdMatch[0] : "";
-
+  // レポート画像取得
+  const gameId = folderName?.match(/\d{10}/)?.[0];
   if (gameId && rawDate) {
     const reportsApiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/reports/NBA/${rawDate}?t=${Date.now()}`;
-    const reportRes = await fetch(reportsApiURL, {
-      headers: token ? { "Authorization": `token ${token}` } : {}
-    });
+    const reportRes = await fetch(reportsApiURL, { headers: token ? { "Authorization": `token ${token}` } : {} });
     const reportFiles = await reportRes.json();
-
     if (Array.isArray(reportFiles)) {
       const matchFile = reportFiles.find(f => f.name.includes(gameId) && f.name.endsWith('.png'));
-      if (matchFile) {
-        reportImagePath = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/NBA/${rawDate}/${matchFile.name}?t=${Date.now()}`;
-      }
+      if (matchFile) reportImagePath = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/NBA/${rawDate}/${matchFile.name}`;
     }
   }
-} catch (e) {
-  console.error("Fetch Error:", e);
-}
+} catch (e) { console.error(e); }
 ---
 
 <Layout title="BDL CARDS">
-  <div class="app-container bg-[#373A36] min-h-screen text-white overflow-hidden font-avenir relative">
-    
+  <div class="app-container bg-[#373A36] min-h-screen text-white font-avenir relative">
     <header class="pt-12 pb-6 px-8 border-b border-white/5 text-center">
-      <a href="/nba-home" class="inline-block hover:opacity-70 transition-opacity">
-        <h1 class="text-2xl font-black uppercase leading-none tracking-[0.25em]">BDL Cards</h1>
+      <a href="/nba-home" class="inline-block hover:opacity-70">
+        <h1 class="text-2xl font-black uppercase tracking-[0.25em]">BDL Cards</h1>
       </a>
-      <p class="text-gray-600 text-[10px] font-bold tracking-[0.4em] mt-3 uppercase">Gameday Collection</p>
     </header>
 
     <div class="py-10 space-y-16 pb-32">
-      <div class="px-8">
-        <div class="flex flex-col gap-1">
-          <span class="text-blue-500 text-[12px] font-black uppercase tracking-[0.3em]">Gameday</span>
-          <span class="text-white text-[28px] font-bold uppercase leading-none tracking-[0.1em]">{formattedDate}</span>
-        </div>
+      <div class="px-8 flex flex-col gap-1">
+        <span class="text-blue-500 text-[12px] font-black uppercase tracking-[0.3em]">Gameday</span>
+        <span class="text-white text-[28px] font-bold uppercase">{formattedDate}</span>
       </div>
 
       <section class="px-8 flex flex-col items-center">
-        {reportImagePath ? (
-          <div class="w-full md:w-[50%] mx-auto cursor-pointer card-trigger rounded-xl overflow-hidden border border-white/20 shadow-2xl active:scale-95 transition-transform" data-img={reportImagePath}>
-            <img src={reportImagePath} alt="Game Report" class="w-full h-auto block" />
-          </div>
-        ) : (
-          <div class="w-full py-10 text-center text-white/20 text-[10px] tracking-widest uppercase border border-dashed border-white/10 rounded-xl">
-            Report Image Not Found
+        {reportImagePath && (
+          <div class="w-full md:w-[50%] mx-auto cursor-pointer card-trigger rounded-xl overflow-hidden border border-white/20 shadow-2xl transition-transform active:scale-95" data-img={reportImagePath}>
+            <img src={reportImagePath} class="w-full h-auto block" />
           </div>
         )}
         <div class="mt-4 text-center">
           <span class="text-[13px] font-black tracking-[0.2em] uppercase text-white/90">
-            {teamAway} <span class="text-[9px] font-medium text-white/40 mx-1">vs</span> {teamHome}
+            {teamsData[0]?.teamName || "AWAY"} <span class="text-[9px] font-medium text-white/40 mx-1">vs</span> {teamsData[1]?.teamName || "HOME"}
           </span>
         </div>
       </section>
 
-      {[awayData, homeData].map((team) => team.length > 0 && (
+      {teamsData.map((team) => (
         <section>
           <div class="px-8 mb-8">
-            <a href={`/nba-team?team=${team[0].team}`} class="inline-block group">
-              <button class={`${getTeamStyle(team[0].team)} font-avenir w-[115px] h-[48px] rounded-full text-[15px] font-black tracking-tighter shadow-xl hover:scale-110 active:scale-95 transition-transform text-white flex items-center justify-center gap-1.5`}>
-                {team[0].team}
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 opacity-40 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <a href={`/nba-team?team=${team.teamName}`} class="inline-block group">
+              <button class={`${getTeamStyle(team.teamName)} w-[115px] h-[48px] rounded-full text-[15px] font-black shadow-xl transition-transform hover:scale-110 active:scale-95 text-white flex items-center justify-center gap-1.5`}>
+                {team.teamName}
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5 opacity-40 group-hover:opacity-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M9 5l7 7-7 7" />
                 </svg>
               </button>
@@ -189,22 +135,19 @@ try {
           </div>
 
           <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-8 no-scrollbar pb-4">
-            {team.map((p) => (
+            {team.players.map((p) => (
               <div class="flex-none w-[78vw] max-w-[340px] snap-center">
-                <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-xl active:scale-95 transition-transform" data-img={p.imagePath}>
+                <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-xl transition-transform active:scale-95" data-img={p.imagePath}>
                   <img src={p.imagePath} alt={p.name} class="w-full h-auto block" loading="lazy" />
                 </div>
-                
                 <div class="mt-6 flex flex-col items-center px-1">
-                    <a href={`/nba-players?name=${encodeURIComponent(p.name)}`} class="w-full block group">
-                      <div class="w-full inline-flex items-center justify-between px-6 py-4 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative overflow-hidden shadow-lg transition-all group-hover:scale-105 active:scale-95">
-                        <div class="absolute inset-0 p-[1.5px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10 opacity-60"></div>
-                        <span class="text-[13px] font-black tracking-[0.15em] uppercase text-white/90">{p.name}</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white/30 group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" />
-                        </svg>
-                      </div>
-                    </a>
+                  <a href={`/nba-players?name=${encodeURIComponent(p.name)}`} class="w-full block group">
+                    <div class="w-full inline-flex items-center justify-between px-6 py-4 rounded-full bg-black/40 border-2 border-transparent relative overflow-hidden shadow-lg group-hover:scale-105 active:scale-95 transition-all">
+                      <div class="absolute inset-0 p-[1.5px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10 opacity-60"></div>
+                      <span class="text-[13px] font-black tracking-[0.15em] uppercase text-white/90">{p.name}</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white/30 group-hover:text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7" /></svg>
+                    </div>
+                  </a>
                 </div>
               </div>
             ))}
@@ -214,13 +157,13 @@ try {
     </div>
 
     <div id="modal" class="fixed inset-0 bg-black/98 z-50 hidden flex-col items-center justify-center p-6 backdrop-blur-md">
-      <div class="absolute top-8 right-8 text-white/40 text-4xl font-light cursor-pointer p-4 hover:text-white transition-colors" id="close">&times;</div>
+      <div class="absolute top-8 right-8 text-white/40 text-4xl font-light cursor-pointer p-4 hover:text-white" id="close">&times;</div>
       <img id="modal-img" src="" class="max-w-full max-h-[80vh] shadow-2xl rounded-xl mb-12 border border-white/10" />
-      <a id="download-btn" href="" download class="bg-white text-black px-14 py-4 rounded-full font-black uppercase tracking-widest text-[11px] hover:bg-gray-200 transition-colors">Download Card</a>
+      <a id="download-btn" href="" download class="bg-white text-black px-14 py-4 rounded-full font-black uppercase text-[11px] hover:bg-gray-200">Download Card</a>
     </div>
 
     <div class="fixed bottom-8 right-8 z-40">
-      <a href="/nba-home" class="bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 hover:bg-gray-700 transition-all border border-white/10">
+      <a href="/nba-home" class="bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl hover:bg-gray-700 border border-white/10 transition-all">
         Back to NBA Home
       </a>
     </div>

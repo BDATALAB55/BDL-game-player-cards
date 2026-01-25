@@ -1,12 +1,12 @@
 {
-  "attendance": "0",
-  "date": "",
-  "venueRaw": "",
-  "leagueType": "",
-  "round": "ROUND1",
-  "venue": "Tokyu Dresse Todoroki Arena",
-  "homeName": "KAGOSHIMA REBNISE",
-  "awayName": "EHIME ORANGE VIKINGS",
+  "attendance": "3294",
+  "date": "2026.01.25",
+  "venueRaw": "Venue: Nishihara Shokai Arena Arena",
+  "leagueType": "B2",
+  "round": "ROUND17",
+  "venue": "Nishihara Shokai Arena",
+  "homeName": "鹿児島レブナイズ",
+  "awayName": "愛媛オレンジバイキングス",
   "home": {
     "total": {
       "pts": 63,
@@ -28,7 +28,7 @@
     "starters": [
       {
         "no": "1",
-        "nameJp": "Naim Rabai​ ​",
+        "nameJp": "ナイム・ラバイ",
         "min": "09:19",
         "pts": 3,
         "f2m": 0,
@@ -46,12 +46,12 @@
         "blk": 0,
         "pf": 4,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=51000504",
-        "name": "Naim Rabai​ ​"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=51000504",
+        "name": "Naim Rabay"
       },
       {
         "no": "12",
-        "nameJp": "Hiroshi Fujita",
+        "nameJp": "藤田 浩司",
         "min": "11:28",
         "pts": 2,
         "f2m": 1,
@@ -69,7 +69,7 @@
         "blk": 0,
         "pf": 1,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=9402",
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=9402",
         "name": "Hiroshi Fujita"
       },
       {
@@ -92,12 +92,12 @@
         "blk": 0,
         "pf": 2,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=9218",
-        "name": "兒玉 貴通"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=9218",
+        "name": "Takayuki Kodama"
       },
       {
         "no": "22",
-        "nameJp": "Josh​ ​",
+        "nameJp": "ジョシュ・シャーマ",
         "min": "30:47",
         "pts": 11,
         "f2m": 2,
@@ -115,8 +115,8 @@
         "blk": 1,
         "pf": 4,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=51000493",
-        "name": "Josh​ ​"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=51000493",
+        "name": "Josh Sharma"
       },
       {
         "no": "23",
@@ -138,8 +138,8 @@
         "blk": 0,
         "pf": 5,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=36799",
-        "name": "アンソニー・ゲインズ・ジュニア"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=36799",
+        "name": "Anthony Gaines Jr."
       }
     ]
   },
@@ -182,8 +182,8 @@
         "blk": 0,
         "pf": 4,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=30350",
-        "name": "奥田 雄伍"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=30350",
+        "name": "Yugo Okuda"
       },
       {
         "no": "1",
@@ -205,12 +205,12 @@
         "blk": 0,
         "pf": 2,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=20004",
-        "name": "林 瑛司"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=20004",
+        "name": "Eiji Hayashi"
       },
       {
         "no": "3",
-        "nameJp": "Michael Parker",
+        "nameJp": "マイケル・パーカー",
         "min": "29:43",
         "pts": 13,
         "f2m": 6,
@@ -228,7 +228,7 @@
         "blk": 1,
         "pf": 3,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=8579",
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=8579",
         "name": "Michael Parker"
       },
       {
@@ -251,8 +251,8 @@
         "blk": 2,
         "pf": 2,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=51000411",
-        "name": "マット・ハームス"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=51000411",
+        "name": "Matt Haarms"
       },
       {
         "no": "50",
@@ -274,8 +274,8 @@
         "blk": 0,
         "pf": 2,
         "isStarter": true,
-        "detailUrl": "https://www.bleague.jp/en/roster_detail/?PlayerID=51000432",
-        "name": "ミッチェル・ワット"
+        "detailUrl": "https://www.bleague.jp/roster_detail/?PlayerID=51000432",
+        "name": "Mitchell Watt"
       }
     ]
   }

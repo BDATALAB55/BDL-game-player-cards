@@ -19,7 +19,7 @@ const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/out
 const reportRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateId}`;
 const apiParentURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}`;
 
-// チーム名変換用（GitHubの実際のファイル名に厳密に合わせる）
+// チーム名変換用
 const TEAM_CONFIG = {
   "SHIMANE": { file: "SUSANOO_MAGIC", report: "SUSANOOMAGIC", display: "SHIMANE", link: "SHIMANE" },
   "SENDAI": { file: "89ERS", report: "89ERS", display: "SENDAI", link: "SENDAI" },
@@ -44,7 +44,7 @@ const TEAM_CONFIG = {
   "NAGOYAD": { file: "DIAMOND_DOLPHINS", report: "DIAMONDDOLPHINS", display: "NAGOYA-D", link: "NAGOYA D" },
   "MIKAWA": { file: "SEAHORSES", report: "SEAHORSES", display: "MIKAWA", link: "MIKAWA" },
   "KYOTO": { file: "HANNARYZ", report: "HANNARYZ", display: "KYOTO", link: "KYOTO" },
-  // 修正箇所: file 名を実際のファイル名 YOKOHAMA_B-CORSAIRS に修正
+  // 横浜の設定を強化
   "YOKOHAMA-BC": { file: "YOKOHAMA_B-CORSAIRS", report: "B-CORSAIRS", display: "YOKOHAMA-BC", link: "YOKOHAMA BC" },
   "YOKOHAMA": { file: "YOKOHAMA_B-CORSAIRS", report: "B-CORSAIRS", display: "YOKOHAMA-BC", link: "YOKOHAMA BC" },
   "OSAKA": { file: "EVESSA", report: "EVESSA", display: "OSAKA", link: "OSAKA" },
@@ -86,16 +86,20 @@ try {
 
         const processTeam = (teamName) => {
           const config = TEAM_CONFIG[teamName.toUpperCase()] || { file: teamName, report: teamName, display: teamName, link: teamName };
-          // 検索用の文字列を生成（記号を除去してマッチしやすくする）
+          
+          // 修正ポイント：記号を抜いた検索キーを作成（YOKOHAMA_B-CORSAIRS -> YOKOHAMABCORSAIRS）
           const searchKey = config.file.replace(/[^A-Z0-9]/g, '').toUpperCase();
           
           const data = files
             .filter(f => {
               const fileNameUpper = f.name.toUpperCase();
+              // 修正ポイント：ファイル名から記号を抜いたもの同士で比較するように強化
+              const fileNameClean = fileNameUpper.replace(/[^A-Z0-9]/g, '');
               return f.name.endsWith('.png') && 
-                     (fileNameUpper.includes(config.file.toUpperCase()) || fileNameUpper.replace(/[^A-Z0-9]/g, '').includes(searchKey));
+                     (fileNameUpper.includes(config.file.toUpperCase()) || fileNameClean.includes(searchKey));
             })
             .map(f => ({
+              // 選手名の抽出
               name: f.name.replace('.png', '').split('_').slice(-2).join(' '),
               imagePath: `${githubRawBase}/${dateId}/${gameDir}/${f.name}`
             }));

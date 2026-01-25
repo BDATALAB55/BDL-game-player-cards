@@ -10,6 +10,36 @@ const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/mai
 const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1`;
 const token = process.env.GITHUB_TOKEN;
 
+// アーカイブ側の表示に合わせるための変換辞書
+const cityNameMap = {
+  "HOKKAIDO": "HOKKAIDO", "LEVANGA": "HOKKAIDO", "LEVANGAHOKKAIDO": "HOKKAIDO",
+  "89ERS": "SENDAI", "SENDAI": "SENDAI", "SENDAI89ERS": "SENDAI",
+  "AKITA": "AKITA", "NORTHERNHAPPINETS": "AKITA",
+  "ROBOTS": "IBARAKI", "IBARAKI": "IBARAKI",
+  "BREX": "UTSUNOMIYA", "UTSUNOMIYA": "UTSUNOMIYA",
+  "CRANETHUNDERS": "GUNMA", "GUNMA": "GUNMA",
+  "ALPHAS": "KOSHIGAYA", "KOSHIGAYA": "KOSHIGAYA",
+  "ALTIRI": "A CHIBA", "ACHIBA": "A CHIBA",
+  "JETS": "CHIBA J", "CHIBAJ": "CHIBA J",
+  "ALVARK": "A TOKYO", "ATOKYO": "A TOKYO",
+  "SUNROCKERS": "SR SHIBUYA", "SHIBUYA": "SR SHIBUYA",
+  "BRAVETHUNDERS": "KAWASAKI", "KAWASAKI": "KAWASAKI",
+  "BCORSAIRS": "YOKOHAMA BC", "YOKOHAMABC": "YOKOHAMA BC",
+  "GROUSES": "TOYAMA", "TOYAMA": "TOYAMA",
+  "NEOPHOENIX": "SAN-EN", "SANEN": "SAN-EN", "SAN-EN": "SAN-EN",
+  "SEAHORSES": "MIKAWA", "MIKAWA": "MIKAWA",
+  "FIGHTINGEAGLES": "FE NAGOYA", "FENAGOYA": "FE NAGOYA",
+  "DOLPHINS": "NAGOYA D", "DIAMONDDOLPHINS": "NAGOYA D", "NAGOYA": "NAGOYA D",
+  "LAKES": "SHIGA", "SHIGA": "SHIGA",
+  "HANNARYZ": "KYOTO", "KYOTO": "KYOTO",
+  "EVESSA": "OSAKA", "OSAKA": "OSAKA",
+  "SUSANOOMAGIC": "SHIMANE", "SHIMANE": "SHIMANE",
+  "DRAGONFLIES": "HIROSHIMA", "HIROSHIMA": "HIROSHIMA",
+  "BALLOONERS": "SAGA", "SAGA": "SAGA",
+  "VELCA": "NAGASAKI", "NAGASAKI": "NAGASAKI",
+  "GOLDENKINGS": "RYUKYU", "RYUKYU": "RYUKYU"
+};
+
 const teamInfo = {
   HOKKAIDO: { city: "Levanga", name: "Hokkaido", color: "#91ad10", searchKey: "LEVANGA" },
   SENDAI: { city: "Sendai", name: "89ers", color: "#f7e000", searchKey: "89ERS" },
@@ -72,11 +102,14 @@ try {
       if (currentTeam.searchKey && fileName.toUpperCase().includes(currentTeam.searchKey)) {
         const nameParts = fileName.replace('.png', '').split('_');
         
-        // ファイル名規則 [0]日付 [1]ID [2]AWAY [3]HOME に基づき抽出
         const fullDate = nameParts[0]; 
         const gameId = nameParts[1];
-        const teamA = nameParts[2];
-        const teamB = nameParts[3];
+        const rawAway = nameParts[2] || "AWAY";
+        const rawHome = nameParts[3] || "HOME";
+
+        // 辞書を使って表示用のチーム名を変換
+        const displayAway = cityNameMap[rawAway.toUpperCase().replace(/[\s\-_]/g, '')] || rawAway;
+        const displayHome = cityNameMap[rawHome.toUpperCase().replace(/[\s\-_]/g, '')] || rawHome;
 
         const targetCardFolder = `B1_Cards_${gameId}_${fullDate}`;
         const reportObj = {
@@ -84,9 +117,9 @@ try {
           date: `${fullDate.substring(0,4)}.${fullDate.substring(4,6)}.${fullDate.substring(6,8)}`,
           path: `${IMAGE_BASE_URL}/${folderName}/${fileName}?t=${Date.now()}`,
           fileName: fileName,
-          away: teamA,
-          home: teamB,
-          link: `/b1_cards?folder=${folderName}/${targetCardFolder}`
+          away: displayAway,
+          home: displayHome,
+          link: `/b1-cards?folder=${folderName}/${targetCardFolder}`
         };
         allTeamReports.push(reportObj);
         if (!availableDatesMap[folderName]) availableDatesMap[folderName] = reportObj.link;
@@ -223,7 +256,7 @@ try {
         <button onclick="history.back()" class="bg-white/10 backdrop-blur-md text-white px-6 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 border border-white/10">← Back</button>
     </div>
     <div class="fixed bottom-8 right-8 z-40">
-      <a href="/b1_home" class="bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 border border-white/10">B1 Home</a>
+      <a href="/b1-home" class="bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 border border-white/10">B1 Home</a>
     </div>
 
   </main>

@@ -44,6 +44,7 @@ const TEAM_CONFIG = {
   "NAGOYAD": { file: "DIAMOND_DOLPHINS", report: "DIAMONDDOLPHINS", display: "NAGOYA-D", link: "NAGOYA D" },
   "MIKAWA": { file: "SEAHORSES", report: "SEAHORSES", display: "MIKAWA", link: "MIKAWA" },
   "KYOTO": { file: "HANNARYZ", report: "HANNARYZ", display: "KYOTO", link: "KYOTO" },
+  // 修正箇所: file 名を実際のファイル名 YOKOHAMA_B-CORSAIRS に修正
   "YOKOHAMA-BC": { file: "YOKOHAMA_B-CORSAIRS", report: "B-CORSAIRS", display: "YOKOHAMA-BC", link: "YOKOHAMA BC" },
   "YOKOHAMA": { file: "YOKOHAMA_B-CORSAIRS", report: "B-CORSAIRS", display: "YOKOHAMA-BC", link: "YOKOHAMA BC" },
   "OSAKA": { file: "EVESSA", report: "EVESSA", display: "OSAKA", link: "OSAKA" },
@@ -85,6 +86,7 @@ try {
 
         const processTeam = (teamName) => {
           const config = TEAM_CONFIG[teamName.toUpperCase()] || { file: teamName, report: teamName, display: teamName, link: teamName };
+          // 検索用の文字列を生成（記号を除去してマッチしやすくする）
           const searchKey = config.file.replace(/[^A-Z0-9]/g, '').toUpperCase();
           
           const data = files

@@ -30,7 +30,7 @@
 "横浜国際プール": "Yokohama International Pool",
 "横浜BUNTAI": "Yokohama BUNTAI",
 "横浜アリーナ": "Yokohama Arena",
-"富山市総合体育館": "Toyama Prefectural General Sports Center",
+"富山市総合体育館": "Toyama Prefectural General Sports Center","Venue: Toyama Prefectural Sports Center": "Toyama Prefectural General Sports Center",
 "黒部市総合体育センター": "Kurobe City General Sports Center",
 "豊橋市総合体育館": "Toyohashi City General Gymnasium","Venue: Toyohashi City Gymnasium": "Toyohashi City General Gymnasium",
 "浜松アリーナ": "Hamamatsu Arena",
@@ -68,7 +68,7 @@
 
 "カクヒログループスーパーアリーナ（青森市総合体育館）": "Kakuhiro Group Super Arena",
 "盛岡タカヤアリーナ": "Morioka Takaya Arena",
-"山形県総合運動公園": "Yamagata Prefectural Sports Park",
+"山形県総合運動公園": "Yamagata City General Sports Center","Venue: Yamagata City General Sports Center": "Yamagata City General Sports Center",
 "宝来屋 ボンズアリーナ": "Horaiya BONDS ARENA","Venue: Horai-ya Bonds Arena": "Horaiya BONDS ARENA",
 "横浜武道館": "Yokohama Budokan",
 "セーレン・ドリームアリーナ（福井県営体育館）": "Seiren Dream Arena","Venue: Fukui Prefectural Arena": "Seiren Dream Arena",
@@ -80,6 +80,6 @@
 "照葉積水ハウスアリーナ": "Terihasekisui House Arena",
 "Venue: Kitakyushu Municipal Gymnasium trade fair": "Kitakyushu Municipal Gymnasium trade fair",
 "熊本県立総合体育館": "Kumamoto Prefectural General Gymnasium","Venue: Kumamoto Prefectural Gymnasium": "Kumamoto Prefectural General Gymnasium",
-"西原商会アリーナ": "Nishihara Shokai Arena",
+"西原商会アリーナ": "Nishihara Shokai Arena","Venue: Nishihara Shokai Arena Arena": "Nishihara Shokai Arena",
 "": ""
 }

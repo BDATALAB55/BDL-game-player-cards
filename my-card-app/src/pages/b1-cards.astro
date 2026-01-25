@@ -16,37 +16,36 @@ const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/out
 const reportRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateId}`;
 const apiParentURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}`;
 
-// チームページ側のcityNameMapを参考に、カードページ側の表記とレポート用名称を統一
+// チーム設定：画像ファイル名に含まれる文字列と、レポート画像用に使われる名前を厳密に定義
 const TEAM_CONFIG = {
-  "SHIMANE": { file: "SUSANOO_MAGIC", report: "SUSANOOMAGIC", display: "SHIMANE", link: "SHIMANE" },
-  "SENDAI": { file: "89ERS", report: "89ERS", display: "SENDAI", link: "SENDAI" },
-  "AKITA": { file: "NORTHERN_HAPPINETS", report: "NORTHERNHAPPINETS", display: "AKITA", link: "AKITA" },
-  "KAWASAKI": { file: "BRAVE_THUNDERS", report: "BRAVETHUNDERS", display: "KAWASAKI", link: "KAWASAKI" },
-  "IBARAKI": { file: "ROBOTS", report: "ROBOTS", display: "IBARAKI", link: "IBARAKI" },
-  "KOSHIGAYA": { file: "ALPHAS", report: "ALPHAS", display: "KOSHIGAYA", link: "KOSHIGAYA" },
-  "UTSUNOMIYA": { file: "BREX", report: "BREX", display: "UTSUNOMIYA", link: "UTSUNOMIYA" },
-  "HOKKAIDO": { file: "LEVANGA", report: "LEVANGA", display: "HOKKAIDO", link: "HOKKAIDO" },
-  "GUNMA": { file: "CRANE_THUNDERS", report: "CRANETHUNDERS", display: "GUNMA", link: "GUNMA" },
-  "SHIGA": { file: "LAKES", report: "LAKES", display: "SHIGA", link: "SHIGA" },
+  "SHIMANE": { file: "SHIMANE", report: "SUSANOOMAGIC", display: "SHIMANE", link: "SHIMANE" },
+  "SENDAI": { file: "SENDAI", report: "89ERS", display: "SENDAI", link: "SENDAI" },
+  "AKITA": { file: "AKITA", report: "NORTHERNHAPPINETS", display: "AKITA", link: "AKITA" },
+  "KAWASAKI": { file: "KAWASAKI", report: "BRAVETHUNDERS", display: "KAWASAKI", link: "KAWASAKI" },
+  "IBARAKI": { file: "IBARAKI", report: "ROBOTS", display: "IBARAKI", link: "IBARAKI" },
+  "KOSHIGAYA": { file: "KOSHIGAYA", report: "ALPHAS", display: "KOSHIGAYA", link: "KOSHIGAYA" },
+  "UTSUNOMIYA": { file: "UTSUNOMIYA", report: "BREX", display: "UTSUNOMIYA", link: "UTSUNOMIYA" },
+  "HOKKAIDO": { file: "HOKKAIDO", report: "LEVANGA", display: "HOKKAIDO", link: "HOKKAIDO" },
+  "GUNMA": { file: "GUNMA", report: "CRANETHUNDERS", display: "GUNMA", link: "GUNMA" },
+  "SHIGA": { file: "SHIGA", report: "LAKES", display: "SHIGA", link: "SHIGA" },
   "ACHIBA": { file: "ALTIRI", report: "ALTIRI", display: "A-CHIBA", link: "A CHIBA" },
-  "SAGA": { file: "BALLOONERS", report: "BALLOONERS", display: "SAGA", link: "SAGA" },
+  "SAGA": { file: "SAGA", report: "BALLOONERS", display: "SAGA", link: "SAGA" },
   "CHIBAJ": { file: "JETS", report: "JETS", display: "CHIBA-J", link: "CHIBA J" },
-  "RYUKYU": { file: "GOLDEN_KINGS", report: "GOLDENKINGS", display: "RYUKYU", link: "RYUKYU" },
-  "TOYAMA": { file: "GROUSES", report: "GROUSES", display: "TOYAMA", link: "TOYAMA" },
-  "SHIBUYA": { file: "SUNROCKERS", report: "SUNROCKERS", display: "SR-SHIBUYA", link: "SR SHIBUYA" },
-  "SANEN": { file: "NEOPHOENIX", report: "NEOPHOENIX", display: "SAN-EN", link: "SAN-EN" },
-  "NAGASAKI": { file: "VELCA", report: "VELCA", display: "NAGASAKI", link: "NAGASAKI" },
-  "FENAGOYA": { file: "FIGHTING_EAGLES", report: "FIGHTINGEAGLES", display: "FE-NAGOYA", link: "FE NAGOYA" },
-  "HIROSHIMA": { file: "DRAGONFLIES", report: "DRAGONFLIES", display: "HIROSHIMA", link: "HIROSHIMA" },
-  "NAGOYAD": { file: "DIAMOND_DOLPHINS", report: "DIAMONDDOLPHINS", display: "NAGOYA-D", link: "NAGOYA D" },
-  "MIKAWA": { file: "SEAHORSES", report: "SEAHORSES", display: "MIKAWA", link: "MIKAWA" },
-  "KYOTO": { file: "HANNARYZ", report: "HANNARYZ", display: "KYOTO", link: "KYOTO" },
-  // 横浜BCの定義をチームページのcityNameMap（BCORSAIRS）に合わせる
-  "YOKOHAMA-BC": { file: "B-CORSAIRS", report: "B-CORSAIRS", display: "YOKOHAMA-BC", link: "YOKOHAMA BC" },
+  "RYUKYU": { file: "RYUKYU", report: "GOLDENKINGS", display: "RYUKYU", link: "RYUKYU" },
+  "TOYAMA": { file: "TOYAMA", report: "GROUSES", display: "TOYAMA", link: "TOYAMA" },
+  "SHIBUYA": { file: "SHIBUYA", report: "SUNROCKERS", display: "SR-SHIBUYA", link: "SR SHIBUYA" },
+  "SANEN": { file: "SANEN", report: "NEOPHOENIX", display: "SAN-EN", link: "SAN-EN" },
+  "NAGASAKI": { file: "NAGASAKI", report: "VELCA", display: "NAGASAKI", link: "NAGASAKI" },
+  "FENAGOYA": { file: "FENAGOYA", report: "FIGHTINGEAGLES", display: "FE-NAGOYA", link: "FE NAGOYA" },
+  "HIROSHIMA": { file: "HIROSHIMA", report: "DRAGONFLIES", display: "HIROSHIMA", link: "HIROSHIMA" },
+  "NAGOYAD": { file: "NAGOYAD", report: "DIAMONDDOLPHINS", display: "NAGOYA-D", link: "NAGOYA D" },
+  "MIKAWA": { file: "MIKAWA", report: "SEAHORSES", display: "MIKAWA", link: "MIKAWA" },
+  "KYOTO": { file: "KYOTO", report: "HANNARYZ", display: "KYOTO", link: "KYOTO" },
+  // 横浜BC：画像には YOKOHAMA と B-CORSAIRS 両方含まれるため、どちらでもヒットするように調整
   "YOKOHAMA": { file: "B-CORSAIRS", report: "B-CORSAIRS", display: "YOKOHAMA-BC", link: "YOKOHAMA BC" },
   "BCORSAIRS": { file: "B-CORSAIRS", report: "B-CORSAIRS", display: "YOKOHAMA-BC", link: "YOKOHAMA BC" },
-  "OSAKA": { file: "EVESSA", report: "EVESSA", display: "OSAKA", link: "OSAKA" },
-  "ATOKYO": { file: "ALVARK", report: "ALVARK", display: "A-TOKYO", link: "A TOKYO" }
+  "OSAKA": { file: "OSAKA", report: "EVESSA", display: "OSAKA", link: "OSAKA" },
+  "ATOKYO": { file: "ATOKYO", report: "ALVARK", display: "A-TOKYO", link: "A TOKYO" }
 };
 
 let awayData = [];
@@ -78,23 +77,23 @@ try {
       const files = await filesRes.json();
 
       if (Array.isArray(files)) {
+        // game_505138_KYOTO_YOKOHAMA-BC などの名前をパース
         const nameParts = gameDir.split('_');
         const teamAwayRaw = nameParts[2] || "AWAY"; 
         const teamHomeRaw = nameParts[3] || "HOME";
 
         const processTeam = (teamName) => {
-          // チーム名から記号を除去して検索キーを作成 (例: B-CORSAIRS -> BCORSAIRS)
+          // 記号を抜いた比較用キー (YOKOHAMA-BC -> YOKOHAMABC)
           const cleanTeamName = teamName.toUpperCase().replace(/[^A-Z0-9]/g, '');
           const config = TEAM_CONFIG[cleanTeamName] || TEAM_CONFIG[teamName.toUpperCase()] || { file: teamName, report: teamName, display: teamName, link: teamName };
           
-          const fileSearchKey = config.file.toUpperCase().replace(/[^A-Z0-9]/g, '');
+          const searchPattern = config.file.toUpperCase();
           
           const data = files
             .filter(f => {
               const fUpper = f.name.toUpperCase();
-              const fClean = fUpper.replace(/[^A-Z0-9]/g, '');
-              // ファイル名に「チームの検索キー」が含まれているか
-              return f.name.endsWith('.png') && (fUpper.includes(config.file.toUpperCase()) || fClean.includes(fileSearchKey));
+              // ファイル名に設定されたキーワードが含まれているか (例: B-CORSAIRS が YOKOHAMA_B-CORSAIRS_... に含まれるか)
+              return f.name.endsWith('.png') && fUpper.includes(searchPattern);
             })
             .map(f => ({
               name: f.name.replace('.png', '').split('_').slice(-2).join(' '),
@@ -113,7 +112,7 @@ try {
         displayTeamHome = homeResult.displayLabel;
         homeTeamId = homeResult.linkId;
         
-        // レポート画像パスの生成 (20260124_505138_HANNARYZ_B-CORSAIRS.png 等に準拠)
+        // レポート画像：20260124_505138_HANNARYZ_B-CORSAIRS.png の形式を生成
         const fullDate = `20${dateId}`;
         reportImagePath = `${reportRawBase}/${fullDate}_${gameId}_${awayResult.reportName}_${homeResult.reportName}.png`;
       }
@@ -123,7 +122,6 @@ try {
   console.error("Fetch Error:", e);
 }
 ---
-
 <Layout title="B1 CARDS | B-Data Lab">
   <div class="app-container bg-[#373A36] min-h-screen text-white font-avenir">
     <header class="pt-12 pb-6 px-8 border-b border-white/5 text-center relative">

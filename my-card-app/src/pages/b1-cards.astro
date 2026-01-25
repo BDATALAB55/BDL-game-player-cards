@@ -10,41 +10,42 @@ const token = process.env.GITHUB_TOKEN;
 
 const segments = queryFolder.split('/');
 const dateId = segments[0] || "";  
-const urlGameDir = segments[segments.length - 1] || ""; 
+const urlGameDir = segments[segments.length - 1] || ""; // 例: game_505138_HANNARYZ_B-CORSAIRS_260124
 
 const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/B1`;
 const reportRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateId}`;
-const apiParentURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}`;
+// APIのターゲットは試合別フォルダの直下
+const apiGameURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}/${urlGameDir}`;
 
-// --- 最新の対応表に基づき完全修正 ---
+// --- 対応表（21:38.30）に基づくチームマスター ---
 const TEAM_MASTER = {
-  "LEVANGA": { folder: "HOKKAIDO", cardPrefix: "LEVANGA_HOKKAIDO", display: "HOKKAIDO" },
-  "89ERS": { folder: "SENDAI", cardPrefix: "SENDAI_89ERS", display: "SENDAI" },
-  "NORTHERN_HAPPINETS": { folder: "AKITA", cardPrefix: "AKITA_NORTHERN_HAPPINETS", display: "AKITA" },
-  "NORTHERNHAPPINETS": { folder: "AKITA", cardPrefix: "AKITA_NORTHERN_HAPPINETS", display: "AKITA" },
-  "ROBOTS": { folder: "IBARAKI", cardPrefix: "IBARAKI_ROBOTS", display: "IBARAKI" },
-  "BREX": { folder: "UTSUNOMIYA", cardPrefix: "UTSUNOMIYA_BREX", display: "UTSUNOMIYA" },
-  "CRANETHUNDERS": { folder: "GUNMA", cardPrefix: "GUNMA_CRANE_THUNDERS", display: "GUNMA" },
-  "ALPHAS": { folder: "KOSHIGAYA", cardPrefix: "KOSHIGAYA_ALPHAS", display: "KOSHIGAYA" },
-  "ALTIRI": { folder: "ACHIBA", cardPrefix: "ALTIRI_CHIBA", display: "A-CHIBA" },
-  "JETS": { folder: "CHIBAJ", cardPrefix: "CHIBA_JETS", display: "CHIBA-J" },
-  "ALVARK": { folder: "ATOKYO", cardPrefix: "ALVARK_TOKYO", display: "A-TOKYO" },
-  "SUNROCKERS": { folder: "SHIBUYA", cardPrefix: "SUNROCKERS_SHIBUYA", display: "SR-SHIBUYA" },
-  "BRAVETHUNDERS": { folder: "KAWASAKI", cardPrefix: "KAWASAKI_BRAVE_THUNDERS", display: "KAWASAKI" },
-  "B-CORSAIRS": { folder: "YOKOHAMABC", cardPrefix: "YOKOHAMA_B-CORSAIRS", display: "YOKOHAMA-BC" },
-  "GROUSES": { folder: "TOYAMA", cardPrefix: "TOYAMA_GROUSES", display: "TOYAMA" },
-  "NEOPHOENIX": { folder: "SANEN", cardPrefix: "SAN-EN_NEOPHOENIX", display: "SAN-EN" },
-  "SEAHORSES": { folder: "MIKAWA", cardPrefix: "SEAHORSES_MIKAWA", display: "MIKAWA" },
-  "FIGHTINGEAGLES": { folder: "FENAGOYA", cardPrefix: "FIGHTING_EAGLES_NAGOYA", display: "FE-NAGOYA" },
-  "DIAMONDDOLPHINS": { folder: "NAGOYAD", cardPrefix: "NAGOYA_DIAMOND_DOLPHINS", display: "NAGOYA-D" },
-  "LAKES": { folder: "SHIGA", cardPrefix: "SHIGA_LAKES", display: "SHIGA" },
-  "HANNARYZ": { folder: "KYOTO", cardPrefix: "KYOTO_HANNARYZ", display: "KYOTO" },
-  "EVESSA": { folder: "OSAKA", cardPrefix: "OSAKA_EVESSA", display: "OSAKA" },
-  "SUSANOOMAGIC": { folder: "SHIMANE", cardPrefix: "SHIMANE_SUSANOO_MAGIC", display: "SHIMANE" },
-  "DRAGONFLIES": { folder: "HIROSHIMA", cardPrefix: "HIROSHIMA_DRAGONFLIES", display: "HIROSHIMA" },
-  "BALLOONERS": { folder: "SAGA", cardPrefix: "SAGA_BALLOONERS", display: "SAGA" },
-  "VELCA": { folder: "NAGASAKI", cardPrefix: "NAGASAKI_VELCA", display: "NAGASAKI" },
-  "GOLDENKINGS": { folder: "RYUKYU", cardPrefix: "RYUKYU_GOLDEN_KINGS", display: "RYUKYU" }
+  "LEVANGA": { prefix: "LEVANGA_HOKKAIDO", display: "HOKKAIDO" },
+  "89ERS": { prefix: "SENDAI_89ERS", display: "SENDAI" },
+  "NORTHERNHAPPINETS": { prefix: "AKITA_NORTHERN_HAPPINETS", display: "AKITA" },
+  "NORTHERN_HAPPINETS": { prefix: "AKITA_NORTHERN_HAPPINETS", display: "AKITA" },
+  "ROBOTS": { prefix: "IBARAKI_ROBOTS", display: "IBARAKI" },
+  "BREX": { prefix: "UTSUNOMIYA_BREX", display: "UTSUNOMIYA" },
+  "CRANETHUNDERS": { prefix: "GUNMA_CRANE_THUNDERS", display: "GUNMA" },
+  "ALPHAS": { prefix: "KOSHIGAYA_ALPHAS", display: "KOSHIGAYA" },
+  "ALTIRI": { prefix: "ALTIRI_CHIBA", display: "A-CHIBA" },
+  "JETS": { prefix: "CHIBA_JETS", display: "CHIBA-J" },
+  "ALVARK": { prefix: "ALVARK_TOKYO", display: "A-TOKYO" },
+  "SUNROCKERS": { prefix: "SUNROCKERS_SHIBUYA", display: "SR-SHIBUYA" },
+  "BRAVETHUNDERS": { prefix: "KAWASAKI_BRAVE_THUNDERS", display: "KAWASAKI" },
+  "B-CORSAIRS": { prefix: "YOKOHAMA_B-CORSAIRS", display: "YOKOHAMA-BC" },
+  "GROUSES": { prefix: "TOYAMA_GROUSES", display: "TOYAMA" },
+  "NEOPHOENIX": { prefix: "SAN-EN_NEOPHOENIX", display: "SAN-EN" },
+  "SEAHORSES": { prefix: "SEAHORSES_MIKAWA", display: "MIKAWA" },
+  "FIGHTINGEAGLES": { prefix: "FIGHTING_EAGLES_NAGOYA", display: "FE-NAGOYA" },
+  "DIAMONDDOLPHINS": { prefix: "NAGOYA_DIAMOND_DOLPHINS", display: "NAGOYA-D" },
+  "LAKES": { prefix: "SHIGA_LAKES", display: "SHIGA" },
+  "HANNARYZ": { prefix: "KYOTO_HANNARYZ", display: "KYOTO" },
+  "EVESSA": { prefix: "OSAKA_EVESSA", display: "OSAKA" },
+  "SUSANOOMAGIC": { prefix: "SHIMANE_SUSANOO_MAGIC", display: "SHIMANE" },
+  "DRAGONFLIES": { prefix: "HIROSHIMA_DRAGONFLIES", display: "HIROSHIMA" },
+  "BALLOONERS": { prefix: "SAGA_BALLOONERS", display: "SAGA" },
+  "VELCA": { prefix: "NAGASAKI_VELCA", display: "NAGASAKI" },
+  "GOLDENKINGS": { prefix: "RYUKYU_GOLDEN_KINGS", display: "RYUKYU" }
 };
 
 let awayData = [];
@@ -56,37 +57,48 @@ let reportImagePath = "";
 const formattedDate = dateId ? `20${dateId.substring(0,2)}.${dateId.substring(2,4)}.${dateId.substring(4,6)}` : "NO DATA";
 
 try {
-  const nameParts = urlGameDir.split('_');
+  const nameParts = urlGameDir.replace('.png','').split('_');
   const gameId = nameParts[1];
-  const awayReportName = nameParts[2];
-  const homeReportName = nameParts[3];
+  const awayKey = nameParts[2];
+  const homeKey = nameParts[3];
 
-  const awayConf = TEAM_MASTER[awayReportName] || { folder: awayReportName, cardPrefix: awayReportName, display: awayReportName };
-  const homeConf = TEAM_MASTER[homeReportName] || { folder: homeReportName, cardPrefix: homeReportName, display: homeReportName };
+  const awayConf = TEAM_MASTER[awayKey] || { prefix: awayKey, display: awayKey };
+  const homeConf = TEAM_MASTER[homeKey] || { prefix: homeKey, display: homeKey };
 
   displayTeamAway = awayConf.display;
   displayTeamHome = homeConf.display;
 
+  // レポート画像
   const fullDate = `20${dateId}`;
-  reportImagePath = `${reportRawBase}/${fullDate}_${gameId}_${awayReportName}_${homeReportName}.png`;
+  reportImagePath = `${reportRawBase}/${fullDate}_${gameId}_${awayKey}_${homeKey}.png`;
 
-  const fetchPlayers = async (conf) => {
-    const res = await fetch(`${apiParentURL}/${conf.folder}?t=${Date.now()}`, {
-      headers: token ? { "Authorization": `token ${token}` } : {}
-    });
-    const files = await res.json();
-    if (!Array.isArray(files)) return [];
+  // APIで「試合別フォルダ」の中身を取得
+  const res = await fetch(`${apiGameURL}?t=${Date.now()}`, {
+    headers: token ? { "Authorization": `token ${token}` } : {}
+  });
+  
+  const files = await res.json();
 
-    return files
-      .filter(f => f.name.endsWith('.png') && f.name.toUpperCase().includes(conf.cardPrefix.toUpperCase()))
-      .map(f => ({
+  if (Array.isArray(files)) {
+    // 取得した全ファイルをそれぞれのチームのプレフィックスで振り分ける
+    files.forEach(f => {
+      if (!f.name.toLowerCase().endsWith('.png')) return;
+
+      const playerObj = {
         name: f.name.replace('.png', '').split('_').slice(-2).join(' '),
-        imagePath: `${githubRawBase}/${dateId}/${conf.folder}/${f.name}`
-      }));
-  };
+        imagePath: `${githubRawBase}/${dateId}/${urlGameDir}/${f.name}`
+      };
 
-  awayData = await fetchPlayers(awayConf);
-  homeData = await fetchPlayers(homeConf);
+      // AWAYチームのカードか判定
+      if (f.name.toUpperCase().includes(awayConf.prefix.toUpperCase())) {
+        awayData.push(playerObj);
+      } 
+      // HOMEチームのカードか判定
+      else if (f.name.toUpperCase().includes(homeConf.prefix.toUpperCase())) {
+        homeData.push(playerObj);
+      }
+    });
+  }
 
 } catch (e) {
   console.error("Fetch Error:", e);

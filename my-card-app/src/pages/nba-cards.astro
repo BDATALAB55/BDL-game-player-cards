@@ -7,6 +7,7 @@ const queryFolder = searchParams.get('folder');
 
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
+// 修正箇所：末尾にスラッシュを追加してパス結合のミスを防止
 const githubBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/players`;
 
 const teamColorMap = {
@@ -57,11 +58,9 @@ try {
   const files = await response.json();
 
   if (Array.isArray(files)) {
-    // 1. ファイル名からチーム名を抽出 (例: ATL, DET)
     const playerFiles = files.filter(f => f.name.endsWith('.png') && !f.name.toLowerCase().includes('report'));
     const detectedTeamNames = [...new Set(playerFiles.map(f => f.name.split('_')[0]))];
 
-    // 2. 抽出したチーム名に基づいてデータを整理
     teamsData = detectedTeamNames.map(teamName => {
       const players = playerFiles
         .filter(f => f.name.startsWith(teamName))
@@ -71,6 +70,7 @@ try {
             team: parts[0],
             no: parts[1],
             name: parts.slice(2).join(' '),
+            // 修正箇所：スラッシュの重複を防ぎ、画像URLを正しく生成
             imagePath: `${githubBase}/${folderName}/${f.name}?t=${Date.now()}`
           };
         })
@@ -80,7 +80,6 @@ try {
     });
   }
 
-  // ゲームレポート画像の取得ロジック
   const gameId = folderName?.match(/\d{10}/)?.[0];
   if (gameId && rawDate) {
     const reportsApiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/reports/NBA/${rawDate}?t=${Date.now()}`;

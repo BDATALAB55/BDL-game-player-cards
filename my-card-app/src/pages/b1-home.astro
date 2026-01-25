@@ -7,6 +7,36 @@ const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
 const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1`;
 
+// アーカイブ側の表示に合わせるための変換辞書
+const cityNameMap = {
+  "HOKKAIDO": "HOKKAIDO", "LEVANGA": "HOKKAIDO", "LEVANGAHOKKAIDO": "HOKKAIDO",
+  "89ERS": "SENDAI", "SENDAI": "SENDAI", "SENDAI89ERS": "SENDAI",
+  "AKITA": "AKITA", "NORTHERNHAPPINETS": "AKITA",
+  "ROBOTS": "IBARAKI", "IBARAKI": "IBARAKI",
+  "BREX": "UTSUNOMIYA", "UTSUNOMIYA": "UTSUNOMIYA",
+  "CRANETHUNDERS": "GUNMA", "GUNMA": "GUNMA",
+  "ALPHAS": "KOSHIGAYA", "KOSHIGAYA": "KOSHIGAYA",
+  "ALTIRI": "A CHIBA", "ACHIBA": "A CHIBA",
+  "JETS": "CHIBA J", "CHIBAJ": "CHIBA J",
+  "ALVARK": "A TOKYO", "ATOKYO": "A TOKYO",
+  "SUNROCKERS": "SR SHIBUYA", "SHIBUYA": "SR SHIBUYA",
+  "BRAVETHUNDERS": "KAWASAKI", "KAWASAKI": "KAWASAKI",
+  "BCORSAIRS": "YOKOHAMA BC", "YOKOHAMABC": "YOKOHAMA BC",
+  "GROUSES": "TOYAMA", "TOYAMA": "TOYAMA",
+  "NEOPHOENIX": "SAN-EN", "SANEN": "SAN-EN", "SAN-EN": "SAN-EN",
+  "SEAHORSES": "MIKAWA", "MIKAWA": "MIKAWA",
+  "FIGHTINGEAGLES": "FE NAGOYA", "FENAGOYA": "FE NAGOYA",
+  "DOLPHINS": "NAGOYA D", "DIAMONDDOLPHINS": "NAGOYA D", "NAGOYA": "NAGOYA D",
+  "LAKES": "SHIGA", "SHIGA": "SHIGA",
+  "HANNARYZ": "KYOTO", "KYOTO": "KYOTO",
+  "EVESSA": "OSAKA", "OSAKA": "OSAKA",
+  "SUSANOOMAGIC": "SHIMANE", "SHIMANE": "SHIMANE",
+  "DRAGONFLIES": "HIROSHIMA", "HIROSHIMA": "HIROSHIMA",
+  "BALLOONERS": "SAGA", "SAGA": "SAGA",
+  "VELCA": "NAGASAKI", "NAGASAKI": "NAGASAKI",
+  "GOLDENKINGS": "RYUKYU", "RYUKYU": "RYUKYU"
+};
+
 const token = process.env.GITHUB_TOKEN;
 
 let reportGroups = [];
@@ -37,11 +67,16 @@ try {
 
       const nameParts = fileName.replace('.png', '').split('_');
       
-      // B1ファイル命名規則: 20260124_505142_AWAY_HOME.png
       const fullDate = nameParts[0] || ""; 
       const gameId = nameParts[1] || "";   
-      const teamA = nameParts[2] || "AWAY";
-      const teamB = nameParts[3] || "HOME";
+      
+      // 未加工のチーム名を取得（リンク生成用）
+      const rawAway = nameParts[2] || "AWAY";
+      const rawHome = nameParts[3] || "HOME";
+
+      // 辞書を使って表示用のチーム名を変換
+      const displayAway = cityNameMap[rawAway.toUpperCase().replace(/[\s\-_]/g, '')] || rawAway;
+      const displayHome = cityNameMap[rawHome.toUpperCase().replace(/[\s\-_]/g, '')] || rawHome;
 
       if (!groups[folderName]) {
         groups[folderName] = {
@@ -51,12 +86,12 @@ try {
         };
       }
       
-      // B1カード用フォルダ名規則: game_試合ID_AWAY_HOME_日付
-      const cardFolderName = `game_${gameId}_${teamA}_${teamB}_${folderName}`;
+      const cardFolderName = `game_${gameId}_${rawAway}_${rawHome}_${folderName}`;
 
       groups[folderName].reports.push({
         path: `${IMAGE_BASE_URL}/${folderName}/${fileName}?t=${Date.now()}`,
-        away: teamA, home: teamB,
+        away: displayAway, 
+        home: displayHome,
         link: `/b1-cards?folder=${folderName}/${cardFolderName}`
       });
     });

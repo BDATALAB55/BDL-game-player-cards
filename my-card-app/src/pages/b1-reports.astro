@@ -33,8 +33,8 @@ const cityNameMap = {
 };
 
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
-const RECURSIVE_API = "https://api.github.com/repos/" + GITHUB_REPO + "/git/trees/main?recursive=1&t=" + Date.now();
-const IMAGE_BASE_URL = "https://raw.githubusercontent.com/" + GITHUB_REPO + "/main/output/reports/B1";
+const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
+const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1`;
 
 const token = process.env.GITHUB_TOKEN;
 let reportGroups = [];
@@ -46,6 +46,7 @@ try {
   const data = await res.json();
 
   if (data.tree) {
+    // レポート用PNGファイルを抽出
     const allFiles = data.tree.filter(item => 
       item.path.includes('output/reports/B1/') && item.path.toLowerCase().endsWith('.png')
     );
@@ -59,27 +60,33 @@ try {
 
       if (!folderName || !/^\d+$/.test(folderName)) return;
 
+      // ファイル名構成: 20260124_505142_SUSANOOMAGIC_89ERS.png
       const nameParts = fileName.replace('.png', '').split('_');
-      const teamA_raw = (nameParts[nameParts.length - 2] || "AWAY").toUpperCase().replace(/[\s\-_]/g, '');
-      const teamB_raw = (nameParts[nameParts.length - 1] || "HOME").toUpperCase().replace(/[\s\-_]/g, '');
+      const fullDate = nameParts[0]; // 20260124
+      const gameId = nameParts[1];   // 505142
+      const teamA_raw = (nameParts[2] || "AWAY").toUpperCase().replace(/[\s\-_]/g, '');
+      const teamB_raw = (nameParts[3] || "HOME").toUpperCase().replace(/[\s\-_]/g, '');
 
       const teamA = cityNameMap[teamA_raw] || teamA_raw;
       const teamB = cityNameMap[teamB_raw] || teamB_raw;
 
+      // リンク先の構成: /b1-cards?folder=日付/game_ID_TEAM1_TEAM2_日付
+      // フォルダ構造画像に基づき、TEAM名は元のファイル名のまま結合
+      const targetSubFolder = `game_${gameId}_${nameParts[2]}_${nameParts[3]}_${fullDate}`;
+
       if (!groups[folderName]) {
         groups[folderName] = {
           id: folderName,
-          date: "20" + folderName.substring(0,2) + "." + folderName.substring(2,4) + "." + folderName.substring(4,6),
+          date: `${fullDate.substring(0,4)}.${fullDate.substring(4,6)}.${fullDate.substring(6,8)}`,
           reports: []
         };
       }
 
-      // リンク先を b1_cards (b1-cards) に変更
       groups[folderName].reports.push({
-        path: IMAGE_BASE_URL + "/" + folderName + "/" + fileName,
+        path: `${IMAGE_BASE_URL}/${folderName}/${fileName}`,
         away: teamA,
         home: teamB,
-        link: "/b1-cards?folder=" + folderName + "/B1_Cards_" + nameParts[3] + "_" + nameParts[2]
+        link: `/b1-cards?folder=${folderName}/${targetSubFolder}`
       });
     });
     reportGroups = Object.values(groups).sort((a, b) => b.id.localeCompare(a.id));
@@ -144,7 +151,6 @@ const availableDates = reportGroups.map(g => g.id);
 </Layout>
 
 <script is:inline define:vars={{ allData, availableDates }}>
-  // 初期化用の数値を取得
   var currentY = 2026;
   var currentM = 0; 
 

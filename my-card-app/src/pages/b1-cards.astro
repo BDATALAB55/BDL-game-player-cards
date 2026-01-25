@@ -3,23 +3,19 @@ export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
 const { searchParams } = Astro.url;
-// フォルダ名を取得
 const queryFolder = searchParams.get('folder') || "";
 
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
-// フォルダパスの解析
 const segments = queryFolder.split('/');
 const dateId = segments[0] || "";  
-// ゲームディレクトリ名（例: game_505142_SHIMANE_SENDAI_260124）
 const urlGameDir = segments[segments.length - 1] || ""; 
 
 const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/B1`;
 const reportRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateId}`;
 const apiParentURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}`;
 
-// チーム名変換用
 const TEAM_CONFIG = {
   "SHIMANE": { file: "SUSANOO_MAGIC", report: "SUSANOOMAGIC", display: "SHIMANE", link: "SHIMANE" },
   "SENDAI": { file: "89ERS", report: "89ERS", display: "SENDAI", link: "SENDAI" },
@@ -44,7 +40,6 @@ const TEAM_CONFIG = {
   "NAGOYAD": { file: "DIAMOND_DOLPHINS", report: "DIAMONDDOLPHINS", display: "NAGOYA-D", link: "NAGOYA D" },
   "MIKAWA": { file: "SEAHORSES", report: "SEAHORSES", display: "MIKAWA", link: "MIKAWA" },
   "KYOTO": { file: "HANNARYZ", report: "HANNARYZ", display: "KYOTO", link: "KYOTO" },
-  // 横浜の設定を強化
   "YOKOHAMA-BC": { file: "YOKOHAMA_B-CORSAIRS", report: "B-CORSAIRS", display: "YOKOHAMA-BC", link: "YOKOHAMA BC" },
   "YOKOHAMA": { file: "YOKOHAMA_B-CORSAIRS", report: "B-CORSAIRS", display: "YOKOHAMA-BC", link: "YOKOHAMA BC" },
   "OSAKA": { file: "EVESSA", report: "EVESSA", display: "OSAKA", link: "OSAKA" },
@@ -87,23 +82,21 @@ try {
         const processTeam = (teamName) => {
           const config = TEAM_CONFIG[teamName.toUpperCase()] || { file: teamName, report: teamName, display: teamName, link: teamName };
           
-          // 修正ポイント：記号を抜いた検索キーを作成（YOKOHAMA_B-CORSAIRS -> YOKOHAMABCORSAIRS）
-          const searchKey = config.file.replace(/[^A-Z0-9]/g, '').toUpperCase();
+          // 修正：ハイフンを含む場合も確実にヒットさせるための部分一致ロジック
+          const fileSearchKey = config.file.toUpperCase();
+          const simpleKey = config.file.replace(/[^A-Z0-9]/g, '').toUpperCase();
           
           const data = files
             .filter(f => {
-              const fileNameUpper = f.name.toUpperCase();
-              // 修正ポイント：ファイル名から記号を抜いたもの同士で比較するように強化
-              const fileNameClean = fileNameUpper.replace(/[^A-Z0-9]/g, '');
-              return f.name.endsWith('.png') && 
-                     (fileNameUpper.includes(config.file.toUpperCase()) || fileNameClean.includes(searchKey));
+              const fUpper = f.name.toUpperCase();
+              const fClean = fUpper.replace(/[^A-Z0-9]/g, '');
+              return f.name.endsWith('.png') && (fUpper.includes(fileSearchKey) || fClean.includes(simpleKey));
             })
             .map(f => ({
-              // 選手名の抽出
               name: f.name.replace('.png', '').split('_').slice(-2).join(' '),
               imagePath: `${githubRawBase}/${dateId}/${gameDir}/${f.name}`
             }));
-          return { data, displayLabel: config.display, linkId: config.link, fileName: config.file, reportName: config.report || config.file };
+          return { data, displayLabel: config.display, linkId: config.link, reportName: config.report };
         };
 
         const awayResult = processTeam(teamAwayRaw);
@@ -116,6 +109,7 @@ try {
         displayTeamHome = homeResult.displayLabel;
         homeTeamId = homeResult.linkId;
         
+        // 修正：レポート画像のパス生成を、画像名の「20260124_505138_HANNARYZ_B-CORSAIRS.png」に完全準拠させる
         const fullDate = `20${dateId}`;
         reportImagePath = `${reportRawBase}/${fullDate}_${gameId}_${awayResult.reportName}_${homeResult.reportName}.png`;
       }
@@ -128,7 +122,6 @@ try {
 
 <Layout title="B1 CARDS | B-Data Lab">
   <div class="app-container bg-[#373A36] min-h-screen text-white font-avenir">
-    
     <header class="pt-12 pb-6 px-8 border-b border-white/5 text-center relative">
       <button onclick="history.back()" class="absolute left-8 top-12 text-white/40 hover:text-white">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>

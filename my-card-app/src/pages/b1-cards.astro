@@ -19,22 +19,35 @@ const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/out
 const reportRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateId}`;
 const apiParentURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}`;
 
-// チーム名変換用（GitHubのファイル名とリンク用IDの紐付け）
+// チーム名変換用（GitHubの実際のファイル名に厳密に合わせる）
 const TEAM_CONFIG = {
   "SHIMANE": { file: "SUSANOO_MAGIC", report: "SUSANOOMAGIC", display: "SHIMANE", link: "SHIMANE" },
   "SENDAI": { file: "89ERS", report: "89ERS", display: "SENDAI", link: "SENDAI" },
-  "SUSANOOMAGIC": { file: "SUSANOO_MAGIC", report: "SUSANOOMAGIC", display: "SHIMANE", link: "SHIMANE" },
-  "SUSANOO_MAGIC": { file: "SUSANOO_MAGIC", report: "SUSANOOMAGIC", display: "SHIMANE", link: "SHIMANE" },
-  "89ERS": { file: "89ERS", report: "89ERS", display: "SENDAI", link: "SENDAI" },
+  "AKITA": { file: "NORTHERN_HAPPINETS", report: "NORTHERNHAPPINETS", display: "AKITA", link: "AKITA" },
+  "KAWASAKI": { file: "BRAVE_THUNDERS", report: "BRAVETHUNDERS", display: "KAWASAKI", link: "KAWASAKI" },
+  "IBARAKI": { file: "ROBOTS", report: "ROBOTS", display: "IBARAKI", link: "IBARAKI" },
+  "KOSHIGAYA": { file: "ALPHAS", report: "ALPHAS", display: "KOSHIGAYA", link: "KOSHIGAYA" },
+  "UTSUNOMIYA": { file: "BREX", report: "BREX", display: "UTSUNOMIYA", link: "UTSUNOMIYA" },
+  "HOKKAIDO": { file: "LEVANGA", report: "LEVANGA", display: "HOKKAIDO", link: "HOKKAIDO" },
+  "GUNMA": { file: "CRANE_THUNDERS", report: "CRANETHUNDERS", display: "GUNMA", link: "GUNMA" },
+  "SHIGA": { file: "LAKES", report: "LAKES", display: "SHIGA", link: "SHIGA" },
   "ACHIBA": { file: "ALTIRI", report: "ALTIRI", display: "A-CHIBA", link: "A CHIBA" },
+  "SAGA": { file: "BALLOONERS", report: "BALLOONERS", display: "SAGA", link: "SAGA" },
   "CHIBAJ": { file: "JETS", report: "JETS", display: "CHIBA-J", link: "CHIBA J" },
-  "ATOKYO": { file: "ALVARK", report: "ALVARK", display: "A-TOKYO", link: "A TOKYO" },
-  "SHIBUYA": { file: "SHIBUYA", report: "SHIBUYA", display: "SR-SHIBUYA", link: "SR SHIBUYA" },
+  "RYUKYU": { file: "GOLDEN_KINGS", report: "GOLDENKINGS", display: "RYUKYU", link: "RYUKYU" },
+  "TOYAMA": { file: "GROUSES", report: "GROUSES", display: "TOYAMA", link: "TOYAMA" },
+  "SHIBUYA": { file: "SUNROCKERS", report: "SUNROCKERS", display: "SR-SHIBUYA", link: "SR SHIBUYA" },
   "SANEN": { file: "NEOPHOENIX", report: "NEOPHOENIX", display: "SAN-EN", link: "SAN-EN" },
-  "NAGOYAD": { file: "DIAMOND", report: "DIAMONDDOLPHINS", display: "NAGOYA-D", link: "NAGOYA D" },
-  "FENAGOYA": { file: "FIGHTING", report: "FIGHTINGEAGLES", display: "FE-NAGOYA", link: "FE NAGOYA" },
+  "NAGASAKI": { file: "VELCA", report: "VELCA", display: "NAGASAKI", link: "NAGASAKI" },
+  "FENAGOYA": { file: "FIGHTING_EAGLES", report: "FIGHTINGEAGLES", display: "FE-NAGOYA", link: "FE NAGOYA" },
+  "HIROSHIMA": { file: "DRAGONFLIES", report: "DRAGONFLIES", display: "HIROSHIMA", link: "HIROSHIMA" },
+  "NAGOYAD": { file: "DIAMOND_DOLPHINS", report: "DIAMONDDOLPHINS", display: "NAGOYA-D", link: "NAGOYA D" },
+  "MIKAWA": { file: "SEAHORSES", report: "SEAHORSES", display: "MIKAWA", link: "MIKAWA" },
+  "KYOTO": { file: "HANNARYZ", report: "HANNARYZ", display: "KYOTO", link: "KYOTO" },
   "YOKOHAMA-BC": { file: "YOKOHAMA_B-CORSAIRS", report: "B-CORSAIRS", display: "YOKOHAMA-BC", link: "YOKOHAMA BC" },
-  "YOKOHAMA": { file: "YOKOHAMA_B-CORSAIRS", report: "B-CORSAIRS", display: "YOKOHAMA-BC", link: "YOKOHAMA BC" }
+  "YOKOHAMA": { file: "YOKOHAMA_B-CORSAIRS", report: "B-CORSAIRS", display: "YOKOHAMA-BC", link: "YOKOHAMA BC" },
+  "OSAKA": { file: "EVESSA", report: "EVESSA", display: "OSAKA", link: "OSAKA" },
+  "ATOKYO": { file: "ALVARK", report: "ALVARK", display: "A-TOKYO", link: "A TOKYO" }
 };
 
 let awayData = [];
@@ -97,7 +110,6 @@ try {
         displayTeamHome = homeResult.displayLabel;
         homeTeamId = homeResult.linkId;
         
-        // レポート画像のパス生成（島根: SUSANOOMAGIC, 横浜: B-CORSAIRS 等に対応）
         const fullDate = `20${dateId}`;
         reportImagePath = `${reportRawBase}/${fullDate}_${gameId}_${awayResult.reportName}_${homeResult.reportName}.png`;
       }

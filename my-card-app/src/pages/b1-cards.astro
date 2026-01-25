@@ -8,7 +8,6 @@ const queryFolder = searchParams.get('folder') || "";
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
-// フォルダパスの解析
 const segments = queryFolder.split('/');
 const dateId = segments[0] || "";  
 const urlGameDir = segments[segments.length - 1] || ""; 
@@ -17,34 +16,35 @@ const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/out
 const reportRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateId}`;
 const apiParentURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}`;
 
-// --- 参考ページと合わせた手動変換辞書 ---
-const cityNameMap = {
-  "HOKKAIDO": "HOKKAIDO", "LEVANGA": "HOKKAIDO", "LEVANGAHOKKAIDO": "HOKKAIDO",
-  "89ERS": "SENDAI", "SENDAI": "SENDAI", "SENDAI89ERS": "SENDAI",
-  "AKITA": "AKITA", "NORTHERNHAPPINETS": "AKITA",
-  "ROBOTS": "IBARAKI", "IBARAKI": "IBARAKI",
-  "BREX": "UTSUNOMIYA", "UTSUNOMIYA": "UTSUNOMIYA",
-  "CRANETHUNDERS": "GUNMA", "GUNMA": "GUNMA",
-  "ALPHAS": "KOSHIGAYA", "KOSHIGAYA": "KOSHIGAYA",
-  "ALTIRI": "A-CHIBA", "ACHIBA": "A-CHIBA",
-  "JETS": "CHIBA-J", "CHIBAJ": "CHIBA-J",
-  "ALVARK": "A-TOKYO", "ATOKYO": "A-TOKYO",
-  "SUNROCKERS": "SR-SHIBUYA", "SHIBUYA": "SR-SHIBUYA",
-  "BRAVETHUNDERS": "KAWASAKI", "KAWASAKI": "KAWASAKI",
-  "BCORSAIRS": "YOKOHAMA-BC", "YOKOHAMABC": "YOKOHAMA-BC", "B-CORSAIRS": "YOKOHAMA-BC",
-  "GROUSES": "TOYAMA", "TOYAMA": "TOYAMA",
-  "NEOPHOENIX": "SAN-EN", "SANEN": "SAN-EN", "SAN-EN": "SAN-EN",
-  "SEAHORSES": "MIKAWA", "MIKAWA": "MIKAWA",
-  "FIGHTINGEAGLES": "FE-NAGOYA", "FENAGOYA": "FE-NAGOYA",
-  "DOLPHINS": "NAGOYA-D", "DIAMONDDOLPHINS": "NAGOYA-D", "NAGOYA": "NAGOYA-D", "NAGOYAD": "NAGOYA-D",
-  "LAKES": "SHIGA", "SHIGA": "SHIGA",
-  "HANNARYZ": "KYOTO", "KYOTO": "KYOTO",
-  "EVESSA": "OSAKA", "OSAKA": "OSAKA",
-  "SUSANOOMAGIC": "SHIMANE", "SHIMANE": "SHIMANE",
-  "DRAGONFLIES": "HIROSHIMA", "HIROSHIMA": "HIROSHIMA",
-  "BALLOONERS": "SAGA", "SAGA": "SAGA",
-  "VELCA": "NAGASAKI", "NAGASAKI": "NAGASAKI",
-  "GOLDENKINGS": "RYUKYU", "RYUKYU": "RYUKYU"
+// --- 提供された対応表に基づき完全修正 ---
+const TEAM_MASTER = {
+  // レポート名: { folder: フォルダ名, cardPrefix: カードの先頭文字列, display: 表示名 }
+  "LEVANGA": { folder: "HOKKAIDO", cardPrefix: "LEVANGA_HOKKAIDO", display: "HOKKAIDO" },
+  "89ERS": { folder: "SENDAI", cardPrefix: "SENDAI_89ERS", display: "SENDAI" },
+  "NORTHERNHAPPINETS": { folder: "AKITA", cardPrefix: "AKITA_NORTHERN_HAPPINETS", display: "AKITA" },
+  "ROBOTS": { folder: "IBARAKI", cardPrefix: "IBARAKI_ROBOTS", display: "IBARAKI" },
+  "BREX": { folder: "UTSUNOMIYA", cardPrefix: "UTSUNOMIYA_BREX", display: "UTSUNOMIYA" },
+  "CRANETHUNDERS": { folder: "GUNMA", cardPrefix: "GUNMA_CRANE_THUNDERS", display: "GUNMA" },
+  "ALPHAS": { folder: "KOSHIGAYA", cardPrefix: "KOSHIGAYA_ALPHAS", display: "KOSHIGAYA" },
+  "ALTIRI": { folder: "ACHIBA", cardPrefix: "ALTIRI_CHIBA", display: "A-CHIBA" },
+  "JETS": { folder: "CHIBAJ", cardPrefix: "CHIBA_JETS", display: "CHIBA-J" },
+  "ALVARK": { folder: "ATOKYO", cardPrefix: "ALVARK_TOKYO", display: "A-TOKYO" },
+  "SUNROCKERS": { folder: "SHIBUYA", cardPrefix: "SUNROCKERS_SHIBUYA", display: "SR-SHIBUYA" },
+  "BRAVETHUNDERS": { folder: "KAWASAKI", cardPrefix: "KAWASAKI_BRAVE_THUNDERS", display: "KAWASAKI" },
+  "B-CORSAIRS": { folder: "YOKOHAMABC", cardPrefix: "YOKOHAMA_B-CORSAIRS", display: "YOKOHAMA-BC" },
+  "GROUSES": { folder: "TOYAMA", cardPrefix: "TOYAMA_GROUSES", display: "TOYAMA" },
+  "NEOPHOENIX": { folder: "SANEN", cardPrefix: "SAN-EN_NEOPHOENIX", display: "SAN-EN" },
+  "SEAHORSES": { folder: "MIKAWA", cardPrefix: "SEAHORSES_MIKAWA", display: "MIKAWA" },
+  "FIGHTINGEAGLES": { folder: "FENAGOYA", cardPrefix: "FIGHTING_EAGLES_NAGOYA", display: "FE-NAGOYA" },
+  "DIAMONDDOLPHINS": { folder: "NAGOYAD", cardPrefix: "NAGOYA_DIAMOND_DOLPHINS", display: "NAGOYA-D" },
+  "LAKES": { folder: "SHIGA", cardPrefix: "SHIGA_LAKES", display: "SHIGA" },
+  "HANNARYZ": { folder: "KYOTO", cardPrefix: "KYOTO_HANNARYZ", display: "KYOTO" },
+  "EVESSA": { folder: "OSAKA", cardPrefix: "OSAKA_EVESSA", display: "OSAKA" },
+  "SUSANOOMAGIC": { folder: "SHIMANE", cardPrefix: "SHIMANE_SUSANOO_MAGIC", display: "SHIMANE" },
+  "DRAGONFLIES": { folder: "HIROSHIMA", cardPrefix: "HIROSHIMA_DRAGONFLIES", display: "HIROSHIMA" },
+  "BALLOONERS": { folder: "SAGA", cardPrefix: "SAGA_BALLOONERS", display: "SAGA" },
+  "VELCA": { folder: "NAGASAKI", cardPrefix: "NAGASAKI_VELCA", display: "NAGASAKI" },
+  "GOLDENKINGS": { folder: "RYUKYU", cardPrefix: "RYUKYU_GOLDEN_KINGS", display: "RYUKYU" }
 };
 
 let awayData = [];
@@ -52,64 +52,51 @@ let homeData = [];
 let displayTeamHome = "HOME";
 let displayTeamAway = "AWAY";
 let reportImagePath = "";
-let gameDir = "";
 
 const formattedDate = dateId ? `20${dateId.substring(0,2)}.${dateId.substring(2,4)}.${dateId.substring(4,6)}` : "NO DATA";
 
 try {
-  const parentRes = await fetch(`${apiParentURL}?t=${Date.now()}`, {
-    headers: token ? { "Authorization": `token ${token}` } : {}
-  });
-  const folders = await parentRes.json();
-  
-  if (Array.isArray(folders)) {
-    const gameId = urlGameDir.match(/\d{6}/)?.[0];
-    const targetFolder = folders.find(f => f.name.includes(urlGameDir) || (gameId && f.name.includes(gameId)));
-    
-    if (targetFolder) {
-      gameDir = targetFolder.name;
-      const filesRes = await fetch(`${targetFolder.url}`, {
-        headers: token ? { "Authorization": `token ${token}` } : {}
-      });
-      const files = await filesRes.json();
+  // game_505138_HANNARYZ_B-CORSAIRS_260124 を分解
+  const nameParts = urlGameDir.split('_');
+  const gameId = nameParts[1];
+  const awayReportName = nameParts[2]; // HANNARYZ
+  const homeReportName = nameParts[3]; // B-CORSAIRS
 
-      if (Array.isArray(files)) {
-        // game_505138_HANNARYZ_B-CORSAIRS_260124 などの構造を分解
-        const nameParts = gameDir.split('_');
-        const teamAwayRaw = nameParts[2] || "AWAY"; 
-        const teamHomeRaw = nameParts[3] || "HOME";
+  // マスターから設定を取得
+  const awayConf = TEAM_MASTER[awayReportName] || { folder: awayReportName, cardPrefix: awayReportName, display: awayReportName };
+  const homeConf = TEAM_MASTER[homeReportName] || { folder: homeReportName, cardPrefix: homeReportName, display: homeReportName };
 
-        // 選手カード検索用の関数
-        const getPlayerData = (rawName) => {
-          const searchKey = rawName.toUpperCase().replace(/[^A-Z0-9]/g, '');
-          return files
-            .filter(f => {
-              const fUpper = f.name.toUpperCase().replace(/[^A-Z0-9]/g, '');
-              return f.name.endsWith('.png') && fUpper.includes(searchKey);
-            })
-            .map(f => ({
-              name: f.name.replace('.png', '').split('_').slice(-2).join(' '),
-              imagePath: `${githubRawBase}/${dateId}/${gameDir}/${f.name}`
-            }));
-        };
+  displayTeamAway = awayConf.display;
+  displayTeamHome = homeConf.display;
 
-        awayData = getPlayerData(teamAwayRaw);
-        homeData = getPlayerData(teamHomeRaw);
+  // レポート画像パス（20260124_505138_HANNARYZ_B-CORSAIRS.png）
+  const fullDate = `20${dateId}`;
+  reportImagePath = `${reportRawBase}/${fullDate}_${gameId}_${awayReportName}_${homeReportName}.png`;
 
-        // 表示用ラベルの変換
-        displayTeamAway = cityNameMap[teamAwayRaw.toUpperCase().replace(/[^A-Z0-9]/g, '')] || teamAwayRaw;
-        displayTeamHome = cityNameMap[teamHomeRaw.toUpperCase().replace(/[^A-Z0-9]/g, '')] || teamHomeRaw;
-        
-        // レポート画像：成功しているページと同じ命名規則で生成
-        const fullDate = `20${dateId}`;
-        reportImagePath = `${reportRawBase}/${fullDate}_${gameId}_${teamAwayRaw}_${teamHomeRaw}.png`;
-      }
-    }
-  }
+  // 選手データのフェッチ (APIを2回叩いてそれぞれのフォルダから取得)
+  const fetchPlayers = async (conf) => {
+    const res = await fetch(`${apiParentURL}/${conf.folder}?t=${Date.now()}`, {
+      headers: token ? { "Authorization": `token ${token}` } : {}
+    });
+    const files = await res.json();
+    if (!Array.isArray(files)) return [];
+
+    return files
+      .filter(f => f.name.endsWith('.png') && f.name.includes(conf.cardPrefix))
+      .map(f => ({
+        name: f.name.replace('.png', '').split('_').slice(-2).join(' '),
+        imagePath: `${githubRawBase}/${dateId}/${conf.folder}/${f.name}`
+      }));
+  };
+
+  awayData = await fetchPlayers(awayConf);
+  homeData = await fetchPlayers(homeConf);
+
 } catch (e) {
   console.error("Fetch Error:", e);
 }
 ---
+
 <Layout title="B1 CARDS | B-Data Lab">
   <div class="app-container bg-[#373A36] min-h-screen text-white font-avenir">
     <header class="pt-12 pb-6 px-8 border-b border-white/5 text-center relative">

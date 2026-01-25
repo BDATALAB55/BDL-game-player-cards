@@ -21,21 +21,20 @@ const apiParentURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/outpu
 
 // チーム名変換用（GitHubのファイル名とリンク用IDの紐付け）
 const TEAM_CONFIG = {
-  "SHIMANE": { file: "SUSANOO_MAGIC", display: "SHIMANE", link: "SHIMANE" },
-  "SENDAI": { file: "89ERS", display: "SENDAI", link: "SENDAI" },
-  "SUSANOOMAGIC": { file: "SUSANOO_MAGIC", display: "SHIMANE", link: "SHIMANE" },
-  "SUSANOO_MAGIC": { file: "SUSANOO_MAGIC", display: "SHIMANE", link: "SHIMANE" },
-  "89ERS": { file: "89ERS", display: "SENDAI", link: "SENDAI" },
-  "ACHIBA": { file: "ALTIRI", display: "A-CHIBA", link: "A CHIBA" },
-  "CHIBAJ": { file: "JETS", display: "CHIBA-J", link: "CHIBA J" },
-  "ATOKYO": { file: "ALVARK", display: "A-TOKYO", link: "A TOKYO" },
-  "SHIBUYA": { file: "SHIBUYA", display: "SR-SHIBUYA", link: "SR SHIBUYA" },
-  "SANEN": { file: "NEOPHOENIX", display: "SAN-EN", link: "SAN-EN" },
-  "NAGOYAD": { file: "DIAMOND", display: "NAGOYA-D", link: "NAGOYA D" },
-  "FENAGOYA": { file: "FIGHTING", display: "FE-NAGOYA", link: "FE NAGOYA" },
-  // 横浜BCのファイル名を実際の 'YOKOHAMA_B-CORSAIRS' に修正
-  "YOKOHAMA-BC": { file: "YOKOHAMA_B-CORSAIRS", display: "YOKOHAMA-BC", link: "YOKOHAMA BC" },
-  "YOKOHAMA": { file: "YOKOHAMA_B-CORSAIRS", display: "YOKOHAMA-BC", link: "YOKOHAMA BC" }
+  "SHIMANE": { file: "SUSANOO_MAGIC", report: "SUSANOOMAGIC", display: "SHIMANE", link: "SHIMANE" },
+  "SENDAI": { file: "89ERS", report: "89ERS", display: "SENDAI", link: "SENDAI" },
+  "SUSANOOMAGIC": { file: "SUSANOO_MAGIC", report: "SUSANOOMAGIC", display: "SHIMANE", link: "SHIMANE" },
+  "SUSANOO_MAGIC": { file: "SUSANOO_MAGIC", report: "SUSANOOMAGIC", display: "SHIMANE", link: "SHIMANE" },
+  "89ERS": { file: "89ERS", report: "89ERS", display: "SENDAI", link: "SENDAI" },
+  "ACHIBA": { file: "ALTIRI", report: "ALTIRI", display: "A-CHIBA", link: "A CHIBA" },
+  "CHIBAJ": { file: "JETS", report: "JETS", display: "CHIBA-J", link: "CHIBA J" },
+  "ATOKYO": { file: "ALVARK", report: "ALVARK", display: "A-TOKYO", link: "A TOKYO" },
+  "SHIBUYA": { file: "SHIBUYA", report: "SHIBUYA", display: "SR-SHIBUYA", link: "SR SHIBUYA" },
+  "SANEN": { file: "NEOPHOENIX", report: "NEOPHOENIX", display: "SAN-EN", link: "SAN-EN" },
+  "NAGOYAD": { file: "DIAMOND", report: "DIAMONDDOLPHINS", display: "NAGOYA-D", link: "NAGOYA D" },
+  "FENAGOYA": { file: "FIGHTING", report: "FIGHTINGEAGLES", display: "FE-NAGOYA", link: "FE NAGOYA" },
+  "YOKOHAMA-BC": { file: "YOKOHAMA_B-CORSAIRS", report: "B-CORSAIRS", display: "YOKOHAMA-BC", link: "YOKOHAMA BC" },
+  "YOKOHAMA": { file: "YOKOHAMA_B-CORSAIRS", report: "B-CORSAIRS", display: "YOKOHAMA-BC", link: "YOKOHAMA BC" }
 };
 
 let awayData = [];
@@ -56,7 +55,6 @@ try {
   const folders = await parentRes.json();
   
   if (Array.isArray(folders)) {
-    // フォルダ名からゲームID（505xxx）を抽出
     const gameId = urlGameDir.match(/\d{6}/)?.[0];
     const targetFolder = folders.find(f => f.name.includes(urlGameDir) || (gameId && f.name.includes(gameId)));
     
@@ -69,20 +67,16 @@ try {
 
       if (Array.isArray(files)) {
         const nameParts = gameDir.split('_');
-        // フォルダ名からチーム名を取得（例: game_505142_AWAY_HOME_DATE）
         const teamAwayRaw = nameParts[2] || "AWAY"; 
         const teamHomeRaw = nameParts[3] || "HOME";
 
         const processTeam = (teamName) => {
-          const config = TEAM_CONFIG[teamName.toUpperCase()] || { file: teamName, display: teamName, link: teamName };
-          
-          // 検索のブレを許容するため、比較用の正規化キーを作成
+          const config = TEAM_CONFIG[teamName.toUpperCase()] || { file: teamName, report: teamName, display: teamName, link: teamName };
           const searchKey = config.file.replace(/[^A-Z0-9]/g, '').toUpperCase();
           
           const data = files
             .filter(f => {
               const fileNameUpper = f.name.toUpperCase();
-              // 完全一致、または記号を除去した状態での部分一致を確認
               return f.name.endsWith('.png') && 
                      (fileNameUpper.includes(config.file.toUpperCase()) || fileNameUpper.replace(/[^A-Z0-9]/g, '').includes(searchKey));
             })
@@ -90,7 +84,7 @@ try {
               name: f.name.replace('.png', '').split('_').slice(-2).join(' '),
               imagePath: `${githubRawBase}/${dateId}/${gameDir}/${f.name}`
             }));
-          return { data, displayLabel: config.display, linkId: config.link, fileName: config.file };
+          return { data, displayLabel: config.display, linkId: config.link, fileName: config.file, reportName: config.report || config.file };
         };
 
         const awayResult = processTeam(teamAwayRaw);
@@ -103,9 +97,9 @@ try {
         displayTeamHome = homeResult.displayLabel;
         homeTeamId = homeResult.linkId;
         
-        // レポート画像のパス生成
+        // レポート画像のパス生成（島根: SUSANOOMAGIC, 横浜: B-CORSAIRS 等に対応）
         const fullDate = `20${dateId}`;
-        reportImagePath = `${reportRawBase}/${fullDate}_${gameId}_${awayResult.fileName}_${homeResult.fileName}.png`;
+        reportImagePath = `${reportRawBase}/${fullDate}_${gameId}_${awayResult.reportName}_${homeResult.reportName}.png`;
       }
     }
   }

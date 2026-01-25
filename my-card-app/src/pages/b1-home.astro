@@ -37,10 +37,11 @@ try {
 
       const nameParts = fileName.replace('.png', '').split('_');
       
-      const fullDate = nameParts[2] || "";
-      const gameId = nameParts[3] || "";
-      const teamA = nameParts[nameParts.length - 2] || "AWAY";
-      const teamB = nameParts[nameParts.length - 1] || "HOME";
+      // B1ファイル命名規則: 20260124_505142_AWAY_HOME.png
+      const fullDate = nameParts[0] || ""; 
+      const gameId = nameParts[1] || "";   
+      const teamA = nameParts[2] || "AWAY";
+      const teamB = nameParts[3] || "HOME";
 
       if (!groups[folderName]) {
         groups[folderName] = {
@@ -50,7 +51,8 @@ try {
         };
       }
       
-      const cardFolderName = `B1_Cards_${gameId}_${fullDate}`;
+      // B1カード用フォルダ名規則: game_試合ID_AWAY_HOME_日付
+      const cardFolderName = `game_${gameId}_${teamA}_${teamB}_${folderName}`;
 
       groups[folderName].reports.push({
         path: `${IMAGE_BASE_URL}/${folderName}/${fileName}?t=${Date.now()}`,
@@ -178,7 +180,6 @@ for (let i = 0; i < teams.length; i += 9) {
                 {chunk.map(t => (
                   <a href={`/b1-team?team=${t.id}`}>
                     <div class={`${t.color} aspect-square rounded-lg flex items-center justify-center font-black tracking-tighter transition-all active:scale-95 uppercase px-1 text-center leading-[0.85]`}>
-                      {/* iPhone用：横浜BCは改行、他は文字数でサイズ調整 */}
                       <span class={t.id.length > 10 ? "text-[12px]" : "text-[15px]"}>
                         {t.id === 'YOKOHAMA BC' ? (
                           <>YOKOHAMA<br/>BC</>

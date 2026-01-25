@@ -3,36 +3,36 @@ export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
 const { searchParams } = Astro.url;
+// フォルダ名を取得
 const queryFolder = searchParams.get('folder') || "";
 
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
+// フォルダパスの解析
 const segments = queryFolder.split('/');
 const dateId = segments[0] || "";  
-const urlGameDir = segments[1] || ""; 
+// ゲームディレクトリ名（例: game_505142_SHIMANE_SENDAI_260124）
+const urlGameDir = segments[segments.length - 1] || ""; 
 
 const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/B1`;
 const reportRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateId}`;
 const apiParentURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}`;
 
+// チーム名変換用（GitHubのファイル名とリンク用IDの紐付け）
 const TEAM_CONFIG = {
+  "SHIMANE": { file: "SUSANOOMAGIC", display: "SHIMANE", link: "SHIMANE" },
+  "SENDAI": { file: "89ERS", display: "SENDAI", link: "SENDAI" },
+  "SUSANOOMAGIC": { file: "SUSANOOMAGIC", display: "SHIMANE", link: "SHIMANE" },
+  "89ERS": { file: "89ERS", display: "SENDAI", link: "SENDAI" },
   "ACHIBA": { file: "ALTIRI", display: "A-CHIBA", link: "A CHIBA" },
-  "A-CHIBA": { file: "ALTIRI", display: "A-CHIBA", link: "A CHIBA" },
   "CHIBAJ": { file: "JETS", display: "CHIBA-J", link: "CHIBA J" },
-  "CHIBA-J": { file: "JETS", display: "CHIBA-J", link: "CHIBA J" },
   "ATOKYO": { file: "ALVARK", display: "A-TOKYO", link: "A TOKYO" },
-  "A-TOKYO": { file: "ALVARK", display: "A-TOKYO", link: "A TOKYO" },
   "SHIBUYA": { file: "SHIBUYA", display: "SR-SHIBUYA", link: "SR SHIBUYA" },
-  "SR-SHIBUYA": { file: "SHIBUYA", display: "SR-SHIBUYA", link: "SR SHIBUYA" },
   "SANEN": { file: "NEOPHOENIX", display: "SAN-EN", link: "SAN-EN" },
-  "SAN-EN": { file: "NEOPHOENIX", display: "SAN-EN", link: "SAN-EN" },
   "NAGOYAD": { file: "DIAMOND", display: "NAGOYA-D", link: "NAGOYA D" },
-  "NAGOYA-D": { file: "DIAMOND", display: "NAGOYA-D", link: "NAGOYA D" },
   "FENAGOYA": { file: "FIGHTING", display: "FE-NAGOYA", link: "FE NAGOYA" },
-  "FE-NAGOYA": { file: "FIGHTING", display: "FE-NAGOYA", link: "FE NAGOYA" },
-  "YOKOHAMA-BC": { file: "YOKOHAMA", display: "YOKOHAMA-BC", link: "YOKOHAMA BC" },
-  "YOKOHAMABC": { file: "YOKOHAMA", display: "YOKOHAMA-BC", link: "YOKOHAMA BC" }
+  "YOKOHAMA-BC": { file: "YOKOHAMA", display: "YOKOHAMA-BC", link: "YOKOHAMA BC" }
 };
 
 let awayData = [];
@@ -41,8 +41,6 @@ let displayTeamHome = "HOME";
 let displayTeamAway = "AWAY";
 let reportImagePath = "";
 let gameDir = "";
-
-// リンク用ID保持
 let awayTeamId = "";
 let homeTeamId = "";
 
@@ -55,55 +53,47 @@ try {
   const folders = await parentRes.json();
   
   if (Array.isArray(folders)) {
-    const gameId = urlGameDir.split('_').find(s => s.length === 6 && /^\d+$/.test(s));
+    // フォルダ名からゲームID（505xxx）を抽出
+    const gameId = urlGameDir.match(/\d{6}/)?.[0];
     const targetFolder = folders.find(f => f.name.includes(urlGameDir) || (gameId && f.name.includes(gameId)));
     
     if (targetFolder) {
       gameDir = targetFolder.name;
-      const filesRes = await fetch(`${targetFolder.url}&t=${Date.now()}`, {
+      const filesRes = await fetch(`${targetFolder.url}`, {
         headers: token ? { "Authorization": `token ${token}` } : {}
       });
       const files = await filesRes.json();
 
       if (Array.isArray(files)) {
         const nameParts = gameDir.split('_');
-        const teamAway = nameParts[2] || "AWAY"; 
-        const teamHome = nameParts[3] || "HOME";
+        // フォルダ名からチーム名を取得（例: game_505142_AWAY_HOME_DATE）
+        const teamAwayRaw = nameParts[2] || "AWAY"; 
+        const teamHomeRaw = nameParts[3] || "HOME";
 
-        const process = (teamName) => {
-          const upperTeam = teamName.toUpperCase();
-          const cleanTeam = upperTeam.replace(/-/g, '');
-          const config = TEAM_CONFIG[upperTeam] || TEAM_CONFIG[cleanTeam];
-          const searchKeyword = config ? config.file : cleanTeam;
-          const displayLabel = config ? config.display : upperTeam;
-          const linkId = config ? config.link : upperTeam;
-
+        const processTeam = (teamName) => {
+          const config = TEAM_CONFIG[teamName.toUpperCase()] || { file: teamName, display: teamName, link: teamName };
           const data = files
-            .filter(f => f.name.endsWith('.png') && f.name.toUpperCase().includes(searchKeyword))
-            .map(f => {
-              const p = f.name.replace('.png', '').split('_');
-              const noIndex = p.findIndex(val => /^\d+$/.test(val));
-              let playerParts = noIndex !== -1 ? p.slice(noIndex + 1) : ["PLAYER"];
-              const fullName = playerParts.filter(part => !(/^\d{8}$/.test(part))).join(' ');
-              return { name: fullName, imagePath: `${githubRawBase}/${dateId}/${gameDir}/${f.name}` };
-            });
-          return { data, displayLabel, linkId };
+            .filter(f => f.name.endsWith('.png') && f.name.toUpperCase().includes(config.file))
+            .map(f => ({
+              name: f.name.replace('.png', '').split('_').slice(-2).join(' '),
+              imagePath: `${githubRawBase}/${dateId}/${gameDir}/${f.name}`
+            }));
+          return { data, displayLabel: config.display, linkId: config.link, fileName: config.file };
         };
 
-        const awayResult = process(teamAway);
-        const homeResult = process(teamHome);
+        const awayResult = processTeam(teamAwayRaw);
+        const homeResult = processTeam(teamHomeRaw);
+
         awayData = awayResult.data;
         displayTeamAway = awayResult.displayLabel;
         awayTeamId = awayResult.linkId;
-        
         homeData = homeResult.data;
         displayTeamHome = homeResult.displayLabel;
         homeTeamId = homeResult.linkId;
         
-        // --- ゲームレポート画像のパス修正 ---
-        // 画像名は 20260124_505xxx_AWAY_HOME.png の形式
+        // レポート画像のパス生成（GitHubの実際のファイル名に合わせる）
         const fullDate = `20${dateId}`;
-        reportImagePath = `${reportRawBase}/${fullDate}_${gameId}_${teamAway}_${teamHome}.png`;
+        reportImagePath = `${reportRawBase}/${fullDate}_${gameId}_${awayResult.fileName}_${homeResult.fileName}.png`;
       }
     }
   }
@@ -113,34 +103,28 @@ try {
 ---
 
 <Layout title="B1 CARDS | B-Data Lab">
-  <div class="app-container bg-[#1a1a1a] min-h-screen text-white overflow-hidden font-avenir">
+  <div class="app-container bg-[#1a1a1a] min-h-screen text-white font-avenir">
     
     <header class="pt-12 pb-6 px-8 border-b border-white/5 text-center relative">
-      <a href="/b1-home" class="absolute left-8 top-12 text-white/40 hover:text-white transition-colors">
+      <button onclick="history.back()" class="absolute left-8 top-12 text-white/40 hover:text-white">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>
-      </a>
-      <a href="/b1-home" class="inline-block hover:opacity-70 transition-opacity">
-        <h1 class="text-2xl font-black uppercase leading-none tracking-[0.25em]">B1 CARDS</h1>
-      </a>
+      </button>
+      <h1 class="text-2xl font-black uppercase tracking-[0.25em]">B1 CARDS</h1>
       <p class="text-gray-600 text-[10px] font-bold tracking-[0.4em] mt-3 uppercase">Gameday Collection</p>
     </header>
 
     <div class="py-10 space-y-16 pb-32">
       <div class="px-8">
-        <div class="flex flex-col gap-1">
-          <span class="text-gray-500 text-[12px] font-black uppercase tracking-[0.3em]">Gameday</span>
-          <span class="text-white text-[28px] font-bold uppercase leading-none tracking-[0.1em]">{formattedDate}</span>
-        </div>
+        <span class="text-gray-500 text-[12px] font-black uppercase tracking-[0.3em]">Gameday</span>
+        <h2 class="text-white text-[28px] font-bold uppercase tracking-[0.1em]">{formattedDate}</h2>
       </div>
 
       <section class="px-8 flex flex-col items-center">
-        {reportImagePath ? (
-          <div class="w-full md:w-[60%] mx-auto cursor-pointer card-trigger rounded-xl overflow-hidden border border-white/10 shadow-2xl" data-img={reportImagePath}>
-            <img src={reportImagePath} class="w-full h-auto block" alt="Game Report" onerror="this.src='/path-to-placeholder.png'; this.onerror=null;" />
-          </div>
-        ) : null}
+        <div class="w-full md:w-[60%] mx-auto cursor-pointer card-trigger rounded-xl overflow-hidden border border-white/10 shadow-2xl bg-black/40 min-h-[200px] flex items-center justify-center" data-img={reportImagePath}>
+          <img src={reportImagePath} class="w-full h-auto block" alt="Game Report" onerror="this.src='https://placehold.jp/24/333333/ffffff/400x500.png?text=REPORT%20LOADING...'" />
+        </div>
         <div class="mt-6 text-center">
-          <span class="text-[16px] font-black tracking-[0.2em] uppercase text-white">
+          <span class="text-[16px] font-black tracking-[0.2em] uppercase">
             {displayTeamAway} <span class="text-blue-500 mx-2 text-[12px]">vs</span> {displayTeamHome}
           </span>
         </div>
@@ -152,40 +136,25 @@ try {
       ].map((team) => (
         <section>
           <div class="px-8 mb-6 flex justify-between items-center">
-            <span class={`${team.color} px-4 py-1.5 text-[15px] font-black uppercase rounded-sm inline-block`}>
-              {team.label}
-            </span>
-            {/* チームページへのリンクボタン */}
-            <a href={`/b1-team?team=${team.teamId}`} class="text-[10px] font-black uppercase tracking-widest text-white/40 hover:text-white transition-colors">
-              Team Page &rarr;
-            </a>
+            <span class={`${team.color} px-4 py-1.5 text-[15px] font-black uppercase rounded-sm`}>{team.label}</span>
+            <a href={`/b1-team?team=${team.teamId}`} class="text-[10px] font-black uppercase text-white/40 hover:text-white">Team Page &rarr;</a>
           </div>
 
-          <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 px-8 no-scrollbar pb-8">
-            {team.data.length > 0 ? (
-              team.data.map((p) => (
-                <div class="flex-none w-[80vw] max-w-[320px] snap-center">
-                  <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 shadow-xl bg-black/20" data-img={p.imagePath}>
-                    <img src={p.imagePath} alt={p.name} class="w-full h-auto" loading="lazy" />
-                  </div>
-                  <div class="mt-6 px-1">
-                    {/* 選手個別ページ（b-players）へのリンク */}
-                    <a href={`/b-players?name=${encodeURIComponent(p.name)}`} class="w-full inline-flex items-center justify-between px-6 py-4 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative active:scale-95 transition-all group overflow-hidden shadow-lg">
-                      <div class="absolute inset-0 p-[1.5px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10 opacity-60"></div>
-                      <span class="text-[13px] font-black tracking-[0.15em] uppercase text-white truncate">{p.name}</span>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="text-white/40 group-hover:text-white transition-colors" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-                      </svg>
-                    </a>
-                  </div>
+          <div class="flex overflow-x-auto snap-x gap-6 px-8 no-scrollbar pb-8">
+            {team.data.length > 0 ? team.data.map((p) => (
+              <div class="flex-none w-[80vw] max-w-[320px] snap-center">
+                <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 bg-black/20" data-img={p.imagePath}>
+                  <img src={p.imagePath} alt={p.name} class="w-full h-auto" loading="lazy" />
                 </div>
-              ))
-            ) : (
-               <div class="px-8 w-full">
-                <div class="w-full py-12 border border-dashed border-white/10 rounded-2xl flex items-center justify-center">
-                  <span class="text-white/20 text-[10px] font-black uppercase tracking-[0.4em]">No Player Cards</span>
+                <div class="mt-6 px-1">
+                  <a href={`/b-players?name=${encodeURIComponent(p.name)}`} class="w-full inline-flex items-center justify-between px-6 py-4 rounded-full bg-black/40 border border-white/10 hover:bg-black/60 transition-all">
+                    <span class="text-[13px] font-black uppercase text-white truncate">{p.name}</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>
+                  </a>
                 </div>
               </div>
+            )) : (
+              <div class="px-8 w-full py-12 border border-dashed border-white/10 rounded-2xl text-center text-white/20 uppercase text-[10px] tracking-[0.4em]">No Player Cards</div>
             )}
           </div>
         </section>
@@ -199,3 +168,32 @@ try {
     </div>
   </div>
 </Layout>
+
+<script>
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modal-img') as HTMLImageElement;
+  const close = document.getElementById('close');
+  const downloadBtn = document.getElementById('download-btn') as HTMLAnchorElement;
+
+  document.querySelectorAll('.card-trigger').forEach(card => {
+    card.addEventListener('click', () => {
+      const imgSrc = card.getAttribute('data-img');
+      if (imgSrc && modalImg && downloadBtn) {
+        modalImg.src = imgSrc;
+        downloadBtn.href = imgSrc;
+        modal?.classList.remove('hidden');
+        modal?.classList.add('flex');
+      }
+    });
+  });
+
+  close?.addEventListener('click', () => {
+    modal?.classList.add('hidden');
+    modal?.classList.remove('flex');
+  });
+</script>
+
+<style is:global>
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>

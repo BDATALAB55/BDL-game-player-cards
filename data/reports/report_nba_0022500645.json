@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500645",
+  "date": "2026.01.24",
+  "venue": "Spectrum Center",
+  "attendance": 15698,
+  "home": {
+    "id": "1610612766",
+    "total": {
+      "pts": 119,
+      "fgm": 41,
+      "fga": 79,
+      "f2m": 27,
+      "f2a": 43,
+      "f3m": 14,
+      "f3a": 36,
+      "ftm": 23,
+      "fta": 30,
+      "reb": 55,
+      "oreb": 12,
+      "dreb": 34,
+      "ast": 30,
+      "tov": 21,
+      "stl": 8,
+      "blk": 3,
+      "pf": 10
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "31:54",
+        "pts": 16,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "MILES BRIDGES",
+        "min": "28:52",
+        "pts": 20,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "14",
+        "name": "MOUSSA DIABATÉ",
+        "min": "32:04",
+        "pts": 11,
+        "reb": 14,
+        "ast": 0
+      },
+      {
+        "no": "24",
+        "name": "BRANDON MILLER",
+        "min": "33:20",
+        "pts": 21,
+        "reb": 11,
+        "ast": 7
+      },
+      {
+        "no": "1",
+        "name": "LAMELO BALL",
+        "min": "31:36",
+        "pts": 20,
+        "reb": 2,
+        "ast": 11
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612764",
+    "total": {
+      "pts": 115,
+      "fgm": 44,
+      "fga": 96,
+      "f2m": 25,
+      "f2a": 43,
+      "f3m": 19,
+      "f3a": 53,
+      "ftm": 8,
+      "fta": 9,
+      "reb": 43,
+      "oreb": 10,
+      "dreb": 24,
+      "ast": 35,
+      "tov": 13,
+      "stl": 14,
+      "blk": 6,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "25:14",
+        "pts": 11,
+        "reb": 8,
+        "ast": 7
+      },
+      {
+        "no": "27",
+        "name": "WILL RILEY",
+        "min": "23:29",
+        "pts": 7,
+        "reb": 0,
+        "ast": 2
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "37:16",
+        "pts": 24,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "12",
+        "name": "TRE JOHNSON",
+        "min": "36:33",
+        "pts": 26,
+        "reb": 0,
+        "ast": 6
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "32:15",
+        "pts": 15,
+        "reb": 3,
+        "ast": 8
+      }
+    ]
+  }
+}

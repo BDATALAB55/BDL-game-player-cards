@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500648",
+  "date": "2026.01.24",
+  "venue": "American Airlines Center",
+  "attendance": 19880,
+  "home": {
+    "id": "1610612742",
+    "total": {
+      "pts": 110,
+      "fgm": 39,
+      "fga": 94,
+      "f2m": 29,
+      "f2a": 65,
+      "f3m": 10,
+      "f3a": 29,
+      "ftm": 22,
+      "fta": 29,
+      "reb": 54,
+      "oreb": 11,
+      "dreb": 32,
+      "ast": 22,
+      "tov": 11,
+      "stl": 10,
+      "blk": 6,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "34:19",
+        "pts": 16,
+        "reb": 7,
+        "ast": 6
+      },
+      {
+        "no": "16",
+        "name": "CALEB MARTIN",
+        "min": "23:39",
+        "pts": 17,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "DWIGHT POWELL",
+        "min": "23:47",
+        "pts": 0,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "34:34",
+        "pts": 24,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "36:59",
+        "pts": 21,
+        "reb": 11,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612747",
+    "total": {
+      "pts": 116,
+      "fgm": 40,
+      "fga": 90,
+      "f2m": 26,
+      "f2a": 56,
+      "f3m": 14,
+      "f3a": 34,
+      "ftm": 22,
+      "fta": 29,
+      "reb": 66,
+      "oreb": 16,
+      "dreb": 41,
+      "ast": 26,
+      "tov": 14,
+      "stl": 7,
+      "blk": 8,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "36:34",
+        "pts": 17,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "12",
+        "name": "JAKE LARAVIA",
+        "min": "30:28",
+        "pts": 13,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "23:45",
+        "pts": 9,
+        "reb": 11,
+        "ast": 0
+      },
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "32:01",
+        "pts": 13,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "39:08",
+        "pts": 33,
+        "reb": 8,
+        "ast": 11
+      }
+    ]
+  }
+}

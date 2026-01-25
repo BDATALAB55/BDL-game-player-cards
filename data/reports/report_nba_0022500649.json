@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500649",
+  "date": "2026.01.24",
+  "venue": "Delta Center",
+  "attendance": 18186,
+  "home": {
+    "id": "1610612762",
+    "total": {
+      "pts": 116,
+      "fgm": 44,
+      "fga": 92,
+      "f2m": 37,
+      "f2a": 67,
+      "f3m": 7,
+      "f3a": 25,
+      "ftm": 21,
+      "fta": 28,
+      "reb": 48,
+      "oreb": 7,
+      "dreb": 27,
+      "ast": 36,
+      "tov": 14,
+      "stl": 9,
+      "blk": 10,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "28:13",
+        "pts": 12,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "CODY WILLIAMS",
+        "min": "29:54",
+        "pts": 5,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "30",
+        "name": "JUSUF NURKIĆ",
+        "min": "31:21",
+        "pts": 17,
+        "reb": 10,
+        "ast": 12
+      },
+      {
+        "no": "10",
+        "name": "SVI MYKHAILIUK",
+        "min": "17:14",
+        "pts": 8,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "36:10",
+        "pts": 19,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612748",
+    "total": {
+      "pts": 147,
+      "fgm": 47,
+      "fga": 108,
+      "f2m": 28,
+      "f2a": 61,
+      "f3m": 19,
+      "f3a": 47,
+      "ftm": 34,
+      "fta": 42,
+      "reb": 77,
+      "oreb": 26,
+      "dreb": 38,
+      "ast": 35,
+      "tov": 13,
+      "stl": 10,
+      "blk": 6,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "25:16",
+        "pts": 20,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "26:38",
+        "pts": 17,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "31:01",
+        "pts": 26,
+        "reb": 15,
+        "ast": 2
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "24:53",
+        "pts": 13,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "25",
+        "name": "KASPARAS JAKUČIONIS",
+        "min": "16:55",
+        "pts": 12,
+        "reb": 5,
+        "ast": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500646",
+  "date": "2026.01.24",
+  "venue": "Kia Center",
+  "attendance": 19351,
+  "home": {
+    "id": "1610612753",
+    "total": {
+      "pts": 105,
+      "fgm": 33,
+      "fga": 81,
+      "f2m": 22,
+      "f2a": 41,
+      "f3m": 11,
+      "f3a": 40,
+      "ftm": 28,
+      "fta": 32,
+      "reb": 51,
+      "oreb": 10,
+      "dreb": 27,
+      "ast": 21,
+      "tov": 16,
+      "stl": 8,
+      "blk": 3,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "38:26",
+        "pts": 20,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "38:27",
+        "pts": 27,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "29:49",
+        "pts": 11,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "ANTHONY BLACK",
+        "min": "39:55",
+        "pts": 16,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "24:24",
+        "pts": 9,
+        "reb": 1,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612739",
+    "total": {
+      "pts": 119,
+      "fgm": 43,
+      "fga": 81,
+      "f2m": 28,
+      "f2a": 47,
+      "f3m": 15,
+      "f3a": 34,
+      "ftm": 18,
+      "fta": 22,
+      "reb": 45,
+      "oreb": 8,
+      "dreb": 30,
+      "ast": 27,
+      "tov": 14,
+      "stl": 11,
+      "blk": 6,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "DEAN WADE",
+        "min": "25:55",
+        "pts": 10,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "34:32",
+        "pts": 13,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "24:50",
+        "pts": 8,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "20",
+        "name": "JAYLON TYSON",
+        "min": "32:18",
+        "pts": 17,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "37:37",
+        "pts": 36,
+        "reb": 5,
+        "ast": 9
+      }
+    ]
+  }
+}

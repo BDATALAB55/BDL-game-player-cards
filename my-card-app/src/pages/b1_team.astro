@@ -11,35 +11,35 @@ const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/ou
 const token = process.env.GITHUB_TOKEN;
 
 const teamInfo = {
-  HOKKAIDO: { city: "Levanga", name: "Hokkaido", color: "#91ad10" },
-  SENDAI: { city: "Sendai", name: "89ers", color: "#f7e000" },
-  AKITA: { city: "Akita", name: "Northern Happinets", color: "#dd0055" },
-  IBARAKI: { city: "Ibaraki", name: "Robots", color: "#002e95" },
-  UTSUNOMIYA: { city: "Utsunomiya", name: "Brex", color: "#12284b" },
-  GUNMA: { city: "Gunma", name: "Crane Thunders", color: "#ffda00" },
-  KOSHIGAYA: { city: "Koshigaya", name: "Alphas", color: "#610d0d" },
-  'A CHIBA': { city: "Altiri", name: "Chiba", color: "#212836" },
-  'CHIBA J': { city: "Chiba", name: "Jets", color: "#e33216" },
-  'A TOKYO': { city: "Alvark", name: "Tokyo", color: "#000000" },
-  'SR SHIBUYA': { city: "Sunrockers", name: "Shibuya", color: "#ffea00" },
-  KAWASAKI: { city: "Kawasaki", name: "Brave Thunders", color: "#7a1231" },
-  'YOKOHAMA BC': { city: "Yokohama", name: "B-Corsairs", color: "#000f31" },
-  TOYAMA: { city: "Toyama", name: "Grouses", color: "#e21f26" },
-  'SAN-EN': { city: "San-en", name: "NeoPhoenix", color: "#d31118" },
-  MIKAWA: { city: "SeaHorses", name: "Mikawa", color: "#3356b9" },
-  'FE NAGOYA': { city: "FIGHTING EAGLES", name: "Nagoya", color: "#003882" },
-  'NAGOYA D': { city: "Nagoya", name: "DIAMOND DOLPHINS", color: "#e31d20" },
-  SHIGA: { city: "Shiga", name: "Lakes", color: "#1a448e" },
-  KYOTO: { city: "Kyoto", name: "Hannaryz", color: "#5ea1b4" },
-  OSAKA: { city: "Osaka", name: "Evessa", color: "#d11c1d" },
-  SHIMANE: { city: "Shimane", name: "Susanoo Magic", color: "#1c71be" },
-  HIROSHIMA: { city: "Hiroshima", name: "Dragonflies", color: "#f05a22" },
-  SAGA: { city: "Saga", name: "Ballooners", color: "#4da9df" },
-  NAGASAKI: { city: "Nagasaki", name: "Velca", color: "#2b3754" },
-  RYUKYU: { city: "Ryukyu", name: "Golden Kings", color: "#b69e63" },
+  HOKKAIDO: { city: "Levanga", name: "Hokkaido", color: "#91ad10", searchKey: "LEVANGA" },
+  SENDAI: { city: "Sendai", name: "89ers", color: "#f7e000", searchKey: "89ERS" },
+  AKITA: { city: "Akita", name: "Northern Happinets", color: "#dd0055", searchKey: "NORTHERNHAPPINETS" },
+  IBARAKI: { city: "Ibaraki", name: "Robots", color: "#002e95", searchKey: "ROBOTS" },
+  UTSUNOMIYA: { city: "Utsunomiya", name: "Brex", color: "#12284b", searchKey: "BREX" },
+  GUNMA: { city: "Gunma", name: "Crane Thunders", color: "#ffda00", searchKey: "CRANETHUNDERS" },
+  KOSHIGAYA: { city: "Koshigaya", name: "Alphas", color: "#610d0d", searchKey: "ALPHAS" },
+  'A CHIBA': { city: "Altiri", name: "Chiba", color: "#212836", searchKey: "ALTIRI" },
+  'CHIBA J': { city: "Chiba", name: "Jets", color: "#e33216", searchKey: "JETS" },
+  'A TOKYO': { city: "Alvark", name: "Tokyo", color: "#000000", searchKey: "ALVARK" },
+  'SR SHIBUYA': { city: "Sunrockers", name: "Shibuya", color: "#ffea00", searchKey: "SUNROCKERS" },
+  KAWASAKI: { city: "Kawasaki", name: "Brave Thunders", color: "#7a1231", searchKey: "BRAVETHUNDERS" },
+  'YOKOHAMA BC': { city: "Yokohama", name: "B-Corsairs", color: "#000f31", searchKey: "B-CORSAIRS" },
+  TOYAMA: { city: "Toyama", name: "Grouses", color: "#e21f26", searchKey: "GROUSES" },
+  'SAN-EN': { city: "San-en", name: "NeoPhoenix", color: "#d31118", searchKey: "NEOPHOENIX" },
+  MIKAWA: { city: "SeaHorses", name: "Mikawa", color: "#3356b9", searchKey: "SEAHORSES" },
+  'FE NAGOYA': { city: "FIGHTING EAGLES", name: "Nagoya", color: "#003882", searchKey: "FIGHTINGEAGLES" },
+  'NAGOYA D': { city: "Nagoya", name: "DIAMOND DOLPHINS", color: "#e31d20", searchKey: "DIAMONDDOLPHINS" },
+  SHIGA: { city: "Shiga", name: "Lakes", color: "#1a448e", searchKey: "LAKES" },
+  KYOTO: { city: "Kyoto", name: "Hannaryz", color: "#5ea1b4", searchKey: "HANNARYZ" },
+  OSAKA: { city: "Osaka", name: "Evessa", color: "#d11c1d", searchKey: "EVESSA" },
+  SHIMANE: { city: "Shimane", name: "Susanoo Magic", color: "#1c71be", searchKey: "SUSANOOMAGIC" },
+  HIROSHIMA: { city: "Hiroshima", name: "Dragonflies", color: "#f05a22", searchKey: "DRAGONFLIES" },
+  SAGA: { city: "Saga", name: "Ballooners", color: "#4da9df", searchKey: "BALLOONERS" },
+  NAGASAKI: { city: "Nagasaki", name: "Velca", color: "#2b3754", searchKey: "VELCA" },
+  RYUKYU: { city: "Ryukyu", name: "Golden Kings", color: "#b69e63", searchKey: "GOLDENKINGS" },
 };
 
-const currentTeam = teamInfo[teamId] || { city: "B.LEAGUE", name: "TEAM", color: "#FFFFFF" };
+const currentTeam = teamInfo[teamId] || { city: "B.LEAGUE", name: "TEAM", color: "#FFFFFF", searchKey: "" };
 
 const reverseTeams = ['HOKKAIDO', 'A CHIBA', 'A TOKYO', 'SR SHIBUYA', 'MIKAWA', 'FE NAGOYA'];
 const isReversed = reverseTeams.includes(teamId);
@@ -59,7 +59,7 @@ try {
 
   if (data.tree) {
     const reportFiles = data.tree.filter(item => 
-      item.path.startsWith('output/reports/B1/') && 
+      item.path.includes('output/reports/B1/') && 
       item.path.endsWith('.png')
     );
 
@@ -67,18 +67,21 @@ try {
       const parts = file.path.split('/');
       const fileName = parts[parts.length - 1];
       const folderName = parts[parts.length - 2];
-      const nameParts = fileName.replace('.png', '').split('_');
       
-      const fullDate = nameParts[2];
-      const gameId = nameParts[3];
-      const teamA = nameParts[nameParts.length - 2];
-      const teamB = nameParts[nameParts.length - 1];
+      // チームのsearchKeyがファイル名に含まれているか確認
+      if (currentTeam.searchKey && fileName.toUpperCase().includes(currentTeam.searchKey)) {
+        const nameParts = fileName.replace('.png', '').split('_');
+        
+        // ファイル名規則 [0]日付 [1]ID [2]AWAY [3]HOME に基づき抽出
+        const fullDate = nameParts[0]; 
+        const gameId = nameParts[1];
+        const teamA = nameParts[2];
+        const teamB = nameParts[3];
 
-      if (teamA === teamId || teamB === teamId) {
         const targetCardFolder = `B1_Cards_${gameId}_${fullDate}`;
         const reportObj = {
           id: folderName,
-          date: `20${folderName.substring(0,2)}.${folderName.substring(2,4)}.${folderName.substring(4,6)}`,
+          date: `${fullDate.substring(0,4)}.${fullDate.substring(4,6)}.${fullDate.substring(6,8)}`,
           path: `${IMAGE_BASE_URL}/${folderName}/${fileName}?t=${Date.now()}`,
           fileName: fileName,
           away: teamA,

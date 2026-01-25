@@ -21,9 +21,10 @@ const apiParentURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/outpu
 
 // チーム名変換用（GitHubのファイル名とリンク用IDの紐付け）
 const TEAM_CONFIG = {
-  "SHIMANE": { file: "SUSANOOMAGIC", display: "SHIMANE", link: "SHIMANE" },
+  "SHIMANE": { file: "SUSANOO_MAGIC", display: "SHIMANE", link: "SHIMANE" },
   "SENDAI": { file: "89ERS", display: "SENDAI", link: "SENDAI" },
-  "SUSANOOMAGIC": { file: "SUSANOOMAGIC", display: "SHIMANE", link: "SHIMANE" },
+  "SUSANOOMAGIC": { file: "SUSANOO_MAGIC", display: "SHIMANE", link: "SHIMANE" },
+  "SUSANOO_MAGIC": { file: "SUSANOO_MAGIC", display: "SHIMANE", link: "SHIMANE" },
   "89ERS": { file: "89ERS", display: "SENDAI", link: "SENDAI" },
   "ACHIBA": { file: "ALTIRI", display: "A-CHIBA", link: "A CHIBA" },
   "CHIBAJ": { file: "JETS", display: "CHIBA-J", link: "CHIBA J" },
@@ -32,7 +33,9 @@ const TEAM_CONFIG = {
   "SANEN": { file: "NEOPHOENIX", display: "SAN-EN", link: "SAN-EN" },
   "NAGOYAD": { file: "DIAMOND", display: "NAGOYA-D", link: "NAGOYA D" },
   "FENAGOYA": { file: "FIGHTING", display: "FE-NAGOYA", link: "FE NAGOYA" },
-  "YOKOHAMA-BC": { file: "YOKOHAMA", display: "YOKOHAMA-BC", link: "YOKOHAMA BC" }
+  // 横浜BCのファイル名を実際の 'YOKOHAMA_B-CORSAIRS' に修正
+  "YOKOHAMA-BC": { file: "YOKOHAMA_B-CORSAIRS", display: "YOKOHAMA-BC", link: "YOKOHAMA BC" },
+  "YOKOHAMA": { file: "YOKOHAMA_B-CORSAIRS", display: "YOKOHAMA-BC", link: "YOKOHAMA BC" }
 };
 
 let awayData = [];
@@ -72,8 +75,17 @@ try {
 
         const processTeam = (teamName) => {
           const config = TEAM_CONFIG[teamName.toUpperCase()] || { file: teamName, display: teamName, link: teamName };
+          
+          // 検索のブレを許容するため、比較用の正規化キーを作成
+          const searchKey = config.file.replace(/[^A-Z0-9]/g, '').toUpperCase();
+          
           const data = files
-            .filter(f => f.name.endsWith('.png') && f.name.toUpperCase().includes(config.file))
+            .filter(f => {
+              const fileNameUpper = f.name.toUpperCase();
+              // 完全一致、または記号を除去した状態での部分一致を確認
+              return f.name.endsWith('.png') && 
+                     (fileNameUpper.includes(config.file.toUpperCase()) || fileNameUpper.replace(/[^A-Z0-9]/g, '').includes(searchKey));
+            })
             .map(f => ({
               name: f.name.replace('.png', '').split('_').slice(-2).join(' '),
               imagePath: `${githubRawBase}/${dateId}/${gameDir}/${f.name}`
@@ -91,7 +103,7 @@ try {
         displayTeamHome = homeResult.displayLabel;
         homeTeamId = homeResult.linkId;
         
-        // レポート画像のパス生成（GitHubの実際のファイル名に合わせる）
+        // レポート画像のパス生成
         const fullDate = `20${dateId}`;
         reportImagePath = `${reportRawBase}/${fullDate}_${gameId}_${awayResult.fileName}_${homeResult.fileName}.png`;
       }

@@ -16,11 +16,11 @@ const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/out
 const reportRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateId}`;
 const apiParentURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}`;
 
-// --- 提供された対応表に基づき完全修正 ---
+// --- 最新の対応表に基づき完全修正 ---
 const TEAM_MASTER = {
-  // レポート名: { folder: フォルダ名, cardPrefix: カードの先頭文字列, display: 表示名 }
   "LEVANGA": { folder: "HOKKAIDO", cardPrefix: "LEVANGA_HOKKAIDO", display: "HOKKAIDO" },
   "89ERS": { folder: "SENDAI", cardPrefix: "SENDAI_89ERS", display: "SENDAI" },
+  "NORTHERN_HAPPINETS": { folder: "AKITA", cardPrefix: "AKITA_NORTHERN_HAPPINETS", display: "AKITA" },
   "NORTHERNHAPPINETS": { folder: "AKITA", cardPrefix: "AKITA_NORTHERN_HAPPINETS", display: "AKITA" },
   "ROBOTS": { folder: "IBARAKI", cardPrefix: "IBARAKI_ROBOTS", display: "IBARAKI" },
   "BREX": { folder: "UTSUNOMIYA", cardPrefix: "UTSUNOMIYA_BREX", display: "UTSUNOMIYA" },
@@ -56,24 +56,20 @@ let reportImagePath = "";
 const formattedDate = dateId ? `20${dateId.substring(0,2)}.${dateId.substring(2,4)}.${dateId.substring(4,6)}` : "NO DATA";
 
 try {
-  // game_505138_HANNARYZ_B-CORSAIRS_260124 を分解
   const nameParts = urlGameDir.split('_');
   const gameId = nameParts[1];
-  const awayReportName = nameParts[2]; // HANNARYZ
-  const homeReportName = nameParts[3]; // B-CORSAIRS
+  const awayReportName = nameParts[2];
+  const homeReportName = nameParts[3];
 
-  // マスターから設定を取得
   const awayConf = TEAM_MASTER[awayReportName] || { folder: awayReportName, cardPrefix: awayReportName, display: awayReportName };
   const homeConf = TEAM_MASTER[homeReportName] || { folder: homeReportName, cardPrefix: homeReportName, display: homeReportName };
 
   displayTeamAway = awayConf.display;
   displayTeamHome = homeConf.display;
 
-  // レポート画像パス（20260124_505138_HANNARYZ_B-CORSAIRS.png）
   const fullDate = `20${dateId}`;
   reportImagePath = `${reportRawBase}/${fullDate}_${gameId}_${awayReportName}_${homeReportName}.png`;
 
-  // 選手データのフェッチ (APIを2回叩いてそれぞれのフォルダから取得)
   const fetchPlayers = async (conf) => {
     const res = await fetch(`${apiParentURL}/${conf.folder}?t=${Date.now()}`, {
       headers: token ? { "Authorization": `token ${token}` } : {}
@@ -82,7 +78,7 @@ try {
     if (!Array.isArray(files)) return [];
 
     return files
-      .filter(f => f.name.endsWith('.png') && f.name.includes(conf.cardPrefix))
+      .filter(f => f.name.endsWith('.png') && f.name.toUpperCase().includes(conf.cardPrefix.toUpperCase()))
       .map(f => ({
         name: f.name.replace('.png', '').split('_').slice(-2).join(' '),
         imagePath: `${githubRawBase}/${dateId}/${conf.folder}/${f.name}`

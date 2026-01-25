@@ -3,23 +3,20 @@ export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
 const { searchParams } = Astro.url;
-const queryFolder = searchParams.get('folder') || ""; // 例: "260124/game_505138_HANNARYZ_B-CORSAIRS_260124"
+const queryFolder = searchParams.get('folder') || ""; 
 
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
 const segments = queryFolder.split('/');
 const dateId = segments[0] || "";  
-const urlGameDir = segments[1] || ""; // 試合別のフォルダ名
+const urlGameDir = segments[1] || ""; 
 
-// 1. RAW画像表示用のベースパスを修正
+// 1. パスの修正：GitHubの構造に合わせる
 const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/B1/${dateId}/${urlGameDir}`;
 const reportRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateId}`;
-
-// 2. API取得用のURLを修正 (試合フォルダの直下を叩く)
 const apiGameURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}/${urlGameDir}`;
 
-// --- 対応表（21:38.30）に基づくチームマスター ---
 const TEAM_MASTER = {
   "LEVANGA": { prefix: "LEVANGA_HOKKAIDO", display: "HOKKAIDO" },
   "89ERS": { prefix: "SENDAI_89ERS", display: "SENDAI" },
@@ -59,11 +56,13 @@ let reportImagePath = "";
 const formattedDate = dateId ? `20${dateId.substring(0,2)}.${dateId.substring(2,4)}.${dateId.substring(4,6)}` : "NO DATA";
 
 try {
-  // urlGameDir: game_505138_HANNARYZ_B-CORSAIRS_260124
+  // 名前解析の修正
   const nameParts = urlGameDir.replace('.png','').split('_');
-  const gameId = nameParts[1];
-  const awayKey = nameParts[2]; // HANNARYZ
-  const homeKey = nameParts[3]; // B-CORSAIRS
+  const gameId = nameParts[1] || "";
+  const awayKey = nameParts[2] || "";
+  const homeKey = nameParts[3] || "";
+  // フォルダ名末尾の日付(20260124等)を取得、なければdateIdから生成
+  const fullDateStr = nameParts[4] || `20${dateId}`;
 
   const awayConf = TEAM_MASTER[awayKey] || { prefix: awayKey, display: awayKey };
   const homeConf = TEAM_MASTER[homeKey] || { prefix: homeKey, display: homeKey };
@@ -71,11 +70,9 @@ try {
   displayTeamAway = awayConf.display;
   displayTeamHome = homeConf.display;
 
-  // レポート画像パス
-  const fullDate = `20${dateId}`;
-  reportImagePath = `${reportRawBase}/${fullDate}_${gameId}_${awayKey}_${homeKey}.png`;
+  // レポート画像名の組み立てを修正
+  reportImagePath = `${reportRawBase}/${fullDateStr}_${gameId}_${awayKey}_${homeKey}.png`;
 
-  // APIで「試合別フォルダ」の中身を取得
   const res = await fetch(`${apiGameURL}?t=${Date.now()}`, {
     headers: token ? { "Authorization": `token ${token}` } : {}
   });
@@ -88,10 +85,9 @@ try {
 
       const playerObj = {
         name: f.name.replace('.png', '').split('_').slice(-2).join(' '),
-        imagePath: `${githubRawBase}/${f.name}` // 直下にファイルがあるのでシンプルに結合
+        imagePath: `${githubRawBase}/${f.name}`
       };
 
-      // prefix判定（大文字小文字を区別しない）
       if (f.name.toUpperCase().includes(awayConf.prefix.toUpperCase())) {
         awayData.push(playerObj);
       } 
@@ -100,7 +96,6 @@ try {
       }
     });
   }
-
 } catch (e) {
   console.error("Fetch Error:", e);
 }

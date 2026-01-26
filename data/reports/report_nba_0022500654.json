@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500654",
+  "date": "2026.01.25",
+  "venue": "Frost Bank Center",
+  "attendance": 18363,
+  "home": {
+    "id": "1610612759",
+    "total": {
+      "pts": 95,
+      "fgm": 32,
+      "fga": 81,
+      "f2m": 20,
+      "f2a": 37,
+      "f3m": 12,
+      "f3a": 44,
+      "ftm": 19,
+      "fta": 32,
+      "reb": 55,
+      "oreb": 10,
+      "dreb": 36,
+      "ast": 22,
+      "tov": 11,
+      "stl": 2,
+      "blk": 5,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "29:14",
+        "pts": 13,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "19:02",
+        "pts": 5,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "31:21",
+        "pts": 16,
+        "reb": 16,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "28:51",
+        "pts": 5,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "34:44",
+        "pts": 12,
+        "reb": 2,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612740",
+    "total": {
+      "pts": 104,
+      "fgm": 41,
+      "fga": 102,
+      "f2m": 32,
+      "f2a": 68,
+      "f3m": 9,
+      "f3a": 34,
+      "ftm": 13,
+      "fta": 17,
+      "reb": 72,
+      "oreb": 19,
+      "dreb": 39,
+      "ast": 23,
+      "tov": 10,
+      "stl": 3,
+      "blk": 5,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "33:27",
+        "pts": 24,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "ZION WILLIAMSON",
+        "min": "33:15",
+        "pts": 24,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "22",
+        "name": "DERIK QUEEN",
+        "min": "17:10",
+        "pts": 4,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "TREY MURPHY III",
+        "min": "37:54",
+        "pts": 17,
+        "reb": 6,
+        "ast": 9
+      },
+      {
+        "no": "2",
+        "name": "HERBERT JONES",
+        "min": "28:29",
+        "pts": 9,
+        "reb": 3,
+        "ast": 2
+      }
+    ]
+  }
+}

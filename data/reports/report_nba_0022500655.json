@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500655",
+  "date": "2026.01.25",
+  "venue": "Mortgage Matchup Center",
+  "attendance": 17071,
+  "home": {
+    "id": "1610612756",
+    "total": {
+      "pts": 102,
+      "fgm": 37,
+      "fga": 100,
+      "f2m": 30,
+      "f2a": 65,
+      "f3m": 7,
+      "f3a": 35,
+      "ftm": 21,
+      "fta": 26,
+      "reb": 61,
+      "oreb": 21,
+      "dreb": 35,
+      "ast": 14,
+      "tov": 10,
+      "stl": 6,
+      "blk": 7,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "36:26",
+        "pts": 26,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "31:26",
+        "pts": 8,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "24:07",
+        "pts": 11,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "GRAYSON ALLEN",
+        "min": "34:40",
+        "pts": 18,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "30:40",
+        "pts": 11,
+        "reb": 4,
+        "ast": 0
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612748",
+    "total": {
+      "pts": 111,
+      "fgm": 39,
+      "fga": 93,
+      "f2m": 30,
+      "f2a": 58,
+      "f3m": 9,
+      "f3a": 35,
+      "ftm": 24,
+      "fta": 29,
+      "reb": 66,
+      "oreb": 18,
+      "dreb": 41,
+      "ast": 21,
+      "tov": 10,
+      "stl": 6,
+      "blk": 3,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "35:09",
+        "pts": 10,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "23:30",
+        "pts": 10,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "32:24",
+        "pts": 22,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "31:20",
+        "pts": 16,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "KASPARAS JAKUČIONIS",
+        "min": "22:47",
+        "pts": 7,
+        "reb": 6,
+        "ast": 3
+      }
+    ]
+  }
+}

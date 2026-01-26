@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500653",
+  "date": "2026.01.25",
+  "venue": "Paycom Center",
+  "attendance": 18203,
+  "home": {
+    "id": "1610612760",
+    "total": {
+      "pts": 101,
+      "fgm": 33,
+      "fga": 75,
+      "f2m": 22,
+      "f2a": 32,
+      "f3m": 11,
+      "f3a": 43,
+      "ftm": 24,
+      "fta": 31,
+      "reb": 46,
+      "oreb": 5,
+      "dreb": 32,
+      "ast": 21,
+      "tov": 11,
+      "stl": 5,
+      "blk": 5,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "35:34",
+        "pts": 19,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "6",
+        "name": "JAYLIN WILLIAMS",
+        "min": "21:02",
+        "pts": 5,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "29:21",
+        "pts": 11,
+        "reb": 10,
+        "ast": 0
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "15:39",
+        "pts": 3,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "35:11",
+        "pts": 24,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612761",
+    "total": {
+      "pts": 103,
+      "fgm": 37,
+      "fga": 86,
+      "f2m": 25,
+      "f2a": 52,
+      "f3m": 12,
+      "f3a": 34,
+      "ftm": 17,
+      "fta": 26,
+      "reb": 62,
+      "oreb": 12,
+      "dreb": 39,
+      "ast": 28,
+      "tov": 11,
+      "stl": 10,
+      "blk": 6,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "35:58",
+        "pts": 13,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "31:45",
+        "pts": 10,
+        "reb": 11,
+        "ast": 8
+      },
+      {
+        "no": "54",
+        "name": "SANDRO MAMUKELASHVILI",
+        "min": "31:33",
+        "pts": 10,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "21:26",
+        "pts": 14,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "31:53",
+        "pts": 23,
+        "reb": 11,
+        "ast": 2
+      }
+    ]
+  }
+}

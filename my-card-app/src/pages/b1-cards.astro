@@ -21,7 +21,7 @@ const TEAM_MASTER = {
   "LEVANGA": { prefix: "LEVANGA_HOKKAIDO", display: "HOKKAIDO" },
   "89ERS": { prefix: "SENDAI_89ERS", display: "SENDAI" },
   "NORTHERNHAPPINETS": { prefix: "AKITA_NORTHERN_HAPPINETS", display: "AKITA" },
-  "NORTHERN_HAPPINETS": { prefix: "AKITA_NORTHERN_HAPPINETS", display: "AKITA" },
+  "AKITA": { prefix: "AKITA_NORTHERN_HAPPINETS", display: "AKITA" },
   "ROBOTS": { prefix: "IBARAKI_ROBOTS", display: "IBARAKI" },
   "BREX": { prefix: "UTSUNOMIYA_BREX", display: "UTSUNOMIYA" },
   "CRANETHUNDERS": { prefix: "GUNMA_CRANE_THUNDERS", display: "GUNMA" },
@@ -36,6 +36,7 @@ const TEAM_MASTER = {
   "NEOPHOENIX": { prefix: "SAN-EN_NEOPHOENIX", display: "SAN-EN" },
   "SEAHORSES": { prefix: "SEAHORSES_MIKAWA", display: "MIKAWA" },
   "FIGHTINGEAGLES": { prefix: "FIGHTING_EAGLES_NAGOYA", display: "FE-NAGOYA" },
+  "FENAGOYA": { prefix: "FIGHTING_EAGLES_NAGOYA", display: "FE-NAGOYA" },
   "DIAMONDDOLPHINS": { prefix: "NAGOYA_DIAMOND_DOLPHINS", display: "NAGOYA-D" },
   "LAKES": { prefix: "SHIGA_LAKES", display: "SHIGA" },
   "HANNARYZ": { prefix: "KYOTO_HANNARYZ", display: "KYOTO" },
@@ -57,11 +58,11 @@ const formattedDate = dateId ? `20${dateId.substring(0,2)}.${dateId.substring(2,
 
 try {
   // 名前解析の修正
-  const nameParts = urlGameDir.replace('.png','').split('_');
+  const nameParts = urlGameDir.split('_');
   const gameId = nameParts[1] || "";
   const awayKey = nameParts[2] || "";
   const homeKey = nameParts[3] || "";
-  // フォルダ名末尾の日付(20260124等)を取得、なければdateIdから生成
+  // フォルダ名に8桁の日付(20251227等)が含まれている場合の抽出、なければdateIdから補完
   const fullDateStr = nameParts[4] || `20${dateId}`;
 
   const awayConf = TEAM_MASTER[awayKey] || { prefix: awayKey, display: awayKey };
@@ -88,6 +89,7 @@ try {
         imagePath: `${githubRawBase}/${f.name}`
       };
 
+      // prefix判定（大文字小文字を区別せず、ファイル名に含まれるチーム名を検索）
       if (f.name.toUpperCase().includes(awayConf.prefix.toUpperCase())) {
         awayData.push(playerObj);
       } 

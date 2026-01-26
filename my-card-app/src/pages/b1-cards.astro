@@ -12,16 +12,16 @@ const segments = queryFolder.split('/');
 const dateId = segments[0] || "";  
 const urlGameDir = segments[1] || ""; 
 
-// 1. パスの修正：GitHubの構造に合わせる
 const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/B1/${dateId}/${urlGameDir}`;
 const reportRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateId}`;
 const apiGameURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}/${urlGameDir}`;
 
+// 21.38.30のマスター表に基づき、カードファイル名に含まれる文字列(prefix)を厳密に定義
 const TEAM_MASTER = {
   "LEVANGA": { prefix: "LEVANGA_HOKKAIDO", display: "HOKKAIDO" },
   "89ERS": { prefix: "SENDAI_89ERS", display: "SENDAI" },
-  "NORTHERNHAPPINETS": { prefix: "AKITA_NORTHERN_HAPPINETS", display: "AKITA" },
   "AKITA": { prefix: "AKITA_NORTHERN_HAPPINETS", display: "AKITA" },
+  "NORTHERNHAPPINETS": { prefix: "AKITA_NORTHERN_HAPPINETS", display: "AKITA" },
   "ROBOTS": { prefix: "IBARAKI_ROBOTS", display: "IBARAKI" },
   "BREX": { prefix: "UTSUNOMIYA_BREX", display: "UTSUNOMIYA" },
   "CRANETHUNDERS": { prefix: "GUNMA_CRANE_THUNDERS", display: "GUNMA" },
@@ -57,12 +57,10 @@ let reportImagePath = "";
 const formattedDate = dateId ? `20${dateId.substring(0,2)}.${dateId.substring(2,4)}.${dateId.substring(4,6)}` : "NO DATA";
 
 try {
-  // 名前解析の修正
   const nameParts = urlGameDir.split('_');
   const gameId = nameParts[1] || "";
   const awayKey = nameParts[2] || "";
   const homeKey = nameParts[3] || "";
-  // フォルダ名に8桁の日付(20251227等)が含まれている場合の抽出、なければdateIdから補完
   const fullDateStr = nameParts[4] || `20${dateId}`;
 
   const awayConf = TEAM_MASTER[awayKey] || { prefix: awayKey, display: awayKey };
@@ -71,7 +69,6 @@ try {
   displayTeamAway = awayConf.display;
   displayTeamHome = homeConf.display;
 
-  // レポート画像名の組み立てを修正
   reportImagePath = `${reportRawBase}/${fullDateStr}_${gameId}_${awayKey}_${homeKey}.png`;
 
   const res = await fetch(`${apiGameURL}?t=${Date.now()}`, {
@@ -89,11 +86,15 @@ try {
         imagePath: `${githubRawBase}/${f.name}`
       };
 
-      // prefix判定（大文字小文字を区別せず、ファイル名に含まれるチーム名を検索）
-      if (f.name.toUpperCase().includes(awayConf.prefix.toUpperCase())) {
+      // 修正箇所：includes判定をより確実に（大文字統一）
+      const fileNameUpper = f.name.toUpperCase();
+      const awayPrefixUpper = awayConf.prefix.toUpperCase();
+      const homePrefixUpper = homeConf.prefix.toUpperCase();
+
+      if (fileNameUpper.includes(awayPrefixUpper)) {
         awayData.push(playerObj);
       } 
-      else if (f.name.toUpperCase().includes(homeConf.prefix.toUpperCase())) {
+      else if (fileNameUpper.includes(homePrefixUpper)) {
         homeData.push(playerObj);
       }
     });

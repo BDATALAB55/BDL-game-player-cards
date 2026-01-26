@@ -98,7 +98,6 @@ try {
       const fileName = parts[parts.length - 1];
       const folderName = parts[parts.length - 2];
       
-      // チームのsearchKeyがファイル名に含まれているか確認
       if (currentTeam.searchKey && fileName.toUpperCase().includes(currentTeam.searchKey)) {
         const nameParts = fileName.replace('.png', '').split('_');
         
@@ -107,11 +106,12 @@ try {
         const rawAway = nameParts[2] || "AWAY";
         const rawHome = nameParts[3] || "HOME";
 
-        // 辞書を使って表示用のチーム名を変換
         const displayAway = cityNameMap[rawAway.toUpperCase().replace(/[\s\-_]/g, '')] || rawAway;
         const displayHome = cityNameMap[rawHome.toUpperCase().replace(/[\s\-_]/g, '')] || rawHome;
 
-        const targetCardFolder = `B1_Cards_${gameId}_${fullDate}`;
+        // ★修正点：HOMEページと同じ「game_試合ID_AWAY_HOME_日付」の形式に統一
+        const targetCardFolder = `game_${gameId}_${rawAway}_${rawHome}_${fullDate}`;
+
         const reportObj = {
           id: folderName,
           date: `${fullDate.substring(0,4)}.${fullDate.substring(4,6)}.${fullDate.substring(6,8)}`,

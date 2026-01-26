@@ -8,28 +8,16 @@ const queryFolder = searchParams.get('folder') || "";
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
-// 1. URLの解析（どんな形式でも対応できるよう柔軟に）
+// URLから日付IDとフォルダ名を取得
 const segments = queryFolder.split('/').filter(Boolean);
-let dateId = "";
-let urlGameDir = "";
-
-if (segments.length >= 2) {
-  // 基本パターン: folder=251227/game_505068...
-  dateId = segments[0];
-  urlGameDir = segments[1];
-} else {
-  // チームページなど: folder=game_505068... のみのパターン
-  urlGameDir = segments[0] || "";
-  // フォルダ名の末尾から日付(8桁)を探す
-  const dateMatch = urlGameDir.match(/\d{8}$/);
-  dateId = dateMatch ? dateMatch[0].substring(2) : "NO_DATE";
-}
+const dateId = segments[0] || "";  
+const urlGameDir = segments[1] || ""; 
 
 const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/B1/${dateId}/${urlGameDir}`;
 const reportRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateId}`;
 const apiGameURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}/${urlGameDir}`;
 
-// 2. マスター表に基づく命名規則の完全定義
+// チーム名対応表（マスター）
 const TEAM_MASTER = {
   "HOKKAIDO": { prefix: "LEVANGA_HOKKAIDO", display: "HOKKAIDO", report: "LEVANGA" },
   "SENDAI": { prefix: "SENDAI_89ERS", display: "SENDAI", report: "89ERS" },
@@ -65,53 +53,51 @@ let displayTeamAway = "AWAY";
 let displayTeamHome = "HOME";
 let reportImagePath = "";
 
-const formattedDate = dateId.length === 6 ? `20${dateId.substring(0,2)}.${dateId.substring(2,4)}.${dateId.substring(4,6)}` : "GAME DAY";
-
 try {
-  // 3. フォルダ名から情報を抽出 (game_505068_AKITA_FENAGOYA_20251227)
-  const nameParts = urlGameDir.split('_');
-  const gameId = nameParts[1] || "";
-  const awayKey = nameParts[2] || ""; // 例: AKITA
-  const homeKey = nameParts[3] || ""; // 例: FENAGOYA
-  
-  // 日付の特定（フォルダ名末尾 or 親フォルダ名）
-  const reportDate = (nameParts[4] && nameParts[4].length === 8) ? nameParts[4] : `20${dateId}`;
-
-  const awayConf = TEAM_MASTER[awayKey] || { prefix: awayKey, display: awayKey, report: awayKey };
-  const homeConf = TEAM_MASTER[homeKey] || { prefix: homeKey, display: homeKey, report: homeKey };
-
-  displayTeamAway = awayConf.display;
-  displayTeamHome = homeConf.display;
-
-  // 4. ゲームレポートURLの生成
-  reportImagePath = `${reportRawBase}/${reportDate}_${gameId}_${awayConf.report}_${homeConf.report}.png`;
-
-  // 5. 選手カードの取得と振り分け
   const res = await fetch(`${apiGameURL}?t=${Date.now()}`, {
     headers: token ? { "Authorization": `token ${token}` } : {}
   });
   const files = await res.json();
 
-  if (Array.isArray(files)) {
+  if (Array.isArray(files) && files.length > 0) {
+    // フォルダ内のファイル名から、登場するチームを特定する
+    // 例: AKITA_NORTHERN_HAPPINETS_vs_FE_NAGOYA...
+    const sampleFile = files.find(f => f.name.includes('_vs_'))?.name || "";
+    const fParts = sampleFile.split('_vs_');
+    
+    // 対戦カードの特定（TEAMページからのB1_Cards_フォルダでも、これで中身から判明する）
+    let awayKey = Object.keys(TEAM_MASTER).find(k => fParts[0]?.includes(TEAM_MASTER[k].prefix)) || "";
+    let homeKey = Object.keys(TEAM_MASTER).find(k => fParts[1]?.includes(TEAM_MASTER[k].prefix)) || "";
+
+    const awayConf = TEAM_MASTER[awayKey] || { prefix: "UNKNOWN", display: "AWAY", report: "UNKNOWN" };
+    const homeConf = TEAM_MASTER[homeKey] || { prefix: "UNKNOWN", display: "HOME", report: "UNKNOWN" };
+
+    displayTeamAway = awayConf.display;
+    displayTeamHome = homeConf.display;
+
+    // ゲームレポート画像の生成
+    const gameId = urlGameDir.match(/\d{6}/)?.[0] || "";
+    const fullDate = urlGameDir.match(/\d{8}$/)?.[0] || `20${dateId}`;
+    reportImagePath = `${reportRawBase}/${fullDate}_${gameId}_${awayConf.report}_${homeConf.report}.png`;
+
     files.forEach(f => {
       if (!f.name.toLowerCase().endsWith('.png')) return;
-
+      
       const playerObj = {
         name: f.name.replace('.png', '').split('_').slice(-2).join(' '),
         imagePath: `${githubRawBase}/${f.name}`
       };
 
-      // 「選手スタッツ(カード)」列のprefixで判定
-      const fileNameUpper = f.name.toUpperCase();
-      if (fileNameUpper.startsWith(awayConf.prefix.toUpperCase())) {
+      // 各チームのprefixが含まれているかで振り分け
+      if (f.name.toUpperCase().includes(awayConf.prefix)) {
         awayData.push(playerObj);
-      } else if (fileNameUpper.startsWith(homeConf.prefix.toUpperCase())) {
+      } else if (f.name.toUpperCase().includes(homeConf.prefix)) {
         homeData.push(playerObj);
       }
     });
   }
 } catch (e) {
-  console.error("Critical Error:", e);
+  console.error("Fetch Error:", e);
 }
 ---
 
@@ -119,20 +105,21 @@ try {
   <div class="app-container bg-[#373A36] min-h-screen text-white font-avenir">
     <header class="pt-12 pb-6 px-8 border-b border-white/5 text-center relative">
       <button onclick="history.back()" class="absolute left-8 top-12 text-white/40 hover:text-white">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+        </svg>
       </button>
       <h1 class="text-2xl font-black uppercase tracking-[0.25em]">B1 CARDS</h1>
     </header>
 
     <div class="py-10 space-y-16 pb-32">
-      <div class="px-8">
-        <span class="text-gray-500 text-[12px] font-black uppercase tracking-[0.3em]">Gameday</span>
-        <h2 class="text-white text-[28px] font-bold uppercase tracking-[0.1em]">{formattedDate}</h2>
-      </div>
-
       <section class="px-8 flex flex-col items-center">
         <div class="w-full md:max-w-[500px] mx-auto cursor-pointer card-trigger rounded-xl overflow-hidden border border-white/10 shadow-2xl bg-black/40 min-h-[200px] flex items-center justify-center" data-img={reportImagePath}>
-          <img src={reportImagePath} class="w-full h-auto block" alt="Game Report" onerror="this.src='https://placehold.jp/24/333333/ffffff/400x500.png?text=REPORT%20LOADING...'" />
+          <img 
+            src={reportImagePath} 
+            class="w-full h-auto block" 
+            onerror="this.src='https://placehold.jp/24/333333/ffffff/400x500.png?text=REPORT%20LOADING...'"
+          />
         </div>
         <div class="mt-6 text-center">
           <span class="text-[16px] font-black tracking-[0.2em] uppercase">
@@ -147,22 +134,65 @@ try {
       ].map((team) => (
         <section>
           <div class="px-8 mb-6">
-            <span class={`${team.color} px-4 py-1.5 text-[15px] font-black uppercase rounded-sm`}>{team.label}</span>
+            <span class={`${team.color} px-4 py-1.5 text-[15px] font-black uppercase rounded-sm`}>
+              {team.label}
+            </span>
           </div>
-
-          <div class="flex overflow-x-auto snap-x gap-6 px-8 no-scrollbar pb-8">
-            {team.data.length > 0 ? team.data.map((p) => (
-              <div class="flex-none w-[80vw] max-w-[320px] snap-center">
-                <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 bg-black/20" data-img={p.imagePath}>
-                  <img src={p.imagePath} alt={p.name} class="w-full h-auto" loading="lazy" />
+          
+          <div class="flex overflow-x-auto gap-6 px-8 no-scrollbar pb-8">
+            {team.data.length > 0 ? (
+              team.data.map((p) => (
+                <div class="flex-none w-[80vw] max-w-[320px] snap-center">
+                  <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 bg-black/20" data-img={p.imagePath}>
+                    <img src={p.imagePath} class="w-full h-auto" loading="lazy" />
+                  </div>
                 </div>
+              ))
+            ) : (
+              <div class="px-8 w-full py-12 border border-dashed border-white/10 rounded-2xl text-center text-white/20 uppercase text-[10px] tracking-[0.4em]">
+                No Player Cards
               </div>
-            )) : (
-              <div class="px-8 w-full py-12 border border-dashed border-white/10 rounded-2xl text-center text-white/20 uppercase text-[10px] tracking-[0.4em]">No Player Cards</div>
             )}
           </div>
         </section>
       ))}
     </div>
+
+    <div id="modal" class="fixed inset-0 bg-black/98 z-50 hidden flex-col items-center justify-center p-6 backdrop-blur-md">
+      <div class="absolute top-8 right-8 text-white/40 text-4xl cursor-pointer p-4" id="close">&times;</div>
+      <img id="modal-img" src="" class="max-w-full max-h-[85vh] shadow-2xl rounded-xl mb-12" />
+      <a id="download-btn" href="" download class="bg-white text-black px-14 py-4 rounded-full font-black uppercase tracking-widest text-[11px]">
+        Download Card
+      </a>
+    </div>
   </div>
 </Layout>
+
+<script>
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modal-img') as HTMLImageElement;
+  const close = document.getElementById('close');
+  const downloadBtn = document.getElementById('download-btn') as HTMLAnchorElement;
+
+  document.querySelectorAll('.card-trigger').forEach(card => {
+    card.addEventListener('click', () => {
+      const imgSrc = card.getAttribute('data-img');
+      if (imgSrc && modalImg && downloadBtn) {
+        modalImg.src = imgSrc;
+        downloadBtn.href = imgSrc;
+        modal?.classList.remove('hidden');
+        modal?.classList.add('flex');
+      }
+    });
+  });
+
+  close?.addEventListener('click', () => {
+    modal?.classList.add('hidden');
+    modal?.classList.remove('flex');
+  });
+</script>
+
+<style is:global>
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>

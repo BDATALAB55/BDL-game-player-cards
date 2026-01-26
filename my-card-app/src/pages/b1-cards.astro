@@ -16,36 +16,34 @@ const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/out
 const reportRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateId}`;
 const apiGameURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}/${urlGameDir}`;
 
-// 21.38.30のマスター表に基づき、カードファイル名に含まれる文字列(prefix)を厳密に定義
+// スクリーンショット(21.38.30)の「選手スタッツ(カード)」列の名称を完全反映
 const TEAM_MASTER = {
-  "LEVANGA": { prefix: "LEVANGA_HOKKAIDO", display: "HOKKAIDO" },
-  "89ERS": { prefix: "SENDAI_89ERS", display: "SENDAI" },
-  "AKITA": { prefix: "AKITA_NORTHERN_HAPPINETS", display: "AKITA" },
-  "NORTHERNHAPPINETS": { prefix: "AKITA_NORTHERN_HAPPINETS", display: "AKITA" },
-  "ROBOTS": { prefix: "IBARAKI_ROBOTS", display: "IBARAKI" },
-  "BREX": { prefix: "UTSUNOMIYA_BREX", display: "UTSUNOMIYA" },
-  "CRANETHUNDERS": { prefix: "GUNMA_CRANE_THUNDERS", display: "GUNMA" },
-  "ALPHAS": { prefix: "KOSHIGAYA_ALPHAS", display: "KOSHIGAYA" },
-  "ALTIRI": { prefix: "ALTIRI_CHIBA", display: "A-CHIBA" },
-  "JETS": { prefix: "CHIBA_JETS", display: "CHIBA-J" },
-  "ALVARK": { prefix: "ALVARK_TOKYO", display: "A-TOKYO" },
-  "SUNROCKERS": { prefix: "SUNROCKERS_SHIBUYA", display: "SR-SHIBUYA" },
-  "BRAVETHUNDERS": { prefix: "KAWASAKI_BRAVE_THUNDERS", display: "KAWASAKI" },
-  "B-CORSAIRS": { prefix: "YOKOHAMA_B-CORSAIRS", display: "YOKOHAMA-BC" },
-  "GROUSES": { prefix: "TOYAMA_GROUSES", display: "TOYAMA" },
-  "NEOPHOENIX": { prefix: "SAN-EN_NEOPHOENIX", display: "SAN-EN" },
-  "SEAHORSES": { prefix: "SEAHORSES_MIKAWA", display: "MIKAWA" },
-  "FIGHTINGEAGLES": { prefix: "FIGHTING_EAGLES_NAGOYA", display: "FE-NAGOYA" },
-  "FENAGOYA": { prefix: "FIGHTING_EAGLES_NAGOYA", display: "FE-NAGOYA" },
-  "DIAMONDDOLPHINS": { prefix: "NAGOYA_DIAMOND_DOLPHINS", display: "NAGOYA-D" },
-  "LAKES": { prefix: "SHIGA_LAKES", display: "SHIGA" },
-  "HANNARYZ": { prefix: "KYOTO_HANNARYZ", display: "KYOTO" },
-  "EVESSA": { prefix: "OSAKA_EVESSA", display: "OSAKA" },
-  "SUSANOOMAGIC": { prefix: "SHIMANE_SUSANOO_MAGIC", display: "SHIMANE" },
-  "DRAGONFLIES": { prefix: "HIROSHIMA_DRAGONFLIES", display: "HIROSHIMA" },
-  "BALLOONERS": { prefix: "SAGA_BALLOONERS", display: "SAGA" },
-  "VELCA": { prefix: "NAGASAKI_VELCA", display: "NAGASAKI" },
-  "GOLDENKINGS": { prefix: "RYUKYU_GOLDEN_KINGS", display: "RYUKYU" }
+  "HOKKAIDO": { prefix: "LEVANGA_HOKKAIDO", display: "HOKKAIDO", report: "LEVANGA" },
+  "SENDAI": { prefix: "SENDAI_89ERS", display: "SENDAI", report: "89ERS" },
+  "AKITA": { prefix: "AKITA_NORTHERN_HAPPINETS", display: "AKITA", report: "NORTHERNHAPPINETS" },
+  "IBARAKI": { prefix: "IBARAKI_ROBOTS", display: "IBARAKI", report: "ROBOTS" },
+  "UTSUNOMIYA": { prefix: "UTSUNOMIYA_BREX", display: "UTSUNOMIYA", report: "BREX" },
+  "GUNMA": { prefix: "GUNMA_CRANE_THUNDERS", display: "GUNMA", report: "CRANETHUNDERS" },
+  "KOSHIGAYA": { prefix: "KOSHIGAYA_ALPHAS", display: "KOSHIGAYA", report: "ALPHAS" },
+  "ACHIBA": { prefix: "ALTIRI_CHIBA", display: "A-CHIBA", report: "ALTIRI" },
+  "CHIBAJ": { prefix: "CHIBA_JETS", display: "CHIBA-J", report: "JETS" },
+  "ATOKYO": { prefix: "ALVARK_TOKYO", display: "A-TOKYO", report: "ALVARK" },
+  "SHIBUYA": { prefix: "SUNROCKERS_SHIBUYA", display: "SR-SHIBUYA", report: "SUNROCKERS" },
+  "KAWASAKI": { prefix: "KAWASAKI_BRAVE_THUNDERS", display: "KAWASAKI", report: "BRAVETHUNDERS" },
+  "YOKOHAMABC": { prefix: "YOKOHAMA_B-CORSAIRS", display: "YOKOHAMA-BC", report: "B-CORSAIRS" },
+  "TOYAMA": { prefix: "TOYAMA_GROUSES", display: "TOYAMA", report: "GROUSES" },
+  "SANEN": { prefix: "SAN-EN_NEOPHOENIX", display: "SAN-EN", report: "NEOPHOENIX" },
+  "MIKAWA": { prefix: "SEAHORSES_MIKAWA", display: "MIKAWA", report: "SEAHORSES" },
+  "FENAGOYA": { prefix: "FIGHTING_EAGLES_NAGOYA", display: "FE-NAGOYA", report: "FIGHTINGEAGLES" },
+  "NAGOYAD": { prefix: "NAGOYA_DIAMOND_DOLPHINS", display: "NAGOYA-D", report: "DIAMONDDOLPHINS" },
+  "SHIGA": { prefix: "SHIGA_LAKES", display: "SHIGA", report: "LAKES" },
+  "KYOTO": { prefix: "KYOTO_HANNARYZ", display: "KYOTO", report: "HANNARYZ" },
+  "OSAKA": { prefix: "OSAKA_EVESSA", display: "OSAKA", report: "EVESSA" },
+  "SHIMANE": { prefix: "SHIMANE_SUSANOO_MAGIC", display: "SHIMANE", report: "SUSANOOMAGIC" },
+  "HIROSHIMA": { prefix: "HIROSHIMA_DRAGONFLIES", display: "HIROSHIMA", report: "DRAGONFLIES" },
+  "SAGA": { prefix: "SAGA_BALLOONERS", display: "SAGA", report: "BALLOONERS" },
+  "NAGASAKI": { prefix: "NAGASAKI_VELCA", display: "NAGASAKI", report: "VELCA" },
+  "RYUKYU": { prefix: "RYUKYU_GOLDEN_KINGS", display: "RYUKYU", report: "GOLDENKINGS" }
 };
 
 let awayData = [];
@@ -59,17 +57,19 @@ const formattedDate = dateId ? `20${dateId.substring(0,2)}.${dateId.substring(2,
 try {
   const nameParts = urlGameDir.split('_');
   const gameId = nameParts[1] || "";
-  const awayKey = nameParts[2] || "";
-  const homeKey = nameParts[3] || "";
-  const fullDateStr = nameParts[4] || `20${dateId}`;
+  const awayKey = nameParts[2] || ""; 
+  const homeKey = nameParts[3] || ""; 
 
-  const awayConf = TEAM_MASTER[awayKey] || { prefix: awayKey, display: awayKey };
-  const homeConf = TEAM_MASTER[homeKey] || { prefix: homeKey, display: homeKey };
+  // マスターから設定を取得
+  const awayConf = TEAM_MASTER[awayKey] || { prefix: awayKey, display: awayKey, report: awayKey };
+  const homeConf = TEAM_MASTER[homeKey] || { prefix: homeKey, display: homeKey, report: homeKey };
 
   displayTeamAway = awayConf.display;
   displayTeamHome = homeConf.display;
 
-  reportImagePath = `${reportRawBase}/${fullDateStr}_${gameId}_${awayKey}_${homeKey}.png`;
+  // ゲームレポートの画像名ロジック (20251227_505068_AWAY_HOME.png)
+  const reportDate = `20${dateId}`; 
+  reportImagePath = `${reportRawBase}/${reportDate}_${gameId}_${awayConf.report}_${homeConf.report}.png`;
 
   const res = await fetch(`${apiGameURL}?t=${Date.now()}`, {
     headers: token ? { "Authorization": `token ${token}` } : {}
@@ -86,15 +86,11 @@ try {
         imagePath: `${githubRawBase}/${f.name}`
       };
 
-      // 修正箇所：includes判定をより確実に（大文字統一）
-      const fileNameUpper = f.name.toUpperCase();
-      const awayPrefixUpper = awayConf.prefix.toUpperCase();
-      const homePrefixUpper = homeConf.prefix.toUpperCase();
-
-      if (fileNameUpper.includes(awayPrefixUpper)) {
+      // 選手スタッツ(カード)列のprefixで判定
+      if (f.name.toUpperCase().startsWith(awayConf.prefix.toUpperCase())) {
         awayData.push(playerObj);
       } 
-      else if (fileNameUpper.includes(homePrefixUpper)) {
+      else if (f.name.toUpperCase().startsWith(homeConf.prefix.toUpperCase())) {
         homeData.push(playerObj);
       }
     });
@@ -103,7 +99,6 @@ try {
   console.error("Fetch Error:", e);
 }
 ---
-
 <Layout title="B1 CARDS | B-Data Lab">
   <div class="app-container bg-[#373A36] min-h-screen text-white font-avenir">
     <header class="pt-12 pb-6 px-8 border-b border-white/5 text-center relative">

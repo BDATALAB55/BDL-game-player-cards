@@ -16,33 +16,53 @@ const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/out
 const reportRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateId}`;
 const apiGameURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}/${urlGameDir}`;
 
-// スクリーンショット(21.38.30)の「選手スタッツ(カード)」列の名称を完全反映
+// マスター表 を正確に反映
 const TEAM_MASTER = {
-  "HOKKAIDO": { prefix: "LEVANGA_HOKKAIDO", display: "HOKKAIDO", report: "LEVANGA" },
-  "SENDAI": { prefix: "SENDAI_89ERS", display: "SENDAI", report: "89ERS" },
-  "AKITA": { prefix: "AKITA_NORTHERN_HAPPINETS", display: "AKITA", report: "NORTHERNHAPPINETS" },
-  "IBARAKI": { prefix: "IBARAKI_ROBOTS", display: "IBARAKI", report: "ROBOTS" },
-  "UTSUNOMIYA": { prefix: "UTSUNOMIYA_BREX", display: "UTSUNOMIYA", report: "BREX" },
-  "GUNMA": { prefix: "GUNMA_CRANE_THUNDERS", display: "GUNMA", report: "CRANETHUNDERS" },
-  "KOSHIGAYA": { prefix: "KOSHIGAYA_ALPHAS", display: "KOSHIGAYA", report: "ALPHAS" },
+  "LEVANGA": { prefix: "LEVANGA_HOKKAIDO", display: "HOKKAIDO", report: "LEVANGA" },
+  "89ERS": { prefix: "SENDAI_89ERS", display: "SENDAI", report: "89ERS" },
+  "NORTHERNHAPPINETS": { prefix: "AKITA_NORTHERN_HAPPINETS", display: "AKITA", report: "NORTHERN_HAPPINETS" },
+  "AKITA": { prefix: "AKITA_NORTHERN_HAPPINETS", display: "AKITA", report: "NORTHERN_HAPPINETS" },
+  "ROBOTS": { prefix: "IBARAKI_ROBOTS", display: "IBARAKI", report: "ROBOTS" },
+  "BREX": { prefix: "UTSUNOMIYA_BREX", display: "UTSUNOMIYA", report: "BREX" },
+  "CRANETHUNDERS": { prefix: "GUNMA_CRANE_THUNDERS", display: "GUNMA", report: "CRANETHUNDERS" },
+  "ALPHAS": { prefix: "KOSHIGAYA_ALPHAS", display: "KOSHIGAYA", report: "ALPHAS" },
+  "ALTIRI": { prefix: "ALTIRI_CHIBA", display: "A-CHIBA", report: "ALTIRI" },
   "ACHIBA": { prefix: "ALTIRI_CHIBA", display: "A-CHIBA", report: "ALTIRI" },
+  "JETS": { prefix: "CHIBA_JETS", display: "CHIBA-J", report: "JETS" },
   "CHIBAJ": { prefix: "CHIBA_JETS", display: "CHIBA-J", report: "JETS" },
+  "ALVARK": { prefix: "ALVARK_TOKYO", display: "A-TOKYO", report: "ALVARK" },
   "ATOKYO": { prefix: "ALVARK_TOKYO", display: "A-TOKYO", report: "ALVARK" },
+  "SUNROCKERS": { prefix: "SUNROCKERS_SHIBUYA", display: "SR-SHIBUYA", report: "SUNROCKERS" },
   "SHIBUYA": { prefix: "SUNROCKERS_SHIBUYA", display: "SR-SHIBUYA", report: "SUNROCKERS" },
+  "BRAVETHUNDERS": { prefix: "KAWASAKI_BRAVE_THUNDERS", display: "KAWASAKI", report: "BRAVETHUNDERS" },
   "KAWASAKI": { prefix: "KAWASAKI_BRAVE_THUNDERS", display: "KAWASAKI", report: "BRAVETHUNDERS" },
+  "B-CORSAIRS": { prefix: "YOKOHAMA_B-CORSAIRS", display: "YOKOHAMA-BC", report: "B-CORSAIRS" },
   "YOKOHAMABC": { prefix: "YOKOHAMA_B-CORSAIRS", display: "YOKOHAMA-BC", report: "B-CORSAIRS" },
+  "GROUSES": { prefix: "TOYAMA_GROUSES", display: "TOYAMA", report: "GROUSES" },
   "TOYAMA": { prefix: "TOYAMA_GROUSES", display: "TOYAMA", report: "GROUSES" },
+  "NEOPHOENIX": { prefix: "SAN-EN_NEOPHOENIX", display: "SAN-EN", report: "NEOPHOENIX" },
   "SANEN": { prefix: "SAN-EN_NEOPHOENIX", display: "SAN-EN", report: "NEOPHOENIX" },
+  "SEAHORSES": { prefix: "SEAHORSES_MIKAWA", display: "MIKAWA", report: "SEAHORSES" },
   "MIKAWA": { prefix: "SEAHORSES_MIKAWA", display: "MIKAWA", report: "SEAHORSES" },
+  "FIGHTINGEAGLES": { prefix: "FIGHTING_EAGLES_NAGOYA", display: "FE-NAGOYA", report: "FIGHTINGEAGLES" },
   "FENAGOYA": { prefix: "FIGHTING_EAGLES_NAGOYA", display: "FE-NAGOYA", report: "FIGHTINGEAGLES" },
+  "DIAMONDDOLPHINS": { prefix: "NAGOYA_DIAMOND_DOLPHINS", display: "NAGOYA-D", report: "DIAMONDDOLPHINS" },
   "NAGOYAD": { prefix: "NAGOYA_DIAMOND_DOLPHINS", display: "NAGOYA-D", report: "DIAMONDDOLPHINS" },
+  "LAKES": { prefix: "SHIGA_LAKES", display: "SHIGA", report: "LAKES" },
   "SHIGA": { prefix: "SHIGA_LAKES", display: "SHIGA", report: "LAKES" },
+  "HANNARYZ": { prefix: "KYOTO_HANNARYZ", display: "KYOTO", report: "HANNARYZ" },
   "KYOTO": { prefix: "KYOTO_HANNARYZ", display: "KYOTO", report: "HANNARYZ" },
+  "EVESSA": { prefix: "OSAKA_EVESSA", display: "OSAKA", report: "EVESSA" },
   "OSAKA": { prefix: "OSAKA_EVESSA", display: "OSAKA", report: "EVESSA" },
+  "SUSANOOMAGIC": { prefix: "SHIMANE_SUSANOO_MAGIC", display: "SHIMANE", report: "SUSANOOMAGIC" },
   "SHIMANE": { prefix: "SHIMANE_SUSANOO_MAGIC", display: "SHIMANE", report: "SUSANOOMAGIC" },
+  "DRAGONFLIES": { prefix: "HIROSHIMA_DRAGONFLIES", display: "HIROSHIMA", report: "DRAGONFLIES" },
   "HIROSHIMA": { prefix: "HIROSHIMA_DRAGONFLIES", display: "HIROSHIMA", report: "DRAGONFLIES" },
+  "BALLOONERS": { prefix: "SAGA_BALLOONERS", display: "SAGA", report: "BALLOONERS" },
   "SAGA": { prefix: "SAGA_BALLOONERS", display: "SAGA", report: "BALLOONERS" },
+  "VELCA": { prefix: "NAGASAKI_VELCA", display: "NAGASAKI", report: "VELCA" },
   "NAGASAKI": { prefix: "NAGASAKI_VELCA", display: "NAGASAKI", report: "VELCA" },
+  "GOLDENKINGS": { prefix: "RYUKYU_GOLDEN_KINGS", display: "RYUKYU", report: "GOLDENKINGS" },
   "RYUKYU": { prefix: "RYUKYU_GOLDEN_KINGS", display: "RYUKYU", report: "GOLDENKINGS" }
 };
 
@@ -55,21 +75,24 @@ let reportImagePath = "";
 const formattedDate = dateId ? `20${dateId.substring(0,2)}.${dateId.substring(2,4)}.${dateId.substring(4,6)}` : "NO DATA";
 
 try {
+  // 修正：フォルダ名から gameID と チーム名を抽出
+  // urlGameDir: "game_505068_AKITA_FENAGOYA_20251227" または "game_505068_AKITA_FENAGOYA"
   const nameParts = urlGameDir.split('_');
   const gameId = nameParts[1] || "";
   const awayKey = nameParts[2] || ""; 
   const homeKey = nameParts[3] || ""; 
+  
+  // レポート画像用：フォルダ名末尾に日付がない場合は dateId を使う
+  const reportDateStr = nameParts[4] && nameParts[4].length === 8 ? nameParts[4] : `20${dateId}`;
 
-  // マスターから設定を取得
   const awayConf = TEAM_MASTER[awayKey] || { prefix: awayKey, display: awayKey, report: awayKey };
   const homeConf = TEAM_MASTER[homeKey] || { prefix: homeKey, display: homeKey, report: homeKey };
 
   displayTeamAway = awayConf.display;
   displayTeamHome = homeConf.display;
 
-  // ゲームレポートの画像名ロジック (20251227_505068_AWAY_HOME.png)
-  const reportDate = `20${dateId}`; 
-  reportImagePath = `${reportRawBase}/${reportDate}_${gameId}_${awayConf.report}_${homeConf.report}.png`;
+  // ゲームレポートのパス生成
+  reportImagePath = `${reportRawBase}/${reportDateStr}_${gameId}_${awayConf.report}_${homeConf.report}.png`;
 
   const res = await fetch(`${apiGameURL}?t=${Date.now()}`, {
     headers: token ? { "Authorization": `token ${token}` } : {}
@@ -86,11 +109,12 @@ try {
         imagePath: `${githubRawBase}/${f.name}`
       };
 
-      // 選手スタッツ(カード)列のprefixで判定
-      if (f.name.toUpperCase().startsWith(awayConf.prefix.toUpperCase())) {
+      // 修正：ファイル名の先頭が prefix と一致するか判定
+      const fileNameUpper = f.name.toUpperCase();
+      if (fileNameUpper.startsWith(awayConf.prefix.toUpperCase())) {
         awayData.push(playerObj);
       } 
-      else if (f.name.toUpperCase().startsWith(homeConf.prefix.toUpperCase())) {
+      else if (fileNameUpper.startsWith(homeConf.prefix.toUpperCase())) {
         homeData.push(playerObj);
       }
     });
@@ -99,6 +123,7 @@ try {
   console.error("Fetch Error:", e);
 }
 ---
+
 <Layout title="B1 CARDS | B-Data Lab">
   <div class="app-container bg-[#373A36] min-h-screen text-white font-avenir">
     <header class="pt-12 pb-6 px-8 border-b border-white/5 text-center relative">

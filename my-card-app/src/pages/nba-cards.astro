@@ -8,7 +8,7 @@ const queryFolder = searchParams.get('folder') || "";
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
-// 【ロジック死守】URLからゲームIDと日付を抽出
+// --- ロジック: URLからゲームIDと日付を抽出 ---
 const gameIdMatch = queryFolder.match(/\d{10}/);
 const gameId = gameIdMatch ? gameIdMatch[0] : "";
 const segments = queryFolder.split('/').filter(Boolean);
@@ -18,6 +18,7 @@ let teamsData = [];
 let reportImagePath = "";
 
 try {
+  // 1. 選手カード用フォルダの探索
   const listApi = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players/${dateId}?t=${Date.now()}`;
   const res = await fetch(listApi, { headers: token ? { "Authorization": `token ${token}` } : {} });
   const items = await res.json();
@@ -52,6 +53,7 @@ try {
         });
       }
 
+      // 2. 試合レポート画像の取得
       const reportApiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/reports/NBA/${dateId}?t=${Date.now()}`;
       const reportRes = await fetch(reportApiURL, { headers: token ? { "Authorization": `token ${token}` } : {} });
       const reportFiles = await reportRes.json();
@@ -127,10 +129,10 @@ const teamColorMap = {
                 <div class="mt-4 flex justify-center">
                   <a 
                     href={`/nba-players?name=${encodeURIComponent(p.name)}`}
-                    class="bg-white/10 border border-white/10 hover:bg-white/20 px-6 py-2.5 rounded-full transition-all active:scale-95"
+                    class="bg-white/10 border border-white/10 hover:bg-white/20 px-10 py-2.5 rounded-full transition-all active:scale-95 min-w-[140px] text-center"
                   >
                     <span class="text-[10px] font-black uppercase tracking-[0.2em] text-white/80">
-                      Player Stats
+                      {p.name}
                     </span>
                   </a>
                 </div>

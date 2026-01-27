@@ -8,8 +8,9 @@ const queryFolder = searchParams.get('folder') || "";
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
-// --- 【最強ロジック】URLから日付と試合IDを抽出 ---
-const gameIdMatch = queryFolder.match(/\d{6,}/); // B1は6桁以上の数字
+// --- 【修正：URLから試合IDと日付を厳密に抽出】 ---
+// queryFolder: "20260125/game_505143_SUSANOOMAGIC_89ERS_20260125" のような形式を想定
+const gameIdMatch = queryFolder.match(/\d{6,}/); 
 const gameId = gameIdMatch ? gameIdMatch[0] : "";
 const segments = queryFolder.split('/').filter(Boolean);
 const dateId = segments[0] || ""; 
@@ -20,7 +21,7 @@ let displayTeamAway = "AWAY";
 let displayTeamHome = "HOME";
 let reportImagePath = "";
 
-// チーム名マスタ（デザイン維持）
+// チーム名マスタ
 const TEAM_MASTER = {
   "HOKKAIDO": { card: "LEVANGA_HOKKAIDO", display: "HOKKAIDO", report: "LEVANGA" },
   "SENDAI": { card: "SENDAI_89ERS", display: "SENDAI", report: "89ERS" },
@@ -62,25 +63,26 @@ const findConfig = (key) => {
 };
 
 try {
-  // 1. GitHubから正しいフォルダを検索
+  // 1. 指定された日付フォルダ内の全アイテムをリストアップ
   const listApi = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}?t=${Date.now()}`;
   const res = await fetch(listApi, { headers: token ? { "Authorization": `token ${token}` } : {} });
   const items = await res.json();
 
   if (Array.isArray(items)) {
+    // 【重要】URLのgameIdと一致するフォルダだけを特定
     const realFolder = items.find(item => item.name.includes(gameId) && item.type === 'dir');
     
     if (realFolder) {
       const folderPath = realFolder.path;
       const rawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${folderPath}`;
       
-      // フォルダ名の構成からチームを特定 (game_ID_AWAY_HOME_DATE)
       const dirParts = realFolder.name.split('_');
       const awayConf = findConfig(dirParts[2]);
       const homeConf = findConfig(dirParts[3]);
       displayTeamAway = awayConf.display;
       displayTeamHome = homeConf.display;
 
+      // 2. 特定した試合フォルダの中にあるファイルだけを取得
       const filesRes = await fetch(realFolder.url, { headers: token ? { "Authorization": `token ${token}` } : {} });
       const files = await filesRes.json();
 
@@ -101,7 +103,7 @@ try {
         });
       }
 
-      // レポート画像の特定
+      // 3. レポート画像もこの試合IDに限定して取得
       const reportApiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/reports/B1/${dateId}?t=${Date.now()}`;
       const reportRes = await fetch(reportApiURL, { headers: token ? { "Authorization": `token ${token}` } : {} });
       const reportFiles = await reportRes.json();
@@ -174,7 +176,7 @@ try {
               ))
             ) : (
               <div class="px-8 w-full py-12 border border-dashed border-white/10 rounded-2xl text-center text-white/20 uppercase text-[10px] tracking-[0.4em]">
-                No Player Cards Found
+                No Player Cards Found for {team.label}
               </div>
             )}
           </div>

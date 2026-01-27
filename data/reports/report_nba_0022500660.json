@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500660",
+  "date": "2026.01.26",
+  "venue": "TD Garden",
+  "attendance": 19156,
+  "home": {
+    "id": "1610612738",
+    "total": {
+      "pts": 102,
+      "fgm": 39,
+      "fga": 90,
+      "f2m": 26,
+      "f2a": 56,
+      "f3m": 13,
+      "f3a": 34,
+      "ftm": 11,
+      "fta": 18,
+      "reb": 59,
+      "oreb": 10,
+      "dreb": 31,
+      "ast": 24,
+      "tov": 17,
+      "stl": 11,
+      "blk": 4,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "36:13",
+        "pts": 20,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "30",
+        "name": "SAM HAUSER",
+        "min": "29:39",
+        "pts": 11,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "22:07",
+        "pts": 4,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "34:44",
+        "pts": 23,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "34:28",
+        "pts": 18,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612757",
+    "total": {
+      "pts": 94,
+      "fgm": 32,
+      "fga": 78,
+      "f2m": 22,
+      "f2a": 38,
+      "f3m": 10,
+      "f3a": 40,
+      "ftm": 20,
+      "fta": 30,
+      "reb": 55,
+      "oreb": 11,
+      "dreb": 35,
+      "ast": 17,
+      "tov": 18,
+      "stl": 11,
+      "blk": 8,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "91",
+        "name": "SIDY CISSOKO",
+        "min": "24:46",
+        "pts": 4,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "36:13",
+        "pts": 18,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "28:19",
+        "pts": 9,
+        "reb": 15,
+        "ast": 1
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "34:19",
+        "pts": 9,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "JRUE HOLIDAY",
+        "min": "24:26",
+        "pts": 14,
+        "reb": 3,
+        "ast": 3
+      }
+    ]
+  }
+}

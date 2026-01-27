@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500661",
+  "date": "2026.01.26",
+  "venue": "United Center",
+  "attendance": 21298,
+  "home": {
+    "id": "1610612741",
+    "total": {
+      "pts": 118,
+      "fgm": 43,
+      "fga": 82,
+      "f2m": 25,
+      "f2a": 33,
+      "f3m": 18,
+      "f3a": 49,
+      "ftm": 14,
+      "fta": 18,
+      "reb": 45,
+      "oreb": 5,
+      "dreb": 35,
+      "ast": 31,
+      "tov": 15,
+      "stl": 5,
+      "blk": 0,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "27:46",
+        "pts": 7,
+        "reb": 1,
+        "ast": 5
+      },
+      {
+        "no": "25",
+        "name": "JALEN SMITH",
+        "min": "36:44",
+        "pts": 13,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "9",
+        "name": "NIKOLA VUČEVIĆ",
+        "min": "36:03",
+        "pts": 18,
+        "reb": 11,
+        "ast": 5
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "22:19",
+        "pts": 11,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "COBY WHITE",
+        "min": "31:06",
+        "pts": 23,
+        "reb": 5,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612747",
+    "total": {
+      "pts": 129,
+      "fgm": 46,
+      "fga": 82,
+      "f2m": 30,
+      "f2a": 49,
+      "f3m": 16,
+      "f3a": 33,
+      "ftm": 21,
+      "fta": 29,
+      "reb": 43,
+      "oreb": 3,
+      "dreb": 32,
+      "ast": 26,
+      "tov": 6,
+      "stl": 7,
+      "blk": 3,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "JAKE LARAVIA",
+        "min": "33:25",
+        "pts": 8,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "32:52",
+        "pts": 24,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "22:06",
+        "pts": 6,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "32:16",
+        "pts": 12,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "38:04",
+        "pts": 46,
+        "reb": 7,
+        "ast": 12
+      }
+    ]
+  }
+}

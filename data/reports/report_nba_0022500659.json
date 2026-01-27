@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500659",
+  "date": "2026.01.26",
+  "venue": "State Farm Arena",
+  "attendance": 12210,
+  "home": {
+    "id": "1610612737",
+    "total": {
+      "pts": 132,
+      "fgm": 49,
+      "fga": 98,
+      "f2m": 31,
+      "f2a": 55,
+      "f3m": 18,
+      "f3a": 43,
+      "ftm": 16,
+      "fta": 17,
+      "reb": 54,
+      "oreb": 9,
+      "dreb": 37,
+      "ast": 35,
+      "tov": 14,
+      "stl": 11,
+      "blk": 9,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "COREY KISPERT",
+        "min": "16:43",
+        "pts": 7,
+        "reb": 0,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "34:31",
+        "pts": 15,
+        "reb": 7,
+        "ast": 6
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "31:16",
+        "pts": 12,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "34:39",
+        "pts": 22,
+        "reb": 5,
+        "ast": 9
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "34:05",
+        "pts": 21,
+        "reb": 3,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612754",
+    "total": {
+      "pts": 116,
+      "fgm": 43,
+      "fga": 93,
+      "f2m": 33,
+      "f2a": 58,
+      "f3m": 10,
+      "f3a": 35,
+      "ftm": 20,
+      "fta": 25,
+      "reb": 52,
+      "oreb": 7,
+      "dreb": 35,
+      "ast": 31,
+      "tov": 16,
+      "stl": 11,
+      "blk": 7,
+      "pf": 12
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "JOHNNY FURPHY",
+        "min": "18:27",
+        "pts": 6,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "JARACE WALKER",
+        "min": "29:35",
+        "pts": 12,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "35:14",
+        "pts": 26,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "23",
+        "name": "AARON NESMITH",
+        "min": "29:13",
+        "pts": 18,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "30:17",
+        "pts": 6,
+        "reb": 5,
+        "ast": 13
+      }
+    ]
+  }
+}

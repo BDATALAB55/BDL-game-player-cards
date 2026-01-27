@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500662",
+  "date": "2026.01.26",
+  "venue": "Toyota Center",
+  "attendance": 18055,
+  "home": {
+    "id": "1610612745",
+    "total": {
+      "pts": 108,
+      "fgm": 41,
+      "fga": 92,
+      "f2m": 30,
+      "f2a": 55,
+      "f3m": 11,
+      "f3a": 37,
+      "ftm": 15,
+      "fta": 20,
+      "reb": 67,
+      "oreb": 16,
+      "dreb": 41,
+      "ast": 29,
+      "tov": 16,
+      "stl": 9,
+      "blk": 3,
+      "pf": 13
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "37:02",
+        "pts": 33,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "33:34",
+        "pts": 8,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "33:41",
+        "pts": 33,
+        "reb": 9,
+        "ast": 6
+      },
+      {
+        "no": "17",
+        "name": "TARI EASON",
+        "min": "26:38",
+        "pts": 17,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "41:36",
+        "pts": 8,
+        "reb": 8,
+        "ast": 14
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612763",
+    "total": {
+      "pts": 99,
+      "fgm": 39,
+      "fga": 105,
+      "f2m": 32,
+      "f2a": 68,
+      "f3m": 7,
+      "f3a": 37,
+      "ftm": 14,
+      "fta": 17,
+      "reb": 60,
+      "oreb": 21,
+      "dreb": 31,
+      "ast": 26,
+      "tov": 13,
+      "stl": 9,
+      "blk": 5,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "CEDRIC COWARD",
+        "min": "29:40",
+        "pts": 8,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "32:14",
+        "pts": 17,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "SANTI ALDAMA",
+        "min": "27:25",
+        "pts": 17,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "26:10",
+        "pts": 12,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "24",
+        "name": "CAM SPENCER",
+        "min": "27:22",
+        "pts": 5,
+        "reb": 5,
+        "ast": 13
+      }
+    ]
+  }
+}

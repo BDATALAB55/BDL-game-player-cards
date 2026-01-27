@@ -8,7 +8,7 @@ const queryFolder = searchParams.get('folder') || "";
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
-// 1. URLから情報を抽出
+// 【ロジック死守】URLからゲームIDと日付を抽出
 const gameIdMatch = queryFolder.match(/\d{10}/);
 const gameId = gameIdMatch ? gameIdMatch[0] : "";
 const segments = queryFolder.split('/').filter(Boolean);
@@ -16,10 +16,9 @@ const dateId = segments[0] || "";
 
 let teamsData = [];
 let reportImagePath = "";
-let debugLog = "";
 
 try {
-  // 2. 日付フォルダをスキャンして正確なフォルダを特定
+  // 【ロジック死守】日付フォルダをスキャンして正確なフォルダを特定
   const listApi = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players/${dateId}?t=${Date.now()}`;
   const res = await fetch(listApi, { headers: token ? { "Authorization": `token ${token}` } : {} });
   const items = await res.json();
@@ -31,7 +30,6 @@ try {
       const folderPath = realFolder.path;
       const rawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${folderPath}`;
 
-      // 3. 選手カードを取得
       const filesRes = await fetch(realFolder.url, { headers: token ? { "Authorization": `token ${token}` } : {} });
       const files = await filesRes.json();
 
@@ -55,7 +53,7 @@ try {
         });
       }
 
-      // 4. ゲームレポート画像の取得 (NBA用のパス構成)
+      // レポート画像の取得
       const reportApiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/reports/NBA/${dateId}?t=${Date.now()}`;
       const reportRes = await fetch(reportApiURL, { headers: token ? { "Authorization": `token ${token}` } : {} });
       const reportFiles = await reportRes.json();
@@ -71,7 +69,6 @@ try {
   console.error("Fetch Error:", e);
 }
 
-// チームカラー設定（B1のスタイルに合わせる）
 const teamColorMap = {
   ATL: 'bg-[#E03A3E]', BOS: 'bg-[#007A33]', BKN: 'bg-black border border-white/20',
   CHA: 'bg-[#00788C]', CHI: 'bg-[#CE1141]', CLE: 'bg-[#6F263D]',
@@ -100,48 +97,39 @@ const teamColorMap = {
     <div class="py-10 space-y-16 pb-32">
       <section class="px-8 flex flex-col items-center">
         <div class="w-full md:max-w-[500px] mx-auto cursor-pointer card-trigger rounded-xl overflow-hidden border border-white/10 shadow-2xl bg-black/40 min-h-[200px] flex items-center justify-center" data-img={reportImagePath}>
-          <img 
-            src={reportImagePath} 
-            class="w-full h-auto block" 
-            onerror="this.src='https://placehold.jp/24/333333/ffffff/400x500.png?text=NBA%20REPORT%20NOT%20FOUND'"
-          />
+          <img src={reportImagePath} class="w-full h-auto block" onerror="this.src='https://placehold.jp/24/333333/ffffff/400x500.png?text=NBA%20REPORT%20NOT%20FOUND'" />
         </div>
         <div class="mt-6 text-center">
           <span class="text-[16px] font-black tracking-[0.2em] uppercase">
             {teamsData.length > 0 ? (
-              <>
-                {teamsData[0]?.teamName} <span class="text-blue-500 mx-2 text-[12px]">vs</span> {teamsData[1]?.teamName || '---'}
-              </>
+              <>{teamsData[0]?.teamName} <span class="text-blue-500 mx-2 text-[12px]">vs</span> {teamsData[1]?.teamName || '---'}</>
             ) : "LOADING GAME..."}
           </span>
         </div>
       </section>
 
-      {teamsData.map((team, index) => (
+      {teamsData.map((team) => (
         <section>
           <div class="px-8 mb-6">
-            <span class={`${teamColorMap[team.teamName] || 'bg-gray-700'} px-4 py-1.5 text-[15px] font-black uppercase rounded-sm inline-block shadow-lg`}>
+            <a 
+              href={`/teams/${team.teamName.toLowerCase()}`} 
+              class={`${teamColorMap[team.teamName] || 'bg-gray-700'} px-6 py-2 text-[15px] font-black uppercase rounded-full inline-block shadow-lg hover:opacity-80 transition-opacity`}
+            >
               {team.teamName}
-            </span>
+            </a>
           </div>
           
           <div class="flex overflow-x-auto gap-6 px-8 no-scrollbar pb-8 snap-x snap-mandatory">
             {team.players.map((p) => (
               <div class="flex-none w-[80vw] max-w-[320px] snap-center">
-                <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 bg-black/20 shadow-xl transition-transform active:scale-95" data-img={p.imagePath}>
+                <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 bg-black/20 shadow-xl" data-img={p.imagePath}>
                   <img src={p.imagePath} alt={p.name} class="w-full h-auto block" loading="lazy" />
                 </div>
-                </div>
+              </div>
             ))}
           </div>
         </section>
       ))}
-
-      {teamsData.length === 0 && (
-        <div class="px-8 w-full py-20 text-center text-white/20 uppercase text-[10px] tracking-[0.4em]">
-          No Player Cards Found
-        </div>
-      )}
     </div>
 
     <div id="modal" class="fixed inset-0 bg-black/98 z-50 hidden flex-col items-center justify-center p-6 backdrop-blur-md">
@@ -155,6 +143,7 @@ const teamColorMap = {
 </Layout>
 
 <script>
+  // モーダル処理スクリプト（変更なし）
   const modal = document.getElementById('modal');
   const modalImg = document.getElementById('modal-img') as HTMLImageElement;
   const close = document.getElementById('close');
@@ -175,10 +164,8 @@ const teamColorMap = {
   close?.addEventListener('click', () => {
     modal?.classList.add('hidden');
     modal?.classList.remove('flex');
-    if(modalImg) modalImg.src = ""; // クリア
   });
 
-  // モーダル背景クリックで閉じる
   modal?.addEventListener('click', (e) => {
     if (e.target === modal) close?.click();
   });
@@ -187,7 +174,5 @@ const teamColorMap = {
 <style is:global>
   .no-scrollbar::-webkit-scrollbar { display: none; }
   .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-  
-  /* B1の雰囲気に合わせたフォント設定（必要に応じて） */
   .font-avenir { font-family: 'Avenir Next', 'Helvetica Neue', Arial, sans-serif; }
 </style>

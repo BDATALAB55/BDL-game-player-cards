@@ -8,56 +8,11 @@ const queryFolder = searchParams.get('folder') || "";
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
-// 1. パスの徹底解析
-const cleanPath = queryFolder.replace(/^\//, '').replace(/\/$/, '');
-const segments = cleanPath.split('/');
-const urlGameDir = segments.find(s => s.startsWith('game_')) || "";
-const dateId = segments[0] !== urlGameDir ? segments[0] : (urlGameDir.split('_').pop()?.slice(-6) || "");
-
-// チーム名マスタ（逆引き対応版）
-const TEAM_MASTER = {
-  "HOKKAIDO": { card: "LEVANGA_HOKKAIDO", display: "HOKKAIDO", report: "LEVANGA", alt: ["LEVANGA"] },
-  "SENDAI": { card: "SENDAI_89ERS", display: "SENDAI", report: "89ERS", alt: ["89ERS"] },
-  "AKITA": { card: "AKITA_NORTHERN_HAPPINETS", display: "AKITA", report: "NORTHERNHAPPINETS", alt: ["NORTHERNHAPPINETS", "NORTHERN_HAPPINETS"] },
-  "IBARAKI": { card: "IBARAKI_ROBOTS", display: "IBARAKI", report: "ROBOTS", alt: [] },
-  "UTSUNOMIYA": { card: "UTSUNOMIYA_BREX", display: "UTSUNOMIYA", report: "BREX", alt: [] },
-  "GUNMA": { card: "GUNMA_CRANE_THUNDERS", display: "GUNMA", report: "CRANETHUNDERS", alt: [] },
-  "KOSHIGAYA": { card: "KOSHIGAYA_ALPHAS", display: "KOSHIGAYA", report: "ALPHAS", alt: [] },
-  "ACHIBA": { card: "ALTIRI_CHIBA", display: "A-CHIBA", report: "ALTIRI", alt: [] },
-  "CHIBAJ": { card: "CHIBA_JETS", display: "CHIBA-J", report: "JETS", alt: [] },
-  "ATOKYO": { card: "ALVARK_TOKYO", display: "A-TOKYO", report: "ALVARK", alt: [] },
-  "SHIBUYA": { card: "SUNROCKERS_SHIBUYA", display: "SR-SHIBUYA", report: "SUNROCKERS", alt: [] },
-  "KAWASAKI": { card: "KAWASAKI_BRAVE_THUNDERS", display: "KAWASAKI", report: "BRAVETHUNDERS", alt: [] },
-  "YOKOHAMABC": { card: "YOKOHAMA_B-CORSAIRS", display: "YOKOHAMA-BC", report: "B-CORSAIRS", alt: ["B-CORSAIRS"] },
-  "TOYAMA": { card: "TOYAMA_GROUSES", display: "TOYAMA", report: "GROUSES", alt: [] },
-  "SANEN": { card: "SAN-EN_NEOPHOENIX", display: "SAN-EN", report: "NEOPHOENIX", alt: [] },
-  "MIKAWA": { card: "SEAHORSES_MIKAWA", display: "MIKAWA", report: "SEAHORSES", alt: [] },
-  "FENAGOYA": { card: "FIGHTING_EAGLES_NAGOYA", display: "FE-NAGOYA", report: "FIGHTINGEAGLES", alt: [] },
-  "NAGOYAD": { card: "NAGOYA_DIAMOND_DOLPHINS", display: "NAGOYA-D", report: "DIAMONDDOLPHINS", alt: [] },
-  "SHIGA": { card: "SHIGA_LAKES", display: "SHIGA", report: "LAKES", alt: [] },
-  "KYOTO": { card: "KYOTO_HANNARYZ", display: "KYOTO", report: "HANNARYZ", alt: [] },
-  "OSAKA": { card: "OSAKA_EVESSA", display: "OSAKA", report: "EVESSA", alt: [] },
-  "SHIMANE": { card: "SHIMANE_SUSANOO_MAGIC", display: "SHIMANE", report: "SUSANOOMAGIC", alt: ["SUSANOOMAGIC"] },
-  "HIROSHIMA": { card: "HIROSHIMA_DRAGONFLIES", display: "HIROSHIMA", report: "DRAGONFLIES", alt: [] },
-  "SAGA": { card: "SAGA_BALLOONERS", display: "SAGA", report: "BALLOONERS", alt: [] },
-  "NAGASAKI": { card: "NAGASAKI_VELCA", display: "NAGASAKI", report: "VELCA", alt: [] },
-  "RYUKYU": { card: "RYUKYU_GOLDEN_KINGS", display: "RYUKYU", report: "GOLDENKINGS", alt: [] }
-};
-
-// URLの文字列（SUSANOOMAGIC等）からマスタのキー（SHIMANE等）を見つける関数
-const findConfig = (key) => {
-  const upperKey = key.toUpperCase();
-  // 1. 直接一致
-  if (TEAM_MASTER[upperKey]) return TEAM_MASTER[upperKey];
-  // 2. card名に含まれるか、またはaltに含まれるか
-  for (const teamKey in TEAM_MASTER) {
-    const conf = TEAM_MASTER[teamKey];
-    if (conf.card.includes(upperKey) || conf.report.includes(upperKey) || conf.alt.includes(upperKey)) {
-      return conf;
-    }
-  }
-  return { card: key, display: key, report: key };
-};
+// --- 【最強ロジック】URLから日付と試合IDを抽出 ---
+const gameIdMatch = queryFolder.match(/\d{6,}/); // B1は6桁以上の数字
+const gameId = gameIdMatch ? gameIdMatch[0] : "";
+const segments = queryFolder.split('/').filter(Boolean);
+const dateId = segments[0] || ""; 
 
 let awayData = [];
 let homeData = [];
@@ -65,55 +20,108 @@ let displayTeamAway = "AWAY";
 let displayTeamHome = "HOME";
 let reportImagePath = "";
 
-if (urlGameDir) {
-  try {
-    const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/B1/${dateId}/${urlGameDir}`;
-    const reportRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateId}`;
-    const apiGameURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}/${urlGameDir}`;
+// チーム名マスタ（デザイン維持）
+const TEAM_MASTER = {
+  "HOKKAIDO": { card: "LEVANGA_HOKKAIDO", display: "HOKKAIDO", report: "LEVANGA" },
+  "SENDAI": { card: "SENDAI_89ERS", display: "SENDAI", report: "89ERS" },
+  "AKITA": { card: "AKITA_NORTHERN_HAPPINETS", display: "AKITA", report: "NORTHERNHAPPINETS" },
+  "IBARAKI": { card: "IBARAKI_ROBOTS", display: "IBARAKI", report: "ROBOTS" },
+  "UTSUNOMIYA": { card: "UTSUNOMIYA_BREX", display: "UTSUNOMIYA", report: "BREX" },
+  "GUNMA": { card: "GUNMA_CRANE_THUNDERS", display: "GUNMA", report: "CRANETHUNDERS" },
+  "KOSHIGAYA": { card: "KOSHIGAYA_ALPHAS", display: "KOSHIGAYA", report: "ALPHAS" },
+  "ACHIBA": { card: "ALTIRI_CHIBA", display: "A-CHIBA", report: "ALTIRI" },
+  "CHIBAJ": { card: "CHIBA_JETS", display: "CHIBA-J", report: "JETS" },
+  "ATOKYO": { card: "ALVARK_TOKYO", display: "A-TOKYO", report: "ALVARK" },
+  "SHIBUYA": { card: "SUNROCKERS_SHIBUYA", display: "SR-SHIBUYA", report: "SUNROCKERS" },
+  "KAWASAKI": { card: "KAWASAKI_BRAVE_THUNDERS", display: "KAWASAKI", report: "BRAVETHUNDERS" },
+  "YOKOHAMABC": { card: "YOKOHAMA_B-CORSAIRS", display: "YOKOHAMA-BC", report: "B-CORSAIRS" },
+  "TOYAMA": { card: "TOYAMA_GROUSES", display: "TOYAMA", report: "GROUSES" },
+  "SANEN": { card: "SAN-EN_NEOPHOENIX", display: "SAN-EN", report: "NEOPHOENIX" },
+  "MIKAWA": { card: "SEAHORSES_MIKAWA", display: "MIKAWA", report: "SEAHORSES" },
+  "FENAGOYA": { card: "FIGHTING_EAGLES_NAGOYA", display: "FE-NAGOYA", report: "FIGHTINGEAGLES" },
+  "NAGOYAD": { card: "NAGOYA_DIAMOND_DOLPHINS", display: "NAGOYA-D", report: "DIAMONDDOLPHINS" },
+  "SHIGA": { card: "SHIGA_LAKES", display: "SHIGA", report: "LAKES" },
+  "KYOTO": { card: "KYOTO_HANNARYZ", display: "KYOTO", report: "HANNARYZ" },
+  "OSAKA": { card: "OSAKA_EVESSA", display: "OSAKA", report: "EVESSA" },
+  "SHIMANE": { card: "SHIMANE_SUSANOO_MAGIC", display: "SHIMANE", report: "SUSANOOMAGIC" },
+  "HIROSHIMA": { card: "HIROSHIMA_DRAGONFLIES", display: "HIROSHIMA", report: "DRAGONFLIES" },
+  "SAGA": { card: "SAGA_BALLOONERS", display: "SAGA", report: "BALLOONERS" },
+  "NAGASAKI": { card: "NAGASAKI_VELCA", display: "NAGASAKI", report: "VELCA" },
+  "RYUKYU": { card: "RYUKYU_GOLDEN_KINGS", display: "RYUKYU", report: "GOLDENKINGS" }
+};
 
-    const res = await fetch(`${apiGameURL}?t=${Date.now()}`, {
-      headers: token ? { "Authorization": `token ${token}` } : {}
-    });
-    const files = await res.json();
-
-    const dirParts = urlGameDir.split('_'); // game, 505143, SUSANOOMAGIC, 89ERS, 20260125
-    const awayConf = findConfig(dirParts[2]);
-    const homeConf = findConfig(dirParts[3]);
-
-    displayTeamAway = awayConf.display;
-    displayTeamHome = homeConf.display;
-
-    const gameId = dirParts[1];
-    const fullDate = dirParts[4];
-    reportImagePath = `${reportRawBase}/${fullDate}_${gameId}_${awayConf.report}_${homeConf.report}.png`;
-
-    if (Array.isArray(files)) {
-      files.forEach(f => {
-        if (!f.name.toLowerCase().endsWith('.png')) return;
-        const fileName = f.name.toUpperCase();
-        const playerObj = {
-          name: f.name.replace('.png', '').split('_').slice(-2).join(' '),
-          imagePath: `${githubRawBase}/${f.name}`
-        };
-
-        // 選手カードのファイル名にマスタのcard文字列が含まれているか
-        if (fileName.includes(awayConf.card.toUpperCase())) {
-          awayData.push(playerObj);
-        } else if (fileName.includes(homeConf.card.toUpperCase())) {
-          homeData.push(playerObj);
-        }
-      });
-    }
-  } catch (e) {
-    console.error("Fetch Error:", e);
+const findConfig = (key) => {
+  if (!key) return { card: "", display: "UNKNOWN", report: "" };
+  const upperKey = key.toUpperCase();
+  if (TEAM_MASTER[upperKey]) return TEAM_MASTER[upperKey];
+  for (const teamKey in TEAM_MASTER) {
+    const conf = TEAM_MASTER[teamKey];
+    if (conf.card.includes(upperKey) || conf.report.includes(upperKey)) return conf;
   }
+  return { card: key, display: key, report: key };
+};
+
+try {
+  // 1. GitHubから正しいフォルダを検索
+  const listApi = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}?t=${Date.now()}`;
+  const res = await fetch(listApi, { headers: token ? { "Authorization": `token ${token}` } : {} });
+  const items = await res.json();
+
+  if (Array.isArray(items)) {
+    const realFolder = items.find(item => item.name.includes(gameId) && item.type === 'dir');
+    
+    if (realFolder) {
+      const folderPath = realFolder.path;
+      const rawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${folderPath}`;
+      
+      // フォルダ名の構成からチームを特定 (game_ID_AWAY_HOME_DATE)
+      const dirParts = realFolder.name.split('_');
+      const awayConf = findConfig(dirParts[2]);
+      const homeConf = findConfig(dirParts[3]);
+      displayTeamAway = awayConf.display;
+      displayTeamHome = homeConf.display;
+
+      const filesRes = await fetch(realFolder.url, { headers: token ? { "Authorization": `token ${token}` } : {} });
+      const files = await filesRes.json();
+
+      if (Array.isArray(files)) {
+        files.forEach(f => {
+          if (!f.name.toLowerCase().endsWith('.png')) return;
+          const fileName = f.name.toUpperCase();
+          const playerObj = {
+            name: f.name.replace('.png', '').split('_').slice(-2).join(' '),
+            imagePath: `${rawBase}/${f.name}`
+          };
+
+          if (fileName.includes(awayConf.card.toUpperCase())) {
+            awayData.push(playerObj);
+          } else if (fileName.includes(homeConf.card.toUpperCase())) {
+            homeData.push(playerObj);
+          }
+        });
+      }
+
+      // レポート画像の特定
+      const reportApiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/reports/B1/${dateId}?t=${Date.now()}`;
+      const reportRes = await fetch(reportApiURL, { headers: token ? { "Authorization": `token ${token}` } : {} });
+      const reportFiles = await reportRes.json();
+      if (Array.isArray(reportFiles)) {
+        const matchFile = reportFiles.find(f => f.name.includes(gameId) && f.name.toLowerCase().endsWith('.png'));
+        if (matchFile) {
+          reportImagePath = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1/${dateId}/${matchFile.name}`;
+        }
+      }
+    }
+  }
+} catch (e) {
+  console.error("Fetch Error:", e);
 }
 ---
 
 <Layout title="B1 CARDS | B-Data Lab">
   <div class="app-container bg-[#373A36] min-h-screen text-white font-avenir">
     <header class="pt-12 pb-6 px-8 border-b border-white/5 text-center relative">
-      <button onclick="history.back()" class="absolute left-8 top-12 text-white/40 hover:text-white">
+      <button onclick="history.back()" class="absolute left-8 top-12 text-white/40 hover:text-white transition-colors">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
           <path d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
         </svg>
@@ -124,11 +132,7 @@ if (urlGameDir) {
     <div class="py-10 space-y-16 pb-32">
       <section class="px-8 flex flex-col items-center">
         <div class="w-full md:max-w-[500px] mx-auto cursor-pointer card-trigger rounded-xl overflow-hidden border border-white/10 shadow-2xl bg-black/40 min-h-[200px] flex items-center justify-center" data-img={reportImagePath}>
-          <img 
-            src={reportImagePath} 
-            class="w-full h-auto block" 
-            onerror="this.src='https://placehold.jp/24/333333/ffffff/400x500.png?text=REPORT%20NOT%20FOUND'"
-          />
+          <img src={reportImagePath} class="w-full h-auto block" onerror="this.src='https://placehold.jp/24/333333/ffffff/400x500.png?text=B1%20REPORT%20NOT%20FOUND'" />
         </div>
         <div class="mt-6 text-center">
           <span class="text-[16px] font-black tracking-[0.2em] uppercase">
@@ -143,23 +147,34 @@ if (urlGameDir) {
       ].map((team) => (
         <section>
           <div class="px-8 mb-6">
-            <span class={`${team.color} px-4 py-1.5 text-[15px] font-black uppercase rounded-sm`}>
+            <span class={`${team.color} px-6 py-1.5 text-[15px] font-black uppercase rounded-full shadow-lg`}>
               {team.label}
             </span>
           </div>
           
-          <div class="flex overflow-x-auto gap-6 px-8 no-scrollbar pb-8">
+          <div class="flex overflow-x-auto gap-6 px-8 no-scrollbar pb-8 snap-x snap-mandatory">
             {team.data.length > 0 ? (
               team.data.map((p) => (
                 <div class="flex-none w-[80vw] max-w-[320px] snap-center">
-                  <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 bg-black/20" data-img={p.imagePath}>
-                    <img src={p.imagePath} class="w-full h-auto" loading="lazy" />
+                  <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 bg-black/20 shadow-xl" data-img={p.imagePath}>
+                    <img src={p.imagePath} alt={p.name} class="w-full h-auto block" loading="lazy" />
+                  </div>
+                  
+                  <div class="mt-4 flex justify-center">
+                    <a 
+                      href={`/b-players?name=${encodeURIComponent(p.name)}`}
+                      class="bg-white/10 border border-white/10 hover:bg-white/20 px-10 py-2.5 rounded-full transition-all active:scale-95 min-w-[140px] text-center"
+                    >
+                      <span class="text-[10px] font-black uppercase tracking-[0.2em] text-white/80">
+                        {p.name}
+                      </span>
+                    </a>
                   </div>
                 </div>
               ))
             ) : (
               <div class="px-8 w-full py-12 border border-dashed border-white/10 rounded-2xl text-center text-white/20 uppercase text-[10px] tracking-[0.4em]">
-                No Cards Found
+                No Player Cards Found
               </div>
             )}
           </div>
@@ -168,9 +183,9 @@ if (urlGameDir) {
     </div>
 
     <div id="modal" class="fixed inset-0 bg-black/98 z-50 hidden flex-col items-center justify-center p-6 backdrop-blur-md">
-      <div class="absolute top-8 right-8 text-white/40 text-4xl cursor-pointer p-4" id="close">&times;</div>
+      <div class="absolute top-8 right-8 text-white/40 text-4xl cursor-pointer p-4 hover:text-white transition-colors" id="close">&times;</div>
       <img id="modal-img" src="" class="max-w-full max-h-[85vh] shadow-2xl rounded-xl mb-12" />
-      <a id="download-btn" href="" download class="bg-white text-black px-14 py-4 rounded-full font-black uppercase tracking-widest text-[11px]">
+      <a id="download-btn" href="" download class="bg-white text-black px-14 py-4 rounded-full font-black uppercase tracking-widest text-[11px] hover:bg-gray-200 transition-colors">
         Download Card
       </a>
     </div>
@@ -199,9 +214,14 @@ if (urlGameDir) {
     modal?.classList.add('hidden');
     modal?.classList.remove('flex');
   });
+
+  modal?.addEventListener('click', (e) => {
+    if (e.target === modal) close?.click();
+  });
 </script>
 
 <style is:global>
   .no-scrollbar::-webkit-scrollbar { display: none; }
   .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  .font-avenir { font-family: 'Avenir Next', 'Helvetica Neue', Arial, sans-serif; }
 </style>

@@ -8,12 +8,11 @@ const queryFolder = searchParams.get('folder') || "";
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
-// フォルダパスの分解
+// フォルダパスの分解 (例: 251202/NBA_Cards_0022500318_20251202)
 const segments = queryFolder.split('/').filter(Boolean);
 const dateId = segments[0] || "";  
 const urlGameDir = segments[1] || ""; 
 
-// 画像取得用のベースURL（RAW）
 const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/players/${dateId}/${urlGameDir}`;
 
 const teamColorMap = {
@@ -33,10 +32,11 @@ const getTeamStyle = (id) => teamColorMap[id] || 'bg-gray-700';
 
 let teamsData = []; 
 let reportImagePath = "";
+// 日付表示の修正 (251202 -> 2025.12.02)
 const formattedDate = dateId.length === 6 ? `20${dateId.substring(0,2)}.${dateId.substring(2,4)}.${dateId.substring(4,6)}` : dateId;
 
 try {
-  // 選手カードリストの取得
+  // 1. 選手カードリストを取得
   const apiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players/${dateId}/${urlGameDir}?t=${Date.now()}`;
   const response = await fetch(apiURL, { 
     headers: token ? { "Authorization": `token ${token}` } : {} 
@@ -44,12 +44,14 @@ try {
   const files = await response.json();
 
   if (Array.isArray(files)) {
-    // pngファイルのみ抽出（レポート画像は除外）
-    const playerFiles = files.filter(f => f.name.toLowerCase().endsWith('.png') && !f.name.toLowerCase().includes('report'));
+    // PNGファイルを取得
+    const playerFiles = files.filter(f => f.name.toLowerCase().endsWith('.png'));
     
-    // チームID（LAL, GSWなど）を抽出
+    // ファイル名からチームID（PHI, WAS等）を正確に抽出
+    // 例: "PHI_0_Tyrese_Maxey.png" -> "PHI"
     const detectedTeamIds = [...new Set(playerFiles.map(f => f.name.split('_')[0]))];
 
+    // チームごとに選手をグループ化
     teamsData = detectedTeamIds.map(teamId => {
       const players = playerFiles
         .filter(f => f.name.startsWith(teamId + '_'))
@@ -68,7 +70,7 @@ try {
     });
   }
 
-  // レポート画像の取得 (gameId: 10桁)
+  // 2. ゲームレポート画像の取得 (10桁のGameIDを使用)
   const gameId = urlGameDir.match(/\d{10}/)?.[0];
   if (gameId) {
     const reportsApiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/reports/NBA/${dateId}?t=${Date.now()}`;
@@ -103,16 +105,14 @@ try {
       </div>
 
       <section class="px-8 flex flex-col items-center">
-        <div class="w-full md:max-w-[500px] mx-auto cursor-pointer card-trigger rounded-xl overflow-hidden border border-white/20 shadow-2xl transition-transform active:scale-95 bg-black/20 min-h-[200px] flex items-center justify-center" data-img={reportImagePath}>
-          <img 
-            src={reportImagePath} 
-            class="w-full h-auto block" 
-            onerror="this.src='https://placehold.jp/24/333333/ffffff/400x500.png?text=REPORT%20IMAGE%20NOT%20FOUND'"
-          />
-        </div>
+        {reportImagePath && (
+          <div class="w-full md:max-w-[500px] mx-auto cursor-pointer card-trigger rounded-xl overflow-hidden border border-white/20 shadow-2xl transition-transform active:scale-95" data-img={reportImagePath}>
+            <img src={reportImagePath} class="w-full h-auto block" />
+          </div>
+        )}
         <div class="mt-4 text-center">
           <span class="text-[13px] font-black tracking-[0.2em] uppercase text-white/90">
-            {teamsData[0]?.teamName || "AWAY"} <span class="text-[9px] font-medium text-white/40 mx-1">vs</span> {teamsData[1]?.teamName || "HOME"}
+            {teamsData[0]?.teamName || "---"} <span class="text-[9px] font-medium text-white/40 mx-1">vs</span> {teamsData[1]?.teamName || "---"}
           </span>
         </div>
       </section>
@@ -121,7 +121,7 @@ try {
         teamsData.map((team) => (
           <section>
             <div class="px-8 mb-8">
-              <div class={`${getTeamStyle(team.teamName)} w-[115px] h-[48px] rounded-full text-[15px] font-black shadow-xl flex items-center justify-center text-white`}>
+              <div class={`${getTeamStyle(team.teamName)} px-6 h-[48px] rounded-full text-[15px] font-black shadow-xl flex items-center justify-center text-white inline-flex`}>
                 {team.teamName}
               </div>
             </div>
@@ -133,7 +133,7 @@ try {
                     <img src={p.imagePath} alt={p.name} class="w-full h-auto block" loading="lazy" />
                   </div>
                   <div class="mt-6 flex flex-col items-center px-1">
-                    <div class="w-full inline-flex items-center justify-between px-6 py-4 rounded-full bg-black/40 border border-white/5 relative shadow-lg">
+                    <div class="w-full inline-flex items-center justify-between px-6 py-4 rounded-full bg-black/40 border border-white/10 shadow-lg">
                       <span class="text-[13px] font-black tracking-[0.15em] uppercase text-white/90">{p.name}</span>
                       <span class="text-[11px] font-bold text-white/40">#{p.no}</span>
                     </div>
@@ -144,7 +144,7 @@ try {
           </section>
         ))
       ) : (
-        <div class="px-8 text-center py-20 text-white/20 uppercase tracking-widest">
+        <div class="px-8 text-center py-20 text-white/20 uppercase tracking-widest font-black">
           No Player Cards Found
         </div>
       )}
@@ -153,9 +153,7 @@ try {
     <div id="modal" class="fixed inset-0 bg-black/98 z-50 hidden flex-col items-center justify-center p-6 backdrop-blur-md">
       <div class="absolute top-8 right-8 text-white/40 text-4xl font-light cursor-pointer p-4 hover:text-white" id="close">&times;</div>
       <img id="modal-img" src="" class="max-w-full max-h-[80vh] shadow-2xl rounded-xl mb-12 border border-white/10" />
-      <div class="flex gap-4">
-        <a id="download-btn" href="" download class="bg-white text-black px-14 py-4 rounded-full font-black uppercase text-[11px] hover:bg-gray-200">Download Card</a>
-      </div>
+      <a id="download-btn" href="" download class="bg-white text-black px-14 py-4 rounded-full font-black uppercase text-[11px] hover:bg-gray-200">Download Card</a>
     </div>
 
     <div class="fixed bottom-8 right-8 z-40">
@@ -165,3 +163,35 @@ try {
     </div>
   </div>
 </Layout>
+
+<script>
+  // モーダル制御ロジック
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modal-img') as HTMLImageElement;
+  const close = document.getElementById('close');
+  const downloadBtn = document.getElementById('download-btn') as HTMLAnchorElement;
+
+  document.querySelectorAll('.card-trigger').forEach(card => {
+    card.addEventListener('click', () => {
+      const imgSrc = card.getAttribute('data-img');
+      if (imgSrc && modalImg && downloadBtn) {
+        modalImg.src = imgSrc;
+        downloadBtn.href = imgSrc;
+        modal?.classList.remove('hidden');
+        modal?.classList.add('flex');
+      }
+    });
+  });
+
+  close?.addEventListener('click', () => {
+    modal?.classList.add('hidden');
+    modal?.classList.remove('flex');
+  });
+</script>
+
+<style is:global>
+  @import url('https://fonts.cdnfonts.com/css/avenir-next-lt-pro');
+  :root { font-family: 'Avenir Next LT Pro', sans-serif; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>

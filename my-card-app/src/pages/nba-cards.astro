@@ -123,6 +123,17 @@ const teamColorMap = {
                 <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 bg-black/20 shadow-xl" data-img={p.imagePath}>
                   <img src={p.imagePath} alt={p.name} class="w-full h-auto block" loading="lazy" />
                 </div>
+                
+                <div class="mt-4 flex justify-center">
+                  <a 
+                    href={`/nba-players?name=${encodeURIComponent(p.name)}`}
+                    class="bg-white/10 border border-white/10 hover:bg-white/20 px-6 py-2.5 rounded-full transition-all active:scale-95"
+                  >
+                    <span class="text-[10px] font-black uppercase tracking-[0.2em] text-white/80">
+                      Player Stats
+                    </span>
+                  </a>
+                </div>
               </div>
             ))}
           </div>

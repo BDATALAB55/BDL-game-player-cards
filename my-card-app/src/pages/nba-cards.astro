@@ -8,115 +8,119 @@ const queryFolder = searchParams.get('folder') || "";
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
-// 1. 渡された値から「純粋なフォルダ名」だけを抽出
-// "260126/NBA_Cards_ATL_0022500659" -> "NBA_Cards_ATL_0022500659"
-const folderName = queryFolder.split('/').pop() || "";
+// 1. URLからゲームID（10桁の数字）を抽出
+const gameIdMatch = queryFolder.match(/\d{10}/);
+const gameId = gameIdMatch ? gameIdMatch[0] : "";
 
-// 2. 日付を特定（フォルダ名末尾の8桁。例: 20251202 -> 251202）
-// フォルダ名に日付がない場合は、とりあえず本日の日付を予備にする
-const dateMatch = folderName.match(/(\d{8})$/);
-let dateId = dateMatch ? dateMatch[1].substring(2) : new Date().toISOString().slice(2,10).replace(/-/g,'');
-
-// GitHub上のパスを再構築
-let targetPath = `output/players/${dateId}/${folderName}`;
-let rawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${targetPath}`;
+// 2. 日付を抽出（6桁または8桁）
+const segments = queryFolder.split('/').filter(Boolean);
+const dateId = segments[0] || ""; 
 
 let teamsData = [];
-let debugInfo = "";
+let debugLog = "";
+let finalPath = "";
 
 try {
-  // A. まずは推測した日付でトライ
-  let apiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/${targetPath}?t=${Date.now()}`;
-  let res = await fetch(apiURL, { headers: token ? { "Authorization": `token ${token}` } : {} });
-  let files = await res.json();
+  // 3. 日付フォルダの中身をスキャンして、ゲームIDが含まれるフォルダを探す
+  const listApi = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players/${dateId}?t=${Date.now()}`;
+  const res = await fetch(listApi, { headers: token ? { "Authorization": `token ${token}` } : {} });
+  const items = await res.json();
 
-  // B. もし失敗したら、日付なし（または別の日付）の可能性を考えて、全日付フォルダをスキャンする
-  if (res.status === 404) {
-    debugInfo += `Path [${targetPath}] not found. Searching other dates... `;
-    const rootApi = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/players`;
-    const rootRes = await fetch(rootApi, { headers: token ? { "Authorization": `token ${token}` } : {} });
-    const dateFolders = await rootRes.json();
+  if (Array.isArray(items)) {
+    // ゲームID（例: 0022500659）が含まれるフォルダを特定
+    const realFolder = items.find(item => item.name.includes(gameId) && item.type === 'dir');
+    
+    if (realFolder) {
+      finalPath = realFolder.path;
+      const rawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${finalPath}`;
 
-    if (Array.isArray(dateFolders)) {
-      for (const df of dateFolders) {
-        const checkPath = `output/players/${df.name}/${folderName}`;
-        const checkRes = await fetch(`https://api.github.com/repos/${GITHUB_REPO}/contents/${checkPath}`, {
-          headers: token ? { "Authorization": `token ${token}` } : {}
+      // 4. そのフォルダ内のPNGファイルを取得
+      const filesRes = await fetch(realFolder.url, { headers: token ? { "Authorization": `token ${token}` } : {} });
+      const files = await filesRes.json();
+
+      if (Array.isArray(files)) {
+        const playerFiles = files.filter(f => f.name.toLowerCase().endsWith('.png'));
+        
+        // ファイル名が "チーム_背番号_名前.png" であることを前提にチームを分離
+        const teamIds = [...new Set(playerFiles.map(f => f.name.split('_')[0]))];
+
+        teamsData = teamIds.map(id => {
+          const players = playerFiles
+            .filter(f => f.name.startsWith(id + '_'))
+            .map(f => {
+              const parts = f.name.replace(/\.[^/.]+$/, "").split('_');
+              return {
+                no: parts[1] || "0",
+                name: parts.slice(2).join(' '),
+                imagePath: `${rawBase}/${f.name}`
+              };
+            })
+            .sort((a, b) => parseInt(a.no) - parseInt(b.no));
+          return { teamName: id, players };
         });
-        if (checkRes.ok) {
-          const foundFiles = await checkRes.json();
-          targetPath = checkPath;
-          rawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${targetPath}`;
-          files = foundFiles;
-          break;
-        }
       }
+    } else {
+      debugLog = `ゲームID [${gameId}] を含むフォルダが ${dateId} 内に見つかりません。`;
     }
-  }
-
-  if (Array.isArray(files)) {
-    const playerFiles = files.filter(f => f.name.toLowerCase().endsWith('.png'));
-    const teamIds = [...new Set(playerFiles.map(f => f.name.split('_')[0]))];
-
-    teamsData = teamIds.map(id => {
-      const players = playerFiles
-        .filter(f => f.name.startsWith(id + '_'))
-        .map(f => {
-          const parts = f.name.replace(/\.[^/.]+$/, "").split('_');
-          return {
-            no: parts[1] || "0",
-            name: parts.slice(2).join(' '),
-            imagePath: `${rawBase}/${f.name}`
-          };
-        })
-        .sort((a, b) => parseInt(a.no) - parseInt(b.no));
-      return { teamName: id, players };
-    });
+  } else {
+    debugLog = `日付フォルダ [output/players/${dateId}] が見つかりません。`;
   }
 } catch (e) {
-  debugInfo = `System Error: ${e.message}`;
+  debugLog = `エラー: ${e.message}`;
 }
 
 const teamColorMap = {
-  CHA: 'bg-[#00788C]', PHI: 'bg-[#006BB6]', ATL: 'bg-[#E03A3E]', 
-  LAL: 'bg-[#552583]', GSW: 'bg-[#006BB6]', WAS: 'bg-[#002B5C]'
+  ATL: 'bg-[#E03A3E]', BOS: 'bg-[#007A33]', BKN: 'bg-black', CHA: 'bg-[#00788C]',
+  CHI: 'bg-[#CE1141]', CLE: 'bg-[#6F263D]', DAL: 'bg-[#0053BC]', DEN: 'bg-[#0E2240]',
+  PHI: 'bg-[#006BB6]', WAS: 'bg-[#002B5C]', GSW: 'bg-[#1D428A]', LAL: 'bg-[#552583]'
 };
 ---
 
-<Layout title="NBA CARDS">
-  <div class="bg-[#1a1a1a] min-h-screen text-white p-6 font-sans">
+<Layout title="NBA CARDS | B-Data Lab">
+  <div class="bg-[#0f0f10] min-h-screen text-white font-sans">
     
     {teamsData.length === 0 ? (
-      <div class="max-w-xl mx-auto mt-20 text-center">
-        <div class="animate-pulse mb-4 text-blue-500">Searching GitHub Repository...</div>
-        <div class="p-4 bg-white/5 border border-white/10 rounded-xl text-[10px] font-mono text-left opacity-60">
-           <p>Last Try Path: {targetPath}</p>
-           <p>{debugInfo}</p>
+      <div class="flex flex-col items-center justify-center min-h-screen">
+        <div class="w-10 h-10 border-2 border-blue-500 border-t-transparent rounded-full animate-spin mb-4"></div>
+        <p class="text-sm font-bold tracking-widest opacity-50 uppercase">Loading Game {gameId}...</p>
+        <div class="mt-8 p-4 bg-red-500/10 border border-red-500/20 rounded-lg text-[10px] font-mono text-red-400 max-w-xs">
+          {debugLog}
         </div>
       </div>
     ) : (
-      <div class="max-w-5xl mx-auto">
-        <header class="flex justify-between items-center mb-12 py-6 border-b border-white/10">
-          <div class="text-2xl font-black italic">{teamsData[0]?.teamName} <span class="text-blue-500 not-italic text-sm mx-2">VS</span> {teamsData[1]?.teamName}</div>
-          <button onclick="history.back()" class="text-xs bg-white/10 px-4 py-2 rounded-full uppercase font-bold hover:bg-white/20">Back</button>
+      <div class="max-w-6xl mx-auto px-6 py-12">
+        <header class="mb-16">
+          <div class="flex justify-between items-center mb-4">
+            <button onclick="history.back()" class="text-[10px] font-black tracking-widest bg-white/5 hover:bg-white/10 px-4 py-2 rounded-full transition-all border border-white/5">BACK</button>
+            <span class="text-[10px] font-black text-blue-500 tracking-[0.3em] uppercase">NBA Session</span>
+          </div>
+          <div class="flex items-baseline gap-4">
+            <h1 class="text-5xl font-black italic tracking-tighter uppercase">
+              {teamsData[0]?.teamName} <span class="text-blue-600 not-italic mx-1 text-2xl">VS</span> {teamsData[1]?.teamName}
+            </h1>
+          </div>
+          <p class="text-[10px] text-white/20 mt-4 font-mono uppercase tracking-widest">ID: {gameId} | Path: {finalPath}</p>
         </header>
 
-        <div class="space-y-20">
+        <div class="space-y-24">
           {teamsData.map((team) => (
             <section>
-              <div class={`inline-flex items-center gap-3 px-5 py-2 rounded-full mb-8 shadow-lg ${teamColorMap[team.teamName] || 'bg-gray-800'}`}>
-                <span class="text-lg font-black tracking-tighter">{team.teamName}</span>
-                <span class="text-[10px] uppercase font-bold opacity-80">Roster</span>
+              <div class="flex items-center gap-4 mb-10">
+                <div class={`h-10 px-6 ${teamColorMap[team.teamName] || 'bg-gray-800'} flex items-center justify-center rounded-br-2xl rounded-tl-2xl shadow-lg`}>
+                   <span class="text-lg font-black italic tracking-tighter">{team.teamName}</span>
+                </div>
+                <div class="h-[1px] flex-grow bg-white/5"></div>
               </div>
 
-              <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+              <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6">
                 {team.players.map((p) => (
-                  <div class="group">
-                    <div class="relative aspect-[3/4] rounded-2xl overflow-hidden bg-gradient-to-b from-gray-800 to-black border border-white/5 group-hover:border-blue-500/50 transition-all shadow-xl">
-                      <img src={p.imagePath} class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
-                      <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black via-black/40 to-transparent">
-                         <div class="text-[10px] font-black text-blue-400">#{p.no}</div>
-                         <div class="text-sm font-bold truncate uppercase tracking-tight">{p.name}</div>
+                  <div class="group relative">
+                    <div class="aspect-[3/4] rounded-2xl overflow-hidden bg-[#1a1a1b] border border-white/5 group-hover:border-blue-500/50 transition-all duration-500 shadow-2xl">
+                      <img src={p.imagePath} class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" loading="lazy" />
+                      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                      <div class="absolute bottom-4 left-4 right-4">
+                        <div class="text-[10px] font-black text-blue-500 mb-1">#{p.no}</div>
+                        <div class="text-sm font-bold truncate uppercase tracking-tight leading-none">{p.name}</div>
                       </div>
                     </div>
                   </div>
@@ -131,6 +135,7 @@ const teamColorMap = {
 </Layout>
 
 <style is:global>
-  body { background-color: #1a1a1a; }
-  .no-scrollbar::-webkit-scrollbar { display: none; }
+  @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;900&display=swap');
+  body { font-family: 'Inter', sans-serif; }
+  h1, .font-black { font-family: 'Archivo Black', sans-serif; }
 </style>

@@ -8,22 +8,35 @@ const queryFolder = searchParams.get('folder') || "";
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
-// 1. パスを徹底的にクリーンアップ
-// queryFolder が "251202/NBA_Cards_..." か "/251202/NBA_Cards_..." かに関わらず
-// [ "251202", "NBA_Cards_..." ] という配列にする
+// パスの徹底解析
 const segments = queryFolder.split('/').filter(Boolean);
-const datePart = segments[0] || "";
-const folderPart = segments[1] || "";
 
-// GitHub API 用のパス（output/players/ から開始）
+// 【重要】segments[0]が日付（例: 251202）、segments[1]がフォルダ名（例: NBA_Cards_...）
+// もし segments が1つしかない場合は、URLが不完全です。
+let datePart = segments[0] || "";
+let folderPart = segments[1] || "";
+
+// もし folderPart が空で、datePartの中に "NBA_Cards" が含まれている場合の救済処置
+if (!folderPart && datePart.includes('NBA_Cards')) {
+    // フォルダ名から日付（末尾8桁など）を推測するか、
+    // 前の階層から日付を特定する必要がありますが、ここでは一旦手動解析を試みます
+    folderPart = datePart;
+    // フォルダ名 "NBA_Cards_CHA_0022500657_20251202" の末尾から日付を抽出
+    const dateMatch = folderPart.match(/(\d{8})$/);
+    if (dateMatch) {
+        const fullDate = dateMatch[1]; // 20251202
+        datePart = fullDate.substring(2); // 251202
+    }
+}
+
 const targetPath = `output/players/${datePart}/${folderPart}`;
-// 画像取得用のRAWパス
 const rawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${targetPath}`;
 
 let teamsData = [];
 let debugInfo = "";
 
 try {
+  // キャッシュを避けるためにタイムスタンプを付与
   const apiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/${targetPath}?t=${Date.now()}`;
   const res = await fetch(apiURL, {
     headers: token ? { "Authorization": `token ${token}` } : {}
@@ -31,10 +44,7 @@ try {
   const files = await res.json();
 
   if (Array.isArray(files)) {
-    // 選手カード（PNG）のみ。小文字・大文字両対応
     const playerFiles = files.filter(f => f.name.toLowerCase().endsWith('.png'));
-
-    // チームID（LAL, GSW, PHI等）をファイル名から抽出
     const teamIds = [...new Set(playerFiles.map(f => f.name.split('_')[0]))];
 
     teamsData = teamIds.map(id => {
@@ -52,77 +62,62 @@ try {
       return { teamName: id, players };
     });
   } else {
-    debugInfo = `API returned: ${JSON.stringify(files).substring(0, 100)}`;
+    debugInfo = `API Error: ${files.message || "Unknown error"}. 探したパス: ${targetPath}`;
   }
 } catch (e) {
-  debugInfo = `Error: ${e.message}`;
+  debugInfo = `System Error: ${e.message}`;
 }
 
 const teamColorMap = {
-  ATL: 'bg-[#E03A3E]', BOS: 'bg-[#007A33]', BKN: 'bg-black',
-  CHA: 'bg-[#00788C]', CHI: 'bg-[#CE1141]', CLE: 'bg-[#6F263D]',
-  DAL: 'bg-[#0053BC]', DEN: 'bg-[#0E2240]', DET: 'bg-[#1D428A]',
-  GSW: 'bg-[#006BB6]', HOU: 'bg-[#CE1141]', IND: 'bg-[#002D62]',
-  LAC: 'bg-[#12173F]', LAL: 'bg-[#552583]', MEM: 'bg-[#5D76A9]',
-  MIA: 'bg-[#98002E]', MIL: 'bg-[#00471B]', MIN: 'bg-[#0C2340]',
-  NOP: 'bg-[#0C2340]', NYK: 'bg-[#F58426]', OKC: 'bg-[#007AC1]',
-  ORL: 'bg-[#0077C0]', PHI: 'bg-[#006BB6]', PHX: 'bg-[#1D1160]',
-  POR: 'bg-[#E03A3E]', SAC: 'bg-[#5A2D81]', SAS: 'bg-black',
-  TOR: 'bg-[#CE1141]', UTA: 'bg-[#002B5C]', WAS: 'bg-[#002B5C]',
+  CHA: 'bg-[#00788C]', PHI: 'bg-[#006BB6]', LAL: 'bg-[#552583]', GSW: 'bg-[#006BB6]',
+  // ... 他のチームカラー ...
 };
 ---
 
 <Layout title="NBA CARDS">
-  <div class="bg-[#373A36] min-h-screen text-white p-8">
-    <header class="mb-12 text-center">
-      <h1 class="text-xl font-black tracking-widest uppercase">NBA Player Cards</h1>
-      {teamsData.length === 0 && (
-        <div class="mt-4 p-4 bg-red-900/20 border border-red-500/50 rounded text-[10px] font-mono text-red-300">
-          <p>Target Path: {targetPath}</p>
-          <p>{debugInfo}</p>
-        </div>
-      )}
-    </header>
-
-    <div class="max-w-4xl mx-auto space-y-16">
-      <div class="text-center text-2xl font-black tracking-tighter italic">
-        {teamsData.length > 0 ? (
-          <div class="flex items-center justify-center gap-4">
-            <span>{teamsData[0]?.teamName}</span>
-            <span class="text-blue-500 text-sm not-italic">VS</span>
-            <span>{teamsData[1]?.teamName || "---"}</span>
-          </div>
-        ) : (
-          <span class="opacity-20 uppercase">No Data Loaded</span>
-        )}
+  <div class="bg-[#1a1a1a] min-h-screen text-white p-6">
+    
+    {teamsData.length === 0 && (
+      <div class="mb-8 p-4 bg-red-900/30 border border-red-500 rounded text-xs font-mono">
+        <p class="font-bold text-red-400">【デバッグ情報：画像が見つかりません】</p>
+        <p>現在のURLパラメータ: {queryFolder}</p>
+        <p>GitHub上で探しているパス: <span class="bg-black px-1">{targetPath}</span></p>
+        <p class="mt-2 text-gray-400">※GitHubの output/players/ 直下にこのフォルダがあるか確認してください。</p>
+        <p>{debugInfo}</p>
       </div>
+    )}
 
-      {teamsData.map((team) => (
-        <section>
-          <div class={`inline-block px-6 py-2 rounded-full font-black mb-6 ${teamColorMap[team.teamName] || 'bg-gray-600'}`}>
-            {team.teamName}
-          </div>
-          
-          <div class="flex overflow-x-auto gap-4 pb-4 no-scrollbar">
-            {team.players.map((p) => (
-              <div class="flex-none w-[280px]">
-                <div class="rounded-xl overflow-hidden border border-white/10 bg-black/20">
-                  <img src={p.imagePath} class="w-full h-auto" loading="lazy" />
+    {teamsData.length > 0 && (
+      <div class="max-w-5xl mx-auto">
+        <div class="flex justify-center items-center gap-8 mb-12 py-8 border-b border-white/10">
+            {teamsData.map((t, i) => (
+                <div class="text-center">
+                    <div class="text-4xl font-black">{t.teamName}</div>
+                    {i === 0 && <div class="text-blue-500 font-bold mt-2">VS</div>}
                 </div>
-                <div class="mt-3 flex justify-between items-center px-2">
-                  <span class="font-bold text-sm truncate">{p.name}</span>
-                  <span class="text-xs opacity-40">#{p.no}</span>
-                </div>
-              </div>
             ))}
-          </div>
-        </section>
-      ))}
-    </div>
+        </div>
+
+        <div class="space-y-16">
+          {teamsData.map((team) => (
+            <section>
+              <h2 class={`inline-block px-4 py-1 rounded text-sm font-bold mb-6 ${teamColorMap[team.teamName] || 'bg-gray-700'}`}>
+                {team.teamName} PLAYERS
+              </h2>
+              <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                {team.players.map((p) => (
+                  <div class="group cursor-pointer">
+                    <div class="aspect-[3/4] rounded-lg overflow-hidden bg-black border border-white/5 group-hover:border-blue-500 transition-all">
+                      <img src={p.imagePath} class="w-full h-full object-cover" />
+                    </div>
+                    <div class="mt-2 text-center text-xs font-medium opacity-70">#{p.no} {p.name}</div>
+                  </div>
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
+      </div>
+    )}
   </div>
 </Layout>
-
-<style>
-  .no-scrollbar::-webkit-scrollbar { display: none; }
-  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-</style>

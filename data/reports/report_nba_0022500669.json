@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500669",
+  "date": "2026.01.27",
+  "venue": "Mortgage Matchup Center",
+  "attendance": 17071,
+  "home": {
+    "id": "1610612756",
+    "total": {
+      "pts": 106,
+      "fgm": 43,
+      "fga": 77,
+      "f2m": 38,
+      "f2a": 57,
+      "f3m": 5,
+      "f3a": 20,
+      "ftm": 15,
+      "fta": 20,
+      "reb": 39,
+      "oreb": 10,
+      "dreb": 22,
+      "ast": 22,
+      "tov": 15,
+      "stl": 12,
+      "blk": 5,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "34:08",
+        "pts": 26,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "34:25",
+        "pts": 7,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "30:04",
+        "pts": 27,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "GRAYSON ALLEN",
+        "min": "34:08",
+        "pts": 18,
+        "reb": 3,
+        "ast": 6
+      },
+      {
+        "no": "23",
+        "name": "JORDAN GOODWIN",
+        "min": "28:59",
+        "pts": 4,
+        "reb": 9,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612751",
+    "total": {
+      "pts": 102,
+      "fgm": 38,
+      "fga": 75,
+      "f2m": 25,
+      "f2a": 43,
+      "f3m": 13,
+      "f3a": 32,
+      "ftm": 13,
+      "fta": 19,
+      "reb": 44,
+      "oreb": 12,
+      "dreb": 23,
+      "ast": 28,
+      "tov": 20,
+      "stl": 9,
+      "blk": 2,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "29:55",
+        "pts": 7,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "36:58",
+        "pts": 36,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "28:41",
+        "pts": 8,
+        "reb": 5,
+        "ast": 8
+      },
+      {
+        "no": "4",
+        "name": "DRAKE POWELL",
+        "min": "08:28",
+        "pts": 0,
+        "reb": 0,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "31:09",
+        "pts": 15,
+        "reb": 5,
+        "ast": 3
+      }
+    ]
+  }
+}

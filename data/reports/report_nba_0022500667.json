@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500667",
+  "date": "2026.01.27",
+  "venue": "Paycom Center",
+  "attendance": 18203,
+  "home": {
+    "id": "1610612760",
+    "total": {
+      "pts": 104,
+      "fgm": 35,
+      "fga": 87,
+      "f2m": 22,
+      "f2a": 49,
+      "f3m": 13,
+      "f3a": 38,
+      "ftm": 21,
+      "fta": 23,
+      "reb": 62,
+      "oreb": 13,
+      "dreb": 40,
+      "ast": 25,
+      "tov": 16,
+      "stl": 4,
+      "blk": 9,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "AARON WIGGINS",
+        "min": "34:07",
+        "pts": 13,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "6",
+        "name": "JAYLIN WILLIAMS",
+        "min": "26:48",
+        "pts": 4,
+        "reb": 10,
+        "ast": 5
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "32:59",
+        "pts": 20,
+        "reb": 14,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "34:07",
+        "pts": 12,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "35:49",
+        "pts": 29,
+        "reb": 6,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612740",
+    "total": {
+      "pts": 95,
+      "fgm": 34,
+      "fga": 99,
+      "f2m": 24,
+      "f2a": 59,
+      "f3m": 10,
+      "f3a": 40,
+      "ftm": 17,
+      "fta": 22,
+      "reb": 62,
+      "oreb": 21,
+      "dreb": 33,
+      "ast": 25,
+      "tov": 8,
+      "stl": 13,
+      "blk": 11,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "33:14",
+        "pts": 16,
+        "reb": 13,
+        "ast": 5
+      },
+      {
+        "no": "1",
+        "name": "ZION WILLIAMSON",
+        "min": "33:38",
+        "pts": 21,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "DERIK QUEEN",
+        "min": "26:12",
+        "pts": 9,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "TREY MURPHY III",
+        "min": "39:07",
+        "pts": 10,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "2",
+        "name": "HERBERT JONES",
+        "min": "26:32",
+        "pts": 9,
+        "reb": 5,
+        "ast": 5
+      }
+    ]
+  }
+}

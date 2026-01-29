@@ -23,7 +23,6 @@ let awayId = "";
 let homeId = "";
 let reportImagePath = "";
 
-// --- 【修正：HOMEの定義と一致させたチームマスタ】 ---
 const TEAM_MASTER = {
   "HOKKAIDO": { card: "LEVANGA_HOKKAIDO", display: "HOKKAIDO", color: "bg-[#91ad10] text-white" },
   "SENDAI": { card: "SENDAI_89ERS", display: "SENDAI", color: "bg-[#f7e000] text-black" },
@@ -56,11 +55,7 @@ const TEAM_MASTER = {
 const findConfig = (key) => {
   if (!key) return { card: "", display: "UNKNOWN", color: "bg-gray-700 text-white" };
   const upperKey = key.toUpperCase().replace(/[\s\-_]/g, '');
-  
-  // マスタから直接検索
   if (TEAM_MASTER[upperKey]) return TEAM_MASTER[upperKey];
-  
-  // 部分一致検索
   for (const teamKey in TEAM_MASTER) {
     const conf = TEAM_MASTER[teamKey];
     if (conf.card.replace(/[\s\-_]/g, '').includes(upperKey)) return conf;
@@ -85,7 +80,7 @@ try {
       const homeConf = findConfig(parts[3]);
       displayTeamAway = awayConf.display;
       displayTeamHome = homeConf.display;
-      awayId = awayConf.display; // Homeと同じID（表示名）をセット
+      awayId = awayConf.display;
       homeId = homeConf.display;
 
       const filesRes = await fetch(realFolder.url, { headers: token ? { "Authorization": `token ${token}` } : {} });
@@ -98,14 +93,14 @@ try {
           const fileNameNoExt = f.name.replace('.png', '');
           const nameParts = fileNameNoExt.split('_');
           
-          // 日付とチーム関連ワードを除外してクリーンな選手名を作成
+          // --- 【修正：クレンジングロジック】 ---
           const cleanNameParts = nameParts.filter(p => 
-            !p.match(/^\d{8}$/) && 
+            !p.match(/^\d+$/) && // 背番号(1桁以上)や日付(8桁)など数字のみを除外
             !awayConf.card.includes(p) && 
             !homeConf.card.includes(p) && 
-            !['89ERS', 'BRAVE', 'JETS', 'ROBOTS', 'BREX', 'ALTIRI', 'VELCA', 'SUSANOOMAGIC'].includes(p.toUpperCase())
+            !['89ERS', 'BRAVE', 'JETS', 'ROBOTS', 'BREX', 'ALTIRI', 'VELCA', 'SUSANOOMAGIC', 'LEVANGA'].includes(p.toUpperCase())
           );
-          const playerName = cleanNameParts.join(' ');
+          const playerName = cleanNameParts.join(' ').trim();
 
           const playerObj = { name: playerName, imagePath: `${rawBase}/${f.name}` };
 
@@ -117,7 +112,6 @@ try {
         });
       }
 
-      // レポート画像取得
       const reportApiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/reports/B1/${dateId}?t=${Date.now()}`;
       const reportRes = await fetch(reportApiURL, { headers: token ? { "Authorization": `token ${token}` } : {} });
       const reportFiles = await reportRes.json();
@@ -207,7 +201,6 @@ const homeFinalConf = findConfig(homeId);
 </Layout>
 
 <script>
-  // モーダルスクリプト省略（変更なし）
   const modal = document.getElementById('modal');
   const modalImg = document.getElementById('modal-img') as HTMLImageElement;
   const close = document.getElementById('close');
@@ -228,6 +221,10 @@ const homeFinalConf = findConfig(homeId);
   close?.addEventListener('click', () => {
     modal?.classList.add('hidden');
     modal?.classList.remove('flex');
+  });
+
+  modal?.addEventListener('click', (e) => {
+    if (e.target === modal) close?.click();
   });
 </script>
 

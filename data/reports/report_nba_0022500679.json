@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500679",
+  "date": "2026.01.28",
+  "venue": "Toyota Center",
+  "attendance": 18055,
+  "home": {
+    "id": "1610612745",
+    "total": {
+      "pts": 99,
+      "fgm": 39,
+      "fga": 99,
+      "f2m": 31,
+      "f2a": 76,
+      "f3m": 8,
+      "f3a": 23,
+      "ftm": 13,
+      "fta": 18,
+      "reb": 57,
+      "oreb": 17,
+      "dreb": 29,
+      "ast": 23,
+      "tov": 11,
+      "stl": 12,
+      "blk": 8,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "36:10",
+        "pts": 24,
+        "reb": 2,
+        "ast": 6
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "37:00",
+        "pts": 8,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "35:46",
+        "pts": 18,
+        "reb": 10,
+        "ast": 7
+      },
+      {
+        "no": "17",
+        "name": "TARI EASON",
+        "min": "24:46",
+        "pts": 10,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "35:52",
+        "pts": 25,
+        "reb": 7,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 111,
+      "fgm": 44,
+      "fga": 82,
+      "f2m": 38,
+      "f2a": 56,
+      "f3m": 6,
+      "f3a": 26,
+      "ftm": 17,
+      "fta": 24,
+      "reb": 53,
+      "oreb": 8,
+      "dreb": 38,
+      "ast": 28,
+      "tov": 15,
+      "stl": 5,
+      "blk": 8,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "20:51",
+        "pts": 2,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "28:46",
+        "pts": 9,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "28:35",
+        "pts": 28,
+        "reb": 16,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "32:44",
+        "pts": 16,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "33:32",
+        "pts": 18,
+        "reb": 5,
+        "ast": 8
+      }
+    ]
+  }
+}

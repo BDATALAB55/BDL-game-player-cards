@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500675",
+  "date": "2026.01.28",
+  "venue": "Scotiabank Arena",
+  "attendance": 19511,
+  "home": {
+    "id": "1610612761",
+    "total": {
+      "pts": 92,
+      "fgm": 30,
+      "fga": 79,
+      "f2m": 23,
+      "f2a": 53,
+      "f3m": 7,
+      "f3a": 26,
+      "ftm": 25,
+      "fta": 29,
+      "reb": 48,
+      "oreb": 12,
+      "dreb": 31,
+      "ast": 20,
+      "tov": 20,
+      "stl": 9,
+      "blk": 8,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "33:37",
+        "pts": 27,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "31:39",
+        "pts": 17,
+        "reb": 10,
+        "ast": 5
+      },
+      {
+        "no": "12",
+        "name": "COLLIN MURRAY-BOYLES",
+        "min": "28:15",
+        "pts": 4,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "24:01",
+        "pts": 14,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "29:50",
+        "pts": 7,
+        "reb": 4,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612752",
+    "total": {
+      "pts": 119,
+      "fgm": 45,
+      "fga": 90,
+      "f2m": 31,
+      "f2a": 52,
+      "f3m": 14,
+      "f3a": 38,
+      "ftm": 15,
+      "fta": 18,
+      "reb": 53,
+      "oreb": 13,
+      "dreb": 35,
+      "ast": 32,
+      "tov": 16,
+      "stl": 12,
+      "blk": 5,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "33:44",
+        "pts": 26,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "35:11",
+        "pts": 22,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "35:00",
+        "pts": 8,
+        "reb": 22,
+        "ast": 2
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "36:20",
+        "pts": 30,
+        "reb": 1,
+        "ast": 4
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "29:50",
+        "pts": 13,
+        "reb": 1,
+        "ast": 4
+      }
+    ]
+  }
+}

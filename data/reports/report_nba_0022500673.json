@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500673",
+  "date": "2026.01.28",
+  "venue": "TD Garden",
+  "attendance": 19156,
+  "home": {
+    "id": "1610612738",
+    "total": {
+      "pts": 106,
+      "fgm": 42,
+      "fga": 89,
+      "f2m": 33,
+      "f2a": 55,
+      "f3m": 9,
+      "f3a": 34,
+      "ftm": 13,
+      "fta": 16,
+      "reb": 55,
+      "oreb": 15,
+      "dreb": 36,
+      "ast": 21,
+      "tov": 16,
+      "stl": 3,
+      "blk": 6,
+      "pf": 13
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "29:12",
+        "pts": 21,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "30",
+        "name": "SAM HAUSER",
+        "min": "25:26",
+        "pts": 12,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "77",
+        "name": "AMARI WILLIAMS",
+        "min": "15:11",
+        "pts": 2,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "27:54",
+        "pts": 12,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "30:53",
+        "pts": 11,
+        "reb": 4,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612737",
+    "total": {
+      "pts": 117,
+      "fgm": 45,
+      "fga": 93,
+      "f2m": 27,
+      "f2a": 51,
+      "f3m": 18,
+      "f3a": 42,
+      "ftm": 9,
+      "fta": 13,
+      "reb": 48,
+      "oreb": 10,
+      "dreb": 28,
+      "ast": 29,
+      "tov": 9,
+      "stl": 11,
+      "blk": 2,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "COREY KISPERT",
+        "min": "20:11",
+        "pts": 13,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "32:44",
+        "pts": 19,
+        "reb": 14,
+        "ast": 7
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "28:44",
+        "pts": 17,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "35:23",
+        "pts": 15,
+        "reb": 6,
+        "ast": 9
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "30:54",
+        "pts": 21,
+        "reb": 1,
+        "ast": 3
+      }
+    ]
+  }
+}

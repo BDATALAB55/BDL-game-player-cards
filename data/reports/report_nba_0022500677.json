@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500677",
+  "date": "2026.01.28",
+  "venue": "American Airlines Center",
+  "attendance": 18680,
+  "home": {
+    "id": "1610612742",
+    "total": {
+      "pts": 105,
+      "fgm": 38,
+      "fga": 84,
+      "f2m": 35,
+      "f2a": 66,
+      "f3m": 3,
+      "f3a": 18,
+      "ftm": 26,
+      "fta": 39,
+      "reb": 65,
+      "oreb": 14,
+      "dreb": 36,
+      "ast": 22,
+      "tov": 17,
+      "stl": 6,
+      "blk": 3,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "16",
+        "name": "CALEB MARTIN",
+        "min": "32:29",
+        "pts": 4,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "33:34",
+        "pts": 21,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "20:53",
+        "pts": 14,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "32:14",
+        "pts": 9,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "32:15",
+        "pts": 18,
+        "reb": 6,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612750",
+    "total": {
+      "pts": 118,
+      "fgm": 43,
+      "fga": 94,
+      "f2m": 31,
+      "f2a": 60,
+      "f3m": 12,
+      "f3a": 34,
+      "ftm": 20,
+      "fta": 27,
+      "reb": 53,
+      "oreb": 11,
+      "dreb": 31,
+      "ast": 26,
+      "tov": 12,
+      "stl": 15,
+      "blk": 6,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JADEN MCDANIELS",
+        "min": "30:25",
+        "pts": 8,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "JULIUS RANDLE",
+        "min": "33:37",
+        "pts": 31,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "27",
+        "name": "RUDY GOBERT",
+        "min": "20:36",
+        "pts": 6,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "ANTHONY EDWARDS",
+        "min": "38:04",
+        "pts": 20,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "0",
+        "name": "DONTE DIVINCENZO",
+        "min": "27:34",
+        "pts": 8,
+        "reb": 5,
+        "ast": 1
+      }
+    ]
+  }
+}

@@ -93,9 +93,9 @@ try {
           const fileNameNoExt = f.name.replace('.png', '');
           const nameParts = fileNameNoExt.split('_');
           
-          // --- 【修正：クレンジングロジック】 ---
+          // 背番号削除のロジック
           const cleanNameParts = nameParts.filter(p => 
-            !p.match(/^\d+$/) && // 背番号(1桁以上)や日付(8桁)など数字のみを除外
+            !p.match(/^\d+$/) && 
             !awayConf.card.includes(p) && 
             !homeConf.card.includes(p) && 
             !['89ERS', 'BRAVE', 'JETS', 'ROBOTS', 'BREX', 'ALTIRI', 'VELCA', 'SUSANOOMAGIC', 'LEVANGA'].includes(p.toUpperCase())
@@ -130,7 +130,7 @@ const homeFinalConf = findConfig(homeId);
 ---
 
 <Layout title="B1 CARDS | B-Data Lab">
-  <div class="app-container bg-[#373A36] min-h-screen text-white font-avenir">
+  <div class="app-container bg-[#373A36] min-h-screen text-white font-avenir relative">
     <header class="pt-12 pb-6 px-8 border-b border-white/5 text-center relative">
       <button onclick="history.back()" class="absolute left-8 top-12 text-white/40 hover:text-white transition-colors">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
@@ -140,7 +140,7 @@ const homeFinalConf = findConfig(homeId);
       <h1 class="text-2xl font-black uppercase tracking-[0.25em]">B1 CARDS</h1>
     </header>
 
-    <div class="py-10 space-y-16 pb-32">
+    <div class="py-10 space-y-16 pb-48">
       <section class="px-8 flex flex-col items-center">
         <div class="w-full md:max-w-[500px] mx-auto cursor-pointer card-trigger rounded-xl overflow-hidden border border-white/10 shadow-2xl bg-black/40 min-h-[200px] flex items-center justify-center" data-img={reportImagePath}>
           <img src={reportImagePath} class="w-full h-auto block" onerror="this.src='https://placehold.jp/24/333333/ffffff/400x500.png?text=B1%20REPORT%20NOT%20FOUND'" />
@@ -188,6 +188,13 @@ const homeFinalConf = findConfig(homeId);
           </div>
         </section>
       ))}
+    </div>
+
+    <div class="fixed bottom-8 left-8 z-40">
+        <button onclick="history.back()" class="bg-white/10 backdrop-blur-md text-white px-6 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 border border-white/10">← Back</button>
+    </div>
+    <div class="fixed bottom-8 right-8 z-40">
+      <a href="/b1-home" class="bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 border border-white/10">B1 Home</a>
     </div>
 
     <div id="modal" class="fixed inset-0 bg-black/98 z-50 hidden flex-col items-center justify-center p-6 backdrop-blur-md">

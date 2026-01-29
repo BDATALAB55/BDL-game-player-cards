@@ -6,9 +6,10 @@ import Layout from '../layouts/Layout.astro';
 const { searchParams } = Astro.url;
 const playerName = searchParams.get('name') || "";
 
-// 設定：リポジトリ情報（Bリーグの画像も同じリポジトリのplayers配下にある前提）
+// 設定：リポジトリ情報
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
+// 階層が深いため recursive=1 を使用
 const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
 
 let playerCards = [];
@@ -27,28 +28,36 @@ if (playerName) {
     const data = await res.json();
 
     if (data.tree) {
-      // 検索パターン：スペースをアンダースコアに変換（例：SHUTO_ICHIBA）
-      const searchPattern = playerName.replace(/\s+/g, '_').toLowerCase();
+      // 検索キーを作成（スペースをアンダースコアに変換し大文字へ）
+      const searchKey = playerName.toUpperCase().replace(/\s+/g, '_');
       
       const matchedFiles = data.tree.filter(item => {
-        const path = item.path.toLowerCase();
+        const path = item.path.toUpperCase();
+        // 画像が含まれるフォルダパスの条件と、選手名の部分一致を確認
         return (
-          path.includes('output/players/') && 
-          path.endsWith('.png') && 
-          path.includes(searchPattern)
+          (path.includes('OUTPUT/BPLAYERS/') || path.includes('OUTPUT/PLAYERS/')) && 
+          path.endsWith('.PNG') && 
+          path.includes(searchKey)
         );
       });
 
       playerCards = matchedFiles.map(file => {
-        const parts = file.path.split('/');
-        // parts[2] が YYMMDD 形式のフォルダ名であることを想定
-        const dateStr = parts[2] || ""; 
-        availableDatesMap[dateStr] = true; 
+        const fileName = file.path.split('/').pop() || "";
+        
+        // ファイル名末尾の8桁日付（YYYYMMDD）を抽出
+        const dateMatch = fileName.match(/(\d{8})\.png$/i);
+        const fullDate = dateMatch ? dateMatch[1] : ""; // 例: 20251227
+        
+        // カレンダー連携用 (YYMMDD)
+        const shortDate = fullDate ? fullDate.substring(2) : "";
+        if (shortDate) availableDatesMap[shortDate] = true;
+
         return {
-          date: dateStr,
+          fullDate: fullDate,      // 20251227
+          displayDate: shortDate,  // 251227
           imagePath: `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${file.path}?t=${Date.now()}`
         };
-      }).sort((a, b) => b.date.localeCompare(a.date));
+      }).sort((a, b) => b.fullDate.localeCompare(a.fullDate));
     }
     totalGames = playerCards.length;
   } catch (e) {
@@ -99,11 +108,11 @@ if (playerName) {
       {playerCards.length > 0 ? (
         <div class="flex overflow-x-auto gap-8 no-scrollbar pb-10 snap-x">
           {playerCards.map((card) => (
-            <div id={`card-${card.date}`} class="flex-none w-[320px] snap-start">
+            <div id={`card-${card.displayDate}`} class="flex-none w-[320px] snap-start">
               <div class="mb-4 flex items-center gap-2 px-1">
                 <div class="w-2 h-2 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.5)]"></div>
                 <span class="text-[14px] font-black text-white/80 tracking-widest">
-                  20{card.date.substring(0,2)}.{card.date.substring(2,4)}.{card.date.substring(4,6)}
+                  {card.fullDate.substring(0,4)}.{card.fullDate.substring(4,6)}.{card.fullDate.substring(6,8)}
                 </span>
               </div>
               <div class="rounded-2xl overflow-hidden border border-white/10 bg-black/40 shadow-2xl transition-transform hover:scale-[1.02]">

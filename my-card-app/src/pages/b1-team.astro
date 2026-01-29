@@ -133,15 +133,15 @@ try {
     <header class="pt-12 pb-6 px-6 max-w-6xl mx-auto w-full relative shrink-0">
       <div class="flex items-end w-full relative mb-1">
         <div class="flex-1">
-          <div class="flex items-baseline gap-2 md:gap-5 font-bold font-avenir uppercase whitespace-nowrap overflow-hidden">
+          <div class="flex items-baseline gap-2 md:gap-7 font-bold font-avenir uppercase whitespace-nowrap">
             <span class={isReversed 
-              ? "text-[clamp(1.5rem,5vw,4.5rem)] tracking-normal shrink-0 leading-none" 
-              : "text-[clamp(0.8rem,2vw,1.875rem)] opacity-60 tracking-[0.3em] shrink-0 leading-none"}>
+              ? "text-[clamp(1.5rem,5vw,4.5rem)] tracking-[0.05em] shrink-0 leading-none" 
+              : "text-[clamp(0.8rem,2vw,1.875rem)] opacity-60 tracking-[0.4em] shrink-0 leading-none"}>
               {currentTeam.city}
             </span>
             <span class={isReversed 
-              ? "text-[clamp(0.8rem,2vw,1.875rem)] opacity-60 tracking-[0.3em] shrink-0 leading-none" 
-              : "text-[clamp(1.5rem,5vw,4.5rem)] tracking-normal shrink-0 leading-none"}>
+              ? "text-[clamp(0.8rem,2vw,1.875rem)] opacity-60 tracking-[0.4em] shrink-0 leading-none" 
+              : "text-[clamp(1.5rem,5vw,4.5rem)] tracking-[0.05em] shrink-0 leading-none"}>
               {currentTeam.name}
             </span>
           </div>
@@ -199,7 +199,7 @@ try {
           </div>
         )}
 
-        <section class="mt-24 mb-32">
+        <section class="mt-24 mb-40">
           <div class="max-w-md mx-auto">
             <h3 class="text-center text-[10px] font-black tracking-[0.4em] uppercase mb-8 text-white/30 italic">Game Calendar</h3>
             <div id="calendar" class="bg-black/30 p-8 rounded-[40px] border border-white/5 shadow-inner"></div>
@@ -208,42 +208,42 @@ try {
       </section>
     </div>
 
-    <footer class="w-full py-24 flex flex-col items-center justify-center gap-10 bg-black/10 shrink-0">
+    <footer class="w-full py-28 flex flex-col items-center justify-center gap-10 bg-black/20 shrink-0 border-t border-white/5">
       <div class="text-center">
-        <h2 class="text-5xl md:text-7xl font-black tracking-[0.4em] uppercase leading-none opacity-90 mb-3">BDATALAB</h2>
-        <p class="text-[11px] font-bold text-white/20 tracking-[0.6em] uppercase">B.League Data Analysis</p>
+        <h2 class="text-6xl md:text-9xl font-black tracking-[0.25em] uppercase leading-none mb-4" 
+            style="color: #2E3C57; -webkit-text-stroke: 2px white; text-stroke: 2px white;">
+          BDATALAB
+        </h2>
+        <p class="text-[12px] font-bold text-white/30 tracking-[0.7em] uppercase">B.League Data Analysis</p>
       </div>
 
-      <div class="flex items-center gap-14">
-        <a href="https://x.com/BDataLab5x5" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-3 group transition-transform hover:scale-110">
-          <div class="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center group-hover:bg-white/10 transition-colors border border-white/10 shadow-2xl">
+      <div class="flex items-center gap-16">
+        <a href="https://x.com/BDataLab5x5" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-3 group">
+          <div class="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center group-hover:bg-white/10 transition-all border border-white/10 shadow-2xl scale-110">
             <svg class="w-7 h-7 fill-white" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
           </div>
-          <span class="text-[11px] font-black tracking-widest uppercase text-white/20 group-hover:text-white transition-colors">Twitter X</span>
         </a>
-
         <div class="h-12 w-[1px] bg-white/10"></div>
-
-        <a href="https://note.com/bdatalab5x5" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-3 group transition-transform hover:scale-110">
-          <div class="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center group-hover:bg-[#23bb9d] transition-colors border border-white/10 shadow-2xl">
-             <span class="text-[24px] font-black text-white">n</span>
+        <a href="https://note.com/bdatalab5x5" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-3 group">
+          <div class="w-16 h-16 bg-white/5 rounded-full flex items-center justify-center group-hover:bg-[#23bb9d] transition-all border border-white/10 shadow-2xl scale-110">
+             <span class="text-[26px] font-black text-white">n</span>
           </div>
-          <span class="text-[11px] font-black tracking-widest uppercase text-white/20 group-hover:text-white transition-colors">note Blog</span>
         </a>
       </div>
     </footer>
 
-    <div class="fixed bottom-8 left-8 z-40">
-        <button onclick="history.back()" class="bg-white/10 backdrop-blur-md text-white px-6 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 border border-white/10 hover:bg-white/20 transition-colors">← Back</button>
+    <div class="fixed bottom-8 left-8 z-50">
+        <button onclick="history.back()" class="bg-white/10 backdrop-blur-xl text-white px-8 py-5 rounded-full font-black text-[12px] uppercase tracking-[0.2em] shadow-2xl border border-white/20 active:scale-90 transition-all">← Back</button>
     </div>
-    <div class="fixed bottom-8 right-8 z-40">
-      <a href="/b1-home" class="bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 border border-white/10 hover:bg-gray-700 transition-colors">B1 Home</a>
+    <div class="fixed bottom-8 right-8 z-50">
+      <a href="/b1-home" class="bg-gray-800/80 backdrop-blur-xl text-white px-10 py-5 rounded-full font-black text-[12px] uppercase tracking-[0.2em] shadow-2xl border border-white/10 active:scale-90 transition-all">B1 Home</a>
     </div>
 
   </main>
 </Layout>
 
 <script is:inline define:vars={{ availableDatesMap }}>
+  // カレンダー等のスクリプト (変更なし)
   let currentY = 2026;
   let currentM = 0;
   const dates = Object.keys(availableDatesMap).sort((a,b) => b.localeCompare(a));
@@ -290,6 +290,22 @@ try {
 </script>
 
 <style is:global>
+  /* PC用修正：親のLayoutから来るヘッダー要素を強制非表示 & 配置固定 */
+  
+  /* 右上にあるナビゲーションやロゴを強制的に消去 */
+  header nav, 
+  header .justify-between > div:last-child,
+  .layout-header-right { 
+    display: none !important; 
+    visibility: hidden !important;
+  }
+
+  /* ヘッダー自体のフレックス解除（PCだと勝手に両端に寄るのを防ぐ） */
+  header .flex {
+    justify-content: flex-start !important;
+    display: flex !important;
+  }
+
   .no-scrollbar::-webkit-scrollbar { display: none; }
   .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
   .font-avenir { font-family: 'Avenir Next', 'Avenir', 'Helvetica Neue', Arial, sans-serif; }

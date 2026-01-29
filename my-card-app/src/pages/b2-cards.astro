@@ -23,7 +23,7 @@ let awayId = "";
 let homeId = "";
 let reportImagePath = "";
 
-// チームごとの関連キーワード設定（フォルダ名とファイル名のズレを吸収）
+// チームごとの関連キーワード設定
 const TEAM_MASTER = {
   "AOMORI": { kw: ["AOMORI", "WATS"], display: "AOMORI", color: "bg-[#004194] text-white" },
   "IWATE": { kw: ["IWATE", "BULLS"], display: "IWATE", color: "bg-[#E22B30] text-white" },
@@ -40,6 +40,9 @@ const TEAM_MASTER = {
   "KUMAMOTO": { kw: ["KUMAMOTO", "VOLTERS"], display: "KUMAMOTO", color: "bg-[#E62E2D] text-white" },
   "KAGOSHIMA": { kw: ["KAGOSHIMA", "REBNISE"], display: "KAGOSHIMA", color: "bg-black border border-white/20 text-white" }
 };
+
+// 全チームのキーワードをフラットな配列として抽出（除外用）
+const ALL_TEAM_KEYWORDS = Object.values(TEAM_MASTER).flatMap(t => t.kw);
 
 const findConfig = (key) => {
   if (!key) return { kw: [], display: "UNKNOWN", color: "bg-gray-700 text-white" };
@@ -81,16 +84,19 @@ try {
           const fileNameNoExt = f.name.replace('.png', '');
           const nameParts = fileNameNoExt.split('_');
           
-          // チーム名や日付などの不要なパーツを除去して選手名を抽出
-          const cleanNameParts = nameParts.filter(p => 
-            !p.match(/^\d+$/) && 
-            !awayConf.kw.some(k => p.toUpperCase().includes(k)) && 
-            !homeConf.kw.some(k => p.toUpperCase().includes(k))
-          );
+          // 修正：全チームキーワードおよび数字、日付形式を除去して純粋な選手名のみにする
+          const cleanNameParts = nameParts.filter(p => {
+            const upP = p.toUpperCase();
+            return (
+              !p.match(/^\d+$/) && // 数字単体を除外
+              !ALL_TEAM_KEYWORDS.some(k => upP.includes(k)) && // チーム名/愛称を除外
+              !p.match(/^202\d{5}$/) // 20251227 のような日付形式を除外
+            );
+          });
+          
           const playerName = cleanNameParts.join(' ').trim();
           const playerObj = { name: playerName, imagePath: `${rawBase}/${f.name}` };
 
-          // ファイル名にアウェイ/ホームいずれかのキーワードが含まれるかで振り分け
           if (awayConf.kw.some(k => fileNameUpper.includes(k))) {
             awayData.push(playerObj);
           } else if (homeConf.kw.some(k => fileNameUpper.includes(k))) {
@@ -99,7 +105,6 @@ try {
         });
       }
 
-      // レポート画像取得
       const reportApiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/reports/B2/${dateId}?t=${Date.now()}`;
       const reportRes = await fetch(reportApiURL, { headers: token ? { "Authorization": `token ${token}` } : {} });
       const reportFiles = await reportRes.json();

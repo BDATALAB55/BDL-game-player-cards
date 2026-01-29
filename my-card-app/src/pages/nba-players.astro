@@ -6,13 +6,13 @@ import Layout from '../layouts/Layout.astro';
 const { searchParams } = Astro.url;
 const playerName = searchParams.get('name') || "";
 
-// --- 設定：リポジトリ情報 ---
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
 
 let playerCards = [];
 let totalGames = 0;
+let availableDatesMap = {}; // カレンダー用: {"240125": true}
 
 if (playerName) {
   try {
@@ -38,7 +38,8 @@ if (playerName) {
 
       playerCards = matchedFiles.map(file => {
         const parts = file.path.split('/');
-        const dateStr = parts[2] || "";
+        const dateStr = parts[2] || ""; // YYMMDD
+        availableDatesMap[dateStr] = true; // カレンダー照合用
         return {
           date: dateStr,
           imagePath: `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${file.path}?t=${Date.now()}`
@@ -55,29 +56,36 @@ if (playerName) {
 <Layout title={`${playerName} - BDATALAB`}>
   <div class="min-h-screen bg-[#373A36] text-white font-avenir relative pb-40">
     
-    <header class="max-w-7xl mx-auto px-8 pt-16 pb-8 flex justify-between items-start border-b border-white/20">
+    <header class="max-w-7xl mx-auto px-8 pt-16 pb-8 flex justify-between items-end border-b border-white/10">
       <div>
-        <h1 class="text-7xl font-black uppercase tracking-tighter leading-none">{playerName}</h1>
+        <h1 class="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none">{playerName}</h1>
       </div>
-      <div class="flex flex-col items-end gap-2">
-        <span class="text-2xl font-black tracking-widest uppercase">BDATALAB</span>
-        <div class="flex items-center gap-3 opacity-60">
-           <div class="flex items-center gap-1.5 bg-white/10 px-2 py-1 rounded-md">
-             <span class="text-[10px] font-black italic">X</span><span class="text-[10px] lowercase opacity-50">x</span>
-           </div>
-           <span class="text-white/20">|</span>
-           <div class="flex items-center gap-1.5 bg-white/10 px-2 py-1 rounded-md">
-             <span class="text-[10px] font-black italic">n</span><span class="text-[10px] lowercase opacity-50">note</span>
-           </div>
+
+      <div class="flex flex-col items-end text-right space-y-3 mb-1">
+        <h2 class="text-xl md:text-3xl font-black tracking-widest uppercase leading-none">BDATALAB</h2>
+        <div class="flex items-center gap-3 md:gap-5">
+          <a href="https://x.com/BDataLab5x5" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 transition-all">
+            <div class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-white/20 transition-colors">
+              <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </div>
+            <span class="hidden md:inline text-[10px] font-black tracking-widest uppercase text-white/40 group-hover:text-white transition-colors">X</span>
+          </a>
+          <div class="h-3 w-[1px] bg-white/20"></div>
+          <a href="https://note.com/bdatalab5x5" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 transition-all">
+            <div class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-[#23bb9d] transition-colors">
+               <span class="text-[12px] font-black text-white">n</span>
+            </div>
+            <span class="text-[10px] font-black tracking-widest lowercase text-white/40 group-hover:text-white transition-colors">note</span>
+          </a>
         </div>
       </div>
     </header>
 
     <main class="max-w-7xl mx-auto px-8 mt-12">
       <div class="flex justify-between items-baseline mb-10">
-        <h2 class="text-3xl font-black uppercase tracking-tight">BOX SCORE</h2>
+        <h2 class="text-3xl font-black uppercase tracking-tight italic">BOX SCORE</h2>
         <div class="text-right flex flex-col items-end">
-          <span class="text-6xl font-black text-white/20 leading-none">{totalGames}</span>
+          <span class="text-7xl font-black text-white/20 leading-none">{totalGames}</span>
           <span class="text-[10px] font-black uppercase tracking-[0.2em] text-white/40">GAMES</span>
         </div>
       </div>
@@ -85,66 +93,105 @@ if (playerName) {
       {playerCards.length > 0 ? (
         <div class="flex overflow-x-auto gap-6 no-scrollbar pb-10 snap-x">
           {playerCards.map((card) => (
-            <div class="flex-none w-[280px] snap-start">
-              <div class="mb-3 flex items-center gap-2">
-                <div class="w-2 h-2 rounded-full bg-blue-500"></div>
-                <span class="text-[14px] font-black text-white/80">
+            <div id={`card-${card.date}`} class="flex-none w-[300px] snap-start">
+              <div class="mb-4 flex items-center gap-2 px-1">
+                <div class="w-2 h-2 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.5)]"></div>
+                <span class="text-[14px] font-black text-white/80 tracking-widest">
                   20{card.date.substring(0,2)}.{card.date.substring(2,4)}.{card.date.substring(4,6)}
                 </span>
               </div>
-              <div class="rounded-lg overflow-hidden border border-white/5 bg-black/40 shadow-2xl transition-transform hover:scale-[1.02]">
+              <div class="rounded-2xl overflow-hidden border border-white/10 bg-black/40 shadow-2xl transition-transform hover:scale-[1.02]">
                 <img src={card.imagePath} alt={playerName} class="w-full h-auto block" loading="lazy" />
               </div>
             </div>
           ))}
         </div>
       ) : (
-        <div class="py-20 rounded-2xl border border-dashed border-white/10 flex items-center justify-center bg-black/5">
-          <p class="text-white/20 font-black uppercase tracking-widest text-xs">No game data found</p>
+        <div class="py-20 rounded-3xl border-2 border-dashed border-white/5 flex items-center justify-center bg-black/10">
+          <p class="text-white/20 font-black uppercase tracking-[0.3em] text-xs italic">No game data found</p>
         </div>
       )}
 
       <div class="mt-32 flex flex-col items-center">
-        <p class="text-[10px] font-black tracking-[0.4em] text-white/20 uppercase mb-8">GAME CALENDAR</p>
-        <div class="bg-black/20 backdrop-blur-md p-8 rounded-[40px] border border-white/5 w-full max-w-sm">
-            <div class="flex justify-between items-center mb-8">
-                <button class="text-white/20 text-xl">←</button>
-                <span class="text-sm font-black uppercase tracking-widest">JANUARY 2026</span>
-                <button class="text-white/20 text-xl">→</button>
-            </div>
-            <div class="grid grid-cols-7 gap-y-4 text-center">
-                {['SUN','MON','TUE','WED','THU','FRI','SAT'].map(d => (
-                    <span class="text-[8px] font-black text-white/20">{d}</span>
-                ))}
-                {/* ダミーカレンダー：特定の日付だけハイライト */}
-                {Array.from({length: 31}, (_, i) => i + 1).map(day => {
-                   const isGameDay = [3, 4, 24, 25, 28].includes(day);
-                   return (
-                    <div class="flex justify-center items-center h-8">
-                        <span class={`text-[10px] font-bold ${isGameDay ? 'bg-blue-600 w-7 h-7 flex items-center justify-center rounded-full text-white shadow-lg shadow-blue-600/40' : 'text-white/20'}`}>
-                            {day}
-                        </span>
-                    </div>
-                   )
-                })}
-            </div>
-        </div>
+        <p class="text-[10px] font-black tracking-[0.5em] text-white/20 uppercase mb-10 italic">GAME CALENDAR</p>
+        <div id="calendar" class="bg-black/30 backdrop-blur-md p-10 rounded-[40px] border border-white/5 w-full max-w-sm shadow-inner">
+          </div>
       </div>
     </main>
 
     <div class="fixed bottom-8 left-8 z-50">
-        <button onclick="history.back()" class="bg-white/10 backdrop-blur-md text-white px-6 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 border border-white/10 flex items-center gap-2 group">
-            <span class="opacity-40 group-hover:opacity-100">←</span> BACK
+        <button onclick="history.back()" class="bg-white/10 backdrop-blur-md text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 border border-white/10 flex items-center gap-3 group transition-all">
+            <span class="opacity-40 group-hover:opacity-100 transition-colors">←</span> BACK
         </button>
     </div>
     <div class="fixed bottom-8 right-8 z-50">
-      <a href="/nba-home" class="bg-[#1D2B3D] backdrop-blur-md text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 border border-white/10 block">
-        B1 HOME
+      <a href="/nba-home" class="bg-gray-800/80 backdrop-blur-md text-white px-10 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 border border-white/10 block transition-all">
+        NBA HOME
       </a>
     </div>
 
   </div>
 </Layout>
+
+<script is:inline define:vars={{ availableDatesMap }}>
+  // カレンダーの初期表示を設定（最新の試合がある月に合わせる）
+  let currentY = 2026;
+  let currentM = 0;
+
+  const dateKeys = Object.keys(availableDatesMap).sort((a,b) => b.localeCompare(a));
+  if (dateKeys.length > 0) {
+    currentY = 2000 + parseInt(dateKeys[0].substring(0,2));
+    currentM = parseInt(dateKeys[0].substring(2,4)) - 1;
+  }
+
+  window.changeMonth = function(delta) {
+    currentM += delta;
+    if (currentM < 0) { currentM = 11; currentY--; }
+    else if (currentM > 11) { currentM = 0; currentY++; }
+    renderCalendar(currentY, currentM);
+  };
+
+  function renderCalendar(y, m) {
+    const calendarEl = document.getElementById('calendar');
+    if (!calendarEl) return;
+
+    const monthNames = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
+    const firstDay = new Date(y, m, 1).getDay();
+    const daysInMonth = new Date(y, m + 1, 0).getDate();
+
+    let html = `
+      <div class="flex justify-between items-center mb-10 px-2">
+        <button onclick="changeMonth(-1)" class="text-white/20 hover:text-white transition-colors text-xl">←</button>
+        <div class="font-black text-[13px] tracking-[0.3em] uppercase">${monthNames[m]} ${y}</div>
+        <button onclick="changeMonth(1)" class="text-white/20 hover:text-white transition-colors text-xl">→</button>
+      </div>
+      <div class="grid grid-cols-7 gap-y-2 text-center mb-6">
+        ${['SUN','MON','TUE','WED','THU','FRI','SAT'].map(d => `<span class="text-[8px] font-black text-white/10 tracking-widest">${d}</span>`).join('')}
+      </div>
+      <div class="grid grid-cols-7 gap-y-4 gap-x-2">`;
+
+    for (let i = 0; i < firstDay; i++) html += `<div></div>`;
+
+    for (let d = 1; d <= daysInMonth; d++) {
+      const dateKey = `${String(y).substring(2)}${String(m + 1).padStart(2, '0')}${String(d).padStart(2, '0')}`;
+      const isGameDay = availableDatesMap[dateKey];
+
+      html += `
+        <div class="flex justify-center items-center h-8">
+          ${isGameDay ? 
+            `<button onclick="document.getElementById('card-${dateKey}')?.scrollIntoView({behavior:'smooth', block:'center'})" 
+               class="w-8 h-8 flex items-center justify-center rounded-full bg-blue-600 text-white text-[10px] font-black shadow-[0_0_15px_rgba(37,99,235,0.5)] border border-white/20 hover:scale-110 transition-transform">
+               ${d}
+             </button>` : 
+            `<span class="text-white/10 text-[10px] font-bold">${d}</span>`
+          }
+        </div>`;
+    }
+    calendarEl.innerHTML = html + `</div>`;
+  }
+
+  renderCalendar(currentY, currentM);
+</script>
 
 <style is:global>
   .no-scrollbar::-webkit-scrollbar { display: none; }

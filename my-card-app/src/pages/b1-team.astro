@@ -10,7 +10,7 @@ const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/mai
 const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1`;
 const token = process.env.GITHUB_TOKEN;
 
-// アーカイブ側の表示に合わせるための変換辞書
+// (cityNameMap, teamInfo は変更なしのため中略)
 const cityNameMap = {
   "HOKKAIDO": "HOKKAIDO", "LEVANGA": "HOKKAIDO", "LEVANGAHOKKAIDO": "HOKKAIDO",
   "89ERS": "SENDAI", "SENDAI": "SENDAI", "SENDAI89ERS": "SENDAI",
@@ -100,7 +100,6 @@ try {
       
       if (currentTeam.searchKey && fileName.toUpperCase().includes(currentTeam.searchKey)) {
         const nameParts = fileName.replace('.png', '').split('_');
-        
         const fullDate = nameParts[0]; 
         const gameId = nameParts[1];
         const rawAway = nameParts[2] || "AWAY";
@@ -108,8 +107,6 @@ try {
 
         const displayAway = cityNameMap[rawAway.toUpperCase().replace(/[\s\-_]/g, '')] || rawAway;
         const displayHome = cityNameMap[rawHome.toUpperCase().replace(/[\s\-_]/g, '')] || rawHome;
-
-        // ★修正点：HOMEページと同じ「game_試合ID_AWAY_HOME_日付」の形式に統一
         const targetCardFolder = `game_${gameId}_${rawAway}_${rawHome}_${fullDate}`;
 
         const reportObj = {
@@ -136,24 +133,26 @@ try {
   <main class="bg-[#373A36] min-h-screen text-white font-avenir pb-80 overflow-x-hidden relative">
     
     <header class="pt-12 pb-6 px-6 max-w-6xl mx-auto w-full relative">
-      <div class="flex items-end justify-between w-full relative mb-1">
-        <div class="flex-shrink-0 max-w-[75%] md:max-w-none"> <div class="flex flex-col md:flex-row md:items-end md:gap-4 leading-tight md:leading-[0.8] font-black uppercase">
+      <div class="flex items-end justify-between w-full relative mb-1 gap-4">
+        
+        <div class="flex-1 min-w-0">
+          <div class="flex flex-col md:flex-row md:items-end md:gap-4 leading-tight md:leading-[0.8] font-bold font-avenir uppercase overflow-hidden">
             
             <span class={isReversed 
-              ? "text-4xl tracking-tighter break-words md:text-7xl md:tracking-[0.1em]" 
-              : "text-xl tracking-tight md:text-3xl md:font-bold md:opacity-60 md:tracking-[0.2em]"}>
+              ? "text-3xl sm:text-4xl md:text-7xl tracking-tighter shrink-0" 
+              : "text-lg sm:text-xl md:text-3xl opacity-60 tracking-[0.2em] shrink-0"}>
               {currentTeam.city}
             </span>
 
             <span class={isReversed 
-              ? "text-xl tracking-tight md:text-3xl md:font-bold md:opacity-60 md:tracking-[0.2em]" 
-              : "text-4xl tracking-tighter break-words md:text-7xl md:tracking-[0.1em]"}>
+              ? "text-lg sm:text-xl md:text-3xl opacity-60 tracking-[0.2em] truncate" 
+              : "text-3xl sm:text-4xl md:text-7xl tracking-tighter truncate"}>
               {currentTeam.name}
             </span>
           </div>
         </div>
 
-        <div class="hidden md:flex flex-col items-end text-right space-y-3 mb-1">
+        <div class="hidden md:flex flex-col items-end text-right space-y-3 mb-1 flex-shrink-0">
           <h2 class="text-3xl font-black tracking-widest uppercase leading-none">BDATALAB</h2>
           <div class="flex items-center gap-5">
             <a href="https://x.com/BDataLab5x5" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5">
@@ -172,6 +171,7 @@ try {
           </div>
         </div>
       </div>
+
       <div 
         class="absolute bottom-1 left-6 right-6 h-[3px] md:h-[5px]" 
         style={`background-color: ${currentTeam.color}; box-shadow: 0 4px 15px ${currentTeam.color}66;`}
@@ -223,13 +223,13 @@ try {
             <p class="text-white/20 font-black uppercase tracking-widest italic">No game reports found</p>
           </div>
         )}
-      </section>
 
-      <section class="mt-24">
-        <div class="max-w-md mx-auto">
-          <h3 class="text-center text-[10px] font-black tracking-[0.4em] uppercase mb-8 text-white/30 italic">Game Calendar</h3>
-          <div id="calendar" class="bg-black/30 p-8 rounded-[40px] border border-white/5 shadow-inner"></div>
-        </div>
+        <section class="mt-24">
+          <div class="max-w-md mx-auto">
+            <h3 class="text-center text-[10px] font-black tracking-[0.4em] uppercase mb-8 text-white/30 italic">Game Calendar</h3>
+            <div id="calendar" class="bg-black/30 p-8 rounded-[40px] border border-white/5 shadow-inner"></div>
+          </div>
+        </section>
       </section>
     </div>
 
@@ -308,7 +308,8 @@ try {
   renderCalendar(currentY, currentM);
 </script>
 
-<style>
+<style is:global>
   .no-scrollbar::-webkit-scrollbar { display: none; }
   .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  .font-avenir { font-family: 'Avenir Next', 'Avenir', 'Helvetica Neue', Arial, sans-serif; }
 </style>

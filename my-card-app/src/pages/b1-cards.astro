@@ -8,13 +8,10 @@ const queryFolder = searchParams.get('folder') || "";
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
-// --- 【超重要：Bリーグのフォルダ構造に合わせた抽出】 ---
-// queryFolder: "251227/game_505066_HOKKAIDO_KYOTO_20251227"
+// --- 【ロジック：フォルダ構造に合わせた抽出（維持）】 ---
 const segments = queryFolder.split('/').filter(Boolean);
 const dateId = segments[0] || ""; 
 const folderName = segments[1] || "";
-
-// フォルダ名を "_" でバラして、2番目(index 1)をgameIdとして確定させる
 const folderParts = folderName.split('_');
 const gameId = folderParts[1] || ""; 
 
@@ -22,47 +19,49 @@ let awayData = [];
 let homeData = [];
 let displayTeamAway = "AWAY";
 let displayTeamHome = "HOME";
+let awayId = "";
+let homeId = "";
 let reportImagePath = "";
 
-// チーム名マスタ
+// --- 【チーム名マスタ：カラーとリンク先を追加】 ---
 const TEAM_MASTER = {
-  "HOKKAIDO": { card: "LEVANGA_HOKKAIDO", display: "HOKKAIDO", report: "LEVANGA" },
-  "SENDAI": { card: "SENDAI_89ERS", display: "SENDAI", report: "89ERS" },
-  "AKITA": { card: "AKITA_NORTHERN_HAPPINETS", display: "AKITA", report: "NORTHERNHAPPINETS" },
-  "IBARAKI": { card: "IBARAKI_ROBOTS", display: "IBARAKI", report: "ROBOTS" },
-  "UTSUNOMIYA": { card: "UTSUNOMIYA_BREX", display: "UTSUNOMIYA", report: "BREX" },
-  "GUNMA": { card: "GUNMA_CRANE_THUNDERS", display: "GUNMA", report: "CRANETHUNDERS" },
-  "KOSHIGAYA": { card: "KOSHIGAYA_ALPHAS", display: "KOSHIGAYA", report: "ALPHAS" },
-  "ACHIBA": { card: "ALTIRI_CHIBA", display: "A-CHIBA", report: "ALTIRI" },
-  "CHIBAJ": { card: "CHIBA_JETS", display: "CHIBA-J", report: "JETS" },
-  "ATOKYO": { card: "ALVARK_TOKYO", display: "A-TOKYO", report: "ALVARK" },
-  "SHIBUYA": { card: "SUNROCKERS_SHIBUYA", display: "SR-SHIBUYA", report: "SUNROCKERS" },
-  "KAWASAKI": { card: "KAWASAKI_BRAVE_THUNDERS", display: "KAWASAKI", report: "BRAVETHUNDERS" },
-  "YOKOHAMABC": { card: "YOKOHAMA_B-CORSAIRS", display: "YOKOHAMA-BC", report: "B-CORSAIRS" },
-  "TOYAMA": { card: "TOYAMA_GROUSES", display: "TOYAMA", report: "GROUSES" },
-  "SANEN": { card: "SAN-EN_NEOPHOENIX", display: "SAN-EN", report: "NEOPHOENIX" },
-  "MIKAWA": { card: "SEAHORSES_MIKAWA", display: "MIKAWA", report: "SEAHORSES" },
-  "FENAGOYA": { card: "FIGHTING_EAGLES_NAGOYA", display: "FE-NAGOYA", report: "FIGHTINGEAGLES" },
-  "NAGOYAD": { card: "NAGOYA_DIAMOND_DOLPHINS", display: "NAGOYA-D", report: "DIAMONDDOLPHINS" },
-  "SHIGA": { card: "SHIGA_LAKES", display: "SHIGA", report: "LAKES" },
-  "KYOTO": { card: "KYOTO_HANNARYZ", display: "KYOTO", report: "HANNARYZ" },
-  "OSAKA": { card: "OSAKA_EVESSA", display: "OSAKA", report: "EVESSA" },
-  "SHIMANE": { card: "SHIMANE_SUSANOO_MAGIC", display: "SHIMANE", report: "SUSANOOMAGIC" },
-  "HIROSHIMA": { card: "HIROSHIMA_DRAGONFLIES", display: "HIROSHIMA", report: "DRAGONFLIES" },
-  "SAGA": { card: "SAGA_BALLOONERS", display: "SAGA", report: "BALLOONERS" },
-  "NAGASAKI": { card: "NAGASAKI_VELCA", display: "NAGASAKI", report: "VELCA" },
-  "RYUKYU": { card: "RYUKYU_GOLDEN_KINGS", display: "RYUKYU", report: "GOLDENKINGS" }
+  "HOKKAIDO": { card: "LEVANGA_HOKKAIDO", display: "HOKKAIDO", color: "bg-[#009245]", teamPage: "hokkaido" },
+  "SENDAI": { card: "SENDAI_89ERS", display: "SENDAI", color: "bg-[#FFD400] text-black", teamPage: "sendai" },
+  "AKITA": { card: "AKITA_NORTHERN_HAPPINETS", display: "AKITA", color: "bg-[#E60012]", teamPage: "akita" },
+  "IBARAKI": { card: "IBARAKI_ROBOTS", display: "IBARAKI", color: "bg-[#00428E]", teamPage: "ibaraki" },
+  "UTSUNOMIYA": { card: "UTSUNOMIYA_BREX", display: "UTSUNOMIYA", color: "bg-[#002D62]", teamPage: "utsunomiya" },
+  "GUNMA": { card: "GUNMA_CRANE_THUNDERS", display: "GUNMA", color: "bg-[#FFD700] text-black", teamPage: "gunma" },
+  "KOSHIGAYA": { card: "KOSHIGAYA_ALPHAS", display: "KOSHIGAYA", color: "bg-[#800000]", teamPage: "koshigaya" },
+  "ACHIBA": { card: "ALTIRI_CHIBA", display: "A-CHIBA", color: "bg-[#00204E]", teamPage: "a-chiba" },
+  "CHIBAJ": { card: "CHIBA_JETS", display: "CHIBA-J", color: "bg-[#E60012]", teamPage: "chiba-j" },
+  "ATOKYO": { card: "ALVARK_TOKYO", display: "A-TOKYO", color: "bg-[#000000]", teamPage: "a-tokyo" },
+  "SHIBUYA": { card: "SUNROCKERS_SHIBUYA", display: "SR-SHIBUYA", color: "bg-[#FFD700] text-black", teamPage: "shibuya" },
+  "KAWASAKI": { card: "KAWASAKI_BRAVE_THUNDERS", display: "KAWASAKI", color: "bg-[#7E0023]", teamPage: "kawasaki" },
+  "YOKOHAMABC": { card: "YOKOHAMA_B-CORSAIRS", display: "YOKOHAMA-BC", color: "bg-[#002A54]", teamPage: "yokohama-bc" },
+  "TOYAMA": { card: "TOYAMA_GROUSES", display: "TOYAMA", color: "bg-[#E2041B]", teamPage: "toyama" },
+  "SANEN": { card: "SAN-EN_NEOPHOENIX", display: "SAN-EN", color: "bg-[#E2041B]", teamPage: "san-en" },
+  "MIKAWA": { card: "SEAHORSES_MIKAWA", display: "MIKAWA", color: "bg-[#00479D]", teamPage: "mikawa" },
+  "FENAGOYA": { card: "FIGHTING_EAGLES_NAGOYA", display: "FE-NAGOYA", color: "bg-[#004B98]", teamPage: "fe-nagoya" },
+  "NAGOYAD": { card: "NAGOYA_DIAMOND_DOLPHINS", display: "NAGOYA-D", color: "bg-[#D70035]", teamPage: "nagoya-d" },
+  "SHIGA": { card: "SHIGA_LAKES", display: "SHIGA", color: "bg-[#005BAC]", teamPage: "shiga" },
+  "KYOTO": { card: "KYOTO_HANNARYZ", display: "KYOTO", color: "bg-[#00A0E9]", teamPage: "kyoto" },
+  "OSAKA": { card: "OSAKA_EVESSA", display: "OSAKA", color: "bg-[#E30613]", teamPage: "osaka" },
+  "SHIMANE": { card: "SHIMANE_SUSANOO_MAGIC", display: "SHIMANE", color: "bg-[#004A99]", teamPage: "shimane" },
+  "HIROSHIMA": { card: "HIROSHIMA_DRAGONFLIES", display: "HIROSHIMA", color: "bg-[#FF4D00]", teamPage: "hiroshima" },
+  "SAGA": { card: "SAGA_BALLOONERS", display: "SAGA", color: "bg-[#00A3E0]", teamPage: "saga" },
+  "NAGASAKI": { card: "NAGASAKI_VELCA", display: "NAGASAKI", color: "bg-[#00204E]", teamPage: "nagasaki" },
+  "RYUKYU": { card: "RYUKYU_GOLDEN_KINGS", display: "RYUKYU", color: "bg-[#B3995D]", teamPage: "ryukyu" }
 };
 
 const findConfig = (key) => {
-  if (!key) return { card: "", display: "UNKNOWN", report: "" };
+  if (!key) return { card: "", display: "UNKNOWN", color: "bg-gray-700", teamPage: "" };
   const upperKey = key.toUpperCase();
   if (TEAM_MASTER[upperKey]) return TEAM_MASTER[upperKey];
   for (const teamKey in TEAM_MASTER) {
     const conf = TEAM_MASTER[teamKey];
-    if (conf.card.includes(upperKey) || conf.report.includes(upperKey)) return conf;
+    if (conf.card.includes(upperKey)) return conf;
   }
-  return { card: key, display: key, report: key };
+  return { card: key, display: key, color: "bg-gray-700", teamPage: key.toLowerCase() };
 };
 
 try {
@@ -71,22 +70,19 @@ try {
   const items = await res.json();
 
   if (Array.isArray(items)) {
-    // フォルダ名の2番目が gameId と一致するものを探す
-    const realFolder = items.find(item => {
-      const parts = item.name.split('_');
-      return parts[1] === gameId && item.type === 'dir';
-    });
+    const realFolder = items.find(item => item.name.split('_')[1] === gameId && item.type === 'dir');
     
     if (realFolder) {
       const folderPath = realFolder.path;
       const rawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${folderPath}`;
-      
       const parts = realFolder.name.split('_');
-      // game_ID_AWAY_HOME_DATE なので 2(AWAY) と 3(HOME) を使用
+      
       const awayConf = findConfig(parts[2]);
       const homeConf = findConfig(parts[3]);
       displayTeamAway = awayConf.display;
       displayTeamHome = homeConf.display;
+      awayId = parts[2];
+      homeId = parts[3];
 
       const filesRes = await fetch(realFolder.url, { headers: token ? { "Authorization": `token ${token}` } : {} });
       const files = await filesRes.json();
@@ -94,21 +90,31 @@ try {
       if (Array.isArray(files)) {
         files.forEach(f => {
           if (!f.name.toLowerCase().endsWith('.png')) return;
-          const fileName = f.name.toUpperCase();
-          const playerObj = {
-            name: f.name.replace('.png', '').split('_').slice(-2).join(' '),
-            imagePath: `${rawBase}/${f.name}`
-          };
+          
+          // --- 【選手名のクレンジング：日付を除去して名前を抽出】 ---
+          const fileNameNoExt = f.name.replace('.png', '');
+          const nameParts = fileNameNoExt.split('_');
+          
+          // 8桁の数字（日付）と、チーム名・ブランド名を除外して名前だけを結合
+          const cleanNameParts = nameParts.filter(p => 
+            !p.match(/^\d{8}$/) && 
+            !awayConf.card.includes(p) && 
+            !homeConf.card.includes(p) && 
+            !['89ERS', 'BRAVE', 'JETS', 'ROBOTS'].includes(p)
+          );
+          const playerName = cleanNameParts.join(' ');
 
-          if (fileName.includes(awayConf.card.toUpperCase())) {
+          const playerObj = { name: playerName, imagePath: `${rawBase}/${f.name}` };
+
+          if (f.name.toUpperCase().includes(awayConf.card.toUpperCase())) {
             awayData.push(playerObj);
-          } else if (fileName.includes(homeConf.card.toUpperCase())) {
+          } else if (f.name.toUpperCase().includes(homeConf.card.toUpperCase())) {
             homeData.push(playerObj);
           }
         });
       }
 
-      // レポート画像
+      // レポート画像（維持）
       const reportApiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/reports/B1/${dateId}?t=${Date.now()}`;
       const reportRes = await fetch(reportApiURL, { headers: token ? { "Authorization": `token ${token}` } : {} });
       const reportFiles = await reportRes.json();
@@ -120,9 +126,10 @@ try {
       }
     }
   }
-} catch (e) {
-  console.error("Fetch Error:", e);
-}
+} catch (e) { console.error("Fetch Error:", e); }
+
+const awayFinalConf = findConfig(awayId);
+const homeFinalConf = findConfig(homeId);
 ---
 
 <Layout title="B1 CARDS | B-Data Lab">
@@ -149,14 +156,17 @@ try {
       </section>
 
       {[
-        { data: awayData, label: displayTeamAway, color: "bg-white text-black" },
-        { data: homeData, label: displayTeamHome, color: "bg-blue-600 text-white" }
+        { data: awayData, label: displayTeamAway, conf: awayFinalConf },
+        { data: homeData, label: displayTeamHome, conf: homeFinalConf }
       ].map((team) => (
         <section>
           <div class="px-8 mb-6">
-            <span class={`${team.color} px-6 py-1.5 text-[15px] font-black uppercase rounded-full shadow-lg`}>
+            <a 
+              href={`/b1-team?team=${team.conf.teamPage}`}
+              class={`${team.conf.color} px-6 py-2 text-[15px] font-black uppercase rounded-full inline-block shadow-lg hover:opacity-80 transition-opacity`}
+            >
               {team.label}
-            </span>
+            </a>
           </div>
           
           <div class="flex overflow-x-auto gap-6 px-8 no-scrollbar pb-8 snap-x snap-mandatory">

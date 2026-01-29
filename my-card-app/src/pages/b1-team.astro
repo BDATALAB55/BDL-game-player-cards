@@ -10,7 +10,6 @@ const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/mai
 const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1`;
 const token = process.env.GITHUB_TOKEN;
 
-// (cityNameMap, teamInfo は変更なしのため中略)
 const cityNameMap = {
   "HOKKAIDO": "HOKKAIDO", "LEVANGA": "HOKKAIDO", "LEVANGAHOKKAIDO": "HOKKAIDO",
   "89ERS": "SENDAI", "SENDAI": "SENDAI", "SENDAI89ERS": "SENDAI",
@@ -136,17 +135,17 @@ try {
       <div class="flex items-end justify-between w-full relative mb-1 gap-4">
         
         <div class="flex-1 min-w-0">
-          <div class="flex flex-col md:flex-row md:items-end md:gap-4 leading-tight md:leading-[0.8] font-bold font-avenir uppercase overflow-hidden">
+          <div class="flex items-baseline gap-2 md:gap-4 font-bold font-avenir uppercase whitespace-nowrap overflow-hidden">
             
             <span class={isReversed 
-              ? "text-3xl sm:text-4xl md:text-7xl tracking-tighter shrink-0" 
-              : "text-lg sm:text-xl md:text-3xl opacity-60 tracking-[0.2em] shrink-0"}>
+              ? "text-[clamp(1.5rem,5vw,4.5rem)] tracking-tighter shrink-0 leading-none" 
+              : "text-[clamp(0.8rem,2vw,1.875rem)] opacity-60 tracking-[0.2em] shrink-0 leading-none"}>
               {currentTeam.city}
             </span>
 
             <span class={isReversed 
-              ? "text-lg sm:text-xl md:text-3xl opacity-60 tracking-[0.2em] truncate" 
-              : "text-3xl sm:text-4xl md:text-7xl tracking-tighter truncate"}>
+              ? "text-[clamp(0.8rem,2vw,1.875rem)] opacity-60 tracking-[0.2em] shrink-0 leading-none" 
+              : "text-[clamp(1.5rem,5vw,4.5rem)] tracking-tighter shrink-0 leading-none"}>
               {currentTeam.name}
             </span>
           </div>
@@ -164,7 +163,7 @@ try {
             <div class="h-3 w-[1px] bg-white/20"></div>
             <a href="https://note.com/bdatalab5x5" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5">
               <div class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-[#23bb9d] transition-colors">
-                 <span class="text-[12px] font-black text-white">n</span>
+                  <span class="text-[12px] font-black text-white">n</span>
               </div>
               <span class="text-[10px] font-black tracking-widest lowercase text-white/40 group-hover:text-white transition-colors">note</span>
             </a>

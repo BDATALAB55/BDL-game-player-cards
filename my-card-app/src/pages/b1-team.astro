@@ -128,32 +128,32 @@ try {
 ---
 
 <Layout title={`${teamId} | B-Data Lab`}>
-  <main class="bg-[#373A36] min-h-screen text-white font-avenir pb-20 overflow-x-hidden relative">
+  <main class="bg-[#373A36] min-h-screen text-white font-avenir overflow-x-hidden flex flex-col">
     
-    <header class="pt-12 pb-6 px-6 max-w-6xl mx-auto w-full relative">
+    <header class="pt-12 pb-6 px-6 max-w-6xl mx-auto w-full relative shrink-0">
       <div class="flex items-end justify-between w-full relative mb-1 gap-4">
         <div class="flex-1 min-w-0">
           <div class="flex items-baseline gap-2 md:gap-4 font-bold font-avenir uppercase whitespace-nowrap overflow-hidden">
             <span class={isReversed 
-              ? "text-[clamp(1.5rem,5vw,4.5rem)] tracking-tighter shrink-0 leading-none" 
-              : "text-[clamp(0.8rem,2vw,1.875rem)] opacity-60 tracking-[0.2em] shrink-0 leading-none"}>
+              ? "text-[clamp(1.5rem,5vw,4.5rem)] tracking-tight shrink-0 leading-none" 
+              : "text-[clamp(0.8rem,2vw,1.875rem)] opacity-60 tracking-[0.25em] shrink-0 leading-none"}>
               {currentTeam.city}
             </span>
             <span class={isReversed 
-              ? "text-[clamp(0.8rem,2vw,1.875rem)] opacity-60 tracking-[0.2em] shrink-0 leading-none" 
-              : "text-[clamp(1.5rem,5vw,4.5rem)] tracking-tighter shrink-0 leading-none"}>
+              ? "text-[clamp(0.8rem,2vw,1.875rem)] opacity-60 tracking-[0.25em] shrink-0 leading-none" 
+              : "text-[clamp(1.5rem,5vw,4.5rem)] tracking-tight shrink-0 leading-none"}>
               {currentTeam.name}
             </span>
           </div>
         </div>
-        </div>
+      </div>
       <div 
         class="absolute bottom-1 left-6 right-6 h-[3px] md:h-[5px]" 
         style={`background-color: ${currentTeam.color}; box-shadow: 0 4px 15px ${currentTeam.color}66;`}
       ></div>
     </header>
 
-    <div class="max-w-6xl mx-auto px-6">
+    <div class="max-w-6xl mx-auto px-6 flex-grow w-full">
       <section class="mt-16">
         <div class="flex justify-between items-end mb-10">
           <div>
@@ -199,7 +199,7 @@ try {
           </div>
         )}
 
-        <section class="mt-24 mb-40">
+        <section class="mt-24 mb-32">
           <div class="max-w-md mx-auto">
             <h3 class="text-center text-[10px] font-black tracking-[0.4em] uppercase mb-8 text-white/30 italic">Game Calendar</h3>
             <div id="calendar" class="bg-black/30 p-8 rounded-[40px] border border-white/5 shadow-inner"></div>
@@ -208,7 +208,7 @@ try {
       </section>
     </div>
 
-    <footer class="flex flex-col items-center justify-center w-full py-24 gap-8 bg-black/5">
+    <footer class="w-full py-24 flex flex-col items-center justify-center gap-8 bg-black/10 shrink-0">
       <div class="text-center">
         <h2 class="text-4xl md:text-6xl font-black tracking-[0.3em] uppercase leading-none opacity-80 mb-2">BDATALAB</h2>
         <p class="text-[10px] font-bold text-white/20 tracking-[0.5em] uppercase">B.League Data Analysis</p>

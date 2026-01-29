@@ -8,12 +8,15 @@ const queryFolder = searchParams.get('folder') || "";
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
-// --- 【修正：URLから試合IDと日付を厳密に抽出】 ---
-// queryFolder: "20260125/game_505143_SUSANOOMAGIC_89ERS_20260125" のような形式を想定
-const gameIdMatch = queryFolder.match(/\d{6,}/); 
-const gameId = gameIdMatch ? gameIdMatch[0] : "";
+// --- 【超重要：Bリーグのフォルダ構造に合わせた抽出】 ---
+// queryFolder: "251227/game_505066_HOKKAIDO_KYOTO_20251227"
 const segments = queryFolder.split('/').filter(Boolean);
 const dateId = segments[0] || ""; 
+const folderName = segments[1] || "";
+
+// フォルダ名を "_" でバラして、2番目(index 1)をgameIdとして確定させる
+const folderParts = folderName.split('_');
+const gameId = folderParts[1] || ""; 
 
 let awayData = [];
 let homeData = [];
@@ -63,26 +66,28 @@ const findConfig = (key) => {
 };
 
 try {
-  // 1. 指定された日付フォルダ内の全アイテムをリストアップ
   const listApi = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/Bplayers/B1/${dateId}?t=${Date.now()}`;
   const res = await fetch(listApi, { headers: token ? { "Authorization": `token ${token}` } : {} });
   const items = await res.json();
 
   if (Array.isArray(items)) {
-    // 【重要】URLのgameIdと一致するフォルダだけを特定
-    const realFolder = items.find(item => item.name.includes(gameId) && item.type === 'dir');
+    // フォルダ名の2番目が gameId と一致するものを探す
+    const realFolder = items.find(item => {
+      const parts = item.name.split('_');
+      return parts[1] === gameId && item.type === 'dir';
+    });
     
     if (realFolder) {
       const folderPath = realFolder.path;
       const rawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${folderPath}`;
       
-      const dirParts = realFolder.name.split('_');
-      const awayConf = findConfig(dirParts[2]);
-      const homeConf = findConfig(dirParts[3]);
+      const parts = realFolder.name.split('_');
+      // game_ID_AWAY_HOME_DATE なので 2(AWAY) と 3(HOME) を使用
+      const awayConf = findConfig(parts[2]);
+      const homeConf = findConfig(parts[3]);
       displayTeamAway = awayConf.display;
       displayTeamHome = homeConf.display;
 
-      // 2. 特定した試合フォルダの中にあるファイルだけを取得
       const filesRes = await fetch(realFolder.url, { headers: token ? { "Authorization": `token ${token}` } : {} });
       const files = await filesRes.json();
 
@@ -103,7 +108,7 @@ try {
         });
       }
 
-      // 3. レポート画像もこの試合IDに限定して取得
+      // レポート画像
       const reportApiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/reports/B1/${dateId}?t=${Date.now()}`;
       const reportRes = await fetch(reportApiURL, { headers: token ? { "Authorization": `token ${token}` } : {} });
       const reportFiles = await reportRes.json();
@@ -161,22 +166,16 @@ try {
                   <div class="cursor-pointer card-trigger rounded-2xl overflow-hidden border border-white/10 bg-black/20 shadow-xl" data-img={p.imagePath}>
                     <img src={p.imagePath} alt={p.name} class="w-full h-auto block" loading="lazy" />
                   </div>
-                  
                   <div class="mt-4 flex justify-center">
-                    <a 
-                      href={`/b-players?name=${encodeURIComponent(p.name)}`}
-                      class="bg-white/10 border border-white/10 hover:bg-white/20 px-10 py-2.5 rounded-full transition-all active:scale-95 min-w-[140px] text-center"
-                    >
-                      <span class="text-[10px] font-black uppercase tracking-[0.2em] text-white/80">
-                        {p.name}
-                      </span>
+                    <a href={`/b-players?name=${encodeURIComponent(p.name)}`} class="bg-white/10 border border-white/10 hover:bg-white/20 px-10 py-2.5 rounded-full transition-all active:scale-95 min-w-[140px] text-center">
+                      <span class="text-[10px] font-black uppercase tracking-[0.2em] text-white/80">{p.name}</span>
                     </a>
                   </div>
                 </div>
               ))
             ) : (
               <div class="px-8 w-full py-12 border border-dashed border-white/10 rounded-2xl text-center text-white/20 uppercase text-[10px] tracking-[0.4em]">
-                No Player Cards Found for {team.label}
+                No Player Cards Found
               </div>
             )}
           </div>

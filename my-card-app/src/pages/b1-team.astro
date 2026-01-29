@@ -130,7 +130,7 @@ try {
 <Layout title={`${teamId} | B-Data Lab`}>
   <main class="bg-[#373A36] min-h-screen text-white font-avenir overflow-x-hidden flex flex-col">
     
-    <header class="pt-12 pb-6 px-6 max-w-6xl mx-auto w-full relative shrink-0">
+    <header class="custom-page-header pt-12 pb-6 px-6 max-w-6xl mx-auto w-full relative shrink-0">
       <div class="flex items-end w-full relative mb-1">
         <div class="flex-1">
           <div class="flex items-baseline gap-2 md:gap-7 font-bold font-avenir uppercase whitespace-nowrap">
@@ -208,10 +208,10 @@ try {
       </section>
     </div>
 
-    <footer class="w-full py-28 flex flex-col items-center justify-center gap-10 bg-black/20 shrink-0 border-t border-white/5">
+    <footer class="w-full py-40 flex flex-col items-center justify-center gap-10 bg-black/20 shrink-0 border-t border-white/5 mt-20">
       <div class="text-center">
-        <h2 class="text-6xl md:text-9xl font-black tracking-[0.25em] uppercase leading-none mb-4" 
-            style="color: #2E3C57; -webkit-text-stroke: 2px white; text-stroke: 2px white;">
+        <h2 class="text-7xl md:text-[10rem] font-black tracking-[0.25em] uppercase leading-none mb-4" 
+            style="color: #2E3C57; -webkit-text-stroke: 1.5px white; paint-order: stroke fill;">
           BDATALAB
         </h2>
         <p class="text-[12px] font-bold text-white/30 tracking-[0.7em] uppercase">B.League Data Analysis</p>
@@ -243,7 +243,6 @@ try {
 </Layout>
 
 <script is:inline define:vars={{ availableDatesMap }}>
-  // カレンダー等のスクリプト (変更なし)
   let currentY = 2026;
   let currentM = 0;
   const dates = Object.keys(availableDatesMap).sort((a,b) => b.localeCompare(a));
@@ -259,6 +258,7 @@ try {
   };
   function renderCalendar(y, m) {
     const calendarEl = document.getElementById('calendar');
+    if(!calendarEl) return;
     const monthNames = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
     const firstDay = new Date(y, m, 1).getDay();
     const daysInMonth = new Date(y, m + 1, 0).getDate();
@@ -290,20 +290,34 @@ try {
 </script>
 
 <style is:global>
-  /* PC用修正：親のLayoutから来るヘッダー要素を強制非表示 & 配置固定 */
+  /* --- 強制リセットCSS：PC版のLayout干渉を完全に断つ --- */
   
-  /* 右上にあるナビゲーションやロゴを強制的に消去 */
-  header nav, 
-  header .justify-between > div:last-child,
-  .layout-header-right { 
-    display: none !important; 
+  /* ページ専用ヘッダー(custom-page-header) 以外の全ヘッダー・ナビを消去 */
+  header:not(.custom-page-header), 
+  nav, 
+  [class*="nav"], 
+  [class*="Header"],
+  .layout-header-right {
+    display: none !important;
     visibility: hidden !important;
+    height: 0 !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
   }
 
-  /* ヘッダー自体のフレックス解除（PCだと勝手に両端に寄るのを防ぐ） */
-  header .flex {
+  /* 親のLayoutが中身を中央寄せにしてしまうのを防ぐ（横幅いっぱい使う） */
+  header.custom-page-header {
+    display: block !important;
+    width: 100% !important;
+    max-width: 72rem !important; /* max-w-6xl */
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: left !important;
+  }
+
+  /* 親Layoutのコンテナ幅制限を上書きして左寄せを維持 */
+  header.custom-page-header .flex {
     justify-content: flex-start !important;
-    display: flex !important;
   }
 
   .no-scrollbar::-webkit-scrollbar { display: none; }

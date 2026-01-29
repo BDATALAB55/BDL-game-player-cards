@@ -9,7 +9,6 @@ const playerName = searchParams.get('name') || "";
 // --- 設定：リポジトリ情報 ---
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
-const githubRawBase = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/players`;
 const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
 
 let playerCards = [];
@@ -17,7 +16,6 @@ let totalGames = 0;
 
 if (playerName) {
   try {
-    // 1回のリクエストで全ディレクトリ構造を取得
     const res = await fetch(RECURSIVE_API, {
       headers: {
         ...(token ? { "Authorization": `token ${token}` } : {}),
@@ -28,10 +26,7 @@ if (playerName) {
     const data = await res.json();
 
     if (data.tree) {
-      // 選手名に含まれるスペースをアンダースコアに置換した検索用文字列
       const searchPattern = playerName.replace(/\s+/g, '_').toLowerCase();
-
-      // 該当選手の画像ファイルを一括抽出
       const matchedFiles = data.tree.filter(item => {
         const path = item.path.toLowerCase();
         return (
@@ -41,16 +36,14 @@ if (playerName) {
         );
       });
 
-      // 抽出したファイルを整形
       playerCards = matchedFiles.map(file => {
         const parts = file.path.split('/');
-        // parts[2] = 日付(YYMMDD), parts[3] = 試合フォルダ, parts[4] = ファイル名
         const dateStr = parts[2] || "";
         return {
           date: dateStr,
           imagePath: `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${file.path}?t=${Date.now()}`
         };
-      }).sort((a, b) => b.date.localeCompare(a.date)); // 新しい日付順
+      }).sort((a, b) => b.date.localeCompare(a.date));
     }
     totalGames = playerCards.length;
   } catch (e) {
@@ -59,81 +52,102 @@ if (playerName) {
 }
 ---
 
-<Layout title={`${playerName} - Player Stats`}>
-  <div class="min-h-screen bg-[#373A36] text-white font-avenir relative pb-20">
+<Layout title={`${playerName} - BDATALAB`}>
+  <div class="min-h-screen bg-[#373A36] text-white font-avenir relative pb-40">
     
-    <div class="absolute top-10 left-0 w-full overflow-hidden whitespace-nowrap pointer-events-none opacity-5 select-none z-0">
-      <span class="text-[20vw] font-black italic uppercase tracking-tighter">{playerName}</span>
-    </div>
-
-    <header class="relative z-10 pt-20 pb-10 text-center">
-      <span class="text-blue-500 text-xs font-black tracking-[0.5em] uppercase mb-4 block">NBA Player</span>
-      <h1 class="text-6xl md:text-8xl font-black italic uppercase leading-none tracking-tighter">
-        {playerName}
-      </h1>
+    <header class="max-w-7xl mx-auto px-8 pt-16 pb-8 flex justify-between items-start border-b border-white/20">
+      <div>
+        <h1 class="text-7xl font-black uppercase tracking-tighter leading-none">{playerName}</h1>
+      </div>
+      <div class="flex flex-col items-end gap-2">
+        <span class="text-2xl font-black tracking-widest uppercase">BDATALAB</span>
+        <div class="flex items-center gap-3 opacity-60">
+           <div class="flex items-center gap-1.5 bg-white/10 px-2 py-1 rounded-md">
+             <span class="text-[10px] font-black italic">X</span><span class="text-[10px] lowercase opacity-50">x</span>
+           </div>
+           <span class="text-white/20">|</span>
+           <div class="flex items-center gap-1.5 bg-white/10 px-2 py-1 rounded-md">
+             <span class="text-[10px] font-black italic">n</span><span class="text-[10px] lowercase opacity-50">note</span>
+           </div>
+        </div>
+      </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-6 relative z-10">
-      
-      <div class="flex justify-between items-end mb-12">
-        <div>
-          <h2 class="text-2xl font-black italic uppercase tracking-tight italic">Performance Cards</h2>
-          <p class="text-[10px] text-white/40 font-bold tracking-widest uppercase">Personal Game Stats</p>
-        </div>
-        <div class="text-right">
-          <span class="text-6xl font-black italic leading-none">{totalGames}</span>
-          <p class="text-[10px] text-white/40 font-bold tracking-[0.3em] uppercase">Games</p>
+    <main class="max-w-7xl mx-auto px-8 mt-12">
+      <div class="flex justify-between items-baseline mb-10">
+        <h2 class="text-3xl font-black uppercase tracking-tight">BOX SCORE</h2>
+        <div class="text-right flex flex-col items-end">
+          <span class="text-6xl font-black text-white/20 leading-none">{totalGames}</span>
+          <span class="text-[10px] font-black uppercase tracking-[0.2em] text-white/40">GAMES</span>
         </div>
       </div>
 
       {playerCards.length > 0 ? (
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <div class="flex overflow-x-auto gap-6 no-scrollbar pb-10 snap-x">
           {playerCards.map((card) => (
-            <div class="group">
+            <div class="flex-none w-[280px] snap-start">
               <div class="mb-3 flex items-center gap-2">
-                <span class="h-[1px] w-4 bg-blue-500"></span>
-                <span class="text-[11px] font-black text-white/60 tracking-widest">
+                <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+                <span class="text-[14px] font-black text-white/80">
                   20{card.date.substring(0,2)}.{card.date.substring(2,4)}.{card.date.substring(4,6)}
                 </span>
               </div>
-              <div class="relative rounded-xl overflow-hidden shadow-2xl transition-all duration-500 group-hover:scale-[1.03] group-hover:shadow-blue-500/20 border border-white/5">
+              <div class="rounded-lg overflow-hidden border border-white/5 bg-black/40 shadow-2xl transition-transform hover:scale-[1.02]">
                 <img src={card.imagePath} alt={playerName} class="w-full h-auto block" loading="lazy" />
-                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </div>
             </div>
           ))}
         </div>
       ) : (
-        <div class="py-32 rounded-3xl border-2 border-dashed border-white/5 flex flex-col items-center justify-center bg-black/10 backdrop-blur-sm">
-          <p class="text-white/20 font-black italic uppercase tracking-[0.3em] text-sm">No data found for this player</p>
+        <div class="py-20 rounded-2xl border border-dashed border-white/10 flex items-center justify-center bg-black/5">
+          <p class="text-white/20 font-black uppercase tracking-widest text-xs">No game data found</p>
         </div>
       )}
 
-      <div class="mt-32 pt-20 border-t border-white/5">
-         <p class="text-center text-[10px] font-black tracking-[0.5em] text-white/20 uppercase mb-10">Active Calendar</p>
+      <div class="mt-32 flex flex-col items-center">
+        <p class="text-[10px] font-black tracking-[0.4em] text-white/20 uppercase mb-8">GAME CALENDAR</p>
+        <div class="bg-black/20 backdrop-blur-md p-8 rounded-[40px] border border-white/5 w-full max-w-sm">
+            <div class="flex justify-between items-center mb-8">
+                <button class="text-white/20 text-xl">←</button>
+                <span class="text-sm font-black uppercase tracking-widest">JANUARY 2026</span>
+                <button class="text-white/20 text-xl">→</button>
+            </div>
+            <div class="grid grid-cols-7 gap-y-4 text-center">
+                {['SUN','MON','TUE','WED','THU','FRI','SAT'].map(d => (
+                    <span class="text-[8px] font-black text-white/20">{d}</span>
+                ))}
+                {/* ダミーカレンダー：特定の日付だけハイライト */}
+                {Array.from({length: 31}, (_, i) => i + 1).map(day => {
+                   const isGameDay = [3, 4, 24, 25, 28].includes(day);
+                   return (
+                    <div class="flex justify-center items-center h-8">
+                        <span class={`text-[10px] font-bold ${isGameDay ? 'bg-blue-600 w-7 h-7 flex items-center justify-center rounded-full text-white shadow-lg shadow-blue-600/40' : 'text-white/20'}`}>
+                            {day}
+                        </span>
+                    </div>
+                   )
+                })}
+            </div>
+        </div>
       </div>
     </main>
 
-    <nav class="fixed bottom-8 left-0 w-full px-8 flex justify-between items-center z-50">
-      <button onclick="history.back()" class="bg-white/10 backdrop-blur-md hover:bg-white/20 text-white px-6 py-3 rounded-xl border border-white/10 transition-all active:scale-95 group">
-        <span class="text-[10px] font-black uppercase tracking-widest flex items-center gap-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-          </svg>
-          Back
-        </span>
-      </button>
-
-      <a href="/nba-home" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-3 rounded-xl shadow-xl shadow-blue-600/20 transition-all active:scale-95">
-        <span class="text-[10px] font-black uppercase tracking-[0.2em]">NBA Home</span>
+    <div class="fixed bottom-8 left-8 z-50">
+        <button onclick="history.back()" class="bg-white/10 backdrop-blur-md text-white px-6 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 border border-white/10 flex items-center gap-2 group">
+            <span class="opacity-40 group-hover:opacity-100">←</span> BACK
+        </button>
+    </div>
+    <div class="fixed bottom-8 right-8 z-50">
+      <a href="/nba-home" class="bg-[#1D2B3D] backdrop-blur-md text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 border border-white/10 block">
+        B1 HOME
       </a>
-    </nav>
+    </div>
 
   </div>
 </Layout>
 
 <style is:global>
-  @import url('https://fonts.cdnfonts.com/css/avenir-next-lt-pro');
-  :root { font-family: 'Avenir Next LT Pro', sans-serif; }
-  .font-avenir { font-family: 'Avenir Next LT Pro', sans-serif; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  .font-avenir { font-family: 'Avenir Next', 'Helvetica Neue', Arial, sans-serif; }
 </style>

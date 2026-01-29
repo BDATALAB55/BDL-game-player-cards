@@ -5,7 +5,7 @@
   "scoreAway": "75",
   "date": "2025.12.21",
   "venue": "Ookini Arena Maishima",
-  "venueRaw": "Ookini Arena Maishima",
+  "venueRaw": "Venue: Ookini Arena Maishima",
   "attendance": "3793",
   "leagueType": "B1",
   "round": "ROUND15",
@@ -248,7 +248,7 @@
       "to": "3",
       "pf": "3",
       "plusMinus": "-7",
-      "name": "JOSHUA SMITH"
+      "name": "ジョシュア・スミス"
     },
     {
       "teamNameRaw": "大阪エヴェッサ",

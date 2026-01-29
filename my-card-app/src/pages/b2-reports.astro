@@ -1,0 +1,235 @@
+---
+export const prerender = false;
+import Layout from '../layouts/Layout.astro';
+
+// --- B2用 手動変換辞書 ---
+const cityNameMap = {
+  "AOMORI": "AOMORI", "WAT'S": "AOMORI", "WATS": "AOMORI",
+  "IWATE": "IWATE", "BIGBULLS": "IWATE",
+  "YAMAGATA": "YAMAGATA", "WYVERNS": "YAMAGATA",
+  "FUKUSHIMA": "FUKUSHIMA", "FIREBONDS": "FUKUSHIMA",
+  "YOKOHAMAEX": "YOKOHAMA-EX", "EXCELLENCE": "YOKOHAMA-EX",
+  "FUKUI": "FUKUI", "BLOWWINDS": "FUKUI",
+  "SHINSHU": "SHINSHU", "BRAVEWARRIORS": "SHINSHU",
+  "SHIZUOKA": "SHIZUOKA", "VELTEX": "SHIZUOKA",
+  "KOBE": "KOBE", "STORKZ": "KOBE",
+  "NARA": "NARA", "BAMBITIOUS": "NARA",
+  "EHIME": "EHIME", "ORANGEVIKINGS": "EHIME",
+  "FUKUOKA": "FUKUOKA", "RIZING": "FUKUOKA",
+  "KUMAMOTO": "KUMAMOTO", "VOLTERS": "KUMAMOTO",
+  "KAGOSHIMA": "KAGOSHIMA", "REBNISE": "KAGOSHIMA"
+};
+
+const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
+const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
+const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B2`;
+
+const token = process.env.GITHUB_TOKEN;
+let reportGroups = [];
+
+try {
+  const res = await fetch(RECURSIVE_API, {
+    headers: token ? { "Authorization": "token " + token } : {}
+  });
+  const data = await res.json();
+
+  if (data.tree) {
+    // B2のレポート用PNGファイルを抽出
+    const allFiles = data.tree.filter(item => 
+      item.path.includes('output/reports/B2/') && item.path.toLowerCase().endsWith('.png')
+    );
+
+    const groups = {};
+    allFiles.forEach(file => {
+      const pathParts = file.path.split('/');
+      const b2Pos = pathParts.indexOf('B2');
+      const folderName = pathParts[b2Pos + 1]; 
+      const fileName = pathParts[pathParts.length - 1];
+
+      if (!folderName || !/^\d+$/.test(folderName)) return;
+
+      const nameParts = fileName.replace('.png', '').split('_');
+      const fullDate = nameParts[0]; // 20260124
+      const gameId = nameParts[1];   // 505142
+      const teamA_raw = (nameParts[2] || "AWAY").toUpperCase().replace(/[\s\-_]/g, '');
+      const teamB_raw = (nameParts[3] || "HOME").toUpperCase().replace(/[\s\-_]/g, '');
+
+      const teamA = cityNameMap[teamA_raw] || teamA_raw;
+      const teamB = cityNameMap[teamB_raw] || teamB_raw;
+
+      const targetSubFolder = `game_${gameId}_${nameParts[2]}_${nameParts[3]}_${fullDate}`;
+
+      if (!groups[folderName]) {
+        groups[folderName] = {
+          id: folderName,
+          date: `${fullDate.substring(0,4)}.${fullDate.substring(4,6)}.${fullDate.substring(6,8)}`,
+          reports: []
+        };
+      }
+
+      groups[folderName].reports.push({
+        path: `${IMAGE_BASE_URL}/${folderName}/${fileName}`,
+        away: teamA,
+        home: teamB,
+        link: `/b2-cards?folder=${folderName}/${targetSubFolder}`
+      });
+    });
+    reportGroups = Object.values(groups).sort((a, b) => b.id.localeCompare(a.id));
+  }
+} catch (e) { console.error(e); }
+
+const allData = reportGroups;
+const availableDates = reportGroups.map(g => g.id);
+---
+
+<Layout title="B2 GAME REPORT | B-Data Lab">
+  <div class="bg-[#373A36] min-h-screen text-white font-avenir overflow-x-hidden">
+    <header class="pt-12 pb-6 px-8 text-center border-b border-white/5">
+      <a href="/b2-home" class="hover:opacity-70 transition-opacity">
+        <h1 class="text-2xl font-black uppercase tracking-[0.25em]">B2 GAME REPORT</h1>
+      </a>
+    </header>
+
+    <section class="py-10">
+      <div class="px-8 mb-4 min-h-[80px]">
+        <div class="flex flex-col gap-1">
+          <span id="display-label" class="text-blue-400 text-[10px] font-black uppercase tracking-[0.3em]">Latest Update</span>
+          <span id="display-date" class="text-white text-[32px] font-bold tracking-[0.05em]">
+            {reportGroups.length > 0 ? reportGroups[0].date : "NO DATA"}
+          </span>
+        </div>
+      </div>
+
+      <div id="report-slider" class="flex overflow-x-auto snap-x snap-mandatory gap-4 px-8 no-scrollbar min-h-[300px]">
+        {reportGroups.length > 0 ? (
+          reportGroups[0].reports.map((report) => (
+            <div class="flex-none w-[85vw] max-w-[400px] snap-center">
+              <div class="rounded-2xl overflow-hidden border border-white/10 bg-black/40 shadow-2xl">
+                <img src={report.path} class="w-full h-auto block" loading="lazy" />
+              </div>
+              <div class="mt-6 text-center">
+                <a href={report.link} class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative active:scale-95 transition-all group overflow-hidden">
+                  <div class="absolute inset-0 p-[2px] rounded-full bg-gradient-to-r from-blue-700 via-blue-500 to-indigo-400 -z-10"></div>
+                  <span class="text-[14px] font-black tracking-[0.2em] uppercase text-white">
+                    {report.away} <span class="text-[10px] font-medium lowercase mx-1 text-white/50 italic px-1">vs</span> {report.home}
+                  </span>
+                </a>
+              </div>
+            </div>
+          ))
+        ) : null}
+      </div>
+    </section>
+
+    <section class="px-8 pb-40">
+      <div class="max-w-md mx-auto">
+        <div id="calendar" class="bg-black/20 p-6 rounded-3xl border border-white/5 shadow-inner"></div>
+      </div>
+    </section>
+
+    <div class="fixed bottom-8 left-0 right-0 flex justify-center z-40 pointer-events-none">
+      <a href="/b2-home" class="pointer-events-auto bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 transition-transform border border-white/10">
+        Back to B2 Home
+      </a>
+    </div>
+  </div>
+</Layout>
+
+<script is:inline define:vars={{ allData, availableDates }}>
+  var currentY = 2026;
+  var currentM = 0; 
+
+  if (availableDates && availableDates.length > 0) {
+    var latest = availableDates[0];
+    currentY = 2000 + parseInt(latest.substring(0,2));
+    currentM = parseInt(latest.substring(2,4)) - 1;
+  }
+
+  window.updateReports = function(dateId) {
+    var sliderEl = document.getElementById('report-slider');
+    var dateTitleEl = document.getElementById('display-date');
+    var labelEl = document.getElementById('display-label');
+    
+    var group = null;
+    for(var i=0; i<allData.length; i++) {
+      if(allData[i].id === dateId) { group = allData[i]; break; }
+    }
+    if (!group || !sliderEl) return;
+
+    dateTitleEl.innerText = group.date;
+    var isLatest = (dateId === availableDates[0]);
+    labelEl.innerText = isLatest ? "Latest Update" : "Archive Data";
+    labelEl.className = "text-[10px] font-black uppercase tracking-[0.3em] " + (isLatest ? 'text-blue-400' : 'text-gray-500');
+
+    var reportsHtml = '';
+    group.reports.forEach(function(report) {
+      reportsHtml += 
+        '<div class="flex-none w-[85vw] max-w-[400px] snap-center">' +
+          '<div class="rounded-2xl overflow-hidden border border-white/10 bg-black/40 shadow-2xl">' +
+            '<img src="' + report.path + '" class="w-full h-auto block" />' +
+          '</div>' +
+          '<div class="mt-6 text-center">' +
+            '<a href="' + report.link + '" class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative active:scale-95 transition-all group overflow-hidden">' +
+              '<div class="absolute inset-0 p-[2px] rounded-full bg-gradient-to-r from-blue-700 via-blue-500 to-indigo-400 -z-10"></div>' +
+              '<span class="text-[14px] font-black tracking-[0.2em] uppercase text-white">' +
+                report.away + ' <span class="text-[10px] font-medium lowercase mx-1 text-white/50 italic px-1">vs</span> ' + report.home +
+              '</span>' +
+            '</a>' +
+          '</div>' +
+        '</div>';
+    });
+    sliderEl.innerHTML = reportsHtml;
+    sliderEl.scrollTo({ left: 0, behavior: 'smooth' });
+  };
+
+  window.changeMonth = function(delta) {
+    currentM += delta;
+    if (currentM < 0) { currentM = 11; currentY--; }
+    else if (currentM > 11) { currentM = 0; currentY++; }
+    renderCalendar(currentY, currentM);
+  };
+
+  function renderCalendar(y, m) {
+    var calendarEl = document.getElementById('calendar');
+    if (!calendarEl) return;
+    var firstDay = new Date(y, m, 1).getDay();
+    var daysInMonth = new Date(y, m + 1, 0).getDate();
+    var monthNames = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
+    
+    var html = '<div class="flex justify-between items-center mb-6 px-2 text-white">';
+    html += '<button type="button" onclick="changeMonth(-1)">←</button>';
+    html += '<div class="font-black text-sm tracking-widest">' + monthNames[m] + ' ' + y + '</div>';
+    html += '<button type="button" onclick="changeMonth(1)">→</button></div>';
+    html += '<div class="grid grid-cols-7 gap-1 text-center text-[9px] font-bold text-gray-600 mb-4 uppercase"><div>S</div><div>M</div><div>T</div><div>W</div><div>T</div><div>F</div><div>S</div></div><div class="grid grid-cols-7 gap-y-3">';
+    
+    for (var i = 0; i < firstDay; i++) {
+      html += '<div></div>';
+    }
+    
+    for (var d = 1; d <= daysInMonth; d++) {
+      var mm = ('0' + (m + 1)).slice(-2);
+      var dd = ('0' + d).slice(-2);
+      var yy = String(y).substring(2);
+      var dateId = yy + mm + dd;
+      
+      var hasReport = false;
+      for(var j=0; j<availableDates.length; j++){
+        if(availableDates[j] === dateId) { hasReport = true; break; }
+      }
+      
+      var activeClass = hasReport ? "bg-blue-600 text-white font-black cursor-pointer shadow-lg" : "text-gray-700";
+      var onClickAction = hasReport ? 'onclick="updateReports(\'' + dateId + '\')"' : '';
+      
+      html += '<div class="aspect-square flex items-center justify-center rounded-full text-[12px] transition-all ' + activeClass + '" ' + onClickAction + '>' + d + '</div>';
+    }
+    calendarEl.innerHTML = html + '</div>';
+  }
+
+  renderCalendar(currentY, currentM);
+</script>
+
+<style is:global>
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  .font-avenir { font-family: 'Avenir Next', 'Avenir', 'Helvetica Neue', Arial, sans-serif; }
+</style>

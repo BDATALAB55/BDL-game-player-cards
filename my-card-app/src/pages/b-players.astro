@@ -9,7 +9,6 @@ const playerName = searchParams.get('name') || "";
 // 設定：リポジトリ情報
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
-// 階層が深いため recursive=1 を使用
 const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
 
 let playerCards = [];
@@ -28,12 +27,9 @@ if (playerName) {
     const data = await res.json();
 
     if (data.tree) {
-      // 検索キーを作成（スペースをアンダースコアに変換し大文字へ）
       const searchKey = playerName.toUpperCase().replace(/\s+/g, '_');
-      
       const matchedFiles = data.tree.filter(item => {
         const path = item.path.toUpperCase();
-        // 画像が含まれるフォルダパスの条件と、選手名の部分一致を確認
         return (
           (path.includes('OUTPUT/BPLAYERS/') || path.includes('OUTPUT/PLAYERS/')) && 
           path.endsWith('.PNG') && 
@@ -43,18 +39,14 @@ if (playerName) {
 
       playerCards = matchedFiles.map(file => {
         const fileName = file.path.split('/').pop() || "";
-        
-        // ファイル名末尾の8桁日付（YYYYMMDD）を抽出
         const dateMatch = fileName.match(/(\d{8})\.png$/i);
-        const fullDate = dateMatch ? dateMatch[1] : ""; // 例: 20251227
-        
-        // カレンダー連携用 (YYMMDD)
+        const fullDate = dateMatch ? dateMatch[1] : ""; 
         const shortDate = fullDate ? fullDate.substring(2) : "";
         if (shortDate) availableDatesMap[shortDate] = true;
 
         return {
-          fullDate: fullDate,      // 20251227
-          displayDate: shortDate,  // 251227
+          fullDate: fullDate,
+          displayDate: shortDate,
           imagePath: `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${file.path}?t=${Date.now()}`
         };
       }).sort((a, b) => b.fullDate.localeCompare(a.fullDate));
@@ -71,7 +63,7 @@ if (playerName) {
     
     <header class="max-w-7xl mx-auto px-8 pt-16 pb-8 flex justify-between items-end border-b border-white/10">
       <div>
-        <h1 class="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-[0.8]">{playerName}</h1>
+        <h1 class="text-5xl md:text-7xl font-black uppercase tracking-normal leading-none">{playerName}</h1>
       </div>
 
       <div class="flex flex-col items-end text-right space-y-3 mb-1">

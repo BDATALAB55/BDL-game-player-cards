@@ -93,7 +93,6 @@ try {
           const fileNameNoExt = f.name.replace('.png', '');
           const nameParts = fileNameNoExt.split('_');
           
-          // 背番号削除のロジック
           const cleanNameParts = nameParts.filter(p => 
             !p.match(/^\d+$/) && 
             !awayConf.card.includes(p) && 
@@ -194,7 +193,7 @@ const homeFinalConf = findConfig(homeId);
         <button onclick="history.back()" class="bg-white/10 backdrop-blur-md text-white px-6 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 border border-white/10">← Back</button>
     </div>
     <div class="fixed bottom-8 right-8 z-40">
-      <a href="/b1-home" class="bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 border border-white/10">B1 Home</a>
+      <a href="/b1-home" class="bg-white/10 backdrop-blur-md text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 border border-white/10">B1 Home</a>
     </div>
 
     <div id="modal" class="fixed inset-0 bg-black/98 z-50 hidden flex-col items-center justify-center p-6 backdrop-blur-md">

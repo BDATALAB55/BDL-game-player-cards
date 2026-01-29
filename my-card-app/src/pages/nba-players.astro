@@ -12,7 +12,7 @@ const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/mai
 
 let playerCards = [];
 let totalGames = 0;
-let availableDatesMap = {}; // カレンダー用: {"240125": true}
+let availableDatesMap = {}; 
 
 if (playerName) {
   try {
@@ -38,8 +38,8 @@ if (playerName) {
 
       playerCards = matchedFiles.map(file => {
         const parts = file.path.split('/');
-        const dateStr = parts[2] || ""; // YYMMDD
-        availableDatesMap[dateStr] = true; // カレンダー照合用
+        const dateStr = parts[2] || ""; 
+        availableDatesMap[dateStr] = true; 
         return {
           date: dateStr,
           imagePath: `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${file.path}?t=${Date.now()}`
@@ -54,11 +54,11 @@ if (playerName) {
 ---
 
 <Layout title={`${playerName} - BDATALAB`}>
-  <div class="min-h-screen bg-[#373A36] text-white font-avenir relative pb-40">
+  <div class="min-h-screen bg-[#373A36] text-white font-avenir relative pb-40 overflow-x-hidden">
     
     <header class="max-w-7xl mx-auto px-8 pt-16 pb-8 flex justify-between items-end border-b border-white/10">
       <div>
-        <h1 class="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none">{playerName}</h1>
+        <h1 class="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-[0.8]">{playerName}</h1>
       </div>
 
       <div class="flex flex-col items-end text-right space-y-3 mb-1">
@@ -82,18 +82,20 @@ if (playerName) {
     </header>
 
     <main class="max-w-7xl mx-auto px-8 mt-12">
-      <div class="flex justify-between items-baseline mb-10">
-        <h2 class="text-3xl font-black uppercase tracking-tight italic">BOX SCORE</h2>
-        <div class="text-right flex flex-col items-end">
-          <span class="text-7xl font-black text-white/20 leading-none">{totalGames}</span>
-          <span class="text-[10px] font-black uppercase tracking-[0.2em] text-white/40">GAMES</span>
+      <div class="flex justify-between items-end mb-10">
+        <div>
+           <h2 class="text-3xl font-black uppercase tracking-tight italic">BOX SCORE</h2>
+        </div>
+        <div class="text-right leading-none">
+          <span class="text-7xl md:text-8xl font-black italic opacity-20 block tracking-[-0.1em]">{totalGames}</span>
+          <span class="text-[12px] font-bold opacity-40 uppercase tracking-[0.3em]">GAMES</span>
         </div>
       </div>
 
       {playerCards.length > 0 ? (
-        <div class="flex overflow-x-auto gap-6 no-scrollbar pb-10 snap-x">
+        <div class="flex overflow-x-auto gap-8 no-scrollbar pb-10 snap-x">
           {playerCards.map((card) => (
-            <div id={`card-${card.date}`} class="flex-none w-[300px] snap-start">
+            <div id={`card-${card.date}`} class="flex-none w-[320px] snap-start">
               <div class="mb-4 flex items-center gap-2 px-1">
                 <div class="w-2 h-2 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.5)]"></div>
                 <span class="text-[14px] font-black text-white/80 tracking-widest">
@@ -113,7 +115,7 @@ if (playerName) {
       )}
 
       <div class="mt-32 flex flex-col items-center">
-        <p class="text-[10px] font-black tracking-[0.5em] text-white/20 uppercase mb-10 italic">GAME CALENDAR</p>
+        <p class="text-[10px] font-black tracking-[0.5em] text-white/20 uppercase mb-10 italic">Game Calendar</p>
         <div id="calendar" class="bg-black/30 backdrop-blur-md p-10 rounded-[40px] border border-white/5 w-full max-w-sm shadow-inner">
           </div>
       </div>
@@ -134,7 +136,6 @@ if (playerName) {
 </Layout>
 
 <script is:inline define:vars={{ availableDatesMap }}>
-  // カレンダーの初期表示を設定（最新の試合がある月に合わせる）
   let currentY = 2026;
   let currentM = 0;
 

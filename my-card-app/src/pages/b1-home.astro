@@ -1,4 +1,3 @@
----
 export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
@@ -70,11 +69,9 @@ try {
       const fullDate = nameParts[0] || ""; 
       const gameId = nameParts[1] || "";   
       
-      // 未加工のチーム名を取得（リンク生成用）
       const rawAway = nameParts[2] || "AWAY";
       const rawHome = nameParts[3] || "HOME";
 
-      // 辞書を使って表示用のチーム名を変換
       const displayAway = cityNameMap[rawAway.toUpperCase().replace(/[\s\-_]/g, '')] || rawAway;
       const displayHome = cityNameMap[rawHome.toUpperCase().replace(/[\s\-_]/g, '')] || rawHome;
 
@@ -101,7 +98,6 @@ try {
   console.error("Fetch Error:", e);
 }
 
-// B1チームリストとカラー設定
 const teams = [
   { id: 'HOKKAIDO', color: 'bg-[#91ad10]' }, { id: 'SENDAI', color: 'bg-[#f7e000] text-black' }, { id: 'AKITA', color: 'bg-[#dd0055]' },
   { id: 'IBARAKI', color: 'bg-[#002e95]' }, { id: 'UTSUNOMIYA', color: 'bg-[#12284b]' }, { id: 'GUNMA', color: 'bg-[#ffda00] text-black' },
@@ -135,7 +131,10 @@ for (let i = 0; i < teams.length; i += 9) {
             </a>
           </div>
           <div class="flex flex-col items-end text-right space-y-3">
-            <h2 class="text-xl md:text-3xl font-black tracking-widest uppercase leading-none">BDATALAB</h2>
+            <h2 class="text-xl md:text-3xl font-black tracking-widest uppercase leading-none"
+                style="color: #2E3C57; -webkit-text-stroke: 1px white; text-stroke: 1px white; paint-order: stroke fill;">
+                BDATALAB
+            </h2>
             <div class="flex items-center gap-3 md:gap-5">
               <a href="https://x.com/BDataLab5x5" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 transition-all">
                 <div class="w-7 h-7 md:w-8 md:h-8 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-white/20 transition-colors">

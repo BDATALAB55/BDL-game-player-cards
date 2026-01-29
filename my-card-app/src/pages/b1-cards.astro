@@ -8,7 +8,7 @@ const queryFolder = searchParams.get('folder') || "";
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const token = process.env.GITHUB_TOKEN;
 
-// --- 【ロジック：フォルダ構造に合わせた抽出（維持）】 ---
+// --- 【ロジック：フォルダ構造解析】 ---
 const segments = queryFolder.split('/').filter(Boolean);
 const dateId = segments[0] || ""; 
 const folderName = segments[1] || "";
@@ -23,45 +23,49 @@ let awayId = "";
 let homeId = "";
 let reportImagePath = "";
 
-// --- 【チーム名マスタ：カラーとリンク先を追加】 ---
+// --- 【修正：HOMEの定義と一致させたチームマスタ】 ---
 const TEAM_MASTER = {
-  "HOKKAIDO": { card: "LEVANGA_HOKKAIDO", display: "HOKKAIDO", color: "bg-[#009245]", teamPage: "hokkaido" },
-  "SENDAI": { card: "SENDAI_89ERS", display: "SENDAI", color: "bg-[#FFD400] text-black", teamPage: "sendai" },
-  "AKITA": { card: "AKITA_NORTHERN_HAPPINETS", display: "AKITA", color: "bg-[#E60012]", teamPage: "akita" },
-  "IBARAKI": { card: "IBARAKI_ROBOTS", display: "IBARAKI", color: "bg-[#00428E]", teamPage: "ibaraki" },
-  "UTSUNOMIYA": { card: "UTSUNOMIYA_BREX", display: "UTSUNOMIYA", color: "bg-[#002D62]", teamPage: "utsunomiya" },
-  "GUNMA": { card: "GUNMA_CRANE_THUNDERS", display: "GUNMA", color: "bg-[#FFD700] text-black", teamPage: "gunma" },
-  "KOSHIGAYA": { card: "KOSHIGAYA_ALPHAS", display: "KOSHIGAYA", color: "bg-[#800000]", teamPage: "koshigaya" },
-  "ACHIBA": { card: "ALTIRI_CHIBA", display: "A-CHIBA", color: "bg-[#00204E]", teamPage: "a-chiba" },
-  "CHIBAJ": { card: "CHIBA_JETS", display: "CHIBA-J", color: "bg-[#E60012]", teamPage: "chiba-j" },
-  "ATOKYO": { card: "ALVARK_TOKYO", display: "A-TOKYO", color: "bg-[#000000]", teamPage: "a-tokyo" },
-  "SHIBUYA": { card: "SUNROCKERS_SHIBUYA", display: "SR-SHIBUYA", color: "bg-[#FFD700] text-black", teamPage: "shibuya" },
-  "KAWASAKI": { card: "KAWASAKI_BRAVE_THUNDERS", display: "KAWASAKI", color: "bg-[#7E0023]", teamPage: "kawasaki" },
-  "YOKOHAMABC": { card: "YOKOHAMA_B-CORSAIRS", display: "YOKOHAMA-BC", color: "bg-[#002A54]", teamPage: "yokohama-bc" },
-  "TOYAMA": { card: "TOYAMA_GROUSES", display: "TOYAMA", color: "bg-[#E2041B]", teamPage: "toyama" },
-  "SANEN": { card: "SAN-EN_NEOPHOENIX", display: "SAN-EN", color: "bg-[#E2041B]", teamPage: "san-en" },
-  "MIKAWA": { card: "SEAHORSES_MIKAWA", display: "MIKAWA", color: "bg-[#00479D]", teamPage: "mikawa" },
-  "FENAGOYA": { card: "FIGHTING_EAGLES_NAGOYA", display: "FE-NAGOYA", color: "bg-[#004B98]", teamPage: "fe-nagoya" },
-  "NAGOYAD": { card: "NAGOYA_DIAMOND_DOLPHINS", display: "NAGOYA-D", color: "bg-[#D70035]", teamPage: "nagoya-d" },
-  "SHIGA": { card: "SHIGA_LAKES", display: "SHIGA", color: "bg-[#005BAC]", teamPage: "shiga" },
-  "KYOTO": { card: "KYOTO_HANNARYZ", display: "KYOTO", color: "bg-[#00A0E9]", teamPage: "kyoto" },
-  "OSAKA": { card: "OSAKA_EVESSA", display: "OSAKA", color: "bg-[#E30613]", teamPage: "osaka" },
-  "SHIMANE": { card: "SHIMANE_SUSANOO_MAGIC", display: "SHIMANE", color: "bg-[#004A99]", teamPage: "shimane" },
-  "HIROSHIMA": { card: "HIROSHIMA_DRAGONFLIES", display: "HIROSHIMA", color: "bg-[#FF4D00]", teamPage: "hiroshima" },
-  "SAGA": { card: "SAGA_BALLOONERS", display: "SAGA", color: "bg-[#00A3E0]", teamPage: "saga" },
-  "NAGASAKI": { card: "NAGASAKI_VELCA", display: "NAGASAKI", color: "bg-[#00204E]", teamPage: "nagasaki" },
-  "RYUKYU": { card: "RYUKYU_GOLDEN_KINGS", display: "RYUKYU", color: "bg-[#B3995D]", teamPage: "ryukyu" }
+  "HOKKAIDO": { card: "LEVANGA_HOKKAIDO", display: "HOKKAIDO", color: "bg-[#91ad10] text-white" },
+  "SENDAI": { card: "SENDAI_89ERS", display: "SENDAI", color: "bg-[#f7e000] text-black" },
+  "AKITA": { card: "AKITA_NORTHERN_HAPPINETS", display: "AKITA", color: "bg-[#dd0055] text-white" },
+  "IBARAKI": { card: "IBARAKI_ROBOTS", display: "IBARAKI", color: "bg-[#002e95] text-white" },
+  "UTSUNOMIYA": { card: "UTSUNOMIYA_BREX", display: "UTSUNOMIYA", color: "bg-[#12284b] text-white" },
+  "GUNMA": { card: "GUNMA_CRANE_THUNDERS", display: "GUNMA", color: "bg-[#ffda00] text-black" },
+  "KOSHIGAYA": { card: "KOSHIGAYA_ALPHAS", display: "KOSHIGAYA", color: "bg-[#610d0d] text-white" },
+  "ACHIBA": { card: "ALTIRI_CHIBA", display: "A CHIBA", color: "bg-[#212836] text-white" },
+  "CHIBAJ": { card: "CHIBA_JETS", display: "CHIBA J", color: "bg-[#e33216] text-white" },
+  "ATOKYO": { card: "ALVARK_TOKYO", display: "A TOKYO", color: "bg-black border border-white/20 text-white" },
+  "SHIBUYA": { card: "SUNROCKERS_SHIBUYA", display: "SR SHIBUYA", color: "bg-[#ffea00] text-black" },
+  "KAWASAKI": { card: "KAWASAKI_BRAVE_THUNDERS", display: "KAWASAKI", color: "bg-[#7a1231] text-white" },
+  "YOKOHAMABC": { card: "YOKOHAMA_B-CORSAIRS", display: "YOKOHAMA BC", color: "bg-[#000f31] text-white" },
+  "TOYAMA": { card: "TOYAMA_GROUSES", display: "TOYAMA", color: "bg-[#e21f26] text-white" },
+  "SANEN": { card: "SAN-EN_NEOPHOENIX", display: "SAN-EN", color: "bg-[#d31118] text-white" },
+  "MIKAWA": { card: "SEAHORSES_MIKAWA", display: "MIKAWA", color: "bg-[#3356b9] text-white" },
+  "FENAGOYA": { card: "FIGHTING_EAGLES_NAGOYA", display: "FE NAGOYA", color: "bg-[#003882] text-white" },
+  "NAGOYAD": { card: "NAGOYA_DIAMOND_DOLPHINS", display: "NAGOYA D", color: "bg-[#e31d20] text-white" },
+  "SHIGA": { card: "SHIGA_LAKES", display: "SHIGA", color: "bg-[#1a448e] text-white" },
+  "KYOTO": { card: "KYOTO_HANNARYZ", display: "KYOTO", color: "bg-[#5ea1b4] text-white" },
+  "OSAKA": { card: "OSAKA_EVESSA", display: "OSAKA", color: "bg-[#d11c1d] text-white" },
+  "SHIMANE": { card: "SHIMANE_SUSANOO_MAGIC", display: "SHIMANE", color: "bg-[#1c71be] text-white" },
+  "HIROSHIMA": { card: "HIROSHIMA_DRAGONFLIES", display: "HIROSHIMA", color: "bg-[#f05a22] text-white" },
+  "SAGA": { card: "SAGA_BALLOONERS", display: "SAGA", color: "bg-[#4da9df] text-white" },
+  "NAGASAKI": { card: "NAGASAKI_VELCA", display: "NAGASAKI", color: "bg-[#2b3754] text-white" },
+  "RYUKYU": { card: "RYUKYU_GOLDEN_KINGS", display: "RYUKYU", color: "bg-[#b69e63] text-white" }
 };
 
 const findConfig = (key) => {
-  if (!key) return { card: "", display: "UNKNOWN", color: "bg-gray-700", teamPage: "" };
-  const upperKey = key.toUpperCase();
+  if (!key) return { card: "", display: "UNKNOWN", color: "bg-gray-700 text-white" };
+  const upperKey = key.toUpperCase().replace(/[\s\-_]/g, '');
+  
+  // マスタから直接検索
   if (TEAM_MASTER[upperKey]) return TEAM_MASTER[upperKey];
+  
+  // 部分一致検索
   for (const teamKey in TEAM_MASTER) {
     const conf = TEAM_MASTER[teamKey];
-    if (conf.card.includes(upperKey)) return conf;
+    if (conf.card.replace(/[\s\-_]/g, '').includes(upperKey)) return conf;
   }
-  return { card: key, display: key, color: "bg-gray-700", teamPage: key.toLowerCase() };
+  return { card: key, display: key, color: "bg-gray-700 text-white" };
 };
 
 try {
@@ -81,8 +85,8 @@ try {
       const homeConf = findConfig(parts[3]);
       displayTeamAway = awayConf.display;
       displayTeamHome = homeConf.display;
-      awayId = parts[2];
-      homeId = parts[3];
+      awayId = awayConf.display; // Homeと同じID（表示名）をセット
+      homeId = homeConf.display;
 
       const filesRes = await fetch(realFolder.url, { headers: token ? { "Authorization": `token ${token}` } : {} });
       const files = await filesRes.json();
@@ -91,16 +95,15 @@ try {
         files.forEach(f => {
           if (!f.name.toLowerCase().endsWith('.png')) return;
           
-          // --- 【選手名のクレンジング：日付を除去して名前を抽出】 ---
           const fileNameNoExt = f.name.replace('.png', '');
           const nameParts = fileNameNoExt.split('_');
           
-          // 8桁の数字（日付）と、チーム名・ブランド名を除外して名前だけを結合
+          // 日付とチーム関連ワードを除外してクリーンな選手名を作成
           const cleanNameParts = nameParts.filter(p => 
             !p.match(/^\d{8}$/) && 
             !awayConf.card.includes(p) && 
             !homeConf.card.includes(p) && 
-            !['89ERS', 'BRAVE', 'JETS', 'ROBOTS'].includes(p)
+            !['89ERS', 'BRAVE', 'JETS', 'ROBOTS', 'BREX', 'ALTIRI', 'VELCA', 'SUSANOOMAGIC'].includes(p.toUpperCase())
           );
           const playerName = cleanNameParts.join(' ');
 
@@ -114,7 +117,7 @@ try {
         });
       }
 
-      // レポート画像（維持）
+      // レポート画像取得
       const reportApiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/reports/B1/${dateId}?t=${Date.now()}`;
       const reportRes = await fetch(reportApiURL, { headers: token ? { "Authorization": `token ${token}` } : {} });
       const reportFiles = await reportRes.json();
@@ -162,8 +165,8 @@ const homeFinalConf = findConfig(homeId);
         <section>
           <div class="px-8 mb-6">
             <a 
-              href={`/b1-team?team=${team.conf.teamPage}`}
-              class={`${team.conf.color} px-6 py-2 text-[15px] font-black uppercase rounded-full inline-block shadow-lg hover:opacity-80 transition-opacity`}
+              href={`/b1-team?team=${encodeURIComponent(team.conf.display)}`}
+              class={`${team.conf.color} px-6 py-2 text-[15px] font-black uppercase rounded-full inline-block shadow-lg hover:brightness-110 hover:scale-105 transition-all`}
             >
               {team.label}
             </a>
@@ -204,6 +207,7 @@ const homeFinalConf = findConfig(homeId);
 </Layout>
 
 <script>
+  // モーダルスクリプト省略（変更なし）
   const modal = document.getElementById('modal');
   const modalImg = document.getElementById('modal-img') as HTMLImageElement;
   const close = document.getElementById('close');
@@ -224,10 +228,6 @@ const homeFinalConf = findConfig(homeId);
   close?.addEventListener('click', () => {
     modal?.classList.add('hidden');
     modal?.classList.remove('flex');
-  });
-
-  modal?.addEventListener('click', (e) => {
-    if (e.target === modal) close?.click();
   });
 </script>
 

@@ -2,77 +2,204 @@
 export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
+// 1. URLパラメータから選手名を取得
 const { searchParams } = Astro.url;
-const playerName = searchParams.get('name') || "PLAYER";
-const playerImg = searchParams.get('img') || "";
+const playerName = searchParams.get('name') || "";
 
-// フォルダパスからリーグ（B1 or B2）を推測してラベル表示に使用
-const isB2 = playerImg.includes('/B2/');
-const leagueLabel = isB2 ? "B2 LEAGUE" : "B1 LEAGUE";
+// 設定：リポジトリ情報（Bリーグの画像も同じリポジトリのplayers配下にある前提）
+const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
+const token = process.env.GITHUB_TOKEN;
+const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
+
+let playerCards = [];
+let totalGames = 0;
+let availableDatesMap = {}; 
+
+if (playerName) {
+  try {
+    const res = await fetch(RECURSIVE_API, {
+      headers: {
+        ...(token ? { "Authorization": `token ${token}` } : {}),
+        "Accept": "application/vnd.github.v3+json"
+      },
+      cache: 'no-store'
+    });
+    const data = await res.json();
+
+    if (data.tree) {
+      // 検索パターン：スペースをアンダースコアに変換（例：SHUTO_ICHIBA）
+      const searchPattern = playerName.replace(/\s+/g, '_').toLowerCase();
+      
+      const matchedFiles = data.tree.filter(item => {
+        const path = item.path.toLowerCase();
+        return (
+          path.includes('output/players/') && 
+          path.endsWith('.png') && 
+          path.includes(searchPattern)
+        );
+      });
+
+      playerCards = matchedFiles.map(file => {
+        const parts = file.path.split('/');
+        // parts[2] が YYMMDD 形式のフォルダ名であることを想定
+        const dateStr = parts[2] || ""; 
+        availableDatesMap[dateStr] = true; 
+        return {
+          date: dateStr,
+          imagePath: `https://raw.githubusercontent.com/${GITHUB_REPO}/main/${file.path}?t=${Date.now()}`
+        };
+      }).sort((a, b) => b.date.localeCompare(a.date));
+    }
+    totalGames = playerCards.length;
+  } catch (e) {
+    console.error("Fetch error:", e);
+  }
+}
 ---
 
-<Layout title={`${playerName} | BDL PLAYERS`}>
-  <main class="bg-[#1a1a1a] min-h-screen text-white font-avenir relative overflow-x-hidden">
+<Layout title={`${playerName} - BDATALAB`}>
+  <div class="min-h-screen bg-[#373A36] text-white font-avenir relative pb-40 overflow-x-hidden">
     
-    {playerImg && (
-      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[70vh] opacity-20 blur-[100px] pointer-events-none">
-        <img src={playerImg} class="w-full h-full object-cover" />
+    <header class="max-w-7xl mx-auto px-8 pt-16 pb-8 flex justify-between items-end border-b border-white/10">
+      <div>
+        <h1 class="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-[0.8]">{playerName}</h1>
       </div>
-    )}
 
-    <header class="relative z-10 pt-12 pb-6 px-8 text-center">
-      <button onclick="history.back()" class="absolute left-6 top-12 p-4 text-white/40 hover:text-white transition-colors">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-        </svg>
-      </button>
-      <h1 class="text-[10px] font-black uppercase tracking-[0.5em] opacity-30">Player Collection</h1>
+      <div class="flex flex-col items-end text-right space-y-3 mb-1">
+        <h2 class="text-xl md:text-3xl font-black tracking-widest uppercase leading-none">BDATALAB</h2>
+        <div class="flex items-center gap-3 md:gap-5">
+          <a href="https://x.com/BDataLab5x5" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 transition-all">
+            <div class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-white/20 transition-colors">
+              <svg class="w-4 h-4 fill-white" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </div>
+            <span class="hidden md:inline text-[10px] font-black tracking-widest uppercase text-white/40 group-hover:text-white transition-colors">X</span>
+          </a>
+          <div class="h-3 w-[1px] bg-white/20"></div>
+          <a href="https://note.com/bdatalab5x5" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 transition-all">
+            <div class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-[#23bb9d] transition-colors">
+               <span class="text-[12px] font-black text-white">n</span>
+            </div>
+            <span class="text-[10px] font-black tracking-widest lowercase text-white/40 group-hover:text-white transition-colors">note</span>
+          </a>
+        </div>
+      </div>
     </header>
 
-    <div class="relative z-10 max-w-lg mx-auto px-8 pb-32">
-      <div class="mt-4">
-        <div class="rounded-3xl overflow-hidden border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.8)] bg-black/40">
-          <img src={playerImg} alt={playerName} class="w-full h-auto block" />
+    <main class="max-w-7xl mx-auto px-8 mt-12">
+      <div class="flex justify-between items-end mb-10">
+        <div>
+           <h2 class="text-3xl font-black uppercase tracking-tight italic">BOX SCORE</h2>
         </div>
-        
-        <div class="mt-12 space-y-3">
-          <div class="flex items-center gap-2">
-             <span class={`text-[10px] font-black px-2 py-0.5 rounded ${isB2 ? 'bg-orange-600' : 'bg-blue-600'}`}>
-               {leagueLabel}
-             </span>
-          </div>
-          <h2 class="text-4xl font-black uppercase tracking-tighter leading-tight">{playerName}</h2>
-        </div>
-
-        <div class="mt-12 grid grid-cols-1 gap-4">
-          <a href={playerImg} download={`${playerName}.png`} class="w-full bg-white text-black py-5 rounded-2xl font-black text-center uppercase tracking-widest text-[12px] hover:scale-[1.02] active:scale-95 transition-all shadow-xl">
-            Download Card
-          </a>
-          <button id="share-btn" class="w-full bg-white/5 border border-white/10 py-5 rounded-2xl font-black text-center uppercase tracking-widest text-[12px] hover:bg-white/10 transition-all">
-            Share Link
-          </button>
+        <div class="text-right leading-none">
+          <span class="text-7xl md:text-8xl font-black italic opacity-20 block tracking-[-0.1em]">{totalGames}</span>
+          <span class="text-[12px] font-bold opacity-40 uppercase tracking-[0.3em]">GAMES</span>
         </div>
       </div>
-    </div>
 
-    <div class="fixed bottom-8 left-1/2 -translate-x-1/2 z-40">
-      <a href="/" class="bg-gray-900/90 backdrop-blur-md text-white px-10 py-4 rounded-full font-black text-[10px] uppercase tracking-widest shadow-2xl border border-white/10 whitespace-nowrap">
-        Portal Home
+      {playerCards.length > 0 ? (
+        <div class="flex overflow-x-auto gap-8 no-scrollbar pb-10 snap-x">
+          {playerCards.map((card) => (
+            <div id={`card-${card.date}`} class="flex-none w-[320px] snap-start">
+              <div class="mb-4 flex items-center gap-2 px-1">
+                <div class="w-2 h-2 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.5)]"></div>
+                <span class="text-[14px] font-black text-white/80 tracking-widest">
+                  20{card.date.substring(0,2)}.{card.date.substring(2,4)}.{card.date.substring(4,6)}
+                </span>
+              </div>
+              <div class="rounded-2xl overflow-hidden border border-white/10 bg-black/40 shadow-2xl transition-transform hover:scale-[1.02]">
+                <img src={card.imagePath} alt={playerName} class="w-full h-auto block" loading="lazy" />
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div class="py-20 rounded-3xl border-2 border-dashed border-white/5 flex items-center justify-center bg-black/10">
+          <p class="text-white/20 font-black uppercase tracking-[0.3em] text-xs italic">No player data found</p>
+        </div>
+      )}
+
+      <div class="mt-32 flex flex-col items-center">
+        <p class="text-[10px] font-black tracking-[0.5em] text-white/20 uppercase mb-10 italic">Game Calendar</p>
+        <div id="calendar" class="bg-black/30 backdrop-blur-md p-10 rounded-[40px] border border-white/5 w-full max-w-sm shadow-inner">
+        </div>
+      </div>
+    </main>
+
+    <div class="fixed bottom-8 left-8 z-50">
+        <button onclick="history.back()" class="bg-white/10 backdrop-blur-md text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 border border-white/10 flex items-center gap-3 group transition-all">
+            <span class="opacity-40 group-hover:opacity-100 transition-colors">←</span> BACK
+        </button>
+    </div>
+    <div class="fixed bottom-8 right-8 z-50">
+      <a href="/" class="bg-gray-800/80 backdrop-blur-md text-white px-10 py-4 rounded-full font-black text-[11px] uppercase tracking-widest shadow-2xl active:scale-95 border border-white/10 block transition-all">
+        PORTAL HOME
       </a>
     </div>
-  </main>
+
+  </div>
 </Layout>
 
-<script>
-  const shareBtn = document.getElementById('share-btn');
-  shareBtn?.addEventListener('click', async () => {
-    if (navigator.share) {
-      try {
-        await navigator.share({ title: 'BDL PLAYER CARD', url: window.location.href });
-      } catch (err) { console.log('Share failed'); }
-    } else {
-      alert('Link copied to clipboard!');
-      navigator.clipboard.writeText(window.location.href);
+<script is:inline define:vars={{ availableDatesMap }}>
+  let currentY = 2026;
+  let currentM = 0;
+
+  const dateKeys = Object.keys(availableDatesMap).sort((a,b) => b.localeCompare(a));
+  if (dateKeys.length > 0) {
+    currentY = 2000 + parseInt(dateKeys[0].substring(0,2));
+    currentM = parseInt(dateKeys[0].substring(2,4)) - 1;
+  }
+
+  window.changeMonth = function(delta) {
+    currentM += delta;
+    if (currentM < 0) { currentM = 11; currentY--; }
+    else if (currentM > 11) { currentM = 0; currentY++; }
+    renderCalendar(currentY, currentM);
+  };
+
+  function renderCalendar(y, m) {
+    const calendarEl = document.getElementById('calendar');
+    if (!calendarEl) return;
+
+    const monthNames = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
+    const firstDay = new Date(y, m, 1).getDay();
+    const daysInMonth = new Date(y, m + 1, 0).getDate();
+
+    let html = `
+      <div class="flex justify-between items-center mb-10 px-2">
+        <button onclick="changeMonth(-1)" class="text-white/20 hover:text-white transition-colors text-xl">←</button>
+        <div class="font-black text-[13px] tracking-[0.3em] uppercase">${monthNames[m]} ${y}</div>
+        <button onclick="changeMonth(1)" class="text-white/20 hover:text-white transition-colors text-xl">→</button>
+      </div>
+      <div class="grid grid-cols-7 gap-y-2 text-center mb-6">
+        ${['SUN','MON','TUE','WED','THU','FRI','SAT'].map(d => `<span class="text-[8px] font-black text-white/10 tracking-widest">${d}</span>`).join('')}
+      </div>
+      <div class="grid grid-cols-7 gap-y-4 gap-x-2">`;
+
+    for (let i = 0; i < firstDay; i++) html += `<div></div>`;
+
+    for (let d = 1; d <= daysInMonth; d++) {
+      const dateKey = `${String(y).substring(2)}${String(m + 1).padStart(2, '0')}${String(d).padStart(2, '0')}`;
+      const isGameDay = availableDatesMap[dateKey];
+
+      html += `
+        <div class="flex justify-center items-center h-8">
+          ${isGameDay ? 
+            `<button onclick="document.getElementById('card-${dateKey}')?.scrollIntoView({behavior:'smooth', block:'center'})" 
+               class="w-8 h-8 flex items-center justify-center rounded-full bg-blue-600 text-white text-[10px] font-black shadow-[0_0_15px_rgba(37,99,235,0.5)] border border-white/20 hover:scale-110 transition-transform">
+               ${d}
+             </button>` : 
+            `<span class="text-white/10 text-[10px] font-bold">${d}</span>`
+          }
+        </div>`;
     }
-  });
+    calendarEl.innerHTML = html + `</div>`;
+  }
+
+  renderCalendar(currentY, currentM);
 </script>
+
+<style is:global>
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  .font-avenir { font-family: 'Avenir Next', 'Helvetica Neue', Arial, sans-serif; }
+</style>

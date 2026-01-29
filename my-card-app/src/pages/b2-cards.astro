@@ -23,46 +23,31 @@ let awayId = "";
 let homeId = "";
 let reportImagePath = "";
 
+// チームごとの関連キーワード設定（フォルダ名とファイル名のズレを吸収）
 const TEAM_MASTER = {
-  "AOMORI": { card: "AOMORI_WATS", display: "AOMORI", color: "bg-[#004194] text-white" },
-  "WATS": { card: "AOMORI_WATS", display: "AOMORI", color: "bg-[#004194] text-white" },
-  "IWATE": { card: "IWATE_BIG_BULLS", display: "IWATE", color: "bg-[#E22B30] text-white" },
-  "BIGBULLS": { card: "IWATE_BIG_BULLS", display: "IWATE", color: "bg-[#E22B30] text-white" },
-  "YAMAGATA": { card: "YAMAGATA_WYVERNS", display: "YAMAGATA", color: "bg-[#53247A] text-white" },
-  "WYVERNS": { card: "YAMAGATA_WYVERNS", display: "YAMAGATA", color: "bg-[#53247A] text-white" },
-  "FUKUSHIMA": { card: "FUKUSHIMA_FIREBONDS", display: "FUKUSHIMA", color: "bg-[#B44DA1] text-white" },
-  "FIREBONDS": { card: "FUKUSHIMA_FIREBONDS", display: "FUKUSHIMA", color: "bg-[#B44DA1] text-white" },
-  "YOKOHAMAEX": { card: "YOKOHAMA_EXCELLENCE", display: "YOKOHAMA EX", color: "bg-[#2A6C3D] text-white" },
-  "EXCELLENCE": { card: "YOKOHAMA_EXCELLENCE", display: "YOKOHAMA EX", color: "bg-[#2A6C3D] text-white" },
-  "FUKUI": { card: "FUKUI_BLOWWINDS", display: "FUKUI", color: "bg-[#0D1A39] text-white border border-white/20" },
-  "BLOWWINDS": { card: "FUKUI_BLOWWINDS", display: "FUKUI", color: "bg-[#0D1A39] text-white border border-white/20" },
-  "SHINSHU": { card: "SHINSHU_BRAVE_WARRIORS", display: "SHINSHU", color: "bg-[#FFF001] text-black" },
-  "BRAVEWARRIORS": { card: "SHINSHU_BRAVE_WARRIORS", display: "SHINSHU", color: "bg-[#FFF001] text-black" },
-  "SHIZUOKA": { card: "VELTEX_SHIZUOKA", display: "SHIZUOKA", color: "bg-[#21326A] text-white" },
-  "VELTEX": { card: "VELTEX_SHIZUOKA", display: "SHIZUOKA", color: "bg-[#21326A] text-white" },
-  "KOBE": { card: "HYOGO_KOBE_STORKZ", display: "KOBE", color: "bg-[#163F2E] text-white" },
-  "STORKZ": { card: "HYOGO_KOBE_STORKZ", display: "KOBE", color: "bg-[#163F2E] text-white" },
-  "NARA": { card: "BAMBITIOUS_NARA", display: "NARA", color: "bg-[#8C2222] text-white" },
-  "BAMBITIOUS": { card: "BAMBITIOUS_NARA", display: "NARA", color: "bg-[#8C2222] text-white" },
-  "EHIME": { card: "EHIME_ORANGE_VIKINGS", display: "EHIME", color: "bg-[#F79422] text-white" },
-  "ORANGEVIKINGS": { card: "EHIME_ORANGE_VIKINGS", display: "EHIME", color: "bg-[#F79422] text-white" },
-  "FUKUOKA": { card: "RIZING_ZEPHYR_FUKUOKA", display: "FUKUOKA", color: "bg-[#004098] text-white" },
-  "RIZING": { card: "RIZING_ZEPHYR_FUKUOKA", display: "FUKUOKA", color: "bg-[#004098] text-white" },
-  "KUMAMOTO": { card: "KUMAMOTO_VOLTERS", display: "KUMAMOTO", color: "bg-[#E62E2D] text-white" },
-  "VOLTERS": { card: "KUMAMOTO_VOLTERS", display: "KUMAMOTO", color: "bg-[#E62E2D] text-white" },
-  "KAGOSHIMA": { card: "KAGOSHIMA_REBNISE", display: "KAGOSHIMA", color: "bg-black border border-white/20 text-white" },
-  "REBNISE": { card: "KAGOSHIMA_REBNISE", display: "KAGOSHIMA", color: "bg-black border border-white/20 text-white" }
+  "AOMORI": { kw: ["AOMORI", "WATS"], display: "AOMORI", color: "bg-[#004194] text-white" },
+  "IWATE": { kw: ["IWATE", "BULLS"], display: "IWATE", color: "bg-[#E22B30] text-white" },
+  "YAMAGATA": { kw: ["YAMAGATA", "WYVERNS"], display: "YAMAGATA", color: "bg-[#53247A] text-white" },
+  "FUKUSHIMA": { kw: ["FUKUSHIMA", "FIREBONDS"], display: "FUKUSHIMA", color: "bg-[#B44DA1] text-white" },
+  "YOKOHAMAEX": { kw: ["YOKOHAMA", "EXCELLENCE"], display: "YOKOHAMA EX", color: "bg-[#2A6C3D] text-white" },
+  "FUKUI": { kw: ["FUKUI", "BLOWWINDS"], display: "FUKUI", color: "bg-[#0D1A39] text-white border border-white/20" },
+  "SHINSHU": { kw: ["SHINSHU", "WARRIORS"], display: "SHINSHU", color: "bg-[#FFF001] text-black" },
+  "SHIZUOKA": { kw: ["SHIZUOKA", "VELTEX"], display: "SHIZUOKA", color: "bg-[#21326A] text-white" },
+  "KOBE": { kw: ["KOBE", "STORKZ", "HYOGO"], display: "KOBE", color: "bg-[#163F2E] text-white" },
+  "NARA": { kw: ["NARA", "BAMBITIOUS"], display: "NARA", color: "bg-[#8C2222] text-white" },
+  "EHIME": { kw: ["EHIME", "VIKINGS"], display: "EHIME", color: "bg-[#F79422] text-white" },
+  "FUKUOKA": { kw: ["FUKUOKA", "RIZING", "ZEPHYR"], display: "FUKUOKA", color: "bg-[#004098] text-white" },
+  "KUMAMOTO": { kw: ["KUMAMOTO", "VOLTERS"], display: "KUMAMOTO", color: "bg-[#E62E2D] text-white" },
+  "KAGOSHIMA": { kw: ["KAGOSHIMA", "REBNISE"], display: "KAGOSHIMA", color: "bg-black border border-white/20 text-white" }
 };
 
 const findConfig = (key) => {
-  if (!key) return { card: "", display: "UNKNOWN", color: "bg-gray-700 text-white" };
-  const upperKey = key.toUpperCase().replace(/[\s\-_]/g, '');
-  if (TEAM_MASTER[upperKey]) return TEAM_MASTER[upperKey];
+  if (!key) return { kw: [], display: "UNKNOWN", color: "bg-gray-700 text-white" };
+  const upperKey = key.toUpperCase();
   for (const teamKey in TEAM_MASTER) {
-    const conf = TEAM_MASTER[teamKey];
-    if (conf.card.replace(/[\s\-_]/g, '').includes(upperKey)) return conf;
+    if (TEAM_MASTER[teamKey].kw.some(k => upperKey.includes(k))) return TEAM_MASTER[teamKey];
   }
-  return { card: key, display: key, color: "bg-gray-700 text-white" };
+  return { kw: [upperKey], display: key, color: "bg-gray-700 text-white" };
 };
 
 try {
@@ -92,27 +77,29 @@ try {
         files.forEach(f => {
           if (!f.name.toLowerCase().endsWith('.png')) return;
           
+          const fileNameUpper = f.name.toUpperCase();
           const fileNameNoExt = f.name.replace('.png', '');
           const nameParts = fileNameNoExt.split('_');
           
+          // チーム名や日付などの不要なパーツを除去して選手名を抽出
           const cleanNameParts = nameParts.filter(p => 
             !p.match(/^\d+$/) && 
-            !awayConf.card.includes(p) && 
-            !homeConf.card.includes(p) && 
-            !['WATS', 'BULLS', 'WYVERNS', 'FIREBONDS', 'EXCELLENCE', 'BLOWWINDS', 'WARRIORS', 'VELTEX', 'STORKZ', 'BAMBITIOUS', 'VIKINGS', 'RIZING', 'VOLTERS', 'REBNISE'].includes(p.toUpperCase())
+            !awayConf.kw.some(k => p.toUpperCase().includes(k)) && 
+            !homeConf.kw.some(k => p.toUpperCase().includes(k))
           );
           const playerName = cleanNameParts.join(' ').trim();
-
           const playerObj = { name: playerName, imagePath: `${rawBase}/${f.name}` };
 
-          if (f.name.toUpperCase().includes(awayConf.card.toUpperCase())) {
+          // ファイル名にアウェイ/ホームいずれかのキーワードが含まれるかで振り分け
+          if (awayConf.kw.some(k => fileNameUpper.includes(k))) {
             awayData.push(playerObj);
-          } else if (f.name.toUpperCase().includes(homeConf.card.toUpperCase())) {
+          } else if (homeConf.kw.some(k => fileNameUpper.includes(k))) {
             homeData.push(playerObj);
           }
         });
       }
 
+      // レポート画像取得
       const reportApiURL = `https://api.github.com/repos/${GITHUB_REPO}/contents/output/reports/B2/${dateId}?t=${Date.now()}`;
       const reportRes = await fetch(reportApiURL, { headers: token ? { "Authorization": `token ${token}` } : {} });
       const reportFiles = await reportRes.json();

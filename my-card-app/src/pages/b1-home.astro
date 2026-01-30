@@ -258,12 +258,18 @@ for (let i = 0; i < teams.length; i += 9) {
 
       <section class="mt-32">
         <h2 class="text-4xl font-black uppercase tracking-tighter mb-8">Today's RANK 10</h2>
+        
+        <div class="flex flex-col gap-1 mb-10">
+          <span class="text-blue-500 text-[10px] font-black uppercase tracking-[0.3em]">Latest Update</span>
+          <span class="text-white text-[32px] font-bold uppercase leading-none tracking-[0.05em]">{today}</span>
+        </div>
+
         <div class="flex flex-nowrap gap-2 mb-10 max-w-sm">
           {['PTS', 'REB', 'AST'].map((stat, i) => (
             <button 
               data-tab="rank" 
               class={`rank-btn flex-1 py-4 rounded-xl text-[12px] font-black tracking-widest uppercase transition-all border border-white/5 
-                ${i === 0 ? 'bg-white text-black' : 'bg-black/20 text-white/80 hover:bg-white/10'}`}
+                ${i === 1 ? 'bg-white text-black' : 'bg-black/20 text-white/80 hover:bg-white/10'}`}
             >
               {stat}
             </button>

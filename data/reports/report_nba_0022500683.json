@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500683",
+  "date": "2026.01.29",
+  "venue": "American Airlines Center",
+  "attendance": 19024,
+  "home": {
+    "id": "1610612742",
+    "total": {
+      "pts": 121,
+      "fgm": 48,
+      "fga": 103,
+      "f2m": 37,
+      "f2a": 70,
+      "f3m": 11,
+      "f3a": 33,
+      "ftm": 14,
+      "fta": 16,
+      "reb": 56,
+      "oreb": 13,
+      "dreb": 37,
+      "ast": 26,
+      "tov": 8,
+      "stl": 7,
+      "blk": 8,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "16",
+        "name": "CALEB MARTIN",
+        "min": "27:14",
+        "pts": 6,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "35:05",
+        "pts": 14,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "25:11",
+        "pts": 5,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "29:12",
+        "pts": 13,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "38:06",
+        "pts": 49,
+        "reb": 10,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612766",
+    "total": {
+      "pts": 123,
+      "fgm": 43,
+      "fga": 91,
+      "f2m": 23,
+      "f2a": 50,
+      "f3m": 20,
+      "f3a": 41,
+      "ftm": 17,
+      "fta": 18,
+      "reb": 51,
+      "oreb": 8,
+      "dreb": 37,
+      "ast": 28,
+      "tov": 10,
+      "stl": 4,
+      "blk": 9,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "36:25",
+        "pts": 34,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "MILES BRIDGES",
+        "min": "38:12",
+        "pts": 17,
+        "reb": 8,
+        "ast": 8
+      },
+      {
+        "no": "14",
+        "name": "MOUSSA DIABATÉ",
+        "min": "32:04",
+        "pts": 10,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "24",
+        "name": "BRANDON MILLER",
+        "min": "26:46",
+        "pts": 23,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "LAMELO BALL",
+        "min": "30:48",
+        "pts": 22,
+        "reb": 3,
+        "ast": 9
+      }
+    ]
+  }
+}

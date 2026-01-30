@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500680",
+  "date": "2026.01.29",
+  "venue": "Xfinity Mobile Arena",
+  "attendance": 18608,
+  "home": {
+    "id": "1610612755",
+    "total": {
+      "pts": 113,
+      "fgm": 39,
+      "fga": 72,
+      "f2m": 31,
+      "f2a": 47,
+      "f3m": 8,
+      "f3a": 25,
+      "ftm": 27,
+      "fta": 31,
+      "reb": 28,
+      "oreb": 2,
+      "dreb": 22,
+      "ast": 25,
+      "tov": 9,
+      "stl": 8,
+      "blk": 3,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "KELLY OUBRE JR.",
+        "min": "37:15",
+        "pts": 4,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "PAUL GEORGE",
+        "min": "36:04",
+        "pts": 15,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "21",
+        "name": "JOEL EMBIID",
+        "min": "35:54",
+        "pts": 37,
+        "reb": 5,
+        "ast": 8
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "35:04",
+        "pts": 5,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "TYRESE MAXEY",
+        "min": "40:35",
+        "pts": 40,
+        "reb": 4,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612758",
+    "total": {
+      "pts": 111,
+      "fgm": 41,
+      "fga": 82,
+      "f2m": 31,
+      "f2a": 56,
+      "f3m": 10,
+      "f3a": 26,
+      "ftm": 19,
+      "fta": 23,
+      "reb": 55,
+      "oreb": 15,
+      "dreb": 31,
+      "ast": 21,
+      "tov": 16,
+      "stl": 6,
+      "blk": 4,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "NIQUE CLIFFORD",
+        "min": "26:57",
+        "pts": 2,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "PRECIOUS ACHIUWA",
+        "min": "34:13",
+        "pts": 8,
+        "reb": 13,
+        "ast": 3
+      },
+      {
+        "no": "11",
+        "name": "DOMANTAS SABONIS",
+        "min": "28:14",
+        "pts": 14,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "37:51",
+        "pts": 25,
+        "reb": 4,
+        "ast": 8
+      },
+      {
+        "no": "17",
+        "name": "DENNIS SCHRÖDER",
+        "min": "31:15",
+        "pts": 27,
+        "reb": 4,
+        "ast": 2
+      }
+    ]
+  }
+}

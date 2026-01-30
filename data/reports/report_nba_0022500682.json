@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500682",
+  "date": "2026.01.29",
+  "venue": "State Farm Arena",
+  "attendance": 16602,
+  "home": {
+    "id": "1610612737",
+    "total": {
+      "pts": 86,
+      "fgm": 34,
+      "fga": 93,
+      "f2m": 22,
+      "f2a": 54,
+      "f3m": 12,
+      "f3a": 39,
+      "ftm": 6,
+      "fta": 7,
+      "reb": 51,
+      "oreb": 14,
+      "dreb": 32,
+      "ast": 19,
+      "tov": 12,
+      "stl": 7,
+      "blk": 5,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "27",
+        "name": "VÍT KREJČÍ",
+        "min": "26:59",
+        "pts": 9,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "24",
+        "name": "COREY KISPERT",
+        "min": "30:58",
+        "pts": 17,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "35",
+        "name": "CHRISTIAN KOLOKO",
+        "min": "25:40",
+        "pts": 6,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "31:29",
+        "pts": 4,
+        "reb": 6,
+        "ast": 7
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "34:53",
+        "pts": 20,
+        "reb": 5,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612745",
+    "total": {
+      "pts": 104,
+      "fgm": 39,
+      "fga": 92,
+      "f2m": 27,
+      "f2a": 61,
+      "f3m": 12,
+      "f3a": 31,
+      "ftm": 14,
+      "fta": 20,
+      "reb": 68,
+      "oreb": 22,
+      "dreb": 37,
+      "ast": 23,
+      "tov": 11,
+      "stl": 8,
+      "blk": 14,
+      "pf": 11
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "34:22",
+        "pts": 31,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "31:36",
+        "pts": 14,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "27:55",
+        "pts": 9,
+        "reb": 13,
+        "ast": 4
+      },
+      {
+        "no": "20",
+        "name": "JOSH OKOGIE",
+        "min": "33:49",
+        "pts": 10,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "35:00",
+        "pts": 9,
+        "reb": 7,
+        "ast": 5
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500685",
+  "date": "2026.01.29",
+  "venue": "Mortgage Matchup Center",
+  "attendance": 17071,
+  "home": {
+    "id": "1610612756",
+    "total": {
+      "pts": 114,
+      "fgm": 37,
+      "fga": 79,
+      "f2m": 21,
+      "f2a": 37,
+      "f3m": 16,
+      "f3a": 42,
+      "ftm": 24,
+      "fta": 29,
+      "reb": 58,
+      "oreb": 11,
+      "dreb": 36,
+      "ast": 22,
+      "tov": 15,
+      "stl": 8,
+      "blk": 3,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "32:41",
+        "pts": 40,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "28:16",
+        "pts": 10,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "24:46",
+        "pts": 6,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "GRAYSON ALLEN",
+        "min": "34:06",
+        "pts": 24,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "25:39",
+        "pts": 16,
+        "reb": 5,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612765",
+    "total": {
+      "pts": 96,
+      "fgm": 37,
+      "fga": 87,
+      "f2m": 31,
+      "f2a": 58,
+      "f3m": 6,
+      "f3a": 29,
+      "ftm": 16,
+      "fta": 21,
+      "reb": 45,
+      "oreb": 9,
+      "dreb": 28,
+      "ast": 26,
+      "tov": 9,
+      "stl": 8,
+      "blk": 2,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "25:08",
+        "pts": 6,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "12",
+        "name": "TOBIAS HARRIS",
+        "min": "29:32",
+        "pts": 13,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "JALEN DUREN",
+        "min": "28:17",
+        "pts": 23,
+        "reb": 13,
+        "ast": 4
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "30:16",
+        "pts": 9,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "33:39",
+        "pts": 26,
+        "reb": 3,
+        "ast": 7
+      }
+    ]
+  }
+}

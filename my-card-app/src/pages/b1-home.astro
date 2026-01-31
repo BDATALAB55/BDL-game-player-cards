@@ -8,35 +8,20 @@ const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/mai
 const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1`;
 
 const cityNameMap = {
-  "HOKKAIDO": "HOKKAIDO", "LEVANGA": "HOKKAIDO", "LEVANGAHOKKAIDO": "HOKKAIDO",
-  "89ERS": "SENDAI", "SENDAI": "SENDAI", "SENDAI89ERS": "SENDAI",
-  "AKITA": "AKITA", "NORTHERNHAPPINETS": "AKITA",
-  "ROBOTS": "IBARAKI", "IBARAKI": "IBARAKI",
-  "BREX": "UTSUNOMIYA", "UTSUNOMIYA": "UTSUNOMIYA",
-  "CRANETHUNDERS": "GUNMA", "GUNMA": "GUNMA",
-  "ALPHAS": "KOSHIGAYA", "KOSHIGAYA": "KOSHIGAYA",
-  "ALTIRI": "A CHIBA", "ACHIBA": "A CHIBA",
-  "JETS": "CHIBA J", "CHIBAJ": "CHIBA J",
-  "ALVARK": "A TOKYO", "ATOKYO": "A TOKYO",
-  "SUNROCKERS": "SR SHIBUYA", "SHIBUYA": "SR SHIBUYA",
-  "BRAVETHUNDERS": "KAWASAKI", "KAWASAKI": "KAWASAKI",
-  "BCORSAIRS": "YOKOHAMA BC", "YOKOHAMABC": "YOKOHAMA BC",
-  "GROUSES": "TOYAMA", "TOYAMA": "TOYAMA",
-  "NEOPHOENIX": "SAN-EN", "SANEN": "SAN-EN",
-  "SEAHORSES": "MIKAWA", "MIKAWA": "MIKAWA",
-  "FIGHTINGEAGLES": "FE NAGOYA", "FENAGOYA": "FE NAGOYA",
-  "DOLPHINS": "NAGOYA D", "DIAMONDDOLPHINS": "NAGOYA D", "NAGOYA": "NAGOYA D",
-  "LAKES": "SHIGA", "SHIGA": "SHIGA",
-  "HANNARYZ": "KYOTO", "KYOTO": "KYOTO",
-  "EVESSA": "OSAKA", "OSAKA": "OSAKA",
-  "SUSANOOMAGIC": "SHIMANE", "SHIMANE": "SHIMANE",
-  "DRAGONFLIES": "HIROSHIMA", "HIROSHIMA": "HIROSHIMA",
-  "BALLOONERS": "SAGA", "SAGA": "SAGA",
-  "VELCA": "NAGASAKI", "NAGASAKI": "NAGASAKI",
-  "GOLDENKINGS": "RYUKYU", "RYUKYU": "RYUKYU"
+  "HOKKAIDO": "HOKKAIDO", "LEVANGA": "HOKKAIDO", "AKITA": "AKITA",
+  "89ERS": "SENDAI", "SENDAI": "SENDAI", "ROBOTS": "IBARAKI",
+  "BREX": "UTSUNOMIYA", "UTSUNOMIYA": "UTSUNOMIYA", "GUNMA": "GUNMA",
+  "KOSHIGAYA": "KOSHIGAYA", "ACHIBA": "A CHIBA", "JETS": "CHIBA J",
+  "ALVARK": "A TOKYO", "SHIBUYA": "SR SHIBUYA", "KAWASAKI": "KAWASAKI",
+  "YOKOHAMA": "YOKOHAMA BC", "TOYAMA": "TOYAMA", "SANEN": "SAN-EN",
+  "MIKAWA": "MIKAWA", "FENAGOYA": "FE NAGOYA", "NAGOYA": "NAGOYA D",
+  "SHIGA": "SHIGA", "KYOTO": "KYOTO", "OSAKA": "OSAKA",
+  "SHIMANE": "SHIMANE", "HIROSHIMA": "HIROSHIMA", "SAGA": "SAGA",
+  "NAGASAKI": "NAGASAKI", "RYUKYU": "RYUKYU"
 };
 
 let reportGroups = [];
+
 try {
   const res = await fetch(RECURSIVE_API, {
     headers: { "Accept": "application/vnd.github.v3+json" }
@@ -45,7 +30,8 @@ try {
 
   if (data && data.tree) {
     const allFiles = data.tree.filter(item => 
-      item.path.includes('output/reports/B1/') && item.path.toLowerCase().endsWith('.png')
+      item.path.includes('output/reports/B1/') && 
+      item.path.toLowerCase().endsWith('.png')
     );
 
     const groups = {};
@@ -77,8 +63,9 @@ try {
       
       const cardFolderName = `game_${gameId}_${rawAway}_${rawHome}_${fullDate}`;
       groups[folderName].reports.push({
-        path: `${IMAGE_BASE_URL}/${folderName}/${fileName}?t=${Date.now()}`,
-        away: displayAway, home: displayHome,
+        path: `${IMAGE_BASE_URL}/${folderName}/${fileName}`,
+        away: displayAway,
+        home: displayHome,
         link: `/b1-cards?folder=${folderName}/${cardFolderName}`
       });
     });
@@ -101,86 +88,59 @@ const teams = [
 ];
 
 const todayDate = reportGroups.length > 0 ? reportGroups[0].date : "2026.01.25";
-const todayGameCount = reportGroups.length > 0 ? reportGroups[0].reports.length : 0;
-const teamChunks = [];
-for (let i = 0; i < teams.length; i += 9) { teamChunks.push(teams.slice(i, i + 9)); }
+const latestReports = reportGroups.length > 0 ? reportGroups[0].reports : [];
 ---
 
 <Layout title="B1 HOME | B-Data Lab">
-  <main class="bg-[#373A36] min-h-screen text-white font-avenir pb-32 overflow-x-hidden relative">
-    <header class="sticky top-0 z-50 bg-[#373A36]/90 backdrop-blur-md border-b border-white/10">
-      <div class="pt-12 pb-6 px-6 max-w-6xl mx-auto w-full">
-        <div class="flex items-end justify-between w-full">
-          <a href="/b1-home" class="hover:opacity-80 transition-opacity"><h1 class="text-5xl md:text-7xl font-black uppercase leading-none">B1</h1></a>
-          <div class="flex flex-col items-end text-right space-y-3">
-            <h2 class="text-xl md:text-3xl font-black tracking-widest uppercase leading-none" style="color: #2E3C57; -webkit-text-stroke: 1px white;">BDATALAB</h2>
-          </div>
-        </div>
+  <main class="bg-[#373A36] min-h-screen text-white pb-32 overflow-x-hidden relative">
+    
+    <header class="sticky top-0 z-50 bg-[#373A36]/90 backdrop-blur-md border-b border-white/10 p-6">
+      <div class="max-w-6xl mx-auto flex justify-between items-end">
+        <h1 class="text-5xl md:text-7xl font-black uppercase leading-none">B1</h1>
+        <h2 class="text-xl md:text-3xl font-black uppercase text-[#2E3C57]" style="-webkit-text-stroke: 1px white;">BDATALAB</h2>
       </div>
     </header>
 
-    <div class="max-w-6xl mx-auto px-6">
-      <section class="mt-12">
+    <div class="max-w-6xl mx-auto px-6 mt-12">
+      <section>
         <div class="flex justify-between items-end mb-8">
           <div>
             <h2 class="text-4xl font-black uppercase tracking-tighter mb-4">GAME REPORT</h2>
-            <div class="flex flex-col gap-1">
-              <span class="text-blue-500 text-[10px] font-black uppercase">Latest Update</span>
-              <span class="text-white text-[32px] font-bold uppercase">{todayDate}</span>
-            </div>
+            <p class="text-blue-500 text-[10px] font-black uppercase">Latest: {todayDate}</p>
           </div>
-          <div class="text-right leading-none">
-            <span class="text-7xl font-black italic opacity-20 block">{todayGameCount}</span>
-            <span class="text-[12px] font-bold opacity-40 uppercase tracking-[0.3em]">Games</span>
-          </div>
+          <p class="text-7xl font-black italic opacity-20">{latestReports.length}</p>
         </div>
 
         <div class="flex overflow-x-auto gap-8 no-scrollbar snap-x pb-4">
-          {reportGroups.length > 0 ? reportGroups[0].reports.map(r => (
-            <div class="flex-none w-[300px] snap-center">
-              <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-black/40 aspect-[3/4.2]">
-                <img src={r.path} alt="Report" class="w-full h-full object-cover" />
+          {latestReports.map(r => (
+            <div class="flex-none w-[280px] snap-center">
+              <div class="rounded-2xl overflow-hidden border border-white/10 aspect-[3/4.2]">
+                <img src={r.path} alt="" class="w-full h-full object-cover" loading="lazy" />
               </div>
-              <div class="mt-6 flex justify-center">
-                <a href={r.link} class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full bg-black/40 border-2 border-transparent bg-clip-padding relative hover:scale-110 transition-transform group">
-                  <div class="absolute inset-0 p-[2px] rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-red-500 -z-10"></div>
-                  <span class="text-[12px] font-black tracking-[0.2em] uppercase text-white">{r.away} vs {r.home}</span>
+              <div class="mt-4 text-center">
+                <a href={r.link} class="inline-block px-6 py-2 rounded-full bg-blue-600 font-black text-[12px] uppercase hover:scale-105 transition-transform">
+                  {r.away} vs {r.home}
                 </a>
               </div>
             </div>
-          )) : <div class="text-gray-500 px-4 italic">No reports found.</div>}
+          ))}
+          {latestReports.length === 0 && <p class="opacity-50">No reports found.</p>}
         </div>
       </section>
 
       <section class="mt-24">
-        <h2 class="text-4xl font-black uppercase tracking-tighter mb-8">TEAM</h2>
-        <div class="hidden md:grid grid-cols-4 lg:grid-cols-6 gap-2">
+        <h2 class="text-4xl font-black uppercase mb-8">TEAM</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
           {teams.map(t => (
-            <a href={`/b1-team?team=${t.id}`} class="group">
-              <div class={`${t.color} aspect-[2/1] rounded-2xl flex items-center justify-center text-[18px] lg:text-[22px] font-black tracking-tighter transition-all hover:scale-105 px-2 text-center uppercase`}>
-                <span class="leading-tight">{t.id}</span>
-              </div>
+            <a href={`/b1-team?team=${t.id}`} class={`${t.color} rounded-xl p-4 text-center font-black hover:scale-105 transition-transform`}>
+              {t.id}
             </a>
           ))}
         </div>
       </section>
-
-      <section class="mt-32">
-        <h2 class="text-4xl font-black uppercase tracking-tighter mb-8">STANDING</h2>
-        <div id="standing-container" class="flex overflow-x-auto gap-6 no-scrollbar pb-4">
-          {Array.from({ length: 6 }).map((_, i) => (
-            <div class="flex-none w-[220px] aspect-[3/4] bg-black/40 border border-white/5 rounded-2xl flex flex-col items-center justify-center gap-4">
-              <div class="text-[40px] font-black text-white/10">#{i + 1}</div>
-              <span class="text-[10px] font-black tracking-[0.3em] uppercase text-white/30">Coming Soon</span>
-            </div>
-          ))}
-        </div>
-      </section>
     </div>
 
-    <div class="fixed bottom-8 right-8 z-40">
-      <a href="/" class="bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] uppercase tracking-widest border border-white/10 shadow-2xl transition-all hover:scale-105">Back to Home</a>
-    </div>
+    <a href="/" class="fixed bottom-8 right-8 bg-white text-black px-6 py-3 rounded-full font-black text-[12px] uppercase shadow-xl hover:scale-105 transition-transform">Back</a>
   </main>
 </Layout>
 

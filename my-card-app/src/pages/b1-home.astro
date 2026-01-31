@@ -1,9 +1,11 @@
+---
 export const prerender = false;
 import Layout from '../layouts/Layout.astro';
 
 // --- 設定値 ---
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
-const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
+// URLのベース部分のみを定義（エラー回避のため Date.now() を分離）
+const RECURSIVE_API_BASE = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1`;
 const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1`;
 
 // アーカイブ側の表示に合わせるための変換辞書
@@ -41,7 +43,9 @@ const token = process.env.GITHUB_TOKEN;
 let reportGroups = [];
 
 try {
-  const res = await fetch(RECURSIVE_API, {
+  // fetchの瞬間にのみ、キャッシュ回避用の Date.now() を結合する
+  const timestamp = Date.now();
+  const res = await fetch(`${RECURSIVE_API_BASE}&t=${timestamp}`, {
     headers: token ? { 
       "Authorization": `token ${token}`,
       "Accept": "application/vnd.github.v3+json"
@@ -145,7 +149,7 @@ for (let i = 0; i < teams.length; i += 9) {
               <div class="h-3 w-[1px] bg-white/20"></div>
               <a href="https://note.com/bdatalab5x5" target="_blank" rel="noopener noreferrer" class="group flex items-center gap-1.5 transition-all">
                 <div class="w-7 h-7 md:w-8 md:h-8 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-[#23bb9d] transition-colors">
-                   <span class="text-[12px] font-black text-white">n</span>
+                    <span class="text-[12px] font-black text-white">n</span>
                 </div>
                 <span class="text-[10px] font-black tracking-widest lowercase text-white/40 group-hover:text-white transition-colors">note</span>
               </a>

@@ -7,71 +7,6 @@ const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
 const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1`;
 
-// 都市名マップ（表示用）
-const cityNameMap = {
-  "HOKKAIDO": "HOKKAIDO", "LEVANGA": "HOKKAIDO", "89ERS": "SENDAI", "SENDAI": "SENDAI",
-  "AKITA": "AKITA", "ROBOTS": "IBARAKI", "IBARAKI": "IBARAKI", "BREX": "UTSUNOMIYA", 
-  "UTSUNOMIYA": "UTSUNOMIYA", "CRANETHUNDERS": "GUNMA", "GUNMA": "GUNMA", "ALPHAS": "KOSHIGAYA",
-  "KOSHIGAYA": "KOSHIGAYA", "ALTIRI": "A CHIBA", "ACHIBA": "A CHIBA", "JETS": "CHIBA J",
-  "CHIBAJ": "CHIBA J", "ALVARK": "A TOKYO", "ATOKYO": "A TOKYO", "SUNROCKERS": "SR SHIBUYA",
-  "SHIBUYA": "SR SHIBUYA", "BRAVETHUNDERS": "KAWASAKI", "KAWASAKI": "KAWASAKI",
-  "BCORSAIRS": "YOKOHAMA BC", "YOKOHAMABC": "YOKOHAMA BC", "GROUSES": "TOYAMA",
-  "TOYAMA": "TOYAMA", "NEOPHOENIX": "SAN-EN", "SANEN": "SAN-EN", "SEAHORSES": "MIKAWA",
-  "MIKAWA": "MIKAWA", "FIGHTINGEAGLES": "FE NAGOYA", "FENAGOYA": "FE NAGOYA",
-  "DOLPHINS": "NAGOYA D", "DIAMONDDOLPHINS": "NAGOYA D", "LAKES": "SHIGA", "SHIGA": "SHIGA",
-  "HANNARYZ": "KYOTO", "KYOTO": "KYOTO", "EVESSA": "OSAKA", "OSAKA": "OSAKA",
-  "SUSANOOMAGIC": "SHIMANE", "SHIMANE": "SHIMANE", "DRAGONFLIES": "HIROSHIMA",
-  "HIROSHIMA": "HIROSHIMA", "BALLOONERS": "SAGA", "SAGA": "SAGA", "VELCA": "NAGASAKI",
-  "NAGASAKI": "NAGASAKI", "GOLDENKINGS": "RYUKYU", "RYUKYU": "RYUKYU"
-};
-
-let reportGroups = [];
-
-try {
-  const res = await fetch(RECURSIVE_API, {
-    headers: { "Accept": "application/vnd.github.v3+json" }
-  });
-  const data = await res.json();
-
-  if (data.tree) {
-    const allFiles = data.tree.filter(item => 
-      item.path.includes('output/reports/B1/') && item.path.toLowerCase().endsWith('.png')
-    );
-
-    const groups = {};
-    allFiles.forEach(file => {
-      const parts = file.path.split('/');
-      const folderName = parts[parts.length - 2];
-      const fileName = parts[parts.length - 1];
-      if (!/^\d+$/.test(folderName)) return;
-
-      const nameParts = fileName.replace('.png', '').split('_');
-      const gameId = nameParts[1] || "";
-      const rawAway = nameParts[2] || "AWAY";
-      const rawHome = nameParts[3] || "HOME";
-
-      const displayAway = cityNameMap[rawAway.toUpperCase()] || rawAway;
-      const displayHome = cityNameMap[rawHome.toUpperCase()] || rawHome;
-
-      if (!groups[folderName]) {
-        groups[folderName] = {
-          id: folderName,
-          date: `20${folderName.substring(0,2)}.${folderName.substring(2,4)}.${folderName.substring(4,6)}`,
-          reports: []
-        };
-      }
-      groups[folderName].reports.push({
-        path: `${IMAGE_BASE_URL}/${folderName}/${fileName}`,
-        away: displayAway, home: displayHome,
-        link: `/b1-cards?folder=${folderName}/game_${gameId}_${rawAway}_${rawHome}`
-      });
-    });
-    reportGroups = Object.values(groups).sort((a, b) => b.id.localeCompare(a.id));
-  }
-} catch (e) {
-  console.error(e);
-}
-
 const teams = [
   { id: 'HOKKAIDO', color: 'bg-[#91ad10]' }, { id: 'SENDAI', color: 'bg-[#f7e000] text-black' }, { id: 'AKITA', color: 'bg-[#dd0055]' },
   { id: 'IBARAKI', color: 'bg-[#002e95]' }, { id: 'UTSUNOMIYA', color: 'bg-[#12284b]' }, { id: 'GUNMA', color: 'bg-[#ffda00] text-black' },
@@ -84,68 +19,96 @@ const teams = [
   { id: 'NAGASAKI', color: 'bg-[#2b3754]' }, { id: 'RYUKYU', color: 'bg-[#b69e63]' }
 ];
 
+let reportGroups = [];
+
+try {
+  const res = await fetch(RECURSIVE_API, {
+    headers: { "Accept": "application/vnd.github.v3+json" }
+  });
+  const data = await res.json();
+
+  if (data && data.tree) {
+    const allFiles = data.tree.filter(item => 
+      item.path.includes('output/reports/B1/') && item.path.toLowerCase().endsWith('.png')
+    );
+
+    const groups = {};
+    allFiles.forEach(file => {
+      const parts = file.path.split('/');
+      const folderName = parts[parts.length - 2];
+      const fileName = parts[parts.length - 1];
+      if (!/^\d+$/.test(folderName)) return;
+
+      if (!groups[folderName]) {
+        groups[folderName] = {
+          id: folderName,
+          date: `20${folderName.substring(0,2)}.${folderName.substring(2,4)}.${folderName.substring(4,6)}`,
+          reports: []
+        };
+      }
+      groups[folderName].reports.push({
+        path: `${IMAGE_BASE_URL}/${folderName}/${fileName}`,
+        link: `/b1-cards?folder=${folderName}`
+      });
+    });
+    reportGroups = Object.values(groups).sort((a, b) => b.id.localeCompare(a.id));
+  }
+} catch (e) {
+  console.error(e);
+}
+
 const today = reportGroups.length > 0 ? reportGroups[0].date : "2026.01.25";
 const todayGameCount = reportGroups.length > 0 ? reportGroups[0].reports.length : 0;
 ---
 
 <Layout title="B1 HOME | B-Data Lab">
-  <main class="bg-[#373A36] min-h-screen text-white font-avenir pb-32 overflow-x-hidden">
-    <header class="sticky top-0 z-50 bg-[#373A36]/90 backdrop-blur-md border-b border-white/10">
-      <div class="pt-12 pb-6 px-6 max-w-6xl mx-auto w-full">
-        <div class="flex items-end justify-between w-full">
-          <a href="/b1-home" class="hover:opacity-80"><h1 class="text-5xl md:text-7xl font-black">B1</h1></a>
-          <div class="text-right">
-            <h2 class="text-xl md:text-3xl font-black" style="-webkit-text-stroke: 1px white;">BDATALAB</h2>
-          </div>
-        </div>
+  <main class="bg-[#373A36] min-h-screen text-white pb-32">
+    <header class="p-8 border-b border-white/10 flex justify-between items-center">
+      <h1 class="text-6xl font-black">B1</h1>
+      <div class="text-right">
+        <h2 class="text-2xl font-black opacity-50">BDATALAB</h2>
       </div>
     </header>
 
-    <div class="max-w-6xl mx-auto px-6">
-      <section class="mt-12">
+    <div class="max-w-6xl mx-auto px-6 mt-12">
+      <section>
         <h2 class="text-4xl font-black mb-4">GAME REPORT</h2>
-        <div class="flex items-center gap-4 mb-8">
-          <span class="text-[32px] font-bold">{today}</span>
-          <span class="text-7xl font-black italic opacity-20">{todayGameCount}</span>
+        <div class="flex items-baseline gap-4 mb-8">
+          <span class="text-3xl font-bold">{today}</span>
+          <span class="text-5xl font-black opacity-20 italic">{todayGameCount} Games</span>
         </div>
-
-        <div class="flex overflow-x-auto gap-8 no-scrollbar snap-x">
+        <div class="flex overflow-x-auto gap-6 no-scrollbar snap-x">
           {reportGroups.length > 0 ? reportGroups[0].reports.map(r => (
-            <div class="flex-none w-[300px] snap-center">
-              <div class="rounded-2xl overflow-hidden border border-white/10 aspect-[3/4.2]">
-                <img src={r.path} alt="Report" class="w-full h-full object-cover" />
-              </div>
-              <div class="mt-6 flex justify-center">
-                <a href={r.link} class="px-6 py-2.5 rounded-full bg-black/40 border border-white/20 text-[12px] font-black uppercase">
-                  {r.away} <span class="text-white/50 mx-1">vs</span> {r.home}
-                </a>
+            <div class="flex-none w-[280px] snap-center">
+              <div class="rounded-xl overflow-hidden border border-white/10 aspect-[3/4.2] bg-black/20">
+                <img src={r.path} class="w-full h-full object-cover" alt="report" />
               </div>
             </div>
-          )) : <div class="text-white/30">No reports found.</div>}
+          )) : <p class="text-white/30">COMING SOON</p>}
         </div>
       </section>
 
-      <section class="mt-24">
+      <section class="mt-20">
         <h2 class="text-4xl font-black mb-8">TEAM</h2>
-        <div class="grid grid-cols-4 lg:grid-cols-6 gap-2">
+        <div class="grid grid-cols-3 md:grid-cols-6 gap-2">
           {teams.map(t => (
-            <a href={`/b1-team?team=${t.id}`} class={`${t.color} aspect-[2/1] rounded-2xl flex items-center justify-center font-black text-center px-2 hover:scale-105 transition-transform`}>
+            <a href={`/b1-team?team=${t.id}`} class={`${t.color} aspect-[2/1] rounded-xl flex items-center justify-center font-black text-[14px] text-center px-1 hover:scale-105 transition-transform uppercase`}>
               {t.id}
             </a>
           ))}
         </div>
       </section>
 
-      <section class="mt-32">
-        <h2 class="text-4xl font-black mb-8">RANKING</h2>
-        <div class="flex gap-2 mb-10">
+      <section class="mt-20">
+        <h2 class="text-4xl font-black mb-8">TODAY'S RANK 10</h2>
+        <div class="flex gap-2 mb-8">
           {['PTS', 'REB', 'AST'].map((stat, i) => (
-            <button class={`flex-1 py-4 rounded-xl text-[12px] font-black ${i === 0 ? 'bg-white text-black' : 'bg-black/20 text-white/80'}`}>{stat}</button>
+            <button class={`px-8 py-3 rounded-lg font-black text-[12px] ${i === 0 ? 'bg-white text-black' : 'bg-black/20 text-white/50'}`}>{stat}</button>
           ))}
         </div>
         <div class="flex overflow-x-auto gap-6 no-scrollbar pb-4">
           {Array.from({ length: 10 }).map((_, i) => (
-            <div class="flex-none w-[260px] aspect-[3/4.2] bg-black/40 border border-white/5 rounded-2xl flex flex-col items-center justify-center gap-4 relative">
+            <div class="flex-none w-[240px] aspect-[3/4.2] bg-black/40 border border-white/5 rounded-2xl flex flex-col items-center justify-center gap-4 relative">
               <div class="absolute top-4 left-6 text-[32px] font-black text-white/10">#{i + 1}</div>
               <span class="text-[10px] font-black text-white/30 uppercase tracking-widest">Coming Soon</span>
             </div>
@@ -154,8 +117,8 @@ const todayGameCount = reportGroups.length > 0 ? reportGroups[0].reports.length 
       </section>
     </div>
 
-    <div class="fixed bottom-8 right-8 z-40">
-      <a href="/" class="bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] border border-white/10">Back to Home</a>
+    <div class="fixed bottom-8 right-8">
+      <a href="/" class="bg-white/10 backdrop-blur-md text-white px-8 py-4 rounded-full font-black text-[11px] border border-white/10">BACK TO HOME</a>
     </div>
   </main>
 </Layout>

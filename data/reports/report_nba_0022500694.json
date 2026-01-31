@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500694",
+  "date": "2026.01.30",
+  "venue": "Delta Center",
+  "attendance": 18186,
+  "home": {
+    "id": "1610612762",
+    "total": {
+      "pts": 99,
+      "fgm": 39,
+      "fga": 78,
+      "f2m": 29,
+      "f2a": 49,
+      "f3m": 10,
+      "f3a": 29,
+      "ftm": 11,
+      "fta": 19,
+      "reb": 42,
+      "oreb": 6,
+      "dreb": 27,
+      "ast": 26,
+      "tov": 11,
+      "stl": 6,
+      "blk": 4,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "SVI MYKHAILIUK",
+        "min": "21:06",
+        "pts": 3,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "CODY WILLIAMS",
+        "min": "28:29",
+        "pts": 6,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "22",
+        "name": "KYLE FILIPOWSKI",
+        "min": "28:29",
+        "pts": 14,
+        "reb": 12,
+        "ast": 2
+      },
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "29:17",
+        "pts": 12,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "32:18",
+        "pts": 26,
+        "reb": 3,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612751",
+    "total": {
+      "pts": 109,
+      "fgm": 39,
+      "fga": 82,
+      "f2m": 25,
+      "f2a": 42,
+      "f3m": 14,
+      "f3a": 40,
+      "ftm": 17,
+      "fta": 28,
+      "reb": 60,
+      "oreb": 11,
+      "dreb": 36,
+      "ast": 27,
+      "tov": 12,
+      "stl": 6,
+      "blk": 5,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "28:20",
+        "pts": 7,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "DANNY WOLF",
+        "min": "28:29",
+        "pts": 14,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "30:11",
+        "pts": 6,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "29:23",
+        "pts": 25,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "88",
+        "name": "NOLAN TRAORE",
+        "min": "25:39",
+        "pts": 7,
+        "reb": 2,
+        "ast": 6
+      }
+    ]
+  }
+}

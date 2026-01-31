@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500696",
+  "date": "2026.01.30",
+  "venue": "Chase Center",
+  "attendance": 18064,
+  "home": {
+    "id": "1610612744",
+    "total": {
+      "pts": 124,
+      "fgm": 40,
+      "fga": 90,
+      "f2m": 22,
+      "f2a": 38,
+      "f3m": 18,
+      "f3a": 52,
+      "ftm": 26,
+      "fta": 35,
+      "reb": 54,
+      "oreb": 11,
+      "dreb": 31,
+      "ast": 31,
+      "tov": 18,
+      "stl": 10,
+      "blk": 4,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "25:04",
+        "pts": 11,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "32:53",
+        "pts": 15,
+        "reb": 6,
+        "ast": 7
+      },
+      {
+        "no": "20",
+        "name": "AL HORFORD",
+        "min": "23:17",
+        "pts": 13,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "BRANDIN PODZIEMSKI",
+        "min": "28:18",
+        "pts": 11,
+        "reb": 8,
+        "ast": 8
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "25:24",
+        "pts": 23,
+        "reb": 1,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612765",
+    "total": {
+      "pts": 131,
+      "fgm": 46,
+      "fga": 95,
+      "f2m": 36,
+      "f2a": 69,
+      "f3m": 10,
+      "f3a": 26,
+      "ftm": 29,
+      "fta": 36,
+      "reb": 61,
+      "oreb": 15,
+      "dreb": 38,
+      "ast": 31,
+      "tov": 14,
+      "stl": 13,
+      "blk": 3,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "28:52",
+        "pts": 7,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "12",
+        "name": "TOBIAS HARRIS",
+        "min": "34:17",
+        "pts": 15,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "JALEN DUREN",
+        "min": "29:32",
+        "pts": 21,
+        "reb": 13,
+        "ast": 3
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "29:37",
+        "pts": 15,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "34:50",
+        "pts": 29,
+        "reb": 4,
+        "ast": 11
+      }
+    ]
+  }
+}

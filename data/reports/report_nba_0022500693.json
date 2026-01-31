@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500693",
+  "date": "2026.01.30",
+  "venue": "Mortgage Matchup Center",
+  "attendance": 17071,
+  "home": {
+    "id": "1610612756",
+    "total": {
+      "pts": 126,
+      "fgm": 45,
+      "fga": 85,
+      "f2m": 22,
+      "f2a": 37,
+      "f3m": 23,
+      "f3a": 48,
+      "ftm": 13,
+      "fta": 18,
+      "reb": 49,
+      "oreb": 9,
+      "dreb": 34,
+      "ast": 31,
+      "tov": 20,
+      "stl": 15,
+      "blk": 5,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "24:24",
+        "pts": 27,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "23:55",
+        "pts": 12,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "23:21",
+        "pts": 10,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "GRAYSON ALLEN",
+        "min": "26:56",
+        "pts": 13,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "24:05",
+        "pts": 16,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612739",
+    "total": {
+      "pts": 113,
+      "fgm": 45,
+      "fga": 97,
+      "f2m": 30,
+      "f2a": 49,
+      "f3m": 15,
+      "f3a": 48,
+      "ftm": 8,
+      "fta": 11,
+      "reb": 52,
+      "oreb": 16,
+      "dreb": 27,
+      "ast": 34,
+      "tov": 22,
+      "stl": 13,
+      "blk": 2,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "JAYLON TYSON",
+        "min": "25:21",
+        "pts": 16,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "32",
+        "name": "DEAN WADE",
+        "min": "19:59",
+        "pts": 3,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "23:05",
+        "pts": 12,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "SAM MERRILL",
+        "min": "18:46",
+        "pts": 10,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "27:43",
+        "pts": 16,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500691",
+  "date": "2026.01.30",
+  "venue": "Smoothie King Center",
+  "attendance": 16446,
+  "home": {
+    "id": "1610612740",
+    "total": {
+      "pts": 114,
+      "fgm": 43,
+      "fga": 88,
+      "f2m": 35,
+      "f2a": 55,
+      "f3m": 8,
+      "f3a": 33,
+      "ftm": 20,
+      "fta": 26,
+      "reb": 55,
+      "oreb": 14,
+      "dreb": 28,
+      "ast": 24,
+      "tov": 15,
+      "stl": 13,
+      "blk": 6,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "34:12",
+        "pts": 22,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "ZION WILLIAMSON",
+        "min": "33:02",
+        "pts": 21,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "22",
+        "name": "DERIK QUEEN",
+        "min": "33:53",
+        "pts": 22,
+        "reb": 9,
+        "ast": 7
+      },
+      {
+        "no": "25",
+        "name": "TREY MURPHY III",
+        "min": "33:15",
+        "pts": 8,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "HERBERT JONES",
+        "min": "29:58",
+        "pts": 16,
+        "reb": 4,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612763",
+    "total": {
+      "pts": 106,
+      "fgm": 40,
+      "fga": 93,
+      "f2m": 28,
+      "f2a": 52,
+      "f3m": 12,
+      "f3a": 41,
+      "ftm": 14,
+      "fta": 15,
+      "reb": 51,
+      "oreb": 16,
+      "dreb": 30,
+      "ast": 26,
+      "tov": 19,
+      "stl": 11,
+      "blk": 3,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "CEDRIC COWARD",
+        "min": "23:29",
+        "pts": 13,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "33:42",
+        "pts": 16,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "31",
+        "name": "JOCK LANDALE",
+        "min": "30:50",
+        "pts": 12,
+        "reb": 8,
+        "ast": 0
+      },
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "26:01",
+        "pts": 10,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "24",
+        "name": "CAM SPENCER",
+        "min": "23:56",
+        "pts": 16,
+        "reb": 1,
+        "ast": 3
+      }
+    ]
+  }
+}

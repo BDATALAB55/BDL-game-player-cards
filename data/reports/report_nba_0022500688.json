@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500688",
+  "date": "2026.01.30",
+  "venue": "Capital One Arena",
+  "attendance": 20028,
+  "home": {
+    "id": "1610612764",
+    "total": {
+      "pts": 111,
+      "fgm": 44,
+      "fga": 99,
+      "f2m": 28,
+      "f2a": 51,
+      "f3m": 16,
+      "f3a": 48,
+      "ftm": 7,
+      "fta": 10,
+      "reb": 44,
+      "oreb": 17,
+      "dreb": 22,
+      "ast": 28,
+      "tov": 18,
+      "stl": 10,
+      "blk": 4,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "JUSTIN CHAMPAGNIE",
+        "min": "23:42",
+        "pts": 9,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "27:04",
+        "pts": 15,
+        "reb": 3,
+        "ast": 6
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "28:18",
+        "pts": 16,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "24:10",
+        "pts": 7,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "25:29",
+        "pts": 15,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612747",
+    "total": {
+      "pts": 142,
+      "fgm": 52,
+      "fga": 85,
+      "f2m": 38,
+      "f2a": 52,
+      "f3m": 14,
+      "f3a": 33,
+      "ftm": 24,
+      "fta": 32,
+      "reb": 55,
+      "oreb": 11,
+      "dreb": 35,
+      "ast": 38,
+      "tov": 16,
+      "stl": 17,
+      "blk": 4,
+      "pf": 8
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "JAKE LARAVIA",
+        "min": "25:09",
+        "pts": 3,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "29:36",
+        "pts": 20,
+        "reb": 3,
+        "ast": 6
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "28:57",
+        "pts": 28,
+        "reb": 13,
+        "ast": 3
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "30:32",
+        "pts": 37,
+        "reb": 11,
+        "ast": 13
+      },
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "26:31",
+        "pts": 3,
+        "reb": 1,
+        "ast": 4
+      }
+    ]
+  }
+}

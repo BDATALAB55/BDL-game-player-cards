@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500690",
+  "date": "2026.01.30",
+  "venue": "Madison Square Garden",
+  "attendance": 19812,
+  "home": {
+    "id": "1610612752",
+    "total": {
+      "pts": 127,
+      "fgm": 48,
+      "fga": 99,
+      "f2m": 29,
+      "f2a": 54,
+      "f3m": 19,
+      "f3a": 45,
+      "ftm": 12,
+      "fta": 14,
+      "reb": 58,
+      "oreb": 16,
+      "dreb": 36,
+      "ast": 29,
+      "tov": 13,
+      "stl": 9,
+      "blk": 3,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "30:50",
+        "pts": 24,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "29:46",
+        "pts": 20,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "29:28",
+        "pts": 14,
+        "reb": 20,
+        "ast": 3
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "32:37",
+        "pts": 10,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "34:05",
+        "pts": 26,
+        "reb": 1,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612757",
+    "total": {
+      "pts": 97,
+      "fgm": 35,
+      "fga": 81,
+      "f2m": 22,
+      "f2a": 38,
+      "f3m": 13,
+      "f3a": 43,
+      "ftm": 14,
+      "fta": 19,
+      "reb": 47,
+      "oreb": 8,
+      "dreb": 29,
+      "ast": 23,
+      "tov": 20,
+      "stl": 5,
+      "blk": 5,
+      "pf": 13
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "28:27",
+        "pts": 11,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "26:26",
+        "pts": 0,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "21:34",
+        "pts": 7,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "JRUE HOLIDAY",
+        "min": "21:55",
+        "pts": 5,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "27:49",
+        "pts": 26,
+        "reb": 3,
+        "ast": 3
+      }
+    ]
+  }
+}

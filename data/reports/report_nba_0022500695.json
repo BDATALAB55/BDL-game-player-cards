@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500695",
+  "date": "2026.01.30",
+  "venue": "Ball Arena",
+  "attendance": 20016,
+  "home": {
+    "id": "1610612743",
+    "total": {
+      "pts": 122,
+      "fgm": 40,
+      "fga": 73,
+      "f2m": 24,
+      "f2a": 45,
+      "f3m": 16,
+      "f3a": 28,
+      "ftm": 26,
+      "fta": 32,
+      "reb": 51,
+      "oreb": 7,
+      "dreb": 36,
+      "ast": 30,
+      "tov": 12,
+      "stl": 7,
+      "blk": 4,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "SPENCER JONES",
+        "min": "35:08",
+        "pts": 4,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "PEYTON WATSON",
+        "min": "35:18",
+        "pts": 21,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "24:32",
+        "pts": 31,
+        "reb": 12,
+        "ast": 5
+      },
+      {
+        "no": "24",
+        "name": "JALEN PICKETT",
+        "min": "14:11",
+        "pts": 0,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "35:52",
+        "pts": 20,
+        "reb": 4,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612746",
+    "total": {
+      "pts": 109,
+      "fgm": 40,
+      "fga": 86,
+      "f2m": 26,
+      "f2a": 46,
+      "f3m": 14,
+      "f3a": 40,
+      "ftm": 15,
+      "fta": 21,
+      "reb": 42,
+      "oreb": 11,
+      "dreb": 23,
+      "ast": 29,
+      "tov": 9,
+      "stl": 7,
+      "blk": 3,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "31:08",
+        "pts": 21,
+        "reb": 3,
+        "ast": 6
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "31:11",
+        "pts": 18,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "29:41",
+        "pts": 13,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "25:28",
+        "pts": 5,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "33:55",
+        "pts": 25,
+        "reb": 5,
+        "ast": 9
+      }
+    ]
+  }
+}

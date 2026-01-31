@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500687",
+  "date": "2026.01.30",
+  "venue": "Kia Center",
+  "attendance": 19163,
+  "home": {
+    "id": "1610612753",
+    "total": {
+      "pts": 130,
+      "fgm": 40,
+      "fga": 78,
+      "f2m": 23,
+      "f2a": 44,
+      "f3m": 17,
+      "f3a": 34,
+      "ftm": 33,
+      "fta": 37,
+      "reb": 41,
+      "oreb": 3,
+      "dreb": 32,
+      "ast": 28,
+      "tov": 12,
+      "stl": 7,
+      "blk": 3,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "36:24",
+        "pts": 32,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "40:36",
+        "pts": 20,
+        "reb": 9,
+        "ast": 6
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "34:52",
+        "pts": 23,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "ANTHONY BLACK",
+        "min": "39:54",
+        "pts": 25,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "33:14",
+        "pts": 14,
+        "reb": 6,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612761",
+    "total": {
+      "pts": 120,
+      "fgm": 44,
+      "fga": 84,
+      "f2m": 37,
+      "f2a": 56,
+      "f3m": 7,
+      "f3a": 28,
+      "ftm": 25,
+      "fta": 32,
+      "reb": 48,
+      "oreb": 7,
+      "dreb": 31,
+      "ast": 33,
+      "tov": 13,
+      "stl": 8,
+      "blk": 6,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "35:22",
+        "pts": 35,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "35:34",
+        "pts": 19,
+        "reb": 8,
+        "ast": 6
+      },
+      {
+        "no": "12",
+        "name": "COLLIN MURRAY-BOYLES",
+        "min": "33:19",
+        "pts": 12,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "31:03",
+        "pts": 16,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "33:01",
+        "pts": 13,
+        "reb": 7,
+        "ast": 6
+      }
+    ]
+  }
+}

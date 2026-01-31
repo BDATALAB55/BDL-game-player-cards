@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500689",
+  "date": "2026.01.30",
+  "venue": "TD Garden",
+  "attendance": 19156,
+  "home": {
+    "id": "1610612738",
+    "total": {
+      "pts": 112,
+      "fgm": 42,
+      "fga": 93,
+      "f2m": 24,
+      "f2a": 45,
+      "f3m": 18,
+      "f3a": 48,
+      "ftm": 10,
+      "fta": 16,
+      "reb": 53,
+      "oreb": 14,
+      "dreb": 30,
+      "ast": 25,
+      "tov": 7,
+      "stl": 7,
+      "blk": 5,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "55",
+        "name": "BAYLOR SCHEIERMAN",
+        "min": "30:47",
+        "pts": 16,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "30",
+        "name": "SAM HAUSER",
+        "min": "29:31",
+        "pts": 10,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "28:48",
+        "pts": 10,
+        "reb": 15,
+        "ast": 2
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "32:36",
+        "pts": 29,
+        "reb": 2,
+        "ast": 8
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "32:32",
+        "pts": 7,
+        "reb": 2,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612758",
+    "total": {
+      "pts": 93,
+      "fgm": 31,
+      "fga": 83,
+      "f2m": 21,
+      "f2a": 52,
+      "f3m": 10,
+      "f3a": 31,
+      "ftm": 21,
+      "fta": 23,
+      "reb": 58,
+      "oreb": 15,
+      "dreb": 32,
+      "ast": 19,
+      "tov": 14,
+      "stl": 4,
+      "blk": 6,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "18:01",
+        "pts": 6,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "PRECIOUS ACHIUWA",
+        "min": "13:10",
+        "pts": 2,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "36:04",
+        "pts": 14,
+        "reb": 14,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "ZACH LAVINE",
+        "min": "23:27",
+        "pts": 17,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "17",
+        "name": "DENNIS SCHRÖDER",
+        "min": "23:34",
+        "pts": 4,
+        "reb": 4,
+        "ast": 3
+      }
+    ]
+  }
+}

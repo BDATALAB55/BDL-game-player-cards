@@ -6,71 +6,71 @@ import Layout from '../layouts/Layout.astro';
 const GITHUB_REPO = "BDATALAB55/BDL-game-player-cards";
 const RECURSIVE_API = `https://api.github.com/repos/${GITHUB_REPO}/git/trees/main?recursive=1&t=${Date.now()}`;
 const IMAGE_BASE_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/reports/B1`;
-const RANK_IMAGE_BASE = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/output/Bplayers/R1`;
 
+// 都市名マップ（表示用）
 const cityNameMap = {
   "HOKKAIDO": "HOKKAIDO", "LEVANGA": "HOKKAIDO", "89ERS": "SENDAI", "SENDAI": "SENDAI",
-  "AKITA": "AKITA", "ROBOTS": "IBARAKI", "IBARAKI": "IBARAKI", "BREX": "UTSUNOMIYA",
-  "UTSUNOMIYA": "UTSUNOMIYA", "GUNMA": "GUNMA", "ALPHAS": "KOSHIGAYA", "KOSHIGAYA": "KOSHIGAYA",
-  "ALTIRI": "A CHIBA", "ACHIBA": "A CHIBA", "JETS": "CHIBA J", "CHIBAJ": "CHIBA J",
-  "ALVARK": "A TOKYO", "ATOKYO": "A TOKYO", "SUNROCKERS": "SR SHIBUYA", "SHIBUYA": "SR SHIBUYA",
-  "BRAVETHUNDERS": "KAWASAKI", "KAWASAKI": "KAWASAKI", "BCORSAIRS": "YOKOHAMA BC",
-  "YOKOHAMABC": "YOKOHAMA BC", "GROUSES": "TOYAMA", "TOYAMA": "TOYAMA", "NEOPHOENIX": "SAN-EN",
-  "SANEN": "SAN-EN", "SEAHORSES": "MIKAWA", "MIKAWA": "MIKAWA", "FIGHTINGEAGLES": "FE NAGOYA",
-  "FENAGOYA": "FE NAGOYA", "DOLPHINS": "NAGOYA D", "DIAMONDDOLPHINS": "NAGOYA D",
-  "LAKES": "SHIGA", "SHIGA": "SHIGA", "HANNARYZ": "KYOTO", "KYOTO": "KYOTO",
-  "EVESSA": "OSAKA", "OSAKA": "OSAKA", "SUSANOOMAGIC": "SHIMANE", "SHIMANE": "SHIMANE",
-  "DRAGONFLIES": "HIROSHIMA", "HIROSHIMA": "HIROSHIMA", "BALLOONERS": "SAGA", "SAGA": "SAGA",
-  "VELCA": "NAGASAKI", "NAGASAKI": "NAGASAKI", "GOLDENKINGS": "RYUKYU", "RYUKYU": "RYUKYU"
+  "AKITA": "AKITA", "ROBOTS": "IBARAKI", "IBARAKI": "IBARAKI", "BREX": "UTSUNOMIYA", 
+  "UTSUNOMIYA": "UTSUNOMIYA", "CRANETHUNDERS": "GUNMA", "GUNMA": "GUNMA", "ALPHAS": "KOSHIGAYA",
+  "KOSHIGAYA": "KOSHIGAYA", "ALTIRI": "A CHIBA", "ACHIBA": "A CHIBA", "JETS": "CHIBA J",
+  "CHIBAJ": "CHIBA J", "ALVARK": "A TOKYO", "ATOKYO": "A TOKYO", "SUNROCKERS": "SR SHIBUYA",
+  "SHIBUYA": "SR SHIBUYA", "BRAVETHUNDERS": "KAWASAKI", "KAWASAKI": "KAWASAKI",
+  "BCORSAIRS": "YOKOHAMA BC", "YOKOHAMABC": "YOKOHAMA BC", "GROUSES": "TOYAMA",
+  "TOYAMA": "TOYAMA", "NEOPHOENIX": "SAN-EN", "SANEN": "SAN-EN", "SEAHORSES": "MIKAWA",
+  "MIKAWA": "MIKAWA", "FIGHTINGEAGLES": "FE NAGOYA", "FENAGOYA": "FE NAGOYA",
+  "DOLPHINS": "NAGOYA D", "DIAMONDDOLPHINS": "NAGOYA D", "LAKES": "SHIGA", "SHIGA": "SHIGA",
+  "HANNARYZ": "KYOTO", "KYOTO": "KYOTO", "EVESSA": "OSAKA", "OSAKA": "OSAKA",
+  "SUSANOOMAGIC": "SHIMANE", "SHIMANE": "SHIMANE", "DRAGONFLIES": "HIROSHIMA",
+  "HIROSHIMA": "HIROSHIMA", "BALLOONERS": "SAGA", "SAGA": "SAGA", "VELCA": "NAGASAKI",
+  "NAGASAKI": "NAGASAKI", "GOLDENKINGS": "RYUKYU", "RYUKYU": "RYUKYU"
 };
 
-const token = process.env.GITHUB_TOKEN;
 let reportGroups = [];
-let rankingImages = { PTS: [], REB: [], AST: [] };
 
 try {
   const res = await fetch(RECURSIVE_API, {
-    headers: token ? { "Authorization": `token ${token}`, "Accept": "application/vnd.github.v3+json" } : { "Accept": "application/vnd.github.v3+json" }
+    headers: { "Accept": "application/vnd.github.v3+json" }
   });
   const data = await res.json();
 
   if (data.tree) {
-    // 1. レポート取得
-    const allFiles = data.tree.filter(item => item.path.includes('output/reports/B1/') && item.path.toLowerCase().endsWith('.png'));
+    const allFiles = data.tree.filter(item => 
+      item.path.includes('output/reports/B1/') && item.path.toLowerCase().endsWith('.png')
+    );
+
     const groups = {};
     allFiles.forEach(file => {
       const parts = file.path.split('/');
-      const folderName = parts[parts.indexOf('B1') + 1];
-      const fileName = parts[parts.indexOf('B1') + 2];
+      const folderName = parts[parts.length - 2];
+      const fileName = parts[parts.length - 1];
       if (!/^\d+$/.test(folderName)) return;
+
       const nameParts = fileName.replace('.png', '').split('_');
-      const displayAway = cityNameMap[(nameParts[2] || "").toUpperCase()] || nameParts[2];
-      const displayHome = cityNameMap[(nameParts[3] || "").toUpperCase()] || nameParts[3];
+      const gameId = nameParts[1] || "";
+      const rawAway = nameParts[2] || "AWAY";
+      const rawHome = nameParts[3] || "HOME";
+
+      const displayAway = cityNameMap[rawAway.toUpperCase()] || rawAway;
+      const displayHome = cityNameMap[rawHome.toUpperCase()] || rawHome;
 
       if (!groups[folderName]) {
-        groups[folderName] = { id: folderName, date: `20${folderName.substring(0,2)}.${folderName.substring(2,4)}.${folderName.substring(4,6)}`, reports: [] };
+        groups[folderName] = {
+          id: folderName,
+          date: `20${folderName.substring(0,2)}.${folderName.substring(2,4)}.${folderName.substring(4,6)}`,
+          reports: []
+        };
       }
       groups[folderName].reports.push({
-        path: `${IMAGE_BASE_URL}/${folderName}/${fileName}?t=${Date.now()}`,
-        away: displayAway, home: displayHome, link: `/b1-cards?folder=${folderName}/game_${nameParts[1]}_${nameParts[2]}_${nameParts[3]}_${nameParts[0]}`
+        path: `${IMAGE_BASE_URL}/${folderName}/${fileName}`,
+        away: displayAway, home: displayHome,
+        link: `/b1-cards?folder=${folderName}/game_${gameId}_${rawAway}_${rawHome}`
       });
     });
     reportGroups = Object.values(groups).sort((a, b) => b.id.localeCompare(a.id));
-
-    // 2. ランキング画像取得 (output/Bplayers/R1から)
-    ['PTS', 'REB', 'AST'].forEach(stat => {
-      rankingImages[stat] = data.tree
-        .filter(item => item.path.includes(`output/Bplayers/R1/${stat}_`))
-        .sort((a, b) => {
-          const numA = parseInt(a.path.split('_')[1]);
-          const numB = parseInt(b.path.split('_')[1]);
-          return numA - numB;
-        })
-        .slice(0, 10)
-        .map(item => `${RANK_IMAGE_BASE}/${item.path.split('/').pop()}?t=${Date.now()}`);
-    });
   }
-} catch (e) { console.error(e); }
+} catch (e) {
+  console.error(e);
+}
 
 const teams = [
   { id: 'HOKKAIDO', color: 'bg-[#91ad10]' }, { id: 'SENDAI', color: 'bg-[#f7e000] text-black' }, { id: 'AKITA', color: 'bg-[#dd0055]' },
@@ -84,93 +84,83 @@ const teams = [
   { id: 'NAGASAKI', color: 'bg-[#2b3754]' }, { id: 'RYUKYU', color: 'bg-[#b69e63]' }
 ];
 
-const today = reportGroups.length > 0 ? reportGroups[0].date : "2026.01.31";
+const today = reportGroups.length > 0 ? reportGroups[0].date : "2026.01.25";
 const todayGameCount = reportGroups.length > 0 ? reportGroups[0].reports.length : 0;
-const teamChunks = [];
-for (let i = 0; i < teams.length; i += 9) teamChunks.push(teams.slice(i, i + 9));
 ---
 
 <Layout title="B1 HOME | B-Data Lab">
-  <main class="bg-[#373A36] min-h-screen text-white font-avenir pb-32 overflow-x-hidden relative">
+  <main class="bg-[#373A36] min-h-screen text-white font-avenir pb-32 overflow-x-hidden">
     <header class="sticky top-0 z-50 bg-[#373A36]/90 backdrop-blur-md border-b border-white/10">
-      <div class="pt-12 pb-6 px-6 max-w-6xl mx-auto w-full flex items-end justify-between">
-        <a href="/b1-home" class="hover:opacity-80 transition-opacity"><h1 class="text-5xl md:text-7xl font-black uppercase">B1</h1></a>
-        <div class="text-right space-y-3">
-          <h2 class="text-xl md:text-3xl font-black tracking-widest uppercase" style="color: #2E3C57; -webkit-text-stroke: 1px white;">BDATALAB</h2>
+      <div class="pt-12 pb-6 px-6 max-w-6xl mx-auto w-full">
+        <div class="flex items-end justify-between w-full">
+          <a href="/b1-home" class="hover:opacity-80"><h1 class="text-5xl md:text-7xl font-black">B1</h1></a>
+          <div class="text-right">
+            <h2 class="text-xl md:text-3xl font-black" style="-webkit-text-stroke: 1px white;">BDATALAB</h2>
+          </div>
         </div>
       </div>
     </header>
 
     <div class="max-w-6xl mx-auto px-6">
       <section class="mt-12">
-        <div class="flex justify-between items-end mb-8">
-          <div>
-            <h2 class="text-4xl font-black uppercase mb-4">GAME REPORT</h2>
-            <div class="flex flex-col gap-1">
-              <span class="text-blue-500 text-[10px] font-black uppercase tracking-[0.3em]">Latest Update</span>
-              <span class="text-white text-[32px] font-bold tracking-[0.05em]">{today}</span>
-            </div>
-          </div>
-          <div class="text-right"><span class="text-7xl font-black italic opacity-20 block">{todayGameCount}</span></div>
+        <h2 class="text-4xl font-black mb-4">GAME REPORT</h2>
+        <div class="flex items-center gap-4 mb-8">
+          <span class="text-[32px] font-bold">{today}</span>
+          <span class="text-7xl font-black italic opacity-20">{todayGameCount}</span>
         </div>
-        <div class="flex overflow-x-auto gap-8 no-scrollbar snap-x pb-4">
+
+        <div class="flex overflow-x-auto gap-8 no-scrollbar snap-x">
           {reportGroups.length > 0 ? reportGroups[0].reports.map(r => (
             <div class="flex-none w-[300px] snap-center">
-              <div class="rounded-2xl overflow-hidden border border-white/10 aspect-[3/4.2]"><img src={r.path} class="w-full h-full object-cover" /></div>
-              <div class="mt-6 flex justify-center"><a href={r.link} class="px-6 py-2.5 rounded-full bg-black/40 border-2 border-blue-500 text-[12px] font-black uppercase">{r.away} vs {r.home}</a></div>
+              <div class="rounded-2xl overflow-hidden border border-white/10 aspect-[3/4.2]">
+                <img src={r.path} alt="Report" class="w-full h-full object-cover" />
+              </div>
+              <div class="mt-6 flex justify-center">
+                <a href={r.link} class="px-6 py-2.5 rounded-full bg-black/40 border border-white/20 text-[12px] font-black uppercase">
+                  {r.away} <span class="text-white/50 mx-1">vs</span> {r.home}
+                </a>
+              </div>
             </div>
-          )) : <p>No Reports</p>}
+          )) : <div class="text-white/30">No reports found.</div>}
+        </div>
+      </section>
+
+      <section class="mt-24">
+        <h2 class="text-4xl font-black mb-8">TEAM</h2>
+        <div class="grid grid-cols-4 lg:grid-cols-6 gap-2">
+          {teams.map(t => (
+            <a href={`/b1-team?team=${t.id}`} class={`${t.color} aspect-[2/1] rounded-2xl flex items-center justify-center font-black text-center px-2 hover:scale-105 transition-transform`}>
+              {t.id}
+            </a>
+          ))}
         </div>
       </section>
 
       <section class="mt-32">
-        <h2 class="text-4xl font-black uppercase mb-8">Today's RANK 10</h2>
-        <div class="flex flex-col gap-1 mb-10">
-          <span class="text-blue-500 text-[10px] font-black uppercase tracking-[0.3em]">Latest Update</span>
-          <span class="text-white text-[32px] font-bold tracking-[0.05em]">{today}</span>
-        </div>
-
-        <div class="flex gap-2 mb-10 max-w-sm">
+        <h2 class="text-4xl font-black mb-8">RANKING</h2>
+        <div class="flex gap-2 mb-10">
           {['PTS', 'REB', 'AST'].map((stat, i) => (
-            <button data-stat-target={stat} class={`rank-tab-btn flex-1 py-4 rounded-xl text-[12px] font-black uppercase border border-white/5 ${i === 0 ? 'bg-white text-black' : 'bg-black/20 text-white/80'}`}>{stat}</button>
+            <button class={`flex-1 py-4 rounded-xl text-[12px] font-black ${i === 0 ? 'bg-white text-black' : 'bg-black/20 text-white/80'}`}>{stat}</button>
           ))}
         </div>
-
-        {['PTS', 'REB', 'AST'].map((stat, idx) => (
-          <div id={`rank-list-${stat}`} class={`rank-content flex overflow-x-auto gap-6 no-scrollbar snap-x pb-4 ${idx !== 0 ? 'hidden' : ''}`}>
-            {rankingImages[stat].length > 0 ? rankingImages[stat].map((img, i) => (
-              <div class="flex-none w-[260px] snap-center aspect-[3/4.2] rounded-2xl overflow-hidden border border-white/10 bg-black/40">
-                <img src={img} alt={`${stat} Rank ${i+1}`} class="w-full h-full object-cover" />
-              </div>
-            )) : (
-              Array.from({ length: 10 }).map((_, i) => (
-                <div class="flex-none w-[260px] snap-center aspect-[3/4.2] bg-black/40 border border-white/5 rounded-2xl flex flex-col items-center justify-center gap-4 relative">
-                  <div class="absolute top-4 left-6 text-[32px] font-black text-white/10">#{i + 1}</div>
-                  <span class="text-[10px] font-black uppercase text-white/30">Coming Soon</span>
-                </div>
-              ))
-            )}
-          </div>
-        ))}
+        <div class="flex overflow-x-auto gap-6 no-scrollbar pb-4">
+          {Array.from({ length: 10 }).map((_, i) => (
+            <div class="flex-none w-[260px] aspect-[3/4.2] bg-black/40 border border-white/5 rounded-2xl flex flex-col items-center justify-center gap-4 relative">
+              <div class="absolute top-4 left-6 text-[32px] font-black text-white/10">#{i + 1}</div>
+              <span class="text-[10px] font-black text-white/30 uppercase tracking-widest">Coming Soon</span>
+            </div>
+          ))}
+        </div>
       </section>
+    </div>
+
+    <div class="fixed bottom-8 right-8 z-40">
+      <a href="/" class="bg-gray-800 text-white px-8 py-4 rounded-full font-black text-[11px] border border-white/10">Back to Home</a>
     </div>
   </main>
 </Layout>
 
-<script>
-  const buttons = document.querySelectorAll('.rank-tab-btn');
-  const contents = document.querySelectorAll('.rank-content');
-
-  buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const target = btn.getAttribute('data-stat-target');
-      
-      buttons.forEach(b => { b.classList.remove('bg-white', 'text-black'); b.classList.add('bg-black/20', 'text-white/80'); });
-      btn.classList.add('bg-white', 'text-black');
-      btn.classList.remove('bg-black/20', 'text-white/80');
-
-      contents.forEach(c => c.classList.add('hidden'));
-      document.getElementById(`rank-list-${target}`).classList.remove('hidden');
-    });
-  });
-</script>
+<style>
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+</style>

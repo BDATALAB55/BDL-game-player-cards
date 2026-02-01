@@ -1,8 +1,17 @@
 {
-  "dependencies": {
-    "@notionhq/client": "^5.6.0",
-    "cheerio": "^1.1.2",
-    "playwright": "^1.57.0"
+  "name": "my-card-app",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "name": "bdl-game-player-cards"
+  "dependencies": {
+    "@astrojs/vercel": "^9.0.4",
+    "@tailwindcss/vite": "^4.1.18",
+    "astro": "^5.16.11",
+    "tailwindcss": "^4.1.18"
+  }
 }

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500700",
+  "date": "2026.01.31",
+  "venue": "FedExForum",
+  "attendance": 15372,
+  "home": {
+    "id": "1610612763",
+    "total": {
+      "pts": 114,
+      "fgm": 44,
+      "fga": 90,
+      "f2m": 34,
+      "f2a": 53,
+      "f3m": 10,
+      "f3a": 37,
+      "ftm": 16,
+      "fta": 24,
+      "reb": 53,
+      "oreb": 13,
+      "dreb": 30,
+      "ast": 29,
+      "tov": 14,
+      "stl": 8,
+      "blk": 4,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "VINCE WILLIAMS JR.",
+        "min": "22:37",
+        "pts": 8,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "26:35",
+        "pts": 15,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "31",
+        "name": "JOCK LANDALE",
+        "min": "26:01",
+        "pts": 7,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "CEDRIC COWARD",
+        "min": "27:17",
+        "pts": 8,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "TY JEROME",
+        "min": "19:30",
+        "pts": 20,
+        "reb": 1,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612750",
+    "total": {
+      "pts": 131,
+      "fgm": 47,
+      "fga": 89,
+      "f2m": 29,
+      "f2a": 52,
+      "f3m": 18,
+      "f3a": 37,
+      "ftm": 19,
+      "fta": 24,
+      "reb": 50,
+      "oreb": 11,
+      "dreb": 34,
+      "ast": 28,
+      "tov": 14,
+      "stl": 12,
+      "blk": 5,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JADEN MCDANIELS",
+        "min": "34:14",
+        "pts": 20,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "JULIUS RANDLE",
+        "min": "35:09",
+        "pts": 27,
+        "reb": 7,
+        "ast": 7
+      },
+      {
+        "no": "27",
+        "name": "RUDY GOBERT",
+        "min": "30:48",
+        "pts": 9,
+        "reb": 16,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "ANTHONY EDWARDS",
+        "min": "38:44",
+        "pts": 33,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "DONTE DIVINCENZO",
+        "min": "17:38",
+        "pts": 11,
+        "reb": 1,
+        "ast": 5
+      }
+    ]
+  }
+}

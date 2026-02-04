@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500723",
+  "date": "2026.02.03",
+  "venue": "Paycom Center",
+  "attendance": 18203,
+  "home": {
+    "id": "1610612760",
+    "total": {
+      "pts": 128,
+      "fgm": 48,
+      "fga": 93,
+      "f2m": 36,
+      "f2a": 58,
+      "f3m": 12,
+      "f3a": 35,
+      "ftm": 20,
+      "fta": 26,
+      "reb": 63,
+      "oreb": 14,
+      "dreb": 38,
+      "ast": 33,
+      "tov": 10,
+      "stl": 12,
+      "blk": 1,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "30:48",
+        "pts": 18,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "27:06",
+        "pts": 16,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "55",
+        "name": "ISAIAH HARTENSTEIN",
+        "min": "22:53",
+        "pts": 12,
+        "reb": 10,
+        "ast": 10
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "22:53",
+        "pts": 5,
+        "reb": 1,
+        "ast": 5
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "27:48",
+        "pts": 20,
+        "reb": 5,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612753",
+    "total": {
+      "pts": 92,
+      "fgm": 34,
+      "fga": 89,
+      "f2m": 21,
+      "f2a": 48,
+      "f3m": 13,
+      "f3a": 41,
+      "ftm": 11,
+      "fta": 11,
+      "reb": 44,
+      "oreb": 10,
+      "dreb": 28,
+      "ast": 21,
+      "tov": 15,
+      "stl": 5,
+      "blk": 5,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "21:30",
+        "pts": 7,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "32:57",
+        "pts": 17,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "23:27",
+        "pts": 9,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "ANTHONY BLACK",
+        "min": "28:21",
+        "pts": 10,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "24:39",
+        "pts": 20,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  }
+}

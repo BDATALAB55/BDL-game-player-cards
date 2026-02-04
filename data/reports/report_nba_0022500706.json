@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500706",
+  "date": "2026.02.01",
+  "venue": "Scotiabank Arena",
+  "attendance": 18749,
+  "home": {
+    "id": "1610612761",
+    "total": {
+      "pts": 107,
+      "fgm": 35,
+      "fga": 84,
+      "f2m": 23,
+      "f2a": 49,
+      "f3m": 12,
+      "f3a": 35,
+      "ftm": 25,
+      "fta": 30,
+      "reb": 50,
+      "oreb": 13,
+      "dreb": 29,
+      "ast": 22,
+      "tov": 16,
+      "stl": 11,
+      "blk": 8,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "35:20",
+        "pts": 19,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "34:13",
+        "pts": 14,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "12",
+        "name": "COLLIN MURRAY-BOYLES",
+        "min": "24:26",
+        "pts": 4,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "27:58",
+        "pts": 21,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "33:20",
+        "pts": 17,
+        "reb": 5,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612762",
+    "total": {
+      "pts": 100,
+      "fgm": 32,
+      "fga": 90,
+      "f2m": 24,
+      "f2a": 54,
+      "f3m": 8,
+      "f3a": 36,
+      "ftm": 28,
+      "fta": 34,
+      "reb": 68,
+      "oreb": 18,
+      "dreb": 38,
+      "ast": 20,
+      "tov": 22,
+      "stl": 10,
+      "blk": 6,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "CODY WILLIAMS",
+        "min": "20:22",
+        "pts": 10,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "LAURI MARKKANEN",
+        "min": "38:35",
+        "pts": 27,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "JUSUF NURKIĆ",
+        "min": "32:43",
+        "pts": 11,
+        "reb": 13,
+        "ast": 1
+      },
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "26:31",
+        "pts": 4,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "ISAIAH COLLIER",
+        "min": "30:12",
+        "pts": 19,
+        "reb": 4,
+        "ast": 7
+      }
+    ]
+  }
+}

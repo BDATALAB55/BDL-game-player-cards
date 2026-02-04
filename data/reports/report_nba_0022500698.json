@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500698",
+  "date": "2026.01.31",
+  "venue": "Gainbridge Fieldhouse",
+  "attendance": 17010,
+  "home": {
+    "id": "1610612754",
+    "total": {
+      "pts": 129,
+      "fgm": 48,
+      "fga": 89,
+      "f2m": 33,
+      "f2a": 57,
+      "f3m": 15,
+      "f3a": 32,
+      "ftm": 18,
+      "fta": 21,
+      "reb": 56,
+      "oreb": 11,
+      "dreb": 40,
+      "ast": 29,
+      "tov": 23,
+      "stl": 6,
+      "blk": 4,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "JOHNNY FURPHY",
+        "min": "12:55",
+        "pts": 0,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "JARACE WALKER",
+        "min": "26:16",
+        "pts": 11,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "32:33",
+        "pts": 25,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "AARON NESMITH",
+        "min": "33:30",
+        "pts": 23,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "32:25",
+        "pts": 26,
+        "reb": 6,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612737",
+    "total": {
+      "pts": 124,
+      "fgm": 46,
+      "fga": 97,
+      "f2m": 35,
+      "f2a": 69,
+      "f3m": 11,
+      "f3a": 28,
+      "ftm": 21,
+      "fta": 28,
+      "reb": 47,
+      "oreb": 10,
+      "dreb": 29,
+      "ast": 25,
+      "tov": 10,
+      "stl": 11,
+      "blk": 2,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "21:39",
+        "pts": 7,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "36:29",
+        "pts": 33,
+        "reb": 12,
+        "ast": 10
+      },
+      {
+        "no": "18",
+        "name": "MOUHAMED GUEYE",
+        "min": "31:35",
+        "pts": 15,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "29:03",
+        "pts": 8,
+        "reb": 7,
+        "ast": 7
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "35:08",
+        "pts": 21,
+        "reb": 3,
+        "ast": 5
+      }
+    ]
+  }
+}

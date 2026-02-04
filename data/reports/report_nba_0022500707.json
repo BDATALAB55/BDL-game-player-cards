@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500707",
+  "date": "2026.02.01",
+  "venue": "Capital One Arena",
+  "attendance": 13102,
+  "home": {
+    "id": "1610612764",
+    "total": {
+      "pts": 116,
+      "fgm": 46,
+      "fga": 88,
+      "f2m": 33,
+      "f2a": 57,
+      "f3m": 13,
+      "f3a": 31,
+      "ftm": 11,
+      "fta": 15,
+      "reb": 54,
+      "oreb": 13,
+      "dreb": 29,
+      "ast": 31,
+      "tov": 17,
+      "stl": 10,
+      "blk": 4,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "18:59",
+        "pts": 6,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "KHRIS MIDDLETON",
+        "min": "17:50",
+        "pts": 13,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "35",
+        "name": "MARVIN BAGLEY III",
+        "min": "18:43",
+        "pts": 15,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "21:26",
+        "pts": 15,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "22:46",
+        "pts": 6,
+        "reb": 2,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612758",
+    "total": {
+      "pts": 112,
+      "fgm": 39,
+      "fga": 84,
+      "f2m": 31,
+      "f2a": 63,
+      "f3m": 8,
+      "f3a": 21,
+      "ftm": 26,
+      "fta": 29,
+      "reb": 44,
+      "oreb": 13,
+      "dreb": 24,
+      "ast": 21,
+      "tov": 14,
+      "stl": 9,
+      "blk": 8,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "32:32",
+        "pts": 32,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "9",
+        "name": "PRECIOUS ACHIUWA",
+        "min": "09:16",
+        "pts": 5,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "27:24",
+        "pts": 14,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "NIQUE CLIFFORD",
+        "min": "28:57",
+        "pts": 6,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "8",
+        "name": "ZACH LAVINE",
+        "min": "35:25",
+        "pts": 35,
+        "reb": 6,
+        "ast": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500709",
+  "date": "2026.02.01",
+  "venue": "Mortgage Matchup Center",
+  "attendance": 17071,
+  "home": {
+    "id": "1610612756",
+    "total": {
+      "pts": 93,
+      "fgm": 31,
+      "fga": 93,
+      "f2m": 12,
+      "f2a": 47,
+      "f3m": 19,
+      "f3a": 46,
+      "ftm": 12,
+      "fta": 18,
+      "reb": 41,
+      "oreb": 10,
+      "dreb": 25,
+      "ast": 21,
+      "tov": 4,
+      "stl": 7,
+      "blk": 4,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "34:37",
+        "pts": 22,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "33:57",
+        "pts": 9,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "23:35",
+        "pts": 7,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "8",
+        "name": "GRAYSON ALLEN",
+        "min": "36:24",
+        "pts": 23,
+        "reb": 1,
+        "ast": 8
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "27:03",
+        "pts": 12,
+        "reb": 4,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612746",
+    "total": {
+      "pts": 117,
+      "fgm": 43,
+      "fga": 83,
+      "f2m": 34,
+      "f2a": 59,
+      "f3m": 9,
+      "f3a": 24,
+      "ftm": 22,
+      "fta": 34,
+      "reb": 82,
+      "oreb": 15,
+      "dreb": 48,
+      "ast": 25,
+      "tov": 17,
+      "stl": 2,
+      "blk": 3,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "29:57",
+        "pts": 25,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "28:15",
+        "pts": 16,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "33:19",
+        "pts": 14,
+        "reb": 20,
+        "ast": 1
+      },
+      {
+        "no": "4",
+        "name": "KOBE SANDERS",
+        "min": "31:13",
+        "pts": 12,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "30:15",
+        "pts": 8,
+        "reb": 5,
+        "ast": 3
+      }
+    ]
+  }
+}

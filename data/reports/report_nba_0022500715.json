@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500715",
+  "date": "2026.02.02",
+  "venue": "Intuit Dome",
+  "attendance": 17927,
+  "home": {
+    "id": "1610612746",
+    "total": {
+      "pts": 113,
+      "fgm": 46,
+      "fga": 78,
+      "f2m": 37,
+      "f2a": 52,
+      "f3m": 9,
+      "f3a": 26,
+      "ftm": 12,
+      "fta": 20,
+      "reb": 44,
+      "oreb": 5,
+      "dreb": 31,
+      "ast": 24,
+      "tov": 14,
+      "stl": 4,
+      "blk": 2,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "30:52",
+        "pts": 29,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "31:57",
+        "pts": 15,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "33:00",
+        "pts": 8,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "KOBE SANDERS",
+        "min": "34:10",
+        "pts": 17,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "27:10",
+        "pts": 6,
+        "reb": 2,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612755",
+    "total": {
+      "pts": 128,
+      "fgm": 45,
+      "fga": 94,
+      "f2m": 28,
+      "f2a": 55,
+      "f3m": 17,
+      "f3a": 39,
+      "ftm": 21,
+      "fta": 22,
+      "reb": 48,
+      "oreb": 14,
+      "dreb": 27,
+      "ast": 31,
+      "tov": 5,
+      "stl": 8,
+      "blk": 3,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "KELLY OUBRE JR.",
+        "min": "34:42",
+        "pts": 15,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "25",
+        "name": "DOMINICK BARLOW",
+        "min": "35:26",
+        "pts": 26,
+        "reb": 16,
+        "ast": 2
+      },
+      {
+        "no": "21",
+        "name": "JOEL EMBIID",
+        "min": "32:14",
+        "pts": 24,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "30:31",
+        "pts": 5,
+        "reb": 3,
+        "ast": 7
+      },
+      {
+        "no": "0",
+        "name": "TYRESE MAXEY",
+        "min": "35:52",
+        "pts": 29,
+        "reb": 5,
+        "ast": 6
+      }
+    ]
+  }
+}

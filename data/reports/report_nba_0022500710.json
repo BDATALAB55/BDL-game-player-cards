@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500710",
+  "date": "2026.02.01",
+  "venue": "Moda Center",
+  "attendance": 17240,
+  "home": {
+    "id": "1610612757",
+    "total": {
+      "pts": 111,
+      "fgm": 44,
+      "fga": 98,
+      "f2m": 30,
+      "f2a": 54,
+      "f3m": 14,
+      "f3a": 44,
+      "ftm": 9,
+      "fta": 12,
+      "reb": 58,
+      "oreb": 17,
+      "dreb": 30,
+      "ast": 24,
+      "tov": 22,
+      "stl": 7,
+      "blk": 5,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "91",
+        "name": "SIDY CISSOKO",
+        "min": "31:51",
+        "pts": 15,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "29:38",
+        "pts": 12,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "26:58",
+        "pts": 8,
+        "reb": 12,
+        "ast": 5
+      },
+      {
+        "no": "9",
+        "name": "JERAMI GRANT",
+        "min": "28:10",
+        "pts": 15,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "31:45",
+        "pts": 20,
+        "reb": 2,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612739",
+    "total": {
+      "pts": 130,
+      "fgm": 50,
+      "fga": 91,
+      "f2m": 34,
+      "f2a": 57,
+      "f3m": 16,
+      "f3a": 34,
+      "ftm": 14,
+      "fta": 19,
+      "reb": 46,
+      "oreb": 10,
+      "dreb": 29,
+      "ast": 41,
+      "tov": 13,
+      "stl": 15,
+      "blk": 7,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "JAYLON TYSON",
+        "min": "29:30",
+        "pts": 18,
+        "reb": 3,
+        "ast": 6
+      },
+      {
+        "no": "32",
+        "name": "DEAN WADE",
+        "min": "26:24",
+        "pts": 6,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "29:30",
+        "pts": 40,
+        "reb": 17,
+        "ast": 5
+      },
+      {
+        "no": "5",
+        "name": "SAM MERRILL",
+        "min": "29:22",
+        "pts": 22,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "31:27",
+        "pts": 14,
+        "reb": 0,
+        "ast": 9
+      }
+    ]
+  }
+}

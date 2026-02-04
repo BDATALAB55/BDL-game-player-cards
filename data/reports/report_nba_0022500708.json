@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500708",
+  "date": "2026.02.01",
+  "venue": "Madison Square Garden",
+  "attendance": 19812,
+  "home": {
+    "id": "1610612752",
+    "total": {
+      "pts": 112,
+      "fgm": 43,
+      "fga": 91,
+      "f2m": 25,
+      "f2a": 49,
+      "f3m": 18,
+      "f3a": 42,
+      "ftm": 8,
+      "fta": 11,
+      "reb": 53,
+      "oreb": 14,
+      "dreb": 32,
+      "ast": 30,
+      "tov": 7,
+      "stl": 7,
+      "blk": 2,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "33:47",
+        "pts": 25,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "36:18",
+        "pts": 20,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "32:02",
+        "pts": 11,
+        "reb": 13,
+        "ast": 4
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "30:08",
+        "pts": 10,
+        "reb": 0,
+        "ast": 2
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "36:41",
+        "pts": 12,
+        "reb": 7,
+        "ast": 13
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612747",
+    "total": {
+      "pts": 100,
+      "fgm": 38,
+      "fga": 84,
+      "f2m": 26,
+      "f2a": 42,
+      "f3m": 12,
+      "f3a": 42,
+      "ftm": 12,
+      "fta": 19,
+      "reb": 53,
+      "oreb": 7,
+      "dreb": 29,
+      "ast": 21,
+      "tov": 10,
+      "stl": 5,
+      "blk": 3,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "34:33",
+        "pts": 22,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "12",
+        "name": "JAKE LARAVIA",
+        "min": "23:16",
+        "pts": 5,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "32:06",
+        "pts": 13,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "36:52",
+        "pts": 30,
+        "reb": 15,
+        "ast": 8
+      },
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "30:13",
+        "pts": 7,
+        "reb": 0,
+        "ast": 3
+      }
+    ]
+  }
+}

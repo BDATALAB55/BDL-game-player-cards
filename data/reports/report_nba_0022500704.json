@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500704",
+  "date": "2026.02.01",
+  "venue": "Little Caesars Arena",
+  "attendance": 19899,
+  "home": {
+    "id": "1610612765",
+    "total": {
+      "pts": 130,
+      "fgm": 48,
+      "fga": 85,
+      "f2m": 36,
+      "f2a": 53,
+      "f3m": 12,
+      "f3a": 32,
+      "ftm": 22,
+      "fta": 29,
+      "reb": 48,
+      "oreb": 5,
+      "dreb": 38,
+      "ast": 33,
+      "tov": 6,
+      "stl": 17,
+      "blk": 6,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "24:57",
+        "pts": 9,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "12",
+        "name": "TOBIAS HARRIS",
+        "min": "19:45",
+        "pts": 11,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "JALEN DUREN",
+        "min": "24:09",
+        "pts": 21,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "21:49",
+        "pts": 8,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "26:08",
+        "pts": 18,
+        "reb": 4,
+        "ast": 12
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612751",
+    "total": {
+      "pts": 77,
+      "fgm": 24,
+      "fga": 73,
+      "f2m": 17,
+      "f2a": 42,
+      "f3m": 7,
+      "f3a": 31,
+      "ftm": 22,
+      "fta": 27,
+      "reb": 50,
+      "oreb": 10,
+      "dreb": 33,
+      "ast": 17,
+      "tov": 23,
+      "stl": 3,
+      "blk": 2,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "20:27",
+        "pts": 4,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "DANNY WOLF",
+        "min": "28:38",
+        "pts": 6,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "17:24",
+        "pts": 10,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "14:34",
+        "pts": 3,
+        "reb": 0,
+        "ast": 1
+      },
+      {
+        "no": "88",
+        "name": "NOLAN TRAORE",
+        "min": "17:11",
+        "pts": 5,
+        "reb": 1,
+        "ast": 2
+      }
+    ]
+  }
+}

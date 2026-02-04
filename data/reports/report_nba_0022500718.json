@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500718",
+  "date": "2026.02.03",
+  "venue": "Capital One Arena",
+  "attendance": 17822,
+  "home": {
+    "id": "1610612764",
+    "total": {
+      "pts": 101,
+      "fgm": 35,
+      "fga": 86,
+      "f2m": 24,
+      "f2a": 55,
+      "f3m": 11,
+      "f3a": 31,
+      "ftm": 20,
+      "fta": 32,
+      "reb": 57,
+      "oreb": 10,
+      "dreb": 32,
+      "ast": 19,
+      "tov": 13,
+      "stl": 6,
+      "blk": 3,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "26:00",
+        "pts": 8,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "22",
+        "name": "KHRIS MIDDLETON",
+        "min": "22:22",
+        "pts": 12,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "24:31",
+        "pts": 11,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "24:25",
+        "pts": 3,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "24:31",
+        "pts": 14,
+        "reb": 2,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612752",
+    "total": {
+      "pts": 132,
+      "fgm": 47,
+      "fga": 90,
+      "f2m": 30,
+      "f2a": 53,
+      "f3m": 17,
+      "f3a": 37,
+      "ftm": 21,
+      "fta": 27,
+      "reb": 55,
+      "oreb": 9,
+      "dreb": 41,
+      "ast": 34,
+      "tov": 9,
+      "stl": 6,
+      "blk": 5,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "21:47",
+        "pts": 4,
+        "reb": 7,
+        "ast": 7
+      },
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "27:05",
+        "pts": 19,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "26:22",
+        "pts": 19,
+        "reb": 15,
+        "ast": 3
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "25:38",
+        "pts": 23,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "31:13",
+        "pts": 21,
+        "reb": 1,
+        "ast": 4
+      }
+    ]
+  }
+}

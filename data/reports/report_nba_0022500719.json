@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500719",
+  "date": "2026.02.03",
+  "venue": "Barclays Center",
+  "attendance": 18248,
+  "home": {
+    "id": "1610612751",
+    "total": {
+      "pts": 109,
+      "fgm": 45,
+      "fga": 94,
+      "f2m": 35,
+      "f2a": 53,
+      "f3m": 10,
+      "f3a": 41,
+      "ftm": 9,
+      "fta": 14,
+      "reb": 55,
+      "oreb": 16,
+      "dreb": 32,
+      "ast": 28,
+      "tov": 20,
+      "stl": 7,
+      "blk": 0,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "32:13",
+        "pts": 21,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "20:58",
+        "pts": 6,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "22:17",
+        "pts": 10,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "88",
+        "name": "NOLAN TRAORE",
+        "min": "24:45",
+        "pts": 7,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "26:56",
+        "pts": 11,
+        "reb": 2,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612747",
+    "total": {
+      "pts": 125,
+      "fgm": 46,
+      "fga": 85,
+      "f2m": 39,
+      "f2a": 54,
+      "f3m": 7,
+      "f3a": 31,
+      "ftm": 26,
+      "fta": 39,
+      "reb": 53,
+      "oreb": 10,
+      "dreb": 31,
+      "ast": 25,
+      "tov": 12,
+      "stl": 14,
+      "blk": 0,
+      "pf": 13
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "29:52",
+        "pts": 25,
+        "reb": 3,
+        "ast": 7
+      },
+      {
+        "no": "12",
+        "name": "JAKE LARAVIA",
+        "min": "21:55",
+        "pts": 18,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "27:38",
+        "pts": 7,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "17:55",
+        "pts": 6,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "28:49",
+        "pts": 24,
+        "reb": 6,
+        "ast": 5
+      }
+    ]
+  }
+}

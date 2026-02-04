@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500701",
+  "date": "2026.01.31",
+  "venue": "Toyota Center",
+  "attendance": 18055,
+  "home": {
+    "id": "1610612745",
+    "total": {
+      "pts": 111,
+      "fgm": 45,
+      "fga": 108,
+      "f2m": 35,
+      "f2a": 82,
+      "f3m": 10,
+      "f3a": 26,
+      "ftm": 11,
+      "fta": 15,
+      "reb": 63,
+      "oreb": 18,
+      "dreb": 35,
+      "ast": 33,
+      "tov": 5,
+      "stl": 10,
+      "blk": 6,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "38:15",
+        "pts": 13,
+        "reb": 5,
+        "ast": 8
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "33:16",
+        "pts": 19,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "34:49",
+        "pts": 14,
+        "reb": 14,
+        "ast": 7
+      },
+      {
+        "no": "17",
+        "name": "TARI EASON",
+        "min": "31:24",
+        "pts": 17,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "40:39",
+        "pts": 21,
+        "reb": 8,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612742",
+    "total": {
+      "pts": 107,
+      "fgm": 41,
+      "fga": 92,
+      "f2m": 31,
+      "f2a": 69,
+      "f3m": 10,
+      "f3a": 23,
+      "ftm": 15,
+      "fta": 26,
+      "reb": 66,
+      "oreb": 11,
+      "dreb": 37,
+      "ast": 19,
+      "tov": 11,
+      "stl": 3,
+      "blk": 4,
+      "pf": 12
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "38:55",
+        "pts": 34,
+        "reb": 12,
+        "ast": 5
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "25:08",
+        "pts": 9,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "28:16",
+        "pts": 16,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "31:39",
+        "pts": 8,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "31:59",
+        "pts": 11,
+        "reb": 2,
+        "ast": 1
+      }
+    ]
+  }
+}

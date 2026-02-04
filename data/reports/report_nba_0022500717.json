@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500717",
+  "date": "2026.02.03",
+  "venue": "Gainbridge Fieldhouse",
+  "attendance": 16678,
+  "home": {
+    "id": "1610612754",
+    "total": {
+      "pts": 122,
+      "fgm": 45,
+      "fga": 84,
+      "f2m": 31,
+      "f2a": 45,
+      "f3m": 14,
+      "f3a": 39,
+      "ftm": 18,
+      "fta": 27,
+      "reb": 49,
+      "oreb": 7,
+      "dreb": 31,
+      "ast": 33,
+      "tov": 15,
+      "stl": 6,
+      "blk": 2,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "JOHNNY FURPHY",
+        "min": "28:52",
+        "pts": 14,
+        "reb": 7,
+        "ast": 6
+      },
+      {
+        "no": "5",
+        "name": "JARACE WALKER",
+        "min": "31:58",
+        "pts": 24,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "24:49",
+        "pts": 12,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "26",
+        "name": "BEN SHEPPARD",
+        "min": "28:37",
+        "pts": 8,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "KAM JONES",
+        "min": "35:52",
+        "pts": 12,
+        "reb": 6,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612762",
+    "total": {
+      "pts": 131,
+      "fgm": 50,
+      "fga": 88,
+      "f2m": 37,
+      "f2a": 59,
+      "f3m": 13,
+      "f3a": 29,
+      "ftm": 18,
+      "fta": 26,
+      "reb": 45,
+      "oreb": 6,
+      "dreb": 32,
+      "ast": 38,
+      "tov": 9,
+      "stl": 13,
+      "blk": 4,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "CODY WILLIAMS",
+        "min": "40:10",
+        "pts": 14,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "23",
+        "name": "LAURI MARKKANEN",
+        "min": "26:53",
+        "pts": 27,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "KYLE FILIPOWSKI",
+        "min": "35:37",
+        "pts": 16,
+        "reb": 16,
+        "ast": 5
+      },
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "40:03",
+        "pts": 19,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "ISAIAH COLLIER",
+        "min": "48:00",
+        "pts": 17,
+        "reb": 5,
+        "ast": 22
+      }
+    ]
+  }
+}

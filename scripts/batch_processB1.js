@@ -1,7 +1,7 @@
 const { chromium } = require("playwright");
 // ★ここが重要：Masakiさんの持っている render_players.js と fetch を呼び出す
-const { renderPlayers } = require("./render_players.js");
-const { fetchGameBoxscore } = require("./fetch_bleague_boxscore.js");
+const { renderPlayers } = require("./render_players.cjs");
+const { fetchGameBoxscore } = require("./fetch_bleague_boxscore.cjs");
 
 async function getB1Ids(dateStr) {
     const [year, mon, day] = dateStr.split("/");

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500692",
+  "date": "2026.01.31",
+  "venue": "Kaseya Center",
+  "attendance": 19700,
+  "home": {
+    "id": "1610612748",
+    "total": {
+      "pts": 118,
+      "fgm": 41,
+      "fga": 95,
+      "f2m": 28,
+      "f2a": 48,
+      "f3m": 13,
+      "f3a": 47,
+      "ftm": 23,
+      "fta": 31,
+      "reb": 59,
+      "oreb": 9,
+      "dreb": 38,
+      "ast": 26,
+      "tov": 19,
+      "stl": 17,
+      "blk": 4,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "15",
+        "name": "MYRON GARDNER",
+        "min": "22:30",
+        "pts": 12,
+        "reb": 11,
+        "ast": 0
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "32:46",
+        "pts": 17,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "36:21",
+        "pts": 21,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "32:51",
+        "pts": 22,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "25",
+        "name": "KASPARAS JAKUČIONIS",
+        "min": "27:04",
+        "pts": 6,
+        "reb": 3,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612741",
+    "total": {
+      "pts": 125,
+      "fgm": 46,
+      "fga": 88,
+      "f2m": 26,
+      "f2a": 48,
+      "f3m": 20,
+      "f3a": 40,
+      "ftm": 13,
+      "fta": 18,
+      "reb": 51,
+      "oreb": 1,
+      "dreb": 42,
+      "ast": 34,
+      "tov": 23,
+      "stl": 8,
+      "blk": 5,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "34:24",
+        "pts": 20,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "33:04",
+        "pts": 21,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "44",
+        "name": "PATRICK WILLIAMS",
+        "min": "34:11",
+        "pts": 15,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "KEVIN HUERTER",
+        "min": "21:50",
+        "pts": 9,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "11",
+        "name": "AYO DOSUNMU",
+        "min": "36:30",
+        "pts": 29,
+        "reb": 8,
+        "ast": 9
+      }
+    ]
+  }
+}

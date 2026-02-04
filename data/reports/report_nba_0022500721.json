@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500721",
+  "date": "2026.02.03",
+  "venue": "American Airlines Center",
+  "attendance": 19132,
+  "home": {
+    "id": "1610612742",
+    "total": {
+      "pts": 100,
+      "fgm": 37,
+      "fga": 89,
+      "f2m": 28,
+      "f2a": 57,
+      "f3m": 9,
+      "f3a": 32,
+      "ftm": 17,
+      "fta": 22,
+      "reb": 56,
+      "oreb": 13,
+      "dreb": 36,
+      "ast": 21,
+      "tov": 9,
+      "stl": 4,
+      "blk": 4,
+      "pf": 11
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "36:43",
+        "pts": 36,
+        "reb": 9,
+        "ast": 6
+      },
+      {
+        "no": "16",
+        "name": "CALEB MARTIN",
+        "min": "29:06",
+        "pts": 13,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "24:43",
+        "pts": 10,
+        "reb": 12,
+        "ast": 1
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "30:25",
+        "pts": 10,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "31:23",
+        "pts": 9,
+        "reb": 8,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612738",
+    "total": {
+      "pts": 110,
+      "fgm": 47,
+      "fga": 96,
+      "f2m": 34,
+      "f2a": 57,
+      "f3m": 13,
+      "f3a": 39,
+      "ftm": 3,
+      "fta": 5,
+      "reb": 53,
+      "oreb": 10,
+      "dreb": 37,
+      "ast": 27,
+      "tov": 9,
+      "stl": 7,
+      "blk": 4,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "37:23",
+        "pts": 33,
+        "reb": 11,
+        "ast": 3
+      },
+      {
+        "no": "30",
+        "name": "SAM HAUSER",
+        "min": "26:06",
+        "pts": 11,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "27:59",
+        "pts": 8,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "55",
+        "name": "BAYLOR SCHEIERMAN",
+        "min": "28:18",
+        "pts": 3,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "38:28",
+        "pts": 11,
+        "reb": 2,
+        "ast": 8
+      }
+    ]
+  }
+}

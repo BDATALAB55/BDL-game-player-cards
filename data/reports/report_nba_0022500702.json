@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500702",
+  "date": "2026.02.01",
+  "venue": "TD Garden",
+  "attendance": 19156,
+  "home": {
+    "id": "1610612738",
+    "total": {
+      "pts": 107,
+      "fgm": 41,
+      "fga": 92,
+      "f2m": 26,
+      "f2a": 50,
+      "f3m": 15,
+      "f3a": 42,
+      "ftm": 10,
+      "fta": 13,
+      "reb": 61,
+      "oreb": 17,
+      "dreb": 35,
+      "ast": 24,
+      "tov": 9,
+      "stl": 4,
+      "blk": 2,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "29:29",
+        "pts": 30,
+        "reb": 13,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "SAM HAUSER",
+        "min": "27:17",
+        "pts": 3,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "30:45",
+        "pts": 14,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "26:39",
+        "pts": 7,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "32:13",
+        "pts": 17,
+        "reb": 7,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612749",
+    "total": {
+      "pts": 79,
+      "fgm": 29,
+      "fga": 82,
+      "f2m": 19,
+      "f2a": 48,
+      "f3m": 10,
+      "f3a": 34,
+      "ftm": 11,
+      "fta": 15,
+      "reb": 50,
+      "oreb": 12,
+      "dreb": 28,
+      "ast": 17,
+      "tov": 10,
+      "stl": 5,
+      "blk": 0,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "18",
+        "name": "KYLE KUZMA",
+        "min": "34:11",
+        "pts": 16,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "BOBBY PORTIS",
+        "min": "37:08",
+        "pts": 8,
+        "reb": 12,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "26:22",
+        "pts": 7,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "29:15",
+        "pts": 3,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "36:10",
+        "pts": 25,
+        "reb": 6,
+        "ast": 7
+      }
+    ]
+  }
+}

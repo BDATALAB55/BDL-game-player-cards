@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500720",
+  "date": "2026.02.03",
+  "venue": "Kaseya Center",
+  "attendance": 19700,
+  "home": {
+    "id": "1610612748",
+    "total": {
+      "pts": 115,
+      "fgm": 42,
+      "fga": 96,
+      "f2m": 34,
+      "f2a": 64,
+      "f3m": 8,
+      "f3a": 32,
+      "ftm": 23,
+      "fta": 26,
+      "reb": 60,
+      "oreb": 12,
+      "dreb": 41,
+      "ast": 25,
+      "tov": 11,
+      "stl": 6,
+      "blk": 1,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "15",
+        "name": "MYRON GARDNER",
+        "min": "21:58",
+        "pts": 14,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "0",
+        "name": "SIMONE FONTECCHIO",
+        "min": "33:39",
+        "pts": 18,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "30:13",
+        "pts": 16,
+        "reb": 14,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "35:45",
+        "pts": 18,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "28:04",
+        "pts": 4,
+        "reb": 1,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612737",
+    "total": {
+      "pts": 127,
+      "fgm": 49,
+      "fga": 101,
+      "f2m": 28,
+      "f2a": 51,
+      "f3m": 21,
+      "f3a": 50,
+      "ftm": 8,
+      "fta": 13,
+      "reb": 56,
+      "oreb": 8,
+      "dreb": 39,
+      "ast": 34,
+      "tov": 9,
+      "stl": 7,
+      "blk": 2,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "22:55",
+        "pts": 7,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "36:17",
+        "pts": 29,
+        "reb": 11,
+        "ast": 11
+      },
+      {
+        "no": "35",
+        "name": "CHRISTIAN KOLOKO",
+        "min": "11:05",
+        "pts": 2,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "21:34",
+        "pts": 2,
+        "reb": 1,
+        "ast": 5
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "31:23",
+        "pts": 19,
+        "reb": 5,
+        "ast": 7
+      }
+    ]
+  }
+}

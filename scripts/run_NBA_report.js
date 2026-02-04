@@ -1,5 +1,5 @@
-const { fetchNbaReportData } = require("./fetch_NBA_report");
-const { renderNbaReport } = require("./render_NBA_report");
+const { fetchNbaReportData } = require("./fetch_NBA_report.cjs");
+const { renderNbaReport } = require("./render_NBA_report.cjs");
 
 async function run(id, roundText) {
     if (!id) {

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500001",
+  "date": "2025.10.21",
+  "venue": "Paycom Center",
+  "attendance": 18203,
+  "home": {
+    "id": "1610612760",
+    "total": {
+      "pts": 125,
+      "fgm": 46,
+      "fga": 104,
+      "f2m": 33,
+      "f2a": 52,
+      "f3m": 13,
+      "f3a": 52,
+      "ftm": 20,
+      "fta": 25,
+      "reb": 49,
+      "oreb": 11,
+      "dreb": 27,
+      "ast": 29,
+      "tov": 11,
+      "stl": 12,
+      "blk": 4,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "45:15",
+        "pts": 6,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "38:29",
+        "pts": 28,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "55",
+        "name": "ISAIAH HARTENSTEIN",
+        "min": "36:50",
+        "pts": 6,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "41:39",
+        "pts": 14,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "47:13",
+        "pts": 35,
+        "reb": 5,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612745",
+    "total": {
+      "pts": 124,
+      "fgm": 43,
+      "fga": 97,
+      "f2m": 32,
+      "f2a": 58,
+      "f3m": 11,
+      "f3a": 39,
+      "ftm": 27,
+      "fta": 31,
+      "reb": 73,
+      "oreb": 16,
+      "dreb": 36,
+      "ast": 23,
+      "tov": 22,
+      "stl": 6,
+      "blk": 5,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "41:45",
+        "pts": 16,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "48:53",
+        "pts": 39,
+        "reb": 11,
+        "ast": 7
+      },
+      {
+        "no": "12",
+        "name": "STEVEN ADAMS",
+        "min": "36:30",
+        "pts": 4,
+        "reb": 13,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "47:03",
+        "pts": 23,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "38:36",
+        "pts": 18,
+        "reb": 4,
+        "ast": 5
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500082",
+  "date": "2025.10.22",
+  "venue": "State Farm Arena",
+  "attendance": 17811,
+  "home": {
+    "id": "1610612737",
+    "total": {
+      "pts": 118,
+      "fgm": 38,
+      "fga": 90,
+      "f2m": 28,
+      "f2a": 55,
+      "f3m": 10,
+      "f3a": 35,
+      "ftm": 32,
+      "fta": 37,
+      "reb": 44,
+      "oreb": 8,
+      "dreb": 26,
+      "ast": 25,
+      "tov": 15,
+      "stl": 7,
+      "blk": 6,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "20:36",
+        "pts": 16,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "34:48",
+        "pts": 22,
+        "reb": 7,
+        "ast": 8
+      },
+      {
+        "no": "8",
+        "name": "KRISTAPS PORZIŅĢIS",
+        "min": "25:34",
+        "pts": 20,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "22:44",
+        "pts": 4,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "11",
+        "name": "TRAE YOUNG",
+        "min": "34:18",
+        "pts": 22,
+        "reb": 1,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612761",
+    "total": {
+      "pts": 138,
+      "fgm": 54,
+      "fga": 95,
+      "f2m": 48,
+      "f2a": 70,
+      "f3m": 6,
+      "f3a": 25,
+      "ftm": 24,
+      "fta": 29,
+      "reb": 60,
+      "oreb": 12,
+      "dreb": 42,
+      "ast": 36,
+      "tov": 19,
+      "stl": 10,
+      "blk": 4,
+      "pf": 31
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "26:51",
+        "pts": 16,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "31:53",
+        "pts": 22,
+        "reb": 6,
+        "ast": 9
+      },
+      {
+        "no": "19",
+        "name": "JAKOB POELTL",
+        "min": "22:22",
+        "pts": 14,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "29:58",
+        "pts": 25,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "28:42",
+        "pts": 13,
+        "reb": 4,
+        "ast": 8
+      }
+    ]
+  }
+}

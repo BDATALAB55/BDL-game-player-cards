@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500086",
+  "date": "2025.10.22",
+  "venue": "Fiserv Forum",
+  "attendance": 17341,
+  "home": {
+    "id": "1610612749",
+    "total": {
+      "pts": 133,
+      "fgm": 50,
+      "fga": 98,
+      "f2m": 32,
+      "f2a": 54,
+      "f3m": 18,
+      "f3a": 44,
+      "ftm": 15,
+      "fta": 19,
+      "reb": 50,
+      "oreb": 6,
+      "dreb": 40,
+      "ast": 31,
+      "tov": 8,
+      "stl": 8,
+      "blk": 6,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "GARY TRENT JR.",
+        "min": "24:21",
+        "pts": 17,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "34",
+        "name": "GIANNIS ANTETOKOUNMPO",
+        "min": "26:45",
+        "pts": 37,
+        "reb": 14,
+        "ast": 5
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "29:03",
+        "pts": 11,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "27:12",
+        "pts": 11,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "KEVIN PORTER JR.",
+        "min": "09:25",
+        "pts": 10,
+        "reb": 0,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612764",
+    "total": {
+      "pts": 120,
+      "fgm": 46,
+      "fga": 98,
+      "f2m": 29,
+      "f2a": 56,
+      "f3m": 17,
+      "f3a": 42,
+      "ftm": 11,
+      "fta": 19,
+      "reb": 63,
+      "oreb": 13,
+      "dreb": 43,
+      "ast": 23,
+      "tov": 13,
+      "stl": 5,
+      "blk": 4,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "22",
+        "name": "KHRIS MIDDLETON",
+        "min": "28:31",
+        "pts": 23,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "32:05",
+        "pts": 21,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "25:32",
+        "pts": 10,
+        "reb": 11,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "29:06",
+        "pts": 9,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "29:01",
+        "pts": 11,
+        "reb": 5,
+        "ast": 2
+      }
+    ]
+  }
+}

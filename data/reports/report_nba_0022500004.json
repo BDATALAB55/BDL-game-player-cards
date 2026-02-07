@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500004",
+  "date": "2025.10.22",
+  "venue": "American Airlines Center",
+  "attendance": 20122,
+  "home": {
+    "id": "1610612742",
+    "total": {
+      "pts": 92,
+      "fgm": 31,
+      "fga": 83,
+      "f2m": 22,
+      "f2a": 62,
+      "f3m": 9,
+      "f3a": 21,
+      "ftm": 21,
+      "fta": 26,
+      "reb": 47,
+      "oreb": 9,
+      "dreb": 28,
+      "ast": 20,
+      "tov": 16,
+      "stl": 5,
+      "blk": 3,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "29:25",
+        "pts": 17,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "ANTHONY DAVIS",
+        "min": "32:29",
+        "pts": 22,
+        "reb": 13,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "DERECK LIVELY II",
+        "min": "10:18",
+        "pts": 4,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "31",
+        "name": "KLAY THOMPSON",
+        "min": "22:20",
+        "pts": 10,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "31:32",
+        "pts": 10,
+        "reb": 10,
+        "ast": 0
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 125,
+      "fgm": 50,
+      "fga": 87,
+      "f2m": 42,
+      "f2a": 67,
+      "f3m": 8,
+      "f3a": 20,
+      "ftm": 17,
+      "fta": 28,
+      "reb": 60,
+      "oreb": 11,
+      "dreb": 39,
+      "ast": 24,
+      "tov": 14,
+      "stl": 10,
+      "blk": 5,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "25:24",
+        "pts": 5,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "30:18",
+        "pts": 7,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "29:40",
+        "pts": 40,
+        "reb": 15,
+        "ast": 1
+      },
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "30:56",
+        "pts": 13,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "28:32",
+        "pts": 22,
+        "reb": 7,
+        "ast": 6
+      }
+    ]
+  }
+}

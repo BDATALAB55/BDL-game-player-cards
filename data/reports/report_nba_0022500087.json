@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500087",
+  "date": "2025.10.22",
+  "venue": "Delta Center",
+  "attendance": 18186,
+  "home": {
+    "id": "1610612762",
+    "total": {
+      "pts": 129,
+      "fgm": 48,
+      "fga": 87,
+      "f2m": 31,
+      "f2a": 43,
+      "f3m": 17,
+      "f3a": 44,
+      "ftm": 16,
+      "fta": 20,
+      "reb": 52,
+      "oreb": 13,
+      "dreb": 33,
+      "ast": 38,
+      "tov": 12,
+      "stl": 11,
+      "blk": 6,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LAURI MARKKANEN",
+        "min": "33:29",
+        "pts": 20,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "22",
+        "name": "KYLE FILIPOWSKI",
+        "min": "24:32",
+        "pts": 9,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "24",
+        "name": "WALKER KESSLER",
+        "min": "28:40",
+        "pts": 22,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "10",
+        "name": "SVI MYKHAILIUK",
+        "min": "24:25",
+        "pts": 9,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "29:55",
+        "pts": 16,
+        "reb": 2,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612746",
+    "total": {
+      "pts": 108,
+      "fgm": 39,
+      "fga": 88,
+      "f2m": 25,
+      "f2a": 43,
+      "f3m": 14,
+      "f3a": 45,
+      "ftm": 16,
+      "fta": 21,
+      "reb": 45,
+      "oreb": 15,
+      "dreb": 23,
+      "ast": 28,
+      "tov": 15,
+      "stl": 8,
+      "blk": 6,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "DERRICK JONES JR.",
+        "min": "17:40",
+        "pts": 12,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "29:06",
+        "pts": 10,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "27:11",
+        "pts": 19,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "BRADLEY BEAL",
+        "min": "20:13",
+        "pts": 5,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "29:11",
+        "pts": 15,
+        "reb": 2,
+        "ast": 11
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500089",
+  "date": "2025.10.22",
+  "venue": "Moda Center",
+  "attendance": 19335,
+  "home": {
+    "id": "1610612757",
+    "total": {
+      "pts": 114,
+      "fgm": 36,
+      "fga": 90,
+      "f2m": 23,
+      "f2a": 48,
+      "f3m": 13,
+      "f3a": 42,
+      "ftm": 29,
+      "fta": 35,
+      "reb": 58,
+      "oreb": 7,
+      "dreb": 32,
+      "ast": 25,
+      "tov": 15,
+      "stl": 10,
+      "blk": 3,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "32:59",
+        "pts": 20,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "34:44",
+        "pts": 10,
+        "reb": 9,
+        "ast": 5
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "30:00",
+        "pts": 8,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "28:52",
+        "pts": 15,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "JRUE HOLIDAY",
+        "min": "33:04",
+        "pts": 14,
+        "reb": 6,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612750",
+    "total": {
+      "pts": 118,
+      "fgm": 42,
+      "fga": 86,
+      "f2m": 27,
+      "f2a": 56,
+      "f3m": 15,
+      "f3a": 30,
+      "ftm": 19,
+      "fta": 24,
+      "reb": 52,
+      "oreb": 10,
+      "dreb": 35,
+      "ast": 21,
+      "tov": 19,
+      "stl": 10,
+      "blk": 10,
+      "pf": 29
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JADEN MCDANIELS",
+        "min": "28:59",
+        "pts": 18,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "JULIUS RANDLE",
+        "min": "37:20",
+        "pts": 19,
+        "reb": 7,
+        "ast": 6
+      },
+      {
+        "no": "27",
+        "name": "RUDY GOBERT",
+        "min": "31:51",
+        "pts": 10,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "ANTHONY EDWARDS",
+        "min": "39:15",
+        "pts": 41,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "DONTE DIVINCENZO",
+        "min": "20:22",
+        "pts": 7,
+        "reb": 4,
+        "ast": 2
+      }
+    ]
+  }
+}

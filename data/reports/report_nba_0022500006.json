@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500006",
+  "date": "2025.10.23",
+  "venue": "Chase Center",
+  "attendance": 18064,
+  "home": {
+    "id": "1610612744",
+    "total": {
+      "pts": 137,
+      "fgm": 50,
+      "fga": 99,
+      "f2m": 32,
+      "f2a": 52,
+      "f3m": 18,
+      "f3a": 47,
+      "ftm": 19,
+      "fta": 25,
+      "reb": 52,
+      "oreb": 10,
+      "dreb": 33,
+      "ast": 33,
+      "tov": 8,
+      "stl": 11,
+      "blk": 3,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "JIMMY BUTLER III",
+        "min": "38:33",
+        "pts": 21,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "1",
+        "name": "JONATHAN KUMINGA",
+        "min": "36:14",
+        "pts": 14,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "34:18",
+        "pts": 13,
+        "reb": 8,
+        "ast": 8
+      },
+      {
+        "no": "2",
+        "name": "BRANDIN PODZIEMSKI",
+        "min": "34:24",
+        "pts": 11,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "36:58",
+        "pts": 42,
+        "reb": 6,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612743",
+    "total": {
+      "pts": 131,
+      "fgm": 51,
+      "fga": 95,
+      "f2m": 35,
+      "f2a": 55,
+      "f3m": 16,
+      "f3a": 40,
+      "ftm": 13,
+      "fta": 14,
+      "reb": 49,
+      "oreb": 7,
+      "dreb": 36,
+      "ast": 32,
+      "tov": 13,
+      "stl": 8,
+      "blk": 4,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "CAMERON JOHNSON",
+        "min": "32:01",
+        "pts": 5,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "32",
+        "name": "AARON GORDON",
+        "min": "38:39",
+        "pts": 50,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "40:50",
+        "pts": 21,
+        "reb": 13,
+        "ast": 10
+      },
+      {
+        "no": "0",
+        "name": "CHRISTIAN BRAUN",
+        "min": "38:27",
+        "pts": 6,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "40:01",
+        "pts": 25,
+        "reb": 3,
+        "ast": 10
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500002",
+  "date": "2025.10.21",
+  "venue": "Crypto.com Arena",
+  "attendance": 18997,
+  "home": {
+    "id": "1610612747",
+    "total": {
+      "pts": 109,
+      "fgm": 42,
+      "fga": 77,
+      "f2m": 34,
+      "f2a": 45,
+      "f3m": 8,
+      "f3a": 32,
+      "ftm": 17,
+      "fta": 28,
+      "reb": 49,
+      "oreb": 7,
+      "dreb": 32,
+      "ast": 23,
+      "tov": 19,
+      "stl": 7,
+      "blk": 2,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "15",
+        "name": "AUSTIN REAVES",
+        "min": "36:20",
+        "pts": 26,
+        "reb": 5,
+        "ast": 9
+      },
+      {
+        "no": "28",
+        "name": "RUI HACHIMURA",
+        "min": "35:24",
+        "pts": 9,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "33:53",
+        "pts": 10,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "GABE VINCENT",
+        "min": "28:44",
+        "pts": 3,
+        "reb": 0,
+        "ast": 1
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "40:59",
+        "pts": 43,
+        "reb": 12,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612744",
+    "total": {
+      "pts": 119,
+      "fgm": 38,
+      "fga": 78,
+      "f2m": 21,
+      "f2a": 38,
+      "f3m": 17,
+      "f3a": 40,
+      "ftm": 26,
+      "fta": 29,
+      "reb": 41,
+      "oreb": 9,
+      "dreb": 31,
+      "ast": 29,
+      "tov": 18,
+      "stl": 10,
+      "blk": 4,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "JIMMY BUTLER III",
+        "min": "34:44",
+        "pts": 31,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "JONATHAN KUMINGA",
+        "min": "32:54",
+        "pts": 17,
+        "reb": 9,
+        "ast": 6
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "28:24",
+        "pts": 8,
+        "reb": 7,
+        "ast": 9
+      },
+      {
+        "no": "2",
+        "name": "BRANDIN PODZIEMSKI",
+        "min": "32:31",
+        "pts": 7,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "32:04",
+        "pts": 23,
+        "reb": 1,
+        "ast": 4
+      }
+    ]
+  }
+}

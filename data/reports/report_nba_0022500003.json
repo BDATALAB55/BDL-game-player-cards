@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500003",
+  "date": "2025.10.22",
+  "venue": "Madison Square Garden",
+  "attendance": 19812,
+  "home": {
+    "id": "1610612752",
+    "total": {
+      "pts": 119,
+      "fgm": 37,
+      "fga": 86,
+      "f2m": 23,
+      "f2a": 46,
+      "f3m": 14,
+      "f3a": 40,
+      "ftm": 31,
+      "fta": 36,
+      "reb": 58,
+      "oreb": 9,
+      "dreb": 39,
+      "ast": 22,
+      "tov": 13,
+      "stl": 8,
+      "blk": 4,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "37:30",
+        "pts": 24,
+        "reb": 14,
+        "ast": 2
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "30:59",
+        "pts": 19,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "55",
+        "name": "ARIEL HUKPORTI",
+        "min": "17:45",
+        "pts": 2,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "33:12",
+        "pts": 16,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "34:23",
+        "pts": 23,
+        "reb": 4,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612739",
+    "total": {
+      "pts": 111,
+      "fgm": 40,
+      "fga": 86,
+      "f2m": 21,
+      "f2a": 40,
+      "f3m": 19,
+      "f3a": 46,
+      "ftm": 12,
+      "fta": 18,
+      "reb": 50,
+      "oreb": 4,
+      "dreb": 28,
+      "ast": 21,
+      "tov": 15,
+      "stl": 8,
+      "blk": 4,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "35:56",
+        "pts": 22,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "20",
+        "name": "JAYLON TYSON",
+        "min": "20:13",
+        "pts": 5,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "28:12",
+        "pts": 4,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "SAM MERRILL",
+        "min": "28:21",
+        "pts": 19,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "35:52",
+        "pts": 31,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  }
+}

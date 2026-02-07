@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500743",
+  "date": "2026.02.06",
+  "venue": "Fiserv Forum",
+  "attendance": 17341,
+  "home": {
+    "id": "1610612749",
+    "total": {
+      "pts": 105,
+      "fgm": 44,
+      "fga": 95,
+      "f2m": 31,
+      "f2a": 52,
+      "f3m": 13,
+      "f3a": 43,
+      "ftm": 4,
+      "fta": 6,
+      "reb": 58,
+      "oreb": 13,
+      "dreb": 35,
+      "ast": 26,
+      "tov": 11,
+      "stl": 4,
+      "blk": 2,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "36:38",
+        "pts": 14,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "JERICHO SIMS",
+        "min": "31:00",
+        "pts": 4,
+        "reb": 15,
+        "ast": 4
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "26:52",
+        "pts": 9,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "KEVIN PORTER JR.",
+        "min": "34:07",
+        "pts": 23,
+        "reb": 7,
+        "ast": 8
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "33:56",
+        "pts": 22,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612754",
+    "total": {
+      "pts": 99,
+      "fgm": 35,
+      "fga": 79,
+      "f2m": 23,
+      "f2a": 36,
+      "f3m": 12,
+      "f3a": 43,
+      "ftm": 17,
+      "fta": 21,
+      "reb": 43,
+      "oreb": 5,
+      "dreb": 32,
+      "ast": 26,
+      "tov": 9,
+      "stl": 9,
+      "blk": 4,
+      "pf": 12
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "JOHNNY FURPHY",
+        "min": "31:23",
+        "pts": 2,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "32:41",
+        "pts": 19,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "22:45",
+        "pts": 5,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "AARON NESMITH",
+        "min": "26:51",
+        "pts": 12,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "36:52",
+        "pts": 22,
+        "reb": 2,
+        "ast": 8
+      }
+    ]
+  }
+}

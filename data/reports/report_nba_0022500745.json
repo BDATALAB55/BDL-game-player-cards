@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500745",
+  "date": "2026.02.06",
+  "venue": "Moda Center",
+  "attendance": 16895,
+  "home": {
+    "id": "1610612757",
+    "total": {
+      "pts": 135,
+      "fgm": 49,
+      "fga": 90,
+      "f2m": 32,
+      "f2a": 48,
+      "f3m": 17,
+      "f3a": 42,
+      "ftm": 20,
+      "fta": 21,
+      "reb": 49,
+      "oreb": 12,
+      "dreb": 34,
+      "ast": 31,
+      "tov": 18,
+      "stl": 9,
+      "blk": 7,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "29:33",
+        "pts": 15,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "9",
+        "name": "JERAMI GRANT",
+        "min": "28:01",
+        "pts": 23,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "25:25",
+        "pts": 13,
+        "reb": 17,
+        "ast": 0
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "13:55",
+        "pts": 2,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "JRUE HOLIDAY",
+        "min": "24:57",
+        "pts": 20,
+        "reb": 5,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612763",
+    "total": {
+      "pts": 115,
+      "fgm": 42,
+      "fga": 88,
+      "f2m": 27,
+      "f2a": 47,
+      "f3m": 15,
+      "f3a": 41,
+      "ftm": 16,
+      "fta": 21,
+      "reb": 45,
+      "oreb": 10,
+      "dreb": 27,
+      "ast": 28,
+      "tov": 16,
+      "stl": 12,
+      "blk": 3,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "27:21",
+        "pts": 13,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "45",
+        "name": "GG JACKSON",
+        "min": "27:06",
+        "pts": 15,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "18",
+        "name": "OLIVIER-MAXENCE PROSPER",
+        "min": "27:49",
+        "pts": 13,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "CEDRIC COWARD",
+        "min": "25:01",
+        "pts": 11,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "SCOTTY PIPPEN JR.",
+        "min": "22:02",
+        "pts": 13,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500742",
+  "date": "2026.02.06",
+  "venue": "Little Caesars Arena",
+  "attendance": 20062,
+  "home": {
+    "id": "1610612765",
+    "total": {
+      "pts": 118,
+      "fgm": 44,
+      "fga": 83,
+      "f2m": 27,
+      "f2a": 43,
+      "f3m": 17,
+      "f3a": 40,
+      "ftm": 13,
+      "fta": 15,
+      "reb": 49,
+      "oreb": 8,
+      "dreb": 36,
+      "ast": 31,
+      "tov": 12,
+      "stl": 10,
+      "blk": 6,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "23:47",
+        "pts": 2,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "12",
+        "name": "TOBIAS HARRIS",
+        "min": "25:51",
+        "pts": 15,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "28",
+        "name": "ISAIAH STEWART",
+        "min": "21:13",
+        "pts": 15,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "19:57",
+        "pts": 9,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "21:59",
+        "pts": 11,
+        "reb": 5,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612752",
+    "total": {
+      "pts": 80,
+      "fgm": 29,
+      "fga": 82,
+      "f2m": 21,
+      "f2a": 49,
+      "f3m": 8,
+      "f3a": 33,
+      "ftm": 14,
+      "fta": 17,
+      "reb": 48,
+      "oreb": 10,
+      "dreb": 25,
+      "ast": 22,
+      "tov": 13,
+      "stl": 6,
+      "blk": 1,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "25:17",
+        "pts": 5,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "51",
+        "name": "MOHAMED DIAWARA",
+        "min": "20:39",
+        "pts": 4,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "MITCHELL ROBINSON",
+        "min": "20:09",
+        "pts": 4,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "27:42",
+        "pts": 19,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "31:07",
+        "pts": 12,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  }
+}

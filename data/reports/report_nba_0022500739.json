@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500739",
+  "date": "2026.02.05",
+  "venue": "Mortgage Matchup Center",
+  "attendance": 17071,
+  "home": {
+    "id": "1610612756",
+    "total": {
+      "pts": 97,
+      "fgm": 38,
+      "fga": 82,
+      "f2m": 22,
+      "f2a": 39,
+      "f3m": 16,
+      "f3a": 43,
+      "ftm": 5,
+      "fta": 6,
+      "reb": 42,
+      "oreb": 6,
+      "dreb": 31,
+      "ast": 22,
+      "tov": 12,
+      "stl": 10,
+      "blk": 1,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "35:13",
+        "pts": 24,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "27:10",
+        "pts": 9,
+        "reb": 1,
+        "ast": 5
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "22:47",
+        "pts": 11,
+        "reb": 10,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "GRAYSON ALLEN",
+        "min": "32:31",
+        "pts": 21,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "33:24",
+        "pts": 11,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612744",
+    "total": {
+      "pts": 101,
+      "fgm": 33,
+      "fga": 76,
+      "f2m": 13,
+      "f2a": 21,
+      "f3m": 20,
+      "f3a": 55,
+      "ftm": 15,
+      "fta": 20,
+      "reb": 53,
+      "oreb": 10,
+      "dreb": 35,
+      "ast": 23,
+      "tov": 15,
+      "stl": 8,
+      "blk": 4,
+      "pf": 12
+    },
+    "starters": [
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "30:54",
+        "pts": 6,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "GUI SANTOS",
+        "min": "35:55",
+        "pts": 18,
+        "reb": 4,
+        "ast": 7
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "24:06",
+        "pts": 5,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "61",
+        "name": "PAT SPENCER",
+        "min": "32:23",
+        "pts": 20,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "8",
+        "name": "DE'ANTHONY MELTON",
+        "min": "24:43",
+        "pts": 17,
+        "reb": 2,
+        "ast": 1
+      }
+    ]
+  }
+}

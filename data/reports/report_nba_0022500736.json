@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500736",
+  "date": "2026.02.05",
+  "venue": "Scotiabank Arena",
+  "attendance": 18795,
+  "home": {
+    "id": "1610612761",
+    "total": {
+      "pts": 123,
+      "fgm": 49,
+      "fga": 87,
+      "f2m": 35,
+      "f2a": 53,
+      "f3m": 14,
+      "f3a": 34,
+      "ftm": 11,
+      "fta": 13,
+      "reb": 44,
+      "oreb": 8,
+      "dreb": 27,
+      "ast": 35,
+      "tov": 11,
+      "stl": 10,
+      "blk": 7,
+      "pf": 11
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "35:20",
+        "pts": 33,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "32:25",
+        "pts": 13,
+        "reb": 6,
+        "ast": 7
+      },
+      {
+        "no": "12",
+        "name": "COLLIN MURRAY-BOYLES",
+        "min": "37:09",
+        "pts": 17,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "14",
+        "name": "JA'KOBE WALTER",
+        "min": "30:56",
+        "pts": 12,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "30:52",
+        "pts": 24,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612741",
+    "total": {
+      "pts": 107,
+      "fgm": 41,
+      "fga": 91,
+      "f2m": 23,
+      "f2a": 42,
+      "f3m": 18,
+      "f3a": 49,
+      "ftm": 7,
+      "fta": 8,
+      "reb": 47,
+      "oreb": 13,
+      "dreb": 25,
+      "ast": 28,
+      "tov": 15,
+      "stl": 9,
+      "blk": 4,
+      "pf": 13
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "29:46",
+        "pts": 10,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "32:36",
+        "pts": 18,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "25",
+        "name": "JALEN SMITH",
+        "min": "24:17",
+        "pts": 13,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "31",
+        "name": "JADEN IVEY",
+        "min": "33:10",
+        "pts": 13,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "2",
+        "name": "ANFERNEE SIMONS",
+        "min": "31:58",
+        "pts": 22,
+        "reb": 2,
+        "ast": 3
+      }
+    ]
+  }
+}

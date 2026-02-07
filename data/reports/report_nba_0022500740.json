@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500740",
+  "date": "2026.02.05",
+  "venue": "Crypto.com Arena",
+  "attendance": 18731,
+  "home": {
+    "id": "1610612747",
+    "total": {
+      "pts": 119,
+      "fgm": 44,
+      "fga": 79,
+      "f2m": 35,
+      "f2a": 54,
+      "f3m": 9,
+      "f3a": 25,
+      "ftm": 22,
+      "fta": 27,
+      "reb": 49,
+      "oreb": 10,
+      "dreb": 32,
+      "ast": 27,
+      "tov": 22,
+      "stl": 8,
+      "blk": 4,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "37:26",
+        "pts": 17,
+        "reb": 4,
+        "ast": 10
+      },
+      {
+        "no": "12",
+        "name": "JAKE LARAVIA",
+        "min": "23:18",
+        "pts": 14,
+        "reb": 0,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "19:54",
+        "pts": 10,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "31:13",
+        "pts": 7,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "15:57",
+        "pts": 10,
+        "reb": 4,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612755",
+    "total": {
+      "pts": 115,
+      "fgm": 45,
+      "fga": 84,
+      "f2m": 40,
+      "f2a": 60,
+      "f3m": 5,
+      "f3a": 24,
+      "ftm": 20,
+      "fta": 23,
+      "reb": 33,
+      "oreb": 4,
+      "dreb": 24,
+      "ast": 29,
+      "tov": 14,
+      "stl": 15,
+      "blk": 3,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "KELLY OUBRE JR.",
+        "min": "39:49",
+        "pts": 8,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "25",
+        "name": "DOMINICK BARLOW",
+        "min": "25:52",
+        "pts": 13,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "21",
+        "name": "JOEL EMBIID",
+        "min": "38:34",
+        "pts": 35,
+        "reb": 7,
+        "ast": 7
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "39:13",
+        "pts": 19,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "TYRESE MAXEY",
+        "min": "37:23",
+        "pts": 26,
+        "reb": 0,
+        "ast": 13
+      }
+    ]
+  }
+}

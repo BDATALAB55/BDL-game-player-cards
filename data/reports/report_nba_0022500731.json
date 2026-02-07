@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500731",
+  "date": "2026.02.04",
+  "venue": "Golden 1 Center",
+  "attendance": 15017,
+  "home": {
+    "id": "1610612758",
+    "total": {
+      "pts": 125,
+      "fgm": 45,
+      "fga": 100,
+      "f2m": 34,
+      "f2a": 64,
+      "f3m": 11,
+      "f3a": 36,
+      "ftm": 24,
+      "fta": 28,
+      "reb": 58,
+      "oreb": 14,
+      "dreb": 32,
+      "ast": 29,
+      "tov": 13,
+      "stl": 4,
+      "blk": 2,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "27:35",
+        "pts": 20,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "15",
+        "name": "DE'ANDRE HUNTER",
+        "min": "26:25",
+        "pts": 9,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "11",
+        "name": "DOMANTAS SABONIS",
+        "min": "24:04",
+        "pts": 24,
+        "reb": 15,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "ZACH LAVINE",
+        "min": "22:11",
+        "pts": 11,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "25:36",
+        "pts": 13,
+        "reb": 0,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612763",
+    "total": {
+      "pts": 129,
+      "fgm": 45,
+      "fga": 90,
+      "f2m": 27,
+      "f2a": 49,
+      "f3m": 18,
+      "f3a": 41,
+      "ftm": 21,
+      "fta": 28,
+      "reb": 53,
+      "oreb": 11,
+      "dreb": 33,
+      "ast": 30,
+      "tov": 13,
+      "stl": 8,
+      "blk": 4,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "26:02",
+        "pts": 18,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "45",
+        "name": "GG JACKSON",
+        "min": "27:12",
+        "pts": 16,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "SANTI ALDAMA",
+        "min": "24:08",
+        "pts": 12,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "CEDRIC COWARD",
+        "min": "26:30",
+        "pts": 5,
+        "reb": 7,
+        "ast": 6
+      },
+      {
+        "no": "2",
+        "name": "TY JEROME",
+        "min": "20:41",
+        "pts": 28,
+        "reb": 1,
+        "ast": 7
+      }
+    ]
+  }
+}

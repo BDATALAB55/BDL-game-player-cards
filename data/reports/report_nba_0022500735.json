@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500735",
+  "date": "2026.02.05",
+  "venue": "State Farm Arena",
+  "attendance": 15412,
+  "home": {
+    "id": "1610612737",
+    "total": {
+      "pts": 121,
+      "fgm": 48,
+      "fga": 98,
+      "f2m": 40,
+      "f2a": 63,
+      "f3m": 8,
+      "f3a": 35,
+      "ftm": 17,
+      "fta": 23,
+      "reb": 56,
+      "oreb": 19,
+      "dreb": 31,
+      "ast": 34,
+      "tov": 10,
+      "stl": 3,
+      "blk": 10,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "19:15",
+        "pts": 0,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "38:38",
+        "pts": 22,
+        "reb": 16,
+        "ast": 15
+      },
+      {
+        "no": "31",
+        "name": "JOCK LANDALE",
+        "min": "31:31",
+        "pts": 26,
+        "reb": 11,
+        "ast": 5
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "34:34",
+        "pts": 11,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "33:42",
+        "pts": 23,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612762",
+    "total": {
+      "pts": 119,
+      "fgm": 47,
+      "fga": 101,
+      "f2m": 35,
+      "f2a": 71,
+      "f3m": 12,
+      "f3a": 30,
+      "ftm": 13,
+      "fta": 20,
+      "reb": 61,
+      "oreb": 18,
+      "dreb": 31,
+      "ast": 19,
+      "tov": 8,
+      "stl": 7,
+      "blk": 4,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "CODY WILLIAMS",
+        "min": "37:36",
+        "pts": 5,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "LAURI MARKKANEN",
+        "min": "23:26",
+        "pts": 18,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "22",
+        "name": "KYLE FILIPOWSKI",
+        "min": "28:25",
+        "pts": 15,
+        "reb": 17,
+        "ast": 1
+      },
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "40:21",
+        "pts": 20,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "ISAIAH COLLIER",
+        "min": "48:00",
+        "pts": 25,
+        "reb": 7,
+        "ast": 11
+      }
+    ]
+  }
+}

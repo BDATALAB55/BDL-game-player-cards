@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500734",
+  "date": "2026.02.05",
+  "venue": "Kia Center",
+  "attendance": 18093,
+  "home": {
+    "id": "1610612753",
+    "total": {
+      "pts": 118,
+      "fgm": 44,
+      "fga": 82,
+      "f2m": 35,
+      "f2a": 50,
+      "f3m": 9,
+      "f3a": 32,
+      "ftm": 21,
+      "fta": 27,
+      "reb": 57,
+      "oreb": 9,
+      "dreb": 33,
+      "ast": 32,
+      "tov": 13,
+      "stl": 14,
+      "blk": 11,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "31:47",
+        "pts": 23,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "31:21",
+        "pts": 22,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "21:49",
+        "pts": 7,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "ANTHONY BLACK",
+        "min": "27:35",
+        "pts": 18,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "29:06",
+        "pts": 15,
+        "reb": 11,
+        "ast": 11
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612751",
+    "total": {
+      "pts": 98,
+      "fgm": 34,
+      "fga": 82,
+      "f2m": 22,
+      "f2a": 43,
+      "f3m": 12,
+      "f3a": 39,
+      "ftm": 18,
+      "fta": 29,
+      "reb": 46,
+      "oreb": 11,
+      "dreb": 25,
+      "ast": 22,
+      "tov": 19,
+      "stl": 7,
+      "blk": 2,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "32:19",
+        "pts": 9,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "21:53",
+        "pts": 0,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "28:50",
+        "pts": 14,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "88",
+        "name": "NOLAN TRAORE",
+        "min": "37:57",
+        "pts": 21,
+        "reb": 3,
+        "ast": 7
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "31:57",
+        "pts": 26,
+        "reb": 4,
+        "ast": 2
+      }
+    ]
+  }
+}

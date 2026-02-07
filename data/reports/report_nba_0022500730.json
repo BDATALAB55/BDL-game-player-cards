@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500730",
+  "date": "2026.02.04",
+  "venue": "Frost Bank Center",
+  "attendance": 18354,
+  "home": {
+    "id": "1610612759",
+    "total": {
+      "pts": 116,
+      "fgm": 45,
+      "fga": 101,
+      "f2m": 31,
+      "f2a": 59,
+      "f3m": 14,
+      "f3a": 42,
+      "ftm": 12,
+      "fta": 20,
+      "reb": 73,
+      "oreb": 18,
+      "dreb": 45,
+      "ast": 26,
+      "tov": 12,
+      "stl": 11,
+      "blk": 8,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "25:01",
+        "pts": 5,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "27:23",
+        "pts": 8,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "28:21",
+        "pts": 22,
+        "reb": 14,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "33:13",
+        "pts": 15,
+        "reb": 4,
+        "ast": 10
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "26:29",
+        "pts": 14,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612760",
+    "total": {
+      "pts": 106,
+      "fgm": 37,
+      "fga": 93,
+      "f2m": 18,
+      "f2a": 46,
+      "f3m": 19,
+      "f3a": 47,
+      "ftm": 13,
+      "fta": 14,
+      "reb": 49,
+      "oreb": 9,
+      "dreb": 37,
+      "ast": 26,
+      "tov": 14,
+      "stl": 10,
+      "blk": 9,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "AARON WIGGINS",
+        "min": "37:43",
+        "pts": 20,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "34",
+        "name": "KENRICH WILLIAMS",
+        "min": "35:13",
+        "pts": 25,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "6",
+        "name": "JAYLIN WILLIAMS",
+        "min": "39:40",
+        "pts": 24,
+        "reb": 12,
+        "ast": 4
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "34:21",
+        "pts": 13,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "11",
+        "name": "ISAIAH JOE",
+        "min": "37:08",
+        "pts": 2,
+        "reb": 5,
+        "ast": 2
+      }
+    ]
+  }
+}

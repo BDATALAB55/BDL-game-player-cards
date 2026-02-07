@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500729",
+  "date": "2026.02.04",
+  "venue": "Fiserv Forum",
+  "attendance": 14343,
+  "home": {
+    "id": "1610612749",
+    "total": {
+      "pts": 141,
+      "fgm": 56,
+      "fga": 92,
+      "f2m": 35,
+      "f2a": 45,
+      "f3m": 21,
+      "f3a": 47,
+      "ftm": 8,
+      "fta": 10,
+      "reb": 50,
+      "oreb": 6,
+      "dreb": 37,
+      "ast": 36,
+      "tov": 14,
+      "stl": 5,
+      "blk": 3,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "AMIR COFFEY",
+        "min": "25:09",
+        "pts": 16,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "18",
+        "name": "KYLE KUZMA",
+        "min": "30:59",
+        "pts": 7,
+        "reb": 6,
+        "ast": 9
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "28:31",
+        "pts": 16,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "35:44",
+        "pts": 20,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "39:48",
+        "pts": 27,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612740",
+    "total": {
+      "pts": 137,
+      "fgm": 45,
+      "fga": 94,
+      "f2m": 21,
+      "f2a": 48,
+      "f3m": 24,
+      "f3a": 46,
+      "ftm": 23,
+      "fta": 29,
+      "reb": 44,
+      "oreb": 9,
+      "dreb": 29,
+      "ast": 32,
+      "tov": 8,
+      "stl": 9,
+      "blk": 2,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "35:06",
+        "pts": 22,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "ZION WILLIAMSON",
+        "min": "37:43",
+        "pts": 20,
+        "reb": 5,
+        "ast": 8
+      },
+      {
+        "no": "22",
+        "name": "DERIK QUEEN",
+        "min": "21:58",
+        "pts": 6,
+        "reb": 3,
+        "ast": 7
+      },
+      {
+        "no": "25",
+        "name": "TREY MURPHY III",
+        "min": "39:53",
+        "pts": 44,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "2",
+        "name": "HERBERT JONES",
+        "min": "35:58",
+        "pts": 7,
+        "reb": 2,
+        "ast": 2
+      }
+    ]
+  }
+}

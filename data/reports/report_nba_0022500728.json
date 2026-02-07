@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500728",
+  "date": "2026.02.04",
+  "venue": "Toyota Center",
+  "attendance": 18055,
+  "home": {
+    "id": "1610612745",
+    "total": {
+      "pts": 93,
+      "fgm": 34,
+      "fga": 82,
+      "f2m": 23,
+      "f2a": 52,
+      "f3m": 11,
+      "f3a": 30,
+      "ftm": 14,
+      "fta": 22,
+      "reb": 45,
+      "oreb": 12,
+      "dreb": 26,
+      "ast": 16,
+      "tov": 9,
+      "stl": 10,
+      "blk": 5,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "32:38",
+        "pts": 15,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "33:19",
+        "pts": 13,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "31:02",
+        "pts": 13,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "17",
+        "name": "TARI EASON",
+        "min": "27:38",
+        "pts": 10,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "28:37",
+        "pts": 11,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612738",
+    "total": {
+      "pts": 114,
+      "fgm": 39,
+      "fga": 90,
+      "f2m": 20,
+      "f2a": 39,
+      "f3m": 19,
+      "f3a": 51,
+      "ftm": 17,
+      "fta": 20,
+      "reb": 65,
+      "oreb": 20,
+      "dreb": 37,
+      "ast": 26,
+      "tov": 13,
+      "stl": 6,
+      "blk": 6,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "55",
+        "name": "BAYLOR SCHEIERMAN",
+        "min": "23:00",
+        "pts": 15,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "52",
+        "name": "LUKA GARZA",
+        "min": "33:47",
+        "pts": 19,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "38:55",
+        "pts": 10,
+        "reb": 19,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "37:06",
+        "pts": 28,
+        "reb": 1,
+        "ast": 8
+      },
+      {
+        "no": "13",
+        "name": "RON HARPER JR.",
+        "min": "33:18",
+        "pts": 11,
+        "reb": 9,
+        "ast": 3
+      }
+    ]
+  }
+}

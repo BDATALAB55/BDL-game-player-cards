@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500738",
+  "date": "2026.02.05",
+  "venue": "American Airlines Center",
+  "attendance": 19413,
+  "home": {
+    "id": "1610612742",
+    "total": {
+      "pts": 123,
+      "fgm": 47,
+      "fga": 97,
+      "f2m": 35,
+      "f2a": 66,
+      "f3m": 12,
+      "f3a": 31,
+      "ftm": 17,
+      "fta": 20,
+      "reb": 47,
+      "oreb": 7,
+      "dreb": 34,
+      "ast": 23,
+      "tov": 9,
+      "stl": 9,
+      "blk": 8,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "38:32",
+        "pts": 32,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "16",
+        "name": "CALEB MARTIN",
+        "min": "31:33",
+        "pts": 8,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "33:01",
+        "pts": 16,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "37:44",
+        "pts": 20,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "38:46",
+        "pts": 32,
+        "reb": 6,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 135,
+      "fgm": 48,
+      "fga": 95,
+      "f2m": 31,
+      "f2a": 54,
+      "f3m": 17,
+      "f3a": 41,
+      "ftm": 22,
+      "fta": 25,
+      "reb": 58,
+      "oreb": 11,
+      "dreb": 39,
+      "ast": 34,
+      "tov": 13,
+      "stl": 7,
+      "blk": 7,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "27:19",
+        "pts": 14,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "34:23",
+        "pts": 19,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "34:27",
+        "pts": 29,
+        "reb": 11,
+        "ast": 6
+      },
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "30:08",
+        "pts": 12,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "31:56",
+        "pts": 17,
+        "reb": 3,
+        "ast": 7
+      }
+    ]
+  }
+}

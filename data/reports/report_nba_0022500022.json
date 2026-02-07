@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500022",
+  "date": "2025.10.31",
+  "venue": "Rocket Arena",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612739",
+    "total": {
+      "pts": 101,
+      "fgm": 36,
+      "fga": 90,
+      "f2m": 22,
+      "f2a": 44,
+      "f3m": 14,
+      "f3a": 46,
+      "ftm": 15,
+      "fta": 23,
+      "reb": 53,
+      "oreb": 15,
+      "dreb": 27,
+      "ast": 24,
+      "tov": 13,
+      "stl": 10,
+      "blk": 10,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "DE'ANDRE HUNTER",
+        "min": "33:56",
+        "pts": 26,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "32",
+        "name": "DEAN WADE",
+        "min": "30:17",
+        "pts": 5,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "35:35",
+        "pts": 29,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "20",
+        "name": "JAYLON TYSON",
+        "min": "33:20",
+        "pts": 18,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "2",
+        "name": "LONZO BALL",
+        "min": "25:57",
+        "pts": 8,
+        "reb": 5,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612761",
+    "total": {
+      "pts": 112,
+      "fgm": 40,
+      "fga": 82,
+      "f2m": 27,
+      "f2a": 52,
+      "f3m": 13,
+      "f3a": 30,
+      "ftm": 19,
+      "fta": 24,
+      "reb": 56,
+      "oreb": 10,
+      "dreb": 38,
+      "ast": 27,
+      "tov": 16,
+      "stl": 9,
+      "blk": 4,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "35:06",
+        "pts": 20,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "34:36",
+        "pts": 14,
+        "reb": 10,
+        "ast": 5
+      },
+      {
+        "no": "12",
+        "name": "COLLIN MURRAY-BOYLES",
+        "min": "20:01",
+        "pts": 6,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "36:11",
+        "pts": 20,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "26:43",
+        "pts": 4,
+        "reb": 1,
+        "ast": 6
+      }
+    ]
+  }
+}

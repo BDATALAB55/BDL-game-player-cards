@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500025",
+  "date": "2025.10.31",
+  "venue": "Mortgage Matchup Center",
+  "attendance": 17071,
+  "home": {
+    "id": "1610612756",
+    "total": {
+      "pts": 118,
+      "fgm": 43,
+      "fga": 91,
+      "f2m": 26,
+      "f2a": 43,
+      "f3m": 17,
+      "f3a": 48,
+      "ftm": 15,
+      "fta": 18,
+      "reb": 53,
+      "oreb": 8,
+      "dreb": 36,
+      "ast": 30,
+      "tov": 9,
+      "stl": 10,
+      "blk": 6,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "RYAN DUNN",
+        "min": "31:15",
+        "pts": 13,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "33:17",
+        "pts": 13,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "25:22",
+        "pts": 9,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "GRAYSON ALLEN",
+        "min": "31:58",
+        "pts": 14,
+        "reb": 7,
+        "ast": 6
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "38:37",
+        "pts": 36,
+        "reb": 6,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612762",
+    "total": {
+      "pts": 96,
+      "fgm": 30,
+      "fga": 80,
+      "f2m": 18,
+      "f2a": 43,
+      "f3m": 12,
+      "f3a": 37,
+      "ftm": 24,
+      "fta": 32,
+      "reb": 58,
+      "oreb": 12,
+      "dreb": 36,
+      "ast": 23,
+      "tov": 21,
+      "stl": 4,
+      "blk": 3,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "22",
+        "name": "KYLE FILIPOWSKI",
+        "min": "10:01",
+        "pts": 2,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "LAURI MARKKANEN",
+        "min": "34:41",
+        "pts": 33,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "24",
+        "name": "WALKER KESSLER",
+        "min": "28:31",
+        "pts": 4,
+        "reb": 13,
+        "ast": 1
+      },
+      {
+        "no": "10",
+        "name": "SVI MYKHAILIUK",
+        "min": "22:51",
+        "pts": 0,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "32:37",
+        "pts": 17,
+        "reb": 8,
+        "ast": 9
+      }
+    ]
+  }
+}

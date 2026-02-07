@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500094",
+  "date": "2025.10.24",
+  "venue": "FedExForum",
+  "attendance": 14641,
+  "home": {
+    "id": "1610612763",
+    "total": {
+      "pts": 114,
+      "fgm": 38,
+      "fga": 95,
+      "f2m": 25,
+      "f2a": 50,
+      "f3m": 13,
+      "f3a": 45,
+      "ftm": 25,
+      "fta": 28,
+      "reb": 48,
+      "oreb": 12,
+      "dreb": 29,
+      "ast": 29,
+      "tov": 20,
+      "stl": 8,
+      "blk": 4,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "KENTAVIOUS CALDWELL-POPE",
+        "min": "23:04",
+        "pts": 7,
+        "reb": 3,
+        "ast": 6
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "21:23",
+        "pts": 19,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "31",
+        "name": "JOCK LANDALE",
+        "min": "17:42",
+        "pts": 4,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "22:29",
+        "pts": 9,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "12",
+        "name": "JA MORANT",
+        "min": "21:36",
+        "pts": 12,
+        "reb": 2,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612748",
+    "total": {
+      "pts": 146,
+      "fgm": 55,
+      "fga": 102,
+      "f2m": 36,
+      "f2a": 62,
+      "f3m": 19,
+      "f3a": 40,
+      "ftm": 17,
+      "fta": 22,
+      "reb": 64,
+      "oreb": 17,
+      "dreb": 40,
+      "ast": 34,
+      "tov": 19,
+      "stl": 15,
+      "blk": 4,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "23:41",
+        "pts": 10,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "28:21",
+        "pts": 24,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "7",
+        "name": "KEL'EL WARE",
+        "min": "22:50",
+        "pts": 19,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "24:35",
+        "pts": 15,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "20:33",
+        "pts": 2,
+        "reb": 1,
+        "ast": 7
+      }
+    ]
+  }
+}

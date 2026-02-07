@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500090",
+  "date": "2025.10.24",
+  "venue": "Kia Center",
+  "attendance": 18004,
+  "home": {
+    "id": "1610612753",
+    "total": {
+      "pts": 107,
+      "fgm": 37,
+      "fga": 79,
+      "f2m": 28,
+      "f2a": 47,
+      "f3m": 9,
+      "f3a": 32,
+      "ftm": 24,
+      "fta": 37,
+      "reb": 58,
+      "oreb": 12,
+      "dreb": 33,
+      "ast": 21,
+      "tov": 21,
+      "stl": 7,
+      "blk": 3,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "22",
+        "name": "FRANZ WAGNER",
+        "min": "35:06",
+        "pts": 27,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "35:37",
+        "pts": 11,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "31:07",
+        "pts": 10,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "33:26",
+        "pts": 15,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "19:07",
+        "pts": 11,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612737",
+    "total": {
+      "pts": 111,
+      "fgm": 41,
+      "fga": 85,
+      "f2m": 33,
+      "f2a": 56,
+      "f3m": 8,
+      "f3a": 29,
+      "ftm": 21,
+      "fta": 28,
+      "reb": 51,
+      "oreb": 9,
+      "dreb": 32,
+      "ast": 26,
+      "tov": 16,
+      "stl": 8,
+      "blk": 6,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "30:31",
+        "pts": 19,
+        "reb": 1,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "25:58",
+        "pts": 12,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "33:02",
+        "pts": 17,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "32:08",
+        "pts": 6,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "11",
+        "name": "TRAE YOUNG",
+        "min": "33:32",
+        "pts": 25,
+        "reb": 1,
+        "ast": 6
+      }
+    ]
+  }
+}

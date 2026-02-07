@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500100",
+  "date": "2025.10.25",
+  "venue": "Kia Center",
+  "attendance": 19117,
+  "home": {
+    "id": "1610612753",
+    "total": {
+      "pts": 98,
+      "fgm": 34,
+      "fga": 87,
+      "f2m": 31,
+      "f2a": 63,
+      "f3m": 3,
+      "f3a": 24,
+      "ftm": 27,
+      "fta": 33,
+      "reb": 60,
+      "oreb": 15,
+      "dreb": 38,
+      "ast": 12,
+      "tov": 20,
+      "stl": 8,
+      "blk": 5,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "22",
+        "name": "FRANZ WAGNER",
+        "min": "34:21",
+        "pts": 17,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "35:57",
+        "pts": 24,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "31:00",
+        "pts": 8,
+        "reb": 13,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "30:56",
+        "pts": 14,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "TYUS JONES",
+        "min": "14:26",
+        "pts": 0,
+        "reb": 0,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612741",
+    "total": {
+      "pts": 110,
+      "fgm": 39,
+      "fga": 83,
+      "f2m": 29,
+      "f2a": 56,
+      "f3m": 10,
+      "f3a": 27,
+      "ftm": 22,
+      "fta": 29,
+      "reb": 51,
+      "oreb": 9,
+      "dreb": 37,
+      "ast": 26,
+      "tov": 18,
+      "stl": 13,
+      "blk": 2,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "21:35",
+        "pts": 0,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "12:24",
+        "pts": 3,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "9",
+        "name": "NIKOLA VUČEVIĆ",
+        "min": "31:15",
+        "pts": 15,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "TRE JONES",
+        "min": "29:01",
+        "pts": 13,
+        "reb": 5,
+        "ast": 8
+      },
+      {
+        "no": "3",
+        "name": "JOSH GIDDEY",
+        "min": "32:05",
+        "pts": 21,
+        "reb": 8,
+        "ast": 3
+      }
+    ]
+  }
+}

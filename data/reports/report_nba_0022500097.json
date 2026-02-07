@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500097",
+  "date": "2025.10.24",
+  "venue": "Moda Center",
+  "attendance": 18090,
+  "home": {
+    "id": "1610612757",
+    "total": {
+      "pts": 139,
+      "fgm": 50,
+      "fga": 93,
+      "f2m": 34,
+      "f2a": 59,
+      "f3m": 16,
+      "f3a": 34,
+      "ftm": 23,
+      "fta": 25,
+      "reb": 45,
+      "oreb": 10,
+      "dreb": 28,
+      "ast": 30,
+      "tov": 18,
+      "stl": 13,
+      "blk": 5,
+      "pf": 28
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "29:29",
+        "pts": 26,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "32:44",
+        "pts": 19,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "21:39",
+        "pts": 14,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "25:00",
+        "pts": 17,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "JRUE HOLIDAY",
+        "min": "28:01",
+        "pts": 12,
+        "reb": 5,
+        "ast": 11
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612744",
+    "total": {
+      "pts": 119,
+      "fgm": 35,
+      "fga": 80,
+      "f2m": 19,
+      "f2a": 42,
+      "f3m": 16,
+      "f3a": 38,
+      "ftm": 33,
+      "fta": 39,
+      "reb": 52,
+      "oreb": 12,
+      "dreb": 29,
+      "ast": 24,
+      "tov": 25,
+      "stl": 12,
+      "blk": 3,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "1",
+        "name": "JONATHAN KUMINGA",
+        "min": "24:08",
+        "pts": 16,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "20:32",
+        "pts": 12,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "21",
+        "name": "QUINTEN POST",
+        "min": "15:54",
+        "pts": 5,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "10",
+        "name": "JIMMY BUTLER III",
+        "min": "26:43",
+        "pts": 14,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "27:18",
+        "pts": 35,
+        "reb": 6,
+        "ast": 3
+      }
+    ]
+  }
+}

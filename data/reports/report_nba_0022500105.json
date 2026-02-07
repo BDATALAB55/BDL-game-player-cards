@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500105",
+  "date": "2025.10.26",
+  "venue": "Frost Bank Center",
+  "attendance": 19016,
+  "home": {
+    "id": "1610612759",
+    "total": {
+      "pts": 118,
+      "fgm": 39,
+      "fga": 78,
+      "f2m": 27,
+      "f2a": 51,
+      "f3m": 12,
+      "f3a": 27,
+      "ftm": 28,
+      "fta": 36,
+      "reb": 59,
+      "oreb": 11,
+      "dreb": 34,
+      "ast": 20,
+      "tov": 12,
+      "stl": 7,
+      "blk": 6,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "31:20",
+        "pts": 13,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "25:12",
+        "pts": 4,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "36:28",
+        "pts": 31,
+        "reb": 14,
+        "ast": 4
+      },
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "35:26",
+        "pts": 16,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "30:05",
+        "pts": 13,
+        "reb": 6,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612751",
+    "total": {
+      "pts": 107,
+      "fgm": 34,
+      "fga": 87,
+      "f2m": 18,
+      "f2a": 37,
+      "f3m": 16,
+      "f3a": 50,
+      "ftm": 23,
+      "fta": 24,
+      "reb": 43,
+      "oreb": 11,
+      "dreb": 23,
+      "ast": 22,
+      "tov": 11,
+      "stl": 9,
+      "blk": 0,
+      "pf": 30
+    },
+    "starters": [
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "30:34",
+        "pts": 7,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "37:35",
+        "pts": 16,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "26:15",
+        "pts": 10,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "24",
+        "name": "CAM THOMAS",
+        "min": "32:16",
+        "pts": 40,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "77",
+        "name": "BEN SARAF",
+        "min": "14:41",
+        "pts": 0,
+        "reb": 1,
+        "ast": 5
+      }
+    ]
+  }
+}

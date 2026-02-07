@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500139",
+  "date": "2025.10.30",
+  "venue": "Fiserv Forum",
+  "attendance": 17341,
+  "home": {
+    "id": "1610612749",
+    "total": {
+      "pts": 120,
+      "fgm": 46,
+      "fga": 96,
+      "f2m": 27,
+      "f2a": 50,
+      "f3m": 19,
+      "f3a": 46,
+      "ftm": 9,
+      "fta": 13,
+      "reb": 51,
+      "oreb": 7,
+      "dreb": 27,
+      "ast": 25,
+      "tov": 12,
+      "stl": 7,
+      "blk": 2,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "GARY TRENT JR.",
+        "min": "29:56",
+        "pts": 13,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "18",
+        "name": "KYLE KUZMA",
+        "min": "35:39",
+        "pts": 10,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "29:28",
+        "pts": 17,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "32:57",
+        "pts": 10,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "36:17",
+        "pts": 32,
+        "reb": 3,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612744",
+    "total": {
+      "pts": 110,
+      "fgm": 36,
+      "fga": 85,
+      "f2m": 23,
+      "f2a": 47,
+      "f3m": 13,
+      "f3a": 38,
+      "ftm": 25,
+      "fta": 26,
+      "reb": 55,
+      "oreb": 9,
+      "dreb": 35,
+      "ast": 23,
+      "tov": 19,
+      "stl": 8,
+      "blk": 6,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "1",
+        "name": "JONATHAN KUMINGA",
+        "min": "33:50",
+        "pts": 24,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "32:38",
+        "pts": 7,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "21",
+        "name": "QUINTEN POST",
+        "min": "09:39",
+        "pts": 0,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "10",
+        "name": "JIMMY BUTLER III",
+        "min": "36:45",
+        "pts": 23,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "34:56",
+        "pts": 27,
+        "reb": 6,
+        "ast": 4
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500115",
+  "date": "2025.10.27",
+  "venue": "United Center",
+  "attendance": 18094,
+  "home": {
+    "id": "1610612741",
+    "total": {
+      "pts": 128,
+      "fgm": 48,
+      "fga": 92,
+      "f2m": 32,
+      "f2a": 49,
+      "f3m": 16,
+      "f3a": 43,
+      "ftm": 16,
+      "fta": 21,
+      "reb": 62,
+      "oreb": 12,
+      "dreb": 39,
+      "ast": 33,
+      "tov": 14,
+      "stl": 5,
+      "blk": 4,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "24:17",
+        "pts": 10,
+        "reb": 0,
+        "ast": 1
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "32:21",
+        "pts": 16,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "9",
+        "name": "NIKOLA VUČEVIĆ",
+        "min": "33:47",
+        "pts": 17,
+        "reb": 17,
+        "ast": 9
+      },
+      {
+        "no": "30",
+        "name": "TRE JONES",
+        "min": "30:42",
+        "pts": 14,
+        "reb": 7,
+        "ast": 9
+      },
+      {
+        "no": "3",
+        "name": "JOSH GIDDEY",
+        "min": "32:56",
+        "pts": 18,
+        "reb": 13,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612737",
+    "total": {
+      "pts": 123,
+      "fgm": 49,
+      "fga": 98,
+      "f2m": 38,
+      "f2a": 66,
+      "f3m": 11,
+      "f3a": 32,
+      "ftm": 14,
+      "fta": 20,
+      "reb": 42,
+      "oreb": 8,
+      "dreb": 28,
+      "ast": 32,
+      "tov": 6,
+      "stl": 8,
+      "blk": 1,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "20:19",
+        "pts": 2,
+        "reb": 0,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "31:44",
+        "pts": 25,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "KRISTAPS PORZIŅĢIS",
+        "min": "25:31",
+        "pts": 27,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "33:45",
+        "pts": 2,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "11",
+        "name": "TRAE YOUNG",
+        "min": "33:59",
+        "pts": 21,
+        "reb": 3,
+        "ast": 17
+      }
+    ]
+  }
+}

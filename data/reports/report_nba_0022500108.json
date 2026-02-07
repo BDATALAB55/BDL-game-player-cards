@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500108",
+  "date": "2025.10.26",
+  "venue": "Kaseya Center",
+  "attendance": 19600,
+  "home": {
+    "id": "1610612748",
+    "total": {
+      "pts": 115,
+      "fgm": 38,
+      "fga": 83,
+      "f2m": 25,
+      "f2a": 46,
+      "f3m": 13,
+      "f3a": 37,
+      "ftm": 26,
+      "fta": 31,
+      "reb": 58,
+      "oreb": 9,
+      "dreb": 41,
+      "ast": 25,
+      "tov": 16,
+      "stl": 7,
+      "blk": 1,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "31:12",
+        "pts": 9,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "38:19",
+        "pts": 19,
+        "reb": 13,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "KEL'EL WARE",
+        "min": "21:36",
+        "pts": 5,
+        "reb": 8,
+        "ast": 0
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "31:44",
+        "pts": 29,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "23:57",
+        "pts": 9,
+        "reb": 1,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612752",
+    "total": {
+      "pts": 107,
+      "fgm": 38,
+      "fga": 98,
+      "f2m": 23,
+      "f2a": 44,
+      "f3m": 15,
+      "f3a": 54,
+      "ftm": 16,
+      "fta": 21,
+      "reb": 59,
+      "oreb": 16,
+      "dreb": 36,
+      "ast": 23,
+      "tov": 15,
+      "stl": 9,
+      "blk": 3,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "36:32",
+        "pts": 14,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "35:51",
+        "pts": 15,
+        "reb": 18,
+        "ast": 2
+      },
+      {
+        "no": "55",
+        "name": "ARIEL HUKPORTI",
+        "min": "10:21",
+        "pts": 0,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "37:17",
+        "pts": 20,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "35:04",
+        "pts": 37,
+        "reb": 5,
+        "ast": 7
+      }
+    ]
+  }
+}

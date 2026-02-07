@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500018",
+  "date": "2025.10.24",
+  "venue": "Madison Square Garden",
+  "attendance": 19812,
+  "home": {
+    "id": "1610612752",
+    "total": {
+      "pts": 105,
+      "fgm": 33,
+      "fga": 86,
+      "f2m": 16,
+      "f2a": 41,
+      "f3m": 17,
+      "f3a": 45,
+      "ftm": 22,
+      "fta": 25,
+      "reb": 65,
+      "oreb": 21,
+      "dreb": 32,
+      "ast": 23,
+      "tov": 15,
+      "stl": 7,
+      "blk": 4,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "29:07",
+        "pts": 10,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "36:03",
+        "pts": 12,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "33:04",
+        "pts": 26,
+        "reb": 13,
+        "ast": 3
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "34:46",
+        "pts": 31,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "2",
+        "name": "MILES MCBRIDE",
+        "min": "32:17",
+        "pts": 10,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612738",
+    "total": {
+      "pts": 95,
+      "fgm": 35,
+      "fga": 82,
+      "f2m": 20,
+      "f2a": 38,
+      "f3m": 15,
+      "f3a": 44,
+      "ftm": 10,
+      "fta": 15,
+      "reb": 43,
+      "oreb": 8,
+      "dreb": 29,
+      "ast": 19,
+      "tov": 15,
+      "stl": 10,
+      "blk": 7,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "35:27",
+        "pts": 23,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "30",
+        "name": "SAM HAUSER",
+        "min": "27:44",
+        "pts": 18,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "21:38",
+        "pts": 8,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "35:52",
+        "pts": 8,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "33:09",
+        "pts": 15,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  }
+}

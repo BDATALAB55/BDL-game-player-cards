@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500024",
+  "date": "2025.10.31",
+  "venue": "FedExForum",
+  "attendance": 16122,
+  "home": {
+    "id": "1610612763",
+    "total": {
+      "pts": 112,
+      "fgm": 41,
+      "fga": 93,
+      "f2m": 27,
+      "f2a": 48,
+      "f3m": 14,
+      "f3a": 45,
+      "ftm": 16,
+      "fta": 19,
+      "reb": 51,
+      "oreb": 13,
+      "dreb": 29,
+      "ast": 28,
+      "tov": 11,
+      "stl": 9,
+      "blk": 0,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "KENTAVIOUS CALDWELL-POPE",
+        "min": "24:21",
+        "pts": 12,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "31:29",
+        "pts": 15,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "31",
+        "name": "JOCK LANDALE",
+        "min": "25:22",
+        "pts": 16,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "26:50",
+        "pts": 16,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "12",
+        "name": "JA MORANT",
+        "min": "30:58",
+        "pts": 8,
+        "reb": 1,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612747",
+    "total": {
+      "pts": 117,
+      "fgm": 39,
+      "fga": 76,
+      "f2m": 26,
+      "f2a": 38,
+      "f3m": 13,
+      "f3a": 38,
+      "ftm": 26,
+      "fta": 33,
+      "reb": 49,
+      "oreb": 5,
+      "dreb": 35,
+      "ast": 24,
+      "tov": 13,
+      "stl": 8,
+      "blk": 3,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "34:45",
+        "pts": 12,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "28",
+        "name": "RUI HACHIMURA",
+        "min": "38:05",
+        "pts": 9,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "16:43",
+        "pts": 9,
+        "reb": 0,
+        "ast": 0
+      },
+      {
+        "no": "15",
+        "name": "AUSTIN REAVES",
+        "min": "36:08",
+        "pts": 21,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "38:49",
+        "pts": 44,
+        "reb": 12,
+        "ast": 6
+      }
+    ]
+  }
+}

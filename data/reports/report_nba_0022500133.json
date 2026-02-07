@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500133",
+  "date": "2025.10.29",
+  "venue": "American Airlines Center",
+  "attendance": 19141,
+  "home": {
+    "id": "1610612742",
+    "total": {
+      "pts": 107,
+      "fgm": 36,
+      "fga": 79,
+      "f2m": 31,
+      "f2a": 55,
+      "f3m": 5,
+      "f3a": 24,
+      "ftm": 30,
+      "fta": 37,
+      "reb": 62,
+      "oreb": 7,
+      "dreb": 40,
+      "ast": 21,
+      "tov": 19,
+      "stl": 4,
+      "blk": 7,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "31",
+        "name": "KLAY THOMPSON",
+        "min": "21:41",
+        "pts": 5,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "28:37",
+        "pts": 9,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "ANTHONY DAVIS",
+        "min": "06:36",
+        "pts": 4,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "33:19",
+        "pts": 10,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "35:04",
+        "pts": 15,
+        "reb": 10,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612754",
+    "total": {
+      "pts": 105,
+      "fgm": 37,
+      "fga": 106,
+      "f2m": 24,
+      "f2a": 61,
+      "f3m": 13,
+      "f3a": 45,
+      "ftm": 18,
+      "fta": 28,
+      "reb": 67,
+      "oreb": 19,
+      "dreb": 33,
+      "ast": 20,
+      "tov": 12,
+      "stl": 8,
+      "blk": 7,
+      "pf": 29
+    },
+    "starters": [
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "36:54",
+        "pts": 27,
+        "reb": 13,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "JARACE WALKER",
+        "min": "35:42",
+        "pts": 20,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "22",
+        "name": "ISAIAH JACKSON",
+        "min": "11:24",
+        "pts": 6,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "AARON NESMITH",
+        "min": "36:54",
+        "pts": 5,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "26",
+        "name": "BEN SHEPPARD",
+        "min": "24:57",
+        "pts": 4,
+        "reb": 8,
+        "ast": 2
+      }
+    ]
+  }
+}

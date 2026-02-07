@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500106",
+  "date": "2025.10.26",
+  "venue": "Little Caesars Arena",
+  "attendance": 20062,
+  "home": {
+    "id": "1610612765",
+    "total": {
+      "pts": 119,
+      "fgm": 39,
+      "fga": 93,
+      "f2m": 30,
+      "f2a": 59,
+      "f3m": 9,
+      "f3a": 34,
+      "ftm": 32,
+      "fta": 36,
+      "reb": 66,
+      "oreb": 19,
+      "dreb": 36,
+      "ast": 22,
+      "tov": 16,
+      "stl": 7,
+      "blk": 5,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "29:51",
+        "pts": 8,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "12",
+        "name": "TOBIAS HARRIS",
+        "min": "35:07",
+        "pts": 18,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "JALEN DUREN",
+        "min": "28:13",
+        "pts": 24,
+        "reb": 18,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "36:08",
+        "pts": 21,
+        "reb": 12,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "37:43",
+        "pts": 25,
+        "reb": 3,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612738",
+    "total": {
+      "pts": 113,
+      "fgm": 40,
+      "fga": 94,
+      "f2m": 25,
+      "f2a": 49,
+      "f3m": 15,
+      "f3a": 45,
+      "ftm": 18,
+      "fta": 24,
+      "reb": 52,
+      "oreb": 12,
+      "dreb": 26,
+      "ast": 17,
+      "tov": 12,
+      "stl": 11,
+      "blk": 8,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "28",
+        "name": "HUGO GONZÁLEZ",
+        "min": "18:22",
+        "pts": 0,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "35:29",
+        "pts": 41,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "26:28",
+        "pts": 4,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "36:54",
+        "pts": 15,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "33:56",
+        "pts": 21,
+        "reb": 10,
+        "ast": 4
+      }
+    ]
+  }
+}

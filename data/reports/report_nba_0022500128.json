@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500128",
+  "date": "2025.10.29",
+  "venue": "TD Garden",
+  "attendance": 19156,
+  "home": {
+    "id": "1610612738",
+    "total": {
+      "pts": 125,
+      "fgm": 42,
+      "fga": 95,
+      "f2m": 21,
+      "f2a": 38,
+      "f3m": 21,
+      "f3a": 57,
+      "ftm": 20,
+      "fta": 24,
+      "reb": 60,
+      "oreb": 18,
+      "dreb": 34,
+      "ast": 29,
+      "tov": 8,
+      "stl": 11,
+      "blk": 3,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "31:50",
+        "pts": 30,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "8",
+        "name": "JOSH MINOTT",
+        "min": "32:54",
+        "pts": 11,
+        "reb": 14,
+        "ast": 2
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "25:39",
+        "pts": 10,
+        "reb": 13,
+        "ast": 3
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "31:43",
+        "pts": 10,
+        "reb": 3,
+        "ast": 10
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "34:49",
+        "pts": 19,
+        "reb": 5,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612739",
+    "total": {
+      "pts": 105,
+      "fgm": 35,
+      "fga": 87,
+      "f2m": 18,
+      "f2a": 35,
+      "f3m": 17,
+      "f3a": 52,
+      "ftm": 18,
+      "fta": 24,
+      "reb": 55,
+      "oreb": 11,
+      "dreb": 31,
+      "ast": 25,
+      "tov": 14,
+      "stl": 6,
+      "blk": 4,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "DE'ANDRE HUNTER",
+        "min": "30:14",
+        "pts": 18,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "34:06",
+        "pts": 19,
+        "reb": 11,
+        "ast": 4
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "25:02",
+        "pts": 16,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "20",
+        "name": "JAYLON TYSON",
+        "min": "26:31",
+        "pts": 19,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "31:56",
+        "pts": 15,
+        "reb": 4,
+        "ast": 6
+      }
+    ]
+  }
+}

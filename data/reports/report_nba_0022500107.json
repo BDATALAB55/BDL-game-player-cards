@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500107",
+  "date": "2025.10.26",
+  "venue": "Rocket Arena",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612739",
+    "total": {
+      "pts": 118,
+      "fgm": 39,
+      "fga": 87,
+      "f2m": 27,
+      "f2a": 47,
+      "f3m": 12,
+      "f3a": 40,
+      "ftm": 28,
+      "fta": 35,
+      "reb": 58,
+      "oreb": 10,
+      "dreb": 34,
+      "ast": 23,
+      "tov": 16,
+      "stl": 10,
+      "blk": 2,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "DE'ANDRE HUNTER",
+        "min": "26:42",
+        "pts": 16,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "34:02",
+        "pts": 23,
+        "reb": 8,
+        "ast": 6
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "26:09",
+        "pts": 8,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "SAM MERRILL",
+        "min": "30:20",
+        "pts": 17,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "33:24",
+        "pts": 24,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612749",
+    "total": {
+      "pts": 113,
+      "fgm": 40,
+      "fga": 79,
+      "f2m": 27,
+      "f2a": 46,
+      "f3m": 13,
+      "f3a": 33,
+      "ftm": 20,
+      "fta": 28,
+      "reb": 44,
+      "oreb": 9,
+      "dreb": 28,
+      "ast": 25,
+      "tov": 17,
+      "stl": 12,
+      "blk": 6,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "GARY TRENT JR.",
+        "min": "28:22",
+        "pts": 6,
+        "reb": 0,
+        "ast": 2
+      },
+      {
+        "no": "34",
+        "name": "GIANNIS ANTETOKOUNMPO",
+        "min": "33:18",
+        "pts": 40,
+        "reb": 14,
+        "ast": 9
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "31:10",
+        "pts": 13,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "30:57",
+        "pts": 20,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "33:53",
+        "pts": 14,
+        "reb": 4,
+        "ast": 8
+      }
+    ]
+  }
+}

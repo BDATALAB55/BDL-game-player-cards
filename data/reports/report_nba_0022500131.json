@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500131",
+  "date": "2025.10.29",
+  "venue": "Scotiabank Arena",
+  "attendance": 17234,
+  "home": {
+    "id": "1610612761",
+    "total": {
+      "pts": 121,
+      "fgm": 43,
+      "fga": 85,
+      "f2m": 22,
+      "f2a": 45,
+      "f3m": 21,
+      "f3a": 40,
+      "ftm": 14,
+      "fta": 19,
+      "reb": 29,
+      "oreb": 4,
+      "dreb": 18,
+      "ast": 29,
+      "tov": 10,
+      "stl": 6,
+      "blk": 2,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "33:26",
+        "pts": 29,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "32:49",
+        "pts": 31,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "12",
+        "name": "COLLIN MURRAY-BOYLES",
+        "min": "25:15",
+        "pts": 13,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "32:49",
+        "pts": 10,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "30:36",
+        "pts": 15,
+        "reb": 3,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612745",
+    "total": {
+      "pts": 139,
+      "fgm": 50,
+      "fga": 87,
+      "f2m": 37,
+      "f2a": 57,
+      "f3m": 13,
+      "f3a": 30,
+      "ftm": 26,
+      "fta": 34,
+      "reb": 64,
+      "oreb": 17,
+      "dreb": 36,
+      "ast": 31,
+      "tov": 15,
+      "stl": 9,
+      "blk": 8,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "36:45",
+        "pts": 31,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "37:49",
+        "pts": 25,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "35:06",
+        "pts": 18,
+        "reb": 8,
+        "ast": 9
+      },
+      {
+        "no": "20",
+        "name": "JOSH OKOGIE",
+        "min": "23:28",
+        "pts": 10,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "40:02",
+        "pts": 18,
+        "reb": 9,
+        "ast": 7
+      }
+    ]
+  }
+}

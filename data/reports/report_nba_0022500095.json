@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500095",
+  "date": "2025.10.24",
+  "venue": "Smoothie King Center",
+  "attendance": 18363,
+  "home": {
+    "id": "1610612740",
+    "total": {
+      "pts": 116,
+      "fgm": 42,
+      "fga": 97,
+      "f2m": 32,
+      "f2a": 65,
+      "f3m": 10,
+      "f3a": 32,
+      "ftm": 22,
+      "fta": 29,
+      "reb": 55,
+      "oreb": 16,
+      "dreb": 29,
+      "ast": 24,
+      "tov": 13,
+      "stl": 10,
+      "blk": 3,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "25",
+        "name": "TREY MURPHY III",
+        "min": "45:50",
+        "pts": 24,
+        "reb": 10,
+        "ast": 5
+      },
+      {
+        "no": "1",
+        "name": "ZION WILLIAMSON",
+        "min": "36:59",
+        "pts": 27,
+        "reb": 10,
+        "ast": 7
+      },
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "27:46",
+        "pts": 9,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "HERBERT JONES",
+        "min": "28:21",
+        "pts": 0,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "JORDAN POOLE",
+        "min": "41:22",
+        "pts": 21,
+        "reb": 4,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 120,
+      "fgm": 45,
+      "fga": 98,
+      "f2m": 32,
+      "f2a": 55,
+      "f3m": 13,
+      "f3a": 43,
+      "ftm": 17,
+      "fta": 26,
+      "reb": 71,
+      "oreb": 20,
+      "dreb": 39,
+      "ast": 25,
+      "tov": 18,
+      "stl": 6,
+      "blk": 13,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "35:57",
+        "pts": 7,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "34:12",
+        "pts": 7,
+        "reb": 1,
+        "ast": 5
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "32:17",
+        "pts": 29,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "39:48",
+        "pts": 23,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "33:26",
+        "pts": 16,
+        "reb": 5,
+        "ast": 6
+      }
+    ]
+  }
+}

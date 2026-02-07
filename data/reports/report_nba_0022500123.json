@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500123",
+  "date": "2025.10.28",
+  "venue": "Capital One Arena",
+  "attendance": 15529,
+  "home": {
+    "id": "1610612764",
+    "total": {
+      "pts": 134,
+      "fgm": 51,
+      "fga": 107,
+      "f2m": 34,
+      "f2a": 64,
+      "f3m": 17,
+      "f3a": 43,
+      "ftm": 15,
+      "fta": 21,
+      "reb": 60,
+      "oreb": 13,
+      "dreb": 37,
+      "ast": 33,
+      "tov": 15,
+      "stl": 10,
+      "blk": 5,
+      "pf": 30
+    },
+    "starters": [
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "40:11",
+        "pts": 20,
+        "reb": 9,
+        "ast": 7
+      },
+      {
+        "no": "22",
+        "name": "KHRIS MIDDLETON",
+        "min": "30:36",
+        "pts": 13,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "34:05",
+        "pts": 31,
+        "reb": 11,
+        "ast": 5
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "39:40",
+        "pts": 14,
+        "reb": 1,
+        "ast": 7
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "37:42",
+        "pts": 10,
+        "reb": 5,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612755",
+    "total": {
+      "pts": 139,
+      "fgm": 45,
+      "fga": 100,
+      "f2m": 28,
+      "f2a": 58,
+      "f3m": 17,
+      "f3a": 42,
+      "ftm": 32,
+      "fta": 37,
+      "reb": 62,
+      "oreb": 18,
+      "dreb": 37,
+      "ast": 26,
+      "tov": 14,
+      "stl": 7,
+      "blk": 11,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "11",
+        "name": "JUSTIN EDWARDS",
+        "min": "14:12",
+        "pts": 3,
+        "reb": 0,
+        "ast": 0
+      },
+      {
+        "no": "9",
+        "name": "KELLY OUBRE JR.",
+        "min": "43:48",
+        "pts": 17,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "JOEL EMBIID",
+        "min": "23:01",
+        "pts": 25,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "39:59",
+        "pts": 14,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "TYRESE MAXEY",
+        "min": "47:26",
+        "pts": 39,
+        "reb": 3,
+        "ast": 10
+      }
+    ]
+  }
+}

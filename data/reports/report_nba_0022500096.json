@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500096",
+  "date": "2025.10.24",
+  "venue": "American Airlines Center",
+  "attendance": 19225,
+  "home": {
+    "id": "1610612742",
+    "total": {
+      "pts": 107,
+      "fgm": 38,
+      "fga": 88,
+      "f2m": 28,
+      "f2a": 54,
+      "f3m": 10,
+      "f3a": 34,
+      "ftm": 21,
+      "fta": 27,
+      "reb": 56,
+      "oreb": 9,
+      "dreb": 39,
+      "ast": 23,
+      "tov": 21,
+      "stl": 11,
+      "blk": 5,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "39:17",
+        "pts": 18,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "ANTHONY DAVIS",
+        "min": "37:39",
+        "pts": 27,
+        "reb": 13,
+        "ast": 4
+      },
+      {
+        "no": "2",
+        "name": "DERECK LIVELY II",
+        "min": "19:17",
+        "pts": 8,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "31",
+        "name": "KLAY THOMPSON",
+        "min": "17:15",
+        "pts": 8,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "34:39",
+        "pts": 18,
+        "reb": 5,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612764",
+    "total": {
+      "pts": 117,
+      "fgm": 41,
+      "fga": 90,
+      "f2m": 26,
+      "f2a": 54,
+      "f3m": 15,
+      "f3a": 36,
+      "ftm": 20,
+      "fta": 29,
+      "reb": 58,
+      "oreb": 10,
+      "dreb": 38,
+      "ast": 27,
+      "tov": 15,
+      "stl": 11,
+      "blk": 8,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "22",
+        "name": "KHRIS MIDDLETON",
+        "min": "29:50",
+        "pts": 9,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "35:18",
+        "pts": 34,
+        "reb": 11,
+        "ast": 4
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "25:42",
+        "pts": 14,
+        "reb": 9,
+        "ast": 5
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "33:27",
+        "pts": 6,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "26:13",
+        "pts": 7,
+        "reb": 3,
+        "ast": 3
+      }
+    ]
+  }
+}

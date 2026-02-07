@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500136",
+  "date": "2025.10.29",
+  "venue": "Target Center",
+  "attendance": 15308,
+  "home": {
+    "id": "1610612750",
+    "total": {
+      "pts": 115,
+      "fgm": 41,
+      "fga": 82,
+      "f2m": 26,
+      "f2a": 52,
+      "f3m": 15,
+      "f3a": 30,
+      "ftm": 18,
+      "fta": 22,
+      "reb": 43,
+      "oreb": 9,
+      "dreb": 25,
+      "ast": 30,
+      "tov": 18,
+      "stl": 8,
+      "blk": 5,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JADEN MCDANIELS",
+        "min": "40:57",
+        "pts": 30,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "30",
+        "name": "JULIUS RANDLE",
+        "min": "35:31",
+        "pts": 33,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "27",
+        "name": "RUDY GOBERT",
+        "min": "38:13",
+        "pts": 9,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "DONTE DIVINCENZO",
+        "min": "33:42",
+        "pts": 14,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "10",
+        "name": "MIKE CONLEY",
+        "min": "28:23",
+        "pts": 8,
+        "reb": 4,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612747",
+    "total": {
+      "pts": 116,
+      "fgm": 45,
+      "fga": 83,
+      "f2m": 34,
+      "f2a": 52,
+      "f3m": 11,
+      "f3a": 31,
+      "ftm": 15,
+      "fta": 22,
+      "reb": 49,
+      "oreb": 11,
+      "dreb": 29,
+      "ast": 34,
+      "tov": 18,
+      "stl": 6,
+      "blk": 5,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "JARRED VANDERBILT",
+        "min": "26:26",
+        "pts": 3,
+        "reb": 12,
+        "ast": 4
+      },
+      {
+        "no": "28",
+        "name": "RUI HACHIMURA",
+        "min": "37:11",
+        "pts": 17,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "35:17",
+        "pts": 17,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "12",
+        "name": "JAKE LARAVIA",
+        "min": "37:16",
+        "pts": 27,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "AUSTIN REAVES",
+        "min": "39:38",
+        "pts": 28,
+        "reb": 1,
+        "ast": 16
+      }
+    ]
+  }
+}

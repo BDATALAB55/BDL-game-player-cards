@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500091",
+  "date": "2025.10.24",
+  "venue": "Barclays Center",
+  "attendance": 17548,
+  "home": {
+    "id": "1610612751",
+    "total": {
+      "pts": 124,
+      "fgm": 49,
+      "fga": 95,
+      "f2m": 30,
+      "f2a": 51,
+      "f3m": 19,
+      "f3a": 44,
+      "ftm": 7,
+      "fta": 7,
+      "reb": 46,
+      "oreb": 10,
+      "dreb": 28,
+      "ast": 30,
+      "tov": 19,
+      "stl": 9,
+      "blk": 0,
+      "pf": 28
+    },
+    "starters": [
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "24:11",
+        "pts": 4,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "36:24",
+        "pts": 31,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "31:10",
+        "pts": 10,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "24",
+        "name": "CAM THOMAS",
+        "min": "34:29",
+        "pts": 33,
+        "reb": 2,
+        "ast": 9
+      },
+      {
+        "no": "77",
+        "name": "BEN SARAF",
+        "min": "18:28",
+        "pts": 2,
+        "reb": 0,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612739",
+    "total": {
+      "pts": 131,
+      "fgm": 44,
+      "fga": 82,
+      "f2m": 26,
+      "f2a": 40,
+      "f3m": 18,
+      "f3a": 42,
+      "ftm": 25,
+      "fta": 35,
+      "reb": 51,
+      "oreb": 9,
+      "dreb": 27,
+      "ast": 32,
+      "tov": 17,
+      "stl": 14,
+      "blk": 5,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "JAYLON TYSON",
+        "min": "22:35",
+        "pts": 8,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "34:13",
+        "pts": 13,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "30:24",
+        "pts": 22,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "SAM MERRILL",
+        "min": "26:20",
+        "pts": 22,
+        "reb": 1,
+        "ast": 5
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "34:52",
+        "pts": 35,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  }
+}

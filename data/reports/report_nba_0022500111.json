@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500111",
+  "date": "2025.10.26",
+  "venue": "American Airlines Center",
+  "attendance": 19232,
+  "home": {
+    "id": "1610612742",
+    "total": {
+      "pts": 139,
+      "fgm": 50,
+      "fga": 85,
+      "f2m": 40,
+      "f2a": 59,
+      "f3m": 10,
+      "f3a": 26,
+      "ftm": 29,
+      "fta": 39,
+      "reb": 52,
+      "oreb": 12,
+      "dreb": 37,
+      "ast": 32,
+      "tov": 20,
+      "stl": 12,
+      "blk": 7,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "31:53",
+        "pts": 17,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "3",
+        "name": "ANTHONY DAVIS",
+        "min": "34:31",
+        "pts": 25,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "DERECK LIVELY II",
+        "min": "21:00",
+        "pts": 4,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "31",
+        "name": "KLAY THOMPSON",
+        "min": "20:00",
+        "pts": 10,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "28:53",
+        "pts": 22,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612761",
+    "total": {
+      "pts": 129,
+      "fgm": 49,
+      "fga": 100,
+      "f2m": 36,
+      "f2a": 67,
+      "f3m": 13,
+      "f3a": 33,
+      "ftm": 18,
+      "fta": 24,
+      "reb": 51,
+      "oreb": 14,
+      "dreb": 29,
+      "ast": 33,
+      "tov": 14,
+      "stl": 10,
+      "blk": 1,
+      "pf": 28
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "31:51",
+        "pts": 22,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "33:44",
+        "pts": 33,
+        "reb": 11,
+        "ast": 6
+      },
+      {
+        "no": "19",
+        "name": "JAKOB POELTL",
+        "min": "18:59",
+        "pts": 4,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "27:56",
+        "pts": 16,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "31:42",
+        "pts": 14,
+        "reb": 5,
+        "ast": 5
+      }
+    ]
+  }
+}

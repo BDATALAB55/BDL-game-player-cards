@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500126",
+  "date": "2025.10.28",
+  "venue": "Paycom Center",
+  "attendance": 18203,
+  "home": {
+    "id": "1610612760",
+    "total": {
+      "pts": 107,
+      "fgm": 42,
+      "fga": 92,
+      "f2m": 28,
+      "f2a": 48,
+      "f3m": 14,
+      "f3a": 44,
+      "ftm": 9,
+      "fta": 10,
+      "reb": 51,
+      "oreb": 10,
+      "dreb": 34,
+      "ast": 26,
+      "tov": 15,
+      "stl": 11,
+      "blk": 10,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "34:55",
+        "pts": 13,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "AARON WIGGINS",
+        "min": "33:40",
+        "pts": 18,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "55",
+        "name": "ISAIAH HARTENSTEIN",
+        "min": "30:49",
+        "pts": 4,
+        "reb": 14,
+        "ast": 3
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "26:33",
+        "pts": 8,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "35:47",
+        "pts": 31,
+        "reb": 9,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612758",
+    "total": {
+      "pts": 101,
+      "fgm": 36,
+      "fga": 85,
+      "f2m": 26,
+      "f2a": 56,
+      "f3m": 10,
+      "f3a": 29,
+      "ftm": 19,
+      "fta": 21,
+      "reb": 51,
+      "oreb": 9,
+      "dreb": 37,
+      "ast": 21,
+      "tov": 17,
+      "stl": 11,
+      "blk": 3,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "ZACH LAVINE",
+        "min": "35:12",
+        "pts": 23,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "33:21",
+        "pts": 19,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "11",
+        "name": "DOMANTAS SABONIS",
+        "min": "35:12",
+        "pts": 10,
+        "reb": 18,
+        "ast": 3
+      },
+      {
+        "no": "17",
+        "name": "DENNIS SCHRÖDER",
+        "min": "31:43",
+        "pts": 8,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "30:18",
+        "pts": 16,
+        "reb": 9,
+        "ast": 4
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500103",
+  "date": "2025.10.25",
+  "venue": "FedExForum",
+  "attendance": 15441,
+  "home": {
+    "id": "1610612763",
+    "total": {
+      "pts": 128,
+      "fgm": 44,
+      "fga": 97,
+      "f2m": 29,
+      "f2a": 58,
+      "f3m": 15,
+      "f3a": 39,
+      "ftm": 25,
+      "fta": 32,
+      "reb": 67,
+      "oreb": 10,
+      "dreb": 39,
+      "ast": 31,
+      "tov": 4,
+      "stl": 6,
+      "blk": 4,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "KENTAVIOUS CALDWELL-POPE",
+        "min": "23:17",
+        "pts": 10,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "25:03",
+        "pts": 17,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "31",
+        "name": "JOCK LANDALE",
+        "min": "25:55",
+        "pts": 8,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "27:14",
+        "pts": 5,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "12",
+        "name": "JA MORANT",
+        "min": "27:14",
+        "pts": 19,
+        "reb": 3,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612754",
+    "total": {
+      "pts": 103,
+      "fgm": 36,
+      "fga": 89,
+      "f2m": 22,
+      "f2a": 49,
+      "f3m": 14,
+      "f3a": 40,
+      "ftm": 17,
+      "fta": 23,
+      "reb": 53,
+      "oreb": 11,
+      "dreb": 33,
+      "ast": 25,
+      "tov": 13,
+      "stl": 2,
+      "blk": 5,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "AARON NESMITH",
+        "min": "31:10",
+        "pts": 15,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "25:46",
+        "pts": 13,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "11",
+        "name": "JAMES WISEMAN",
+        "min": "19:51",
+        "pts": 4,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "00",
+        "name": "BENNEDICT MATHURIN",
+        "min": "27:43",
+        "pts": 26,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "26",
+        "name": "BEN SHEPPARD",
+        "min": "24:15",
+        "pts": 9,
+        "reb": 5,
+        "ast": 3
+      }
+    ]
+  }
+}

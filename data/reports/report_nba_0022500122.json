@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500122",
+  "date": "2025.10.27",
+  "venue": "Crypto.com Arena",
+  "attendance": 18512,
+  "home": {
+    "id": "1610612747",
+    "total": {
+      "pts": 108,
+      "fgm": 40,
+      "fga": 86,
+      "f2m": 33,
+      "f2a": 59,
+      "f3m": 7,
+      "f3a": 27,
+      "ftm": 21,
+      "fta": 26,
+      "reb": 54,
+      "oreb": 12,
+      "dreb": 30,
+      "ast": 23,
+      "tov": 23,
+      "stl": 11,
+      "blk": 5,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "JARRED VANDERBILT",
+        "min": "28:02",
+        "pts": 14,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "28",
+        "name": "RUI HACHIMURA",
+        "min": "36:25",
+        "pts": 16,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "35:33",
+        "pts": 16,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "12",
+        "name": "JAKE LARAVIA",
+        "min": "29:05",
+        "pts": 3,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "15",
+        "name": "AUSTIN REAVES",
+        "min": "39:09",
+        "pts": 41,
+        "reb": 4,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612757",
+    "total": {
+      "pts": 122,
+      "fgm": 47,
+      "fga": 103,
+      "f2m": 33,
+      "f2a": 60,
+      "f3m": 14,
+      "f3a": 43,
+      "ftm": 14,
+      "fta": 15,
+      "reb": 55,
+      "oreb": 19,
+      "dreb": 30,
+      "ast": 24,
+      "tov": 18,
+      "stl": 12,
+      "blk": 9,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "32:24",
+        "pts": 25,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "30:17",
+        "pts": 4,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "26:16",
+        "pts": 16,
+        "reb": 14,
+        "ast": 2
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "28:44",
+        "pts": 16,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "JRUE HOLIDAY",
+        "min": "30:23",
+        "pts": 24,
+        "reb": 5,
+        "ast": 6
+      }
+    ]
+  }
+}

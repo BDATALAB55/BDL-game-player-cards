@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500023",
+  "date": "2025.10.31",
+  "venue": "United Center",
+  "attendance": 18330,
+  "home": {
+    "id": "1610612741",
+    "total": {
+      "pts": 135,
+      "fgm": 45,
+      "fga": 84,
+      "f2m": 28,
+      "f2a": 47,
+      "f3m": 17,
+      "f3a": 37,
+      "ftm": 28,
+      "fta": 35,
+      "reb": 52,
+      "oreb": 6,
+      "dreb": 35,
+      "ast": 31,
+      "tov": 7,
+      "stl": 8,
+      "blk": 6,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "16:07",
+        "pts": 3,
+        "reb": 0,
+        "ast": 0
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "29:10",
+        "pts": 13,
+        "reb": 0,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "NIKOLA VUČEVIĆ",
+        "min": "30:52",
+        "pts": 26,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "TRE JONES",
+        "min": "24:02",
+        "pts": 8,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "JOSH GIDDEY",
+        "min": "38:29",
+        "pts": 32,
+        "reb": 10,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612752",
+    "total": {
+      "pts": 125,
+      "fgm": 45,
+      "fga": 91,
+      "f2m": 27,
+      "f2a": 46,
+      "f3m": 18,
+      "f3a": 45,
+      "ftm": 17,
+      "fta": 23,
+      "reb": 46,
+      "oreb": 12,
+      "dreb": 27,
+      "ast": 27,
+      "tov": 12,
+      "stl": 3,
+      "blk": 5,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "36:28",
+        "pts": 26,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "31:42",
+        "pts": 22,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "23",
+        "name": "MITCHELL ROBINSON",
+        "min": "19:35",
+        "pts": 4,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "37:42",
+        "pts": 23,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "35:08",
+        "pts": 29,
+        "reb": 2,
+        "ast": 7
+      }
+    ]
+  }
+}

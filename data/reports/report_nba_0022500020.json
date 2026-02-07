@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500020",
+  "date": "2025.10.31",
+  "venue": "Gainbridge Fieldhouse",
+  "attendance": 16212,
+  "home": {
+    "id": "1610612754",
+    "total": {
+      "pts": 108,
+      "fgm": 35,
+      "fga": 99,
+      "f2m": 22,
+      "f2a": 52,
+      "f3m": 13,
+      "f3a": 47,
+      "ftm": 25,
+      "fta": 33,
+      "reb": 61,
+      "oreb": 18,
+      "dreb": 31,
+      "ast": 23,
+      "tov": 12,
+      "stl": 6,
+      "blk": 3,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "AARON NESMITH",
+        "min": "25:10",
+        "pts": 12,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "29:47",
+        "pts": 18,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "22",
+        "name": "ISAIAH JACKSON",
+        "min": "27:03",
+        "pts": 9,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "JARACE WALKER",
+        "min": "27:54",
+        "pts": 17,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "29",
+        "name": "QUENTON JACKSON",
+        "min": "22:16",
+        "pts": 15,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612737",
+    "total": {
+      "pts": 128,
+      "fgm": 51,
+      "fga": 94,
+      "f2m": 41,
+      "f2a": 64,
+      "f3m": 10,
+      "f3a": 30,
+      "ftm": 16,
+      "fta": 20,
+      "reb": 58,
+      "oreb": 12,
+      "dreb": 43,
+      "ast": 30,
+      "tov": 10,
+      "stl": 10,
+      "blk": 5,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "22:35",
+        "pts": 13,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "33:17",
+        "pts": 22,
+        "reb": 13,
+        "ast": 8
+      },
+      {
+        "no": "8",
+        "name": "KRISTAPS PORZIŅĢIS",
+        "min": "23:29",
+        "pts": 15,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "37:41",
+        "pts": 18,
+        "reb": 9,
+        "ast": 6
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "32:06",
+        "pts": 21,
+        "reb": 3,
+        "ast": 3
+      }
+    ]
+  }
+}

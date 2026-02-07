@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500130",
+  "date": "2025.10.29",
+  "venue": "Barclays Center",
+  "attendance": 17548,
+  "home": {
+    "id": "1610612751",
+    "total": {
+      "pts": 112,
+      "fgm": 40,
+      "fga": 88,
+      "f2m": 29,
+      "f2a": 51,
+      "f3m": 11,
+      "f3a": 37,
+      "ftm": 21,
+      "fta": 27,
+      "reb": 60,
+      "oreb": 15,
+      "dreb": 32,
+      "ast": 23,
+      "tov": 16,
+      "stl": 4,
+      "blk": 4,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "29:31",
+        "pts": 11,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "32:58",
+        "pts": 32,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "28:34",
+        "pts": 18,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "24",
+        "name": "CAM THOMAS",
+        "min": "35:14",
+        "pts": 19,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "77",
+        "name": "BEN SARAF",
+        "min": "12:26",
+        "pts": 0,
+        "reb": 2,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612737",
+    "total": {
+      "pts": 117,
+      "fgm": 44,
+      "fga": 93,
+      "f2m": 31,
+      "f2a": 60,
+      "f3m": 13,
+      "f3a": 33,
+      "ftm": 16,
+      "fta": 22,
+      "reb": 50,
+      "oreb": 13,
+      "dreb": 31,
+      "ast": 33,
+      "tov": 8,
+      "stl": 11,
+      "blk": 8,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "27:48",
+        "pts": 8,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "29:25",
+        "pts": 23,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "8",
+        "name": "KRISTAPS PORZIŅĢIS",
+        "min": "24:35",
+        "pts": 14,
+        "reb": 6,
+        "ast": 7
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "34:36",
+        "pts": 7,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "11",
+        "name": "TRAE YOUNG",
+        "min": "07:08",
+        "pts": 6,
+        "reb": 1,
+        "ast": 1
+      }
+    ]
+  }
+}

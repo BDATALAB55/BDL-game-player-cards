@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500129",
+  "date": "2025.10.29",
+  "venue": "Little Caesars Arena",
+  "attendance": 19244,
+  "home": {
+    "id": "1610612765",
+    "total": {
+      "pts": 135,
+      "fgm": 46,
+      "fga": 93,
+      "f2m": 33,
+      "f2a": 61,
+      "f3m": 13,
+      "f3a": 32,
+      "ftm": 30,
+      "fta": 34,
+      "reb": 58,
+      "oreb": 14,
+      "dreb": 32,
+      "ast": 29,
+      "tov": 13,
+      "stl": 11,
+      "blk": 8,
+      "pf": 28
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "29:10",
+        "pts": 12,
+        "reb": 11,
+        "ast": 6
+      },
+      {
+        "no": "12",
+        "name": "TOBIAS HARRIS",
+        "min": "30:23",
+        "pts": 23,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "JALEN DUREN",
+        "min": "32:41",
+        "pts": 21,
+        "reb": 13,
+        "ast": 2
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "29:20",
+        "pts": 15,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "35:45",
+        "pts": 30,
+        "reb": 6,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612753",
+    "total": {
+      "pts": 116,
+      "fgm": 38,
+      "fga": 83,
+      "f2m": 26,
+      "f2a": 52,
+      "f3m": 12,
+      "f3a": 31,
+      "ftm": 28,
+      "fta": 40,
+      "reb": 52,
+      "oreb": 15,
+      "dreb": 28,
+      "ast": 22,
+      "tov": 16,
+      "stl": 5,
+      "blk": 5,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "22",
+        "name": "FRANZ WAGNER",
+        "min": "33:24",
+        "pts": 22,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "34:33",
+        "pts": 24,
+        "reb": 11,
+        "ast": 7
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "15:12",
+        "pts": 8,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "30:47",
+        "pts": 12,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "20:41",
+        "pts": 8,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500101",
+  "date": "2025.10.25",
+  "venue": "State Farm Arena",
+  "attendance": 16450,
+  "home": {
+    "id": "1610612737",
+    "total": {
+      "pts": 100,
+      "fgm": 35,
+      "fga": 85,
+      "f2m": 19,
+      "f2a": 46,
+      "f3m": 16,
+      "f3a": 39,
+      "ftm": 14,
+      "fta": 21,
+      "reb": 53,
+      "oreb": 15,
+      "dreb": 31,
+      "ast": 25,
+      "tov": 16,
+      "stl": 7,
+      "blk": 5,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "29:32",
+        "pts": 17,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "18",
+        "name": "MOUHAMED GUEYE",
+        "min": "23:09",
+        "pts": 11,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "34:53",
+        "pts": 11,
+        "reb": 12,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "27:14",
+        "pts": 8,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "11",
+        "name": "TRAE YOUNG",
+        "min": "30:15",
+        "pts": 15,
+        "reb": 4,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612760",
+    "total": {
+      "pts": 117,
+      "fgm": 43,
+      "fga": 93,
+      "f2m": 29,
+      "f2a": 56,
+      "f3m": 14,
+      "f3a": 37,
+      "ftm": 17,
+      "fta": 19,
+      "reb": 56,
+      "oreb": 15,
+      "dreb": 35,
+      "ast": 21,
+      "tov": 12,
+      "stl": 13,
+      "blk": 3,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "27:09",
+        "pts": 5,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "27:13",
+        "pts": 31,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "55",
+        "name": "ISAIAH HARTENSTEIN",
+        "min": "29:01",
+        "pts": 14,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "25:36",
+        "pts": 3,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "28:44",
+        "pts": 30,
+        "reb": 5,
+        "ast": 5
+      }
+    ]
+  }
+}

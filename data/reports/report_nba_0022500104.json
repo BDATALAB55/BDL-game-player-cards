@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500104",
+  "date": "2025.10.25",
+  "venue": "Ball Arena",
+  "attendance": 20025,
+  "home": {
+    "id": "1610612743",
+    "total": {
+      "pts": 133,
+      "fgm": 43,
+      "fga": 84,
+      "f2m": 34,
+      "f2a": 53,
+      "f3m": 9,
+      "f3a": 31,
+      "ftm": 38,
+      "fta": 42,
+      "reb": 53,
+      "oreb": 11,
+      "dreb": 32,
+      "ast": 31,
+      "tov": 16,
+      "stl": 14,
+      "blk": 1,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "CAMERON JOHNSON",
+        "min": "24:39",
+        "pts": 15,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "32",
+        "name": "AARON GORDON",
+        "min": "25:12",
+        "pts": 17,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "32:02",
+        "pts": 14,
+        "reb": 14,
+        "ast": 15
+      },
+      {
+        "no": "0",
+        "name": "CHRISTIAN BRAUN",
+        "min": "31:07",
+        "pts": 20,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "31:45",
+        "pts": 23,
+        "reb": 6,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612756",
+    "total": {
+      "pts": 111,
+      "fgm": 38,
+      "fga": 88,
+      "f2m": 21,
+      "f2a": 38,
+      "f3m": 17,
+      "f3a": 50,
+      "ftm": 18,
+      "fta": 22,
+      "reb": 47,
+      "oreb": 12,
+      "dreb": 26,
+      "ast": 24,
+      "tov": 19,
+      "stl": 7,
+      "blk": 4,
+      "pf": 29
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "31:01",
+        "pts": 15,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "RYAN DUNN",
+        "min": "23:13",
+        "pts": 9,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "11",
+        "name": "OSO IGHODARO",
+        "min": "23:11",
+        "pts": 4,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "GRAYSON ALLEN",
+        "min": "33:08",
+        "pts": 17,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "36:36",
+        "pts": 31,
+        "reb": 3,
+        "ast": 7
+      }
+    ]
+  }
+}

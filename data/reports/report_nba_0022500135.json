@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500135",
+  "date": "2025.10.29",
+  "venue": "Delta Center",
+  "attendance": 18186,
+  "home": {
+    "id": "1610612762",
+    "total": {
+      "pts": 134,
+      "fgm": 41,
+      "fga": 84,
+      "f2m": 30,
+      "f2a": 49,
+      "f3m": 11,
+      "f3a": 35,
+      "ftm": 41,
+      "fta": 49,
+      "reb": 54,
+      "oreb": 16,
+      "dreb": 30,
+      "ast": 30,
+      "tov": 21,
+      "stl": 10,
+      "blk": 7,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LAURI MARKKANEN",
+        "min": "37:52",
+        "pts": 32,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "KYLE FILIPOWSKI",
+        "min": "15:37",
+        "pts": 8,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "24",
+        "name": "WALKER KESSLER",
+        "min": "31:46",
+        "pts": 18,
+        "reb": 12,
+        "ast": 4
+      },
+      {
+        "no": "10",
+        "name": "SVI MYKHAILIUK",
+        "min": "22:59",
+        "pts": 7,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "32:02",
+        "pts": 29,
+        "reb": 2,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612757",
+    "total": {
+      "pts": 136,
+      "fgm": 46,
+      "fga": 96,
+      "f2m": 25,
+      "f2a": 41,
+      "f3m": 21,
+      "f3a": 55,
+      "ftm": 23,
+      "fta": 27,
+      "reb": 52,
+      "oreb": 14,
+      "dreb": 25,
+      "ast": 34,
+      "tov": 16,
+      "stl": 14,
+      "blk": 5,
+      "pf": 33
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "34:03",
+        "pts": 19,
+        "reb": 9,
+        "ast": 5
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "31:25",
+        "pts": 17,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "27:39",
+        "pts": 5,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "24:20",
+        "pts": 18,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "JRUE HOLIDAY",
+        "min": "35:29",
+        "pts": 27,
+        "reb": 5,
+        "ast": 8
+      }
+    ]
+  }
+}

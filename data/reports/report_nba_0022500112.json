@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500112",
+  "date": "2025.10.26",
+  "venue": "Intuit Dome",
+  "attendance": 17927,
+  "home": {
+    "id": "1610612746",
+    "total": {
+      "pts": 114,
+      "fgm": 44,
+      "fga": 80,
+      "f2m": 32,
+      "f2a": 49,
+      "f3m": 12,
+      "f3a": 31,
+      "ftm": 14,
+      "fta": 15,
+      "reb": 51,
+      "oreb": 7,
+      "dreb": 39,
+      "ast": 26,
+      "tov": 22,
+      "stl": 11,
+      "blk": 8,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "35:18",
+        "pts": 30,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "DERRICK JONES JR.",
+        "min": "22:20",
+        "pts": 4,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "34:35",
+        "pts": 21,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "10",
+        "name": "BOGDAN BOGDANOVIĆ",
+        "min": "23:39",
+        "pts": 0,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "37:33",
+        "pts": 20,
+        "reb": 6,
+        "ast": 13
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612757",
+    "total": {
+      "pts": 107,
+      "fgm": 34,
+      "fga": 92,
+      "f2m": 23,
+      "f2a": 51,
+      "f3m": 11,
+      "f3a": 41,
+      "ftm": 28,
+      "fta": 34,
+      "reb": 50,
+      "oreb": 18,
+      "dreb": 24,
+      "ast": 24,
+      "tov": 16,
+      "stl": 12,
+      "blk": 2,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "32:50",
+        "pts": 23,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "33:00",
+        "pts": 5,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "23:59",
+        "pts": 9,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "32:18",
+        "pts": 19,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "JRUE HOLIDAY",
+        "min": "34:19",
+        "pts": 21,
+        "reb": 6,
+        "ast": 7
+      }
+    ]
+  }
+}

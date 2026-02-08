@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500221",
+  "date": "2025.11.12",
+  "venue": "American Airlines Center",
+  "attendance": 19501,
+  "home": {
+    "id": "1610612742",
+    "total": {
+      "pts": 114,
+      "fgm": 43,
+      "fga": 86,
+      "f2m": 26,
+      "f2a": 39,
+      "f3m": 17,
+      "f3a": 47,
+      "ftm": 11,
+      "fta": 17,
+      "reb": 55,
+      "oreb": 8,
+      "dreb": 37,
+      "ast": 32,
+      "tov": 19,
+      "stl": 10,
+      "blk": 10,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "33:42",
+        "pts": 16,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "05:25",
+        "pts": 6,
+        "reb": 0,
+        "ast": 0
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "26:39",
+        "pts": 15,
+        "reb": 9,
+        "ast": 0
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "34:07",
+        "pts": 12,
+        "reb": 6,
+        "ast": 7
+      },
+      {
+        "no": "10",
+        "name": "BRANDON WILLIAMS",
+        "min": "33:14",
+        "pts": 17,
+        "reb": 5,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612756",
+    "total": {
+      "pts": 123,
+      "fgm": 44,
+      "fga": 95,
+      "f2m": 30,
+      "f2a": 60,
+      "f3m": 14,
+      "f3a": 35,
+      "ftm": 21,
+      "fta": 26,
+      "reb": 52,
+      "oreb": 13,
+      "dreb": 33,
+      "ast": 31,
+      "tov": 12,
+      "stl": 13,
+      "blk": 3,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "30:58",
+        "pts": 18,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "27:32",
+        "pts": 13,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "26:16",
+        "pts": 10,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "GRAYSON ALLEN",
+        "min": "32:51",
+        "pts": 23,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "38:24",
+        "pts": 26,
+        "reb": 3,
+        "ast": 9
+      }
+    ]
+  }
+}

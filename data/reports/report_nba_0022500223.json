@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500223",
+  "date": "2025.11.12",
+  "venue": "Golden 1 Center",
+  "attendance": 15008,
+  "home": {
+    "id": "1610612758",
+    "total": {
+      "pts": 100,
+      "fgm": 36,
+      "fga": 92,
+      "f2m": 22,
+      "f2a": 53,
+      "f3m": 14,
+      "f3a": 39,
+      "ftm": 14,
+      "fta": 18,
+      "reb": 45,
+      "oreb": 9,
+      "dreb": 26,
+      "ast": 22,
+      "tov": 18,
+      "stl": 7,
+      "blk": 1,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "19:14",
+        "pts": 4,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "PRECIOUS ACHIUWA",
+        "min": "19:58",
+        "pts": 10,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "11",
+        "name": "DOMANTAS SABONIS",
+        "min": "26:24",
+        "pts": 12,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "22:26",
+        "pts": 10,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "17",
+        "name": "DENNIS SCHRÖDER",
+        "min": "25:51",
+        "pts": 9,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612737",
+    "total": {
+      "pts": 133,
+      "fgm": 49,
+      "fga": 85,
+      "f2m": 32,
+      "f2a": 45,
+      "f3m": 17,
+      "f3a": 40,
+      "ftm": 18,
+      "fta": 22,
+      "reb": 56,
+      "oreb": 7,
+      "dreb": 38,
+      "ast": 42,
+      "tov": 19,
+      "stl": 14,
+      "blk": 6,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "22:13",
+        "pts": 15,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "23:49",
+        "pts": 24,
+        "reb": 10,
+        "ast": 8
+      },
+      {
+        "no": "8",
+        "name": "KRISTAPS PORZIŅĢIS",
+        "min": "23:18",
+        "pts": 13,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "26:58",
+        "pts": 5,
+        "reb": 6,
+        "ast": 8
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "21:44",
+        "pts": 14,
+        "reb": 6,
+        "ast": 4
+      }
+    ]
+  }
+}

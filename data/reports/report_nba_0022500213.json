@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500213",
+  "date": "2025.11.12",
+  "venue": "Spectrum Center",
+  "attendance": 17142,
+  "home": {
+    "id": "1610612766",
+    "total": {
+      "pts": 111,
+      "fgm": 38,
+      "fga": 86,
+      "f2m": 26,
+      "f2a": 46,
+      "f3m": 12,
+      "f3a": 40,
+      "ftm": 23,
+      "fta": 27,
+      "reb": 65,
+      "oreb": 15,
+      "dreb": 35,
+      "ast": 27,
+      "tov": 13,
+      "stl": 5,
+      "blk": 5,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "34:18",
+        "pts": 16,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "MILES BRIDGES",
+        "min": "32:48",
+        "pts": 20,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "11",
+        "name": "RYAN KALKBRENNER",
+        "min": "26:31",
+        "pts": 17,
+        "reb": 9,
+        "ast": 0
+      },
+      {
+        "no": "4",
+        "name": "SION JAMES",
+        "min": "29:45",
+        "pts": 4,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "COLLIN SEXTON",
+        "min": "31:32",
+        "pts": 16,
+        "reb": 5,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612749",
+    "total": {
+      "pts": 100,
+      "fgm": 40,
+      "fga": 88,
+      "f2m": 28,
+      "f2a": 58,
+      "f3m": 12,
+      "f3a": 30,
+      "ftm": 8,
+      "fta": 13,
+      "reb": 41,
+      "oreb": 10,
+      "dreb": 24,
+      "ast": 29,
+      "tov": 9,
+      "stl": 6,
+      "blk": 6,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "GARY TRENT JR.",
+        "min": "29:17",
+        "pts": 2,
+        "reb": 0,
+        "ast": 4
+      },
+      {
+        "no": "18",
+        "name": "KYLE KUZMA",
+        "min": "29:44",
+        "pts": 8,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "28:51",
+        "pts": 21,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "26:51",
+        "pts": 3,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "31:46",
+        "pts": 25,
+        "reb": 5,
+        "ast": 6
+      }
+    ]
+  }
+}

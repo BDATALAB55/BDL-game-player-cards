@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500214",
+  "date": "2025.11.12",
+  "venue": "Little Caesars Arena",
+  "attendance": 19023,
+  "home": {
+    "id": "1610612765",
+    "total": {
+      "pts": 124,
+      "fgm": 50,
+      "fga": 90,
+      "f2m": 37,
+      "f2a": 60,
+      "f3m": 13,
+      "f3a": 30,
+      "ftm": 11,
+      "fta": 16,
+      "reb": 46,
+      "oreb": 11,
+      "dreb": 33,
+      "ast": 30,
+      "tov": 18,
+      "stl": 13,
+      "blk": 5,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "RONALD HOLLAND II",
+        "min": "28:29",
+        "pts": 9,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "31",
+        "name": "JAVONTE GREEN",
+        "min": "32:03",
+        "pts": 9,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "PAUL REED",
+        "min": "30:45",
+        "pts": 28,
+        "reb": 13,
+        "ast": 6
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "28:24",
+        "pts": 23,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "24",
+        "name": "DANISS JENKINS",
+        "min": "40:06",
+        "pts": 18,
+        "reb": 4,
+        "ast": 12
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612741",
+    "total": {
+      "pts": 113,
+      "fgm": 41,
+      "fga": 86,
+      "f2m": 29,
+      "f2a": 53,
+      "f3m": 12,
+      "f3a": 33,
+      "ftm": 19,
+      "fta": 28,
+      "reb": 54,
+      "oreb": 12,
+      "dreb": 32,
+      "ast": 21,
+      "tov": 21,
+      "stl": 11,
+      "blk": 6,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "31:44",
+        "pts": 15,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "33:57",
+        "pts": 21,
+        "reb": 14,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "NIKOLA VUČEVIĆ",
+        "min": "25:29",
+        "pts": 6,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "13",
+        "name": "KEVIN HUERTER",
+        "min": "27:11",
+        "pts": 20,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "TRE JONES",
+        "min": "30:17",
+        "pts": 11,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  }
+}

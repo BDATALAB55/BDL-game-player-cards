@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500217",
+  "date": "2025.11.12",
+  "venue": "Kaseya Center",
+  "attendance": 19600,
+  "home": {
+    "id": "1610612748",
+    "total": {
+      "pts": 116,
+      "fgm": 45,
+      "fga": 94,
+      "f2m": 30,
+      "f2a": 57,
+      "f3m": 15,
+      "f3a": 37,
+      "ftm": 11,
+      "fta": 13,
+      "reb": 54,
+      "oreb": 9,
+      "dreb": 35,
+      "ast": 29,
+      "tov": 21,
+      "stl": 6,
+      "blk": 6,
+      "pf": 29
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "27:25",
+        "pts": 9,
+        "reb": 0,
+        "ast": 4
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "33:14",
+        "pts": 17,
+        "reb": 9,
+        "ast": 6
+      },
+      {
+        "no": "7",
+        "name": "KEL'EL WARE",
+        "min": "27:43",
+        "pts": 15,
+        "reb": 13,
+        "ast": 1
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "32:30",
+        "pts": 27,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "33:53",
+        "pts": 16,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612739",
+    "total": {
+      "pts": 130,
+      "fgm": 45,
+      "fga": 104,
+      "f2m": 31,
+      "f2a": 57,
+      "f3m": 14,
+      "f3a": 47,
+      "ftm": 26,
+      "fta": 31,
+      "reb": 62,
+      "oreb": 15,
+      "dreb": 34,
+      "ast": 32,
+      "tov": 12,
+      "stl": 13,
+      "blk": 10,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "DE'ANDRE HUNTER",
+        "min": "28:21",
+        "pts": 21,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "32",
+        "name": "DEAN WADE",
+        "min": "26:13",
+        "pts": 8,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "27:26",
+        "pts": 30,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "SAM MERRILL",
+        "min": "20:38",
+        "pts": 5,
+        "reb": 0,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "LONZO BALL",
+        "min": "20:28",
+        "pts": 15,
+        "reb": 2,
+        "ast": 8
+      }
+    ]
+  }
+}

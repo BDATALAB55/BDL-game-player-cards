@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500185",
+  "date": "2025.11.08",
+  "venue": "State Farm Arena",
+  "attendance": 17194,
+  "home": {
+    "id": "1610612737",
+    "total": {
+      "pts": 122,
+      "fgm": 48,
+      "fga": 94,
+      "f2m": 32,
+      "f2a": 55,
+      "f3m": 16,
+      "f3a": 39,
+      "ftm": 10,
+      "fta": 11,
+      "reb": 44,
+      "oreb": 8,
+      "dreb": 30,
+      "ast": 37,
+      "tov": 11,
+      "stl": 13,
+      "blk": 6,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "27:06",
+        "pts": 19,
+        "reb": 1,
+        "ast": 4
+      },
+      {
+        "no": "18",
+        "name": "MOUHAMED GUEYE",
+        "min": "34:13",
+        "pts": 21,
+        "reb": 7,
+        "ast": 7
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "32:04",
+        "pts": 12,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "36:03",
+        "pts": 10,
+        "reb": 8,
+        "ast": 13
+      },
+      {
+        "no": "2",
+        "name": "KEATON WALLACE",
+        "min": "35:45",
+        "pts": 14,
+        "reb": 2,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612747",
+    "total": {
+      "pts": 102,
+      "fgm": 37,
+      "fga": 81,
+      "f2m": 25,
+      "f2a": 51,
+      "f3m": 12,
+      "f3a": 30,
+      "ftm": 16,
+      "fta": 20,
+      "reb": 53,
+      "oreb": 13,
+      "dreb": 34,
+      "ast": 23,
+      "tov": 19,
+      "stl": 8,
+      "blk": 5,
+      "pf": 11
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "JAKE LARAVIA",
+        "min": "23:12",
+        "pts": 13,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "28",
+        "name": "RUI HACHIMURA",
+        "min": "23:29",
+        "pts": 8,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "19:54",
+        "pts": 11,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "20:56",
+        "pts": 5,
+        "reb": 0,
+        "ast": 2
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "26:39",
+        "pts": 22,
+        "reb": 5,
+        "ast": 11
+      }
+    ]
+  }
+}

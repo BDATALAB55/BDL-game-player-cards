@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500201",
+  "date": "2025.11.10",
+  "venue": "Kaseya Center",
+  "attendance": 19600,
+  "home": {
+    "id": "1610612748",
+    "total": {
+      "pts": 140,
+      "fgm": 46,
+      "fga": 98,
+      "f2m": 34,
+      "f2a": 62,
+      "f3m": 12,
+      "f3a": 36,
+      "ftm": 36,
+      "fta": 41,
+      "reb": 69,
+      "oreb": 12,
+      "dreb": 44,
+      "ast": 32,
+      "tov": 14,
+      "stl": 5,
+      "blk": 6,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "26:29",
+        "pts": 10,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "37:26",
+        "pts": 23,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "7",
+        "name": "KEL'EL WARE",
+        "min": "33:37",
+        "pts": 14,
+        "reb": 20,
+        "ast": 1
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "38:34",
+        "pts": 33,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "38:12",
+        "pts": 11,
+        "reb": 2,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612739",
+    "total": {
+      "pts": 138,
+      "fgm": 49,
+      "fga": 120,
+      "f2m": 28,
+      "f2a": 55,
+      "f3m": 21,
+      "f3a": 65,
+      "ftm": 19,
+      "fta": 27,
+      "reb": 68,
+      "oreb": 26,
+      "dreb": 34,
+      "ast": 26,
+      "tov": 7,
+      "stl": 8,
+      "blk": 4,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "DE'ANDRE HUNTER",
+        "min": "35:16",
+        "pts": 23,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "38:42",
+        "pts": 21,
+        "reb": 10,
+        "ast": 5
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "20:53",
+        "pts": 14,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "40:55",
+        "pts": 28,
+        "reb": 15,
+        "ast": 8
+      },
+      {
+        "no": "10",
+        "name": "DARIUS GARLAND",
+        "min": "18:57",
+        "pts": 11,
+        "reb": 5,
+        "ast": 2
+      }
+    ]
+  }
+}

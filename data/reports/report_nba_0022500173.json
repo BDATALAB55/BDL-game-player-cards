@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500173",
+  "date": "2025.11.05",
+  "venue": "Gainbridge Fieldhouse",
+  "attendance": 16103,
+  "home": {
+    "id": "1610612754",
+    "total": {
+      "pts": 103,
+      "fgm": 41,
+      "fga": 99,
+      "f2m": 28,
+      "f2a": 63,
+      "f3m": 13,
+      "f3a": 36,
+      "ftm": 8,
+      "fta": 13,
+      "reb": 69,
+      "oreb": 16,
+      "dreb": 40,
+      "ast": 29,
+      "tov": 16,
+      "stl": 6,
+      "blk": 5,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "JARACE WALKER",
+        "min": "32:11",
+        "pts": 6,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "36:04",
+        "pts": 23,
+        "reb": 6,
+        "ast": 10
+      },
+      {
+        "no": "22",
+        "name": "ISAIAH JACKSON",
+        "min": "20:26",
+        "pts": 8,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "AARON NESMITH",
+        "min": "32:09",
+        "pts": 15,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "26",
+        "name": "BEN SHEPPARD",
+        "min": "34:58",
+        "pts": 18,
+        "reb": 4,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612751",
+    "total": {
+      "pts": 112,
+      "fgm": 36,
+      "fga": 86,
+      "f2m": 22,
+      "f2a": 46,
+      "f3m": 14,
+      "f3a": 40,
+      "ftm": 26,
+      "fta": 35,
+      "reb": 53,
+      "oreb": 10,
+      "dreb": 35,
+      "ast": 26,
+      "tov": 12,
+      "stl": 9,
+      "blk": 5,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "35:24",
+        "pts": 32,
+        "reb": 11,
+        "ast": 3
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "29:38",
+        "pts": 17,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "33:34",
+        "pts": 18,
+        "reb": 10,
+        "ast": 6
+      },
+      {
+        "no": "24",
+        "name": "CAM THOMAS",
+        "min": "05:35",
+        "pts": 0,
+        "reb": 0,
+        "ast": 1
+      },
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "35:07",
+        "pts": 15,
+        "reb": 1,
+        "ast": 6
+      }
+    ]
+  }
+}

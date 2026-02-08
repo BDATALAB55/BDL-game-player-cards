@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500164",
+  "date": "2025.11.03",
+  "venue": "Intuit Dome",
+  "attendance": 17045,
+  "home": {
+    "id": "1610612746",
+    "total": {
+      "pts": 119,
+      "fgm": 44,
+      "fga": 88,
+      "f2m": 27,
+      "f2a": 47,
+      "f3m": 17,
+      "f3a": 41,
+      "ftm": 14,
+      "fta": 19,
+      "reb": 51,
+      "oreb": 11,
+      "dreb": 33,
+      "ast": 25,
+      "tov": 20,
+      "stl": 13,
+      "blk": 4,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "37:09",
+        "pts": 27,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "DERRICK JONES JR.",
+        "min": "27:09",
+        "pts": 12,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "33:26",
+        "pts": 9,
+        "reb": 18,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "BRADLEY BEAL",
+        "min": "20:09",
+        "pts": 12,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "38:50",
+        "pts": 29,
+        "reb": 7,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612748",
+    "total": {
+      "pts": 120,
+      "fgm": 45,
+      "fga": 83,
+      "f2m": 33,
+      "f2a": 58,
+      "f3m": 12,
+      "f3a": 25,
+      "ftm": 18,
+      "fta": 24,
+      "reb": 42,
+      "oreb": 6,
+      "dreb": 31,
+      "ast": 33,
+      "tov": 16,
+      "stl": 12,
+      "blk": 3,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "23:45",
+        "pts": 7,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "31:50",
+        "pts": 17,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "30:13",
+        "pts": 25,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "28:22",
+        "pts": 21,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "34:21",
+        "pts": 8,
+        "reb": 5,
+        "ast": 9
+      }
+    ]
+  }
+}

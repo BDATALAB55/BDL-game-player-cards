@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500153",
+  "date": "2025.11.02",
+  "venue": "Madison Square Garden",
+  "attendance": 19812,
+  "home": {
+    "id": "1610612752",
+    "total": {
+      "pts": 128,
+      "fgm": 43,
+      "fga": 95,
+      "f2m": 23,
+      "f2a": 53,
+      "f3m": 20,
+      "f3a": 42,
+      "ftm": 22,
+      "fta": 22,
+      "reb": 54,
+      "oreb": 14,
+      "dreb": 33,
+      "ast": 31,
+      "tov": 11,
+      "stl": 7,
+      "blk": 5,
+      "pf": 12
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "34:47",
+        "pts": 21,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "36:08",
+        "pts": 20,
+        "reb": 15,
+        "ast": 5
+      },
+      {
+        "no": "23",
+        "name": "MITCHELL ROBINSON",
+        "min": "13:21",
+        "pts": 0,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "34:39",
+        "pts": 10,
+        "reb": 5,
+        "ast": 9
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "32:26",
+        "pts": 31,
+        "reb": 5,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612741",
+    "total": {
+      "pts": 116,
+      "fgm": 45,
+      "fga": 93,
+      "f2m": 28,
+      "f2a": 53,
+      "f3m": 17,
+      "f3a": 40,
+      "ftm": 9,
+      "fta": 11,
+      "reb": 48,
+      "oreb": 12,
+      "dreb": 34,
+      "ast": 28,
+      "tov": 14,
+      "stl": 7,
+      "blk": 3,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "21:56",
+        "pts": 14,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "31:23",
+        "pts": 14,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "9",
+        "name": "NIKOLA VUČEVIĆ",
+        "min": "32:00",
+        "pts": 17,
+        "reb": 14,
+        "ast": 4
+      },
+      {
+        "no": "30",
+        "name": "TRE JONES",
+        "min": "33:53",
+        "pts": 15,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "3",
+        "name": "JOSH GIDDEY",
+        "min": "38:17",
+        "pts": 23,
+        "reb": 12,
+        "ast": 12
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500184",
+  "date": "2025.11.08",
+  "venue": "Xfinity Mobile Arena",
+  "attendance": 19746,
+  "home": {
+    "id": "1610612755",
+    "total": {
+      "pts": 130,
+      "fgm": 49,
+      "fga": 96,
+      "f2m": 39,
+      "f2a": 61,
+      "f3m": 10,
+      "f3a": 35,
+      "ftm": 22,
+      "fta": 28,
+      "reb": 63,
+      "oreb": 15,
+      "dreb": 39,
+      "ast": 31,
+      "tov": 13,
+      "stl": 4,
+      "blk": 9,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "TRENDON WATFORD",
+        "min": "36:30",
+        "pts": 20,
+        "reb": 17,
+        "ast": 10
+      },
+      {
+        "no": "9",
+        "name": "KELLY OUBRE JR.",
+        "min": "36:53",
+        "pts": 19,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "JOEL EMBIID",
+        "min": "25:57",
+        "pts": 29,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "35:32",
+        "pts": 11,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "TYRESE MAXEY",
+        "min": "42:38",
+        "pts": 31,
+        "reb": 4,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612761",
+    "total": {
+      "pts": 120,
+      "fgm": 41,
+      "fga": 90,
+      "f2m": 25,
+      "f2a": 52,
+      "f3m": 16,
+      "f3a": 38,
+      "ftm": 22,
+      "fta": 28,
+      "reb": 47,
+      "oreb": 10,
+      "dreb": 28,
+      "ast": 29,
+      "tov": 10,
+      "stl": 7,
+      "blk": 5,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "OCHAI AGBAJI",
+        "min": "15:03",
+        "pts": 0,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "37:25",
+        "pts": 21,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "31:41",
+        "pts": 18,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "36:12",
+        "pts": 22,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "34:02",
+        "pts": 22,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  }
+}

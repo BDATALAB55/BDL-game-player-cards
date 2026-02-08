@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500038",
+  "date": "2025.11.07",
+  "venue": "Golden 1 Center",
+  "attendance": 15767,
+  "home": {
+    "id": "1610612758",
+    "total": {
+      "pts": 101,
+      "fgm": 38,
+      "fga": 92,
+      "f2m": 23,
+      "f2a": 52,
+      "f3m": 15,
+      "f3a": 40,
+      "ftm": 10,
+      "fta": 15,
+      "reb": 47,
+      "oreb": 8,
+      "dreb": 30,
+      "ast": 27,
+      "tov": 15,
+      "stl": 6,
+      "blk": 3,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "28:38",
+        "pts": 18,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "35:09",
+        "pts": 24,
+        "reb": 6,
+        "ast": 9
+      },
+      {
+        "no": "19",
+        "name": "DREW EUBANKS",
+        "min": "23:47",
+        "pts": 16,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "ZACH LAVINE",
+        "min": "28:50",
+        "pts": 9,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "17",
+        "name": "DENNIS SCHRÖDER",
+        "min": "25:07",
+        "pts": 2,
+        "reb": 2,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612760",
+    "total": {
+      "pts": 132,
+      "fgm": 49,
+      "fga": 91,
+      "f2m": 36,
+      "f2a": 56,
+      "f3m": 13,
+      "f3a": 35,
+      "ftm": 21,
+      "fta": 24,
+      "reb": 58,
+      "oreb": 8,
+      "dreb": 44,
+      "ast": 27,
+      "tov": 11,
+      "stl": 9,
+      "blk": 8,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "27:16",
+        "pts": 15,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "21:24",
+        "pts": 10,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "55",
+        "name": "ISAIAH HARTENSTEIN",
+        "min": "30:37",
+        "pts": 33,
+        "reb": 19,
+        "ast": 3
+      },
+      {
+        "no": "25",
+        "name": "AJAY MITCHELL",
+        "min": "31:24",
+        "pts": 18,
+        "reb": 5,
+        "ast": 10
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "29:27",
+        "pts": 30,
+        "reb": 1,
+        "ast": 3
+      }
+    ]
+  }
+}

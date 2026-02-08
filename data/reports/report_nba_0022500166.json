@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500166",
+  "date": "2025.11.04",
+  "venue": "State Farm Arena",
+  "attendance": 15821,
+  "home": {
+    "id": "1610612737",
+    "total": {
+      "pts": 127,
+      "fgm": 40,
+      "fga": 72,
+      "f2m": 27,
+      "f2a": 42,
+      "f3m": 13,
+      "f3a": 30,
+      "ftm": 34,
+      "fta": 42,
+      "reb": 44,
+      "oreb": 6,
+      "dreb": 28,
+      "ast": 23,
+      "tov": 18,
+      "stl": 11,
+      "blk": 6,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "25:29",
+        "pts": 21,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "32:59",
+        "pts": 17,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "8",
+        "name": "KRISTAPS PORZIŅĢIS",
+        "min": "26:25",
+        "pts": 15,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "35:15",
+        "pts": 18,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "31:57",
+        "pts": 20,
+        "reb": 1,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612753",
+    "total": {
+      "pts": 112,
+      "fgm": 36,
+      "fga": 83,
+      "f2m": 25,
+      "f2a": 49,
+      "f3m": 11,
+      "f3a": 34,
+      "ftm": 29,
+      "fta": 33,
+      "reb": 47,
+      "oreb": 14,
+      "dreb": 27,
+      "ast": 26,
+      "tov": 17,
+      "stl": 9,
+      "blk": 1,
+      "pf": 30
+    },
+    "starters": [
+      {
+        "no": "22",
+        "name": "FRANZ WAGNER",
+        "min": "34:03",
+        "pts": 18,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "36:51",
+        "pts": 22,
+        "reb": 11,
+        "ast": 8
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "29:59",
+        "pts": 11,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "22:33",
+        "pts": 9,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "20:23",
+        "pts": 12,
+        "reb": 2,
+        "ast": 4
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500143",
+  "date": "2025.11.01",
+  "venue": "Spectrum Center",
+  "attendance": 19444,
+  "home": {
+    "id": "1610612766",
+    "total": {
+      "pts": 105,
+      "fgm": 34,
+      "fga": 86,
+      "f2m": 21,
+      "f2a": 41,
+      "f3m": 13,
+      "f3a": 45,
+      "ftm": 24,
+      "fta": 27,
+      "reb": 53,
+      "oreb": 10,
+      "dreb": 35,
+      "ast": 23,
+      "tov": 14,
+      "stl": 4,
+      "blk": 4,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "30:56",
+        "pts": 5,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "MILES BRIDGES",
+        "min": "36:40",
+        "pts": 30,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "11",
+        "name": "RYAN KALKBRENNER",
+        "min": "29:26",
+        "pts": 6,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "COLLIN SEXTON",
+        "min": "19:58",
+        "pts": 9,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "LAMELO BALL",
+        "min": "33:28",
+        "pts": 18,
+        "reb": 7,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612750",
+    "total": {
+      "pts": 122,
+      "fgm": 47,
+      "fga": 87,
+      "f2m": 30,
+      "f2a": 51,
+      "f3m": 17,
+      "f3a": 36,
+      "ftm": 11,
+      "fta": 14,
+      "reb": 45,
+      "oreb": 4,
+      "dreb": 34,
+      "ast": 31,
+      "tov": 10,
+      "stl": 8,
+      "blk": 2,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JADEN MCDANIELS",
+        "min": "31:52",
+        "pts": 14,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "30",
+        "name": "JULIUS RANDLE",
+        "min": "32:17",
+        "pts": 30,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "27",
+        "name": "RUDY GOBERT",
+        "min": "35:19",
+        "pts": 14,
+        "reb": 15,
+        "ast": 5
+      },
+      {
+        "no": "0",
+        "name": "DONTE DIVINCENZO",
+        "min": "31:19",
+        "pts": 18,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "10",
+        "name": "MIKE CONLEY",
+        "min": "28:54",
+        "pts": 10,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  }
+}

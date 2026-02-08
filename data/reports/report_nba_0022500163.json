@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500163",
+  "date": "2025.11.03",
+  "venue": "Moda Center",
+  "attendance": 17083,
+  "home": {
+    "id": "1610612757",
+    "total": {
+      "pts": 115,
+      "fgm": 42,
+      "fga": 85,
+      "f2m": 33,
+      "f2a": 45,
+      "f3m": 9,
+      "f3a": 40,
+      "ftm": 22,
+      "fta": 30,
+      "reb": 47,
+      "oreb": 15,
+      "dreb": 23,
+      "ast": 23,
+      "tov": 18,
+      "stl": 13,
+      "blk": 3,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "36:12",
+        "pts": 33,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "34:15",
+        "pts": 14,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "17:31",
+        "pts": 2,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "27:57",
+        "pts": 23,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "JRUE HOLIDAY",
+        "min": "35:33",
+        "pts": 8,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612747",
+    "total": {
+      "pts": 123,
+      "fgm": 50,
+      "fga": 85,
+      "f2m": 41,
+      "f2a": 62,
+      "f3m": 9,
+      "f3a": 23,
+      "ftm": 14,
+      "fta": 16,
+      "reb": 42,
+      "oreb": 8,
+      "dreb": 26,
+      "ast": 29,
+      "tov": 17,
+      "stl": 11,
+      "blk": 5,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "4",
+        "name": "DALTON KNECHT",
+        "min": "23:00",
+        "pts": 8,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "28",
+        "name": "RUI HACHIMURA",
+        "min": "37:37",
+        "pts": 28,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "30:35",
+        "pts": 29,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "12",
+        "name": "JAKE LARAVIA",
+        "min": "36:27",
+        "pts": 11,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "31:51",
+        "pts": 9,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  }
+}

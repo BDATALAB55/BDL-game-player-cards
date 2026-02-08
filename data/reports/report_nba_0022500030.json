@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500030",
+  "date": "2025.11.07",
+  "venue": "State Farm Arena",
+  "attendance": 16340,
+  "home": {
+    "id": "1610612737",
+    "total": {
+      "pts": 97,
+      "fgm": 33,
+      "fga": 96,
+      "f2m": 24,
+      "f2a": 58,
+      "f3m": 9,
+      "f3a": 38,
+      "ftm": 22,
+      "fta": 23,
+      "reb": 65,
+      "oreb": 19,
+      "dreb": 35,
+      "ast": 24,
+      "tov": 15,
+      "stl": 8,
+      "blk": 7,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "30:26",
+        "pts": 16,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "33:02",
+        "pts": 21,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "8",
+        "name": "KRISTAPS PORZIŅĢIS",
+        "min": "29:40",
+        "pts": 17,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "34:48",
+        "pts": 7,
+        "reb": 8,
+        "ast": 8
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "29:38",
+        "pts": 20,
+        "reb": 2,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612761",
+    "total": {
+      "pts": 109,
+      "fgm": 37,
+      "fga": 91,
+      "f2m": 25,
+      "f2a": 53,
+      "f3m": 12,
+      "f3a": 38,
+      "ftm": 23,
+      "fta": 25,
+      "reb": 55,
+      "oreb": 13,
+      "dreb": 35,
+      "ast": 23,
+      "tov": 12,
+      "stl": 11,
+      "blk": 6,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "34:44",
+        "pts": 20,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "35:03",
+        "pts": 14,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "19",
+        "name": "JAKOB POELTL",
+        "min": "25:13",
+        "pts": 12,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "33:16",
+        "pts": 19,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "34:14",
+        "pts": 18,
+        "reb": 5,
+        "ast": 6
+      }
+    ]
+  }
+}

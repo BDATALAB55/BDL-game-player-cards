@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500028",
+  "date": "2025.11.07",
+  "venue": "Kia Center",
+  "attendance": 19154,
+  "home": {
+    "id": "1610612753",
+    "total": {
+      "pts": 123,
+      "fgm": 41,
+      "fga": 82,
+      "f2m": 24,
+      "f2a": 46,
+      "f3m": 17,
+      "f3a": 36,
+      "ftm": 24,
+      "fta": 31,
+      "reb": 50,
+      "oreb": 11,
+      "dreb": 33,
+      "ast": 28,
+      "tov": 15,
+      "stl": 8,
+      "blk": 7,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "22",
+        "name": "FRANZ WAGNER",
+        "min": "37:18",
+        "pts": 27,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "36:26",
+        "pts": 15,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "31:08",
+        "pts": 18,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "36:05",
+        "pts": 22,
+        "reb": 6,
+        "ast": 7
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "20:50",
+        "pts": 14,
+        "reb": 3,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612738",
+    "total": {
+      "pts": 110,
+      "fgm": 43,
+      "fga": 95,
+      "f2m": 30,
+      "f2a": 58,
+      "f3m": 13,
+      "f3a": 37,
+      "ftm": 11,
+      "fta": 16,
+      "reb": 56,
+      "oreb": 12,
+      "dreb": 32,
+      "ast": 26,
+      "tov": 14,
+      "stl": 9,
+      "blk": 8,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "36:29",
+        "pts": 32,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "JOSH MINOTT",
+        "min": "25:20",
+        "pts": 12,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "30:02",
+        "pts": 5,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "37:08",
+        "pts": 16,
+        "reb": 2,
+        "ast": 10
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "31:55",
+        "pts": 27,
+        "reb": 2,
+        "ast": 4
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500146",
+  "date": "2025.11.01",
+  "venue": "TD Garden",
+  "attendance": 19156,
+  "home": {
+    "id": "1610612738",
+    "total": {
+      "pts": 101,
+      "fgm": 40,
+      "fga": 103,
+      "f2m": 26,
+      "f2a": 59,
+      "f3m": 14,
+      "f3a": 44,
+      "ftm": 7,
+      "fta": 7,
+      "reb": 45,
+      "oreb": 14,
+      "dreb": 22,
+      "ast": 24,
+      "tov": 10,
+      "stl": 9,
+      "blk": 2,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "21:43",
+        "pts": 12,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "8",
+        "name": "JOSH MINOTT",
+        "min": "19:19",
+        "pts": 10,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "15:26",
+        "pts": 9,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "26:18",
+        "pts": 14,
+        "reb": 1,
+        "ast": 4
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "19:09",
+        "pts": 5,
+        "reb": 2,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612745",
+    "total": {
+      "pts": 128,
+      "fgm": 42,
+      "fga": 77,
+      "f2m": 23,
+      "f2a": 48,
+      "f3m": 19,
+      "f3a": 29,
+      "ftm": 25,
+      "fta": 35,
+      "reb": 64,
+      "oreb": 12,
+      "dreb": 41,
+      "ast": 30,
+      "tov": 18,
+      "stl": 6,
+      "blk": 11,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "29:33",
+        "pts": 26,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "26:20",
+        "pts": 12,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "30:35",
+        "pts": 16,
+        "reb": 10,
+        "ast": 9
+      },
+      {
+        "no": "20",
+        "name": "JOSH OKOGIE",
+        "min": "21:01",
+        "pts": 12,
+        "reb": 0,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "32:10",
+        "pts": 17,
+        "reb": 9,
+        "ast": 8
+      }
+    ]
+  }
+}

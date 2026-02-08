@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500186",
+  "date": "2025.11.08",
+  "venue": "Rocket Arena",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612739",
+    "total": {
+      "pts": 128,
+      "fgm": 46,
+      "fga": 94,
+      "f2m": 29,
+      "f2a": 48,
+      "f3m": 17,
+      "f3a": 46,
+      "ftm": 19,
+      "fta": 26,
+      "reb": 49,
+      "oreb": 10,
+      "dreb": 29,
+      "ast": 32,
+      "tov": 9,
+      "stl": 6,
+      "blk": 7,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "DE'ANDRE HUNTER",
+        "min": "29:57",
+        "pts": 29,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "33:36",
+        "pts": 24,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "24:36",
+        "pts": 11,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "20",
+        "name": "JAYLON TYSON",
+        "min": "30:36",
+        "pts": 17,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "35:21",
+        "pts": 29,
+        "reb": 6,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612741",
+    "total": {
+      "pts": 122,
+      "fgm": 38,
+      "fga": 84,
+      "f2m": 25,
+      "f2a": 55,
+      "f3m": 13,
+      "f3a": 29,
+      "ftm": 33,
+      "fta": 36,
+      "reb": 55,
+      "oreb": 10,
+      "dreb": 39,
+      "ast": 27,
+      "tov": 13,
+      "stl": 8,
+      "blk": 4,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "32:33",
+        "pts": 19,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "17:35",
+        "pts": 4,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "9",
+        "name": "NIKOLA VUČEVIĆ",
+        "min": "29:26",
+        "pts": 9,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "30",
+        "name": "TRE JONES",
+        "min": "30:03",
+        "pts": 17,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "3",
+        "name": "JOSH GIDDEY",
+        "min": "32:50",
+        "pts": 15,
+        "reb": 9,
+        "ast": 6
+      }
+    ]
+  }
+}

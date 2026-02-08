@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500172",
+  "date": "2025.11.05",
+  "venue": "Little Caesars Arena",
+  "attendance": 18403,
+  "home": {
+    "id": "1610612765",
+    "total": {
+      "pts": 114,
+      "fgm": 45,
+      "fga": 91,
+      "f2m": 34,
+      "f2a": 61,
+      "f3m": 11,
+      "f3a": 30,
+      "ftm": 13,
+      "fta": 22,
+      "reb": 60,
+      "oreb": 13,
+      "dreb": 39,
+      "ast": 24,
+      "tov": 13,
+      "stl": 5,
+      "blk": 6,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "31:00",
+        "pts": 18,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "28",
+        "name": "ISAIAH STEWART",
+        "min": "31:27",
+        "pts": 10,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "JALEN DUREN",
+        "min": "34:37",
+        "pts": 22,
+        "reb": 22,
+        "ast": 3
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "28:22",
+        "pts": 9,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "36:55",
+        "pts": 31,
+        "reb": 3,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612762",
+    "total": {
+      "pts": 103,
+      "fgm": 33,
+      "fga": 86,
+      "f2m": 21,
+      "f2a": 47,
+      "f3m": 12,
+      "f3a": 39,
+      "ftm": 25,
+      "fta": 29,
+      "reb": 55,
+      "oreb": 11,
+      "dreb": 33,
+      "ast": 24,
+      "tov": 15,
+      "stl": 7,
+      "blk": 2,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "TAYLOR HENDRICKS",
+        "min": "17:38",
+        "pts": 0,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "LAURI MARKKANEN",
+        "min": "39:53",
+        "pts": 25,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "30",
+        "name": "JUSUF NURKIĆ",
+        "min": "32:34",
+        "pts": 6,
+        "reb": 17,
+        "ast": 4
+      },
+      {
+        "no": "10",
+        "name": "SVI MYKHAILIUK",
+        "min": "36:03",
+        "pts": 28,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "34:52",
+        "pts": 19,
+        "reb": 2,
+        "ast": 6
+      }
+    ]
+  }
+}

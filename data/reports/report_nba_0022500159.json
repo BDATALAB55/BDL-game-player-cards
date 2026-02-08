@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500159",
+  "date": "2025.11.03",
+  "venue": "Madison Square Garden",
+  "attendance": 19812,
+  "home": {
+    "id": "1610612752",
+    "total": {
+      "pts": 119,
+      "fgm": 44,
+      "fga": 94,
+      "f2m": 29,
+      "f2a": 53,
+      "f3m": 15,
+      "f3a": 41,
+      "ftm": 16,
+      "fta": 20,
+      "reb": 54,
+      "oreb": 12,
+      "dreb": 37,
+      "ast": 32,
+      "tov": 12,
+      "stl": 12,
+      "blk": 4,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "32:02",
+        "pts": 16,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "29:29",
+        "pts": 10,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "30:29",
+        "pts": 33,
+        "reb": 13,
+        "ast": 5
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "32:27",
+        "pts": 16,
+        "reb": 1,
+        "ast": 9
+      },
+      {
+        "no": "44",
+        "name": "LANDRY SHAMET",
+        "min": "24:34",
+        "pts": 11,
+        "reb": 5,
+        "ast": 0
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612764",
+    "total": {
+      "pts": 102,
+      "fgm": 38,
+      "fga": 81,
+      "f2m": 25,
+      "f2a": 46,
+      "f3m": 13,
+      "f3a": 35,
+      "ftm": 13,
+      "fta": 19,
+      "reb": 49,
+      "oreb": 7,
+      "dreb": 37,
+      "ast": 30,
+      "tov": 20,
+      "stl": 7,
+      "blk": 5,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "JUSTIN CHAMPAGNIE",
+        "min": "17:20",
+        "pts": 4,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "30:27",
+        "pts": 15,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "29:29",
+        "pts": 19,
+        "reb": 8,
+        "ast": 7
+      },
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "27:49",
+        "pts": 15,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "21:52",
+        "pts": 5,
+        "reb": 1,
+        "ast": 2
+      }
+    ]
+  }
+}

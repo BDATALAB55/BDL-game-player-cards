@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500194",
+  "date": "2025.11.09",
+  "venue": "FedExForum",
+  "attendance": 14532,
+  "home": {
+    "id": "1610612763",
+    "total": {
+      "pts": 100,
+      "fgm": 35,
+      "fga": 91,
+      "f2m": 18,
+      "f2a": 47,
+      "f3m": 17,
+      "f3a": 44,
+      "ftm": 13,
+      "fta": 18,
+      "reb": 60,
+      "oreb": 11,
+      "dreb": 39,
+      "ast": 30,
+      "tov": 14,
+      "stl": 3,
+      "blk": 6,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "KENTAVIOUS CALDWELL-POPE",
+        "min": "23:08",
+        "pts": 9,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "28:36",
+        "pts": 17,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "31",
+        "name": "JOCK LANDALE",
+        "min": "27:35",
+        "pts": 10,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "22:53",
+        "pts": 12,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "12",
+        "name": "JA MORANT",
+        "min": "33:37",
+        "pts": 11,
+        "reb": 3,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612760",
+    "total": {
+      "pts": 114,
+      "fgm": 41,
+      "fga": 95,
+      "f2m": 31,
+      "f2a": 52,
+      "f3m": 10,
+      "f3a": 43,
+      "ftm": 22,
+      "fta": 26,
+      "reb": 59,
+      "oreb": 9,
+      "dreb": 42,
+      "ast": 19,
+      "tov": 6,
+      "stl": 10,
+      "blk": 3,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "34:12",
+        "pts": 6,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "30:08",
+        "pts": 21,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "55",
+        "name": "ISAIAH HARTENSTEIN",
+        "min": "30:17",
+        "pts": 18,
+        "reb": 13,
+        "ast": 2
+      },
+      {
+        "no": "25",
+        "name": "AJAY MITCHELL",
+        "min": "31:57",
+        "pts": 21,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "35:19",
+        "pts": 35,
+        "reb": 7,
+        "ast": 6
+      }
+    ]
+  }
+}

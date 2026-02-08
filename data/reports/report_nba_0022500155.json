@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500155",
+  "date": "2025.11.02",
+  "venue": "Crypto.com Arena",
+  "attendance": 18831,
+  "home": {
+    "id": "1610612747",
+    "total": {
+      "pts": 130,
+      "fgm": 48,
+      "fga": 95,
+      "f2m": 33,
+      "f2a": 49,
+      "f3m": 15,
+      "f3a": 46,
+      "ftm": 19,
+      "fta": 23,
+      "reb": 54,
+      "oreb": 8,
+      "dreb": 33,
+      "ast": 33,
+      "tov": 11,
+      "stl": 14,
+      "blk": 2,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "26:41",
+        "pts": 11,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "28",
+        "name": "RUI HACHIMURA",
+        "min": "30:58",
+        "pts": 15,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "11",
+        "name": "JAXSON HAYES",
+        "min": "32:24",
+        "pts": 15,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "AUSTIN REAVES",
+        "min": "37:42",
+        "pts": 26,
+        "reb": 4,
+        "ast": 11
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "38:19",
+        "pts": 29,
+        "reb": 11,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612748",
+    "total": {
+      "pts": 120,
+      "fgm": 43,
+      "fga": 84,
+      "f2m": 34,
+      "f2a": 51,
+      "f3m": 9,
+      "f3a": 33,
+      "ftm": 25,
+      "fta": 36,
+      "reb": 51,
+      "oreb": 9,
+      "dreb": 33,
+      "ast": 29,
+      "tov": 15,
+      "stl": 7,
+      "blk": 3,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "36:57",
+        "pts": 15,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "36:20",
+        "pts": 17,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "7",
+        "name": "KEL'EL WARE",
+        "min": "11:30",
+        "pts": 7,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "26:02",
+        "pts": 17,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "31:37",
+        "pts": 8,
+        "reb": 0,
+        "ast": 8
+      }
+    ]
+  }
+}

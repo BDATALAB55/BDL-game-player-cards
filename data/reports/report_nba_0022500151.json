@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500151",
+  "date": "2025.11.02",
+  "venue": "Rocket Arena",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612739",
+    "total": {
+      "pts": 117,
+      "fgm": 40,
+      "fga": 97,
+      "f2m": 20,
+      "f2a": 40,
+      "f3m": 20,
+      "f3a": 57,
+      "ftm": 17,
+      "fta": 18,
+      "reb": 48,
+      "oreb": 13,
+      "dreb": 31,
+      "ast": 30,
+      "tov": 16,
+      "stl": 12,
+      "blk": 4,
+      "pf": 28
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "DE'ANDRE HUNTER",
+        "min": "30:39",
+        "pts": 19,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "22",
+        "name": "LARRY NANCE JR.",
+        "min": "24:32",
+        "pts": 2,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "34:33",
+        "pts": 14,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "20",
+        "name": "JAYLON TYSON",
+        "min": "24:44",
+        "pts": 18,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "35:56",
+        "pts": 37,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612737",
+    "total": {
+      "pts": 109,
+      "fgm": 39,
+      "fga": 77,
+      "f2m": 33,
+      "f2a": 54,
+      "f3m": 6,
+      "f3a": 23,
+      "ftm": 25,
+      "fta": 35,
+      "reb": 59,
+      "oreb": 8,
+      "dreb": 38,
+      "ast": 28,
+      "tov": 22,
+      "stl": 9,
+      "blk": 3,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "24:00",
+        "pts": 8,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "34:46",
+        "pts": 23,
+        "reb": 13,
+        "ast": 5
+      },
+      {
+        "no": "8",
+        "name": "KRISTAPS PORZIŅĢIS",
+        "min": "27:32",
+        "pts": 15,
+        "reb": 12,
+        "ast": 5
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "36:11",
+        "pts": 18,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "34:02",
+        "pts": 16,
+        "reb": 3,
+        "ast": 5
+      }
+    ]
+  }
+}

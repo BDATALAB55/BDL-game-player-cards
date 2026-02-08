@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500182",
+  "date": "2025.11.06",
+  "venue": "Mortgage Matchup Center",
+  "attendance": 17071,
+  "home": {
+    "id": "1610612756",
+    "total": {
+      "pts": 115,
+      "fgm": 41,
+      "fga": 92,
+      "f2m": 22,
+      "f2a": 43,
+      "f3m": 19,
+      "f3a": 49,
+      "ftm": 14,
+      "fta": 19,
+      "reb": 55,
+      "oreb": 15,
+      "dreb": 29,
+      "ast": 27,
+      "tov": 15,
+      "stl": 13,
+      "blk": 2,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "GRAYSON ALLEN",
+        "min": "36:28",
+        "pts": 18,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "28:27",
+        "pts": 17,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "27:37",
+        "pts": 13,
+        "reb": 10,
+        "ast": 0
+      },
+      {
+        "no": "4",
+        "name": "JALEN GREEN",
+        "min": "22:58",
+        "pts": 29,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "37:15",
+        "pts": 24,
+        "reb": 6,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612746",
+    "total": {
+      "pts": 102,
+      "fgm": 35,
+      "fga": 79,
+      "f2m": 25,
+      "f2a": 48,
+      "f3m": 10,
+      "f3a": 31,
+      "ftm": 22,
+      "fta": 30,
+      "reb": 54,
+      "oreb": 11,
+      "dreb": 30,
+      "ast": 24,
+      "tov": 15,
+      "stl": 8,
+      "blk": 4,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "33",
+        "name": "NICOLAS BATUM",
+        "min": "18:24",
+        "pts": 0,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "DERRICK JONES JR.",
+        "min": "22:07",
+        "pts": 10,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "27:09",
+        "pts": 23,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "BRADLEY BEAL",
+        "min": "19:39",
+        "pts": 5,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "23:47",
+        "pts": 9,
+        "reb": 2,
+        "ast": 6
+      }
+    ]
+  }
+}

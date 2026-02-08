@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500191",
+  "date": "2025.11.09",
+  "venue": "Fiserv Forum",
+  "attendance": 17341,
+  "home": {
+    "id": "1610612749",
+    "total": {
+      "pts": 115,
+      "fgm": 44,
+      "fga": 79,
+      "f2m": 31,
+      "f2a": 50,
+      "f3m": 13,
+      "f3a": 29,
+      "ftm": 14,
+      "fta": 24,
+      "reb": 34,
+      "oreb": 7,
+      "dreb": 20,
+      "ast": 25,
+      "tov": 13,
+      "stl": 11,
+      "blk": 6,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "GARY TRENT JR.",
+        "min": "29:26",
+        "pts": 9,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "34",
+        "name": "GIANNIS ANTETOKOUNMPO",
+        "min": "35:38",
+        "pts": 37,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "33:42",
+        "pts": 13,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "26:26",
+        "pts": 3,
+        "reb": 1,
+        "ast": 4
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "30:07",
+        "pts": 19,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612745",
+    "total": {
+      "pts": 122,
+      "fgm": 48,
+      "fga": 90,
+      "f2m": 38,
+      "f2a": 64,
+      "f3m": 10,
+      "f3a": 26,
+      "ftm": 16,
+      "fta": 21,
+      "reb": 59,
+      "oreb": 20,
+      "dreb": 30,
+      "ast": 24,
+      "tov": 17,
+      "stl": 8,
+      "blk": 3,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "37:21",
+        "pts": 31,
+        "reb": 3,
+        "ast": 7
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "31:10",
+        "pts": 16,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "39:40",
+        "pts": 23,
+        "reb": 11,
+        "ast": 7
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "37:29",
+        "pts": 14,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "20",
+        "name": "JOSH OKOGIE",
+        "min": "17:05",
+        "pts": 0,
+        "reb": 1,
+        "ast": 1
+      }
+    ]
+  }
+}

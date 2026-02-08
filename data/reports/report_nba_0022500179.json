@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500179",
+  "date": "2025.11.05",
+  "venue": "Crypto.com Arena",
+  "attendance": 18997,
+  "home": {
+    "id": "1610612747",
+    "total": {
+      "pts": 118,
+      "fgm": 37,
+      "fga": 83,
+      "f2m": 27,
+      "f2a": 52,
+      "f3m": 10,
+      "f3a": 31,
+      "ftm": 34,
+      "fta": 44,
+      "reb": 57,
+      "oreb": 12,
+      "dreb": 26,
+      "ast": 23,
+      "tov": 12,
+      "stl": 8,
+      "blk": 5,
+      "pf": 30
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "JAKE LARAVIA",
+        "min": "37:31",
+        "pts": 8,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "28",
+        "name": "RUI HACHIMURA",
+        "min": "34:46",
+        "pts": 15,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "33:07",
+        "pts": 22,
+        "reb": 10,
+        "ast": 0
+      },
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "33:34",
+        "pts": 17,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "41:36",
+        "pts": 35,
+        "reb": 9,
+        "ast": 13
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 116,
+      "fgm": 36,
+      "fga": 74,
+      "f2m": 23,
+      "f2a": 41,
+      "f3m": 13,
+      "f3a": 33,
+      "ftm": 31,
+      "fta": 40,
+      "reb": 46,
+      "oreb": 8,
+      "dreb": 29,
+      "ast": 22,
+      "tov": 19,
+      "stl": 7,
+      "blk": 1,
+      "pf": 36
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "33:07",
+        "pts": 14,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "27:53",
+        "pts": 14,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "32:41",
+        "pts": 19,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "37:05",
+        "pts": 15,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "37:13",
+        "pts": 16,
+        "reb": 5,
+        "ast": 8
+      }
+    ]
+  }
+}

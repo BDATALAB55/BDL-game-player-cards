@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500169",
+  "date": "2025.11.04",
+  "venue": "Chase Center",
+  "attendance": 18064,
+  "home": {
+    "id": "1610612744",
+    "total": {
+      "pts": 118,
+      "fgm": 41,
+      "fga": 83,
+      "f2m": 22,
+      "f2a": 41,
+      "f3m": 19,
+      "f3a": 42,
+      "ftm": 17,
+      "fta": 20,
+      "reb": 43,
+      "oreb": 8,
+      "dreb": 31,
+      "ast": 33,
+      "tov": 15,
+      "stl": 9,
+      "blk": 4,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "1",
+        "name": "JONATHAN KUMINGA",
+        "min": "24:39",
+        "pts": 9,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "32:49",
+        "pts": 2,
+        "reb": 6,
+        "ast": 8
+      },
+      {
+        "no": "21",
+        "name": "QUINTEN POST",
+        "min": "27:10",
+        "pts": 14,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "10",
+        "name": "JIMMY BUTLER III",
+        "min": "14:06",
+        "pts": 2,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "33:32",
+        "pts": 28,
+        "reb": 4,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612756",
+    "total": {
+      "pts": 107,
+      "fgm": 40,
+      "fga": 91,
+      "f2m": 28,
+      "f2a": 58,
+      "f3m": 12,
+      "f3a": 33,
+      "ftm": 15,
+      "fta": 16,
+      "reb": 55,
+      "oreb": 16,
+      "dreb": 30,
+      "ast": 25,
+      "tov": 17,
+      "stl": 10,
+      "blk": 5,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "RYAN DUNN",
+        "min": "31:23",
+        "pts": 10,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "27:55",
+        "pts": 8,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "27:21",
+        "pts": 16,
+        "reb": 16,
+        "ast": 4
+      },
+      {
+        "no": "8",
+        "name": "GRAYSON ALLEN",
+        "min": "35:06",
+        "pts": 16,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "39:24",
+        "pts": 38,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  }
+}

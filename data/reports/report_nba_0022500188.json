@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500188",
+  "date": "2025.11.08",
+  "venue": "Frost Bank Center",
+  "attendance": 18611,
+  "home": {
+    "id": "1610612759",
+    "total": {
+      "pts": 126,
+      "fgm": 48,
+      "fga": 90,
+      "f2m": 34,
+      "f2a": 50,
+      "f3m": 14,
+      "f3a": 40,
+      "ftm": 16,
+      "fta": 18,
+      "reb": 49,
+      "oreb": 10,
+      "dreb": 33,
+      "ast": 31,
+      "tov": 12,
+      "stl": 6,
+      "blk": 6,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "32:57",
+        "pts": 16,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "27:57",
+        "pts": 15,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "32:27",
+        "pts": 18,
+        "reb": 18,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "35:04",
+        "pts": 14,
+        "reb": 4,
+        "ast": 14
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "30:31",
+        "pts": 24,
+        "reb": 3,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612740",
+    "total": {
+      "pts": 119,
+      "fgm": 45,
+      "fga": 94,
+      "f2m": 30,
+      "f2a": 56,
+      "f3m": 15,
+      "f3a": 38,
+      "ftm": 14,
+      "fta": 17,
+      "reb": 48,
+      "oreb": 11,
+      "dreb": 29,
+      "ast": 27,
+      "tov": 11,
+      "stl": 7,
+      "blk": 2,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "25",
+        "name": "TREY MURPHY III",
+        "min": "38:08",
+        "pts": 41,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "29:54",
+        "pts": 10,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "55",
+        "name": "KEVON LOONEY",
+        "min": "16:51",
+        "pts": 5,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "2",
+        "name": "HERBERT JONES",
+        "min": "38:03",
+        "pts": 15,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "JEREMIAH FEARS",
+        "min": "31:25",
+        "pts": 18,
+        "reb": 3,
+        "ast": 3
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500154",
+  "date": "2025.11.02",
+  "venue": "Mortgage Matchup Center",
+  "attendance": 17071,
+  "home": {
+    "id": "1610612756",
+    "total": {
+      "pts": 130,
+      "fgm": 46,
+      "fga": 79,
+      "f2m": 27,
+      "f2a": 46,
+      "f3m": 19,
+      "f3a": 33,
+      "ftm": 19,
+      "fta": 22,
+      "reb": 45,
+      "oreb": 5,
+      "dreb": 34,
+      "ast": 34,
+      "tov": 20,
+      "stl": 8,
+      "blk": 4,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "RYAN DUNN",
+        "min": "27:21",
+        "pts": 17,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "29:53",
+        "pts": 11,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "25:10",
+        "pts": 7,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "GRAYSON ALLEN",
+        "min": "34:11",
+        "pts": 17,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "34:49",
+        "pts": 28,
+        "reb": 2,
+        "ast": 13
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 118,
+      "fgm": 45,
+      "fga": 98,
+      "f2m": 35,
+      "f2a": 57,
+      "f3m": 10,
+      "f3a": 41,
+      "ftm": 18,
+      "fta": 23,
+      "reb": 50,
+      "oreb": 16,
+      "dreb": 25,
+      "ast": 21,
+      "tov": 14,
+      "stl": 11,
+      "blk": 5,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "28:54",
+        "pts": 9,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "27:25",
+        "pts": 13,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "34:27",
+        "pts": 9,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "31:51",
+        "pts": 4,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "34:06",
+        "pts": 26,
+        "reb": 7,
+        "ast": 5
+      }
+    ]
+  }
+}

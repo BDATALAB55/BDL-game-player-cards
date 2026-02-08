@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500147",
+  "date": "2025.11.01",
+  "venue": "Arena CDMX",
+  "attendance": 20385,
+  "home": {
+    "id": "1610612765",
+    "total": {
+      "pts": 122,
+      "fgm": 45,
+      "fga": 91,
+      "f2m": 36,
+      "f2a": 67,
+      "f3m": 9,
+      "f3a": 24,
+      "ftm": 23,
+      "fta": 34,
+      "reb": 56,
+      "oreb": 14,
+      "dreb": 33,
+      "ast": 29,
+      "tov": 7,
+      "stl": 10,
+      "blk": 4,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "28:01",
+        "pts": 15,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "12",
+        "name": "TOBIAS HARRIS",
+        "min": "35:30",
+        "pts": 11,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "JALEN DUREN",
+        "min": "29:06",
+        "pts": 33,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "34:21",
+        "pts": 18,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "37:19",
+        "pts": 21,
+        "reb": 6,
+        "ast": 18
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612742",
+    "total": {
+      "pts": 110,
+      "fgm": 34,
+      "fga": 80,
+      "f2m": 18,
+      "f2a": 35,
+      "f3m": 16,
+      "f3a": 45,
+      "ftm": 26,
+      "fta": 31,
+      "reb": 54,
+      "oreb": 7,
+      "dreb": 36,
+      "ast": 23,
+      "tov": 15,
+      "stl": 3,
+      "blk": 3,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "31",
+        "name": "KLAY THOMPSON",
+        "min": "19:56",
+        "pts": 11,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "35:50",
+        "pts": 6,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "17:22",
+        "pts": 7,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "33:30",
+        "pts": 16,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "33:09",
+        "pts": 13,
+        "reb": 6,
+        "ast": 5
+      }
+    ]
+  }
+}

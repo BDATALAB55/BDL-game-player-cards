@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500195",
+  "date": "2025.11.09",
+  "venue": "Xfinity Mobile Arena",
+  "attendance": 18520,
+  "home": {
+    "id": "1610612755",
+    "total": {
+      "pts": 108,
+      "fgm": 36,
+      "fga": 84,
+      "f2m": 24,
+      "f2a": 51,
+      "f3m": 12,
+      "f3a": 33,
+      "ftm": 24,
+      "fta": 28,
+      "reb": 55,
+      "oreb": 12,
+      "dreb": 32,
+      "ast": 22,
+      "tov": 19,
+      "stl": 8,
+      "blk": 6,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "TRENDON WATFORD",
+        "min": "24:50",
+        "pts": 7,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "KELLY OUBRE JR.",
+        "min": "36:19",
+        "pts": 13,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "ANDRE DRUMMOND",
+        "min": "34:34",
+        "pts": 17,
+        "reb": 12,
+        "ast": 2
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "31:41",
+        "pts": 11,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "TYRESE MAXEY",
+        "min": "38:08",
+        "pts": 33,
+        "reb": 4,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612765",
+    "total": {
+      "pts": 111,
+      "fgm": 39,
+      "fga": 82,
+      "f2m": 26,
+      "f2a": 52,
+      "f3m": 13,
+      "f3a": 30,
+      "ftm": 20,
+      "fta": 28,
+      "reb": 48,
+      "oreb": 9,
+      "dreb": 28,
+      "ast": 23,
+      "tov": 15,
+      "stl": 12,
+      "blk": 5,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "33:54",
+        "pts": 14,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "RONALD HOLLAND II",
+        "min": "33:11",
+        "pts": 9,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "JALEN DUREN",
+        "min": "37:23",
+        "pts": 21,
+        "reb": 16,
+        "ast": 1
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "29:59",
+        "pts": 17,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "40:37",
+        "pts": 26,
+        "reb": 4,
+        "ast": 11
+      }
+    ]
+  }
+}

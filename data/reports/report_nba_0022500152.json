@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500152",
+  "date": "2025.11.02",
+  "venue": "Scotiabank Arena",
+  "attendance": 16746,
+  "home": {
+    "id": "1610612761",
+    "total": {
+      "pts": 117,
+      "fgm": 45,
+      "fga": 89,
+      "f2m": 34,
+      "f2a": 52,
+      "f3m": 11,
+      "f3a": 37,
+      "ftm": 16,
+      "fta": 20,
+      "reb": 55,
+      "oreb": 15,
+      "dreb": 34,
+      "ast": 32,
+      "tov": 15,
+      "stl": 5,
+      "blk": 7,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "32:58",
+        "pts": 26,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "32:17",
+        "pts": 19,
+        "reb": 12,
+        "ast": 8
+      },
+      {
+        "no": "12",
+        "name": "COLLIN MURRAY-BOYLES",
+        "min": "31:09",
+        "pts": 15,
+        "reb": 9,
+        "ast": 5
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "35:32",
+        "pts": 27,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "31:48",
+        "pts": 9,
+        "reb": 4,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612763",
+    "total": {
+      "pts": 104,
+      "fgm": 38,
+      "fga": 87,
+      "f2m": 27,
+      "f2a": 52,
+      "f3m": 11,
+      "f3a": 35,
+      "ftm": 17,
+      "fta": 20,
+      "reb": 46,
+      "oreb": 11,
+      "dreb": 30,
+      "ast": 24,
+      "tov": 11,
+      "stl": 6,
+      "blk": 0,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "KENTAVIOUS CALDWELL-POPE",
+        "min": "27:23",
+        "pts": 12,
+        "reb": 0,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "32:27",
+        "pts": 20,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "31",
+        "name": "JOCK LANDALE",
+        "min": "22:49",
+        "pts": 14,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "26:13",
+        "pts": 7,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "24",
+        "name": "CAM SPENCER",
+        "min": "26:22",
+        "pts": 4,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  }
+}

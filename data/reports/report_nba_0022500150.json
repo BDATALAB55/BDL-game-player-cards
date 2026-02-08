@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500150",
+  "date": "2025.11.02",
+  "venue": "Spectrum Center",
+  "attendance": 17123,
+  "home": {
+    "id": "1610612766",
+    "total": {
+      "pts": 126,
+      "fgm": 43,
+      "fga": 88,
+      "f2m": 25,
+      "f2a": 45,
+      "f3m": 18,
+      "f3a": 43,
+      "ftm": 22,
+      "fta": 22,
+      "reb": 54,
+      "oreb": 9,
+      "dreb": 37,
+      "ast": 31,
+      "tov": 14,
+      "stl": 6,
+      "blk": 6,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "35:29",
+        "pts": 24,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "0",
+        "name": "MILES BRIDGES",
+        "min": "33:13",
+        "pts": 29,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "11",
+        "name": "RYAN KALKBRENNER",
+        "min": "22:06",
+        "pts": 2,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "4",
+        "name": "SION JAMES",
+        "min": "28:49",
+        "pts": 15,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "COLLIN SEXTON",
+        "min": "29:13",
+        "pts": 10,
+        "reb": 4,
+        "ast": 12
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612762",
+    "total": {
+      "pts": 103,
+      "fgm": 36,
+      "fga": 88,
+      "f2m": 29,
+      "f2a": 56,
+      "f3m": 7,
+      "f3a": 32,
+      "ftm": 24,
+      "fta": 29,
+      "reb": 49,
+      "oreb": 10,
+      "dreb": 28,
+      "ast": 27,
+      "tov": 10,
+      "stl": 7,
+      "blk": 3,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "TAYLOR HENDRICKS",
+        "min": "25:08",
+        "pts": 14,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "LAURI MARKKANEN",
+        "min": "32:50",
+        "pts": 29,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "30",
+        "name": "JUSUF NURKIĆ",
+        "min": "21:58",
+        "pts": 3,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "10",
+        "name": "SVI MYKHAILIUK",
+        "min": "29:07",
+        "pts": 3,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "33:15",
+        "pts": 25,
+        "reb": 2,
+        "ast": 7
+      }
+    ]
+  }
+}

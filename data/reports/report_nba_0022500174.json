@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500174",
+  "date": "2025.11.05",
+  "venue": "TD Garden",
+  "attendance": 19156,
+  "home": {
+    "id": "1610612738",
+    "total": {
+      "pts": 136,
+      "fgm": 52,
+      "fga": 95,
+      "f2m": 36,
+      "f2a": 54,
+      "f3m": 16,
+      "f3a": 41,
+      "ftm": 16,
+      "fta": 21,
+      "reb": 49,
+      "oreb": 12,
+      "dreb": 28,
+      "ast": 31,
+      "tov": 5,
+      "stl": 12,
+      "blk": 3,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "25:53",
+        "pts": 35,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "8",
+        "name": "JOSH MINOTT",
+        "min": "33:43",
+        "pts": 21,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "24:13",
+        "pts": 15,
+        "reb": 12,
+        "ast": 5
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "23:55",
+        "pts": 18,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "28:47",
+        "pts": 12,
+        "reb": 3,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612764",
+    "total": {
+      "pts": 107,
+      "fgm": 39,
+      "fga": 80,
+      "f2m": 30,
+      "f2a": 53,
+      "f3m": 9,
+      "f3a": 27,
+      "ftm": 20,
+      "fta": 27,
+      "reb": 49,
+      "oreb": 11,
+      "dreb": 29,
+      "ast": 25,
+      "tov": 19,
+      "stl": 2,
+      "blk": 5,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "JUSTIN CHAMPAGNIE",
+        "min": "19:03",
+        "pts": 12,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "16:28",
+        "pts": 1,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "29:00",
+        "pts": 31,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "28:29",
+        "pts": 9,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "17:33",
+        "pts": 3,
+        "reb": 1,
+        "ast": 4
+      }
+    ]
+  }
+}

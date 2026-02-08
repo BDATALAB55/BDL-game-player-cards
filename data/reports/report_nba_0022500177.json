@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500177",
+  "date": "2025.11.05",
+  "venue": "American Airlines Center",
+  "attendance": 18925,
+  "home": {
+    "id": "1610612742",
+    "total": {
+      "pts": 99,
+      "fgm": 37,
+      "fga": 89,
+      "f2m": 27,
+      "f2a": 57,
+      "f3m": 10,
+      "f3a": 32,
+      "ftm": 15,
+      "fta": 20,
+      "reb": 53,
+      "oreb": 10,
+      "dreb": 34,
+      "ast": 18,
+      "tov": 15,
+      "stl": 11,
+      "blk": 7,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "35:02",
+        "pts": 20,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "38:04",
+        "pts": 15,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "24:43",
+        "pts": 15,
+        "reb": 8,
+        "ast": 0
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "27:28",
+        "pts": 12,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "D'ANGELO RUSSELL",
+        "min": "20:42",
+        "pts": 9,
+        "reb": 0,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612740",
+    "total": {
+      "pts": 101,
+      "fgm": 39,
+      "fga": 91,
+      "f2m": 29,
+      "f2a": 60,
+      "f3m": 10,
+      "f3a": 31,
+      "ftm": 13,
+      "fta": 16,
+      "reb": 60,
+      "oreb": 14,
+      "dreb": 42,
+      "ast": 18,
+      "tov": 13,
+      "stl": 10,
+      "blk": 3,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "25",
+        "name": "TREY MURPHY III",
+        "min": "38:09",
+        "pts": 11,
+        "reb": 9,
+        "ast": 5
+      },
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "29:33",
+        "pts": 22,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "55",
+        "name": "KEVON LOONEY",
+        "min": "14:59",
+        "pts": 8,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "HERBERT JONES",
+        "min": "35:00",
+        "pts": 12,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "JEREMIAH FEARS",
+        "min": "25:25",
+        "pts": 13,
+        "reb": 5,
+        "ast": 3
+      }
+    ]
+  }
+}

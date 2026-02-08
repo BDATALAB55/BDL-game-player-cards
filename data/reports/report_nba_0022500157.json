@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500157",
+  "date": "2025.11.03",
+  "venue": "Gainbridge Fieldhouse",
+  "attendance": 17016,
+  "home": {
+    "id": "1610612754",
+    "total": {
+      "pts": 115,
+      "fgm": 39,
+      "fga": 90,
+      "f2m": 31,
+      "f2a": 57,
+      "f3m": 8,
+      "f3a": 33,
+      "ftm": 29,
+      "fta": 38,
+      "reb": 58,
+      "oreb": 14,
+      "dreb": 31,
+      "ast": 24,
+      "tov": 11,
+      "stl": 8,
+      "blk": 4,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "AARON NESMITH",
+        "min": "33:46",
+        "pts": 17,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "37:55",
+        "pts": 32,
+        "reb": 5,
+        "ast": 8
+      },
+      {
+        "no": "22",
+        "name": "ISAIAH JACKSON",
+        "min": "29:20",
+        "pts": 21,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "JARACE WALKER",
+        "min": "38:10",
+        "pts": 18,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "29",
+        "name": "QUENTON JACKSON",
+        "min": "19:42",
+        "pts": 7,
+        "reb": 2,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612749",
+    "total": {
+      "pts": 117,
+      "fgm": 42,
+      "fga": 88,
+      "f2m": 22,
+      "f2a": 41,
+      "f3m": 20,
+      "f3a": 47,
+      "ftm": 13,
+      "fta": 22,
+      "reb": 59,
+      "oreb": 9,
+      "dreb": 34,
+      "ast": 24,
+      "tov": 18,
+      "stl": 6,
+      "blk": 5,
+      "pf": 28
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "GARY TRENT JR.",
+        "min": "33:35",
+        "pts": 11,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "34",
+        "name": "GIANNIS ANTETOKOUNMPO",
+        "min": "31:44",
+        "pts": 33,
+        "reb": 13,
+        "ast": 5
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "32:14",
+        "pts": 9,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "29:18",
+        "pts": 13,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "28:27",
+        "pts": 10,
+        "reb": 5,
+        "ast": 7
+      }
+    ]
+  }
+}

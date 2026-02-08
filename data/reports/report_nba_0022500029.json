@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500029",
+  "date": "2025.11.07",
+  "venue": "Capital One Arena",
+  "attendance": 14054,
+  "home": {
+    "id": "1610612764",
+    "total": {
+      "pts": 114,
+      "fgm": 41,
+      "fga": 91,
+      "f2m": 26,
+      "f2a": 50,
+      "f3m": 15,
+      "f3a": 41,
+      "ftm": 17,
+      "fta": 23,
+      "reb": 54,
+      "oreb": 16,
+      "dreb": 28,
+      "ast": 32,
+      "tov": 20,
+      "stl": 5,
+      "blk": 7,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "TRE JOHNSON",
+        "min": "28:49",
+        "pts": 18,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "22",
+        "name": "KHRIS MIDDLETON",
+        "min": "21:54",
+        "pts": 4,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "30:27",
+        "pts": 20,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "27:53",
+        "pts": 25,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "28:04",
+        "pts": 6,
+        "reb": 4,
+        "ast": 11
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612739",
+    "total": {
+      "pts": 148,
+      "fgm": 52,
+      "fga": 110,
+      "f2m": 32,
+      "f2a": 65,
+      "f3m": 20,
+      "f3a": 45,
+      "ftm": 24,
+      "fta": 31,
+      "reb": 68,
+      "oreb": 25,
+      "dreb": 32,
+      "ast": 34,
+      "tov": 10,
+      "stl": 15,
+      "blk": 6,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "DE'ANDRE HUNTER",
+        "min": "21:16",
+        "pts": 8,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "27:51",
+        "pts": 18,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "26:00",
+        "pts": 16,
+        "reb": 14,
+        "ast": 3
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "25:37",
+        "pts": 24,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "10",
+        "name": "DARIUS GARLAND",
+        "min": "28:20",
+        "pts": 20,
+        "reb": 2,
+        "ast": 9
+      }
+    ]
+  }
+}

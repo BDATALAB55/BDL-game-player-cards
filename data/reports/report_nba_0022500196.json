@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500196",
+  "date": "2025.11.09",
+  "venue": "Chase Center",
+  "attendance": 18064,
+  "home": {
+    "id": "1610612744",
+    "total": {
+      "pts": 114,
+      "fgm": 38,
+      "fga": 88,
+      "f2m": 26,
+      "f2a": 44,
+      "f3m": 12,
+      "f3a": 44,
+      "ftm": 26,
+      "fta": 37,
+      "reb": 63,
+      "oreb": 11,
+      "dreb": 39,
+      "ast": 22,
+      "tov": 10,
+      "stl": 11,
+      "blk": 6,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "1",
+        "name": "JONATHAN KUMINGA",
+        "min": "20:21",
+        "pts": 5,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "24:39",
+        "pts": 3,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "21",
+        "name": "QUINTEN POST",
+        "min": "24:03",
+        "pts": 14,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "10",
+        "name": "JIMMY BUTLER III",
+        "min": "30:06",
+        "pts": 21,
+        "reb": 9,
+        "ast": 7
+      },
+      {
+        "no": "2",
+        "name": "BRANDIN PODZIEMSKI",
+        "min": "31:40",
+        "pts": 14,
+        "reb": 6,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612754",
+    "total": {
+      "pts": 83,
+      "fgm": 32,
+      "fga": 94,
+      "f2m": 21,
+      "f2a": 55,
+      "f3m": 11,
+      "f3a": 39,
+      "ftm": 8,
+      "fta": 11,
+      "reb": 63,
+      "oreb": 14,
+      "dreb": 39,
+      "ast": 21,
+      "tov": 20,
+      "stl": 7,
+      "blk": 6,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "JARACE WALKER",
+        "min": "31:33",
+        "pts": 12,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "21:38",
+        "pts": 12,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "ISAIAH JACKSON",
+        "min": "21:01",
+        "pts": 12,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "26",
+        "name": "BEN SHEPPARD",
+        "min": "26:54",
+        "pts": 3,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "29:43",
+        "pts": 14,
+        "reb": 2,
+        "ast": 9
+      }
+    ]
+  }
+}

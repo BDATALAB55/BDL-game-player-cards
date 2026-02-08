@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500144",
+  "date": "2025.11.01",
+  "venue": "Gainbridge Fieldhouse",
+  "attendance": 17274,
+  "home": {
+    "id": "1610612754",
+    "total": {
+      "pts": 114,
+      "fgm": 40,
+      "fga": 89,
+      "f2m": 30,
+      "f2a": 56,
+      "f3m": 10,
+      "f3a": 33,
+      "ftm": 24,
+      "fta": 28,
+      "reb": 57,
+      "oreb": 11,
+      "dreb": 36,
+      "ast": 24,
+      "tov": 12,
+      "stl": 7,
+      "blk": 3,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "AARON NESMITH",
+        "min": "35:08",
+        "pts": 31,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "38:01",
+        "pts": 27,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "22",
+        "name": "ISAIAH JACKSON",
+        "min": "20:57",
+        "pts": 10,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "JARACE WALKER",
+        "min": "29:57",
+        "pts": 6,
+        "reb": 9,
+        "ast": 5
+      },
+      {
+        "no": "29",
+        "name": "QUENTON JACKSON",
+        "min": "31:09",
+        "pts": 25,
+        "reb": 6,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612744",
+    "total": {
+      "pts": 109,
+      "fgm": 39,
+      "fga": 90,
+      "f2m": 27,
+      "f2a": 46,
+      "f3m": 12,
+      "f3a": 44,
+      "ftm": 19,
+      "fta": 22,
+      "reb": 51,
+      "oreb": 10,
+      "dreb": 34,
+      "ast": 25,
+      "tov": 16,
+      "stl": 5,
+      "blk": 4,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "JIMMY BUTLER III",
+        "min": "34:26",
+        "pts": 20,
+        "reb": 6,
+        "ast": 7
+      },
+      {
+        "no": "1",
+        "name": "JONATHAN KUMINGA",
+        "min": "31:49",
+        "pts": 17,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "29:44",
+        "pts": 8,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "BRANDIN PODZIEMSKI",
+        "min": "35:18",
+        "pts": 16,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "29:07",
+        "pts": 24,
+        "reb": 0,
+        "ast": 2
+      }
+    ]
+  }
+}

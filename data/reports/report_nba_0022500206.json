@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500206",
+  "date": "2025.11.10",
+  "venue": "Intuit Dome",
+  "attendance": 16368,
+  "home": {
+    "id": "1610612746",
+    "total": {
+      "pts": 102,
+      "fgm": 36,
+      "fga": 82,
+      "f2m": 24,
+      "f2a": 44,
+      "f3m": 12,
+      "f3a": 38,
+      "ftm": 18,
+      "fta": 25,
+      "reb": 50,
+      "oreb": 11,
+      "dreb": 31,
+      "ast": 19,
+      "tov": 11,
+      "stl": 7,
+      "blk": 9,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "DERRICK JONES JR.",
+        "min": "33:18",
+        "pts": 11,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "31:22",
+        "pts": 9,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "30:07",
+        "pts": 13,
+        "reb": 12,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "36:23",
+        "pts": 11,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "38:45",
+        "pts": 35,
+        "reb": 10,
+        "ast": 11
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612737",
+    "total": {
+      "pts": 105,
+      "fgm": 38,
+      "fga": 84,
+      "f2m": 25,
+      "f2a": 50,
+      "f3m": 13,
+      "f3a": 34,
+      "ftm": 16,
+      "fta": 20,
+      "reb": 53,
+      "oreb": 7,
+      "dreb": 34,
+      "ast": 30,
+      "tov": 11,
+      "stl": 7,
+      "blk": 8,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "31:00",
+        "pts": 11,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "34:45",
+        "pts": 16,
+        "reb": 10,
+        "ast": 8
+      },
+      {
+        "no": "8",
+        "name": "KRISTAPS PORZIŅĢIS",
+        "min": "26:21",
+        "pts": 20,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "38:38",
+        "pts": 6,
+        "reb": 3,
+        "ast": 8
+      },
+      {
+        "no": "2",
+        "name": "KEATON WALLACE",
+        "min": "24:17",
+        "pts": 5,
+        "reb": 4,
+        "ast": 1
+      }
+    ]
+  }
+}

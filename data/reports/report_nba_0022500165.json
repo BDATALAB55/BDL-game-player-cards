@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500165",
+  "date": "2025.11.04",
+  "venue": "Scotiabank Arena",
+  "attendance": 18357,
+  "home": {
+    "id": "1610612761",
+    "total": {
+      "pts": 128,
+      "fgm": 44,
+      "fga": 91,
+      "f2m": 27,
+      "f2a": 53,
+      "f3m": 17,
+      "f3a": 38,
+      "ftm": 23,
+      "fta": 29,
+      "reb": 60,
+      "oreb": 10,
+      "dreb": 40,
+      "ast": 33,
+      "tov": 9,
+      "stl": 8,
+      "blk": 6,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "30:49",
+        "pts": 13,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "27:30",
+        "pts": 23,
+        "reb": 3,
+        "ast": 6
+      },
+      {
+        "no": "19",
+        "name": "JAKOB POELTL",
+        "min": "20:01",
+        "pts": 8,
+        "reb": 9,
+        "ast": 0
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "31:06",
+        "pts": 23,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "26:23",
+        "pts": 15,
+        "reb": 6,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612749",
+    "total": {
+      "pts": 100,
+      "fgm": 37,
+      "fga": 86,
+      "f2m": 26,
+      "f2a": 48,
+      "f3m": 11,
+      "f3a": 38,
+      "ftm": 15,
+      "fta": 21,
+      "reb": 49,
+      "oreb": 9,
+      "dreb": 32,
+      "ast": 26,
+      "tov": 12,
+      "stl": 5,
+      "blk": 4,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "GARY TRENT JR.",
+        "min": "21:26",
+        "pts": 6,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "34",
+        "name": "GIANNIS ANTETOKOUNMPO",
+        "min": "23:43",
+        "pts": 22,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "22:46",
+        "pts": 10,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "16:47",
+        "pts": 9,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "28:13",
+        "pts": 11,
+        "reb": 0,
+        "ast": 5
+      }
+    ]
+  }
+}

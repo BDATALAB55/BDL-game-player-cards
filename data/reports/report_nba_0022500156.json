@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500156",
+  "date": "2025.11.03",
+  "venue": "Barclays Center",
+  "attendance": 17287,
+  "home": {
+    "id": "1610612751",
+    "total": {
+      "pts": 109,
+      "fgm": 36,
+      "fga": 89,
+      "f2m": 24,
+      "f2a": 49,
+      "f3m": 12,
+      "f3a": 40,
+      "ftm": 25,
+      "fta": 38,
+      "reb": 50,
+      "oreb": 18,
+      "dreb": 22,
+      "ast": 25,
+      "tov": 12,
+      "stl": 9,
+      "blk": 4,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "27:54",
+        "pts": 7,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "31:41",
+        "pts": 15,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "29:52",
+        "pts": 19,
+        "reb": 8,
+        "ast": 7
+      },
+      {
+        "no": "24",
+        "name": "CAM THOMAS",
+        "min": "34:39",
+        "pts": 25,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "13",
+        "name": "TYRESE MARTIN",
+        "min": "22:03",
+        "pts": 12,
+        "reb": 3,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612750",
+    "total": {
+      "pts": 125,
+      "fgm": 44,
+      "fga": 78,
+      "f2m": 30,
+      "f2a": 43,
+      "f3m": 14,
+      "f3a": 35,
+      "ftm": 23,
+      "fta": 35,
+      "reb": 63,
+      "oreb": 14,
+      "dreb": 39,
+      "ast": 33,
+      "tov": 16,
+      "stl": 6,
+      "blk": 4,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JADEN MCDANIELS",
+        "min": "29:21",
+        "pts": 22,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "30",
+        "name": "JULIUS RANDLE",
+        "min": "33:31",
+        "pts": 19,
+        "reb": 11,
+        "ast": 10
+      },
+      {
+        "no": "27",
+        "name": "RUDY GOBERT",
+        "min": "33:41",
+        "pts": 15,
+        "reb": 12,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "DONTE DIVINCENZO",
+        "min": "30:27",
+        "pts": 25,
+        "reb": 9,
+        "ast": 5
+      },
+      {
+        "no": "10",
+        "name": "MIKE CONLEY",
+        "min": "24:00",
+        "pts": 9,
+        "reb": 3,
+        "ast": 7
+      }
+    ]
+  }
+}

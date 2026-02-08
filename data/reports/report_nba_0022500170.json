@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500170",
+  "date": "2025.11.04",
+  "venue": "Intuit Dome",
+  "attendance": 17195,
+  "home": {
+    "id": "1610612746",
+    "total": {
+      "pts": 107,
+      "fgm": 33,
+      "fga": 80,
+      "f2m": 15,
+      "f2a": 37,
+      "f3m": 18,
+      "f3a": 43,
+      "ftm": 23,
+      "fta": 27,
+      "reb": 52,
+      "oreb": 10,
+      "dreb": 32,
+      "ast": 26,
+      "tov": 19,
+      "stl": 9,
+      "blk": 2,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "33",
+        "name": "NICOLAS BATUM",
+        "min": "17:50",
+        "pts": 3,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "DERRICK JONES JR.",
+        "min": "28:20",
+        "pts": 16,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "25:37",
+        "pts": 7,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "30:08",
+        "pts": 6,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "30:06",
+        "pts": 25,
+        "reb": 6,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612760",
+    "total": {
+      "pts": 126,
+      "fgm": 45,
+      "fga": 86,
+      "f2m": 27,
+      "f2a": 48,
+      "f3m": 18,
+      "f3a": 38,
+      "ftm": 18,
+      "fta": 22,
+      "reb": 44,
+      "oreb": 8,
+      "dreb": 32,
+      "ast": 28,
+      "tov": 10,
+      "stl": 12,
+      "blk": 6,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "14:45",
+        "pts": 6,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "30:03",
+        "pts": 11,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "55",
+        "name": "ISAIAH HARTENSTEIN",
+        "min": "23:32",
+        "pts": 10,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "24:55",
+        "pts": 12,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "29:03",
+        "pts": 30,
+        "reb": 4,
+        "ast": 12
+      }
+    ]
+  }
+}

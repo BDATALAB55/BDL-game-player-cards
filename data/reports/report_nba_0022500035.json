@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500035",
+  "date": "2025.11.07",
+  "venue": "Fiserv Forum",
+  "attendance": 17839,
+  "home": {
+    "id": "1610612749",
+    "total": {
+      "pts": 126,
+      "fgm": 48,
+      "fga": 103,
+      "f2m": 32,
+      "f2a": 64,
+      "f3m": 16,
+      "f3a": 39,
+      "ftm": 14,
+      "fta": 18,
+      "reb": 60,
+      "oreb": 14,
+      "dreb": 39,
+      "ast": 27,
+      "tov": 11,
+      "stl": 10,
+      "blk": 6,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "GARY TRENT JR.",
+        "min": "22:30",
+        "pts": 5,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "34",
+        "name": "GIANNIS ANTETOKOUNMPO",
+        "min": "37:17",
+        "pts": 41,
+        "reb": 15,
+        "ast": 9
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "31:19",
+        "pts": 23,
+        "reb": 8,
+        "ast": 0
+      },
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "34:34",
+        "pts": 6,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "30:53",
+        "pts": 20,
+        "reb": 6,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612741",
+    "total": {
+      "pts": 110,
+      "fgm": 44,
+      "fga": 90,
+      "f2m": 34,
+      "f2a": 57,
+      "f3m": 10,
+      "f3a": 33,
+      "ftm": 12,
+      "fta": 16,
+      "reb": 51,
+      "oreb": 8,
+      "dreb": 37,
+      "ast": 34,
+      "tov": 14,
+      "stl": 9,
+      "blk": 3,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "16:33",
+        "pts": 6,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "35:47",
+        "pts": 20,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "9",
+        "name": "NIKOLA VUČEVIĆ",
+        "min": "31:12",
+        "pts": 16,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "30",
+        "name": "TRE JONES",
+        "min": "29:22",
+        "pts": 17,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "3",
+        "name": "JOSH GIDDEY",
+        "min": "34:35",
+        "pts": 16,
+        "reb": 7,
+        "ast": 14
+      }
+    ]
+  }
+}

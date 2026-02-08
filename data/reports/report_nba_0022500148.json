@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500148",
+  "date": "2025.11.02",
+  "venue": "Paycom Center",
+  "attendance": 18203,
+  "home": {
+    "id": "1610612760",
+    "total": {
+      "pts": 137,
+      "fgm": 47,
+      "fga": 84,
+      "f2m": 27,
+      "f2a": 36,
+      "f3m": 20,
+      "f3a": 48,
+      "ftm": 23,
+      "fta": 26,
+      "reb": 47,
+      "oreb": 8,
+      "dreb": 34,
+      "ast": 33,
+      "tov": 11,
+      "stl": 12,
+      "blk": 5,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "AARON WIGGINS",
+        "min": "26:29",
+        "pts": 15,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "6",
+        "name": "JAYLIN WILLIAMS",
+        "min": "22:53",
+        "pts": 12,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "55",
+        "name": "ISAIAH HARTENSTEIN",
+        "min": "25:47",
+        "pts": 14,
+        "reb": 14,
+        "ast": 8
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "26:03",
+        "pts": 13,
+        "reb": 0,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "29:59",
+        "pts": 30,
+        "reb": 2,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612740",
+    "total": {
+      "pts": 106,
+      "fgm": 35,
+      "fga": 80,
+      "f2m": 19,
+      "f2a": 40,
+      "f3m": 16,
+      "f3a": 40,
+      "ftm": 20,
+      "fta": 32,
+      "reb": 51,
+      "oreb": 12,
+      "dreb": 26,
+      "ast": 26,
+      "tov": 16,
+      "stl": 6,
+      "blk": 3,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "25",
+        "name": "TREY MURPHY III",
+        "min": "32:03",
+        "pts": 19,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "ZION WILLIAMSON",
+        "min": "28:03",
+        "pts": 20,
+        "reb": 9,
+        "ast": 6
+      },
+      {
+        "no": "21",
+        "name": "YVES MISSI",
+        "min": "21:57",
+        "pts": 7,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "2",
+        "name": "HERBERT JONES",
+        "min": "24:08",
+        "pts": 12,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "JEREMIAH FEARS",
+        "min": "25:38",
+        "pts": 16,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  }
+}

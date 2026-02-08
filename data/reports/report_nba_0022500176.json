@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500176",
+  "date": "2025.11.05",
+  "venue": "FedExForum",
+  "attendance": 15119,
+  "home": {
+    "id": "1610612763",
+    "total": {
+      "pts": 109,
+      "fgm": 34,
+      "fga": 89,
+      "f2m": 21,
+      "f2a": 50,
+      "f3m": 13,
+      "f3a": 39,
+      "ftm": 28,
+      "fta": 35,
+      "reb": 57,
+      "oreb": 13,
+      "dreb": 34,
+      "ast": 25,
+      "tov": 15,
+      "stl": 10,
+      "blk": 9,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "KENTAVIOUS CALDWELL-POPE",
+        "min": "23:56",
+        "pts": 4,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "29:20",
+        "pts": 9,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "31",
+        "name": "JOCK LANDALE",
+        "min": "20:32",
+        "pts": 11,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "19:36",
+        "pts": 8,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "12",
+        "name": "JA MORANT",
+        "min": "33:41",
+        "pts": 17,
+        "reb": 5,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612745",
+    "total": {
+      "pts": 124,
+      "fgm": 48,
+      "fga": 101,
+      "f2m": 35,
+      "f2a": 71,
+      "f3m": 13,
+      "f3a": 30,
+      "ftm": 15,
+      "fta": 18,
+      "reb": 62,
+      "oreb": 15,
+      "dreb": 39,
+      "ast": 29,
+      "tov": 13,
+      "stl": 9,
+      "blk": 3,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "34:27",
+        "pts": 11,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "35:31",
+        "pts": 16,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "34:44",
+        "pts": 20,
+        "reb": 16,
+        "ast": 7
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "38:49",
+        "pts": 28,
+        "reb": 10,
+        "ast": 7
+      },
+      {
+        "no": "20",
+        "name": "JOSH OKOGIE",
+        "min": "23:32",
+        "pts": 13,
+        "reb": 3,
+        "ast": 3
+      }
+    ]
+  }
+}

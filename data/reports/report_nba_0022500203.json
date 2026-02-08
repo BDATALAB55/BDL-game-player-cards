@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500203",
+  "date": "2025.11.10",
+  "venue": "American Airlines Center",
+  "attendance": 19132,
+  "home": {
+    "id": "1610612742",
+    "total": {
+      "pts": 114,
+      "fgm": 37,
+      "fga": 89,
+      "f2m": 28,
+      "f2a": 50,
+      "f3m": 9,
+      "f3a": 39,
+      "ftm": 31,
+      "fta": 41,
+      "reb": 64,
+      "oreb": 16,
+      "dreb": 36,
+      "ast": 25,
+      "tov": 14,
+      "stl": 8,
+      "blk": 8,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "34:45",
+        "pts": 26,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "22:27",
+        "pts": 16,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "23:23",
+        "pts": 7,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "30:23",
+        "pts": 13,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "10",
+        "name": "BRANDON WILLIAMS",
+        "min": "33:09",
+        "pts": 19,
+        "reb": 6,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612749",
+    "total": {
+      "pts": 116,
+      "fgm": 41,
+      "fga": 91,
+      "f2m": 27,
+      "f2a": 55,
+      "f3m": 14,
+      "f3a": 36,
+      "ftm": 20,
+      "fta": 25,
+      "reb": 53,
+      "oreb": 8,
+      "dreb": 36,
+      "ast": 24,
+      "tov": 13,
+      "stl": 9,
+      "blk": 6,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "GARY TRENT JR.",
+        "min": "26:55",
+        "pts": 3,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "34",
+        "name": "GIANNIS ANTETOKOUNMPO",
+        "min": "37:23",
+        "pts": 30,
+        "reb": 8,
+        "ast": 6
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "27:52",
+        "pts": 14,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "27:10",
+        "pts": 13,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "32:43",
+        "pts": 13,
+        "reb": 4,
+        "ast": 8
+      }
+    ]
+  }
+}

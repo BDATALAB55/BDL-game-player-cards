@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500162",
+  "date": "2025.11.03",
+  "venue": "Ball Arena",
+  "attendance": 19653,
+  "home": {
+    "id": "1610612743",
+    "total": {
+      "pts": 130,
+      "fgm": 50,
+      "fga": 97,
+      "f2m": 38,
+      "f2a": 59,
+      "f3m": 12,
+      "f3a": 38,
+      "ftm": 18,
+      "fta": 24,
+      "reb": 47,
+      "oreb": 8,
+      "dreb": 32,
+      "ast": 33,
+      "tov": 7,
+      "stl": 9,
+      "blk": 5,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "CAMERON JOHNSON",
+        "min": "29:49",
+        "pts": 10,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "32",
+        "name": "AARON GORDON",
+        "min": "30:15",
+        "pts": 20,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "36:00",
+        "pts": 34,
+        "reb": 7,
+        "ast": 14
+      },
+      {
+        "no": "0",
+        "name": "CHRISTIAN BRAUN",
+        "min": "31:25",
+        "pts": 21,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "32:05",
+        "pts": 15,
+        "reb": 7,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612758",
+    "total": {
+      "pts": 124,
+      "fgm": 47,
+      "fga": 90,
+      "f2m": 38,
+      "f2a": 63,
+      "f3m": 9,
+      "f3a": 27,
+      "ftm": 21,
+      "fta": 25,
+      "reb": 54,
+      "oreb": 8,
+      "dreb": 39,
+      "ast": 27,
+      "tov": 15,
+      "stl": 5,
+      "blk": 1,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "ZACH LAVINE",
+        "min": "36:52",
+        "pts": 15,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "35:36",
+        "pts": 19,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "11",
+        "name": "DOMANTAS SABONIS",
+        "min": "36:52",
+        "pts": 13,
+        "reb": 17,
+        "ast": 5
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "37:28",
+        "pts": 26,
+        "reb": 12,
+        "ast": 6
+      },
+      {
+        "no": "17",
+        "name": "DENNIS SCHRÖDER",
+        "min": "34:55",
+        "pts": 18,
+        "reb": 4,
+        "ast": 9
+      }
+    ]
+  }
+}

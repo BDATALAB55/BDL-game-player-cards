@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500031",
+  "date": "2025.11.07",
+  "venue": "Barclays Center",
+  "attendance": 17548,
+  "home": {
+    "id": "1610612751",
+    "total": {
+      "pts": 107,
+      "fgm": 34,
+      "fga": 80,
+      "f2m": 17,
+      "f2a": 34,
+      "f3m": 17,
+      "f3a": 46,
+      "ftm": 22,
+      "fta": 26,
+      "reb": 38,
+      "oreb": 8,
+      "dreb": 22,
+      "ast": 26,
+      "tov": 19,
+      "stl": 5,
+      "blk": 1,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "31:44",
+        "pts": 28,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "30:42",
+        "pts": 19,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "30:43",
+        "pts": 17,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "21:47",
+        "pts": 3,
+        "reb": 0,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "23:03",
+        "pts": 8,
+        "reb": 3,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612765",
+    "total": {
+      "pts": 125,
+      "fgm": 49,
+      "fga": 85,
+      "f2m": 43,
+      "f2a": 59,
+      "f3m": 6,
+      "f3a": 26,
+      "ftm": 21,
+      "fta": 30,
+      "reb": 59,
+      "oreb": 11,
+      "dreb": 35,
+      "ast": 32,
+      "tov": 13,
+      "stl": 14,
+      "blk": 1,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "33:33",
+        "pts": 14,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "28",
+        "name": "ISAIAH STEWART",
+        "min": "08:52",
+        "pts": 4,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "JALEN DUREN",
+        "min": "30:09",
+        "pts": 30,
+        "reb": 11,
+        "ast": 0
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "31:26",
+        "pts": 7,
+        "reb": 1,
+        "ast": 8
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "32:44",
+        "pts": 34,
+        "reb": 1,
+        "ast": 10
+      }
+    ]
+  }
+}

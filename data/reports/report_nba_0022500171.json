@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500171",
+  "date": "2025.11.05",
+  "venue": "Rocket Arena",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612739",
+    "total": {
+      "pts": 132,
+      "fgm": 49,
+      "fga": 92,
+      "f2m": 31,
+      "f2a": 48,
+      "f3m": 18,
+      "f3a": 44,
+      "ftm": 16,
+      "fta": 17,
+      "reb": 45,
+      "oreb": 10,
+      "dreb": 24,
+      "ast": 33,
+      "tov": 14,
+      "stl": 9,
+      "blk": 7,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "JAYLON TYSON",
+        "min": "28:41",
+        "pts": 10,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "34:01",
+        "pts": 23,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "29:31",
+        "pts": 24,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "35:03",
+        "pts": 46,
+        "reb": 4,
+        "ast": 8
+      },
+      {
+        "no": "10",
+        "name": "DARIUS GARLAND",
+        "min": "26:05",
+        "pts": 8,
+        "reb": 2,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612755",
+    "total": {
+      "pts": 121,
+      "fgm": 44,
+      "fga": 90,
+      "f2m": 32,
+      "f2a": 59,
+      "f3m": 12,
+      "f3a": 31,
+      "ftm": 21,
+      "fta": 30,
+      "reb": 54,
+      "oreb": 15,
+      "dreb": 28,
+      "ast": 26,
+      "tov": 18,
+      "stl": 9,
+      "blk": 2,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "KELLY OUBRE JR.",
+        "min": "37:57",
+        "pts": 19,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "33",
+        "name": "JABARI WALKER",
+        "min": "08:19",
+        "pts": 0,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "30",
+        "name": "ADEM BONA",
+        "min": "18:18",
+        "pts": 4,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "37:13",
+        "pts": 7,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "TYRESE MAXEY",
+        "min": "36:26",
+        "pts": 27,
+        "reb": 7,
+        "ast": 9
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500161",
+  "date": "2025.11.03",
+  "venue": "FedExForum",
+  "attendance": 13822,
+  "home": {
+    "id": "1610612763",
+    "total": {
+      "pts": 106,
+      "fgm": 35,
+      "fga": 87,
+      "f2m": 21,
+      "f2a": 46,
+      "f3m": 14,
+      "f3a": 41,
+      "ftm": 22,
+      "fta": 25,
+      "reb": 54,
+      "oreb": 18,
+      "dreb": 31,
+      "ast": 25,
+      "tov": 20,
+      "stl": 8,
+      "blk": 5,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "KENTAVIOUS CALDWELL-POPE",
+        "min": "25:16",
+        "pts": 2,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "31:06",
+        "pts": 21,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "31",
+        "name": "JOCK LANDALE",
+        "min": "29:38",
+        "pts": 13,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "21:17",
+        "pts": 4,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "12",
+        "name": "JA MORANT",
+        "min": "34:58",
+        "pts": 18,
+        "reb": 5,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612765",
+    "total": {
+      "pts": 114,
+      "fgm": 42,
+      "fga": 83,
+      "f2m": 32,
+      "f2a": 52,
+      "f3m": 10,
+      "f3a": 31,
+      "ftm": 20,
+      "fta": 29,
+      "reb": 52,
+      "oreb": 10,
+      "dreb": 33,
+      "ast": 23,
+      "tov": 12,
+      "stl": 11,
+      "blk": 9,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "26:32",
+        "pts": 9,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "28",
+        "name": "ISAIAH STEWART",
+        "min": "33:57",
+        "pts": 26,
+        "reb": 14,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "JALEN DUREN",
+        "min": "34:22",
+        "pts": 14,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "39:49",
+        "pts": 11,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "38:52",
+        "pts": 33,
+        "reb": 5,
+        "ast": 8
+      }
+    ]
+  }
+}

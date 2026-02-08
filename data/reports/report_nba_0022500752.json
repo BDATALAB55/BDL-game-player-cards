@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500752",
+  "date": "2026.02.07",
+  "venue": "United Center",
+  "attendance": 20939,
+  "home": {
+    "id": "1610612741",
+    "total": {
+      "pts": 120,
+      "fgm": 41,
+      "fga": 92,
+      "f2m": 21,
+      "f2a": 41,
+      "f3m": 20,
+      "f3a": 51,
+      "ftm": 18,
+      "fta": 20,
+      "reb": 47,
+      "oreb": 12,
+      "dreb": 25,
+      "ast": 25,
+      "tov": 16,
+      "stl": 9,
+      "blk": 3,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "25:51",
+        "pts": 13,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "30:20",
+        "pts": 21,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "28",
+        "name": "GUERSCHON YABUSELE",
+        "min": "26:06",
+        "pts": 12,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "31",
+        "name": "JADEN IVEY",
+        "min": "30:10",
+        "pts": 10,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "22",
+        "name": "ANFERNEE SIMONS",
+        "min": "32:29",
+        "pts": 15,
+        "reb": 4,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612743",
+    "total": {
+      "pts": 136,
+      "fgm": 49,
+      "fga": 85,
+      "f2m": 33,
+      "f2a": 52,
+      "f3m": 16,
+      "f3a": 33,
+      "ftm": 22,
+      "fta": 33,
+      "reb": 53,
+      "oreb": 11,
+      "dreb": 30,
+      "ast": 37,
+      "tov": 13,
+      "stl": 7,
+      "blk": 7,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JULIAN STRAWTHER",
+        "min": "33:26",
+        "pts": 19,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "CAMERON JOHNSON",
+        "min": "27:15",
+        "pts": 14,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "33:24",
+        "pts": 22,
+        "reb": 14,
+        "ast": 17
+      },
+      {
+        "no": "0",
+        "name": "CHRISTIAN BRAUN",
+        "min": "31:41",
+        "pts": 10,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "30:57",
+        "pts": 28,
+        "reb": 3,
+        "ast": 11
+      }
+    ]
+  }
+}

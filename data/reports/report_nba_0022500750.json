@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500750",
+  "date": "2026.02.07",
+  "venue": "Kia Center",
+  "attendance": 19203,
+  "home": {
+    "id": "1610612753",
+    "total": {
+      "pts": 120,
+      "fgm": 36,
+      "fga": 84,
+      "f2m": 23,
+      "f2a": 43,
+      "f3m": 13,
+      "f3a": 41,
+      "ftm": 35,
+      "fta": 43,
+      "reb": 47,
+      "oreb": 3,
+      "dreb": 35,
+      "ast": 26,
+      "tov": 14,
+      "stl": 15,
+      "blk": 7,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "35:35",
+        "pts": 22,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "38:03",
+        "pts": 23,
+        "reb": 7,
+        "ast": 8
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "28:25",
+        "pts": 8,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "ANTHONY BLACK",
+        "min": "38:03",
+        "pts": 21,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "34:24",
+        "pts": 12,
+        "reb": 7,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612762",
+    "total": {
+      "pts": 117,
+      "fgm": 44,
+      "fga": 92,
+      "f2m": 34,
+      "f2a": 61,
+      "f3m": 10,
+      "f3a": 31,
+      "ftm": 19,
+      "fta": 23,
+      "reb": 62,
+      "oreb": 12,
+      "dreb": 42,
+      "ast": 30,
+      "tov": 24,
+      "stl": 11,
+      "blk": 4,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LAURI MARKKANEN",
+        "min": "26:52",
+        "pts": 27,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "20",
+        "name": "JAREN JACKSON JR.",
+        "min": "25:06",
+        "pts": 22,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "30",
+        "name": "JUSUF NURKIĆ",
+        "min": "23:42",
+        "pts": 3,
+        "reb": 14,
+        "ast": 6
+      },
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "30:53",
+        "pts": 10,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "13:26",
+        "pts": 5,
+        "reb": 1,
+        "ast": 1
+      }
+    ]
+  }
+}

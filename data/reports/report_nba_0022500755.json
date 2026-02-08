@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500755",
+  "date": "2026.02.07",
+  "venue": "Moda Center",
+  "attendance": 16273,
+  "home": {
+    "id": "1610612757",
+    "total": {
+      "pts": 122,
+      "fgm": 46,
+      "fga": 95,
+      "f2m": 25,
+      "f2a": 44,
+      "f3m": 21,
+      "f3a": 51,
+      "ftm": 9,
+      "fta": 14,
+      "reb": 56,
+      "oreb": 14,
+      "dreb": 34,
+      "ast": 30,
+      "tov": 17,
+      "stl": 7,
+      "blk": 3,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "91",
+        "name": "SIDY CISSOKO",
+        "min": "32:45",
+        "pts": 7,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "33:48",
+        "pts": 8,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "36:04",
+        "pts": 20,
+        "reb": 19,
+        "ast": 3
+      },
+      {
+        "no": "9",
+        "name": "JERAMI GRANT",
+        "min": "32:52",
+        "pts": 29,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "JRUE HOLIDAY",
+        "min": "27:22",
+        "pts": 21,
+        "reb": 2,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612763",
+    "total": {
+      "pts": 115,
+      "fgm": 42,
+      "fga": 84,
+      "f2m": 26,
+      "f2a": 46,
+      "f3m": 16,
+      "f3a": 38,
+      "ftm": 15,
+      "fta": 21,
+      "reb": 46,
+      "oreb": 5,
+      "dreb": 31,
+      "ast": 19,
+      "tov": 14,
+      "stl": 14,
+      "blk": 6,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "JAHMAI MASHACK",
+        "min": "30:12",
+        "pts": 8,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "45",
+        "name": "GG JACKSON",
+        "min": "30:08",
+        "pts": 11,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "KYLE ANDERSON",
+        "min": "26:42",
+        "pts": 11,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "KENTAVIOUS CALDWELL-POPE",
+        "min": "30:56",
+        "pts": 11,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "2",
+        "name": "TY JEROME",
+        "min": "19:54",
+        "pts": 13,
+        "reb": 1,
+        "ast": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500749",
+  "date": "2026.02.07",
+  "venue": "Frost Bank Center",
+  "attendance": 18617,
+  "home": {
+    "id": "1610612759",
+    "total": {
+      "pts": 138,
+      "fgm": 55,
+      "fga": 99,
+      "f2m": 41,
+      "f2a": 64,
+      "f3m": 14,
+      "f3a": 35,
+      "ftm": 14,
+      "fta": 20,
+      "reb": 65,
+      "oreb": 12,
+      "dreb": 40,
+      "ast": 34,
+      "tov": 16,
+      "stl": 5,
+      "blk": 11,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "15:04",
+        "pts": 5,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "29:46",
+        "pts": 17,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "26:43",
+        "pts": 16,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "26:14",
+        "pts": 15,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "31:51",
+        "pts": 40,
+        "reb": 12,
+        "ast": 12
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612742",
+    "total": {
+      "pts": 125,
+      "fgm": 46,
+      "fga": 105,
+      "f2m": 31,
+      "f2a": 68,
+      "f3m": 15,
+      "f3a": 37,
+      "ftm": 18,
+      "fta": 24,
+      "reb": 51,
+      "oreb": 12,
+      "dreb": 29,
+      "ast": 35,
+      "tov": 7,
+      "stl": 10,
+      "blk": 4,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "26:24",
+        "pts": 14,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "16",
+        "name": "CALEB MARTIN",
+        "min": "24:01",
+        "pts": 11,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "18:21",
+        "pts": 9,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "26:58",
+        "pts": 17,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "25:17",
+        "pts": 6,
+        "reb": 3,
+        "ast": 5
+      }
+    ]
+  }
+}

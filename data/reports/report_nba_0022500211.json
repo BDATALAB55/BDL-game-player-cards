@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500211",
+  "date": "2025.11.11",
+  "venue": "Delta Center",
+  "attendance": 18186,
+  "home": {
+    "id": "1610612762",
+    "total": {
+      "pts": 152,
+      "fgm": 51,
+      "fga": 92,
+      "f2m": 32,
+      "f2a": 50,
+      "f3m": 19,
+      "f3a": 42,
+      "ftm": 31,
+      "fta": 35,
+      "reb": 57,
+      "oreb": 13,
+      "dreb": 32,
+      "ast": 38,
+      "tov": 14,
+      "stl": 3,
+      "blk": 3,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "SVI MYKHAILIUK",
+        "min": "27:17",
+        "pts": 20,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "23",
+        "name": "LAURI MARKKANEN",
+        "min": "34:34",
+        "pts": 35,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "JUSUF NURKIĆ",
+        "min": "30:44",
+        "pts": 11,
+        "reb": 11,
+        "ast": 4
+      },
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "25:35",
+        "pts": 20,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "26:43",
+        "pts": 10,
+        "reb": 5,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612754",
+    "total": {
+      "pts": 128,
+      "fgm": 46,
+      "fga": 99,
+      "f2m": 36,
+      "f2a": 62,
+      "f3m": 10,
+      "f3a": 37,
+      "ftm": 26,
+      "fta": 29,
+      "reb": 45,
+      "oreb": 15,
+      "dreb": 20,
+      "ast": 29,
+      "tov": 8,
+      "stl": 6,
+      "blk": 6,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "35:05",
+        "pts": 27,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "25",
+        "name": "JEREMIAH ROBINSON-EARL",
+        "min": "21:45",
+        "pts": 6,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "13",
+        "name": "TONY BRADLEY",
+        "min": "19:38",
+        "pts": 8,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "AARON NESMITH",
+        "min": "31:53",
+        "pts": 17,
+        "reb": 4,
+        "ast": 7
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "29:31",
+        "pts": 25,
+        "reb": 2,
+        "ast": 7
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500210",
+  "date": "2025.11.11",
+  "venue": "Paycom Center",
+  "attendance": 18203,
+  "home": {
+    "id": "1610612760",
+    "total": {
+      "pts": 126,
+      "fgm": 42,
+      "fga": 83,
+      "f2m": 26,
+      "f2a": 47,
+      "f3m": 16,
+      "f3a": 36,
+      "ftm": 26,
+      "fta": 31,
+      "reb": 51,
+      "oreb": 10,
+      "dreb": 30,
+      "ast": 29,
+      "tov": 19,
+      "stl": 12,
+      "blk": 4,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "20:44",
+        "pts": 3,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "24:39",
+        "pts": 23,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "55",
+        "name": "ISAIAH HARTENSTEIN",
+        "min": "19:32",
+        "pts": 8,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "25",
+        "name": "AJAY MITCHELL",
+        "min": "30:54",
+        "pts": 17,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "28:29",
+        "pts": 28,
+        "reb": 5,
+        "ast": 11
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612744",
+    "total": {
+      "pts": 102,
+      "fgm": 33,
+      "fga": 74,
+      "f2m": 20,
+      "f2a": 39,
+      "f3m": 13,
+      "f3a": 35,
+      "ftm": 23,
+      "fta": 29,
+      "reb": 43,
+      "oreb": 6,
+      "dreb": 26,
+      "ast": 23,
+      "tov": 20,
+      "stl": 16,
+      "blk": 4,
+      "pf": 28
+    },
+    "starters": [
+      {
+        "no": "1",
+        "name": "JONATHAN KUMINGA",
+        "min": "23:43",
+        "pts": 13,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "21:54",
+        "pts": 3,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "21",
+        "name": "QUINTEN POST",
+        "min": "16:35",
+        "pts": 6,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "10",
+        "name": "JIMMY BUTLER III",
+        "min": "22:10",
+        "pts": 12,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "19:59",
+        "pts": 11,
+        "reb": 1,
+        "ast": 0
+      }
+    ]
+  }
+}

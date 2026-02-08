@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500207",
+  "date": "2025.11.11",
+  "venue": "Barclays Center",
+  "attendance": 17233,
+  "home": {
+    "id": "1610612751",
+    "total": {
+      "pts": 109,
+      "fgm": 32,
+      "fga": 81,
+      "f2m": 18,
+      "f2a": 40,
+      "f3m": 14,
+      "f3a": 41,
+      "ftm": 31,
+      "fta": 32,
+      "reb": 43,
+      "oreb": 7,
+      "dreb": 29,
+      "ast": 24,
+      "tov": 12,
+      "stl": 7,
+      "blk": 5,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "35:41",
+        "pts": 21,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "34:42",
+        "pts": 18,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "35:28",
+        "pts": 21,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "32:28",
+        "pts": 9,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "27:31",
+        "pts": 16,
+        "reb": 4,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612761",
+    "total": {
+      "pts": 119,
+      "fgm": 45,
+      "fga": 91,
+      "f2m": 36,
+      "f2a": 56,
+      "f3m": 9,
+      "f3a": 35,
+      "ftm": 20,
+      "fta": 25,
+      "reb": 58,
+      "oreb": 13,
+      "dreb": 37,
+      "ast": 31,
+      "tov": 8,
+      "stl": 5,
+      "blk": 4,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "32:42",
+        "pts": 25,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "30:38",
+        "pts": 15,
+        "reb": 11,
+        "ast": 5
+      },
+      {
+        "no": "19",
+        "name": "JAKOB POELTL",
+        "min": "29:36",
+        "pts": 12,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "28:31",
+        "pts": 13,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "31:40",
+        "pts": 24,
+        "reb": 8,
+        "ast": 5
+      }
+    ]
+  }
+}

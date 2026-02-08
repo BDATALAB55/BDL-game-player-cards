@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500756",
+  "date": "2026.02.07",
+  "venue": "Golden 1 Center",
+  "attendance": 16212,
+  "home": {
+    "id": "1610612758",
+    "total": {
+      "pts": 126,
+      "fgm": 48,
+      "fga": 94,
+      "f2m": 32,
+      "f2a": 57,
+      "f3m": 16,
+      "f3a": 37,
+      "ftm": 14,
+      "fta": 20,
+      "reb": 47,
+      "oreb": 15,
+      "dreb": 27,
+      "ast": 30,
+      "tov": 15,
+      "stl": 9,
+      "blk": 5,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "29:38",
+        "pts": 13,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "29",
+        "name": "DAEQWON PLOWDEN",
+        "min": "39:27",
+        "pts": 16,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "22:45",
+        "pts": 14,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "NIQUE CLIFFORD",
+        "min": "39:50",
+        "pts": 30,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "31:56",
+        "pts": 21,
+        "reb": 5,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612739",
+    "total": {
+      "pts": 132,
+      "fgm": 46,
+      "fga": 88,
+      "f2m": 35,
+      "f2a": 53,
+      "f3m": 11,
+      "f3a": 35,
+      "ftm": 29,
+      "fta": 32,
+      "reb": 51,
+      "oreb": 9,
+      "dreb": 29,
+      "ast": 30,
+      "tov": 11,
+      "stl": 9,
+      "blk": 3,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "SAM MERRILL",
+        "min": "23:54",
+        "pts": 2,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "20",
+        "name": "JAYLON TYSON",
+        "min": "27:17",
+        "pts": 10,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "32:43",
+        "pts": 29,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "32:11",
+        "pts": 23,
+        "reb": 2,
+        "ast": 8
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "34:39",
+        "pts": 35,
+        "reb": 2,
+        "ast": 4
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500747",
+  "date": "2026.02.07",
+  "venue": "Barclays Center",
+  "attendance": 17548,
+  "home": {
+    "id": "1610612751",
+    "total": {
+      "pts": 127,
+      "fgm": 50,
+      "fga": 91,
+      "f2m": 37,
+      "f2a": 53,
+      "f3m": 13,
+      "f3a": 38,
+      "ftm": 14,
+      "fta": 19,
+      "reb": 52,
+      "oreb": 13,
+      "dreb": 32,
+      "ast": 36,
+      "tov": 13,
+      "stl": 8,
+      "blk": 3,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "30:30",
+        "pts": 23,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "27:11",
+        "pts": 18,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "28:22",
+        "pts": 11,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "25:32",
+        "pts": 4,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "88",
+        "name": "NOLAN TRAORE",
+        "min": "23:37",
+        "pts": 15,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612764",
+    "total": {
+      "pts": 113,
+      "fgm": 37,
+      "fga": 79,
+      "f2m": 26,
+      "f2a": 49,
+      "f3m": 11,
+      "f3a": 30,
+      "ftm": 28,
+      "fta": 30,
+      "reb": 39,
+      "oreb": 5,
+      "dreb": 25,
+      "ast": 18,
+      "tov": 15,
+      "stl": 6,
+      "blk": 8,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "JUSTIN CHAMPAGNIE",
+        "min": "22:06",
+        "pts": 21,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "27",
+        "name": "WILL RILEY",
+        "min": "45:10",
+        "pts": 27,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "TRISTAN VUKCEVIC",
+        "min": "20:24",
+        "pts": 14,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "JAMIR WATKINS",
+        "min": "45:10",
+        "pts": 13,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "22:06",
+        "pts": 11,
+        "reb": 2,
+        "ast": 4
+      }
+    ]
+  }
+}

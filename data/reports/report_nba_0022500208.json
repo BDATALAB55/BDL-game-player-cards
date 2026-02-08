@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500208",
+  "date": "2025.11.11",
+  "venue": "Madison Square Garden",
+  "attendance": 19812,
+  "home": {
+    "id": "1610612752",
+    "total": {
+      "pts": 133,
+      "fgm": 47,
+      "fga": 98,
+      "f2m": 25,
+      "f2a": 43,
+      "f3m": 22,
+      "f3a": 55,
+      "ftm": 17,
+      "fta": 20,
+      "reb": 50,
+      "oreb": 10,
+      "dreb": 34,
+      "ast": 35,
+      "tov": 14,
+      "stl": 12,
+      "blk": 2,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "35:34",
+        "pts": 16,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "38:03",
+        "pts": 22,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "31:40",
+        "pts": 21,
+        "reb": 13,
+        "ast": 4
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "36:08",
+        "pts": 32,
+        "reb": 5,
+        "ast": 10
+      },
+      {
+        "no": "44",
+        "name": "LANDRY SHAMET",
+        "min": "20:51",
+        "pts": 10,
+        "reb": 1,
+        "ast": 0
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612763",
+    "total": {
+      "pts": 120,
+      "fgm": 43,
+      "fga": 84,
+      "f2m": 29,
+      "f2a": 46,
+      "f3m": 14,
+      "f3a": 38,
+      "ftm": 20,
+      "fta": 24,
+      "reb": 50,
+      "oreb": 5,
+      "dreb": 39,
+      "ast": 36,
+      "tov": 22,
+      "stl": 7,
+      "blk": 3,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "KENTAVIOUS CALDWELL-POPE",
+        "min": "15:12",
+        "pts": 4,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "29:40",
+        "pts": 19,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "31",
+        "name": "JOCK LANDALE",
+        "min": "25:51",
+        "pts": 8,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "12",
+        "name": "JA MORANT",
+        "min": "33:32",
+        "pts": 16,
+        "reb": 3,
+        "ast": 10
+      },
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "29:08",
+        "pts": 18,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500758",
+  "date": "2026.02.08",
+  "venue": "Capital One Arena",
+  "attendance": 14056,
+  "home": {
+    "id": "1610612764",
+    "total": {
+      "pts": 101,
+      "fgm": 39,
+      "fga": 93,
+      "f2m": 27,
+      "f2a": 57,
+      "f3m": 12,
+      "f3a": 36,
+      "ftm": 11,
+      "fta": 16,
+      "reb": 52,
+      "oreb": 10,
+      "dreb": 32,
+      "ast": 23,
+      "tov": 19,
+      "stl": 7,
+      "blk": 6,
+      "pf": 12
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "JUSTIN CHAMPAGNIE",
+        "min": "24:54",
+        "pts": 13,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "19:06",
+        "pts": 13,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "25:49",
+        "pts": 12,
+        "reb": 12,
+        "ast": 5
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "28:39",
+        "pts": 13,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "33:30",
+        "pts": 7,
+        "reb": 4,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612748",
+    "total": {
+      "pts": 132,
+      "fgm": 49,
+      "fga": 104,
+      "f2m": 28,
+      "f2a": 57,
+      "f3m": 21,
+      "f3a": 47,
+      "ftm": 13,
+      "fta": 15,
+      "reb": 65,
+      "oreb": 21,
+      "dreb": 39,
+      "ast": 34,
+      "tov": 16,
+      "stl": 18,
+      "blk": 4,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "15",
+        "name": "MYRON GARDNER",
+        "min": "21:00",
+        "pts": 10,
+        "reb": 7,
+        "ast": 6
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "23:25",
+        "pts": 11,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "28:07",
+        "pts": 22,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "25:00",
+        "pts": 21,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "24:55",
+        "pts": 5,
+        "reb": 2,
+        "ast": 3
+      }
+    ]
+  }
+}

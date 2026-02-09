@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500757",
+  "date": "2026.02.08",
+  "venue": "TD Garden",
+  "attendance": 19156,
+  "home": {
+    "id": "1610612738",
+    "total": {
+      "pts": 89,
+      "fgm": 34,
+      "fga": 92,
+      "f2m": 27,
+      "f2a": 51,
+      "f3m": 7,
+      "f3a": 41,
+      "ftm": 14,
+      "fta": 15,
+      "reb": 54,
+      "oreb": 14,
+      "dreb": 30,
+      "ast": 22,
+      "tov": 10,
+      "stl": 4,
+      "blk": 3,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "33:08",
+        "pts": 26,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "52",
+        "name": "LUKA GARZA",
+        "min": "15:21",
+        "pts": 6,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "22:47",
+        "pts": 4,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "55",
+        "name": "BAYLOR SCHEIERMAN",
+        "min": "29:11",
+        "pts": 10,
+        "reb": 13,
+        "ast": 5
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "34:12",
+        "pts": 19,
+        "reb": 1,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612752",
+    "total": {
+      "pts": 111,
+      "fgm": 40,
+      "fga": 83,
+      "f2m": 26,
+      "f2a": 48,
+      "f3m": 14,
+      "f3a": 35,
+      "ftm": 17,
+      "fta": 24,
+      "reb": 57,
+      "oreb": 7,
+      "dreb": 39,
+      "ast": 23,
+      "tov": 8,
+      "stl": 5,
+      "blk": 3,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "30:24",
+        "pts": 14,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "26:20",
+        "pts": 19,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "29:24",
+        "pts": 11,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "44",
+        "name": "LANDRY SHAMET",
+        "min": "27:48",
+        "pts": 3,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "33:13",
+        "pts": 31,
+        "reb": 3,
+        "ast": 8
+      }
+    ]
+  }
+}

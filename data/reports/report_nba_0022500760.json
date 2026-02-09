@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500760",
+  "date": "2026.02.08",
+  "venue": "Target Center",
+  "attendance": 18978,
+  "home": {
+    "id": "1610612750",
+    "total": {
+      "pts": 96,
+      "fgm": 37,
+      "fga": 83,
+      "f2m": 29,
+      "f2a": 50,
+      "f3m": 8,
+      "f3a": 33,
+      "ftm": 14,
+      "fta": 22,
+      "reb": 54,
+      "oreb": 10,
+      "dreb": 31,
+      "ast": 17,
+      "tov": 20,
+      "stl": 8,
+      "blk": 2,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JADEN MCDANIELS",
+        "min": "28:14",
+        "pts": 2,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "30",
+        "name": "JULIUS RANDLE",
+        "min": "33:26",
+        "pts": 17,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "27",
+        "name": "RUDY GOBERT",
+        "min": "29:49",
+        "pts": 10,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "ANTHONY EDWARDS",
+        "min": "34:52",
+        "pts": 23,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "DONTE DIVINCENZO",
+        "min": "23:53",
+        "pts": 1,
+        "reb": 4,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612746",
+    "total": {
+      "pts": 115,
+      "fgm": 39,
+      "fga": 76,
+      "f2m": 25,
+      "f2a": 49,
+      "f3m": 14,
+      "f3a": 27,
+      "ftm": 23,
+      "fta": 28,
+      "reb": 42,
+      "oreb": 8,
+      "dreb": 29,
+      "ast": 25,
+      "tov": 13,
+      "stl": 11,
+      "blk": 6,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "33:32",
+        "pts": 41,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "29:17",
+        "pts": 15,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "11",
+        "name": "BROOK LOPEZ",
+        "min": "26:24",
+        "pts": 5,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "DERRICK JONES JR.",
+        "min": "28:24",
+        "pts": 5,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "28:24",
+        "pts": 9,
+        "reb": 5,
+        "ast": 6
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500759",
+  "date": "2026.02.08",
+  "venue": "Scotiabank Arena",
+  "attendance": 17876,
+  "home": {
+    "id": "1610612761",
+    "total": {
+      "pts": 122,
+      "fgm": 45,
+      "fga": 95,
+      "f2m": 34,
+      "f2a": 65,
+      "f3m": 11,
+      "f3a": 30,
+      "ftm": 21,
+      "fta": 30,
+      "reb": 66,
+      "oreb": 17,
+      "dreb": 37,
+      "ast": 29,
+      "tov": 10,
+      "stl": 12,
+      "blk": 8,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "26:02",
+        "pts": 13,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "33:01",
+        "pts": 25,
+        "reb": 14,
+        "ast": 6
+      },
+      {
+        "no": "12",
+        "name": "COLLIN MURRAY-BOYLES",
+        "min": "08:13",
+        "pts": 2,
+        "reb": 0,
+        "ast": 0
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "31:47",
+        "pts": 20,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "28:08",
+        "pts": 13,
+        "reb": 4,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612754",
+    "total": {
+      "pts": 104,
+      "fgm": 40,
+      "fga": 89,
+      "f2m": 28,
+      "f2a": 56,
+      "f3m": 12,
+      "f3a": 33,
+      "ftm": 12,
+      "fta": 14,
+      "reb": 46,
+      "oreb": 7,
+      "dreb": 33,
+      "ast": 26,
+      "tov": 19,
+      "stl": 6,
+      "blk": 3,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "JOHNNY FURPHY",
+        "min": "15:26",
+        "pts": 4,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "24:12",
+        "pts": 18,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "30:00",
+        "pts": 15,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "AARON NESMITH",
+        "min": "23:28",
+        "pts": 7,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "25:29",
+        "pts": 10,
+        "reb": 3,
+        "ast": 2
+      }
+    ]
+  }
+}

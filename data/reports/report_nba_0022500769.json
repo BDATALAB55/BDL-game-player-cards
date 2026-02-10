@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500769",
+  "date": "2026.02.09",
+  "venue": "Crypto.com Arena",
+  "attendance": 18519,
+  "home": {
+    "id": "1610612747",
+    "total": {
+      "pts": 110,
+      "fgm": 42,
+      "fga": 84,
+      "f2m": 32,
+      "f2a": 53,
+      "f3m": 10,
+      "f3a": 31,
+      "ftm": 16,
+      "fta": 23,
+      "reb": 45,
+      "oreb": 9,
+      "dreb": 28,
+      "ast": 25,
+      "tov": 15,
+      "stl": 7,
+      "blk": 2,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "35:59",
+        "pts": 22,
+        "reb": 6,
+        "ast": 10
+      },
+      {
+        "no": "28",
+        "name": "RUI HACHIMURA",
+        "min": "32:53",
+        "pts": 12,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "29:01",
+        "pts": 6,
+        "reb": 10,
+        "ast": 0
+      },
+      {
+        "no": "12",
+        "name": "JAKE LARAVIA",
+        "min": "24:02",
+        "pts": 14,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "29:24",
+        "pts": 19,
+        "reb": 3,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612760",
+    "total": {
+      "pts": 119,
+      "fgm": 42,
+      "fga": 87,
+      "f2m": 28,
+      "f2a": 54,
+      "f3m": 14,
+      "f3a": 33,
+      "ftm": 21,
+      "fta": 29,
+      "reb": 58,
+      "oreb": 14,
+      "dreb": 31,
+      "ast": 23,
+      "tov": 15,
+      "stl": 12,
+      "blk": 4,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "JALEN WILLIAMS",
+        "min": "24:22",
+        "pts": 23,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "31:11",
+        "pts": 13,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "55",
+        "name": "ISAIAH HARTENSTEIN",
+        "min": "21:40",
+        "pts": 10,
+        "reb": 9,
+        "ast": 6
+      },
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "28:55",
+        "pts": 7,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "30:49",
+        "pts": 12,
+        "reb": 4,
+        "ast": 6
+      }
+    ]
+  }
+}

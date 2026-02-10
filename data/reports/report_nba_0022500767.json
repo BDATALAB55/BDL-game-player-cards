@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500767",
+  "date": "2026.02.09",
+  "venue": "Ball Arena",
+  "attendance": 19647,
+  "home": {
+    "id": "1610612743",
+    "total": {
+      "pts": 117,
+      "fgm": 38,
+      "fga": 85,
+      "f2m": 25,
+      "f2a": 45,
+      "f3m": 13,
+      "f3a": 40,
+      "ftm": 28,
+      "fta": 35,
+      "reb": 61,
+      "oreb": 12,
+      "dreb": 34,
+      "ast": 25,
+      "tov": 13,
+      "stl": 9,
+      "blk": 1,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JULIAN STRAWTHER",
+        "min": "28:54",
+        "pts": 20,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "CAMERON JOHNSON",
+        "min": "29:23",
+        "pts": 10,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "32:59",
+        "pts": 22,
+        "reb": 14,
+        "ast": 11
+      },
+      {
+        "no": "0",
+        "name": "CHRISTIAN BRAUN",
+        "min": "31:52",
+        "pts": 20,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "35:36",
+        "pts": 17,
+        "reb": 8,
+        "ast": 11
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612739",
+    "total": {
+      "pts": 119,
+      "fgm": 43,
+      "fga": 92,
+      "f2m": 28,
+      "f2a": 47,
+      "f3m": 15,
+      "f3a": 45,
+      "ftm": 18,
+      "fta": 22,
+      "reb": 47,
+      "oreb": 12,
+      "dreb": 27,
+      "ast": 25,
+      "tov": 12,
+      "stl": 6,
+      "blk": 7,
+      "pf": 29
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "SAM MERRILL",
+        "min": "25:03",
+        "pts": 9,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "20",
+        "name": "JAYLON TYSON",
+        "min": "31:10",
+        "pts": 16,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "34:38",
+        "pts": 22,
+        "reb": 13,
+        "ast": 1
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "34:08",
+        "pts": 32,
+        "reb": 1,
+        "ast": 10
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "36:01",
+        "pts": 22,
+        "reb": 10,
+        "ast": 7
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500770",
+  "date": "2026.02.09",
+  "venue": "Moda Center",
+  "attendance": 16025,
+  "home": {
+    "id": "1610612757",
+    "total": {
+      "pts": 135,
+      "fgm": 47,
+      "fga": 97,
+      "f2m": 25,
+      "f2a": 43,
+      "f3m": 22,
+      "f3a": 54,
+      "ftm": 19,
+      "fta": 25,
+      "reb": 60,
+      "oreb": 20,
+      "dreb": 31,
+      "ast": 36,
+      "tov": 18,
+      "stl": 8,
+      "blk": 7,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "27:29",
+        "pts": 30,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "JERAMI GRANT",
+        "min": "24:34",
+        "pts": 15,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "27:44",
+        "pts": 15,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "26:36",
+        "pts": 26,
+        "reb": 10,
+        "ast": 8
+      },
+      {
+        "no": "5",
+        "name": "JRUE HOLIDAY",
+        "min": "27:30",
+        "pts": 13,
+        "reb": 7,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612755",
+    "total": {
+      "pts": 118,
+      "fgm": 38,
+      "fga": 81,
+      "f2m": 27,
+      "f2a": 51,
+      "f3m": 11,
+      "f3a": 30,
+      "ftm": 31,
+      "fta": 36,
+      "reb": 45,
+      "oreb": 8,
+      "dreb": 25,
+      "ast": 23,
+      "tov": 13,
+      "stl": 12,
+      "blk": 8,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "KELLY OUBRE JR.",
+        "min": "35:48",
+        "pts": 19,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "12",
+        "name": "TRENDON WATFORD",
+        "min": "24:35",
+        "pts": 12,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "ANDRE DRUMMOND",
+        "min": "26:40",
+        "pts": 11,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "33:24",
+        "pts": 11,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "TYRESE MAXEY",
+        "min": "32:27",
+        "pts": 30,
+        "reb": 1,
+        "ast": 4
+      }
+    ]
+  }
+}

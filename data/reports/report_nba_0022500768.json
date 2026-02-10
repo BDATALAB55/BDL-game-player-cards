@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500768",
+  "date": "2026.02.09",
+  "venue": "Chase Center",
+  "attendance": 18064,
+  "home": {
+    "id": "1610612744",
+    "total": {
+      "pts": 114,
+      "fgm": 44,
+      "fga": 83,
+      "f2m": 33,
+      "f2a": 50,
+      "f3m": 11,
+      "f3a": 33,
+      "ftm": 15,
+      "fta": 19,
+      "reb": 44,
+      "oreb": 10,
+      "dreb": 30,
+      "ast": 31,
+      "tov": 23,
+      "stl": 12,
+      "blk": 1,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "27:41",
+        "pts": 15,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "15",
+        "name": "GUI SANTOS",
+        "min": "29:49",
+        "pts": 16,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "23:33",
+        "pts": 14,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "DE'ANTHONY MELTON",
+        "min": "25:26",
+        "pts": 10,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "61",
+        "name": "PAT SPENCER",
+        "min": "31:44",
+        "pts": 17,
+        "reb": 3,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612763",
+    "total": {
+      "pts": 113,
+      "fgm": 42,
+      "fga": 83,
+      "f2m": 32,
+      "f2a": 51,
+      "f3m": 10,
+      "f3a": 32,
+      "ftm": 19,
+      "fta": 24,
+      "reb": 47,
+      "oreb": 8,
+      "dreb": 29,
+      "ast": 26,
+      "tov": 16,
+      "stl": 17,
+      "blk": 3,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "25:56",
+        "pts": 10,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "45",
+        "name": "GG JACKSON",
+        "min": "23:28",
+        "pts": 6,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "KYLE ANDERSON",
+        "min": "26:00",
+        "pts": 8,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "CEDRIC COWARD",
+        "min": "11:50",
+        "pts": 2,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "TY JEROME",
+        "min": "19:57",
+        "pts": 19,
+        "reb": 3,
+        "ast": 7
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500761",
+  "date": "2026.02.09",
+  "venue": "Spectrum Center",
+  "attendance": 19476,
+  "home": {
+    "id": "1610612766",
+    "total": {
+      "pts": 104,
+      "fgm": 34,
+      "fga": 82,
+      "f2m": 15,
+      "f2a": 35,
+      "f3m": 19,
+      "f3a": 47,
+      "ftm": 17,
+      "fta": 17,
+      "reb": 49,
+      "oreb": 11,
+      "dreb": 28,
+      "ast": 22,
+      "tov": 18,
+      "stl": 4,
+      "blk": 3,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "34:10",
+        "pts": 20,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "MILES BRIDGES",
+        "min": "19:53",
+        "pts": 6,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "14",
+        "name": "MOUSSA DIABATÉ",
+        "min": "18:42",
+        "pts": 0,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "24",
+        "name": "BRANDON MILLER",
+        "min": "35:58",
+        "pts": 24,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "LAMELO BALL",
+        "min": "29:29",
+        "pts": 20,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612765",
+    "total": {
+      "pts": 110,
+      "fgm": 41,
+      "fga": 87,
+      "f2m": 36,
+      "f2a": 62,
+      "f3m": 5,
+      "f3a": 25,
+      "ftm": 23,
+      "fta": 28,
+      "reb": 50,
+      "oreb": 14,
+      "dreb": 27,
+      "ast": 20,
+      "tov": 10,
+      "stl": 12,
+      "blk": 3,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "25:28",
+        "pts": 6,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "12",
+        "name": "TOBIAS HARRIS",
+        "min": "34:55",
+        "pts": 11,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "JALEN DUREN",
+        "min": "20:07",
+        "pts": 15,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "24:27",
+        "pts": 18,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "36:39",
+        "pts": 33,
+        "reb": 9,
+        "ast": 7
+      }
+    ]
+  }
+}

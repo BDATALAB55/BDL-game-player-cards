@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500763",
+  "date": "2026.02.09",
+  "venue": "Kaseya Center",
+  "attendance": 19700,
+  "home": {
+    "id": "1610612748",
+    "total": {
+      "pts": 111,
+      "fgm": 33,
+      "fga": 79,
+      "f2m": 18,
+      "f2a": 34,
+      "f3m": 15,
+      "f3a": 45,
+      "ftm": 30,
+      "fta": 44,
+      "reb": 55,
+      "oreb": 10,
+      "dreb": 33,
+      "ast": 24,
+      "tov": 14,
+      "stl": 6,
+      "blk": 3,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "35:54",
+        "pts": 26,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "37:10",
+        "pts": 23,
+        "reb": 11,
+        "ast": 5
+      },
+      {
+        "no": "7",
+        "name": "KEL'EL WARE",
+        "min": "14:13",
+        "pts": 8,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "0",
+        "name": "SIMONE FONTECCHIO",
+        "min": "18:34",
+        "pts": 9,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "30:52",
+        "pts": 12,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612762",
+    "total": {
+      "pts": 115,
+      "fgm": 39,
+      "fga": 92,
+      "f2m": 29,
+      "f2a": 56,
+      "f3m": 10,
+      "f3a": 36,
+      "ftm": 27,
+      "fta": 31,
+      "reb": 63,
+      "oreb": 15,
+      "dreb": 43,
+      "ast": 29,
+      "tov": 12,
+      "stl": 8,
+      "blk": 2,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LAURI MARKKANEN",
+        "min": "24:38",
+        "pts": 17,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "20",
+        "name": "JAREN JACKSON JR.",
+        "min": "24:54",
+        "pts": 22,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "30",
+        "name": "JUSUF NURKIĆ",
+        "min": "24:38",
+        "pts": 10,
+        "reb": 16,
+        "ast": 1
+      },
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "36:33",
+        "pts": 16,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "ISAIAH COLLIER",
+        "min": "34:27",
+        "pts": 13,
+        "reb": 3,
+        "ast": 9
+      }
+    ]
+  }
+}

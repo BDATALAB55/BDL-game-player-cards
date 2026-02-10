@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500764",
+  "date": "2026.02.09",
+  "venue": "Kia Center",
+  "attendance": 18202,
+  "home": {
+    "id": "1610612753",
+    "total": {
+      "pts": 118,
+      "fgm": 40,
+      "fga": 86,
+      "f2m": 26,
+      "f2a": 44,
+      "f3m": 14,
+      "f3a": 42,
+      "ftm": 24,
+      "fta": 27,
+      "reb": 52,
+      "oreb": 11,
+      "dreb": 33,
+      "ast": 27,
+      "tov": 11,
+      "stl": 14,
+      "blk": 3,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "30:55",
+        "pts": 25,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "32:43",
+        "pts": 11,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "24:15",
+        "pts": 4,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "ANTHONY BLACK",
+        "min": "34:09",
+        "pts": 26,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "26:48",
+        "pts": 7,
+        "reb": 3,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612749",
+    "total": {
+      "pts": 99,
+      "fgm": 36,
+      "fga": 77,
+      "f2m": 24,
+      "f2a": 44,
+      "f3m": 12,
+      "f3a": 33,
+      "ftm": 15,
+      "fta": 21,
+      "reb": 45,
+      "oreb": 6,
+      "dreb": 31,
+      "ast": 17,
+      "tov": 19,
+      "stl": 7,
+      "blk": 6,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "32:11",
+        "pts": 15,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "18",
+        "name": "KYLE KUZMA",
+        "min": "17:35",
+        "pts": 3,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "27:18",
+        "pts": 13,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "KEVIN PORTER JR.",
+        "min": "36:08",
+        "pts": 28,
+        "reb": 4,
+        "ast": 7
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "32:28",
+        "pts": 14,
+        "reb": 6,
+        "ast": 3
+      }
+    ]
+  }
+}

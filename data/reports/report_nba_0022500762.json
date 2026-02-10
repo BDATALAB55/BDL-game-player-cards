@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500762",
+  "date": "2026.02.09",
+  "venue": "Barclays Center",
+  "attendance": 17038,
+  "home": {
+    "id": "1610612751",
+    "total": {
+      "pts": 123,
+      "fgm": 45,
+      "fga": 88,
+      "f2m": 33,
+      "f2a": 63,
+      "f3m": 12,
+      "f3a": 25,
+      "ftm": 21,
+      "fta": 31,
+      "reb": 60,
+      "oreb": 10,
+      "dreb": 37,
+      "ast": 28,
+      "tov": 18,
+      "stl": 10,
+      "blk": 6,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "DANNY WOLF",
+        "min": "25:39",
+        "pts": 13,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "27:55",
+        "pts": 22,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "32:03",
+        "pts": 28,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "25:31",
+        "pts": 9,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "88",
+        "name": "NOLAN TRAORE",
+        "min": "31:31",
+        "pts": 13,
+        "reb": 3,
+        "ast": 13
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612741",
+    "total": {
+      "pts": 115,
+      "fgm": 40,
+      "fga": 91,
+      "f2m": 30,
+      "f2a": 55,
+      "f3m": 10,
+      "f3a": 36,
+      "ftm": 25,
+      "fta": 32,
+      "reb": 51,
+      "oreb": 12,
+      "dreb": 27,
+      "ast": 20,
+      "tov": 18,
+      "stl": 13,
+      "blk": 8,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "36:29",
+        "pts": 10,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "26:11",
+        "pts": 18,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "28",
+        "name": "GUERSCHON YABUSELE",
+        "min": "22:28",
+        "pts": 3,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "31",
+        "name": "JADEN IVEY",
+        "min": "23:32",
+        "pts": 13,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "22",
+        "name": "ANFERNEE SIMONS",
+        "min": "33:51",
+        "pts": 23,
+        "reb": 3,
+        "ast": 7
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500774",
+  "date": "2026.02.10",
+  "venue": "Crypto.com Arena",
+  "attendance": 18668,
+  "home": {
+    "id": "1610612747",
+    "total": {
+      "pts": 108,
+      "fgm": 41,
+      "fga": 85,
+      "f2m": 30,
+      "f2a": 60,
+      "f3m": 11,
+      "f3a": 25,
+      "ftm": 15,
+      "fta": 20,
+      "reb": 43,
+      "oreb": 5,
+      "dreb": 29,
+      "ast": 23,
+      "tov": 18,
+      "stl": 7,
+      "blk": 2,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "JAKE LARAVIA",
+        "min": "18:22",
+        "pts": 10,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "28",
+        "name": "RUI HACHIMURA",
+        "min": "26:35",
+        "pts": 6,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "11",
+        "name": "JAXSON HAYES",
+        "min": "16:38",
+        "pts": 13,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "10",
+        "name": "LUKE KENNARD",
+        "min": "27:40",
+        "pts": 14,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "18",
+        "name": "KOBE BUFKIN",
+        "min": "24:20",
+        "pts": 7,
+        "reb": 2,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 136,
+      "fgm": 52,
+      "fga": 92,
+      "f2m": 39,
+      "f2a": 59,
+      "f3m": 13,
+      "f3a": 33,
+      "ftm": 19,
+      "fta": 25,
+      "reb": 52,
+      "oreb": 9,
+      "dreb": 36,
+      "ast": 34,
+      "tov": 12,
+      "stl": 14,
+      "blk": 6,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "18:09",
+        "pts": 8,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "24:10",
+        "pts": 9,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "26:06",
+        "pts": 40,
+        "reb": 12,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "11:58",
+        "pts": 2,
+        "reb": 1,
+        "ast": 7
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "17:12",
+        "pts": 8,
+        "reb": 2,
+        "ast": 6
+      }
+    ]
+  }
+}

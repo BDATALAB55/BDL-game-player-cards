@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500773",
+  "date": "2026.02.10",
+  "venue": "Mortgage Matchup Center",
+  "attendance": 17071,
+  "home": {
+    "id": "1610612756",
+    "total": {
+      "pts": 120,
+      "fgm": 49,
+      "fga": 102,
+      "f2m": 33,
+      "f2a": 52,
+      "f3m": 16,
+      "f3a": 50,
+      "ftm": 6,
+      "fta": 9,
+      "reb": 56,
+      "oreb": 18,
+      "dreb": 31,
+      "ast": 32,
+      "tov": 13,
+      "stl": 8,
+      "blk": 3,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "31:25",
+        "pts": 23,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "22:48",
+        "pts": 12,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "24:42",
+        "pts": 13,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "32:28",
+        "pts": 19,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "30:32",
+        "pts": 5,
+        "reb": 8,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612742",
+    "total": {
+      "pts": 111,
+      "fgm": 37,
+      "fga": 77,
+      "f2m": 32,
+      "f2a": 55,
+      "f3m": 5,
+      "f3a": 22,
+      "ftm": 32,
+      "fta": 44,
+      "reb": 53,
+      "oreb": 8,
+      "dreb": 34,
+      "ast": 18,
+      "tov": 16,
+      "stl": 7,
+      "blk": 5,
+      "pf": 12
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "35:42",
+        "pts": 27,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "26:05",
+        "pts": 13,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "16:58",
+        "pts": 4,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "31:29",
+        "pts": 5,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "TYUS JONES",
+        "min": "15:21",
+        "pts": 2,
+        "reb": 2,
+        "ast": 3
+      }
+    ]
+  }
+}

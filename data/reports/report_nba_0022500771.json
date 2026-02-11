@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500771",
+  "date": "2026.02.10",
+  "venue": "Madison Square Garden",
+  "attendance": 19812,
+  "home": {
+    "id": "1610612752",
+    "total": {
+      "pts": 134,
+      "fgm": 50,
+      "fga": 100,
+      "f2m": 36,
+      "f2a": 54,
+      "f3m": 14,
+      "f3a": 46,
+      "ftm": 20,
+      "fta": 27,
+      "reb": 57,
+      "oreb": 8,
+      "dreb": 38,
+      "ast": 33,
+      "tov": 12,
+      "stl": 4,
+      "blk": 4,
+      "pf": 30
+    },
+    "starters": [
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "42:46",
+        "pts": 22,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "40:37",
+        "pts": 15,
+        "reb": 11,
+        "ast": 11
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "31:51",
+        "pts": 22,
+        "reb": 14,
+        "ast": 3
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "41:47",
+        "pts": 40,
+        "reb": 5,
+        "ast": 8
+      },
+      {
+        "no": "44",
+        "name": "LANDRY SHAMET",
+        "min": "37:40",
+        "pts": 17,
+        "reb": 2,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612754",
+    "total": {
+      "pts": 137,
+      "fgm": 50,
+      "fga": 97,
+      "f2m": 32,
+      "f2a": 52,
+      "f3m": 18,
+      "f3a": 45,
+      "ftm": 19,
+      "fta": 26,
+      "reb": 54,
+      "oreb": 6,
+      "dreb": 37,
+      "ast": 30,
+      "tov": 11,
+      "stl": 6,
+      "blk": 4,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "AARON NESMITH",
+        "min": "36:30",
+        "pts": 11,
+        "reb": 8,
+        "ast": 0
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "36:57",
+        "pts": 30,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "11",
+        "name": "MICAH POTTER",
+        "min": "28:47",
+        "pts": 10,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "29",
+        "name": "QUENTON JACKSON",
+        "min": "28:02",
+        "pts": 19,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "36:42",
+        "pts": 24,
+        "reb": 4,
+        "ast": 10
+      }
+    ]
+  }
+}

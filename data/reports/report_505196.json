@@ -5,7 +5,7 @@
   "scoreAway": "77",
   "date": "2026.02.08",
   "venue": "Tokyu Dresse Todoroki Arena",
-  "venueRaw": "会場：東急ドレッセとどろきアリーナ",
+  "venueRaw": "Venue: Tokyu Dresse Kawasaki Todoroki Arena Arena",
   "attendance": "4406",
   "leagueType": "B1",
   "round": "ROUND22",
@@ -500,7 +500,7 @@
       "to": "1",
       "pf": "2",
       "plusMinus": "-20",
-      "name": "ドゥシャン・リスティッチ"
+      "name": "DUSAN RISTIC"
     },
     {
       "teamNameRaw": "川崎ブレイブサンダース",

@@ -5,7 +5,7 @@
   "scoreAway": "75",
   "date": "2026.02.08",
   "venue": "Hitachi City Ikenokawa Sakura Arena",
-  "venueRaw": "会場：日立市池の川さくらアリーナ",
+  "venueRaw": "Venue: Hitachi City Ikenokawa Sakura Arena",
   "attendance": "2176",
   "leagueType": "B1",
   "round": "ROUND22",
@@ -347,7 +347,7 @@
         "to": "0",
         "pf": "4",
         "plusMinus": "-3",
-        "name": "ショーン・オマラ"
+        "name": "SEAN OMARA"
       }
     ]
   },
@@ -980,7 +980,7 @@
       "to": "0",
       "pf": "4",
       "plusMinus": "-3",
-      "name": "ショーン・オマラ"
+      "name": "SEAN OMARA"
     }
   ]
 }

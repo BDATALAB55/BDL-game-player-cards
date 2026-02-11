@@ -30,19 +30,32 @@ gameIds.forEach(gameId => {
       const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
       if (content.players) {
         const playersWithCard = content.players.map(p => {
-          // 画像ファイル名のルール（大文字/スペースをアンダースコアに）
+          // 1. 表示用の名前（記号を維持）
+          // p.name, p.name_en, p.nameJp の順で優先して取得し、大文字化
+          const displayName = (p.name || p.name_en || p.nameJp || "").toUpperCase().trim();
+
+          // 2. 画像ファイル検索用の名前（アポストロフィを削除）
+          // ファイル名との一致を優先するため、記号を消してアンダースコア化
+          const searchName = displayName
+            .replace(/'/g, '')        // SHAWN O'MARA -> SHAWN OMARA
+            .replace(/\s+/g, '_');    // スペースを _ に
+
           const teamName = (p.teamNameRaw || "").toUpperCase().trim().replace(/\s+/g, '_');
-          const playerName = (p.name_en || "").toUpperCase().trim().replace(/\s+/g, '_');
           
-          // output/Bplayers/B1/260207/game_ID_TEAM_DATE/ファイル名.png の形式
-          const fileName = `${teamName}_${p.no}_${playerName}_${date}.png`;
-          const folderName = `game_${gameId}_${content.home_en}_${content.away_en}_${date}`;
+          // 3. フォルダ名・ファイル名の組み立て
+          // home_en などが無い場合に備えて、予備のプロパティ (homeName) も参照
+          const home = content.home_en || content.homeName || "HOME";
+          const away = content.away_en || content.awayName || "AWAY";
+          const folderName = `game_${gameId}_${home}_${away}_${date}`;
+          const fileName = `${teamName}_${p.no}_${searchName}_${date}.png`;
+
           const cardPath = `output/Bplayers/${category.toUpperCase()}/${date.slice(2)}/${folderName}/${fileName}`;
           
           return {
             ...p,
+            name: displayName, // ★ボタンの表示用（O'MARA になる）
             gameId,
-            cardPath // これをAstroのimg srcで使う
+            cardPath           // ★画像の読み込みパス（OMARA になる）
           };
         });
         allPlayers = [...allPlayers, ...playersWithCard];

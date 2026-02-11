@@ -121,7 +121,8 @@ async function renderPlayers(gameId) {
             "飯尾 文哉": "FUMIYA IIO",
             "飯尾文哉": "FUMIYA IIO",
             "平 寿哉": "TOSHIYA TAIRA",
-            "ショーン・オマラ": "SHAWN O'MARA",
+            "ショーン・オマラ": "SEAN O'MARA",
+            "SEAN OMARA": "SEAN O'MARA",
             "ドゥシャン・リスティッチ": "DUSAN RISTIC"
         };
 
@@ -247,9 +248,16 @@ async function renderPlayers(gameId) {
         await page.waitForTimeout(500);
 
         const safeDateStr = (gameData.date || "").replace(/\./g, "");
-        const safeName = (player.name || player.nameJp || "player").replace(/\s+/g, "_").replace(/[^\x00-\x7F]/g, "");
+
+        // ★ displayPlayerName(記号あり) をベースに、ファイル名用に記号を消す
+        const safeName = (displayPlayerName || "player")
+            .replace(/'/g, "")           // ★ ここでアポストロフィを削除
+            .replace(/\s+/g, "_")        // 空白をアンダースコアに
+            .replace(/[^\x00-\x7F]/g, ""); // 英数字以外を排除
+
         const safeTeam = displayTeamFullName.replace(/\s+/g, "_");
 
+        // ファイル名は記号なし（OMARA）、カード内は記号あり（O'MARA）になります
         const fileName = `${safeTeam}_${player.no}_${safeName}_${safeDateStr}.png`;
         await page.screenshot({ path: path.join(outputDir, fileName) });
     }

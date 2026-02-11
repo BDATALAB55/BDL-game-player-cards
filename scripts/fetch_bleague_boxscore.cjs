@@ -136,7 +136,8 @@ async function fetchGameBoxscore(gameId) {
                     await pPage.goto(p.detailUrl.replace("/en/", "/"), { waitUntil: "domcontentloaded", timeout: 15000 });
                     const nameEn = await pPage.evaluate(() => {
                         const bodyText = document.body.innerText;
-                        const regex = /#\d+\s+([A-Z][a-zA-Z\s\.\-\n]+?)(?:\s+[ぁ-んァ-ヶー一-龠]|$)/;
+                        // 改良版正規表現： ' やラテン特殊文字（\u00C0-\u017F）も拾うように変更
+                        const regex = /#\d+\s+([A-Z][a-zA-Z\s\.\-\n'\u00C0-\u017F]+?)(?:\s+[ぁ-んァ-ヶー一-龠]|$)/;
                         const m = bodyText.match(regex);
                         if (m && m[1]) {
                             let name = m[1].replace(/\n/g, ' ').replace(/\s+/g, ' ').trim();
@@ -144,10 +145,24 @@ async function fetchGameBoxscore(gameId) {
                         }
                         return null;
                     });
-                    p.name = nameEn || p.nameJp.toUpperCase();
-                } catch (e) { p.name = p.nameJp.toUpperCase(); }
+
+                    if (nameEn) {
+                        // O'MARA -> OMARA / RISTIĆ -> RISTIC に変換して代入
+                        p.name = nameEn
+                            .normalize("NFD")                   // 特殊文字を分解
+                            .replace(/[\u0300-\u036f]/g, "")    // 記号部分を消去
+                            .replace(/'/g, "")                  // アポストロフィを消去
+                            .toUpperCase();
+                    } else {
+                        p.name = p.nameJp.toUpperCase();
+                    }
+                } catch (e) { 
+                    p.name = p.nameJp.toUpperCase(); 
+                }
                 await pPage.close();
-            } else { p.name = p.nameJp.toUpperCase(); }
+            } else { 
+                p.name = p.nameJp.toUpperCase(); 
+            }
         }
 
         // --- ここから追加：renderBReport用の集計処理 ---

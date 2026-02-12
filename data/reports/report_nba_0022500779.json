@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500779",
+  "date": "2026.02.11",
+  "venue": "Barclays Center",
+  "attendance": 16779,
+  "home": {
+    "id": "1610612751",
+    "total": {
+      "pts": 110,
+      "fgm": 38,
+      "fga": 85,
+      "f2m": 24,
+      "f2a": 52,
+      "f3m": 14,
+      "f3a": 33,
+      "ftm": 20,
+      "fta": 26,
+      "reb": 59,
+      "oreb": 12,
+      "dreb": 35,
+      "ast": 25,
+      "tov": 16,
+      "stl": 8,
+      "blk": 5,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "25:18",
+        "pts": 4,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "ZIAIRE WILLIAMS",
+        "min": "28:24",
+        "pts": 19,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "20",
+        "name": "DAY'RON SHARPE",
+        "min": "30:47",
+        "pts": 19,
+        "reb": 12,
+        "ast": 5
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "32:24",
+        "pts": 13,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "88",
+        "name": "NOLAN TRAORE",
+        "min": "31:31",
+        "pts": 20,
+        "reb": 2,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612754",
+    "total": {
+      "pts": 115,
+      "fgm": 45,
+      "fga": 92,
+      "f2m": 30,
+      "f2a": 50,
+      "f3m": 15,
+      "f3a": 42,
+      "ftm": 10,
+      "fta": 14,
+      "reb": 48,
+      "oreb": 9,
+      "dreb": 33,
+      "ast": 29,
+      "tov": 10,
+      "stl": 11,
+      "blk": 5,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "KOBE BROWN",
+        "min": "28:04",
+        "pts": 4,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "JARACE WALKER",
+        "min": "32:01",
+        "pts": 23,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "30:37",
+        "pts": 11,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "26",
+        "name": "BEN SHEPPARD",
+        "min": "19:02",
+        "pts": 9,
+        "reb": 1,
+        "ast": 4
+      },
+      {
+        "no": "7",
+        "name": "KAM JONES",
+        "min": "31:11",
+        "pts": 11,
+        "reb": 2,
+        "ast": 6
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500775",
+  "date": "2026.02.11",
+  "venue": "Spectrum Center",
+  "attendance": 18710,
+  "home": {
+    "id": "1610612766",
+    "total": {
+      "pts": 110,
+      "fgm": 33,
+      "fga": 88,
+      "f2m": 14,
+      "f2a": 37,
+      "f3m": 19,
+      "f3a": 51,
+      "ftm": 25,
+      "fta": 29,
+      "reb": 60,
+      "oreb": 15,
+      "dreb": 35,
+      "ast": 21,
+      "tov": 15,
+      "stl": 10,
+      "blk": 6,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "30:19",
+        "pts": 18,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "2",
+        "name": "GRANT WILLIAMS",
+        "min": "32:07",
+        "pts": 7,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "11",
+        "name": "RYAN KALKBRENNER",
+        "min": "23:58",
+        "pts": 5,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "24",
+        "name": "BRANDON MILLER",
+        "min": "35:38",
+        "pts": 31,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "LAMELO BALL",
+        "min": "32:26",
+        "pts": 24,
+        "reb": 4,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612737",
+    "total": {
+      "pts": 107,
+      "fgm": 37,
+      "fga": 84,
+      "f2m": 27,
+      "f2a": 48,
+      "f3m": 10,
+      "f3a": 36,
+      "ftm": 23,
+      "fta": 30,
+      "reb": 54,
+      "oreb": 8,
+      "dreb": 33,
+      "ast": 28,
+      "tov": 13,
+      "stl": 8,
+      "blk": 6,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "23:16",
+        "pts": 5,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "34:27",
+        "pts": 19,
+        "reb": 13,
+        "ast": 9
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "28:52",
+        "pts": 18,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "25:28",
+        "pts": 21,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "40:15",
+        "pts": 10,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  }
+}

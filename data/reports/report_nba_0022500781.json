@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500781",
+  "date": "2026.02.11",
+  "venue": "Scotiabank Arena",
+  "attendance": 19120,
+  "home": {
+    "id": "1610612761",
+    "total": {
+      "pts": 95,
+      "fgm": 32,
+      "fga": 75,
+      "f2m": 22,
+      "f2a": 43,
+      "f3m": 10,
+      "f3a": 32,
+      "ftm": 21,
+      "fta": 23,
+      "reb": 38,
+      "oreb": 11,
+      "dreb": 24,
+      "ast": 22,
+      "tov": 16,
+      "stl": 7,
+      "blk": 6,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "32:19",
+        "pts": 13,
+        "reb": 0,
+        "ast": 0
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "29:54",
+        "pts": 17,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "19",
+        "name": "JAKOB POELTL",
+        "min": "20:08",
+        "pts": 9,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "30:11",
+        "pts": 16,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "31:31",
+        "pts": 18,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612765",
+    "total": {
+      "pts": 113,
+      "fgm": 41,
+      "fga": 89,
+      "f2m": 27,
+      "f2a": 55,
+      "f3m": 14,
+      "f3a": 34,
+      "ftm": 17,
+      "fta": 25,
+      "reb": 63,
+      "oreb": 17,
+      "dreb": 30,
+      "ast": 24,
+      "tov": 15,
+      "stl": 10,
+      "blk": 8,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "24:26",
+        "pts": 4,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "12",
+        "name": "TOBIAS HARRIS",
+        "min": "31:14",
+        "pts": 12,
+        "reb": 12,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "PAUL REED",
+        "min": "32:35",
+        "pts": 22,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "24:31",
+        "pts": 13,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "30:07",
+        "pts": 28,
+        "reb": 7,
+        "ast": 9
+      }
+    ]
+  }
+}

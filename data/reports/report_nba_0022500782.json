@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500782",
+  "date": "2026.02.11",
+  "venue": "Toyota Center",
+  "attendance": 18055,
+  "home": {
+    "id": "1610612745",
+    "total": {
+      "pts": 102,
+      "fgm": 38,
+      "fga": 82,
+      "f2m": 26,
+      "f2a": 46,
+      "f3m": 12,
+      "f3a": 36,
+      "ftm": 14,
+      "fta": 18,
+      "reb": 55,
+      "oreb": 13,
+      "dreb": 32,
+      "ast": 25,
+      "tov": 21,
+      "stl": 3,
+      "blk": 9,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "36:04",
+        "pts": 21,
+        "reb": 8,
+        "ast": 6
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "35:50",
+        "pts": 16,
+        "reb": 12,
+        "ast": 0
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "29:25",
+        "pts": 16,
+        "reb": 9,
+        "ast": 6
+      },
+      {
+        "no": "17",
+        "name": "TARI EASON",
+        "min": "33:57",
+        "pts": 13,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "40:49",
+        "pts": 12,
+        "reb": 6,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612746",
+    "total": {
+      "pts": 105,
+      "fgm": 36,
+      "fga": 77,
+      "f2m": 25,
+      "f2a": 49,
+      "f3m": 11,
+      "f3a": 28,
+      "ftm": 22,
+      "fta": 26,
+      "reb": 39,
+      "oreb": 7,
+      "dreb": 25,
+      "ast": 21,
+      "tov": 9,
+      "stl": 13,
+      "blk": 7,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "32:36",
+        "pts": 27,
+        "reb": 12,
+        "ast": 4
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "35:27",
+        "pts": 12,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "11",
+        "name": "BROOK LOPEZ",
+        "min": "37:04",
+        "pts": 15,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "DERRICK JONES JR.",
+        "min": "30:18",
+        "pts": 12,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "36:34",
+        "pts": 16,
+        "reb": 2,
+        "ast": 6
+      }
+    ]
+  }
+}

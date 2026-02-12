@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500788",
+  "date": "2026.02.11",
+  "venue": "Chase Center",
+  "attendance": 18064,
+  "home": {
+    "id": "1610612744",
+    "total": {
+      "pts": 113,
+      "fgm": 42,
+      "fga": 91,
+      "f2m": 26,
+      "f2a": 44,
+      "f3m": 16,
+      "f3a": 47,
+      "ftm": 13,
+      "fta": 17,
+      "reb": 51,
+      "oreb": 10,
+      "dreb": 30,
+      "ast": 37,
+      "tov": 11,
+      "stl": 6,
+      "blk": 1,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "35:00",
+        "pts": 17,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "GUI SANTOS",
+        "min": "29:46",
+        "pts": 9,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "29:41",
+        "pts": 17,
+        "reb": 12,
+        "ast": 8
+      },
+      {
+        "no": "8",
+        "name": "DE'ANTHONY MELTON",
+        "min": "25:05",
+        "pts": 17,
+        "reb": 3,
+        "ast": 7
+      },
+      {
+        "no": "61",
+        "name": "PAT SPENCER",
+        "min": "30:37",
+        "pts": 9,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 126,
+      "fgm": 46,
+      "fga": 93,
+      "f2m": 36,
+      "f2a": 54,
+      "f3m": 10,
+      "f3a": 39,
+      "ftm": 24,
+      "fta": 28,
+      "reb": 54,
+      "oreb": 14,
+      "dreb": 30,
+      "ast": 35,
+      "tov": 9,
+      "stl": 6,
+      "blk": 5,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "28:28",
+        "pts": 8,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "19:48",
+        "pts": 0,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "33:29",
+        "pts": 26,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "21:28",
+        "pts": 8,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "32:16",
+        "pts": 27,
+        "reb": 0,
+        "ast": 8
+      }
+    ]
+  }
+}

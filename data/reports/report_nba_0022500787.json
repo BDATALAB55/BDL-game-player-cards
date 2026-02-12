@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500787",
+  "date": "2026.02.11",
+  "venue": "Ball Arena",
+  "attendance": 19651,
+  "home": {
+    "id": "1610612743",
+    "total": {
+      "pts": 122,
+      "fgm": 43,
+      "fga": 81,
+      "f2m": 33,
+      "f2a": 59,
+      "f3m": 10,
+      "f3a": 22,
+      "ftm": 26,
+      "fta": 32,
+      "reb": 61,
+      "oreb": 9,
+      "dreb": 37,
+      "ast": 29,
+      "tov": 14,
+      "stl": 2,
+      "blk": 1,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JULIAN STRAWTHER",
+        "min": "25:18",
+        "pts": 11,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "CAMERON JOHNSON",
+        "min": "28:48",
+        "pts": 5,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "33:54",
+        "pts": 26,
+        "reb": 15,
+        "ast": 11
+      },
+      {
+        "no": "0",
+        "name": "CHRISTIAN BRAUN",
+        "min": "39:08",
+        "pts": 14,
+        "reb": 7,
+        "ast": 6
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "33:06",
+        "pts": 23,
+        "reb": 6,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612763",
+    "total": {
+      "pts": 116,
+      "fgm": 42,
+      "fga": 91,
+      "f2m": 27,
+      "f2a": 52,
+      "f3m": 15,
+      "f3a": 39,
+      "ftm": 17,
+      "fta": 21,
+      "reb": 38,
+      "oreb": 8,
+      "dreb": 21,
+      "ast": 28,
+      "tov": 6,
+      "stl": 12,
+      "blk": 5,
+      "pf": 32
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "JAHMAI MASHACK",
+        "min": "21:50",
+        "pts": 9,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "45",
+        "name": "GG JACKSON",
+        "min": "28:13",
+        "pts": 21,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "KYLE ANDERSON",
+        "min": "18:29",
+        "pts": 8,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "24:18",
+        "pts": 17,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "2",
+        "name": "TY JEROME",
+        "min": "20:58",
+        "pts": 19,
+        "reb": 1,
+        "ast": 7
+      }
+    ]
+  }
+}

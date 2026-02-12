@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500785",
+  "date": "2026.02.11",
+  "venue": "Mortgage Matchup Center",
+  "attendance": 17071,
+  "home": {
+    "id": "1610612756",
+    "total": {
+      "pts": 109,
+      "fgm": 43,
+      "fga": 92,
+      "f2m": 28,
+      "f2a": 50,
+      "f3m": 15,
+      "f3a": 42,
+      "ftm": 8,
+      "fta": 13,
+      "reb": 48,
+      "oreb": 15,
+      "dreb": 28,
+      "ast": 26,
+      "tov": 10,
+      "stl": 4,
+      "blk": 5,
+      "pf": 12
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "24:23",
+        "pts": 23,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "23:33",
+        "pts": 12,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "15:57",
+        "pts": 6,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "JORDAN GOODWIN",
+        "min": "27:41",
+        "pts": 12,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "22:32",
+        "pts": 6,
+        "reb": 5,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612760",
+    "total": {
+      "pts": 136,
+      "fgm": 52,
+      "fga": 89,
+      "f2m": 37,
+      "f2a": 53,
+      "f3m": 15,
+      "f3a": 36,
+      "ftm": 17,
+      "fta": 19,
+      "reb": 47,
+      "oreb": 8,
+      "dreb": 29,
+      "ast": 28,
+      "tov": 8,
+      "stl": 6,
+      "blk": 3,
+      "pf": 8
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "JALEN WILLIAMS",
+        "min": "19:38",
+        "pts": 28,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "20:30",
+        "pts": 13,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "55",
+        "name": "ISAIAH HARTENSTEIN",
+        "min": "17:37",
+        "pts": 8,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "23:42",
+        "pts": 9,
+        "reb": 0,
+        "ast": 1
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "26:13",
+        "pts": 4,
+        "reb": 4,
+        "ast": 3
+      }
+    ]
+  }
+}

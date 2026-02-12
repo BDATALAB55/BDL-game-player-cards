@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500783",
+  "date": "2026.02.11",
+  "venue": "Target Center",
+  "attendance": 16988,
+  "home": {
+    "id": "1610612750",
+    "total": {
+      "pts": 133,
+      "fgm": 45,
+      "fga": 87,
+      "f2m": 31,
+      "f2a": 53,
+      "f3m": 14,
+      "f3a": 34,
+      "ftm": 29,
+      "fta": 35,
+      "reb": 49,
+      "oreb": 11,
+      "dreb": 32,
+      "ast": 26,
+      "tov": 14,
+      "stl": 14,
+      "blk": 6,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JADEN MCDANIELS",
+        "min": "33:23",
+        "pts": 21,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "30",
+        "name": "JULIUS RANDLE",
+        "min": "32:51",
+        "pts": 41,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "27",
+        "name": "RUDY GOBERT",
+        "min": "27:45",
+        "pts": 17,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "ANTHONY EDWARDS",
+        "min": "32:39",
+        "pts": 14,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "DONTE DIVINCENZO",
+        "min": "29:00",
+        "pts": 3,
+        "reb": 4,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612757",
+    "total": {
+      "pts": 109,
+      "fgm": 40,
+      "fga": 94,
+      "f2m": 24,
+      "f2a": 49,
+      "f3m": 16,
+      "f3a": 45,
+      "ftm": 13,
+      "fta": 16,
+      "reb": 56,
+      "oreb": 18,
+      "dreb": 32,
+      "ast": 23,
+      "tov": 25,
+      "stl": 4,
+      "blk": 4,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "JERAMI GRANT",
+        "min": "29:25",
+        "pts": 10,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "32:05",
+        "pts": 9,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "27:43",
+        "pts": 8,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "26:54",
+        "pts": 11,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "JRUE HOLIDAY",
+        "min": "30:28",
+        "pts": 23,
+        "reb": 5,
+        "ast": 5
+      }
+    ]
+  }
+}

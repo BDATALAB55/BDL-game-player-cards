@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500784",
+  "date": "2026.02.11",
+  "venue": "Smoothie King Center",
+  "attendance": 16444,
+  "home": {
+    "id": "1610612740",
+    "total": {
+      "pts": 111,
+      "fgm": 42,
+      "fga": 92,
+      "f2m": 31,
+      "f2a": 61,
+      "f3m": 11,
+      "f3a": 31,
+      "ftm": 16,
+      "fta": 19,
+      "reb": 56,
+      "oreb": 8,
+      "dreb": 38,
+      "ast": 27,
+      "tov": 13,
+      "stl": 5,
+      "blk": 3,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "36:21",
+        "pts": 14,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "ZION WILLIAMSON",
+        "min": "33:20",
+        "pts": 25,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "22",
+        "name": "DERIK QUEEN",
+        "min": "31:07",
+        "pts": 12,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "25",
+        "name": "TREY MURPHY III",
+        "min": "26:59",
+        "pts": 19,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "2",
+        "name": "HERBERT JONES",
+        "min": "32:47",
+        "pts": 7,
+        "reb": 4,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612748",
+    "total": {
+      "pts": 123,
+      "fgm": 42,
+      "fga": 102,
+      "f2m": 28,
+      "f2a": 55,
+      "f3m": 14,
+      "f3a": 47,
+      "ftm": 25,
+      "fta": 33,
+      "reb": 66,
+      "oreb": 18,
+      "dreb": 38,
+      "ast": 25,
+      "tov": 8,
+      "stl": 8,
+      "blk": 9,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "15",
+        "name": "MYRON GARDNER",
+        "min": "22:56",
+        "pts": 8,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "36:59",
+        "pts": 27,
+        "reb": 14,
+        "ast": 4
+      },
+      {
+        "no": "7",
+        "name": "KEL'EL WARE",
+        "min": "27:38",
+        "pts": 16,
+        "reb": 12,
+        "ast": 0
+      },
+      {
+        "no": "0",
+        "name": "SIMONE FONTECCHIO",
+        "min": "26:52",
+        "pts": 15,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "27:47",
+        "pts": 9,
+        "reb": 1,
+        "ast": 5
+      }
+    ]
+  }
+}

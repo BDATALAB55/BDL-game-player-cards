@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500778",
+  "date": "2026.02.11",
+  "venue": "TD Garden",
+  "attendance": 19156,
+  "home": {
+    "id": "1610612738",
+    "total": {
+      "pts": 124,
+      "fgm": 49,
+      "fga": 95,
+      "f2m": 31,
+      "f2a": 50,
+      "f3m": 18,
+      "f3a": 45,
+      "ftm": 8,
+      "fta": 13,
+      "reb": 61,
+      "oreb": 13,
+      "dreb": 35,
+      "ast": 29,
+      "tov": 14,
+      "stl": 9,
+      "blk": 8,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "28:55",
+        "pts": 24,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "30",
+        "name": "SAM HAUSER",
+        "min": "21:43",
+        "pts": 12,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "14:44",
+        "pts": 8,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "55",
+        "name": "BAYLOR SCHEIERMAN",
+        "min": "23:35",
+        "pts": 10,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "29:41",
+        "pts": 9,
+        "reb": 4,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612741",
+    "total": {
+      "pts": 105,
+      "fgm": 41,
+      "fga": 89,
+      "f2m": 29,
+      "f2a": 53,
+      "f3m": 12,
+      "f3a": 36,
+      "ftm": 11,
+      "fta": 13,
+      "reb": 41,
+      "oreb": 9,
+      "dreb": 25,
+      "ast": 25,
+      "tov": 13,
+      "stl": 9,
+      "blk": 5,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "44",
+        "name": "PATRICK WILLIAMS",
+        "min": "34:31",
+        "pts": 12,
+        "reb": 3,
+        "ast": 6
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "28:42",
+        "pts": 15,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "28",
+        "name": "GUERSCHON YABUSELE",
+        "min": "25:17",
+        "pts": 13,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "ANFERNEE SIMONS",
+        "min": "27:53",
+        "pts": 7,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "COLLIN SEXTON",
+        "min": "31:44",
+        "pts": 15,
+        "reb": 3,
+        "ast": 1
+      }
+    ]
+  }
+}

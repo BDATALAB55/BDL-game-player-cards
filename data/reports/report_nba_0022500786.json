@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500786",
+  "date": "2026.02.11",
+  "venue": "Delta Center",
+  "attendance": 18186,
+  "home": {
+    "id": "1610612762",
+    "total": {
+      "pts": 121,
+      "fgm": 47,
+      "fga": 86,
+      "f2m": 32,
+      "f2a": 49,
+      "f3m": 15,
+      "f3a": 37,
+      "ftm": 12,
+      "fta": 13,
+      "reb": 57,
+      "oreb": 9,
+      "dreb": 43,
+      "ast": 34,
+      "tov": 17,
+      "stl": 9,
+      "blk": 3,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LAURI MARKKANEN",
+        "min": "20:33",
+        "pts": 19,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "20",
+        "name": "JAREN JACKSON JR.",
+        "min": "22:11",
+        "pts": 23,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "JUSUF NURKIĆ",
+        "min": "26:08",
+        "pts": 8,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "30:58",
+        "pts": 13,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "8",
+        "name": "ISAIAH COLLIER",
+        "min": "26:38",
+        "pts": 12,
+        "reb": 1,
+        "ast": 14
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612758",
+    "total": {
+      "pts": 93,
+      "fgm": 31,
+      "fga": 90,
+      "f2m": 24,
+      "f2a": 57,
+      "f3m": 7,
+      "f3a": 33,
+      "ftm": 24,
+      "fta": 29,
+      "reb": 48,
+      "oreb": 15,
+      "dreb": 27,
+      "ast": 24,
+      "tov": 12,
+      "stl": 10,
+      "blk": 3,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "29:28",
+        "pts": 20,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "PRECIOUS ACHIUWA",
+        "min": "16:04",
+        "pts": 6,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "27:38",
+        "pts": 7,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "NIQUE CLIFFORD",
+        "min": "38:13",
+        "pts": 6,
+        "reb": 8,
+        "ast": 6
+      },
+      {
+        "no": "22",
+        "name": "DEVIN CARTER",
+        "min": "29:48",
+        "pts": 19,
+        "reb": 5,
+        "ast": 4
+      }
+    ]
+  }
+}

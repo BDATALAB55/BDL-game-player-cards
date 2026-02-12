@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500777",
+  "date": "2026.02.11",
+  "venue": "Kia Center",
+  "attendance": 18298,
+  "home": {
+    "id": "1610612753",
+    "total": {
+      "pts": 108,
+      "fgm": 35,
+      "fga": 82,
+      "f2m": 15,
+      "f2a": 35,
+      "f3m": 20,
+      "f3a": 47,
+      "ftm": 18,
+      "fta": 21,
+      "reb": 35,
+      "oreb": 7,
+      "dreb": 23,
+      "ast": 31,
+      "tov": 9,
+      "stl": 12,
+      "blk": 6,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "38:52",
+        "pts": 31,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "39:16",
+        "pts": 17,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "30:36",
+        "pts": 6,
+        "reb": 11,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "ANTHONY BLACK",
+        "min": "24:43",
+        "pts": 13,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "34:53",
+        "pts": 16,
+        "reb": 1,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612749",
+    "total": {
+      "pts": 116,
+      "fgm": 39,
+      "fga": 81,
+      "f2m": 25,
+      "f2a": 45,
+      "f3m": 14,
+      "f3a": 36,
+      "ftm": 24,
+      "fta": 24,
+      "reb": 57,
+      "oreb": 8,
+      "dreb": 39,
+      "ast": 22,
+      "tov": 15,
+      "stl": 4,
+      "blk": 4,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "18",
+        "name": "KYLE KUZMA",
+        "min": "29:50",
+        "pts": 15,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "JERICHO SIMS",
+        "min": "35:54",
+        "pts": 17,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "30:42",
+        "pts": 5,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "30:21",
+        "pts": 6,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "KEVIN PORTER JR.",
+        "min": "38:35",
+        "pts": 18,
+        "reb": 10,
+        "ast": 11
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500776",
+  "date": "2026.02.11",
+  "venue": "Rocket Arena",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612739",
+    "total": {
+      "pts": 138,
+      "fgm": 45,
+      "fga": 83,
+      "f2m": 29,
+      "f2a": 45,
+      "f3m": 16,
+      "f3a": 38,
+      "ftm": 32,
+      "fta": 37,
+      "reb": 63,
+      "oreb": 16,
+      "dreb": 35,
+      "ast": 30,
+      "tov": 21,
+      "stl": 9,
+      "blk": 8,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "SAM MERRILL",
+        "min": "24:59",
+        "pts": 32,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "20",
+        "name": "JAYLON TYSON",
+        "min": "21:29",
+        "pts": 7,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "26:37",
+        "pts": 21,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "27:51",
+        "pts": 30,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "28:27",
+        "pts": 13,
+        "reb": 4,
+        "ast": 11
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612764",
+    "total": {
+      "pts": 113,
+      "fgm": 42,
+      "fga": 104,
+      "f2m": 28,
+      "f2a": 58,
+      "f3m": 14,
+      "f3a": 46,
+      "ftm": 15,
+      "fta": 18,
+      "reb": 46,
+      "oreb": 19,
+      "dreb": 21,
+      "ast": 26,
+      "tov": 14,
+      "stl": 13,
+      "blk": 4,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "24:24",
+        "pts": 13,
+        "reb": 0,
+        "ast": 2
+      },
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "24:24",
+        "pts": 17,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "JAMIR WATKINS",
+        "min": "28:31",
+        "pts": 16,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "12",
+        "name": "TRE JOHNSON",
+        "min": "18:15",
+        "pts": 10,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "21:48",
+        "pts": 8,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500790",
+  "date": "2026.02.12",
+  "venue": "Delta Center",
+  "attendance": 18186,
+  "home": {
+    "id": "1610612762",
+    "total": {
+      "pts": 119,
+      "fgm": 42,
+      "fga": 87,
+      "f2m": 28,
+      "f2a": 49,
+      "f3m": 14,
+      "f3a": 38,
+      "ftm": 21,
+      "fta": 29,
+      "reb": 46,
+      "oreb": 12,
+      "dreb": 26,
+      "ast": 28,
+      "tov": 19,
+      "stl": 15,
+      "blk": 3,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "34:42",
+        "pts": 15,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "CODY WILLIAMS",
+        "min": "24:39",
+        "pts": 9,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "22",
+        "name": "KYLE FILIPOWSKI",
+        "min": "29:33",
+        "pts": 15,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "28",
+        "name": "BRICE SENSABAUGH",
+        "min": "35:31",
+        "pts": 28,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "ISAIAH COLLIER",
+        "min": "36:05",
+        "pts": 15,
+        "reb": 2,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612757",
+    "total": {
+      "pts": 135,
+      "fgm": 46,
+      "fga": 90,
+      "f2m": 28,
+      "f2a": 44,
+      "f3m": 18,
+      "f3a": 46,
+      "ftm": 25,
+      "fta": 33,
+      "reb": 59,
+      "oreb": 19,
+      "dreb": 33,
+      "ast": 26,
+      "tov": 19,
+      "stl": 7,
+      "blk": 7,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "91",
+        "name": "SIDY CISSOKO",
+        "min": "29:59",
+        "pts": 8,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "29:02",
+        "pts": 14,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "31:22",
+        "pts": 23,
+        "reb": 18,
+        "ast": 7
+      },
+      {
+        "no": "9",
+        "name": "JERAMI GRANT",
+        "min": "32:49",
+        "pts": 18,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "JRUE HOLIDAY",
+        "min": "32:59",
+        "pts": 31,
+        "reb": 9,
+        "ast": 7
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500791",
+  "date": "2026.02.12",
+  "venue": "Crypto.com Arena",
+  "attendance": 18679,
+  "home": {
+    "id": "1610612747",
+    "total": {
+      "pts": 124,
+      "fgm": 48,
+      "fga": 86,
+      "f2m": 38,
+      "f2a": 55,
+      "f3m": 10,
+      "f3a": 31,
+      "ftm": 18,
+      "fta": 21,
+      "reb": 47,
+      "oreb": 10,
+      "dreb": 34,
+      "ast": 35,
+      "tov": 12,
+      "stl": 8,
+      "blk": 3,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "35:21",
+        "pts": 28,
+        "reb": 10,
+        "ast": 12
+      },
+      {
+        "no": "28",
+        "name": "RUI HACHIMURA",
+        "min": "34:54",
+        "pts": 21,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "11",
+        "name": "JAXSON HAYES",
+        "min": "33:41",
+        "pts": 16,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "12",
+        "name": "JAKE LARAVIA",
+        "min": "25:40",
+        "pts": 11,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "25:52",
+        "pts": 9,
+        "reb": 2,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612742",
+    "total": {
+      "pts": 104,
+      "fgm": 39,
+      "fga": 79,
+      "f2m": 32,
+      "f2a": 53,
+      "f3m": 7,
+      "f3a": 26,
+      "ftm": 19,
+      "fta": 25,
+      "reb": 42,
+      "oreb": 4,
+      "dreb": 24,
+      "ast": 22,
+      "tov": 15,
+      "stl": 7,
+      "blk": 1,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "29:08",
+        "pts": 19,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "33:56",
+        "pts": 18,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "27:55",
+        "pts": 2,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "30:08",
+        "pts": 19,
+        "reb": 1,
+        "ast": 4
+      },
+      {
+        "no": "10",
+        "name": "BRANDON WILLIAMS",
+        "min": "29:03",
+        "pts": 17,
+        "reb": 5,
+        "ast": 7
+      }
+    ]
+  }
+}

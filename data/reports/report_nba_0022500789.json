@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500789",
+  "date": "2026.02.12",
+  "venue": "Paycom Center",
+  "attendance": 18203,
+  "home": {
+    "id": "1610612760",
+    "total": {
+      "pts": 93,
+      "fgm": 31,
+      "fga": 83,
+      "f2m": 16,
+      "f2a": 38,
+      "f3m": 15,
+      "f3a": 45,
+      "ftm": 16,
+      "fta": 20,
+      "reb": 52,
+      "oreb": 14,
+      "dreb": 33,
+      "ast": 22,
+      "tov": 16,
+      "stl": 3,
+      "blk": 6,
+      "pf": 8
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "28:29",
+        "pts": 9,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "34",
+        "name": "KENRICH WILLIAMS",
+        "min": "22:43",
+        "pts": 9,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "27:29",
+        "pts": 16,
+        "reb": 13,
+        "ast": 4
+      },
+      {
+        "no": "11",
+        "name": "ISAIAH JOE",
+        "min": "28:53",
+        "pts": 17,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "28:25",
+        "pts": 3,
+        "reb": 2,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612749",
+    "total": {
+      "pts": 110,
+      "fgm": 44,
+      "fga": 95,
+      "f2m": 27,
+      "f2a": 53,
+      "f3m": 17,
+      "f3a": 42,
+      "ftm": 5,
+      "fta": 7,
+      "reb": 58,
+      "oreb": 15,
+      "dreb": 34,
+      "ast": 25,
+      "tov": 10,
+      "stl": 9,
+      "blk": 6,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "OUSMANE DIENG",
+        "min": "36:28",
+        "pts": 19,
+        "reb": 11,
+        "ast": 6
+      },
+      {
+        "no": "18",
+        "name": "KYLE KUZMA",
+        "min": "28:39",
+        "pts": 14,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "JERICHO SIMS",
+        "min": "19:55",
+        "pts": 8,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "KEVIN PORTER JR.",
+        "min": "31:39",
+        "pts": 12,
+        "reb": 3,
+        "ast": 7
+      },
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "38:01",
+        "pts": 17,
+        "reb": 2,
+        "ast": 3
+      }
+    ]
+  }
+}

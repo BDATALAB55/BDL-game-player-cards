@@ -177,8 +177,10 @@ async function renderBReport(gameId) {
             "飯尾 文哉": "Fumiya Iio",
             "飯尾文哉": "Fumiya Iio",
             "平 寿哉": "Toshiya Taira",
-            "ショーン・オマラ": "Shawn O'mara",
-            "ドゥシャン・リスティッチ": "Dusan Ristic"
+            "ショーン・オマラ": "Sean O'mara",
+            "ドゥシャン・リスティッチ": "Dusan Ristic",
+            "ドウェイン・エバンス": "Dwayne Evans II",
+            "Dwayne Evans Ii": "Dwayne Evans II"
         };
         
         const toTitleCase = (str) => {

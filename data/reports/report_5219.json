@@ -1,0 +1,53 @@
+{
+  "homeName": "アースフレンズ東京Z",
+  "awayName": "東京エクセレンス",
+  "scoreHome": "0",
+  "scoreAway": "0",
+  "date": "2020.04.11",
+  "venue": "",
+  "venueRaw": "会場：大田区総合体育館",
+  "attendance": "0",
+  "leagueType": "B2",
+  "round": "ROUND32",
+  "home": {
+    "total": {
+      "pts": 0,
+      "f2m": 0,
+      "f2a": 0,
+      "f3m": 0,
+      "f3a": 0,
+      "ftm": 0,
+      "fta": 0,
+      "reb": 0,
+      "oreb": 0,
+      "dreb": 0,
+      "ast": 0,
+      "tov": 0,
+      "stl": 0,
+      "blk": 0,
+      "pf": 0
+    },
+    "starters": []
+  },
+  "away": {
+    "total": {
+      "pts": 0,
+      "f2m": 0,
+      "f2a": 0,
+      "f3m": 0,
+      "f3a": 0,
+      "ftm": 0,
+      "fta": 0,
+      "reb": 0,
+      "oreb": 0,
+      "dreb": 0,
+      "ast": 0,
+      "tov": 0,
+      "stl": 0,
+      "blk": 0,
+      "pf": 0
+    },
+    "starters": []
+  },
+  "players": []
+}

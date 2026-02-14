@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        :root {
+            --team-color: __TEAM_BG__;
+            --team-text: __TEAM_TEXT__;
+            --bg-dark: #0f0f0f;
+            /* Avenir Next を基本フォントに設定 */
+            --font-main: "Avenir Next", "Avenir", "Helvetica Neue", "Arial", sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-dark);
+            color: #ffffff;
+            font-family: var(--font-main);
+            width: 1200px;
+            height: 1653px;
+            overflow: hidden;
+        }
+
+        /* ヘッダーセクション */
+        .header {
+    position: relative;
+    background-color: var(--team-color) !important; /* 確実に色を出す */
+    color: var(--team-text);
+    height: 272px; 
+    padding: 30px 60px; /* 上下左右に適切な余白を戻す */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* 縦並びに戻す */
+    justify-content: flex-end; /* 内容を下に寄せる */
+    overflow: hidden;
+}
+
+        .header-watermark {
+    position: absolute;
+    top: 20px; /* 位置を上げる */
+    right: 0px;
+    font-size: 105px; /* さらに少し小さく */
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    opacity: 0.08;
+    z-index: 1;
+    white-space: nowrap;
+    letter-spacing: 0.15em;
+    transform-origin: right top;
+}
+
+        .header-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end; /* 下のラインを揃える */
+}
+
+        /* チーム名エリア */
+        .team-identity {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -28px; /* この値を大きくするほど全体が上に上がります */
+}
+
+        .city-name {
+    font-size: 33px; /* 少しだけ小さくすると上の余白が強調されます */
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    /* ここをマイナス値にします */
+    margin-bottom: 10px; 
+    text-transform: uppercase;
+    display: block;
+    /* 少し上へ押し上げるための相対位置調整 */
+    position: relative;
+    top: -10px; 
+}
+
+.nickname {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 0.8;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 0.12em;
+}
+
+        .record-line {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+        /* レーティングエリア */
+        .rtg-container {
+            display: flex;
+            gap: 50px;
+            text-align: right;
+            padding-bottom: 5px;
+        }
+
+        .rtg-item .rtg-label {
+            font-size: 26px;
+            font-weight: 800;
+            margin-bottom: -5px;
+        }
+
+        .rtg-item .rtg-value {
+    font-size: 82px;
+    line-height: 0.9;
+}
+
+        .rtg-item .rtg-rank {
+            font-size: 34px;
+            font-weight: 700;
+            opacity: 0.8;
+        }
+
+        /* コンテンツエリア（今後のスタッツ用） */
+        .main-content {
+            padding: 20px 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-watermark">2025-26</div>
+        
+        <div class="header-content">
+            <div class="team-identity">
+                <span class="city-name">__CITY__</span>
+                <h1 class="nickname">__TEAM_NAME__</h1>
+                <div class="record-line">W __WINS__ － L __LOSSES__ | __DIV__ __RANK__th</div>
+            </div>
+
+            <div class="rtg-container">
+                <div class="rtg-item">
+                    <div class="rtg-label">ORTG</div>
+                    <div class="rtg-value">__ORTG__</div>
+                    <div class="rtg-rank">( __ORTG_RANK__ )</div>
+                </div>
+                <div class="rtg-item">
+                    <div class="rtg-label">DRTG</div>
+                    <div class="rtg-value">__DRTG__</div>
+                    <div class="rtg-rank">( __DRTG_RANK__ )</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        </main>
+
+</body>
+</html>

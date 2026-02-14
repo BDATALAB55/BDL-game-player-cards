@@ -135,23 +135,45 @@ async function fetchGameBoxscore(gameId) {
                 try {
                     await pPage.goto(p.detailUrl.replace("/en/", "/"), { waitUntil: "domcontentloaded", timeout: 15000 });
                     const nameEn = await pPage.evaluate(() => {
-                        const bodyText = document.body.innerText;
-                        // 改良版正規表現： ' やラテン特殊文字（\u00C0-\u017F）も拾うように変更
-                        const regex = /#\d+\s+([A-Z][a-zA-Z\s\.\-\n'\u00C0-\u017F]+?)(?:\s+[ぁ-んァ-ヶー一-龠]|$)/;
-                        const m = bodyText.match(regex);
-                        if (m && m[1]) {
-                            let name = m[1].replace(/\n/g, ' ').replace(/\s+/g, ' ').trim();
-                            return name.split(/\s(?:PPG|APG|RPG|BPG|SPG)/)[0].toUpperCase();
+                        const kvInner = document.querySelector('.rosterDetail-kv-inner');
+                        if (!kvInner) return null;
+
+                        const allLines = kvInner.innerText.split('\n').map(l => l.trim());
+                        let enNameParts = [];
+                        let startIndex = -1;
+
+                        for (let i = 0; i < allLines.length; i++) {
+                            if (allLines[i].startsWith('#')) {
+                                startIndex = i;
+                                break;
+                            }
                         }
-                        return null;
+
+                        if (startIndex !== -1) {
+                            // 背番号から4行以内をスキャン
+                            for (let j = startIndex + 1; j <= startIndex + 4 && j < allLines.length; j++) {
+                                const line = allLines[j];
+                                if (line.length === 0) continue;
+
+                                // 日本語が出たら即終了（中黒・長音含む）
+                                const jpRegex = /[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FFF\u30FB\u30FC\u3005-\u3007]/;
+                                if (jpRegex.test(line)) break;
+
+                                if (/[A-Za-z]/.test(line)) {
+                                    if (/^(PPG|RPG|APG|BPG|SPG|EFF|AVG)$/i.test(line)) break;
+                                    enNameParts.push(line);
+                                }
+                            }
+                        }
+                        return enNameParts.length > 0 ? enNameParts.join(' ') : null;
                     });
 
                     if (nameEn) {
-                        // O'MARA -> OMARA / RISTIĆ -> RISTIC に変換して代入
+                        // 既に大文字変換ロジックがあるので、それに合わせる
                         p.name = nameEn
-                            .normalize("NFD")                   // 特殊文字を分解
-                            .replace(/[\u0300-\u036f]/g, "")    // 記号部分を消去
-                            .replace(/'/g, "")                  // アポストロフィを消去
+                            .normalize("NFD")
+                            .replace(/[\u0300-\u036f]/g, "")
+                            .replace(/'/g, "")
                             .toUpperCase();
                     } else {
                         p.name = p.nameJp.toUpperCase();
@@ -165,7 +187,7 @@ async function fetchGameBoxscore(gameId) {
             }
         }
 
-        // --- ここから追加：renderBReport用の集計処理 ---
+        // --- 集計処理 ---
         const calcTeamData = (pList, teamName) => {
             const tPlayers = pList.filter(p => p.teamNameRaw === teamName);
             const total = { pts:0, f2m:0, f2a:0, f3m:0, f3a:0, ftm:0, fta:0, reb:0, oreb:0, dreb:0, ast:0, tov:0, stl:0, blk:0, pf:0 };
@@ -183,7 +205,6 @@ async function fetchGameBoxscore(gameId) {
 
         const homeData = calcTeamData(statsData.players, statsData.homeName);
         const awayData = calcTeamData(statsData.players, statsData.awayName);
-        // --- ここまで追加 ---
 
         const rawV = baseInfo.venueRaw;
         const cleanRaw = rawV.replace(/Venue:/i, "").replace(/会場[:：]/, "").replace(/\s+/g, ' ').trim();
@@ -213,14 +234,12 @@ async function fetchGameBoxscore(gameId) {
             date: baseInfo.date, venue: venueEn, venueRaw: rawV,
             attendance: baseInfo.attendance, leagueType: baseInfo.leagueType,
             round: baseInfo.round,
-            // 修正：集計したデータを home/away プロパティとして格納
             home: homeData,
             away: awayData,
             players: statsData.players
         };
 
         fs.writeFileSync(path.join(outDir, `report_${gameId}.json`), JSON.stringify(result, null, 2));
-
         console.log(`-----------------------------------------`);
         console.log(`✅ 取得成功: ${result.homeName} vs ${result.awayName}`);
         console.log(`-----------------------------------------`);

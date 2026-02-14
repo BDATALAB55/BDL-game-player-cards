@@ -95,36 +95,83 @@ async function fetchBReportData(gameId) {
             };
         });
 
-        const getStartersWithTitleName = async (sidePlayers) => {
-            const starters = [];
-            for (let p of sidePlayers) {
-                if (p.isStarter) {
-                    if (p.detailUrl) {
-                        const pPage = await context.newPage();
-                        try {
-                            await pPage.goto(p.detailUrl, { waitUntil: "domcontentloaded", timeout: 8000 });
-                            let rawName = await pPage.evaluate(() => {
-                                const m = document.body.innerText.match(/#\d+\s+([A-Z][a-zA-Z\s\.\-\n]+?)(?:\s+[ぁ-んァ-ヶー一-龠]|$)/);
-                                if (!m) return null;
-                                return m[1].split(/\s(?:PPG|APG|RPG|BPG|SPG)/)[0].replace(/\n/g, ' ').replace(/\s+/g, ' ').trim();
-                            });
+      const getStartersWithTitleName = async (sidePlayers) => {
+    const starters = [];
+    for (let p of sidePlayers) {
+        if (p.isStarter) {
+            if (p.detailUrl) {
+                const pPage = await context.newPage();
+                try {
+                    // 確実に日本語版ページへ飛ばす
+                    await pPage.goto(p.detailUrl.replace("/en/", "/"), { waitUntil: "domcontentloaded", timeout: 8000 });
+                    
+                    let rawEnName = await pPage.evaluate(() => {
+                        const kvInner = document.querySelector('.rosterDetail-kv-inner');
+                        if (!kvInner) return null;
 
-                            if (rawName) {
-                                p.name = rawName.toLowerCase().split(' ').map(word => {
-                                    return word.charAt(0).toUpperCase() + word.slice(1);
-                                }).join(' ');
-                                p.name = p.name.replace(/([A-Z]\.)([a-z])/g, (match, p1, p2) => p1 + p2.toUpperCase());
-                            } else {
-                                p.name = p.nameJp;
+                        // 【改善】空行を含めて取得するため filter(l => l.length > 0) はここでは外す
+                        const allLines = kvInner.innerText.split('\n').map(l => l.trim());
+                        
+                        let enNameParts = [];
+                        let startIndex = -1;
+
+                        // 1. 背番号（#）で始まる行のインデックスを探す
+                        for (let i = 0; i < allLines.length; i++) {
+                            if (allLines[i].startsWith('#')) {
+                                startIndex = i;
+                                break;
                             }
-                        } catch (e) { p.name = p.nameJp; }
-                        await pPage.close();
-                    } else { p.name = p.nameJp; }
-                    starters.push(p);
+                        }
+
+                        if (startIndex !== -1) {
+                            // 2. 背番号の直後から最大 4行分（空行含む）をスキャン
+                            // ここに英語名（Yanni, Wetzell）が必ず入っている
+                            for (let j = startIndex + 1; j <= startIndex + 4 && j < allLines.length; j++) {
+                                const line = allLines[j];
+                                
+                                // 空行なら次へ
+                                if (line.length === 0) continue;
+
+                                // 3. 日本語（漢字、かな、カナ、中黒・長音）が含まれていたら即終了
+                                const jpRegex = /[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FFF\u30FB\u30FC\u3005-\u3007]/;
+                                if (jpRegex.test(line)) break;
+
+                                // 4. 英字が含まれていればパーツとして採用
+                                if (/[A-Za-z]/.test(line)) {
+                                    // PPGなどのノイズ行に当たったら終了
+                                    if (/^(PPG|RPG|APG|BPG|SPG|EFF|AVG)$/i.test(line)) break;
+                                    
+                                    enNameParts.push(line);
+                                }
+                            }
+                        }
+                        return enNameParts.length > 0 ? enNameParts.join(' ') : null;
+                    });
+
+                    if (rawEnName) {
+                        // 整形: YANNI WETZELL -> Yanni Wetzell
+                        p.name = rawEnName.toLowerCase().split(' ').map(word => {
+                            if (word.includes('.')) {
+                                return word.split('.').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join('.');
+                            }
+                            return word.charAt(0).toUpperCase() + word.slice(1);
+                        }).join(' ');
+                        p.name = p.name.replace(/([A-Z]\.)([a-z])/g, (m, p1, p2) => p1 + p2.toUpperCase());
+                    } else {
+                        p.name = p.nameJp; 
+                    }
+                } catch (e) { 
+                    p.name = p.nameJp; 
                 }
+                await pPage.close();
+            } else { 
+                p.name = p.nameJp; 
             }
-            return starters;
-        };
+            starters.push(p);
+        }
+    }
+    return starters;
+};
 
         const rawV = baseInfo.venueRaw;
         const cleanRaw = rawV.replace(/Venue:/i, "").replace(/会場[:：]/, "").replace(/\s+/g, ' ').trim();

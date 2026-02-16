@@ -34,7 +34,7 @@ const teamNames = [
     "B-CORSAIRS",     // 13.png
     "GROUSES",     // 14.png
     "NEOPHOENIX",        // 15.png
-    "SEAHORSES ",       // 16.png
+    "SEAHORSES",       // 16.png
     "FIGHTINGEAGLES",    // 17.png
     "DIAMONDDOLPHINS",     // 18.png
     "LAKES",        // 19.png

@@ -6,7 +6,7 @@
         :root {
             --team-color: __TEAM_BG__;
             --team-text: __TEAM_TEXT__;
-            --bg-dark: #0f0f0f;
+            --bg-dark: #292929;
             /* Avenir Next を基本フォントに設定 */
             --font-main: "Avenir Next", "Avenir", "Helvetica Neue", "Arial", sans-serif;
         }
@@ -65,7 +65,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    top: -28px; /* この値を大きくするほど全体が上に上がります */
+    top: -20px; /* この値を大きくするほど全体が上に上がります */
 }
 
         .city-name {
@@ -82,53 +82,292 @@
 }
 
 .nickname {
-    font-size: 70px;
-    font-weight: 700;
+    font-family: "Avenir Next";
+    font-size: 65px;
+    font-weight: 620;
     line-height: 0.8;
     text-transform: uppercase;
     margin: 0;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.18em;
+
+    /* --- 右側の画像の理想デザインを実現するコード --- */
+    color: #000000; /* 文字色を黒に */
+    
+    /* 8方向に白い影を2px出すことで、文字を太く保ったまま外枠を付けます */
+    text-shadow: 
+        2px  2px 0 #ffffff,
+       -2px  2px 0 #ffffff,
+        2px -2px 0 #ffffff,
+       -2px -2px 0 #ffffff,
+        2px  0px 0 #ffffff,
+       -2px  0px 0 #ffffff,
+        0px  2px 0 #ffffff,
+        0px -2px 0 #ffffff;
 }
 
-        .record-line {
-    font-size: 32px;
-    font-weight: 700;
-    margin-top: 15px;
+        /* チーム名・戦績・レーティングを横に並べる親コンテナ */
+.header-content {
+    display: flex;
+    justify-content: space-between; /* これで左にチーム名、右にRTGを配置 */
+    align-items: flex-end;
+    width: 100%;
 }
 
-        /* レーティングエリア */
-        .rtg-container {
-            display: flex;
-            gap: 50px;
-            text-align: right;
-            padding-bottom: 5px;
-        }
+/* 戦績ライン（W L E の行） */
+.record-line {
+    display: flex;
+    justify-content: flex-start; /* 左端から並べる */
+    gap: 60px;                   /* 各パーツの隙間をここで一括調整 */
+    align-items: baseline;
+    width: auto;                 /* 固定幅ではなく、内容に合わせる */
+    margin-top: 35px;            /* ニックネームとの距離 */
+    font-size: 30px;
+    font-weight: 600;            /* 理想に合わせ極太に */
+    color: #000000;
+}
+
+/* 数字の左右の隙間をさらに細かく調整したい場合 */
+.record-line span {
+    display: inline-block;
+}
+
+/* th だけ小さくする設定 */
+.rank-suffix {
+    font-size: 30px;
+    margin-left: 0px; /* 数字に近づける */
+}
+
+/* RTGコンテナ（右側に配置される塊） */
+.rtg-container {
+    display: flex;
+    gap: 40px;
+    margin-left: auto; /* 念押しで右寄せ */
+    margin-bottom: -15px;
+}
+
+        .rtg-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    min-width: 0;
+}
+
+.rtg-item:last-child {
+    /* 【追加】右側の余白を完全にゼロにする */
+    margin-right: -10px;
+    padding-right: 0;
+}
 
         .rtg-item .rtg-label {
-            font-size: 26px;
-            font-weight: 800;
-            margin-bottom: -5px;
-        }
+            align-self: flex-start;
+    font-size: 26px;       /* ラベルのサイズ */
+    font-weight: 600;
+    margin-bottom: 3px;
+    letter-spacing: 0.1em;
+}
 
         .rtg-item .rtg-value {
-    font-size: 82px;
-    line-height: 0.9;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.0;        /* 高さを1にして余白を最小限に */
+    margin: 0;
 }
 
         .rtg-item .rtg-rank {
-            font-size: 34px;
-            font-weight: 700;
-            opacity: 0.8;
-        }
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0.9;
+    margin-top: 3px;       /* 数値との間隔 */
+    margin-bottom: 0;
+    line-height: 1;
+}
 
-        /* コンテンツエリア（今後のスタッツ用） */
-        .main-content {
-            padding: 20px 40px;
-        }
+/* --- メインコンテンツ全体の調整 --- */
+.main-content {
+    padding: 60px 80px; /* 上下の余白を広げて呼吸させる */
+}
+
+.stats-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+/* PTS, 2FG, 3FG などのラベルを左上に固定 */
+.stat-label {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--team-color);
+    margin-bottom: 5px;
+    letter-spacing: 0.1em;
+}
+
+/* --- PTS セクション --- */
+.pts-box {
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+}
+
+.pts-box .stat-main-value {
+    font-size: 110px; /* PTSは一番大きく */
+    font-weight: 700;
+    line-height: 0.9;
+    color: #ffffff;
+}
+
+.pts-box .stat-sub-rank {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+.stat-comparison {
+    font-size: 22px;
+    margin-top: 25px;
+    font-weight: 600;
+    color: #aaa;
+    letter-spacing: 0.05em;
+}
+
+/* --- 2FG / 3FG セクション (円グラフ) --- */
+.shooting-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.shooting-flex {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.chart-container {
+    position: relative;
+    width: 200px; /* 少しコンパクトに */
+    height: 200px;
+}
+
+.donut-chart {
+    transform: rotate(-90deg);
+    width: 100%;
+    height: 100%;
+}
+
+.donut-bg {
+    fill: none;
+    stroke: #444;
+    stroke-width: 10;
+}
+
+.donut-value {
+    fill: none;
+    stroke: var(--team-color);
+    stroke-width: 10;
+    stroke-linecap: round;
+}
+
+.chart-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.chart-percent {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.chart-percent small {
+    font-size: 20px;
+    margin-left: 2px;
+}
+
+.chart-rank {
+    font-size: 20px;
+    color: #aaa;
+    font-weight: 700;
+}
+
+.shooting-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detail-line {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+/* --- レイアウトのキモ：分数と順位の並び --- */
+.fraction-container {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* 分数と順位の間の隙間 */
+}
+
+.fraction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 28px; /* 成功/試投数の大きさ */
+    font-weight: 800;
+}
+
+.fraction .top {
+    border-bottom: 2px solid #ffffff; /* 分数の横棒 */
+    padding: 0 4px;
+    width: 100%;
+    text-align: center;
+}
+
+.fraction .bottom {
+    padding-top: 2px;
+}
+
+.fraction-rank {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 75px; /* 分数の高さに合わせる */
+    font-size: 18px;
+    font-weight: 700;
+    color: #aaa; /* 順位は少し控えめな色に */
+}
+
+/* B1平均の黒い帯デザイン */
+.league-avg-bar {
+    background-color: #1a1a1a;
+    margin: 20px -40px 0; /* paddingを相殺 */
+    padding: 12px 40px;
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    border-top: 1px solid #444;
+}
+
+.league-avg {
+    color: #aaa;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 4px;
+}
+
     </style>
 </head>
 <body>
 
+    <body>
     <header class="header">
         <div class="header-watermark">2025-26</div>
         
@@ -136,26 +375,102 @@
             <div class="team-identity">
                 <span class="city-name">__CITY__</span>
                 <h1 class="nickname">__TEAM_NAME__</h1>
-                <div class="record-line">W __WINS__ － L __LOSSES__ | __DIV__ __RANK__th</div>
-            </div>
-
-            <div class="rtg-container">
+                <div class="record-line">
+                    <span>W</span>
+                    <span>__WINS__</span>
+                    <span>—</span>
+                    <span>L</span>
+                    <span>__LOSSES__</span>
+                    <span style="margin-left: 20px;">__DIV__</span> 
+                    <span>__RANK__</span>
+                    <span class="rank-suffix">th</span>
+                </div>
+            </div> <div class="rtg-container">
                 <div class="rtg-item">
                     <div class="rtg-label">ORTG</div>
                     <div class="rtg-value">__ORTG__</div>
-                    <div class="rtg-rank">( __ORTG_RANK__ )</div>
+                    <div class="rtg-rank">(&nbsp;&nbsp;__ORTG_RANK__&nbsp;&nbsp;)</div>
                 </div>
                 <div class="rtg-item">
                     <div class="rtg-label">DRTG</div>
                     <div class="rtg-value">__DRTG__</div>
-                    <div class="rtg-rank">( __DRTG_RANK__ )</div>
+                    <div class="rtg-rank">(&nbsp;&nbsp;__DRTG_RANK__&nbsp;&nbsp;)</div>
                 </div>
             </div>
         </div>
     </header>
 
     <main class="main-content">
-        </main>
+    <section class="stats-row">
+        <div class="stat-box pts-box">
+            <div class="stat-label">PTS</div>
+            <div class="stat-main-value">__displayPts__</div>
+            <div class="stat-sub-rank">(&nbsp; __rank_displayPts__ &nbsp;)</div>
+            <div class="stat-comparison">OPPPTS __oppPts__ (&nbsp; __oppPtsRank__ &nbsp;)</div>
+        </div>
 
+        <div class="stat-box shooting-box">
+            <div class="stat-label">2FG</div>
+            <div class="shooting-flex">
+                <div class="chart-container">
+                    <svg viewBox="0 0 100 100" class="donut-chart">
+                        <circle class="donut-bg" cx="50" cy="50" r="40"></circle>
+                        <circle class="donut-value" cx="50" cy="50" r="40" style="stroke-dasharray: calc(__fg2p__ * 2.51) 251;"></circle>
+                    </svg>
+                    <div class="chart-text">
+                        <div class="chart-percent">__fg2p__<small>%</small></div>
+                        <div class="chart-rank">(&nbsp;__rank_fg2p__&nbsp;)</div>
+                    </div>
+                </div>
+                <div class="shooting-details">
+                    <div class="fraction-container">
+                        <div class="fraction">
+                            <span class="top">__fg2m__</span>
+                            <span class="bottom">__fg2a__</span>
+                        </div>
+                        <div class="fraction-rank">
+                            <span>(&nbsp;__rank_fg2m__&nbsp;)</span>
+                            <span>(&nbsp;__rank_fg2a__&nbsp;)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stat-box shooting-box">
+            <div class="stat-label">3FG</div>
+            <div class="shooting-flex">
+                <div class="chart-container">
+                    <svg viewBox="0 0 100 100" class="donut-chart">
+                        <circle class="donut-bg" cx="50" cy="50" r="40"></circle>
+                        <circle class="donut-value" cx="50" cy="50" r="40" style="stroke-dasharray: calc(__fg3p__ * 2.51) 251;"></circle>
+                    </svg>
+                    <div class="chart-text">
+                        <div class="chart-percent">__fg3p__<small>%</small></div>
+                        <div class="chart-rank">(&nbsp;__rank_fg3p__&nbsp;)</div>
+                    </div>
+                </div>
+                <div class="shooting-details">
+                    <div class="fraction-container">
+                        <div class="fraction">
+                            <span class="top">__fg3m__</span>
+                            <span class="bottom">__fg3a__</span>
+                        </div>
+                        <div class="fraction-rank">
+                            <span>(&nbsp;__rank_fg3m__&nbsp;)</span>
+                            <span>(&nbsp;__rank_fg3a__&nbsp;)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="league-avg-bar">
+        <div class="avg-item" style="width: 250px;">B1 AVG __b1_displayPts__</div>
+        <div class="avg-item" style="margin-left: 100px;">__b1_fg2p__% &nbsp; __b1_fg2m__ / __b1_fg2a__</div>
+        <div class="avg-item" style="margin-left: 150px;">__b1_fg3p__% &nbsp; __b1_fg3m__ / __b1_fg3a__</div>
+    </div>
+</main>
 </body>
 </html>

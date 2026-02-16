@@ -1,112 +1,80 @@
-/* scripts/fetch_B_team_stats.cjs */
 const fs = require("fs");
 const path = require("path");
 const { chromium } = require("playwright");
 
 async function fetchBTeamStats() {
     const outDir = path.join(process.cwd(), "data", "stats");
+    const outFile = path.join(outDir, "processed_team_stats.json");
     if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
-    // 一時的に動作を見るために headless: false に設定するのも手です
-    const browser = await chromium.launch({ headless: true }); 
-    const context = await browser.newContext({
-        viewport: { width: 1280, height: 1600 },
-        userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
-    });
-    const page = await context.newPage();
+    console.log("🚀 スタッツ取得を開始します...");
+    const browser = await chromium.launch({ headless: true });
+    const page = await browser.newPage();
+
+    const scrapeData = async (url) => {
+        await page.goto(url, { waitUntil: "networkidle" });
+        await page.waitForSelector("table tbody tr");
+        return await page.evaluate(() => {
+            return Array.from(document.querySelectorAll("table tbody tr")).map(row => {
+                const cells = Array.from(row.querySelectorAll("td")).map(td => td.innerText.trim());
+                const name = cells[1] ? cells[1].replace(/\s+/g, "") : null;
+                return { name, cells };
+            }).filter(r => r.name);
+        });
+    };
 
     try {
-        // --- 1. 順位表 ---
-        console.log("[FETCH] 順位表を取得中...");
-        await page.goto("https://www.bleague.jp/standings/?tab=1", { waitUntil: "networkidle", timeout: 60000 });
-        await page.waitForTimeout(2000); // 描画安定待ち
-
-        const standings = await page.evaluate(() => {
-            const rows = Array.from(document.querySelectorAll("tr")).filter(r => r.innerText.includes("勝"));
-            // チーム名が含まれる行を特定して抽出
-            return rows.map(row => {
-                const cols = row.querySelectorAll("td");
-                if (cols.length < 5) return null;
-                return {
-                    teamName: cols[1]?.innerText.trim(),
-                    win: cols[2]?.innerText.trim(),
-                    loss: cols[3]?.innerText.trim(),
-                    rank: cols[0]?.innerText.trim(),
-                    winRate: cols[4]?.innerText.trim()
-                };
-            }).filter(s => s && s.teamName);
-        });
-
-        // --- 2. 基本スタッツ (Total) ---
-        console.log("[FETCH] 基本スタッツを取得中...");
-        const statsUrl = "https://www.bleague.jp/stats/?year=2025&tab=1&target=club-b1&value=TotalPoints&o=desc&e=2&dt=tot";
-        await page.goto(statsUrl, { waitUntil: "load", timeout: 80000 });
+        console.log("[1/2] 基本スタッツ(AVG)取得中...");
+        const rawBasic = await scrapeData("https://www.bleague.jp/stats/?year=2025&tab=1&target=club-b1&value=TotalPoints&o=desc&e=2&dt=avg");
         
-        // 強制スクロール（遅延読み込み対策）
-        await page.evaluate(() => window.scrollTo(0, 800));
-        await page.waitForTimeout(3000);
+        console.log("[2/2] アドバンスド(ADV)取得中...");
+        const rawAdv = await scrapeData("https://www.bleague.jp/stats/?year=2025&tab=1&target=club-b1&value=sOffensiveRating&o=desc&e=2&dt=adv");
 
-        // セレクタを緩めて待機
-        await page.waitForFunction(() => document.querySelectorAll("table tr").length > 10, { timeout: 60000 });
+        const teams = rawBasic.map(b => {
+            const a = rawAdv.find(x => x.name === b.name);
+            const cells = b.cells; // 基本スタッツの配列
+            const advCells = a ? a.cells : []; // アドバンスドの配列
 
-        const basicStats = await page.evaluate(() => {
-            const rows = Array.from(document.querySelectorAll("table tbody tr"));
-            return rows.map(row => {
-                const c = Array.from(row.querySelectorAll("td")).map(td => td.innerText.trim());
-                if (c.length < 20) return null;
-                return {
-                    teamName: c[1],
-                    pts: parseFloat(c[4]),
-                    fg2m: parseFloat(c[7]), fg2a: parseFloat(c[8]), fg2p: parseFloat(c[9]),
-                    fg3m: parseFloat(c[10]), fg3a: parseFloat(c[11]), fg3p: parseFloat(c[12]),
-                    ftm: parseFloat(c[13]), fta: parseFloat(c[14]), ftp: parseFloat(c[15]),
-                    oreb: parseFloat(c[17]), dreb: parseFloat(c[18]), reb: parseFloat(c[19]),
-                    ast: parseFloat(c[20]), tov: parseFloat(c[22]), stl: parseFloat(c[23]),
-                    blk: parseFloat(c[24]), pf: parseFloat(c[26]), fd: parseFloat(c[27])
-                };
-            }).filter(b => b && b.teamName);
+            return {
+                teamName: b.name,
+                // cells[5] = PTS (80.1), cells[8] = 2FG M, etc.
+                pts: parseFloat(cells[5]),
+                fg2m: parseFloat(cells[8]),
+                fg2a: parseFloat(cells[9]),
+                fg2p: parseFloat(cells[10]),
+                fg3m: parseFloat(cells[11]),
+                fg3a: parseFloat(cells[12]), // ここを修正しました
+                fg3p: parseFloat(cells[13]),
+                ftm: parseFloat(cells[14]),
+                fta: parseFloat(cells[15]),
+                ftp: parseFloat(cells[16]),
+                reb: parseFloat(cells[20]),
+                ast: parseFloat(cells[21]),
+                tov: parseFloat(cells[23]),
+                stl: parseFloat(cells[24]),
+                blk: parseFloat(cells[25]),
+                // アドバンスド系
+                ortg: advCells[5] ? parseFloat(advCells[5]) : null, // 111.8
+                drtg: advCells[6] ? parseFloat(advCells[6]) : null, // 109.8
+                pace: advCells[10] ? parseFloat(advCells[10]) : null // 71.7
+            };
         });
 
-        // --- 3. 詳細スタッツ ---
-        console.log("[FETCH] 詳細スタッツを取得中...");
-        const detailUrl = "https://www.bleague.jp/stats/?year=2025&tab=1&target=club-b1&value=sSecondChancePointsMade&o=desc&e=2&dt=dtl";
-        await page.goto(detailUrl, { waitUntil: "load", timeout: 80000 });
-        await page.evaluate(() => window.scrollTo(0, 800));
-        await page.waitForTimeout(3000);
-        await page.waitForFunction(() => document.querySelectorAll("table tr").length > 10, { timeout: 60000 });
+        // 簡易ランキング
+        const sorted = [...teams].sort((a, b) => (b.pts || 0) - (a.pts || 0));
+        const finalTeams = teams.map(t => ({
+            ...t,
+            rank_pts: sorted.findIndex(s => s.teamName === t.teamName) + 1
+        }));
 
-        const detailStats = await page.evaluate(() => {
-            const rows = Array.from(document.querySelectorAll("table tbody tr"));
-            return rows.map(row => {
-                const c = Array.from(row.querySelectorAll("td")).map(td => td.innerText.trim());
-                if (c.length < 7) return null;
-                return {
-                    teamName: c[1],
-                    ptsOffTov: parseFloat(c[4]),
-                    secondChancePts: parseFloat(c[5]),
-                    fastBreakPts: parseFloat(c[6]),
-                    paintPts: parseFloat(c[7])
-                };
-            }).filter(d => d && d.teamName);
-        });
-
-        // データ結合
-        const teams = basicStats.map(team => {
-            const standing = standings.find(s => s.teamName === team.teamName) || {};
-            const detail = detailStats.find(d => d.teamName === team.teamName) || {};
-            return { ...team, ...standing, ...detail };
-        });
-
-        const finalData = { updatedAt: new Date().toISOString(), teams };
-        fs.writeFileSync(path.join(outDir, "b1_team_stats.json"), JSON.stringify(finalData, null, 2));
-        console.log(`✅ ${teams.length} チームのデータを取得しました。`);
+        fs.writeFileSync(outFile, JSON.stringify({ updatedAt: new Date().toLocaleString(), teams: finalTeams }, null, 2));
+        console.log("✅ 全工程完了！");
 
     } catch (e) {
-        console.error("❌ エラー:", e.message);
-        await page.screenshot({ path: "error_debug.png" });
+        console.error("❌ エラー発生:", e.message);
     } finally {
         await browser.close();
     }
 }
 
-module.exports = { fetchBTeamStats };
+fetchBTeamStats();

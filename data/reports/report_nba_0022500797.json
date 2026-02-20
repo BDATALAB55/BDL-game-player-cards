@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500797",
+  "date": "2026.02.19",
+  "venue": "United Center",
+  "attendance": 20397,
+  "home": {
+    "id": "1610612741",
+    "total": {
+      "pts": 101,
+      "fgm": 36,
+      "fga": 86,
+      "f2m": 24,
+      "f2a": 46,
+      "f3m": 12,
+      "f3a": 40,
+      "ftm": 17,
+      "fta": 21,
+      "reb": 55,
+      "oreb": 11,
+      "dreb": 35,
+      "ast": 22,
+      "tov": 20,
+      "stl": 6,
+      "blk": 5,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "29:32",
+        "pts": 16,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "31:19",
+        "pts": 4,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "JALEN SMITH",
+        "min": "24:20",
+        "pts": 9,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "ANFERNEE SIMONS",
+        "min": "31:00",
+        "pts": 20,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "JOSH GIDDEY",
+        "min": "21:25",
+        "pts": 5,
+        "reb": 4,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612761",
+    "total": {
+      "pts": 110,
+      "fgm": 38,
+      "fga": 90,
+      "f2m": 31,
+      "f2a": 67,
+      "f3m": 7,
+      "f3a": 23,
+      "ftm": 27,
+      "fta": 31,
+      "reb": 55,
+      "oreb": 11,
+      "dreb": 35,
+      "ast": 23,
+      "tov": 14,
+      "stl": 14,
+      "blk": 3,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "35:37",
+        "pts": 31,
+        "reb": 8,
+        "ast": 6
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "33:55",
+        "pts": 14,
+        "reb": 9,
+        "ast": 5
+      },
+      {
+        "no": "12",
+        "name": "COLLIN MURRAY-BOYLES",
+        "min": "28:31",
+        "pts": 11,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "24:52",
+        "pts": 13,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "33:11",
+        "pts": 14,
+        "reb": 2,
+        "ast": 3
+      }
+    ]
+  }
+}

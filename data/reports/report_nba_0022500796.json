@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500796",
+  "date": "2026.02.19",
+  "venue": "Madison Square Garden",
+  "attendance": 19812,
+  "home": {
+    "id": "1610612752",
+    "total": {
+      "pts": 111,
+      "fgm": 41,
+      "fga": 87,
+      "f2m": 33,
+      "f2a": 52,
+      "f3m": 8,
+      "f3a": 35,
+      "ftm": 21,
+      "fta": 28,
+      "reb": 48,
+      "oreb": 11,
+      "dreb": 27,
+      "ast": 24,
+      "tov": 12,
+      "stl": 9,
+      "blk": 7,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "31:35",
+        "pts": 8,
+        "reb": 0,
+        "ast": 0
+      },
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "27:48",
+        "pts": 11,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "30:55",
+        "pts": 21,
+        "reb": 11,
+        "ast": 4
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "25:28",
+        "pts": 8,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "37:44",
+        "pts": 33,
+        "reb": 6,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612765",
+    "total": {
+      "pts": 126,
+      "fgm": 48,
+      "fga": 93,
+      "f2m": 35,
+      "f2a": 63,
+      "f3m": 13,
+      "f3a": 30,
+      "ftm": 17,
+      "fta": 20,
+      "reb": 53,
+      "oreb": 11,
+      "dreb": 33,
+      "ast": 30,
+      "tov": 14,
+      "stl": 9,
+      "blk": 8,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "TOBIAS HARRIS",
+        "min": "31:35",
+        "pts": 11,
+        "reb": 10,
+        "ast": 5
+      },
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "30:50",
+        "pts": 10,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "7",
+        "name": "PAUL REED",
+        "min": "29:24",
+        "pts": 18,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "38:28",
+        "pts": 42,
+        "reb": 8,
+        "ast": 13
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "20:40",
+        "pts": 9,
+        "reb": 1,
+        "ast": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500794",
+  "date": "2026.02.19",
+  "venue": "Xfinity Mobile Arena",
+  "attendance": 19746,
+  "home": {
+    "id": "1610612755",
+    "total": {
+      "pts": 107,
+      "fgm": 33,
+      "fga": 86,
+      "f2m": 22,
+      "f2a": 53,
+      "f3m": 11,
+      "f3a": 33,
+      "ftm": 30,
+      "fta": 37,
+      "reb": 54,
+      "oreb": 12,
+      "dreb": 34,
+      "ast": 17,
+      "tov": 15,
+      "stl": 9,
+      "blk": 13,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "KELLY OUBRE JR.",
+        "min": "32:18",
+        "pts": 17,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "25",
+        "name": "DOMINICK BARLOW",
+        "min": "22:19",
+        "pts": 1,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "ANDRE DRUMMOND",
+        "min": "27:53",
+        "pts": 10,
+        "reb": 14,
+        "ast": 3
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "33:39",
+        "pts": 20,
+        "reb": 9,
+        "ast": 0
+      },
+      {
+        "no": "0",
+        "name": "TYRESE MAXEY",
+        "min": "38:47",
+        "pts": 28,
+        "reb": 3,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612737",
+    "total": {
+      "pts": 117,
+      "fgm": 38,
+      "fga": 88,
+      "f2m": 28,
+      "f2a": 56,
+      "f3m": 10,
+      "f3a": 32,
+      "ftm": 31,
+      "fta": 40,
+      "reb": 65,
+      "oreb": 13,
+      "dreb": 37,
+      "ast": 24,
+      "tov": 13,
+      "stl": 11,
+      "blk": 5,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "27:13",
+        "pts": 10,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "37:39",
+        "pts": 32,
+        "reb": 10,
+        "ast": 5
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "26:16",
+        "pts": 8,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "36:37",
+        "pts": 15,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "33:07",
+        "pts": 14,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  }
+}

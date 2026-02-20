@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500800",
+  "date": "2026.02.19",
+  "venue": "Golden 1 Center",
+  "attendance": 16544,
+  "home": {
+    "id": "1610612758",
+    "total": {
+      "pts": 94,
+      "fgm": 35,
+      "fga": 86,
+      "f2m": 27,
+      "f2a": 59,
+      "f3m": 8,
+      "f3a": 27,
+      "ftm": 16,
+      "fta": 20,
+      "reb": 54,
+      "oreb": 11,
+      "dreb": 37,
+      "ast": 22,
+      "tov": 19,
+      "stl": 9,
+      "blk": 3,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "13",
+        "name": "KEEGAN MURRAY",
+        "min": "31:36",
+        "pts": 15,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "PRECIOUS ACHIUWA",
+        "min": "33:40",
+        "pts": 14,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "38:57",
+        "pts": 17,
+        "reb": 14,
+        "ast": 4
+      },
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "19:15",
+        "pts": 13,
+        "reb": 3,
+        "ast": 6
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "16:45",
+        "pts": 5,
+        "reb": 0,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612753",
+    "total": {
+      "pts": 131,
+      "fgm": 45,
+      "fga": 90,
+      "f2m": 18,
+      "f2a": 40,
+      "f3m": 27,
+      "f3a": 50,
+      "ftm": 14,
+      "fta": 17,
+      "reb": 49,
+      "oreb": 5,
+      "dreb": 36,
+      "ast": 28,
+      "tov": 10,
+      "stl": 13,
+      "blk": 4,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "32:01",
+        "pts": 17,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "32:12",
+        "pts": 30,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "24:47",
+        "pts": 2,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "ANTHONY BLACK",
+        "min": "31:10",
+        "pts": 20,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "19:45",
+        "pts": 9,
+        "reb": 3,
+        "ast": 3
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html><html lang="ja"><head>
+<!-- # 全ページ共通タグ -->
+<script src="https://j.wovn.io/1" data-wovnio="key=deCl52&amp;defaultLang=ja&amp;currentLang=ja&amp;urlPattern=path&amp;backend=true&amp;langParamName=wovn&amp;backendVersion=WOVN.proxy_0.22.8" async=""></script>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>ジャレット・カルバー | B.LEAGUE（Bリーグ）公式サイト</title>
+<meta name="keywords" content="B.LEAGUE,Bリーグ,バスケットボール,バスケット,バスケ,プロリーグ,プロバスケ">
+<meta name="description" content="B.LEAGUE・B1・仙台89ERS所属「ジャレット・カルバー」の情報をご紹介。男子プロバスケットボールリーグ、B.LEAGUE（Bリーグ）。">
+<meta property="og:title" content="ジャレット・カルバー | B.LEAGUE（Bリーグ）公式サイト">
+<meta property="og:description" content="B.LEAGUE・B1・仙台89ERS所属「ジャレット・カルバー」の情報をご紹介。男子プロバスケットボールリーグ、B.LEAGUE（Bリーグ）。">
+<meta property="og:image" content="https://www.bleague.jp/files/user/img/ogp_blg.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="B.LEAGUE（Bリーグ）公式サイト">
+<meta property="og:url" content="https://www.bleague.jp/roster_detail/?PlayerID=51000531">
+<meta property="twitter:card" content="summary">
+<meta property="twitter:title" content="ジャレット・カルバー | B.LEAGUE（Bリーグ）公式サイト">
+<meta property="twitter:description" content="B.LEAGUE・B1・仙台89ERS所属「ジャレット・カルバー」の情報をご紹介。男子プロバスケットボールリーグ、B.LEAGUE（Bリーグ）。">
+<meta property="twitter:image" content="https://www.bleague.jp/files/user/img/ogp_blg.png">
+<meta property="twitter:site" content="@B_LEAGUE">
+<meta property="twitter:creator" content="@B_LEAGUE">
+<meta property="fb:app_id" content="196745333994023">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="viewport" content="width=device-width, user-scalable=no">
+
+
+<link hreflang="ja" href="https://www.bleague.jp/roster_detail/" rel="alternate">
+<link hreflang="en" href="https://www.bleague.jp/roster_detail/en/" rel="alternate">
+<link hreflang="zh-Hant" href="https://www.bleague.jp/roster_detail/zh-CHT/" rel="alternate">
+
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://bleague.bl.kuroco-img.app/v=1518578008/files/user/league_common/img/libs/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://bleague.bl.kuroco-img.app/v=1518578007/files/user/league_common/img/libs/icon_touch.png">
+<link rel="apple-touch-icon-precomposed" href="https://bleague.bl.kuroco-img.app/v=1518578007/files/user/league_common/img/libs/icon_touch.png">
+<link rel="shortcut icon" href="https://bleague.bl.kuroco-img.app/v=1518578007/files/user/league_common/img/libs/icon_touch.png">
+<link rel="icon" sizes="192x192" href="https://bleague.bl.kuroco-img.app/v=1518578007/files/user/league_common/img/libs/icon_touch.png">
+<!-- renewal css -->
+<link rel="stylesheet" href="https://bleague.bl.kuroco-img.app/v=1704569207/files/css/front/user/reset_new2208.css">
+<link rel="stylesheet" href="https://bleague.bl.kuroco-img.app/v=1730883561/files/css/front/user/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://bleague.bl.kuroco-img.app/v=1704569206/files/css/front/user/slick.css">
+<link rel="stylesheet" href="https://bleague.bl.kuroco-img.app/v=1704569206/files/css/front/user/slick-theme.css">
+<link rel="stylesheet" href="https://bleague.bl.kuroco-img.app/v=1746760845/files/css/front/user/lang.css">
+<link rel="stylesheet" href="https://bleague.bl.kuroco-img.app/v=1768785734/files/css/front/user/global_new2309.css">
+<link rel="stylesheet" href="https://bleague.bl.kuroco-img.app/v=1756287316/files/css/front/user/common_new2208.css">
+
+
+<!-- Google Tag Manager -->
+<script>
+
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T3JDL9H');
+
+</script></head></html>

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500799",
+  "date": "2026.02.19",
+  "venue": "Chase Center",
+  "attendance": 18064,
+  "home": {
+    "id": "1610612744",
+    "total": {
+      "pts": 110,
+      "fgm": 43,
+      "fga": 96,
+      "f2m": 23,
+      "f2a": 41,
+      "f3m": 20,
+      "f3a": 55,
+      "ftm": 4,
+      "fta": 8,
+      "reb": 47,
+      "oreb": 11,
+      "dreb": 29,
+      "ast": 30,
+      "tov": 8,
+      "stl": 8,
+      "blk": 4,
+      "pf": 11
+    },
+    "starters": [
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "22:43",
+        "pts": 11,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "GUI SANTOS",
+        "min": "31:58",
+        "pts": 17,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "18:33",
+        "pts": 0,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "DE'ANTHONY MELTON",
+        "min": "25:10",
+        "pts": 18,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "61",
+        "name": "PAT SPENCER",
+        "min": "26:42",
+        "pts": 5,
+        "reb": 2,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612738",
+    "total": {
+      "pts": 121,
+      "fgm": 49,
+      "fga": 95,
+      "f2m": 32,
+      "f2a": 55,
+      "f3m": 17,
+      "f3a": 40,
+      "ftm": 6,
+      "fta": 7,
+      "reb": 59,
+      "oreb": 13,
+      "dreb": 41,
+      "ast": 36,
+      "tov": 13,
+      "stl": 7,
+      "blk": 6,
+      "pf": 6
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "37:07",
+        "pts": 23,
+        "reb": 15,
+        "ast": 13
+      },
+      {
+        "no": "30",
+        "name": "SAM HAUSER",
+        "min": "27:52",
+        "pts": 16,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "18:09",
+        "pts": 9,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "55",
+        "name": "BAYLOR SCHEIERMAN",
+        "min": "24:11",
+        "pts": 7,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "39:02",
+        "pts": 10,
+        "reb": 5,
+        "ast": 8
+      }
+    ]
+  }
+}

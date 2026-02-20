@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500798",
+  "date": "2026.02.19",
+  "venue": "Moody Center",
+  "attendance": 16258,
+  "home": {
+    "id": "1610612759",
+    "total": {
+      "pts": 121,
+      "fgm": 45,
+      "fga": 87,
+      "f2m": 32,
+      "f2a": 50,
+      "f3m": 13,
+      "f3a": 37,
+      "ftm": 18,
+      "fta": 20,
+      "reb": 55,
+      "oreb": 11,
+      "dreb": 39,
+      "ast": 30,
+      "tov": 11,
+      "stl": 6,
+      "blk": 7,
+      "pf": 12
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "22:41",
+        "pts": 12,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "22:22",
+        "pts": 8,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "24:45",
+        "pts": 17,
+        "reb": 11,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "21:09",
+        "pts": 20,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "21:53",
+        "pts": 15,
+        "reb": 3,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612756",
+    "total": {
+      "pts": 94,
+      "fgm": 39,
+      "fga": 105,
+      "f2m": 27,
+      "f2a": 63,
+      "f3m": 12,
+      "f3a": 42,
+      "ftm": 4,
+      "fta": 6,
+      "reb": 58,
+      "oreb": 19,
+      "dreb": 27,
+      "ast": 22,
+      "tov": 11,
+      "stl": 7,
+      "blk": 5,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "4",
+        "name": "JALEN GREEN",
+        "min": "26:10",
+        "pts": 26,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "26:30",
+        "pts": 8,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "22:44",
+        "pts": 11,
+        "reb": 10,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "08:47",
+        "pts": 5,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "29:43",
+        "pts": 8,
+        "reb": 2,
+        "ast": 8
+      }
+    ]
+  }
+}

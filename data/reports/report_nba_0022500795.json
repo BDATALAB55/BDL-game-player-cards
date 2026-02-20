@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500795",
+  "date": "2026.02.19",
+  "venue": "Capital One Arena",
+  "attendance": 14602,
+  "home": {
+    "id": "1610612764",
+    "total": {
+      "pts": 112,
+      "fgm": 43,
+      "fga": 98,
+      "f2m": 32,
+      "f2a": 61,
+      "f3m": 11,
+      "f3a": 37,
+      "ftm": 15,
+      "fta": 20,
+      "reb": 56,
+      "oreb": 10,
+      "dreb": 36,
+      "ast": 30,
+      "tov": 10,
+      "stl": 14,
+      "blk": 5,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "18:51",
+        "pts": 6,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "23:03",
+        "pts": 12,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "00",
+        "name": "TRISTAN VUKCEVIC",
+        "min": "17:21",
+        "pts": 12,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "12",
+        "name": "TRE JOHNSON",
+        "min": "19:10",
+        "pts": 10,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "27:58",
+        "pts": 13,
+        "reb": 4,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612754",
+    "total": {
+      "pts": 105,
+      "fgm": 34,
+      "fga": 83,
+      "f2m": 19,
+      "f2a": 41,
+      "f3m": 15,
+      "f3a": 42,
+      "ftm": 22,
+      "fta": 27,
+      "reb": 61,
+      "oreb": 8,
+      "dreb": 42,
+      "ast": 22,
+      "tov": 23,
+      "stl": 7,
+      "blk": 4,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "AARON NESMITH",
+        "min": "14:44",
+        "pts": 3,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "JARACE WALKER",
+        "min": "29:36",
+        "pts": 19,
+        "reb": 14,
+        "ast": 7
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "20:43",
+        "pts": 15,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "26",
+        "name": "BEN SHEPPARD",
+        "min": "26:58",
+        "pts": 15,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "21:37",
+        "pts": 5,
+        "reb": 1,
+        "ast": 4
+      }
+    ]
+  }
+}

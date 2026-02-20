@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500793",
+  "date": "2026.02.19",
+  "venue": "Rocket Arena",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612739",
+    "total": {
+      "pts": 112,
+      "fgm": 44,
+      "fga": 86,
+      "f2m": 32,
+      "f2a": 51,
+      "f3m": 12,
+      "f3a": 35,
+      "ftm": 12,
+      "fta": 20,
+      "reb": 65,
+      "oreb": 8,
+      "dreb": 48,
+      "ast": 27,
+      "tov": 13,
+      "stl": 7,
+      "blk": 7,
+      "pf": 13
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "DEAN WADE",
+        "min": "16:24",
+        "pts": 11,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "18:37",
+        "pts": 10,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "23:50",
+        "pts": 15,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "20:44",
+        "pts": 17,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "28:06",
+        "pts": 16,
+        "reb": 5,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612751",
+    "total": {
+      "pts": 84,
+      "fgm": 30,
+      "fga": 87,
+      "f2m": 16,
+      "f2a": 38,
+      "f3m": 14,
+      "f3a": 49,
+      "ftm": 10,
+      "fta": 16,
+      "reb": 49,
+      "oreb": 6,
+      "dreb": 30,
+      "ast": 25,
+      "tov": 11,
+      "stl": 8,
+      "blk": 4,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "20:38",
+        "pts": 14,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "19:45",
+        "pts": 8,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "20",
+        "name": "DAY'RON SHARPE",
+        "min": "19:31",
+        "pts": 4,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "26:18",
+        "pts": 10,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "88",
+        "name": "NOLAN TRAORE",
+        "min": "30:18",
+        "pts": 8,
+        "reb": 1,
+        "ast": 5
+      }
+    ]
+  }
+}

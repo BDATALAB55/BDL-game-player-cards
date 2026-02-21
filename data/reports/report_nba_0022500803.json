@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500803",
+  "date": "2026.02.20",
+  "venue": "Capital One Arena",
+  "attendance": 15846,
+  "home": {
+    "id": "1610612764",
+    "total": {
+      "pts": 131,
+      "fgm": 55,
+      "fga": 95,
+      "f2m": 49,
+      "f2a": 66,
+      "f3m": 6,
+      "f3a": 29,
+      "ftm": 15,
+      "fta": 19,
+      "reb": 51,
+      "oreb": 10,
+      "dreb": 38,
+      "ast": 36,
+      "tov": 17,
+      "stl": 14,
+      "blk": 9,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "21:57",
+        "pts": 13,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "9",
+        "name": "JUSTIN CHAMPAGNIE",
+        "min": "10:42",
+        "pts": 0,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "00",
+        "name": "TRISTAN VUKCEVIC",
+        "min": "20:14",
+        "pts": 14,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "12",
+        "name": "TRE JOHNSON",
+        "min": "18:30",
+        "pts": 14,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "21:49",
+        "pts": 6,
+        "reb": 5,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612754",
+    "total": {
+      "pts": 118,
+      "fgm": 43,
+      "fga": 90,
+      "f2m": 25,
+      "f2a": 41,
+      "f3m": 18,
+      "f3a": 49,
+      "ftm": 14,
+      "fta": 21,
+      "reb": 48,
+      "oreb": 9,
+      "dreb": 31,
+      "ast": 32,
+      "tov": 21,
+      "stl": 12,
+      "blk": 0,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "26",
+        "name": "BEN SHEPPARD",
+        "min": "19:50",
+        "pts": 8,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "JARACE WALKER",
+        "min": "30:46",
+        "pts": 12,
+        "reb": 12,
+        "ast": 6
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "15:52",
+        "pts": 22,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "KAM JONES",
+        "min": "38:37",
+        "pts": 4,
+        "reb": 5,
+        "ast": 11
+      },
+      {
+        "no": "9",
+        "name": "T.J. MCCONNELL",
+        "min": "14:44",
+        "pts": 9,
+        "reb": 2,
+        "ast": 2
+      }
+    ]
+  }
+}

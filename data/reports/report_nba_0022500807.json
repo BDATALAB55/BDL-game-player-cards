@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500807",
+  "date": "2026.02.20",
+  "venue": "Smoothie King Center",
+  "attendance": 15714,
+  "home": {
+    "id": "1610612740",
+    "total": {
+      "pts": 118,
+      "fgm": 47,
+      "fga": 87,
+      "f2m": 43,
+      "f2a": 62,
+      "f3m": 4,
+      "f3a": 25,
+      "ftm": 20,
+      "fta": 28,
+      "reb": 45,
+      "oreb": 9,
+      "dreb": 28,
+      "ast": 22,
+      "tov": 13,
+      "stl": 10,
+      "blk": 5,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "36:00",
+        "pts": 22,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "ZION WILLIAMSON",
+        "min": "30:17",
+        "pts": 32,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "DERIK QUEEN",
+        "min": "28:02",
+        "pts": 18,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "11",
+        "name": "BRYCE MCGOWENS",
+        "min": "30:19",
+        "pts": 10,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "2",
+        "name": "HERBERT JONES",
+        "min": "31:38",
+        "pts": 8,
+        "reb": 4,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612749",
+    "total": {
+      "pts": 139,
+      "fgm": 55,
+      "fga": 92,
+      "f2m": 40,
+      "f2a": 56,
+      "f3m": 15,
+      "f3a": 36,
+      "ftm": 14,
+      "fta": 18,
+      "reb": 45,
+      "oreb": 8,
+      "dreb": 29,
+      "ast": 28,
+      "tov": 13,
+      "stl": 9,
+      "blk": 8,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "29:54",
+        "pts": 0,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "18",
+        "name": "KYLE KUZMA",
+        "min": "25:03",
+        "pts": 14,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "00",
+        "name": "JERICHO SIMS",
+        "min": "18:51",
+        "pts": 4,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "KEVIN PORTER JR.",
+        "min": "32:21",
+        "pts": 25,
+        "reb": 2,
+        "ast": 7
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "34:31",
+        "pts": 27,
+        "reb": 2,
+        "ast": 6
+      }
+    ]
+  }
+}

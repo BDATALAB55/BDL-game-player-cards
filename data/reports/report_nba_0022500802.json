@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500802",
+  "date": "2026.02.20",
+  "venue": "Spectrum Center",
+  "attendance": 19691,
+  "home": {
+    "id": "1610612766",
+    "total": {
+      "pts": 113,
+      "fgm": 36,
+      "fga": 92,
+      "f2m": 16,
+      "f2a": 36,
+      "f3m": 20,
+      "f3a": 56,
+      "ftm": 21,
+      "fta": 22,
+      "reb": 52,
+      "oreb": 23,
+      "dreb": 22,
+      "ast": 26,
+      "tov": 14,
+      "stl": 5,
+      "blk": 4,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "37:04",
+        "pts": 33,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "SION JAMES",
+        "min": "29:42",
+        "pts": 5,
+        "reb": 6,
+        "ast": 7
+      },
+      {
+        "no": "11",
+        "name": "RYAN KALKBRENNER",
+        "min": "35:51",
+        "pts": 12,
+        "reb": 13,
+        "ast": 1
+      },
+      {
+        "no": "24",
+        "name": "BRANDON MILLER",
+        "min": "23:29",
+        "pts": 18,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "LAMELO BALL",
+        "min": "26:59",
+        "pts": 18,
+        "reb": 2,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612739",
+    "total": {
+      "pts": 118,
+      "fgm": 41,
+      "fga": 77,
+      "f2m": 31,
+      "f2a": 56,
+      "f3m": 10,
+      "f3a": 21,
+      "ftm": 26,
+      "fta": 28,
+      "reb": 45,
+      "oreb": 11,
+      "dreb": 28,
+      "ast": 24,
+      "tov": 12,
+      "stl": 10,
+      "blk": 3,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "SAM MERRILL",
+        "min": "24:16",
+        "pts": 10,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "32",
+        "name": "DEAN WADE",
+        "min": "26:01",
+        "pts": 8,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "32:04",
+        "pts": 26,
+        "reb": 14,
+        "ast": 2
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "34:18",
+        "pts": 32,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "34:22",
+        "pts": 18,
+        "reb": 4,
+        "ast": 8
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500810",
+  "date": "2026.02.20",
+  "venue": "Moda Center",
+  "attendance": 18566,
+  "home": {
+    "id": "1610612757",
+    "total": {
+      "pts": 103,
+      "fgm": 35,
+      "fga": 86,
+      "f2m": 20,
+      "f2a": 39,
+      "f3m": 15,
+      "f3a": 47,
+      "ftm": 18,
+      "fta": 29,
+      "reb": 44,
+      "oreb": 8,
+      "dreb": 28,
+      "ast": 25,
+      "tov": 18,
+      "stl": 8,
+      "blk": 5,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "26:21",
+        "pts": 10,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "JERAMI GRANT",
+        "min": "24:54",
+        "pts": 6,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "18:43",
+        "pts": 15,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "JRUE HOLIDAY",
+        "min": "25:16",
+        "pts": 19,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "30:22",
+        "pts": 15,
+        "reb": 8,
+        "ast": 13
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612743",
+    "total": {
+      "pts": 157,
+      "fgm": 55,
+      "fga": 96,
+      "f2m": 34,
+      "f2a": 55,
+      "f3m": 21,
+      "f3a": 41,
+      "ftm": 26,
+      "fta": 32,
+      "reb": 66,
+      "oreb": 13,
+      "dreb": 47,
+      "ast": 41,
+      "tov": 15,
+      "stl": 12,
+      "blk": 3,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "CAMERON JOHNSON",
+        "min": "26:40",
+        "pts": 15,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "3",
+        "name": "JULIAN STRAWTHER",
+        "min": "29:19",
+        "pts": 19,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "29:20",
+        "pts": 32,
+        "reb": 9,
+        "ast": 7
+      },
+      {
+        "no": "0",
+        "name": "CHRISTIAN BRAUN",
+        "min": "26:53",
+        "pts": 11,
+        "reb": 8,
+        "ast": 7
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "25:20",
+        "pts": 25,
+        "reb": 6,
+        "ast": 6
+      }
+    ]
+  }
+}

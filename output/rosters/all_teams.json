@@ -1,0 +1,5922 @@
+[
+  {
+    "team_id": "1637",
+    "team_name": "ベルテックス静岡",
+    "number": 2,
+    "name_ja": "今野 海輝",
+    "name_en": "Mitsuki Konno",
+    "height_cm": 176,
+    "player_id": "51000575",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000575"
+  },
+  {
+    "team_id": "1637",
+    "team_name": "ベルテックス静岡",
+    "number": 3,
+    "name_ja": "山本 愛哉",
+    "name_en": "Manaya Yamamoto",
+    "height_cm": 163,
+    "player_id": "51000444",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000444"
+  },
+  {
+    "team_id": "1637",
+    "team_name": "ベルテックス静岡",
+    "number": 5,
+    "name_ja": "クリス・エブ・ンドウ",
+    "name_en": "Chris-Ebou Ndow",
+    "height_cm": 199,
+    "player_id": "51000539",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000539"
+  },
+  {
+    "team_id": "1637",
+    "team_name": "ベルテックス静岡",
+    "number": 6,
+    "name_ja": "上村 大佐",
+    "name_en": "Taisuke Uemura",
+    "height_cm": 190,
+    "player_id": "51000453",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000453"
+  },
+  {
+    "team_id": "1637",
+    "team_name": "ベルテックス静岡",
+    "number": 7,
+    "name_ja": "渡久地 政睦",
+    "name_en": "Masachika Toguchi",
+    "height_cm": 175,
+    "player_id": "51000557",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000557"
+  },
+  {
+    "team_id": "1637",
+    "team_name": "ベルテックス静岡",
+    "number": 11,
+    "name_ja": "増田 啓介",
+    "name_en": "Keisuke Masuda",
+    "height_cm": 194,
+    "player_id": "20018",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=20018"
+  },
+  {
+    "team_id": "1637",
+    "team_name": "ベルテックス静岡",
+    "number": 14,
+    "name_ja": "柏倉 哲平",
+    "name_en": "Teppei Kashiwagura",
+    "height_cm": 180,
+    "player_id": "10894",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=10894"
+  },
+  {
+    "team_id": "1637",
+    "team_name": "ベルテックス静岡",
+    "number": 16,
+    "name_ja": "橋本 尚明",
+    "name_en": "Naoaki Hashimoto",
+    "height_cm": 184,
+    "player_id": "8684",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8684"
+  },
+  {
+    "team_id": "1637",
+    "team_name": "ベルテックス静岡",
+    "number": 21,
+    "name_ja": "ケニー・ローソン・ジュニア",
+    "name_en": "KennyLawson Jr.",
+    "height_cm": 207,
+    "player_id": "32988",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=32988"
+  },
+  {
+    "team_id": "1637",
+    "team_name": "ベルテックス静岡",
+    "number": 22,
+    "name_ja": "バローン マーテル",
+    "name_en": "Martel Barone",
+    "height_cm": 194,
+    "player_id": "15828",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=15828"
+  },
+  {
+    "team_id": "1637",
+    "team_name": "ベルテックス静岡",
+    "number": 25,
+    "name_ja": "鍋田 隆征",
+    "name_en": "Ryusei Nabeta",
+    "height_cm": 175,
+    "player_id": "51000375",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000375"
+  },
+  {
+    "team_id": "1637",
+    "team_name": "ベルテックス静岡",
+    "number": 26,
+    "name_ja": "アンガス・ブラント",
+    "name_en": "Angus Brandt",
+    "height_cm": 208,
+    "player_id": "33039",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=33039"
+  },
+  {
+    "team_id": "1637",
+    "team_name": "ベルテックス静岡",
+    "number": 30,
+    "name_ja": "サイモン 拓海",
+    "name_en": "Takumi Simon",
+    "height_cm": 190,
+    "player_id": "51000174",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000174"
+  },
+  {
+    "team_id": "1637",
+    "team_name": "ベルテックス静岡",
+    "number": 33,
+    "name_ja": "林 翔太郎",
+    "name_en": "Shotaro Hayashi",
+    "height_cm": 195,
+    "player_id": "15816",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=15816"
+  },
+  {
+    "team_id": "1637",
+    "team_name": "ベルテックス静岡",
+    "number": 41,
+    "name_ja": "加納 誠也",
+    "name_en": "Seiya Kanou",
+    "height_cm": 196,
+    "player_id": "9319",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=9319"
+  },
+  {
+    "team_id": "1637",
+    "team_name": "ベルテックス静岡",
+    "number": 88,
+    "name_ja": "松田 颯",
+    "name_en": "Fu Matsuda",
+    "height_cm": 191,
+    "player_id": "51000574",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000574"
+  },
+  {
+    "team_id": "1637",
+    "team_name": "ベルテックス静岡",
+    "number": 0,
+    "name_ja": "橋本 竜馬",
+    "name_en": "Ryoma Hashimoto",
+    "height_cm": 178,
+    "player_id": "8587",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8587"
+  },
+  {
+    "team_id": "1638",
+    "team_name": "佐賀バルーナーズ",
+    "number": 2,
+    "name_ja": "レイナルド・ガルシア",
+    "name_en": "Reynaldo Garcia",
+    "height_cm": 187,
+    "player_id": "33100",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=33100"
+  },
+  {
+    "team_id": "1638",
+    "team_name": "佐賀バルーナーズ",
+    "number": 5,
+    "name_ja": "山下 泰弘",
+    "name_en": "Yasuhiro Yamashita",
+    "height_cm": 187,
+    "player_id": "9310",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=9310"
+  },
+  {
+    "team_id": "1638",
+    "team_name": "佐賀バルーナーズ",
+    "number": 6,
+    "name_ja": "福永 健太",
+    "name_en": "Kenta Fukunaga",
+    "height_cm": 176,
+    "player_id": "51000473",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000473"
+  },
+  {
+    "team_id": "1638",
+    "team_name": "佐賀バルーナーズ",
+    "number": 7,
+    "name_ja": "橋本 晃佑",
+    "name_en": "Kosuke Hashimoto",
+    "height_cm": 203,
+    "player_id": "8496",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8496"
+  },
+  {
+    "team_id": "1638",
+    "team_name": "佐賀バルーナーズ",
+    "number": 8,
+    "name_ja": "轟 琉維",
+    "name_en": "Rui Todoroki",
+    "height_cm": 169,
+    "player_id": "51000457",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000457"
+  },
+  {
+    "team_id": "1638",
+    "team_name": "佐賀バルーナーズ",
+    "number": 13,
+    "name_ja": "阿部 諒",
+    "name_en": "Ryo Abe",
+    "height_cm": 184,
+    "player_id": "15756",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=15756"
+  },
+  {
+    "team_id": "1638",
+    "team_name": "佐賀バルーナーズ",
+    "number": 14,
+    "name_ja": "金丸 晃輔",
+    "name_en": "Kosuke Kanamaru",
+    "height_cm": 192,
+    "player_id": "8592",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8592"
+  },
+  {
+    "team_id": "1638",
+    "team_name": "佐賀バルーナーズ",
+    "number": 17,
+    "name_ja": "大石 空汰",
+    "name_en": "Sorata Oishi",
+    "height_cm": 171,
+    "player_id": "51000376",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000376"
+  },
+  {
+    "team_id": "1638",
+    "team_name": "佐賀バルーナーズ",
+    "number": 18,
+    "name_ja": "内尾 聡理",
+    "name_en": "Sori Uchio",
+    "height_cm": 184,
+    "player_id": "51000353",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000353"
+  },
+  {
+    "team_id": "1638",
+    "team_name": "佐賀バルーナーズ",
+    "number": 20,
+    "name_ja": "岸田 篤生",
+    "name_en": "Atsuki Kishida",
+    "height_cm": 175,
+    "player_id": "18461",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=18461"
+  },
+  {
+    "team_id": "1638",
+    "team_name": "佐賀バルーナーズ",
+    "number": 21,
+    "name_ja": "富山 仁貴",
+    "name_en": "Toshiki Tomiyama",
+    "height_cm": 195,
+    "player_id": "51000440",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000440"
+  },
+  {
+    "team_id": "1638",
+    "team_name": "佐賀バルーナーズ",
+    "number": 22,
+    "name_ja": "タナー・グローヴス",
+    "name_en": "Tanner Groves",
+    "height_cm": 208,
+    "player_id": "51000480",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000480"
+  },
+  {
+    "team_id": "1638",
+    "team_name": "佐賀バルーナーズ",
+    "number": 23,
+    "name_ja": "デイビッド・ダジンスキー",
+    "name_en": "David Dudzinski",
+    "height_cm": 205,
+    "player_id": "51000271",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000271"
+  },
+  {
+    "team_id": "1638",
+    "team_name": "佐賀バルーナーズ",
+    "number": 25,
+    "name_ja": "角田 太輝",
+    "name_en": "Taiki Sumida",
+    "height_cm": 182,
+    "player_id": "51000111",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000111"
+  },
+  {
+    "team_id": "1638",
+    "team_name": "佐賀バルーナーズ",
+    "number": 34,
+    "name_ja": "井上 諒汰",
+    "name_en": "Ryota Inoue",
+    "height_cm": 185,
+    "player_id": "26888",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=26888"
+  },
+  {
+    "team_id": "1638",
+    "team_name": "佐賀バルーナーズ",
+    "number": 55,
+    "name_ja": "ジョシュ・ハレルソン",
+    "name_en": "Josh Harrellson",
+    "height_cm": 208,
+    "player_id": "9063",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=9063"
+  },
+  {
+    "team_id": "2486",
+    "team_name": "アルティーリ千葉",
+    "number": 1,
+    "name_ja": "マリアル・シャヨク",
+    "name_en": "Marial Shayok",
+    "height_cm": 196,
+    "player_id": "51000578",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000578"
+  },
+  {
+    "team_id": "2486",
+    "team_name": "アルティーリ千葉",
+    "number": 3,
+    "name_ja": "黒川 虎徹",
+    "name_en": "Kotetsu Kurokawa",
+    "height_cm": 175,
+    "player_id": "51000359",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000359"
+  },
+  {
+    "team_id": "2486",
+    "team_name": "アルティーリ千葉",
+    "number": 5,
+    "name_ja": "前田 怜緒",
+    "name_en": "Reo Maeda",
+    "height_cm": 191,
+    "player_id": "30402",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30402"
+  },
+  {
+    "team_id": "2486",
+    "team_name": "アルティーリ千葉",
+    "number": 7,
+    "name_ja": "デレク・パードン",
+    "name_en": "Dererk Pardon",
+    "height_cm": 203,
+    "player_id": "51000321",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000321"
+  },
+  {
+    "team_id": "2486",
+    "team_name": "アルティーリ千葉",
+    "number": 8,
+    "name_ja": "長谷川 智也",
+    "name_en": "Tomoya Hasegawa",
+    "height_cm": 185,
+    "player_id": "8594",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8594"
+  },
+  {
+    "team_id": "2486",
+    "team_name": "アルティーリ千葉",
+    "number": 11,
+    "name_ja": "杉本 慶",
+    "name_en": "Kei Sugimoto",
+    "height_cm": 184,
+    "player_id": "8520",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8520"
+  },
+  {
+    "team_id": "2486",
+    "team_name": "アルティーリ千葉",
+    "number": 16,
+    "name_ja": "大崎 裕太",
+    "name_en": "Yuta Osaki",
+    "height_cm": 177,
+    "player_id": "18429",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=18429"
+  },
+  {
+    "team_id": "2486",
+    "team_name": "アルティーリ千葉",
+    "number": 21,
+    "name_ja": "ブランドン・アシュリー",
+    "name_en": "Brandon Ashley",
+    "height_cm": 206,
+    "player_id": "51000189",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000189"
+  },
+  {
+    "team_id": "2486",
+    "team_name": "アルティーリ千葉",
+    "number": 22,
+    "name_ja": "トレイ・ポーター",
+    "name_en": "Trey Porter",
+    "height_cm": 210,
+    "player_id": "51000192",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000192"
+  },
+  {
+    "team_id": "2486",
+    "team_name": "アルティーリ千葉",
+    "number": 24,
+    "name_ja": "大塚 裕土",
+    "name_en": "Yuto Otsuka",
+    "height_cm": 188,
+    "player_id": "8449",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8449"
+  },
+  {
+    "team_id": "2486",
+    "team_name": "アルティーリ千葉",
+    "number": 27,
+    "name_ja": "熊谷 尚也",
+    "name_en": "Naoya Kumagae",
+    "height_cm": 195,
+    "player_id": "8498",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8498"
+  },
+  {
+    "team_id": "2486",
+    "team_name": "アルティーリ千葉",
+    "number": 33,
+    "name_ja": "エヴァンス ルーク",
+    "name_en": "Luke Evans",
+    "height_cm": 203,
+    "player_id": "9418",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=9418"
+  },
+  {
+    "team_id": "2486",
+    "team_name": "アルティーリ千葉",
+    "number": 42,
+    "name_ja": "渡邉 伶音",
+    "name_en": "Leon Watanabe",
+    "height_cm": 206,
+    "player_id": "51000352",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000352"
+  },
+  {
+    "team_id": "2486",
+    "team_name": "アルティーリ千葉",
+    "number": 0,
+    "name_ja": "木田 貴明",
+    "name_en": "Takaaki Kida",
+    "height_cm": 188,
+    "player_id": "15750",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=15750"
+  },
+  {
+    "team_id": "2488",
+    "team_name": "長崎ヴェルカ",
+    "number": 1,
+    "name_ja": "松本 健児リオン",
+    "name_en": "Kenji leonMatsumoto",
+    "height_cm": 183,
+    "player_id": "10893",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=10893"
+  },
+  {
+    "team_id": "2488",
+    "team_name": "長崎ヴェルカ",
+    "number": 4,
+    "name_ja": "狩俣 昌也",
+    "name_en": "Masaya Karimata",
+    "height_cm": 178,
+    "player_id": "8590",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8590"
+  },
+  {
+    "team_id": "2488",
+    "team_name": "長崎ヴェルカ",
+    "number": 5,
+    "name_ja": "イ ヒョンジュン",
+    "name_en": "Hyunjung Lee",
+    "height_cm": 201,
+    "player_id": "51000379",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000379"
+  },
+  {
+    "team_id": "2488",
+    "team_name": "長崎ヴェルカ",
+    "number": 6,
+    "name_ja": "森田 雄次",
+    "name_en": "Yuji Morita",
+    "height_cm": 173,
+    "player_id": "33026",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=33026"
+  },
+  {
+    "team_id": "2488",
+    "team_name": "長崎ヴェルカ",
+    "number": 7,
+    "name_ja": "ジャレル・ブラントリー",
+    "name_en": "Jarrell Brantley",
+    "height_cm": 201,
+    "player_id": "51000304",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000304"
+  },
+  {
+    "team_id": "2488",
+    "team_name": "長崎ヴェルカ",
+    "number": 9,
+    "name_ja": "森川 正明",
+    "name_en": "Masaaki Morikawa",
+    "height_cm": 191,
+    "player_id": "9405",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=9405"
+  },
+  {
+    "team_id": "2488",
+    "team_name": "長崎ヴェルカ",
+    "number": 11,
+    "name_ja": "熊谷 航",
+    "name_en": "Ko Kumagai",
+    "height_cm": 173,
+    "player_id": "19957",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=19957"
+  },
+  {
+    "team_id": "2488",
+    "team_name": "長崎ヴェルカ",
+    "number": 13,
+    "name_ja": "星川 堅信",
+    "name_en": "Kenshin Hoshikawa",
+    "height_cm": 190,
+    "player_id": "5100000021",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000021"
+  },
+  {
+    "team_id": "2488",
+    "team_name": "長崎ヴェルカ",
+    "number": 14,
+    "name_ja": "スタンリー・ジョンソン",
+    "name_en": "Stanley Johnson",
+    "height_cm": 198,
+    "player_id": "51000529",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000529"
+  },
+  {
+    "team_id": "2488",
+    "team_name": "長崎ヴェルカ",
+    "number": 17,
+    "name_ja": "山口 颯斗",
+    "name_en": "Hayato Yamaguchi",
+    "height_cm": 195,
+    "player_id": "30437",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30437"
+  },
+  {
+    "team_id": "2488",
+    "team_name": "長崎ヴェルカ",
+    "number": 18,
+    "name_ja": "馬場 雄大",
+    "name_en": "Yudai Baba",
+    "height_cm": 196,
+    "player_id": "12577",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=12577"
+  },
+  {
+    "team_id": "2488",
+    "team_name": "長崎ヴェルカ",
+    "number": 21,
+    "name_ja": "菅野 翔太",
+    "name_en": "Shota Kanno",
+    "height_cm": 190,
+    "player_id": "8677",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8677"
+  },
+  {
+    "team_id": "2488",
+    "team_name": "長崎ヴェルカ",
+    "number": 25,
+    "name_ja": "アキル・ミッチェル",
+    "name_en": "Akil Mitchell",
+    "height_cm": 206,
+    "player_id": "51000395",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000395"
+  },
+  {
+    "team_id": "2488",
+    "team_name": "長崎ヴェルカ",
+    "number": 32,
+    "name_ja": "田中 流嘉州",
+    "name_en": "Lucas Tanaka",
+    "height_cm": 194,
+    "player_id": "51000590",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000590"
+  },
+  {
+    "team_id": "2488",
+    "team_name": "長崎ヴェルカ",
+    "number": 99,
+    "name_ja": "川真田 紘也",
+    "name_en": "Koya Kawamata",
+    "height_cm": 204,
+    "player_id": "5100000015",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000015"
+  },
+  {
+    "team_id": "2891",
+    "team_name": "福井ブローウィンズ",
+    "number": 2,
+    "name_ja": "モサク ダミロラ",
+    "name_en": "Damilola Mosaku",
+    "height_cm": 193,
+    "player_id": "51000150",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000150"
+  },
+  {
+    "team_id": "2891",
+    "team_name": "福井ブローウィンズ",
+    "number": 4,
+    "name_ja": "ライアン・ケリー",
+    "name_en": "Ryan Kelly",
+    "height_cm": 211,
+    "player_id": "18398",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=18398"
+  },
+  {
+    "team_id": "2891",
+    "team_name": "福井ブローウィンズ",
+    "number": 10,
+    "name_ja": "ヒシグバータル・オーギル",
+    "name_en": "Orgil Khishigbaatar",
+    "height_cm": 203,
+    "player_id": "51000579",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000579"
+  },
+  {
+    "team_id": "2891",
+    "team_name": "福井ブローウィンズ",
+    "number": 11,
+    "name_ja": "内藤 英真",
+    "name_en": "Eishin Naito",
+    "height_cm": 182,
+    "player_id": "51000471",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000471"
+  },
+  {
+    "team_id": "2891",
+    "team_name": "福井ブローウィンズ",
+    "number": 12,
+    "name_ja": "西野 曜",
+    "name_en": "Yo Nishino",
+    "height_cm": 199,
+    "player_id": "30468",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30468"
+  },
+  {
+    "team_id": "2891",
+    "team_name": "福井ブローウィンズ",
+    "number": 13,
+    "name_ja": "川島 聖那",
+    "name_en": "Sena Kawashima",
+    "height_cm": 187,
+    "player_id": "51000115",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000115"
+  },
+  {
+    "team_id": "2891",
+    "team_name": "福井ブローウィンズ",
+    "number": 15,
+    "name_ja": "坂口 大和",
+    "name_en": "Yamato Sakaguchi",
+    "height_cm": 184,
+    "player_id": "51000580",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000580"
+  },
+  {
+    "team_id": "2891",
+    "team_name": "福井ブローウィンズ",
+    "number": 18,
+    "name_ja": "藤澤 尚之",
+    "name_en": "Naoyuki Fujisawa",
+    "height_cm": 172,
+    "player_id": "5100000019",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000019"
+  },
+  {
+    "team_id": "2891",
+    "team_name": "福井ブローウィンズ",
+    "number": 21,
+    "name_ja": "満田 丈太郎",
+    "name_en": "Jotaro Mitsuda",
+    "height_cm": 188,
+    "player_id": "10844",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=10844"
+  },
+  {
+    "team_id": "2891",
+    "team_name": "福井ブローウィンズ",
+    "number": 22,
+    "name_ja": "小阪 彰久",
+    "name_en": "Akihisa Kosaka",
+    "height_cm": 198,
+    "player_id": "9283",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=9283"
+  },
+  {
+    "team_id": "2891",
+    "team_name": "福井ブローウィンズ",
+    "number": 24,
+    "name_ja": "トビン マーカス海舟",
+    "name_en": "Marcus KaishuTobin",
+    "height_cm": 198,
+    "player_id": "5100000087",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000087"
+  },
+  {
+    "team_id": "2891",
+    "team_name": "福井ブローウィンズ",
+    "number": 25,
+    "name_ja": "ラポラス・アイヴァナーカス",
+    "name_en": "Rapolas Ivanauskas",
+    "height_cm": 208,
+    "player_id": "51000272",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000272"
+  },
+  {
+    "team_id": "2891",
+    "team_name": "福井ブローウィンズ",
+    "number": 30,
+    "name_ja": "ペリー・エリス",
+    "name_en": "Perry Ellis",
+    "height_cm": 202,
+    "player_id": "22522",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=22522"
+  },
+  {
+    "team_id": "2891",
+    "team_name": "福井ブローウィンズ",
+    "number": 73,
+    "name_ja": "田渡 修人",
+    "name_en": "Shuto Tawatari",
+    "height_cm": 185,
+    "player_id": "8571",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8571"
+  },
+  {
+    "team_id": "2891",
+    "team_name": "福井ブローウィンズ",
+    "number": 0,
+    "name_ja": "細谷 将司",
+    "name_en": "Masashi Hosoya",
+    "height_cm": 173,
+    "player_id": "8712",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8712"
+  },
+  {
+    "team_id": "692",
+    "team_name": "仙台89ERS",
+    "number": 3,
+    "name_ja": "岡島 和真",
+    "name_en": "Kazuma Okajima",
+    "height_cm": 171,
+    "player_id": "51000133",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000133"
+  },
+  {
+    "team_id": "692",
+    "team_name": "仙台89ERS",
+    "number": 7,
+    "name_ja": "船生 誠也",
+    "name_en": "Seiya Funyu",
+    "height_cm": 195,
+    "player_id": "8737",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8737"
+  },
+  {
+    "team_id": "692",
+    "team_name": "仙台89ERS",
+    "number": 8,
+    "name_ja": "ジャレット・カルバー",
+    "name_en": "Jarrett Culver",
+    "height_cm": 198,
+    "player_id": "51000531",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000531"
+  },
+  {
+    "team_id": "692",
+    "team_name": "仙台89ERS",
+    "number": 9,
+    "name_ja": "セルジオ・エル ダーウィッチ",
+    "name_en": "SergioEl Darwich",
+    "height_cm": 194,
+    "player_id": "51000530",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000530"
+  },
+  {
+    "team_id": "692",
+    "team_name": "仙台89ERS",
+    "number": 11,
+    "name_ja": "荒谷 裕秀",
+    "name_en": "Hirohide Araya",
+    "height_cm": 189,
+    "player_id": "5100000012",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000012"
+  },
+  {
+    "team_id": "692",
+    "team_name": "仙台89ERS",
+    "number": 14,
+    "name_ja": "杉浦 佑成",
+    "name_en": "Yusei Sugiura",
+    "height_cm": 196,
+    "player_id": "10820",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=10820"
+  },
+  {
+    "team_id": "692",
+    "team_name": "仙台89ERS",
+    "number": 15,
+    "name_ja": "渡辺 翔太",
+    "name_en": "Shota Watanabe",
+    "height_cm": 168,
+    "player_id": "30526",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30526"
+  },
+  {
+    "team_id": "692",
+    "team_name": "仙台89ERS",
+    "number": 21,
+    "name_ja": "ブーバカー・トゥーレ",
+    "name_en": "Boubacar Toure",
+    "height_cm": 213,
+    "player_id": "51000532",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000532"
+  },
+  {
+    "team_id": "692",
+    "team_name": "仙台89ERS",
+    "number": 23,
+    "name_ja": "半澤 凌太",
+    "name_en": "Ryota Hanzawa",
+    "height_cm": 192,
+    "player_id": "15834",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=15834"
+  },
+  {
+    "team_id": "692",
+    "team_name": "仙台89ERS",
+    "number": 24,
+    "name_ja": "新沼 康生",
+    "name_en": "Kosei Niinuma",
+    "height_cm": 194,
+    "player_id": "51000445",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000445"
+  },
+  {
+    "team_id": "692",
+    "team_name": "仙台89ERS",
+    "number": 45,
+    "name_ja": "ネイサン・ブース",
+    "name_en": "Nathan Boothe",
+    "height_cm": 208,
+    "player_id": "51000144",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000144"
+  },
+  {
+    "team_id": "692",
+    "team_name": "仙台89ERS",
+    "number": 75,
+    "name_ja": "井上 宗一郎",
+    "name_en": "Soichiro Inoue",
+    "height_cm": 201,
+    "player_id": "15815",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=15815"
+  },
+  {
+    "team_id": "692",
+    "team_name": "仙台89ERS",
+    "number": 77,
+    "name_ja": "丹野 路和",
+    "name_en": "Rowa Tanno",
+    "height_cm": 176,
+    "player_id": "55000971",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=55000971"
+  },
+  {
+    "team_id": "692",
+    "team_name": "仙台89ERS",
+    "number": 96,
+    "name_ja": "阿部 真冴橙",
+    "name_en": "Masato Abe",
+    "height_cm": 181,
+    "player_id": "51000342",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000342"
+  },
+  {
+    "team_id": "693",
+    "team_name": "秋田ノーザンハピネッツ",
+    "number": 1,
+    "name_ja": "ジャメール・マクリーン",
+    "name_en": "Jamel Mclean",
+    "height_cm": 203,
+    "player_id": "30515",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30515"
+  },
+  {
+    "team_id": "693",
+    "team_name": "秋田ノーザンハピネッツ",
+    "number": 2,
+    "name_ja": "栗原 翼",
+    "name_en": "Tsubasa Kurihara",
+    "height_cm": 182,
+    "player_id": "30397",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30397"
+  },
+  {
+    "team_id": "693",
+    "team_name": "秋田ノーザンハピネッツ",
+    "number": 5,
+    "name_ja": "田口 成浩",
+    "name_en": "Shigehiro Taguchi",
+    "height_cm": 184,
+    "player_id": "8468",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8468"
+  },
+  {
+    "team_id": "693",
+    "team_name": "秋田ノーザンハピネッツ",
+    "number": 6,
+    "name_ja": "赤穂 雷太",
+    "name_en": "Raita Akaho",
+    "height_cm": 196,
+    "player_id": "30465",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30465"
+  },
+  {
+    "team_id": "693",
+    "team_name": "秋田ノーザンハピネッツ",
+    "number": 10,
+    "name_ja": "ヤニー・ウェッツェル",
+    "name_en": "Yanni Wetzell",
+    "height_cm": 208,
+    "player_id": "51000521",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000521"
+  },
+  {
+    "team_id": "693",
+    "team_name": "秋田ノーザンハピネッツ",
+    "number": 11,
+    "name_ja": "内藤 晴樹",
+    "name_en": "Haruki Naito",
+    "height_cm": 187,
+    "player_id": "51000451",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000451"
+  },
+  {
+    "team_id": "693",
+    "team_name": "秋田ノーザンハピネッツ",
+    "number": 12,
+    "name_ja": "元田 大陽",
+    "name_en": "Taiyo Motoda",
+    "height_cm": 189,
+    "player_id": "51000361",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000361"
+  },
+  {
+    "team_id": "693",
+    "team_name": "秋田ノーザンハピネッツ",
+    "number": 13,
+    "name_ja": "小川 瑛次郎",
+    "name_en": "Eijiro Ogawa",
+    "height_cm": 186,
+    "player_id": "55000123",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=55000123"
+  },
+  {
+    "team_id": "693",
+    "team_name": "秋田ノーザンハピネッツ",
+    "number": 14,
+    "name_ja": "菅原 暉",
+    "name_en": "Teru Sugawara",
+    "height_cm": 183,
+    "player_id": "32953",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=32953"
+  },
+  {
+    "team_id": "693",
+    "team_name": "秋田ノーザンハピネッツ",
+    "number": 15,
+    "name_ja": "タナー・ライスナー",
+    "name_en": "Tanner Leissner",
+    "height_cm": 201,
+    "player_id": "51000335",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000335"
+  },
+  {
+    "team_id": "693",
+    "team_name": "秋田ノーザンハピネッツ",
+    "number": 17,
+    "name_ja": "中山 拓哉",
+    "name_en": "Takuya Nakayama",
+    "height_cm": 182,
+    "player_id": "10848",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=10848"
+  },
+  {
+    "team_id": "693",
+    "team_name": "秋田ノーザンハピネッツ",
+    "number": 22,
+    "name_ja": "アリ・メザー",
+    "name_en": "Ali Mezher",
+    "height_cm": 182,
+    "player_id": "51000522",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000522"
+  },
+  {
+    "team_id": "693",
+    "team_name": "秋田ノーザンハピネッツ",
+    "number": 24,
+    "name_ja": "髙比良 寛治",
+    "name_en": "Kanji Takahira",
+    "height_cm": 183,
+    "player_id": "12605",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=12605"
+  },
+  {
+    "team_id": "693",
+    "team_name": "秋田ノーザンハピネッツ",
+    "number": 25,
+    "name_ja": "キアヌ・ピンダー",
+    "name_en": "Keanu Pinder",
+    "height_cm": 210,
+    "player_id": "51000523",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000523"
+  },
+  {
+    "team_id": "693",
+    "team_name": "秋田ノーザンハピネッツ",
+    "number": 77,
+    "name_ja": "土屋 アリスター時生",
+    "name_en": "Alistair TokioTsuchiya",
+    "height_cm": 201,
+    "player_id": "10258",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=10258"
+  },
+  {
+    "team_id": "694",
+    "team_name": "横浜ビー・コルセアーズ",
+    "number": 3,
+    "name_ja": "安藤 誓哉",
+    "name_en": "Seiya Ando",
+    "height_cm": 181,
+    "player_id": "8467",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8467"
+  },
+  {
+    "team_id": "694",
+    "team_name": "横浜ビー・コルセアーズ",
+    "number": 4,
+    "name_ja": "ダミアン・イングリス",
+    "name_en": "Damien Inglis",
+    "height_cm": 204,
+    "player_id": "51000412",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000412"
+  },
+  {
+    "team_id": "694",
+    "team_name": "横浜ビー・コルセアーズ",
+    "number": 6,
+    "name_ja": "新井 楽人",
+    "name_en": "Gakuto Arai",
+    "height_cm": 190,
+    "player_id": "51000591",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000591"
+  },
+  {
+    "team_id": "694",
+    "team_name": "横浜ビー・コルセアーズ",
+    "number": 7,
+    "name_ja": "谷口 光貴",
+    "name_en": "Hiroki Taniguchi",
+    "height_cm": 190,
+    "player_id": "8488",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8488"
+  },
+  {
+    "team_id": "694",
+    "team_name": "横浜ビー・コルセアーズ",
+    "number": 8,
+    "name_ja": "ゲイリー・クラーク",
+    "name_en": "Gary Clark",
+    "height_cm": 200,
+    "player_id": "51000406",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000406"
+  },
+  {
+    "team_id": "694",
+    "team_name": "横浜ビー・コルセアーズ",
+    "number": 10,
+    "name_ja": "前野 幹太",
+    "name_en": "Kanta Maeno",
+    "height_cm": 194,
+    "player_id": "51000468",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000468"
+  },
+  {
+    "team_id": "694",
+    "team_name": "横浜ビー・コルセアーズ",
+    "number": 11,
+    "name_ja": "佐藤 凪",
+    "name_en": "Nagi Sato",
+    "height_cm": 176,
+    "player_id": "51000577",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000577"
+  },
+  {
+    "team_id": "694",
+    "team_name": "横浜ビー・コルセアーズ",
+    "number": 15,
+    "name_ja": "キーファー・ラベナ",
+    "name_en": "Kiefer Ravena",
+    "height_cm": 183,
+    "player_id": "5100000062",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000062"
+  },
+  {
+    "team_id": "694",
+    "team_name": "横浜ビー・コルセアーズ",
+    "number": 18,
+    "name_ja": "森井 健太",
+    "name_en": "Kenta Morii",
+    "height_cm": 178,
+    "player_id": "10851",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=10851"
+  },
+  {
+    "team_id": "694",
+    "team_name": "横浜ビー・コルセアーズ",
+    "number": 21,
+    "name_ja": "マイク・コッツァー",
+    "name_en": "Maik Kotsar",
+    "height_cm": 209,
+    "player_id": "51000394",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000394"
+  },
+  {
+    "team_id": "694",
+    "team_name": "横浜ビー・コルセアーズ",
+    "number": 23,
+    "name_ja": "キング 開",
+    "name_en": "Kai King",
+    "height_cm": 185,
+    "player_id": "5100000024",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000024"
+  },
+  {
+    "team_id": "694",
+    "team_name": "横浜ビー・コルセアーズ",
+    "number": 24,
+    "name_ja": "松崎 裕樹",
+    "name_en": "Hiroki Matsuzaki",
+    "height_cm": 192,
+    "player_id": "51000227",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000227"
+  },
+  {
+    "team_id": "694",
+    "team_name": "横浜ビー・コルセアーズ",
+    "number": 25,
+    "name_ja": "ケーレブ・ターズースキー",
+    "name_en": "Kaleb Tarczewski",
+    "height_cm": 212,
+    "player_id": "51000173",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000173"
+  },
+  {
+    "team_id": "694",
+    "team_name": "横浜ビー・コルセアーズ",
+    "number": 30,
+    "name_ja": "須藤 昂矢",
+    "name_en": "Koya Sudo",
+    "height_cm": 186,
+    "player_id": "32956",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=32956"
+  },
+  {
+    "team_id": "694",
+    "team_name": "横浜ビー・コルセアーズ",
+    "number": 51,
+    "name_ja": "兪 龍海",
+    "name_en": "Tatsumi Yu",
+    "height_cm": 197,
+    "player_id": "5100000025",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000025"
+  },
+  {
+    "team_id": "694",
+    "team_name": "横浜ビー・コルセアーズ",
+    "number": 77,
+    "name_ja": "江原 行佐",
+    "name_en": "Isa Ehara",
+    "height_cm": 194,
+    "player_id": "51000553",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000553"
+  },
+  {
+    "team_id": "696",
+    "team_name": "富山グラウジーズ",
+    "number": 2,
+    "name_ja": "藤永 佳昭",
+    "name_en": "Yoshiaki Fujinaga",
+    "height_cm": 175,
+    "player_id": "8736",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8736"
+  },
+  {
+    "team_id": "696",
+    "team_name": "富山グラウジーズ",
+    "number": 3,
+    "name_ja": "岡田 雄三",
+    "name_en": "Yuzo Okada",
+    "height_cm": 181,
+    "player_id": "15752",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=15752"
+  },
+  {
+    "team_id": "696",
+    "team_name": "富山グラウジーズ",
+    "number": 6,
+    "name_ja": "ウィリアムス ニカ",
+    "name_en": "Nyika Williams",
+    "height_cm": 203,
+    "player_id": "9345",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=9345"
+  },
+  {
+    "team_id": "696",
+    "team_name": "富山グラウジーズ",
+    "number": 7,
+    "name_ja": "宮本 一樹",
+    "name_en": "Kazuki Miyamoto",
+    "height_cm": 196,
+    "player_id": "51000118",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000118"
+  },
+  {
+    "team_id": "696",
+    "team_name": "富山グラウジーズ",
+    "number": 8,
+    "name_ja": "トレイ・ケル",
+    "name_en": "Trey Kell",
+    "height_cm": 193,
+    "player_id": "51000524",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000524"
+  },
+  {
+    "team_id": "696",
+    "team_name": "富山グラウジーズ",
+    "number": 9,
+    "name_ja": "水戸 健史",
+    "name_en": "Takeshi Mito",
+    "height_cm": 185,
+    "player_id": "8501",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8501"
+  },
+  {
+    "team_id": "696",
+    "team_name": "富山グラウジーズ",
+    "number": 11,
+    "name_ja": "宇都 直輝",
+    "name_en": "Naoki Uto",
+    "height_cm": 191,
+    "player_id": "8503",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8503"
+  },
+  {
+    "team_id": "696",
+    "team_name": "富山グラウジーズ",
+    "number": 12,
+    "name_ja": "ブロック・モータム",
+    "name_en": "Brock Motum",
+    "height_cm": 208,
+    "player_id": "51000158",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000158"
+  },
+  {
+    "team_id": "696",
+    "team_name": "富山グラウジーズ",
+    "number": 13,
+    "name_ja": "マシュー・アキノ",
+    "name_en": "Matthew Aquino",
+    "height_cm": 205,
+    "player_id": "51000104",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000104"
+  },
+  {
+    "team_id": "696",
+    "team_name": "富山グラウジーズ",
+    "number": 14,
+    "name_ja": "泉 登翔",
+    "name_en": "Towa Izumi",
+    "height_cm": 190,
+    "player_id": "51000464",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000464"
+  },
+  {
+    "team_id": "696",
+    "team_name": "富山グラウジーズ",
+    "number": 17,
+    "name_ja": "田中 晴瑛",
+    "name_en": "Haruaki Tanaka",
+    "height_cm": 178,
+    "player_id": "51000435",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000435"
+  },
+  {
+    "team_id": "696",
+    "team_name": "富山グラウジーズ",
+    "number": 21,
+    "name_ja": "鎌田 隼",
+    "name_en": "Hayato Kamata",
+    "height_cm": 195,
+    "player_id": "51000155",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000155"
+  },
+  {
+    "team_id": "696",
+    "team_name": "富山グラウジーズ",
+    "number": 24,
+    "name_ja": "ヤニス・モラン",
+    "name_en": "Yannis Morin",
+    "height_cm": 208,
+    "player_id": "51000390",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000390"
+  },
+  {
+    "team_id": "696",
+    "team_name": "富山グラウジーズ",
+    "number": 25,
+    "name_ja": "葛原 大智",
+    "name_en": "Daichi Kuzuhara",
+    "height_cm": 189,
+    "player_id": "15818",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=15818"
+  },
+  {
+    "team_id": "696",
+    "team_name": "富山グラウジーズ",
+    "number": 28,
+    "name_ja": "野﨑 由之",
+    "name_en": "Yoshiyuki Nozaki",
+    "height_cm": 183,
+    "player_id": "51000136",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000136"
+  },
+  {
+    "team_id": "697",
+    "team_name": "三遠ネオフェニックス",
+    "number": 1,
+    "name_ja": "ヤンテ・メイテン",
+    "name_en": "Yante Maten",
+    "height_cm": 201,
+    "player_id": "51000160",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000160"
+  },
+  {
+    "team_id": "697",
+    "team_name": "三遠ネオフェニックス",
+    "number": 2,
+    "name_ja": "デイビッド・ヌワバ",
+    "name_en": "David Nwaba",
+    "height_cm": 196,
+    "player_id": "51000416",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000416"
+  },
+  {
+    "team_id": "697",
+    "team_name": "三遠ネオフェニックス",
+    "number": 5,
+    "name_ja": "大浦 颯太",
+    "name_en": "Sota Oura",
+    "height_cm": 182,
+    "player_id": "30513",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30513"
+  },
+  {
+    "team_id": "697",
+    "team_name": "三遠ネオフェニックス",
+    "number": 7,
+    "name_ja": "キャメロン・ジャクソン",
+    "name_en": "Cameron Jackson",
+    "height_cm": 203,
+    "player_id": "51000319",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000319"
+  },
+  {
+    "team_id": "697",
+    "team_name": "三遠ネオフェニックス",
+    "number": 10,
+    "name_ja": "吉井 裕鷹",
+    "name_en": "Hirotaka Yoshii",
+    "height_cm": 196,
+    "player_id": "20021",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=20021"
+  },
+  {
+    "team_id": "697",
+    "team_name": "三遠ネオフェニックス",
+    "number": 11,
+    "name_ja": "浅井 英矢",
+    "name_en": "Hideya Asai",
+    "height_cm": 197,
+    "player_id": "51000481",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000481"
+  },
+  {
+    "team_id": "697",
+    "team_name": "三遠ネオフェニックス",
+    "number": 14,
+    "name_ja": "湧川 颯斗",
+    "name_en": "Hayato Wakugawa",
+    "height_cm": 197,
+    "player_id": "51000236",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000236"
+  },
+  {
+    "team_id": "697",
+    "team_name": "三遠ネオフェニックス",
+    "number": 15,
+    "name_ja": "河田 チリジ",
+    "name_en": "Tshilidzi Kawata",
+    "height_cm": 208,
+    "player_id": "9369",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=9369"
+  },
+  {
+    "team_id": "697",
+    "team_name": "三遠ネオフェニックス",
+    "number": 20,
+    "name_ja": "根本 大",
+    "name_en": "Dai Nemoto",
+    "height_cm": 180,
+    "player_id": "51000454",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000454"
+  },
+  {
+    "team_id": "697",
+    "team_name": "三遠ネオフェニックス",
+    "number": 21,
+    "name_ja": "鈴木 悠介",
+    "name_en": "Yusuke Suzuki",
+    "height_cm": 200,
+    "player_id": "30522",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30522"
+  },
+  {
+    "team_id": "697",
+    "team_name": "三遠ネオフェニックス",
+    "number": 24,
+    "name_ja": "佐々木 隆成",
+    "name_en": "Ryusei Sasaki",
+    "height_cm": 180,
+    "player_id": "20037",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=20037"
+  },
+  {
+    "team_id": "697",
+    "team_name": "三遠ネオフェニックス",
+    "number": 28,
+    "name_ja": "津屋 一球",
+    "name_en": "Kazuma Tsuya",
+    "height_cm": 191,
+    "player_id": "5100000011",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000011"
+  },
+  {
+    "team_id": "697",
+    "team_name": "三遠ネオフェニックス",
+    "number": 33,
+    "name_ja": "児玉 ジュニア",
+    "name_en": "Junior Kodama",
+    "height_cm": 178,
+    "player_id": "51000552",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000552"
+  },
+  {
+    "team_id": "698",
+    "team_name": "滋賀レイクス",
+    "number": 2,
+    "name_ja": "岩下 准平",
+    "name_en": "Junpei Iwashita",
+    "height_cm": 180,
+    "player_id": "51000586",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000586"
+  },
+  {
+    "team_id": "698",
+    "team_name": "滋賀レイクス",
+    "number": 4,
+    "name_ja": "ライアン・クリーナー",
+    "name_en": "Ryan Kriener",
+    "height_cm": 208,
+    "player_id": "51000101",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000101"
+  },
+  {
+    "team_id": "698",
+    "team_name": "滋賀レイクス",
+    "number": 6,
+    "name_ja": "岡田 泰希",
+    "name_en": "Taiki Okada",
+    "height_cm": 176,
+    "player_id": "22401",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=22401"
+  },
+  {
+    "team_id": "698",
+    "team_name": "滋賀レイクス",
+    "number": 7,
+    "name_ja": "游 艾喆",
+    "name_en": "Ai-Che Yu",
+    "height_cm": 180,
+    "player_id": "51000382",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000382"
+  },
+  {
+    "team_id": "698",
+    "team_name": "滋賀レイクス",
+    "number": 13,
+    "name_ja": "坂井 レオ",
+    "name_en": "Leo Sakai",
+    "height_cm": 195,
+    "player_id": "8537",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8537"
+  },
+  {
+    "team_id": "698",
+    "team_name": "滋賀レイクス",
+    "number": 14,
+    "name_ja": "西田 陽成",
+    "name_en": "Yosei Nishida",
+    "height_cm": 185,
+    "player_id": "51000470",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000470"
+  },
+  {
+    "team_id": "698",
+    "team_name": "滋賀レイクス",
+    "number": 15,
+    "name_ja": "梶原 悠真",
+    "name_en": "Yuma Kajiwara",
+    "height_cm": 180,
+    "player_id": "55000970",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=55000970"
+  },
+  {
+    "team_id": "698",
+    "team_name": "滋賀レイクス",
+    "number": 16,
+    "name_ja": "野本 大智",
+    "name_en": "Daichi Nomoto",
+    "height_cm": 183,
+    "player_id": "5100000028",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000028"
+  },
+  {
+    "team_id": "698",
+    "team_name": "滋賀レイクス",
+    "number": 17,
+    "name_ja": "常田 耕平",
+    "name_en": "Kohei Tsuneta",
+    "height_cm": 186,
+    "player_id": "5100000040",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000040"
+  },
+  {
+    "team_id": "698",
+    "team_name": "滋賀レイクス",
+    "number": 20,
+    "name_ja": "トーマス・ウィンブッシュ",
+    "name_en": "Thomas Wimbush",
+    "height_cm": 201,
+    "player_id": "51000292",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000292"
+  },
+  {
+    "team_id": "698",
+    "team_name": "滋賀レイクス",
+    "number": 21,
+    "name_ja": "田原 隆徳",
+    "name_en": "Takanori Tahara",
+    "height_cm": 181,
+    "player_id": "10297",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=10297"
+  },
+  {
+    "team_id": "698",
+    "team_name": "滋賀レイクス",
+    "number": 22,
+    "name_ja": "市岡 ショーン",
+    "name_en": "Sean Ichioka",
+    "height_cm": 198,
+    "player_id": "8597",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8597"
+  },
+  {
+    "team_id": "698",
+    "team_name": "滋賀レイクス",
+    "number": 25,
+    "name_ja": "江原 信太朗",
+    "name_en": "Shintaro Ehara",
+    "height_cm": 192,
+    "player_id": "51000343",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000343"
+  },
+  {
+    "team_id": "698",
+    "team_name": "滋賀レイクス",
+    "number": 34,
+    "name_ja": "長谷川 比源",
+    "name_en": "Higen Hasegawa",
+    "height_cm": 202,
+    "player_id": "51000452",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000452"
+  },
+  {
+    "team_id": "698",
+    "team_name": "滋賀レイクス",
+    "number": 0,
+    "name_ja": "ザック・オーガスト",
+    "name_en": "Zach Auguste",
+    "height_cm": 208,
+    "player_id": "51000312",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000312"
+  },
+  {
+    "team_id": "699",
+    "team_name": "京都ハンナリーズ",
+    "number": 3,
+    "name_ja": "澁田 怜音",
+    "name_en": "Leon Shibuta",
+    "height_cm": 176,
+    "player_id": "10832",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=10832"
+  },
+  {
+    "team_id": "699",
+    "team_name": "京都ハンナリーズ",
+    "number": 7,
+    "name_ja": "西部 秀馬",
+    "name_en": "Shuma Nishibe",
+    "height_cm": 189,
+    "player_id": "51000585",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000585"
+  },
+  {
+    "team_id": "699",
+    "team_name": "京都ハンナリーズ",
+    "number": 10,
+    "name_ja": "チャールズ・ジャクソン",
+    "name_en": "Charles Jackson",
+    "height_cm": 208,
+    "player_id": "26922",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=26922"
+  },
+  {
+    "team_id": "699",
+    "team_name": "京都ハンナリーズ",
+    "number": 12,
+    "name_ja": "小川 麻斗",
+    "name_en": "Asato Ogawa",
+    "height_cm": 176,
+    "player_id": "5100000033",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000033"
+  },
+  {
+    "team_id": "699",
+    "team_name": "京都ハンナリーズ",
+    "number": 13,
+    "name_ja": "前田 悟",
+    "name_en": "Satoru Maeta",
+    "height_cm": 192,
+    "player_id": "20024",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=20024"
+  },
+  {
+    "team_id": "699",
+    "team_name": "京都ハンナリーズ",
+    "number": 15,
+    "name_ja": "川嶋 勇人",
+    "name_en": "Hayato Kawashima",
+    "height_cm": 186,
+    "player_id": "8727",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8727"
+  },
+  {
+    "team_id": "699",
+    "team_name": "京都ハンナリーズ",
+    "number": 16,
+    "name_ja": "渡辺 竜之佑",
+    "name_en": "Ryunosuke Watanabe",
+    "height_cm": 189,
+    "player_id": "9329",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=9329"
+  },
+  {
+    "team_id": "699",
+    "team_name": "京都ハンナリーズ",
+    "number": 24,
+    "name_ja": "ラシード ファラーズ",
+    "name_en": "Faraz Rashid",
+    "height_cm": 202,
+    "player_id": "30521",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30521"
+  },
+  {
+    "team_id": "699",
+    "team_name": "京都ハンナリーズ",
+    "number": 32,
+    "name_ja": "アンジェロ・カロイアロ",
+    "name_en": "Angelo Caloiaro",
+    "height_cm": 203,
+    "player_id": "51000269",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000269"
+  },
+  {
+    "team_id": "699",
+    "team_name": "京都ハンナリーズ",
+    "number": 33,
+    "name_ja": "アイラ・ブラウン",
+    "name_en": "Ira Brown",
+    "height_cm": 193,
+    "player_id": "8452",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8452"
+  },
+  {
+    "team_id": "699",
+    "team_name": "京都ハンナリーズ",
+    "number": 35,
+    "name_ja": "ジョーダン・ヒース",
+    "name_en": "Jordan Heath",
+    "height_cm": 210,
+    "player_id": "26874",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=26874"
+  },
+  {
+    "team_id": "699",
+    "team_name": "京都ハンナリーズ",
+    "number": 39,
+    "name_ja": "ホール 百音 アレックス",
+    "name_en": "Mone AlexHall",
+    "height_cm": 190,
+    "player_id": "26926",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=26926"
+  },
+  {
+    "team_id": "699",
+    "team_name": "京都ハンナリーズ",
+    "number": 51,
+    "name_ja": "古川 孝敏",
+    "name_en": "Takatoshi Furukawa",
+    "height_cm": 190,
+    "player_id": "8500",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8500"
+  },
+  {
+    "team_id": "699",
+    "team_name": "京都ハンナリーズ",
+    "number": 0,
+    "name_ja": "小野 龍猛",
+    "name_en": "Ryumo Ono",
+    "height_cm": 197,
+    "player_id": "8585",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8585"
+  },
+  {
+    "team_id": "700",
+    "team_name": "大阪エヴェッサ",
+    "number": 1,
+    "name_ja": "レイ・パークスジュニア",
+    "name_en": "RayParks Jr.",
+    "height_cm": 193,
+    "player_id": "5100000069",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000069"
+  },
+  {
+    "team_id": "700",
+    "team_name": "大阪エヴェッサ",
+    "number": 4,
+    "name_ja": "青木 保憲",
+    "name_en": "Yasunori Aoki",
+    "height_cm": 182,
+    "player_id": "15817",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=15817"
+  },
+  {
+    "team_id": "700",
+    "team_name": "大阪エヴェッサ",
+    "number": 5,
+    "name_ja": "マット・ボンズ",
+    "name_en": "Matt Bonds",
+    "height_cm": 196,
+    "player_id": "26886",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=26886"
+  },
+  {
+    "team_id": "700",
+    "team_name": "大阪エヴェッサ",
+    "number": 7,
+    "name_ja": "高橋 快成",
+    "name_en": "Kaisei Takahashi",
+    "height_cm": 176,
+    "player_id": "51000188",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000188"
+  },
+  {
+    "team_id": "700",
+    "team_name": "大阪エヴェッサ",
+    "number": 8,
+    "name_ja": "植松 義也",
+    "name_en": "Yoshiya Uematsu",
+    "height_cm": 190,
+    "player_id": "5100000030",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000030"
+  },
+  {
+    "team_id": "700",
+    "team_name": "大阪エヴェッサ",
+    "number": 11,
+    "name_ja": "ライアン・ルーサー",
+    "name_en": "Ryan Luther",
+    "height_cm": 204,
+    "player_id": "51000396",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000396"
+  },
+  {
+    "team_id": "700",
+    "team_name": "大阪エヴェッサ",
+    "number": 15,
+    "name_ja": "竹内 譲次",
+    "name_en": "Joji Takeuchi",
+    "height_cm": 207,
+    "player_id": "9033",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=9033"
+  },
+  {
+    "team_id": "700",
+    "team_name": "大阪エヴェッサ",
+    "number": 20,
+    "name_ja": "合田 怜",
+    "name_en": "Rei Goda",
+    "height_cm": 183,
+    "player_id": "8690",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8690"
+  },
+  {
+    "team_id": "700",
+    "team_name": "大阪エヴェッサ",
+    "number": 23,
+    "name_ja": "シリル・ニースミス",
+    "name_en": "CyrilNesmith II",
+    "height_cm": 206,
+    "player_id": "49996",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=49996"
+  },
+  {
+    "team_id": "700",
+    "team_name": "大阪エヴェッサ",
+    "number": 31,
+    "name_ja": "木下 誠",
+    "name_en": "Makoto Kinoshita",
+    "height_cm": 185,
+    "player_id": "20034",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=20034"
+  },
+  {
+    "team_id": "700",
+    "team_name": "大阪エヴェッサ",
+    "number": 35,
+    "name_ja": "鈴木 達也",
+    "name_en": "Tatsuya Suzuki",
+    "height_cm": 169,
+    "player_id": "8568",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8568"
+  },
+  {
+    "team_id": "700",
+    "team_name": "大阪エヴェッサ",
+    "number": 51,
+    "name_ja": "浅井 弘士郎",
+    "name_en": "Koshiro Asai",
+    "height_cm": 188,
+    "player_id": "51000566",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000566"
+  },
+  {
+    "team_id": "700",
+    "team_name": "大阪エヴェッサ",
+    "number": 52,
+    "name_ja": "ヴォーディミル・ゲルン",
+    "name_en": "Volodymyr Gerun",
+    "height_cm": 208,
+    "player_id": "51000294",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000294"
+  },
+  {
+    "team_id": "700",
+    "team_name": "大阪エヴェッサ",
+    "number": 60,
+    "name_ja": "坂本 聖芽",
+    "name_en": "Seiga Sakamoto",
+    "height_cm": 182,
+    "player_id": "5100000027",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000027"
+  },
+  {
+    "team_id": "700",
+    "team_name": "大阪エヴェッサ",
+    "number": 88,
+    "name_ja": "牧 隼利",
+    "name_en": "Hayato Maki",
+    "height_cm": 188,
+    "player_id": "30398",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30398"
+  },
+  {
+    "team_id": "701",
+    "team_name": "琉球ゴールデンキングス",
+    "number": 2,
+    "name_ja": "小針 幸也",
+    "name_en": "Koya Kobari",
+    "height_cm": 172,
+    "player_id": "51000252",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000252"
+  },
+  {
+    "team_id": "701",
+    "team_name": "琉球ゴールデンキングス",
+    "number": 4,
+    "name_ja": "ヴィック・ロー",
+    "name_en": "Vic Law",
+    "height_cm": 201,
+    "player_id": "51000166",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000166"
+  },
+  {
+    "team_id": "701",
+    "team_name": "琉球ゴールデンキングス",
+    "number": 8,
+    "name_ja": "佐土原 遼",
+    "name_en": "Ryo Sadohara",
+    "height_cm": 192,
+    "player_id": "5100000014",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000014"
+  },
+  {
+    "team_id": "701",
+    "team_name": "琉球ゴールデンキングス",
+    "number": 10,
+    "name_ja": "荒川 颯",
+    "name_en": "Hayate Arakawa",
+    "height_cm": 182,
+    "player_id": "30458",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30458"
+  },
+  {
+    "team_id": "701",
+    "team_name": "琉球ゴールデンキングス",
+    "number": 14,
+    "name_ja": "岸本 隆一",
+    "name_en": "Ryuichi Kishimoto",
+    "height_cm": 176,
+    "player_id": "8655",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8655"
+  },
+  {
+    "team_id": "701",
+    "team_name": "琉球ゴールデンキングス",
+    "number": 15,
+    "name_ja": "松脇 圭志",
+    "name_en": "Yoshiyuki Matsuwaki",
+    "height_cm": 185,
+    "player_id": "30434",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30434"
+  },
+  {
+    "team_id": "701",
+    "team_name": "琉球ゴールデンキングス",
+    "number": 17,
+    "name_ja": "崎濱 秀斗",
+    "name_en": "Shuto Sakihama",
+    "height_cm": 178,
+    "player_id": "51000486",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000486"
+  },
+  {
+    "team_id": "701",
+    "team_name": "琉球ゴールデンキングス",
+    "number": 18,
+    "name_ja": "脇 真大",
+    "name_en": "Masahiro Waki",
+    "height_cm": 193,
+    "player_id": "51000116",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000116"
+  },
+  {
+    "team_id": "701",
+    "team_name": "琉球ゴールデンキングス",
+    "number": 21,
+    "name_ja": "デイミアン・ドットソン",
+    "name_en": "Damyean Dotson",
+    "height_cm": 196,
+    "player_id": "51000561",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000561"
+  },
+  {
+    "team_id": "701",
+    "team_name": "琉球ゴールデンキングス",
+    "number": 27,
+    "name_ja": "ウィタカ ケンタ",
+    "name_en": "Kenta Whitaker",
+    "height_cm": 202,
+    "player_id": "30443",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30443"
+  },
+  {
+    "team_id": "701",
+    "team_name": "琉球ゴールデンキングス",
+    "number": 34,
+    "name_ja": "小野寺 祥太",
+    "name_en": "Shota Onodera",
+    "height_cm": 182,
+    "player_id": "8756",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8756"
+  },
+  {
+    "team_id": "701",
+    "team_name": "琉球ゴールデンキングス",
+    "number": 45,
+    "name_ja": "ジャック・クーリー",
+    "name_en": "Jack Cooley",
+    "height_cm": 206,
+    "player_id": "26914",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=26914"
+  },
+  {
+    "team_id": "701",
+    "team_name": "琉球ゴールデンキングス",
+    "number": 47,
+    "name_ja": "平良 彰吾",
+    "name_en": "Shogo Taira",
+    "height_cm": 170,
+    "player_id": "30459",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30459"
+  },
+  {
+    "team_id": "701",
+    "team_name": "琉球ゴールデンキングス",
+    "number": 53,
+    "name_ja": "アレックス・カーク",
+    "name_en": "Alex Kirk",
+    "height_cm": 211,
+    "player_id": "12582",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=12582"
+  },
+  {
+    "team_id": "701",
+    "team_name": "琉球ゴールデンキングス",
+    "number": 77,
+    "name_ja": "佐取 龍之介",
+    "name_en": "Ryunosuke Satori",
+    "height_cm": 187,
+    "player_id": "55000567",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=55000567"
+  },
+  {
+    "team_id": "702",
+    "team_name": "レバンガ北海道",
+    "number": 1,
+    "name_ja": "関野 剛平",
+    "name_en": "Kohei Sekino",
+    "height_cm": 183,
+    "player_id": "10850",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=10850"
+  },
+  {
+    "team_id": "702",
+    "team_name": "レバンガ北海道",
+    "number": 2,
+    "name_ja": "ドワイト・ラモス",
+    "name_en": "Dwight Ramos",
+    "height_cm": 193,
+    "player_id": "51000102",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000102"
+  },
+  {
+    "team_id": "702",
+    "team_name": "レバンガ北海道",
+    "number": 5,
+    "name_ja": "ケビン・ジョーンズ",
+    "name_en": "Kevin Jones",
+    "height_cm": 203,
+    "player_id": "20017",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=20017"
+  },
+  {
+    "team_id": "702",
+    "team_name": "レバンガ北海道",
+    "number": 6,
+    "name_ja": "菊地 広人",
+    "name_en": "Hiroto Kikuchi",
+    "height_cm": 178,
+    "player_id": "51000350",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000350"
+  },
+  {
+    "team_id": "702",
+    "team_name": "レバンガ北海道",
+    "number": 8,
+    "name_ja": "木林 優",
+    "name_en": "Yu Kibayashi",
+    "height_cm": 200,
+    "player_id": "51000349",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000349"
+  },
+  {
+    "team_id": "702",
+    "team_name": "レバンガ北海道",
+    "number": 12,
+    "name_ja": "市場 脩斗",
+    "name_en": "Shuto Ichiba",
+    "height_cm": 187,
+    "player_id": "51000446",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000446"
+  },
+  {
+    "team_id": "702",
+    "team_name": "レバンガ北海道",
+    "number": 14,
+    "name_ja": "星野 京介",
+    "name_en": "Kyosuke Hoshino",
+    "height_cm": 184,
+    "player_id": "51000108",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000108"
+  },
+  {
+    "team_id": "702",
+    "team_name": "レバンガ北海道",
+    "number": 15,
+    "name_ja": "島谷 怜",
+    "name_en": "Ren Shimatani",
+    "height_cm": 175,
+    "player_id": "51000234",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000234"
+  },
+  {
+    "team_id": "702",
+    "team_name": "レバンガ北海道",
+    "number": 18,
+    "name_ja": "内藤 耀悠",
+    "name_en": "Teruchika Naito",
+    "height_cm": 191,
+    "player_id": "51000202",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000202"
+  },
+  {
+    "team_id": "702",
+    "team_name": "レバンガ北海道",
+    "number": 19,
+    "name_ja": "安藤 煌太朗",
+    "name_en": "Kotaro Ando",
+    "height_cm": 182,
+    "player_id": "55000966",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=55000966"
+  },
+  {
+    "team_id": "702",
+    "team_name": "レバンガ北海道",
+    "number": 20,
+    "name_ja": "ジョーダン・ナタイ",
+    "name_en": "Jordan Ngatai",
+    "height_cm": 196,
+    "player_id": "52433",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=52433"
+  },
+  {
+    "team_id": "702",
+    "team_name": "レバンガ北海道",
+    "number": 21,
+    "name_ja": "ジョン・ハーラー",
+    "name_en": "John Harrar",
+    "height_cm": 205,
+    "player_id": "51000296",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000296"
+  },
+  {
+    "team_id": "702",
+    "team_name": "レバンガ北海道",
+    "number": 22,
+    "name_ja": "ジャリル・オカフォー",
+    "name_en": "Jahlil Okafor",
+    "height_cm": 211,
+    "player_id": "51000514",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000514"
+  },
+  {
+    "team_id": "702",
+    "team_name": "レバンガ北海道",
+    "number": 30,
+    "name_ja": "富永 啓生",
+    "name_en": "Keisei Tominaga",
+    "height_cm": 188,
+    "player_id": "19755",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=19755"
+  },
+  {
+    "team_id": "702",
+    "team_name": "レバンガ北海道",
+    "number": 34,
+    "name_ja": "盛實 海翔",
+    "name_en": "Kaito Morizane",
+    "height_cm": 187,
+    "player_id": "19998",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=19998"
+  },
+  {
+    "team_id": "702",
+    "team_name": "レバンガ北海道",
+    "number": 40,
+    "name_ja": "西村 優真",
+    "name_en": "Yuma Nishimura",
+    "height_cm": 182,
+    "player_id": "55000589",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=55000589"
+  },
+  {
+    "team_id": "703",
+    "team_name": "宇都宮ブレックス",
+    "number": 6,
+    "name_ja": "比江島 慎",
+    "name_en": "Makoto Hiejima",
+    "height_cm": 191,
+    "player_id": "8589",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8589"
+  },
+  {
+    "team_id": "703",
+    "team_name": "宇都宮ブレックス",
+    "number": 7,
+    "name_ja": "小川 敦也",
+    "name_en": "Atsuya Ogawa",
+    "height_cm": 190,
+    "player_id": "51000228",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000228"
+  },
+  {
+    "team_id": "703",
+    "team_name": "宇都宮ブレックス",
+    "number": 9,
+    "name_ja": "遠藤 祐亮",
+    "name_en": "Yusuke Endo",
+    "height_cm": 186,
+    "player_id": "8497",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8497"
+  },
+  {
+    "team_id": "703",
+    "team_name": "宇都宮ブレックス",
+    "number": 10,
+    "name_ja": "竹内 公輔",
+    "name_en": "Kosuke Takeuchi",
+    "height_cm": 206,
+    "player_id": "8726",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8726"
+  },
+  {
+    "team_id": "703",
+    "team_name": "宇都宮ブレックス",
+    "number": 11,
+    "name_ja": "青木 ブレイク",
+    "name_en": "Blake Aoki",
+    "height_cm": 205,
+    "player_id": "10885",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=10885"
+  },
+  {
+    "team_id": "703",
+    "team_name": "宇都宮ブレックス",
+    "number": 12,
+    "name_ja": "高島 紳司",
+    "name_en": "Shinji Takashima",
+    "height_cm": 191,
+    "player_id": "5100000036",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000036"
+  },
+  {
+    "team_id": "703",
+    "team_name": "宇都宮ブレックス",
+    "number": 13,
+    "name_ja": "渡邉 裕規",
+    "name_en": "Hironori Watanabe",
+    "height_cm": 180,
+    "player_id": "8499",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8499"
+  },
+  {
+    "team_id": "703",
+    "team_name": "宇都宮ブレックス",
+    "number": 17,
+    "name_ja": "星川 開聖",
+    "name_en": "Kaisei Hoshikawa",
+    "height_cm": 194,
+    "player_id": "51000461",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000461"
+  },
+  {
+    "team_id": "703",
+    "team_name": "宇都宮ブレックス",
+    "number": 18,
+    "name_ja": "鵤 誠司",
+    "name_en": "Seiji Ikaruga",
+    "height_cm": 185,
+    "player_id": "8529",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8529"
+  },
+  {
+    "team_id": "703",
+    "team_name": "宇都宮ブレックス",
+    "number": 21,
+    "name_ja": "松本 秦",
+    "name_en": "Shin Matsumoto",
+    "height_cm": 191,
+    "player_id": "51000562",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000562"
+  },
+  {
+    "team_id": "703",
+    "team_name": "宇都宮ブレックス",
+    "number": 25,
+    "name_ja": "D.J・ニュービル",
+    "name_en": "D.J.Newbill",
+    "height_cm": 193,
+    "player_id": "33085",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=33085"
+  },
+  {
+    "team_id": "703",
+    "team_name": "宇都宮ブレックス",
+    "number": 33,
+    "name_ja": "ギャビン・エドワーズ",
+    "name_en": "Gavin Edwards",
+    "height_cm": 206,
+    "player_id": "8593",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8593"
+  },
+  {
+    "team_id": "703",
+    "team_name": "宇都宮ブレックス",
+    "number": 34,
+    "name_ja": "グラント・ジェレット",
+    "name_en": "Grant Jerrett",
+    "height_cm": 208,
+    "player_id": "18430",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=18430"
+  },
+  {
+    "team_id": "703",
+    "team_name": "宇都宮ブレックス",
+    "number": 42,
+    "name_ja": "アイザック・フォトゥ",
+    "name_en": "Isaac Fotu",
+    "height_cm": 203,
+    "player_id": "5100000081",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000081"
+  },
+  {
+    "team_id": "703",
+    "team_name": "宇都宮ブレックス",
+    "number": 0,
+    "name_ja": "田臥 勇太",
+    "name_en": "Yuta Tabuse",
+    "height_cm": 173,
+    "player_id": "8650",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8650"
+  },
+  {
+    "team_id": "704",
+    "team_name": "千葉ジェッツ",
+    "number": 1,
+    "name_ja": "渡邊 雄太",
+    "name_en": "Yuta Watanabe",
+    "height_cm": 206,
+    "player_id": "51000428",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000428"
+  },
+  {
+    "team_id": "704",
+    "team_name": "千葉ジェッツ",
+    "number": 2,
+    "name_ja": "富樫 勇樹",
+    "name_en": "Yuki Togashi",
+    "height_cm": 167,
+    "player_id": "9055",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=9055"
+  },
+  {
+    "team_id": "704",
+    "team_name": "千葉ジェッツ",
+    "number": 4,
+    "name_ja": "田代 直希",
+    "name_en": "Naoki Tashiro",
+    "height_cm": 188,
+    "player_id": "8656",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8656"
+  },
+  {
+    "team_id": "704",
+    "team_name": "千葉ジェッツ",
+    "number": 5,
+    "name_ja": "瀬川 琉久",
+    "name_en": "Riku Segawa",
+    "height_cm": 185,
+    "player_id": "51000467",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000467"
+  },
+  {
+    "team_id": "704",
+    "team_name": "千葉ジェッツ",
+    "number": 6,
+    "name_ja": "菅野 ブルース",
+    "name_en": "Bruce Kanno",
+    "height_cm": 200,
+    "player_id": "51000431",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000431"
+  },
+  {
+    "team_id": "704",
+    "team_name": "千葉ジェッツ",
+    "number": 7,
+    "name_ja": "マイケル・オウ",
+    "name_en": "Michael Ou",
+    "height_cm": 208,
+    "player_id": "51000429",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000429"
+  },
+  {
+    "team_id": "704",
+    "team_name": "千葉ジェッツ",
+    "number": 8,
+    "name_ja": "ナシール・リトル",
+    "name_en": "Nassir Little",
+    "height_cm": 199,
+    "player_id": "51000517",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000517"
+  },
+  {
+    "team_id": "704",
+    "team_name": "千葉ジェッツ",
+    "number": 9,
+    "name_ja": "二上 耀",
+    "name_en": "Hikaru Futagami",
+    "height_cm": 190,
+    "player_id": "51000112",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000112"
+  },
+  {
+    "team_id": "704",
+    "team_name": "千葉ジェッツ",
+    "number": 10,
+    "name_ja": "ディー・ジェイ・ホグ",
+    "name_en": "D.J.Hogg",
+    "height_cm": 207,
+    "player_id": "51000430",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000430"
+  },
+  {
+    "team_id": "704",
+    "team_name": "千葉ジェッツ",
+    "number": 11,
+    "name_ja": "西村 文男",
+    "name_en": "Fumio Nishimura",
+    "height_cm": 177,
+    "player_id": "8580",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8580"
+  },
+  {
+    "team_id": "704",
+    "team_name": "千葉ジェッツ",
+    "number": 12,
+    "name_ja": "金近 廉",
+    "name_en": "Ren Kanechika",
+    "height_cm": 197,
+    "player_id": "51000267",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000267"
+  },
+  {
+    "team_id": "704",
+    "team_name": "千葉ジェッツ",
+    "number": 13,
+    "name_ja": "深水 虎太郎",
+    "name_en": "Kotaro Fukami",
+    "height_cm": 187,
+    "player_id": "51000564",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000564"
+  },
+  {
+    "team_id": "704",
+    "team_name": "千葉ジェッツ",
+    "number": 25,
+    "name_ja": "荒尾 岳",
+    "name_en": "Gaku Arao",
+    "height_cm": 198,
+    "player_id": "8582",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8582"
+  },
+  {
+    "team_id": "704",
+    "team_name": "千葉ジェッツ",
+    "number": 31,
+    "name_ja": "原 修太",
+    "name_en": "Shuta Hara",
+    "height_cm": 187,
+    "player_id": "8584",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8584"
+  },
+  {
+    "team_id": "704",
+    "team_name": "千葉ジェッツ",
+    "number": 33,
+    "name_ja": "ジョン・ムーニー",
+    "name_en": "John Mooney",
+    "height_cm": 206,
+    "player_id": "5100000054",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000054"
+  },
+  {
+    "team_id": "704",
+    "team_name": "千葉ジェッツ",
+    "number": 34,
+    "name_ja": "ジェフ・ギブス",
+    "name_en": "Jeff Gibbs",
+    "height_cm": 188,
+    "player_id": "8835",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8835"
+  },
+  {
+    "team_id": "704",
+    "team_name": "千葉ジェッツ",
+    "number": 42,
+    "name_ja": "クエンティン・ミロラ・ブラウン",
+    "name_en": "Quentin Millora-Brown",
+    "height_cm": 208,
+    "player_id": "51000576",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000576"
+  },
+  {
+    "team_id": "704",
+    "team_name": "千葉ジェッツ",
+    "number": 44,
+    "name_ja": "加藤 ダニエル",
+    "name_en": "Daniel Kato",
+    "height_cm": 204,
+    "player_id": "51000518",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000518"
+  },
+  {
+    "team_id": "706",
+    "team_name": "アルバルク東京",
+    "number": 2,
+    "name_ja": "大倉 颯太",
+    "name_en": "Sota Okura",
+    "height_cm": 185,
+    "player_id": "30351",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30351"
+  },
+  {
+    "team_id": "706",
+    "team_name": "アルバルク東京",
+    "number": 3,
+    "name_ja": "テーブス 海",
+    "name_en": "Kai Toews",
+    "height_cm": 188,
+    "player_id": "30438",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30438"
+  },
+  {
+    "team_id": "706",
+    "team_name": "アルバルク東京",
+    "number": 5,
+    "name_ja": "中村 浩陸",
+    "name_en": "Hiromu Nakamura",
+    "height_cm": 177,
+    "player_id": "30349",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30349"
+  },
+  {
+    "team_id": "706",
+    "team_name": "アルバルク東京",
+    "number": 9,
+    "name_ja": "安藤 周人",
+    "name_en": "Shuto Ando",
+    "height_cm": 190,
+    "player_id": "10815",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=10815"
+  },
+  {
+    "team_id": "706",
+    "team_name": "アルバルク東京",
+    "number": 10,
+    "name_ja": "ザック・バランスキー",
+    "name_en": "Zack Baranski",
+    "height_cm": 193,
+    "player_id": "9031",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=9031"
+  },
+  {
+    "team_id": "706",
+    "team_name": "アルバルク東京",
+    "number": 11,
+    "name_ja": "セバスチャン・サイズ",
+    "name_en": "Sebastian Saiz",
+    "height_cm": 205,
+    "player_id": "26921",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=26921"
+  },
+  {
+    "team_id": "706",
+    "team_name": "アルバルク東京",
+    "number": 13,
+    "name_ja": "菊地 祥平",
+    "name_en": "Shohei Kikuchi",
+    "height_cm": 191,
+    "player_id": "9032",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=9032"
+  },
+  {
+    "team_id": "706",
+    "team_name": "アルバルク東京",
+    "number": 17,
+    "name_ja": "マーカス・フォスター",
+    "name_en": "Marcus Foster",
+    "height_cm": 191,
+    "player_id": "51000509",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000509"
+  },
+  {
+    "team_id": "706",
+    "team_name": "アルバルク東京",
+    "number": 21,
+    "name_ja": "平岩 玄",
+    "name_en": "Gen Hiraiwa",
+    "height_cm": 200,
+    "player_id": "15838",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=15838"
+  },
+  {
+    "team_id": "706",
+    "team_name": "アルバルク東京",
+    "number": 22,
+    "name_ja": "ライアン・ロシター",
+    "name_en": "Ryan Rossiter",
+    "height_cm": 206,
+    "player_id": "8649",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8649"
+  },
+  {
+    "team_id": "706",
+    "team_name": "アルバルク東京",
+    "number": 25,
+    "name_ja": "福澤 晃平",
+    "name_en": "Kohei Fukuzawa",
+    "height_cm": 177,
+    "player_id": "9044",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=9044"
+  },
+  {
+    "team_id": "706",
+    "team_name": "アルバルク東京",
+    "number": 60,
+    "name_ja": "チェイス・フィーラー",
+    "name_en": "Chase Fieler",
+    "height_cm": 203,
+    "player_id": "5100000079",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000079"
+  },
+  {
+    "team_id": "706",
+    "team_name": "アルバルク東京",
+    "number": 75,
+    "name_ja": "小酒部 泰暉",
+    "name_en": "Taiki Osakabe",
+    "height_cm": 187,
+    "player_id": "30348",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30348"
+  },
+  {
+    "team_id": "706",
+    "team_name": "アルバルク東京",
+    "number": 0,
+    "name_ja": "ブランドン・デイヴィス",
+    "name_en": "Brandon Davies",
+    "height_cm": 208,
+    "player_id": "51000490",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000490"
+  },
+  {
+    "team_id": "708",
+    "team_name": "青森ワッツ",
+    "number": 1,
+    "name_ja": "ラシャード・ケリー",
+    "name_en": "Rashard Kelly",
+    "height_cm": 203,
+    "player_id": "51000405",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000405"
+  },
+  {
+    "team_id": "708",
+    "team_name": "青森ワッツ",
+    "number": 2,
+    "name_ja": "鍋田 憲伸",
+    "name_en": "Kenshin Nabeta",
+    "height_cm": 182,
+    "player_id": "51000571",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000571"
+  },
+  {
+    "team_id": "708",
+    "team_name": "青森ワッツ",
+    "number": 3,
+    "name_ja": "ティム・ダルガー",
+    "name_en": "Tim Dalger",
+    "height_cm": 201,
+    "player_id": "51000492",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000492"
+  },
+  {
+    "team_id": "708",
+    "team_name": "青森ワッツ",
+    "number": 7,
+    "name_ja": "ワン ウェイジャ",
+    "name_en": "Weijia Wang",
+    "height_cm": 198,
+    "player_id": "5100000041",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000041"
+  },
+  {
+    "team_id": "708",
+    "team_name": "青森ワッツ",
+    "number": 11,
+    "name_ja": "岡部 雅大",
+    "name_en": "Masahiro Okabe",
+    "height_cm": 184,
+    "player_id": "51000388",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000388"
+  },
+  {
+    "team_id": "708",
+    "team_name": "青森ワッツ",
+    "number": 17,
+    "name_ja": "浅井 修伍",
+    "name_en": "Shugo Asai",
+    "height_cm": 198,
+    "player_id": "51000235",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000235"
+  },
+  {
+    "team_id": "708",
+    "team_name": "青森ワッツ",
+    "number": 20,
+    "name_ja": "山田 哲汰",
+    "name_en": "Tetta Yamada",
+    "height_cm": 188,
+    "player_id": "51000572",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000572"
+  },
+  {
+    "team_id": "708",
+    "team_name": "青森ワッツ",
+    "number": 22,
+    "name_ja": "マックス・ヒサタケ",
+    "name_en": "Max Hisatake",
+    "height_cm": 203,
+    "player_id": "51000100",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000100"
+  },
+  {
+    "team_id": "708",
+    "team_name": "青森ワッツ",
+    "number": 24,
+    "name_ja": "鍵冨 太雅",
+    "name_en": "Taiga Kagitomi",
+    "height_cm": 195,
+    "player_id": "51000167",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000167"
+  },
+  {
+    "team_id": "708",
+    "team_name": "青森ワッツ",
+    "number": 25,
+    "name_ja": "ミサカボ ベニ",
+    "name_en": "Beni Misakabo",
+    "height_cm": 190,
+    "player_id": "42555",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=42555"
+  },
+  {
+    "team_id": "708",
+    "team_name": "青森ワッツ",
+    "number": 55,
+    "name_ja": "大髙 祐哉",
+    "name_en": "Yuya Otaka",
+    "height_cm": 175,
+    "player_id": "51000381",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000381"
+  },
+  {
+    "team_id": "708",
+    "team_name": "青森ワッツ",
+    "number": 56,
+    "name_ja": "小室 昂大",
+    "name_en": "Takahiro Komuro",
+    "height_cm": 190,
+    "player_id": "51000109",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000109"
+  },
+  {
+    "team_id": "708",
+    "team_name": "青森ワッツ",
+    "number": 75,
+    "name_ja": "神里 和",
+    "name_en": "Nagomu Kamizato",
+    "height_cm": 170,
+    "player_id": "15855",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=15855"
+  },
+  {
+    "team_id": "708",
+    "team_name": "青森ワッツ",
+    "number": 91,
+    "name_ja": "寺嶋 恭之介",
+    "name_en": "Kyonosuke Terashima",
+    "height_cm": 179,
+    "player_id": "32985",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=32985"
+  },
+  {
+    "team_id": "709",
+    "team_name": "岩手ビッグブルズ",
+    "number": 1,
+    "name_ja": "後藤 翔平",
+    "name_en": "Shohei Goto",
+    "height_cm": 180,
+    "player_id": "9264",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=9264"
+  },
+  {
+    "team_id": "709",
+    "team_name": "岩手ビッグブルズ",
+    "number": 2,
+    "name_ja": "石川 晴道",
+    "name_en": "Harumichi Ishikawa",
+    "height_cm": 170,
+    "player_id": "39533",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=39533"
+  },
+  {
+    "team_id": "709",
+    "team_name": "岩手ビッグブルズ",
+    "number": 4,
+    "name_ja": "ノア・ガーリー",
+    "name_en": "Noah Gurley",
+    "height_cm": 203,
+    "player_id": "51000534",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000534"
+  },
+  {
+    "team_id": "709",
+    "team_name": "岩手ビッグブルズ",
+    "number": 6,
+    "name_ja": "山際 爽吾",
+    "name_en": "Sogo Yamagiwa",
+    "height_cm": 180,
+    "player_id": "49493",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=49493"
+  },
+  {
+    "team_id": "709",
+    "team_name": "岩手ビッグブルズ",
+    "number": 7,
+    "name_ja": "中野 友都",
+    "name_en": "Yuto Nakano",
+    "height_cm": 185,
+    "player_id": "51000223",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000223"
+  },
+  {
+    "team_id": "709",
+    "team_name": "岩手ビッグブルズ",
+    "number": 8,
+    "name_ja": "山崎 凜",
+    "name_en": "Rin Yamazaki",
+    "height_cm": 194,
+    "player_id": "51000190",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000190"
+  },
+  {
+    "team_id": "709",
+    "team_name": "岩手ビッグブルズ",
+    "number": 10,
+    "name_ja": "仁平 拓海",
+    "name_en": "Takumi Nihira",
+    "height_cm": 191,
+    "player_id": "10881",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=10881"
+  },
+  {
+    "team_id": "709",
+    "team_name": "岩手ビッグブルズ",
+    "number": 15,
+    "name_ja": "マルコ・テヒチ",
+    "name_en": "Marko Tejic",
+    "height_cm": 211,
+    "player_id": "51000535",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000535"
+  },
+  {
+    "team_id": "709",
+    "team_name": "岩手ビッグブルズ",
+    "number": 18,
+    "name_ja": "佐伯 崚介",
+    "name_en": "Ryosuke Saeki",
+    "height_cm": 185,
+    "player_id": "51000594",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000594"
+  },
+  {
+    "team_id": "709",
+    "team_name": "岩手ビッグブルズ",
+    "number": 22,
+    "name_ja": "門馬 圭二郎",
+    "name_en": "Keijiro Monma",
+    "height_cm": 185,
+    "player_id": "10877",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=10877"
+  },
+  {
+    "team_id": "709",
+    "team_name": "岩手ビッグブルズ",
+    "number": 30,
+    "name_ja": "平良 宗龍",
+    "name_en": "Shutatsu Taira",
+    "height_cm": 182,
+    "player_id": "55000079",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=55000079"
+  },
+  {
+    "team_id": "709",
+    "team_name": "岩手ビッグブルズ",
+    "number": 31,
+    "name_ja": "吉田 龍空",
+    "name_en": "Riku Yoshida",
+    "height_cm": 192,
+    "player_id": "51000565",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000565"
+  },
+  {
+    "team_id": "709",
+    "team_name": "岩手ビッグブルズ",
+    "number": 32,
+    "name_ja": "臼井 弘樹",
+    "name_en": "Hiroki Usui",
+    "height_cm": 193,
+    "player_id": "18170",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=18170"
+  },
+  {
+    "team_id": "709",
+    "team_name": "岩手ビッグブルズ",
+    "number": 61,
+    "name_ja": "クレイ・マウンス",
+    "name_en": "Clay Mounce",
+    "height_cm": 201,
+    "player_id": "46257",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=46257"
+  },
+  {
+    "team_id": "709",
+    "team_name": "岩手ビッグブルズ",
+    "number": 0,
+    "name_ja": "関屋 心",
+    "name_en": "Kokoro Sekiya",
+    "height_cm": 180,
+    "player_id": "51000330",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000330"
+  },
+  {
+    "team_id": "710",
+    "team_name": "山形ワイヴァンズ",
+    "number": 2,
+    "name_ja": "シャキール・ドアソン",
+    "name_en": "Shaquille Doorson",
+    "height_cm": 213,
+    "player_id": "51000538",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000538"
+  },
+  {
+    "team_id": "710",
+    "team_name": "山形ワイヴァンズ",
+    "number": 3,
+    "name_ja": "ジェームズ・ベル",
+    "name_en": "James Bell",
+    "height_cm": 196,
+    "player_id": "51000172",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000172"
+  },
+  {
+    "team_id": "710",
+    "team_name": "山形ワイヴァンズ",
+    "number": 5,
+    "name_ja": "石川 裕大",
+    "name_en": "Yudai Ishikawa",
+    "height_cm": 176,
+    "player_id": "51000425",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000425"
+  },
+  {
+    "team_id": "710",
+    "team_name": "山形ワイヴァンズ",
+    "number": 6,
+    "name_ja": "佐藤 巧",
+    "name_en": "Takumi Sato",
+    "height_cm": 195,
+    "player_id": "51000383",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000383"
+  },
+  {
+    "team_id": "710",
+    "team_name": "山形ワイヴァンズ",
+    "number": 7,
+    "name_ja": "中田 嵩基",
+    "name_en": "Shuki Nakata",
+    "height_cm": 174,
+    "player_id": "51000246",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000246"
+  },
+  {
+    "team_id": "710",
+    "team_name": "山形ワイヴァンズ",
+    "number": 8,
+    "name_ja": "村上 慎也",
+    "name_en": "Shinya Murakami",
+    "height_cm": 173,
+    "player_id": "8674",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8674"
+  },
+  {
+    "team_id": "710",
+    "team_name": "山形ワイヴァンズ",
+    "number": 10,
+    "name_ja": "陳岡 燈生",
+    "name_en": "Toi Jingaoka",
+    "height_cm": 185,
+    "player_id": "51000373",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000373"
+  },
+  {
+    "team_id": "710",
+    "team_name": "山形ワイヴァンズ",
+    "number": 11,
+    "name_ja": "白戸 大聖",
+    "name_en": "Taisei Shirato",
+    "height_cm": 183,
+    "player_id": "15832",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=15832"
+  },
+  {
+    "team_id": "710",
+    "team_name": "山形ワイヴァンズ",
+    "number": 13,
+    "name_ja": "阿部 龍星",
+    "name_en": "Ryusei Abe",
+    "height_cm": 183,
+    "player_id": "51000097",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000097"
+  },
+  {
+    "team_id": "710",
+    "team_name": "山形ワイヴァンズ",
+    "number": 15,
+    "name_ja": "村岡 遥斗",
+    "name_en": "Haruto Muraoka",
+    "height_cm": 182,
+    "player_id": "55000575",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=55000575"
+  },
+  {
+    "team_id": "710",
+    "team_name": "山形ワイヴァンズ",
+    "number": 18,
+    "name_ja": "川畑 颯太郎",
+    "name_en": "Sotaro Kawabata",
+    "height_cm": 180,
+    "player_id": "51000558",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000558"
+  },
+  {
+    "team_id": "710",
+    "team_name": "山形ワイヴァンズ",
+    "number": 24,
+    "name_ja": "広瀬 翔一",
+    "name_en": "Shoichi Hirose",
+    "height_cm": 201,
+    "player_id": "49519",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=49519"
+  },
+  {
+    "team_id": "710",
+    "team_name": "山形ワイヴァンズ",
+    "number": 32,
+    "name_ja": "イ・ジョンヒョン",
+    "name_en": "Jonghyun Lee",
+    "height_cm": 206,
+    "player_id": "51000555",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000555"
+  },
+  {
+    "team_id": "710",
+    "team_name": "山形ワイヴァンズ",
+    "number": 37,
+    "name_ja": "吉田 健太郎",
+    "name_en": "Kentaro Yoshida",
+    "height_cm": 173,
+    "player_id": "22393",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=22393"
+  },
+  {
+    "team_id": "710",
+    "team_name": "山形ワイヴァンズ",
+    "number": 93,
+    "name_ja": "ノア・ウォーターマン",
+    "name_en": "Noah Waterman",
+    "height_cm": 211,
+    "player_id": "51000537",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000537"
+  },
+  {
+    "team_id": "711",
+    "team_name": "福島ファイヤーボンズ",
+    "number": 1,
+    "name_ja": "中野 司",
+    "name_en": "Tsukasa Nakano",
+    "height_cm": 185,
+    "player_id": "20031",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=20031"
+  },
+  {
+    "team_id": "711",
+    "team_name": "福島ファイヤーボンズ",
+    "number": 2,
+    "name_ja": "菅野 陸",
+    "name_en": "Riku Sugeno",
+    "height_cm": 178,
+    "player_id": "51000351",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000351"
+  },
+  {
+    "team_id": "711",
+    "team_name": "福島ファイヤーボンズ",
+    "number": 3,
+    "name_ja": "大久保 友貴",
+    "name_en": "Yuuki Okubo",
+    "height_cm": 173,
+    "player_id": "51000507",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000507"
+  },
+  {
+    "team_id": "711",
+    "team_name": "福島ファイヤーボンズ",
+    "number": 5,
+    "name_ja": "ジュフ・伴馬",
+    "name_en": "Diouf Bamba",
+    "height_cm": 198,
+    "player_id": "12591",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=12591"
+  },
+  {
+    "team_id": "711",
+    "team_name": "福島ファイヤーボンズ",
+    "number": 7,
+    "name_ja": "渡邊 翔太",
+    "name_en": "Shota Watanabe",
+    "height_cm": 181,
+    "player_id": "8552",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8552"
+  },
+  {
+    "team_id": "711",
+    "team_name": "福島ファイヤーボンズ",
+    "number": 9,
+    "name_ja": "新川 敬大",
+    "name_en": "Keita Shinkawa",
+    "height_cm": 187,
+    "player_id": "15824",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=15824"
+  },
+  {
+    "team_id": "711",
+    "team_name": "福島ファイヤーボンズ",
+    "number": 13,
+    "name_ja": "笠井 康平",
+    "name_en": "Kohei Kasai",
+    "height_cm": 176,
+    "player_id": "18167",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=18167"
+  },
+  {
+    "team_id": "711",
+    "team_name": "福島ファイヤーボンズ",
+    "number": 14,
+    "name_ja": "小川 翔矢",
+    "name_en": "Shoya Ogawa",
+    "height_cm": 184,
+    "player_id": "49607",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=49607"
+  },
+  {
+    "team_id": "711",
+    "team_name": "福島ファイヤーボンズ",
+    "number": 15,
+    "name_ja": "パトリック・ガードナー",
+    "name_en": "Patrick Gardner",
+    "height_cm": 213,
+    "player_id": "51000505",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000505"
+  },
+  {
+    "team_id": "711",
+    "team_name": "福島ファイヤーボンズ",
+    "number": 20,
+    "name_ja": "ワイリー 光希スカイ",
+    "name_en": "Kokisky Wiley",
+    "height_cm": 190,
+    "player_id": "51000275",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000275"
+  },
+  {
+    "team_id": "711",
+    "team_name": "福島ファイヤーボンズ",
+    "number": 24,
+    "name_ja": "ジャック・ナンジ",
+    "name_en": "Jack Nunge",
+    "height_cm": 212,
+    "player_id": "51000506",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000506"
+  },
+  {
+    "team_id": "711",
+    "team_name": "福島ファイヤーボンズ",
+    "number": 34,
+    "name_ja": "ジェフ・ギブス",
+    "name_en": "Jeff Gibbs",
+    "height_cm": 188,
+    "player_id": "8835",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8835"
+  },
+  {
+    "team_id": "711",
+    "team_name": "福島ファイヤーボンズ",
+    "number": 42,
+    "name_ja": "益子 拓己",
+    "name_en": "Takumi Masuko",
+    "height_cm": 186,
+    "player_id": "51000233",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000233"
+  },
+  {
+    "team_id": "711",
+    "team_name": "福島ファイヤーボンズ",
+    "number": 44,
+    "name_ja": "米山 ジャバ 偉生",
+    "name_en": "Eo JavaYoneyama",
+    "height_cm": 190,
+    "player_id": "51000251",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000251"
+  },
+  {
+    "team_id": "711",
+    "team_name": "福島ファイヤーボンズ",
+    "number": 55,
+    "name_ja": "ケニー・マニゴールト",
+    "name_en": "Kenny Manigault",
+    "height_cm": 196,
+    "player_id": "51000508",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000508"
+  },
+  {
+    "team_id": "712",
+    "team_name": "茨城ロボッツ",
+    "number": 1,
+    "name_ja": "小島 元基",
+    "name_en": "Genki Kojima",
+    "height_cm": 181,
+    "player_id": "8456",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8456"
+  },
+  {
+    "team_id": "712",
+    "team_name": "茨城ロボッツ",
+    "number": 3,
+    "name_ja": "長谷川 暢",
+    "name_en": "Noboru Hasegawa",
+    "height_cm": 175,
+    "player_id": "15829",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=15829"
+  },
+  {
+    "team_id": "712",
+    "team_name": "茨城ロボッツ",
+    "number": 7,
+    "name_ja": "駒沢 颯",
+    "name_en": "Hayate Komasawa",
+    "height_cm": 188,
+    "player_id": "5100000032",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000032"
+  },
+  {
+    "team_id": "712",
+    "team_name": "茨城ロボッツ",
+    "number": 8,
+    "name_ja": "タイラー・クック",
+    "name_en": "Tyler Cook",
+    "height_cm": 206,
+    "player_id": "51000489",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000489"
+  },
+  {
+    "team_id": "712",
+    "team_name": "茨城ロボッツ",
+    "number": 9,
+    "name_ja": "ヤン ジェミン",
+    "name_en": "Jae-Min Yang",
+    "height_cm": 201,
+    "player_id": "33036",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=33036"
+  },
+  {
+    "team_id": "712",
+    "team_name": "茨城ロボッツ",
+    "number": 10,
+    "name_ja": "陳岡 流羽",
+    "name_en": "Ru Jingaoka",
+    "height_cm": 188,
+    "player_id": "51000479",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000479"
+  },
+  {
+    "team_id": "712",
+    "team_name": "茨城ロボッツ",
+    "number": 12,
+    "name_ja": "赤間 賢人",
+    "name_en": "Kento Akama",
+    "height_cm": 189,
+    "player_id": "51000583",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000583"
+  },
+  {
+    "team_id": "712",
+    "team_name": "茨城ロボッツ",
+    "number": 13,
+    "name_ja": "中村 功平",
+    "name_en": "Kohei Nakamura",
+    "height_cm": 182,
+    "player_id": "18845",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=18845"
+  },
+  {
+    "team_id": "712",
+    "team_name": "茨城ロボッツ",
+    "number": 14,
+    "name_ja": "久岡 幸太郎",
+    "name_en": "Kotaro Hisaoka",
+    "height_cm": 182,
+    "player_id": "18478",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=18478"
+  },
+  {
+    "team_id": "712",
+    "team_name": "茨城ロボッツ",
+    "number": 21,
+    "name_ja": "エリック・ジェイコブセン",
+    "name_en": "Eric Jacobsen",
+    "height_cm": 208,
+    "player_id": "12634",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=12634"
+  },
+  {
+    "team_id": "712",
+    "team_name": "茨城ロボッツ",
+    "number": 25,
+    "name_ja": "平尾 充庸",
+    "name_en": "Atsunobu Hirao",
+    "height_cm": 178,
+    "player_id": "8561",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8561"
+  },
+  {
+    "team_id": "712",
+    "team_name": "茨城ロボッツ",
+    "number": 29,
+    "name_ja": "鶴巻 啓太",
+    "name_en": "Keita Tsurumaki",
+    "height_cm": 190,
+    "player_id": "22405",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=22405"
+  },
+  {
+    "team_id": "712",
+    "team_name": "茨城ロボッツ",
+    "number": 92,
+    "name_ja": "村越 圭佑",
+    "name_en": "Keisuke Murakoshi",
+    "height_cm": 195,
+    "player_id": "8557",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8557"
+  },
+  {
+    "team_id": "712",
+    "team_name": "茨城ロボッツ",
+    "number": 0,
+    "name_ja": "ロバート・フランクス",
+    "name_en": "Robert Franks",
+    "height_cm": 201,
+    "player_id": "51000277",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000277"
+  },
+  {
+    "team_id": "713",
+    "team_name": "群馬クレインサンダーズ",
+    "number": 1,
+    "name_ja": "コー・フリッピン",
+    "name_en": "Koh Flippin",
+    "height_cm": 188,
+    "player_id": "22497",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=22497"
+  },
+  {
+    "team_id": "713",
+    "team_name": "群馬クレインサンダーズ",
+    "number": 4,
+    "name_ja": "トレイ・ジョーンズ",
+    "name_en": "Trey Jones",
+    "height_cm": 196,
+    "player_id": "18441",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=18441"
+  },
+  {
+    "team_id": "713",
+    "team_name": "群馬クレインサンダーズ",
+    "number": 6,
+    "name_ja": "中村 拓人",
+    "name_en": "Takuto Nakamura",
+    "height_cm": 184,
+    "player_id": "5100000023",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000023"
+  },
+  {
+    "team_id": "713",
+    "team_name": "群馬クレインサンダーズ",
+    "number": 8,
+    "name_ja": "ケリー・ブラックシアー・ジュニア",
+    "name_en": "Kerry Blackshear Jr",
+    "height_cm": 208,
+    "player_id": "51000145",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000145"
+  },
+  {
+    "team_id": "713",
+    "team_name": "群馬クレインサンダーズ",
+    "number": 9,
+    "name_ja": "辻 直人",
+    "name_en": "Naoto Tsuji",
+    "height_cm": 185,
+    "player_id": "8487",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8487"
+  },
+  {
+    "team_id": "713",
+    "team_name": "群馬クレインサンダーズ",
+    "number": 12,
+    "name_ja": "十返 翔里",
+    "name_en": "Shori Togaeri",
+    "height_cm": 192,
+    "player_id": "51000482",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000482"
+  },
+  {
+    "team_id": "713",
+    "team_name": "群馬クレインサンダーズ",
+    "number": 14,
+    "name_ja": "佐藤 誠人",
+    "name_en": "Makoto Sato",
+    "height_cm": 190,
+    "player_id": "30466",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30466"
+  },
+  {
+    "team_id": "713",
+    "team_name": "群馬クレインサンダーズ",
+    "number": 15,
+    "name_ja": "エージェー・エドゥ",
+    "name_en": "A.J.Edu",
+    "height_cm": 208,
+    "player_id": "51000301",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000301"
+  },
+  {
+    "team_id": "713",
+    "team_name": "群馬クレインサンダーズ",
+    "number": 16,
+    "name_ja": "淺野 ケニー",
+    "name_en": "Kenny Asano",
+    "height_cm": 198,
+    "player_id": "51000232",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000232"
+  },
+  {
+    "team_id": "713",
+    "team_name": "群馬クレインサンダーズ",
+    "number": 29,
+    "name_ja": "細川 一輝",
+    "name_en": "Kazuki Hosokawa",
+    "height_cm": 187,
+    "player_id": "30519",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30519"
+  },
+  {
+    "team_id": "713",
+    "team_name": "群馬クレインサンダーズ",
+    "number": 30,
+    "name_ja": "テレンス・ウッドベリー",
+    "name_en": "Terrance Woodbury",
+    "height_cm": 203,
+    "player_id": "10831",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=10831"
+  },
+  {
+    "team_id": "713",
+    "team_name": "群馬クレインサンダーズ",
+    "number": 32,
+    "name_ja": "ヨハネス・ティーマン",
+    "name_en": "Johannes Thiemann",
+    "height_cm": 206,
+    "player_id": "51000397",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000397"
+  },
+  {
+    "team_id": "713",
+    "team_name": "群馬クレインサンダーズ",
+    "number": 55,
+    "name_ja": "谷口 大智",
+    "name_en": "Daichi Taniguchi",
+    "height_cm": 201,
+    "player_id": "8470",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8470"
+  },
+  {
+    "team_id": "713",
+    "team_name": "群馬クレインサンダーズ",
+    "number": 0,
+    "name_ja": "藤井 祐眞",
+    "name_en": "Yuma Fujii",
+    "height_cm": 178,
+    "player_id": "8482",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8482"
+  },
+  {
+    "team_id": "714",
+    "team_name": "横浜エクセレンス",
+    "number": 1,
+    "name_ja": "トレイ・ボイド",
+    "name_en": "Tray Boyd",
+    "height_cm": 193,
+    "player_id": "43445",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=43445"
+  },
+  {
+    "team_id": "714",
+    "team_name": "横浜エクセレンス",
+    "number": 4,
+    "name_ja": "スティーブン・ハート",
+    "name_en": "Stephen Hurt",
+    "height_cm": 210,
+    "player_id": "26903",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=26903"
+  },
+  {
+    "team_id": "714",
+    "team_name": "横浜エクセレンス",
+    "number": 5,
+    "name_ja": "ディクソンジュニア タリキ",
+    "name_en": "TarikiDickson JR.",
+    "height_cm": 181,
+    "player_id": "51000178",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000178"
+  },
+  {
+    "team_id": "714",
+    "team_name": "横浜エクセレンス",
+    "number": 8,
+    "name_ja": "西山 達哉",
+    "name_en": "Tatsuya Nishiyama",
+    "height_cm": 172,
+    "player_id": "8547",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8547"
+  },
+  {
+    "team_id": "714",
+    "team_name": "横浜エクセレンス",
+    "number": 10,
+    "name_ja": "永野 威旺",
+    "name_en": "Io Nagano",
+    "height_cm": 178,
+    "player_id": "51000344",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000344"
+  },
+  {
+    "team_id": "714",
+    "team_name": "横浜エクセレンス",
+    "number": 11,
+    "name_ja": "木下 大南帆",
+    "name_en": "Hironao Kinoshita",
+    "height_cm": 192,
+    "player_id": "49610",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=49610"
+  },
+  {
+    "team_id": "714",
+    "team_name": "横浜エクセレンス",
+    "number": 13,
+    "name_ja": "大橋 大空",
+    "name_en": "Hirotaka Ohashi",
+    "height_cm": 165,
+    "player_id": "51000274",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000274"
+  },
+  {
+    "team_id": "714",
+    "team_name": "横浜エクセレンス",
+    "number": 14,
+    "name_ja": "カリム・エゼディン",
+    "name_en": "Karim Ezzeddine",
+    "height_cm": 206,
+    "player_id": "51000526",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000526"
+  },
+  {
+    "team_id": "714",
+    "team_name": "横浜エクセレンス",
+    "number": 18,
+    "name_ja": "クーリバリ セリンムルタラ",
+    "name_en": "Serignemourtalla Coulibaly",
+    "height_cm": 188,
+    "player_id": "55000957",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=55000957"
+  },
+  {
+    "team_id": "714",
+    "team_name": "横浜エクセレンス",
+    "number": 20,
+    "name_ja": "ザック・モーア",
+    "name_en": "Zack Moore",
+    "height_cm": 198,
+    "player_id": "5100000063",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000063"
+  },
+  {
+    "team_id": "714",
+    "team_name": "横浜エクセレンス",
+    "number": 21,
+    "name_ja": "エライジャ・ウィリアムス",
+    "name_en": "Elyjah Williams",
+    "height_cm": 201,
+    "player_id": "46074",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=46074"
+  },
+  {
+    "team_id": "714",
+    "team_name": "横浜エクセレンス",
+    "number": 33,
+    "name_ja": "杉山 裕介",
+    "name_en": "Yusuke Sugiyama",
+    "height_cm": 183,
+    "player_id": "51000255",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000255"
+  },
+  {
+    "team_id": "714",
+    "team_name": "横浜エクセレンス",
+    "number": 34,
+    "name_ja": "ベンジャミン・ローソン",
+    "name_en": "Benjamin Lawson",
+    "height_cm": 216,
+    "player_id": "18442",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=18442"
+  },
+  {
+    "team_id": "714",
+    "team_name": "横浜エクセレンス",
+    "number": 93,
+    "name_ja": "上良 潤起",
+    "name_en": "Junki Uera",
+    "height_cm": 187,
+    "player_id": "30444",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30444"
+  },
+  {
+    "team_id": "714",
+    "team_name": "横浜エクセレンス",
+    "number": 0,
+    "name_ja": "板橋 真平",
+    "name_en": "Shinpei Itabashi",
+    "height_cm": 168,
+    "player_id": "5100000038",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000038"
+  },
+  {
+    "team_id": "716",
+    "team_name": "信州ブレイブウォリアーズ",
+    "number": 3,
+    "name_ja": "エリエット・ドンリー",
+    "name_en": "Eliet Donley",
+    "height_cm": 198,
+    "player_id": "32984",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=32984"
+  },
+  {
+    "team_id": "716",
+    "team_name": "信州ブレイブウォリアーズ",
+    "number": 4,
+    "name_ja": "小玉 大智",
+    "name_en": "Taichi Kodama",
+    "height_cm": 185,
+    "player_id": "51000323",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000323"
+  },
+  {
+    "team_id": "716",
+    "team_name": "信州ブレイブウォリアーズ",
+    "number": 5,
+    "name_ja": "土家 大輝",
+    "name_en": "Daiki Tsuchiya",
+    "height_cm": 174,
+    "player_id": "5100000017",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000017"
+  },
+  {
+    "team_id": "716",
+    "team_name": "信州ブレイブウォリアーズ",
+    "number": 7,
+    "name_ja": "アンジェロ・チョル",
+    "name_en": "Angelo Chol",
+    "height_cm": 206,
+    "player_id": "12642",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=12642"
+  },
+  {
+    "team_id": "716",
+    "team_name": "信州ブレイブウォリアーズ",
+    "number": 11,
+    "name_ja": "小栗 瑛哉",
+    "name_en": "Akitoshi Oguri",
+    "height_cm": 175,
+    "player_id": "42539",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=42539"
+  },
+  {
+    "team_id": "716",
+    "team_name": "信州ブレイブウォリアーズ",
+    "number": 12,
+    "name_ja": "栗原 ルイス",
+    "name_en": "Louis Kurihara",
+    "height_cm": 188,
+    "player_id": "18428",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=18428"
+  },
+  {
+    "team_id": "716",
+    "team_name": "信州ブレイブウォリアーズ",
+    "number": 15,
+    "name_ja": "アキ・チェンバース",
+    "name_en": "Aki Chambers",
+    "height_cm": 191,
+    "player_id": "8448",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8448"
+  },
+  {
+    "team_id": "716",
+    "team_name": "信州ブレイブウォリアーズ",
+    "number": 24,
+    "name_ja": "マイク・ダウム",
+    "name_en": "Mike Daum",
+    "height_cm": 206,
+    "player_id": "51000528",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000528"
+  },
+  {
+    "team_id": "716",
+    "team_name": "信州ブレイブウォリアーズ",
+    "number": 27,
+    "name_ja": "東海林 奨",
+    "name_en": "Susumu Tokairin",
+    "height_cm": 193,
+    "player_id": "51000239",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000239"
+  },
+  {
+    "team_id": "716",
+    "team_name": "信州ブレイブウォリアーズ",
+    "number": 34,
+    "name_ja": "渡邉 飛勇",
+    "name_en": "Hugh Watanabe",
+    "height_cm": 207,
+    "player_id": "5100000049",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000049"
+  },
+  {
+    "team_id": "716",
+    "team_name": "信州ブレイブウォリアーズ",
+    "number": 46,
+    "name_ja": "生原 秀将",
+    "name_en": "Shusuke Ikuhara",
+    "height_cm": 182,
+    "player_id": "10822",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=10822"
+  },
+  {
+    "team_id": "716",
+    "team_name": "信州ブレイブウォリアーズ",
+    "number": 50,
+    "name_ja": "ウェイン・マーシャル",
+    "name_en": "Wayne Marshall",
+    "height_cm": 211,
+    "player_id": "8843",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8843"
+  },
+  {
+    "team_id": "716",
+    "team_name": "信州ブレイブウォリアーズ",
+    "number": 51,
+    "name_ja": "横山 悠人",
+    "name_en": "Haruto Yokoyama",
+    "height_cm": 183,
+    "player_id": "51000549",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000549"
+  },
+  {
+    "team_id": "716",
+    "team_name": "信州ブレイブウォリアーズ",
+    "number": 0,
+    "name_ja": "福島 ハリス慈音ウチェ",
+    "name_en": "Harris Jion Uche Fukushima",
+    "height_cm": 190,
+    "player_id": "51000548",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000548"
+  },
+  {
+    "team_id": "717",
+    "team_name": "ファイティングイーグルス名古屋",
+    "number": 3,
+    "name_ja": "並里 成",
+    "name_en": "Narito Namizato",
+    "height_cm": 172,
+    "player_id": "9489",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=9489"
+  },
+  {
+    "team_id": "717",
+    "team_name": "ファイティングイーグルス名古屋",
+    "number": 5,
+    "name_ja": "針間 大知",
+    "name_en": "Daichi Harima",
+    "height_cm": 185,
+    "player_id": "51000592",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000592"
+  },
+  {
+    "team_id": "717",
+    "team_name": "ファイティングイーグルス名古屋",
+    "number": 6,
+    "name_ja": "須藤 タイレル拓",
+    "name_en": "Tyrell TakuSudo",
+    "height_cm": 184,
+    "player_id": "51000502",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000502"
+  },
+  {
+    "team_id": "717",
+    "team_name": "ファイティングイーグルス名古屋",
+    "number": 7,
+    "name_ja": "伊藤 治輝",
+    "name_en": "Haruki Ito",
+    "height_cm": 196,
+    "player_id": "49518",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=49518"
+  },
+  {
+    "team_id": "717",
+    "team_name": "ファイティングイーグルス名古屋",
+    "number": 9,
+    "name_ja": "宇都宮 陸",
+    "name_en": "Riku Utsunomiya",
+    "height_cm": 177,
+    "player_id": "51000124",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000124"
+  },
+  {
+    "team_id": "717",
+    "team_name": "ファイティングイーグルス名古屋",
+    "number": 10,
+    "name_ja": "杉本 天昇",
+    "name_en": "Tensho Sugimoto",
+    "height_cm": 186,
+    "player_id": "30512",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30512"
+  },
+  {
+    "team_id": "717",
+    "team_name": "ファイティングイーグルス名古屋",
+    "number": 11,
+    "name_ja": "月岡 熙",
+    "name_en": "Hikaru Tsukioka",
+    "height_cm": 174,
+    "player_id": "51000593",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000593"
+  },
+  {
+    "team_id": "717",
+    "team_name": "ファイティングイーグルス名古屋",
+    "number": 12,
+    "name_ja": "平松 克樹",
+    "name_en": "Katsuki Hiramatsu",
+    "height_cm": 172,
+    "player_id": "51000443",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000443"
+  },
+  {
+    "team_id": "717",
+    "team_name": "ファイティングイーグルス名古屋",
+    "number": 15,
+    "name_ja": "マイロ・マーフィー",
+    "name_en": "Mylo Murphy",
+    "height_cm": 198,
+    "player_id": "51000501",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000501"
+  },
+  {
+    "team_id": "717",
+    "team_name": "ファイティングイーグルス名古屋",
+    "number": 17,
+    "name_ja": "神田 壮一郎",
+    "name_en": "Soichiro Kanda",
+    "height_cm": 190,
+    "player_id": "51000380",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000380"
+  },
+  {
+    "team_id": "717",
+    "team_name": "ファイティングイーグルス名古屋",
+    "number": 20,
+    "name_ja": "フランシス・ロペス",
+    "name_en": "Francis Lopez",
+    "height_cm": 193,
+    "player_id": "51000500",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000500"
+  },
+  {
+    "team_id": "717",
+    "team_name": "ファイティングイーグルス名古屋",
+    "number": 21,
+    "name_ja": "笹山 貴哉",
+    "name_en": "Takaya Sasayama",
+    "height_cm": 180,
+    "player_id": "8517",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8517"
+  },
+  {
+    "team_id": "717",
+    "team_name": "ファイティングイーグルス名古屋",
+    "number": 22,
+    "name_ja": "ジェレミー・ジョーンズ",
+    "name_en": "Jeremy Jones",
+    "height_cm": 201,
+    "player_id": "5100000056",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000056"
+  },
+  {
+    "team_id": "717",
+    "team_name": "ファイティングイーグルス名古屋",
+    "number": 23,
+    "name_ja": "保岡 龍斗",
+    "name_en": "Ryuto Yasuoka",
+    "height_cm": 188,
+    "player_id": "10878",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=10878"
+  },
+  {
+    "team_id": "717",
+    "team_name": "ファイティングイーグルス名古屋",
+    "number": 54,
+    "name_ja": "ショーン・オマラ",
+    "name_en": "Sean O'mara",
+    "height_cm": 208,
+    "player_id": "26912",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=26912"
+  },
+  {
+    "team_id": "717",
+    "team_name": "ファイティングイーグルス名古屋",
+    "number": 0,
+    "name_ja": "ジャモルコ・ピケット",
+    "name_en": "Jamorko Pickett",
+    "height_cm": 206,
+    "player_id": "51000536",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000536"
+  },
+  {
+    "team_id": "718",
+    "team_name": "神戸ストークス",
+    "number": 2,
+    "name_ja": "梅村 帝武",
+    "name_en": "Tim Umemura",
+    "height_cm": 188,
+    "player_id": "51000582",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000582"
+  },
+  {
+    "team_id": "718",
+    "team_name": "神戸ストークス",
+    "number": 4,
+    "name_ja": "寺園 脩斗",
+    "name_en": "Shuto Terazono",
+    "height_cm": 172,
+    "player_id": "18148",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=18148"
+  },
+  {
+    "team_id": "718",
+    "team_name": "神戸ストークス",
+    "number": 5,
+    "name_ja": "アイザック・バッツ",
+    "name_en": "Isaac Butts",
+    "height_cm": 208,
+    "player_id": "8591",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8591"
+  },
+  {
+    "team_id": "718",
+    "team_name": "神戸ストークス",
+    "number": 8,
+    "name_ja": "八村 阿蓮",
+    "name_en": "Allen Hachimura",
+    "height_cm": 198,
+    "player_id": "5100000016",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000016"
+  },
+  {
+    "team_id": "718",
+    "team_name": "神戸ストークス",
+    "number": 9,
+    "name_ja": "谷 直樹",
+    "name_en": "Naoki Tani",
+    "height_cm": 193,
+    "player_id": "8536",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8536"
+  },
+  {
+    "team_id": "718",
+    "team_name": "神戸ストークス",
+    "number": 12,
+    "name_ja": "木村 圭吾",
+    "name_en": "Keigo Kimura",
+    "height_cm": 188,
+    "player_id": "5100000066",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000066"
+  },
+  {
+    "team_id": "718",
+    "team_name": "神戸ストークス",
+    "number": 13,
+    "name_ja": "道原 紀晃",
+    "name_en": "Noriaki Dohara",
+    "height_cm": 178,
+    "player_id": "8538",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8538"
+  },
+  {
+    "team_id": "718",
+    "team_name": "神戸ストークス",
+    "number": 23,
+    "name_ja": "ヨーリ・チャイルズ",
+    "name_en": "Yoeli Childs",
+    "height_cm": 202,
+    "player_id": "51000317",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000317"
+  },
+  {
+    "team_id": "718",
+    "team_name": "神戸ストークス",
+    "number": 24,
+    "name_ja": "中島 三千哉",
+    "name_en": "Michiya Nakajima",
+    "height_cm": 179,
+    "player_id": "51000547",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000547"
+  },
+  {
+    "team_id": "718",
+    "team_name": "神戸ストークス",
+    "number": 30,
+    "name_ja": "金田 龍弥",
+    "name_en": "Ryuya Kaneda",
+    "height_cm": 195,
+    "player_id": "5100000031",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000031"
+  },
+  {
+    "team_id": "718",
+    "team_name": "神戸ストークス",
+    "number": 32,
+    "name_ja": "ルーク・メイ",
+    "name_en": "Luke Maye",
+    "height_cm": 203,
+    "player_id": "51000374",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000374"
+  },
+  {
+    "team_id": "718",
+    "team_name": "神戸ストークス",
+    "number": 33,
+    "name_ja": "笹倉 怜寿",
+    "name_en": "Reiju Sasakura",
+    "height_cm": 187,
+    "player_id": "30347",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30347"
+  },
+  {
+    "team_id": "718",
+    "team_name": "神戸ストークス",
+    "number": 90,
+    "name_ja": "野溝 利一",
+    "name_en": "Riichi Nomizo",
+    "height_cm": 160,
+    "player_id": "51000448",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000448"
+  },
+  {
+    "team_id": "719",
+    "team_name": "バンビシャス奈良",
+    "number": 1,
+    "name_ja": "大塚 勇人",
+    "name_en": "Yuto Otsuka",
+    "height_cm": 173,
+    "player_id": "8518",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8518"
+  },
+  {
+    "team_id": "719",
+    "team_name": "バンビシャス奈良",
+    "number": 4,
+    "name_ja": "ジェイミン・ブレイクフィールド",
+    "name_en": "Jaemyn Brakefield",
+    "height_cm": 203,
+    "player_id": "51000519",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000519"
+  },
+  {
+    "team_id": "719",
+    "team_name": "バンビシャス奈良",
+    "number": 7,
+    "name_ja": "古牧 昌也",
+    "name_en": "Masaya Komaki",
+    "height_cm": 186,
+    "player_id": "12500",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=12500"
+  },
+  {
+    "team_id": "719",
+    "team_name": "バンビシャス奈良",
+    "number": 10,
+    "name_ja": "イデムディア オサセレ",
+    "name_en": "Osasere Idemudia",
+    "height_cm": 196,
+    "player_id": "51000423",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000423"
+  },
+  {
+    "team_id": "719",
+    "team_name": "バンビシャス奈良",
+    "number": 11,
+    "name_ja": "ナイジェル・スパイクス",
+    "name_en": "Nigel Spikes",
+    "height_cm": 208,
+    "player_id": "9332",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=9332"
+  },
+  {
+    "team_id": "719",
+    "team_name": "バンビシャス奈良",
+    "number": 14,
+    "name_ja": "坂口 竜也",
+    "name_en": "Tatsuya Sakaguchi",
+    "height_cm": 182,
+    "player_id": "51000477",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000477"
+  },
+  {
+    "team_id": "719",
+    "team_name": "バンビシャス奈良",
+    "number": 15,
+    "name_ja": "植田 碧羽",
+    "name_en": "Aoba Ueda",
+    "height_cm": 168,
+    "player_id": "51000570",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000570"
+  },
+  {
+    "team_id": "719",
+    "team_name": "バンビシャス奈良",
+    "number": 18,
+    "name_ja": "相馬 卓弥",
+    "name_en": "Takuya Soma",
+    "height_cm": 182,
+    "player_id": "8683",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8683"
+  },
+  {
+    "team_id": "719",
+    "team_name": "バンビシャス奈良",
+    "number": 20,
+    "name_ja": "石井 峻平",
+    "name_en": "Shunpei Ishii",
+    "height_cm": 188,
+    "player_id": "15757",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=15757"
+  },
+  {
+    "team_id": "719",
+    "team_name": "バンビシャス奈良",
+    "number": 22,
+    "name_ja": "ヴャチェスラフ・ペトロフ",
+    "name_en": "Viacheslav Petrov",
+    "height_cm": 204,
+    "player_id": "47147",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=47147"
+  },
+  {
+    "team_id": "719",
+    "team_name": "バンビシャス奈良",
+    "number": 24,
+    "name_ja": "本多 純平",
+    "name_en": "Jumpei Honda",
+    "height_cm": 190,
+    "player_id": "8558",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8558"
+  },
+  {
+    "team_id": "719",
+    "team_name": "バンビシャス奈良",
+    "number": 29,
+    "name_ja": "間山 柊",
+    "name_en": "Shu Mayama",
+    "height_cm": 195,
+    "player_id": "51000484",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000484"
+  },
+  {
+    "team_id": "719",
+    "team_name": "バンビシャス奈良",
+    "number": 88,
+    "name_ja": "中谷 衿夢",
+    "name_en": "Erimu Nakatani",
+    "height_cm": 178,
+    "player_id": "51000377",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000377"
+  },
+  {
+    "team_id": "719",
+    "team_name": "バンビシャス奈良",
+    "number": 0,
+    "name_ja": "小林 遥太",
+    "name_en": "Ryota Kobayashi",
+    "height_cm": 178,
+    "player_id": "8462",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8462"
+  },
+  {
+    "team_id": "720",
+    "team_name": "島根スサノオマジック",
+    "number": 1,
+    "name_ja": "コティ・クラーク",
+    "name_en": "Coty Clarke",
+    "height_cm": 201,
+    "player_id": "5100000048",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000048"
+  },
+  {
+    "team_id": "720",
+    "team_name": "島根スサノオマジック",
+    "number": 2,
+    "name_ja": "金山 颯",
+    "name_en": "Hayate Kanayama",
+    "height_cm": 179,
+    "player_id": "51000584",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000584"
+  },
+  {
+    "team_id": "720",
+    "team_name": "島根スサノオマジック",
+    "number": 4,
+    "name_ja": "ニック・ケイ",
+    "name_en": "Nick Kay",
+    "height_cm": 206,
+    "player_id": "5100000088",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000088"
+  },
+  {
+    "team_id": "720",
+    "team_name": "島根スサノオマジック",
+    "number": 6,
+    "name_ja": "北川 弘",
+    "name_en": "Hiromu Kitagawa",
+    "height_cm": 183,
+    "player_id": "8532",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8532"
+  },
+  {
+    "team_id": "720",
+    "team_name": "島根スサノオマジック",
+    "number": 7,
+    "name_ja": "介川 アンソニー翔",
+    "name_en": "Anthony ShoSukegawa",
+    "height_cm": 197,
+    "player_id": "51000458",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000458"
+  },
+  {
+    "team_id": "720",
+    "team_name": "島根スサノオマジック",
+    "number": 11,
+    "name_ja": "中村 太地",
+    "name_en": "Taichi Nakamura",
+    "height_cm": 190,
+    "player_id": "10821",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=10821"
+  },
+  {
+    "team_id": "720",
+    "team_name": "島根スサノオマジック",
+    "number": 14,
+    "name_ja": "ジェームズ・マイケル・マカドゥ",
+    "name_en": "James MichaelMcAdoo",
+    "height_cm": 206,
+    "player_id": "32992",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=32992"
+  },
+  {
+    "team_id": "720",
+    "team_name": "島根スサノオマジック",
+    "number": 15,
+    "name_ja": "白濱 僚祐",
+    "name_en": "Ryosuke Shirahama",
+    "height_cm": 189,
+    "player_id": "8734",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8734"
+  },
+  {
+    "team_id": "720",
+    "team_name": "島根スサノオマジック",
+    "number": 17,
+    "name_ja": "横地 聖真",
+    "name_en": "Seishin Yokochi",
+    "height_cm": 192,
+    "player_id": "51000132",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000132"
+  },
+  {
+    "team_id": "720",
+    "team_name": "島根スサノオマジック",
+    "number": 20,
+    "name_ja": "上田 隼輔",
+    "name_en": "Shunsuke Ueda",
+    "height_cm": 188,
+    "player_id": "51000137",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000137"
+  },
+  {
+    "team_id": "720",
+    "team_name": "島根スサノオマジック",
+    "number": 21,
+    "name_ja": "納見 悠仁",
+    "name_en": "Yuto Nohmi",
+    "height_cm": 182,
+    "player_id": "30399",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30399"
+  },
+  {
+    "team_id": "720",
+    "team_name": "島根スサノオマジック",
+    "number": 22,
+    "name_ja": "飯尾 文哉",
+    "name_en": "Fumiya Iio",
+    "height_cm": 187,
+    "player_id": "51000113",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000113"
+  },
+  {
+    "team_id": "720",
+    "team_name": "島根スサノオマジック",
+    "number": 24,
+    "name_ja": "岡本 飛竜",
+    "name_en": "Hiryu Okamoto",
+    "height_cm": 170,
+    "player_id": "8839",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8839"
+  },
+  {
+    "team_id": "720",
+    "team_name": "島根スサノオマジック",
+    "number": 25,
+    "name_ja": "ダマ ムッサ",
+    "name_en": "Muusa Dama",
+    "height_cm": 207,
+    "player_id": "27048",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=27048"
+  },
+  {
+    "team_id": "720",
+    "team_name": "島根スサノオマジック",
+    "number": 77,
+    "name_ja": "岡田 侑大",
+    "name_en": "Yuta Okada",
+    "height_cm": 189,
+    "player_id": "18475",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=18475"
+  },
+  {
+    "team_id": "721",
+    "team_name": "広島ドラゴンフライズ",
+    "number": 1,
+    "name_ja": "市川 真人",
+    "name_en": "Masato Ichikawa",
+    "height_cm": 206,
+    "player_id": "51000307",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000307"
+  },
+  {
+    "team_id": "721",
+    "team_name": "広島ドラゴンフライズ",
+    "number": 3,
+    "name_ja": "伊藤 達哉",
+    "name_en": "Tatsuya Ito",
+    "height_cm": 173,
+    "player_id": "10849",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=10849"
+  },
+  {
+    "team_id": "721",
+    "team_name": "広島ドラゴンフライズ",
+    "number": 4,
+    "name_ja": "ロバーツ ケイン",
+    "name_en": "Kaine Roberts",
+    "height_cm": 187,
+    "player_id": "33040",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=33040"
+  },
+  {
+    "team_id": "721",
+    "team_name": "広島ドラゴンフライズ",
+    "number": 8,
+    "name_ja": "クリストファー・スミス",
+    "name_en": "Christopher Smith",
+    "height_cm": 193,
+    "player_id": "5100000055",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000055"
+  },
+  {
+    "team_id": "721",
+    "team_name": "広島ドラゴンフライズ",
+    "number": 10,
+    "name_ja": "上澤 俊喜",
+    "name_en": "Toshiki Kamisawa",
+    "height_cm": 176,
+    "player_id": "5100000039",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000039"
+  },
+  {
+    "team_id": "721",
+    "team_name": "広島ドラゴンフライズ",
+    "number": 13,
+    "name_ja": "ドウェイン・エバンス",
+    "name_en": "DwayneEvans II",
+    "height_cm": 201,
+    "player_id": "33097",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=33097"
+  },
+  {
+    "team_id": "721",
+    "team_name": "広島ドラゴンフライズ",
+    "number": 14,
+    "name_ja": "佐古 竜誠",
+    "name_en": "Ryusei Sako",
+    "height_cm": 178,
+    "player_id": "51000589",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000589"
+  },
+  {
+    "team_id": "721",
+    "team_name": "広島ドラゴンフライズ",
+    "number": 21,
+    "name_ja": "渡部 琉",
+    "name_en": "Ryu Watanabe",
+    "height_cm": 193,
+    "player_id": "5100000035",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000035"
+  },
+  {
+    "team_id": "721",
+    "team_name": "広島ドラゴンフライズ",
+    "number": 23,
+    "name_ja": "コフィ・コーバーン",
+    "name_en": "Kofi Cockburn",
+    "height_cm": 211,
+    "player_id": "51000216",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000216"
+  },
+  {
+    "team_id": "721",
+    "team_name": "広島ドラゴンフライズ",
+    "number": 24,
+    "name_ja": "メイヨ ニック",
+    "name_en": "Nick Mayo",
+    "height_cm": 206,
+    "player_id": "26890",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=26890"
+  },
+  {
+    "team_id": "721",
+    "team_name": "広島ドラゴンフライズ",
+    "number": 30,
+    "name_ja": "山崎 稜",
+    "name_en": "Ryo Yamazaki",
+    "height_cm": 183,
+    "player_id": "8504",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8504"
+  },
+  {
+    "team_id": "721",
+    "team_name": "広島ドラゴンフライズ",
+    "number": 32,
+    "name_ja": "晴山 ケビン",
+    "name_en": "Kevin Hareyama",
+    "height_cm": 191,
+    "player_id": "8483",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8483"
+  },
+  {
+    "team_id": "721",
+    "team_name": "広島ドラゴンフライズ",
+    "number": 34,
+    "name_ja": "三谷 桂司朗",
+    "name_en": "Keijiro Mitani",
+    "height_cm": 192,
+    "player_id": "30396",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30396"
+  },
+  {
+    "team_id": "721",
+    "team_name": "広島ドラゴンフライズ",
+    "number": 88,
+    "name_ja": "佐藤 涼成",
+    "name_en": "Ryosei Sato",
+    "height_cm": 175,
+    "player_id": "51000447",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000447"
+  },
+  {
+    "team_id": "721",
+    "team_name": "広島ドラゴンフライズ",
+    "number": 0,
+    "name_ja": "小寺 ハミルトンゲイリー",
+    "name_en": "Hamiltongary Kotera",
+    "height_cm": 206,
+    "player_id": "9456",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=9456"
+  },
+  {
+    "team_id": "721",
+    "team_name": "広島ドラゴンフライズ",
+    "number": 0,
+    "name_ja": "寺嶋 良",
+    "name_en": "Ryo Terashima",
+    "height_cm": 175,
+    "player_id": "30400",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30400"
+  },
+  {
+    "team_id": "723",
+    "team_name": "愛媛オレンジバイキングス",
+    "number": 1,
+    "name_ja": "林 瑛司",
+    "name_en": "Eiji Hayashi",
+    "height_cm": 188,
+    "player_id": "20004",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=20004"
+  },
+  {
+    "team_id": "723",
+    "team_name": "愛媛オレンジバイキングス",
+    "number": 2,
+    "name_ja": "古野 拓巳",
+    "name_en": "Takumi Furuno",
+    "height_cm": 178,
+    "player_id": "9348",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=9348"
+  },
+  {
+    "team_id": "723",
+    "team_name": "愛媛オレンジバイキングス",
+    "number": 3,
+    "name_ja": "マイケル・パーカー",
+    "name_en": "Michael Parker",
+    "height_cm": 200,
+    "player_id": "8579",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8579"
+  },
+  {
+    "team_id": "723",
+    "team_name": "愛媛オレンジバイキングス",
+    "number": 6,
+    "name_ja": "平 凌輝",
+    "name_en": "Ryoki Taira",
+    "height_cm": 188,
+    "player_id": "51000434",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000434"
+  },
+  {
+    "team_id": "723",
+    "team_name": "愛媛オレンジバイキングス",
+    "number": 13,
+    "name_ja": "俊野 佳彦",
+    "name_en": "Yoshihiko Toshino",
+    "height_cm": 188,
+    "player_id": "8599",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8599"
+  },
+  {
+    "team_id": "723",
+    "team_name": "愛媛オレンジバイキングス",
+    "number": 16,
+    "name_ja": "マット・ハームス",
+    "name_en": "Matt Haarms",
+    "height_cm": 221,
+    "player_id": "51000411",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000411"
+  },
+  {
+    "team_id": "723",
+    "team_name": "愛媛オレンジバイキングス",
+    "number": 17,
+    "name_ja": "武内 理貴",
+    "name_en": "Riki Takeuchi",
+    "height_cm": 181,
+    "player_id": "51000230",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000230"
+  },
+  {
+    "team_id": "723",
+    "team_name": "愛媛オレンジバイキングス",
+    "number": 20,
+    "name_ja": "原田 大和",
+    "name_en": "Yamato Harada",
+    "height_cm": 184,
+    "player_id": "51000366",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000366"
+  },
+  {
+    "team_id": "723",
+    "team_name": "愛媛オレンジバイキングス",
+    "number": 21,
+    "name_ja": "伊藤 良太",
+    "name_en": "Ryota Ito",
+    "height_cm": 177,
+    "player_id": "9234",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=9234"
+  },
+  {
+    "team_id": "723",
+    "team_name": "愛媛オレンジバイキングス",
+    "number": 44,
+    "name_ja": "シャキール・ハインズ",
+    "name_en": "Shaquille Hines",
+    "height_cm": 201,
+    "player_id": "5100000050",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000050"
+  },
+  {
+    "team_id": "723",
+    "team_name": "愛媛オレンジバイキングス",
+    "number": 50,
+    "name_ja": "ミッチェル・ワット",
+    "name_en": "Mitchell Watt",
+    "height_cm": 208,
+    "player_id": "51000432",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000432"
+  },
+  {
+    "team_id": "723",
+    "team_name": "愛媛オレンジバイキングス",
+    "number": 65,
+    "name_ja": "玉木 祥護",
+    "name_en": "Shogo Tamaki",
+    "height_cm": 195,
+    "player_id": "20003",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=20003"
+  },
+  {
+    "team_id": "723",
+    "team_name": "愛媛オレンジバイキングス",
+    "number": 0,
+    "name_ja": "奥田 雄伍",
+    "name_en": "Yugo Okuda",
+    "height_cm": 176,
+    "player_id": "30350",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30350"
+  },
+  {
+    "team_id": "724",
+    "team_name": "熊本ヴォルターズ",
+    "number": 1,
+    "name_ja": "ラウリー・アルキンズ",
+    "name_en": "Rawle Alkins",
+    "height_cm": 196,
+    "player_id": "51000515",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000515"
+  },
+  {
+    "team_id": "724",
+    "team_name": "熊本ヴォルターズ",
+    "number": 2,
+    "name_ja": "田中 力",
+    "name_en": "Chikara Tanaka",
+    "height_cm": 186,
+    "player_id": "51000331",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000331"
+  },
+  {
+    "team_id": "724",
+    "team_name": "熊本ヴォルターズ",
+    "number": 3,
+    "name_ja": "山本 翔太",
+    "name_en": "Shota Yamamoto",
+    "height_cm": 188,
+    "player_id": "51000156",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000156"
+  },
+  {
+    "team_id": "724",
+    "team_name": "熊本ヴォルターズ",
+    "number": 5,
+    "name_ja": "磯野 寛晃",
+    "name_en": "Hiroaki Isono",
+    "height_cm": 186,
+    "player_id": "30462",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30462"
+  },
+  {
+    "team_id": "724",
+    "team_name": "熊本ヴォルターズ",
+    "number": 11,
+    "name_ja": "石川 海斗",
+    "name_en": "Kaito Ishikawa",
+    "height_cm": 170,
+    "player_id": "8722",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8722"
+  },
+  {
+    "team_id": "724",
+    "team_name": "熊本ヴォルターズ",
+    "number": 12,
+    "name_ja": "保坂 晃毅",
+    "name_en": "Koki Hosaka",
+    "height_cm": 181,
+    "player_id": "51000450",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000450"
+  },
+  {
+    "team_id": "724",
+    "team_name": "熊本ヴォルターズ",
+    "number": 13,
+    "name_ja": "長島 蓮",
+    "name_en": "Ren Nagashima",
+    "height_cm": 177,
+    "player_id": "22395",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=22395"
+  },
+  {
+    "team_id": "724",
+    "team_name": "熊本ヴォルターズ",
+    "number": 15,
+    "name_ja": "モッチ ラミン",
+    "name_en": "Lamine Mbodj",
+    "height_cm": 202,
+    "player_id": "30405",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30405"
+  },
+  {
+    "team_id": "724",
+    "team_name": "熊本ヴォルターズ",
+    "number": 16,
+    "name_ja": "西田 公陽",
+    "name_en": "Koyo Nishida",
+    "height_cm": 184,
+    "player_id": "51000362",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000362"
+  },
+  {
+    "team_id": "724",
+    "team_name": "熊本ヴォルターズ",
+    "number": 17,
+    "name_ja": "澤邉 圭太",
+    "name_en": "Keita Sawabe",
+    "height_cm": 185,
+    "player_id": "10263",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=10263"
+  },
+  {
+    "team_id": "724",
+    "team_name": "熊本ヴォルターズ",
+    "number": 31,
+    "name_ja": "山田 安斗夢",
+    "name_en": "Atomu Yamada",
+    "height_cm": 181,
+    "player_id": "9399",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=9399"
+  },
+  {
+    "team_id": "724",
+    "team_name": "熊本ヴォルターズ",
+    "number": 44,
+    "name_ja": "ミッチェル・ライトフット",
+    "name_en": "Mitchell Lightfoot",
+    "height_cm": 203,
+    "player_id": "51000426",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000426"
+  },
+  {
+    "team_id": "724",
+    "team_name": "熊本ヴォルターズ",
+    "number": 88,
+    "name_ja": "グレゴリー・エチェニケ",
+    "name_en": "Gregory Echenique",
+    "height_cm": 208,
+    "player_id": "18432",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=18432"
+  },
+  {
+    "team_id": "725",
+    "team_name": "鹿児島レブナイズ",
+    "number": 1,
+    "name_ja": "ナイム・ラバイ",
+    "name_en": "Naim Rabay",
+    "height_cm": 203,
+    "player_id": "51000504",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000504"
+  },
+  {
+    "team_id": "725",
+    "team_name": "鹿児島レブナイズ",
+    "number": 2,
+    "name_ja": "パトリック・アウダ",
+    "name_en": "Patrik Auda",
+    "height_cm": 204,
+    "player_id": "33035",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=33035"
+  },
+  {
+    "team_id": "725",
+    "team_name": "鹿児島レブナイズ",
+    "number": 5,
+    "name_ja": "佐藤 星来",
+    "name_en": "Sera Sato",
+    "height_cm": 173,
+    "player_id": "51000436",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000436"
+  },
+  {
+    "team_id": "725",
+    "team_name": "鹿児島レブナイズ",
+    "number": 7,
+    "name_ja": "飴谷 由毅",
+    "name_en": "Yoshiki Ametani",
+    "height_cm": 193,
+    "player_id": "30404",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30404"
+  },
+  {
+    "team_id": "725",
+    "team_name": "鹿児島レブナイズ",
+    "number": 9,
+    "name_ja": "藤本 巧太",
+    "name_en": "Kota Fujimoto",
+    "height_cm": 175,
+    "player_id": "5100000010",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000010"
+  },
+  {
+    "team_id": "725",
+    "team_name": "鹿児島レブナイズ",
+    "number": 10,
+    "name_ja": "駒水 大雅 ジャック",
+    "name_en": "Taiga JackKomamizu",
+    "height_cm": 200,
+    "player_id": "32983",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=32983"
+  },
+  {
+    "team_id": "725",
+    "team_name": "鹿児島レブナイズ",
+    "number": 12,
+    "name_ja": "藤田 浩司",
+    "name_en": "Hiroshi Fujita",
+    "height_cm": 190,
+    "player_id": "9402",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=9402"
+  },
+  {
+    "team_id": "725",
+    "team_name": "鹿児島レブナイズ",
+    "number": 14,
+    "name_ja": "兒玉 貴通",
+    "name_en": "Takayuki Kodama",
+    "height_cm": 166,
+    "player_id": "9218",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=9218"
+  },
+  {
+    "team_id": "725",
+    "team_name": "鹿児島レブナイズ",
+    "number": 20,
+    "name_ja": "多田 武史",
+    "name_en": "Takeshi Tada",
+    "height_cm": 186,
+    "player_id": "30457",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30457"
+  },
+  {
+    "team_id": "725",
+    "team_name": "鹿児島レブナイズ",
+    "number": 22,
+    "name_ja": "ジョシュ・シャーマ",
+    "name_en": "Josh Sharma",
+    "height_cm": 211,
+    "player_id": "51000493",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000493"
+  },
+  {
+    "team_id": "725",
+    "team_name": "鹿児島レブナイズ",
+    "number": 23,
+    "name_ja": "アンソニー・ゲインズ・ジュニア",
+    "name_en": "AnthonyGaines Jr.",
+    "height_cm": 193,
+    "player_id": "36799",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=36799"
+  },
+  {
+    "team_id": "725",
+    "team_name": "鹿児島レブナイズ",
+    "number": 31,
+    "name_ja": "松野 遥弥",
+    "name_en": "Haruya Matsuno",
+    "height_cm": 190,
+    "player_id": "51000563",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000563"
+  },
+  {
+    "team_id": "725",
+    "team_name": "鹿児島レブナイズ",
+    "number": 32,
+    "name_ja": "武藤 修平",
+    "name_en": "Shuhei Muto",
+    "height_cm": 192,
+    "player_id": "8526",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8526"
+  },
+  {
+    "team_id": "725",
+    "team_name": "鹿児島レブナイズ",
+    "number": 33,
+    "name_ja": "三森 啓右",
+    "name_en": "Keisuke Mimori",
+    "height_cm": 203,
+    "player_id": "5100000037",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000037"
+  },
+  {
+    "team_id": "725",
+    "team_name": "鹿児島レブナイズ",
+    "number": 34,
+    "name_ja": "遠藤 善",
+    "name_en": "Zen Endo",
+    "height_cm": 183,
+    "player_id": "5100000044",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000044"
+  },
+  {
+    "team_id": "725",
+    "team_name": "鹿児島レブナイズ",
+    "number": 0,
+    "name_ja": "井上 大道",
+    "name_en": "Hiromichi Inoue",
+    "height_cm": 180,
+    "player_id": "51000485",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000485"
+  },
+  {
+    "team_id": "726",
+    "team_name": "サンロッカーズ渋谷",
+    "number": 1,
+    "name_ja": "ドンテ・グランタム",
+    "name_en": "Donte Grantham",
+    "height_cm": 203,
+    "player_id": "51000496",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000496"
+  },
+  {
+    "team_id": "726",
+    "team_name": "サンロッカーズ渋谷",
+    "number": 3,
+    "name_ja": "ジャン・ローレンス・ハーパージュニア",
+    "name_en": "John LawrenceHarper Jr.",
+    "height_cm": 181,
+    "player_id": "5100000034",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000034"
+  },
+  {
+    "team_id": "726",
+    "team_name": "サンロッカーズ渋谷",
+    "number": 4,
+    "name_ja": "トロイ・マーフィージュニア",
+    "name_en": "TroyMurphy Jr.",
+    "height_cm": 193,
+    "player_id": "51000180",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000180"
+  },
+  {
+    "team_id": "726",
+    "team_name": "サンロッカーズ渋谷",
+    "number": 7,
+    "name_ja": "アンドリュー・ランダル",
+    "name_en": "Andrew Randall",
+    "height_cm": 198,
+    "player_id": "10834",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=10834"
+  },
+  {
+    "team_id": "726",
+    "team_name": "サンロッカーズ渋谷",
+    "number": 8,
+    "name_ja": "ジョシュ・ホーキンソン",
+    "name_en": "Josh Hawkinson",
+    "height_cm": 208,
+    "player_id": "12598",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=12598"
+  },
+  {
+    "team_id": "726",
+    "team_name": "サンロッカーズ渋谷",
+    "number": 9,
+    "name_ja": "ベンドラメ 礼生",
+    "name_en": "Leo Vendrame",
+    "height_cm": 183,
+    "player_id": "8447",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8447"
+  },
+  {
+    "team_id": "726",
+    "team_name": "サンロッカーズ渋谷",
+    "number": 12,
+    "name_ja": "野﨑 零也",
+    "name_en": "Reiya Nozaki",
+    "height_cm": 185,
+    "player_id": "15853",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=15853"
+  },
+  {
+    "team_id": "726",
+    "team_name": "サンロッカーズ渋谷",
+    "number": 13,
+    "name_ja": "田中 大貴",
+    "name_en": "Daiki Tanaka",
+    "height_cm": 193,
+    "player_id": "9037",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=9037"
+  },
+  {
+    "team_id": "726",
+    "team_name": "サンロッカーズ渋谷",
+    "number": 14,
+    "name_ja": "狩野 富成",
+    "name_en": "Toyoshige Kano",
+    "height_cm": 206,
+    "player_id": "42616",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=42616"
+  },
+  {
+    "team_id": "726",
+    "team_name": "サンロッカーズ渋谷",
+    "number": 18,
+    "name_ja": "大庭 圭太郎",
+    "name_en": "Keitaro Ohba",
+    "height_cm": 173,
+    "player_id": "51000311",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000311"
+  },
+  {
+    "team_id": "726",
+    "team_name": "サンロッカーズ渋谷",
+    "number": 32,
+    "name_ja": "山内 盛久",
+    "name_en": "Morihisa Yamauchi",
+    "height_cm": 175,
+    "player_id": "8658",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8658"
+  },
+  {
+    "team_id": "726",
+    "team_name": "サンロッカーズ渋谷",
+    "number": 40,
+    "name_ja": "トーマス・ウェルシュ",
+    "name_en": "Thomas Welsh",
+    "height_cm": 213,
+    "player_id": "51000171",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000171"
+  },
+  {
+    "team_id": "726",
+    "team_name": "サンロッカーズ渋谷",
+    "number": 43,
+    "name_ja": "永吉 佑也",
+    "name_en": "Yuya Nagayoshi",
+    "height_cm": 198,
+    "player_id": "8493",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8493"
+  },
+  {
+    "team_id": "726",
+    "team_name": "サンロッカーズ渋谷",
+    "number": 77,
+    "name_ja": "大森 康瑛",
+    "name_en": "Kouei Omori",
+    "height_cm": 194,
+    "player_id": "55000162",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=55000162"
+  },
+  {
+    "team_id": "726",
+    "team_name": "サンロッカーズ渋谷",
+    "number": 0,
+    "name_ja": "ディディ・ロウザダ",
+    "name_en": "Didi Louzada",
+    "height_cm": 196,
+    "player_id": "51000497",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000497"
+  },
+  {
+    "team_id": "727",
+    "team_name": "川崎ブレイブサンダース",
+    "number": 1,
+    "name_ja": "オマール・ジャマレディン",
+    "name_en": "Omar Jamaleddine",
+    "height_cm": 194,
+    "player_id": "51000513",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000513"
+  },
+  {
+    "team_id": "727",
+    "team_name": "川崎ブレイブサンダース",
+    "number": 2,
+    "name_ja": "伊久江 ロイ英輝",
+    "name_en": "Roy HidekiIgwe",
+    "height_cm": 201,
+    "player_id": "51000491",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000491"
+  },
+  {
+    "team_id": "727",
+    "team_name": "川崎ブレイブサンダース",
+    "number": 3,
+    "name_ja": "水野 幹太",
+    "name_en": "Kanta Mizuno",
+    "height_cm": 185,
+    "player_id": "10852",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=10852"
+  },
+  {
+    "team_id": "727",
+    "team_name": "川崎ブレイブサンダース",
+    "number": 5,
+    "name_ja": "エマニュエル・テリー",
+    "name_en": "Emanuel Terry",
+    "height_cm": 206,
+    "player_id": "51000510",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000510"
+  },
+  {
+    "team_id": "727",
+    "team_name": "川崎ブレイブサンダース",
+    "number": 7,
+    "name_ja": "篠山 竜青",
+    "name_en": "Ryusei Shinoyama",
+    "height_cm": 178,
+    "player_id": "8484",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8484"
+  },
+  {
+    "team_id": "727",
+    "team_name": "川崎ブレイブサンダース",
+    "number": 10,
+    "name_ja": "野本 建吾",
+    "name_en": "Kengo Nomoto",
+    "height_cm": 201,
+    "player_id": "8486",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8486"
+  },
+  {
+    "team_id": "727",
+    "team_name": "川崎ブレイブサンダース",
+    "number": 11,
+    "name_ja": "米須 玲音",
+    "name_en": "Reoto Yonesu",
+    "height_cm": 177,
+    "player_id": "5100000022",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000022"
+  },
+  {
+    "team_id": "727",
+    "team_name": "川崎ブレイブサンダース",
+    "number": 13,
+    "name_ja": "津山 尚大",
+    "name_en": "Shota Tsuyama",
+    "height_cm": 180,
+    "player_id": "8654",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8654"
+  },
+  {
+    "team_id": "727",
+    "team_name": "川崎ブレイブサンダース",
+    "number": 14,
+    "name_ja": "ドゥシャン・リスティッチ",
+    "name_en": "Dušan Ristić",
+    "height_cm": 212,
+    "player_id": "51000494",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000494"
+  },
+  {
+    "team_id": "727",
+    "team_name": "川崎ブレイブサンダース",
+    "number": 17,
+    "name_ja": "飯田 遼",
+    "name_en": "Ryo Iida",
+    "height_cm": 185,
+    "player_id": "15826",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=15826"
+  },
+  {
+    "team_id": "727",
+    "team_name": "川崎ブレイブサンダース",
+    "number": 25,
+    "name_ja": "ロスコ・アレン",
+    "name_en": "Rosco Allen",
+    "height_cm": 208,
+    "player_id": "18433",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=18433"
+  },
+  {
+    "team_id": "727",
+    "team_name": "川崎ブレイブサンダース",
+    "number": 33,
+    "name_ja": "長谷川 技",
+    "name_en": "Takumi Hasegawa",
+    "height_cm": 190,
+    "player_id": "8492",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8492"
+  },
+  {
+    "team_id": "727",
+    "team_name": "川崎ブレイブサンダース",
+    "number": 45,
+    "name_ja": "山内 ジャヘル琉人",
+    "name_en": "Jaheru RyutoYamauchi",
+    "height_cm": 190,
+    "player_id": "51000441",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000441"
+  },
+  {
+    "team_id": "727",
+    "team_name": "川崎ブレイブサンダース",
+    "number": 55,
+    "name_ja": "岡田 大河",
+    "name_en": "Taiga Okada",
+    "height_cm": 174,
+    "player_id": "51000554",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000554"
+  },
+  {
+    "team_id": "727",
+    "team_name": "川崎ブレイブサンダース",
+    "number": 60,
+    "name_ja": "武藤 俊太朗",
+    "name_en": "Shuntaro Buto",
+    "height_cm": 190,
+    "player_id": "51000240",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000240"
+  },
+  {
+    "team_id": "728",
+    "team_name": "シーホース三河",
+    "number": 1,
+    "name_ja": "トーマス・ケネディ",
+    "name_en": "Thomas Kennedy",
+    "height_cm": 201,
+    "player_id": "8608",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8608"
+  },
+  {
+    "team_id": "728",
+    "team_name": "シーホース三河",
+    "number": 5,
+    "name_ja": "元澤 誠",
+    "name_en": "Sei Motozawa",
+    "height_cm": 184,
+    "player_id": "42537",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=42537"
+  },
+  {
+    "team_id": "728",
+    "team_name": "シーホース三河",
+    "number": 7,
+    "name_ja": "長野 誠史",
+    "name_en": "Satoshi Nagano",
+    "height_cm": 175,
+    "player_id": "18399",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=18399"
+  },
+  {
+    "team_id": "728",
+    "team_name": "シーホース三河",
+    "number": 9,
+    "name_ja": "平 寿哉",
+    "name_en": "Toshiya Taira",
+    "height_cm": 176,
+    "player_id": "51000389",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000389"
+  },
+  {
+    "team_id": "728",
+    "team_name": "シーホース三河",
+    "number": 10,
+    "name_ja": "ジェイク・レイマン",
+    "name_en": "Jake Layman",
+    "height_cm": 206,
+    "player_id": "51000313",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000313"
+  },
+  {
+    "team_id": "728",
+    "team_name": "シーホース三河",
+    "number": 11,
+    "name_ja": "久保田 義章",
+    "name_en": "Yoshiaki Kubota",
+    "height_cm": 175,
+    "player_id": "30469",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30469"
+  },
+  {
+    "team_id": "728",
+    "team_name": "シーホース三河",
+    "number": 13,
+    "name_ja": "須田 侑太郎",
+    "name_en": "Yutaro Suda",
+    "height_cm": 190,
+    "player_id": "8494",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8494"
+  },
+  {
+    "team_id": "728",
+    "team_name": "シーホース三河",
+    "number": 18,
+    "name_ja": "角野 亮伍",
+    "name_en": "Ryogo Sumino",
+    "height_cm": 192,
+    "player_id": "32982",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=32982"
+  },
+  {
+    "team_id": "728",
+    "team_name": "シーホース三河",
+    "number": 19,
+    "name_ja": "西田 優大",
+    "name_en": "Yudai Nishida",
+    "height_cm": 190,
+    "player_id": "30403",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30403"
+  },
+  {
+    "team_id": "728",
+    "team_name": "シーホース三河",
+    "number": 27,
+    "name_ja": "石井 講祐",
+    "name_en": "Kosuke Ishii",
+    "height_cm": 182,
+    "player_id": "8583",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8583"
+  },
+  {
+    "team_id": "728",
+    "team_name": "シーホース三河",
+    "number": 30,
+    "name_ja": "アーロン・ホワイト",
+    "name_en": "Aaron White",
+    "height_cm": 206,
+    "player_id": "51000297",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000297"
+  },
+  {
+    "team_id": "728",
+    "team_name": "シーホース三河",
+    "number": 32,
+    "name_ja": "シェーファー アヴィ幸樹",
+    "name_en": "Avi KokiSchafer",
+    "height_cm": 206,
+    "player_id": "19956",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=19956"
+  },
+  {
+    "team_id": "728",
+    "team_name": "シーホース三河",
+    "number": 54,
+    "name_ja": "ダバンテ・ガードナー",
+    "name_en": "Davante Gardner",
+    "height_cm": 203,
+    "player_id": "9040",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=9040"
+  },
+  {
+    "team_id": "729",
+    "team_name": "名古屋ダイヤモンドドルフィンズ",
+    "number": 2,
+    "name_ja": "齋藤 拓実",
+    "name_en": "Takumi Saito",
+    "height_cm": 172,
+    "player_id": "14301",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=14301"
+  },
+  {
+    "team_id": "729",
+    "team_name": "名古屋ダイヤモンドドルフィンズ",
+    "number": 3,
+    "name_ja": "加藤 嵩都",
+    "name_en": "Taketo Kato",
+    "height_cm": 178,
+    "player_id": "51000119",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000119"
+  },
+  {
+    "team_id": "729",
+    "team_name": "名古屋ダイヤモンドドルフィンズ",
+    "number": 4,
+    "name_ja": "小澤 飛悠",
+    "name_en": "Hiyuu Ozawa",
+    "height_cm": 190,
+    "player_id": "51000498",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000498"
+  },
+  {
+    "team_id": "729",
+    "team_name": "名古屋ダイヤモンドドルフィンズ",
+    "number": 5,
+    "name_ja": "アイザイア・マーフィー",
+    "name_en": "Isaiah Murphy",
+    "height_cm": 196,
+    "player_id": "32995",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=32995"
+  },
+  {
+    "team_id": "729",
+    "team_name": "名古屋ダイヤモンドドルフィンズ",
+    "number": 7,
+    "name_ja": "今西 優斗",
+    "name_en": "Yuto Imanishi",
+    "height_cm": 180,
+    "player_id": "51000222",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000222"
+  },
+  {
+    "team_id": "729",
+    "team_name": "名古屋ダイヤモンドドルフィンズ",
+    "number": 8,
+    "name_ja": "張本 天傑",
+    "name_en": "Tenketsu Harimoto",
+    "height_cm": 198,
+    "player_id": "8738",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8738"
+  },
+  {
+    "team_id": "729",
+    "team_name": "名古屋ダイヤモンドドルフィンズ",
+    "number": 11,
+    "name_ja": "アーロン・ヘンリー",
+    "name_en": "Aaron Henry",
+    "height_cm": 198,
+    "player_id": "51000268",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000268"
+  },
+  {
+    "team_id": "729",
+    "team_name": "名古屋ダイヤモンドドルフィンズ",
+    "number": 12,
+    "name_ja": "中東 泰斗",
+    "name_en": "Taito Nakahigashi",
+    "height_cm": 191,
+    "player_id": "8516",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8516"
+  },
+  {
+    "team_id": "729",
+    "team_name": "名古屋ダイヤモンドドルフィンズ",
+    "number": 14,
+    "name_ja": "佐藤 卓磨",
+    "name_en": "Takuma Sato",
+    "height_cm": 197,
+    "player_id": "15811",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=15811"
+  },
+  {
+    "team_id": "729",
+    "team_name": "名古屋ダイヤモンドドルフィンズ",
+    "number": 15,
+    "name_ja": "アラン・ウィリアムズ",
+    "name_en": "Alan Williams",
+    "height_cm": 203,
+    "player_id": "51000264",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000264"
+  },
+  {
+    "team_id": "729",
+    "team_name": "名古屋ダイヤモンドドルフィンズ",
+    "number": 17,
+    "name_ja": "若野 瑛太",
+    "name_en": "Eita Wakano",
+    "height_cm": 186,
+    "player_id": "51000305",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000305"
+  },
+  {
+    "team_id": "729",
+    "team_name": "名古屋ダイヤモンドドルフィンズ",
+    "number": 23,
+    "name_ja": "ジェイク幸輝・ホルツ",
+    "name_en": "Jake kokiHoltz",
+    "height_cm": 194,
+    "player_id": "51000499",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000499"
+  },
+  {
+    "team_id": "729",
+    "team_name": "名古屋ダイヤモンドドルフィンズ",
+    "number": 27,
+    "name_ja": "春田 結斗",
+    "name_en": "Yuito Haruta",
+    "height_cm": 166,
+    "player_id": "55000968",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=55000968"
+  },
+  {
+    "team_id": "729",
+    "team_name": "名古屋ダイヤモンドドルフィンズ",
+    "number": 30,
+    "name_ja": "今村 佳太",
+    "name_en": "Keita Imamura",
+    "height_cm": 191,
+    "player_id": "14302",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=14302"
+  },
+  {
+    "team_id": "729",
+    "team_name": "名古屋ダイヤモンドドルフィンズ",
+    "number": 34,
+    "name_ja": "カイル・リチャードソン",
+    "name_en": "Kyle Richardson",
+    "height_cm": 198,
+    "player_id": "9435",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=9435"
+  },
+  {
+    "team_id": "729",
+    "team_name": "名古屋ダイヤモンドドルフィンズ",
+    "number": 43,
+    "name_ja": "スコット・エサトン",
+    "name_en": "Scott Eatherton",
+    "height_cm": 208,
+    "player_id": "5100000046",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000046"
+  },
+  {
+    "team_id": "745",
+    "team_name": "越谷アルファーズ",
+    "number": 1,
+    "name_ja": "ジャレル・マーティン",
+    "name_en": "Jarell Martin",
+    "height_cm": 208,
+    "player_id": "51000512",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000512"
+  },
+  {
+    "team_id": "745",
+    "team_name": "越谷アルファーズ",
+    "number": 4,
+    "name_ja": "四家 魁人",
+    "name_en": "Kaito Shike",
+    "height_cm": 175,
+    "player_id": "51000285",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000285"
+  },
+  {
+    "team_id": "745",
+    "team_name": "越谷アルファーズ",
+    "number": 5,
+    "name_ja": "アンソニー・クレモンズ",
+    "name_en": "Anthony Clemmons",
+    "height_cm": 187,
+    "player_id": "51000280",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000280"
+  },
+  {
+    "team_id": "745",
+    "team_name": "越谷アルファーズ",
+    "number": 7,
+    "name_ja": "松山 駿",
+    "name_en": "Shun Matsuyama",
+    "height_cm": 175,
+    "player_id": "20023",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=20023"
+  },
+  {
+    "team_id": "745",
+    "team_name": "越谷アルファーズ",
+    "number": 8,
+    "name_ja": "ジャワラ ジョゼフ",
+    "name_en": "Joseph Diawara",
+    "height_cm": 197,
+    "player_id": "30463",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30463"
+  },
+  {
+    "team_id": "745",
+    "team_name": "越谷アルファーズ",
+    "number": 9,
+    "name_ja": "デイボン・リード",
+    "name_en": "Davon Reed",
+    "height_cm": 198,
+    "player_id": "51000533",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000533"
+  },
+  {
+    "team_id": "745",
+    "team_name": "越谷アルファーズ",
+    "number": 10,
+    "name_ja": "三ツ井 利也",
+    "name_en": "Kazuya Mitsui",
+    "height_cm": 190,
+    "player_id": "10842",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=10842"
+  },
+  {
+    "team_id": "745",
+    "team_name": "越谷アルファーズ",
+    "number": 11,
+    "name_ja": "カイ・ソット",
+    "name_en": "Kai Sotto",
+    "height_cm": 220,
+    "player_id": "51000259",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000259"
+  },
+  {
+    "team_id": "745",
+    "team_name": "越谷アルファーズ",
+    "number": 12,
+    "name_ja": "池田 祐一",
+    "name_en": "Yuichi Ikeda",
+    "height_cm": 183,
+    "player_id": "5100000006",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=5100000006"
+  },
+  {
+    "team_id": "745",
+    "team_name": "越谷アルファーズ",
+    "number": 13,
+    "name_ja": "堀 陽稀",
+    "name_en": "Haruki Hori",
+    "height_cm": 190,
+    "player_id": "51000588",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000588"
+  },
+  {
+    "team_id": "745",
+    "team_name": "越谷アルファーズ",
+    "number": 14,
+    "name_ja": "大庭 岳輝",
+    "name_en": "Takeru Oba",
+    "height_cm": 184,
+    "player_id": "30401",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=30401"
+  },
+  {
+    "team_id": "745",
+    "team_name": "越谷アルファーズ",
+    "number": 18,
+    "name_ja": "鎌田 裕也",
+    "name_en": "Yuya Kamata",
+    "height_cm": 197,
+    "player_id": "8489",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8489"
+  },
+  {
+    "team_id": "745",
+    "team_name": "越谷アルファーズ",
+    "number": 23,
+    "name_ja": "稲田 貫大",
+    "name_en": "Kanta Inada",
+    "height_cm": 174,
+    "player_id": "51000581",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000581"
+  },
+  {
+    "team_id": "745",
+    "team_name": "越谷アルファーズ",
+    "number": 28,
+    "name_ja": "菅原 佳依",
+    "name_en": "Kai Sugawara",
+    "height_cm": 191,
+    "player_id": "51000345",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000345"
+  },
+  {
+    "team_id": "745",
+    "team_name": "越谷アルファーズ",
+    "number": 31,
+    "name_ja": "喜多川 修平",
+    "name_en": "Shuhei Kitagawa",
+    "height_cm": 185,
+    "player_id": "8657",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8657"
+  },
+  {
+    "team_id": "745",
+    "team_name": "越谷アルファーズ",
+    "number": 45,
+    "name_ja": "セクー・ドゥムブヤ",
+    "name_en": "Sekou Doumbouya",
+    "height_cm": 206,
+    "player_id": "51000511",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000511"
+  },
+  {
+    "team_id": "753",
+    "team_name": "ライジングゼファー福岡",
+    "number": 6,
+    "name_ja": "下山 瑛司",
+    "name_en": "Eiji Shimoyama",
+    "height_cm": 169,
+    "player_id": "51000567",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000567"
+  },
+  {
+    "team_id": "753",
+    "team_name": "ライジングゼファー福岡",
+    "number": 7,
+    "name_ja": "西川 貴之",
+    "name_en": "Takanobu Nishikawa",
+    "height_cm": 196,
+    "player_id": "8510",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8510"
+  },
+  {
+    "team_id": "753",
+    "team_name": "ライジングゼファー福岡",
+    "number": 8,
+    "name_ja": "青木 龍史",
+    "name_en": "Ryuji Aoki",
+    "height_cm": 178,
+    "player_id": "26876",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=26876"
+  },
+  {
+    "team_id": "753",
+    "team_name": "ライジングゼファー福岡",
+    "number": 10,
+    "name_ja": "スン スーヤオ",
+    "name_en": "Siyao Sun",
+    "height_cm": 210,
+    "player_id": "51000398",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000398"
+  },
+  {
+    "team_id": "753",
+    "team_name": "ライジングゼファー福岡",
+    "number": 12,
+    "name_ja": "寒竹 隼人",
+    "name_en": "Hayato Kantake",
+    "height_cm": 194,
+    "player_id": "8840",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8840"
+  },
+  {
+    "team_id": "753",
+    "team_name": "ライジングゼファー福岡",
+    "number": 15,
+    "name_ja": "白谷 柱誠 ジャック",
+    "name_en": "Chuson JackShiratani",
+    "height_cm": 194,
+    "player_id": "51000573",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000573"
+  },
+  {
+    "team_id": "753",
+    "team_name": "ライジングゼファー福岡",
+    "number": 20,
+    "name_ja": "中谷 麻登",
+    "name_en": "Mato Nakatani",
+    "height_cm": 177,
+    "player_id": "51000559",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=51000559"
+  },
+  {
+    "team_id": "753",
+    "team_name": "ライジングゼファー福岡",
+    "number": 23,
+    "name_ja": "村上 駿斗",
+    "name_en": "Shunto Murakami",
+    "height_cm": 185,
+    "player_id": "8615",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8615"
+  },
+  {
+    "team_id": "753",
+    "team_name": "ライジングゼファー福岡",
+    "number": 24,
+    "name_ja": "ジャスティン・バーレル",
+    "name_en": "Justin Burrell",
+    "height_cm": 204,
+    "player_id": "9383",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=9383"
+  },
+  {
+    "team_id": "753",
+    "team_name": "ライジングゼファー福岡",
+    "number": 32,
+    "name_ja": "狩野 祐介",
+    "name_en": "Yusuke Karino",
+    "height_cm": 184,
+    "player_id": "8463",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8463"
+  },
+  {
+    "team_id": "753",
+    "team_name": "ライジングゼファー福岡",
+    "number": 33,
+    "name_ja": "加藤 寿一",
+    "name_en": "Toshikazu Kato",
+    "height_cm": 192,
+    "player_id": "8595",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=8595"
+  },
+  {
+    "team_id": "753",
+    "team_name": "ライジングゼファー福岡",
+    "number": 34,
+    "name_ja": "パブロ・アギラール",
+    "name_en": "Pablo Aguilar",
+    "height_cm": 204,
+    "player_id": "32952",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=32952"
+  },
+  {
+    "team_id": "753",
+    "team_name": "ライジングゼファー福岡",
+    "number": 0,
+    "name_ja": "會田 圭佑",
+    "name_en": "Keisuke Aita",
+    "height_cm": 183,
+    "player_id": "10824",
+    "url": "https://www.bleague.jp/roster_detail/?PlayerID=10824"
+  }
+]

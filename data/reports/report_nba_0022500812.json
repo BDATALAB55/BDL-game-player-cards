@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500812",
+  "date": "2026.02.21",
+  "venue": "Smoothie King Center",
+  "attendance": 16426,
+  "home": {
+    "id": "1610612740",
+    "total": {
+      "pts": 126,
+      "fgm": 40,
+      "fga": 81,
+      "f2m": 23,
+      "f2a": 47,
+      "f3m": 17,
+      "f3a": 34,
+      "ftm": 29,
+      "fta": 38,
+      "reb": 57,
+      "oreb": 10,
+      "dreb": 39,
+      "ast": 25,
+      "tov": 14,
+      "stl": 5,
+      "blk": 8,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "1",
+        "name": "ZION WILLIAMSON",
+        "min": "32:48",
+        "pts": 21,
+        "reb": 6,
+        "ast": 8
+      },
+      {
+        "no": "22",
+        "name": "DERIK QUEEN",
+        "min": "20:53",
+        "pts": 10,
+        "reb": 9,
+        "ast": 0
+      },
+      {
+        "no": "6",
+        "name": "DEANDRE JORDAN",
+        "min": "31:30",
+        "pts": 6,
+        "reb": 15,
+        "ast": 0
+      },
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "26:54",
+        "pts": 20,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "HERBERT JONES",
+        "min": "32:08",
+        "pts": 14,
+        "reb": 1,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612755",
+    "total": {
+      "pts": 111,
+      "fgm": 36,
+      "fga": 94,
+      "f2m": 24,
+      "f2a": 48,
+      "f3m": 12,
+      "f3a": 46,
+      "ftm": 27,
+      "fta": 33,
+      "reb": 58,
+      "oreb": 12,
+      "dreb": 35,
+      "ast": 19,
+      "tov": 10,
+      "stl": 10,
+      "blk": 5,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "KELLY OUBRE JR.",
+        "min": "33:17",
+        "pts": 25,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "25",
+        "name": "DOMINICK BARLOW",
+        "min": "28:56",
+        "pts": 9,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "ANDRE DRUMMOND",
+        "min": "21:10",
+        "pts": 5,
+        "reb": 12,
+        "ast": 1
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "35:19",
+        "pts": 14,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "TYRESE MAXEY",
+        "min": "36:13",
+        "pts": 27,
+        "reb": 3,
+        "ast": 7
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500811",
+  "date": "2026.02.21",
+  "venue": "Mortgage Matchup Center",
+  "attendance": 17071,
+  "home": {
+    "id": "1610612756",
+    "total": {
+      "pts": 113,
+      "fgm": 40,
+      "fga": 117,
+      "f2m": 24,
+      "f2a": 62,
+      "f3m": 16,
+      "f3a": 55,
+      "ftm": 17,
+      "fta": 24,
+      "reb": 78,
+      "oreb": 22,
+      "dreb": 43,
+      "ast": 20,
+      "tov": 8,
+      "stl": 11,
+      "blk": 4,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "07:14",
+        "pts": 5,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "45:42",
+        "pts": 6,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "28:27",
+        "pts": 9,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "4",
+        "name": "JALEN GREEN",
+        "min": "36:47",
+        "pts": 16,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "44:51",
+        "pts": 19,
+        "reb": 5,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612753",
+    "total": {
+      "pts": 110,
+      "fgm": 42,
+      "fga": 98,
+      "f2m": 32,
+      "f2a": 59,
+      "f3m": 10,
+      "f3a": 39,
+      "ftm": 16,
+      "fta": 19,
+      "reb": 66,
+      "oreb": 10,
+      "dreb": 43,
+      "ast": 24,
+      "tov": 16,
+      "stl": 6,
+      "blk": 15,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "TRISTAN DA SILVA",
+        "min": "37:33",
+        "pts": 5,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "46:37",
+        "pts": 26,
+        "reb": 14,
+        "ast": 8
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "34:20",
+        "pts": 7,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "39:37",
+        "pts": 34,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "ANTHONY BLACK",
+        "min": "44:53",
+        "pts": 10,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  }
+}

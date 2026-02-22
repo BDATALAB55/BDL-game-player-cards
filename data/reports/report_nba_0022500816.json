@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500816",
+  "date": "2026.02.21",
+  "venue": "Madison Square Garden",
+  "attendance": 19812,
+  "home": {
+    "id": "1610612752",
+    "total": {
+      "pts": 108,
+      "fgm": 42,
+      "fga": 85,
+      "f2m": 32,
+      "f2a": 59,
+      "f3m": 10,
+      "f3a": 26,
+      "ftm": 14,
+      "fta": 16,
+      "reb": 36,
+      "oreb": 8,
+      "dreb": 21,
+      "ast": 26,
+      "tov": 11,
+      "stl": 11,
+      "blk": 0,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "40:18",
+        "pts": 20,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "27:03",
+        "pts": 2,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "34:05",
+        "pts": 25,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "31:27",
+        "pts": 11,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "35:36",
+        "pts": 20,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612745",
+    "total": {
+      "pts": 106,
+      "fgm": 38,
+      "fga": 80,
+      "f2m": 26,
+      "f2a": 49,
+      "f3m": 12,
+      "f3a": 31,
+      "ftm": 18,
+      "fta": 23,
+      "reb": 57,
+      "oreb": 13,
+      "dreb": 31,
+      "ast": 24,
+      "tov": 19,
+      "stl": 5,
+      "blk": 6,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "38:20",
+        "pts": 30,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "35:35",
+        "pts": 21,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "31:24",
+        "pts": 16,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "17",
+        "name": "TARI EASON",
+        "min": "34:43",
+        "pts": 11,
+        "reb": 12,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "41:18",
+        "pts": 12,
+        "reb": 10,
+        "ast": 7
+      }
+    ]
+  }
+}

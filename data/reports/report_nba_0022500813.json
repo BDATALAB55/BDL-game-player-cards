@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500813",
+  "date": "2026.02.21",
+  "venue": "Kaseya Center",
+  "attendance": 19700,
+  "home": {
+    "id": "1610612748",
+    "total": {
+      "pts": 136,
+      "fgm": 49,
+      "fga": 95,
+      "f2m": 36,
+      "f2a": 59,
+      "f3m": 13,
+      "f3a": 36,
+      "ftm": 25,
+      "fta": 33,
+      "reb": 64,
+      "oreb": 17,
+      "dreb": 40,
+      "ast": 36,
+      "tov": 18,
+      "stl": 8,
+      "blk": 5,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "34:59",
+        "pts": 10,
+        "reb": 1,
+        "ast": 5
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "28:53",
+        "pts": 28,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "26:51",
+        "pts": 13,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "25",
+        "name": "KASPARAS JAKUČIONIS",
+        "min": "22:53",
+        "pts": 12,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "26:45",
+        "pts": 25,
+        "reb": 2,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612763",
+    "total": {
+      "pts": 120,
+      "fgm": 45,
+      "fga": 95,
+      "f2m": 30,
+      "f2a": 51,
+      "f3m": 15,
+      "f3a": 44,
+      "ftm": 15,
+      "fta": 22,
+      "reb": 49,
+      "oreb": 9,
+      "dreb": 26,
+      "ast": 31,
+      "tov": 13,
+      "stl": 14,
+      "blk": 7,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "27:05",
+        "pts": 25,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "TY JEROME",
+        "min": "22:21",
+        "pts": 17,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "18",
+        "name": "OLIVIER-MAXENCE PROSPER",
+        "min": "25:46",
+        "pts": 9,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "22",
+        "name": "TAYLOR HENDRICKS",
+        "min": "24:18",
+        "pts": 4,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "4",
+        "name": "WALTER CLAYTON JR.",
+        "min": "25:28",
+        "pts": 9,
+        "reb": 4,
+        "ast": 6
+      }
+    ]
+  }
+}

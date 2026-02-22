@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500815",
+  "date": "2026.02.21",
+  "venue": "Moody Center",
+  "attendance": 16168,
+  "home": {
+    "id": "1610612759",
+    "total": {
+      "pts": 139,
+      "fgm": 52,
+      "fga": 94,
+      "f2m": 39,
+      "f2a": 60,
+      "f3m": 13,
+      "f3a": 34,
+      "ftm": 22,
+      "fta": 28,
+      "reb": 60,
+      "oreb": 12,
+      "dreb": 36,
+      "ast": 32,
+      "tov": 17,
+      "stl": 5,
+      "blk": 7,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "23:48",
+        "pts": 8,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "27:37",
+        "pts": 8,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "29:45",
+        "pts": 28,
+        "reb": 15,
+        "ast": 6
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "27:15",
+        "pts": 18,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "24:30",
+        "pts": 18,
+        "reb": 8,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612758",
+    "total": {
+      "pts": 122,
+      "fgm": 45,
+      "fga": 96,
+      "f2m": 36,
+      "f2a": 64,
+      "f3m": 9,
+      "f3a": 32,
+      "ftm": 23,
+      "fta": 25,
+      "reb": 42,
+      "oreb": 10,
+      "dreb": 25,
+      "ast": 33,
+      "tov": 12,
+      "stl": 11,
+      "blk": 7,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "13",
+        "name": "KEEGAN MURRAY",
+        "min": "35:45",
+        "pts": 20,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "PRECIOUS ACHIUWA",
+        "min": "21:05",
+        "pts": 14,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "26:19",
+        "pts": 16,
+        "reb": 12,
+        "ast": 3
+      },
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "34:44",
+        "pts": 20,
+        "reb": 1,
+        "ast": 5
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "21:16",
+        "pts": 7,
+        "reb": 3,
+        "ast": 2
+      }
+    ]
+  }
+}

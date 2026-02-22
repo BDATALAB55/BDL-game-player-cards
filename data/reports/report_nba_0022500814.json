@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500814",
+  "date": "2026.02.21",
+  "venue": "United Center",
+  "attendance": 21589,
+  "home": {
+    "id": "1610612741",
+    "total": {
+      "pts": 110,
+      "fgm": 38,
+      "fga": 84,
+      "f2m": 21,
+      "f2a": 44,
+      "f3m": 17,
+      "f3a": 40,
+      "ftm": 17,
+      "fta": 24,
+      "reb": 52,
+      "oreb": 8,
+      "dreb": 36,
+      "ast": 29,
+      "tov": 23,
+      "stl": 10,
+      "blk": 13,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "33:50",
+        "pts": 15,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "25",
+        "name": "JALEN SMITH",
+        "min": "24:45",
+        "pts": 15,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "28",
+        "name": "GUERSCHON YABUSELE",
+        "min": "24:21",
+        "pts": 12,
+        "reb": 9,
+        "ast": 8
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "30:04",
+        "pts": 15,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "JOSH GIDDEY",
+        "min": "27:11",
+        "pts": 27,
+        "reb": 6,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612765",
+    "total": {
+      "pts": 126,
+      "fgm": 51,
+      "fga": 105,
+      "f2m": 38,
+      "f2a": 76,
+      "f3m": 13,
+      "f3a": 29,
+      "ftm": 11,
+      "fta": 15,
+      "reb": 60,
+      "oreb": 13,
+      "dreb": 37,
+      "ast": 34,
+      "tov": 14,
+      "stl": 12,
+      "blk": 6,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "32:21",
+        "pts": 8,
+        "reb": 3,
+        "ast": 8
+      },
+      {
+        "no": "12",
+        "name": "TOBIAS HARRIS",
+        "min": "30:16",
+        "pts": 18,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "JALEN DUREN",
+        "min": "28:45",
+        "pts": 26,
+        "reb": 13,
+        "ast": 2
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "23:59",
+        "pts": 17,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "30:13",
+        "pts": 18,
+        "reb": 9,
+        "ast": 13
+      }
+    ]
+  }
+}

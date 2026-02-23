@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500067",
+  "date": "2025.11.26",
+  "venue": "Moda Center",
+  "attendance": 19335,
+  "home": {
+    "id": "1610612757",
+    "total": {
+      "pts": 102,
+      "fgm": 37,
+      "fga": 87,
+      "f2m": 28,
+      "f2a": 51,
+      "f3m": 9,
+      "f3a": 36,
+      "ftm": 19,
+      "fta": 30,
+      "reb": 62,
+      "oreb": 12,
+      "dreb": 36,
+      "ast": 21,
+      "tov": 18,
+      "stl": 3,
+      "blk": 9,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "30:18",
+        "pts": 10,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "JERAMI GRANT",
+        "min": "32:24",
+        "pts": 13,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "26:09",
+        "pts": 9,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "39:42",
+        "pts": 37,
+        "reb": 6,
+        "ast": 8
+      },
+      {
+        "no": "91",
+        "name": "SIDY CISSOKO",
+        "min": "18:18",
+        "pts": 3,
+        "reb": 2,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 115,
+      "fgm": 41,
+      "fga": 101,
+      "f2m": 30,
+      "f2a": 68,
+      "f3m": 11,
+      "f3a": 33,
+      "ftm": 22,
+      "fta": 25,
+      "reb": 64,
+      "oreb": 20,
+      "dreb": 37,
+      "ast": 17,
+      "tov": 9,
+      "stl": 12,
+      "blk": 6,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "32:18",
+        "pts": 12,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "36:23",
+        "pts": 13,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "LUKE KORNET",
+        "min": "28:04",
+        "pts": 6,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "35:21",
+        "pts": 23,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "33:05",
+        "pts": 37,
+        "reb": 6,
+        "ast": 8
+      }
+    ]
+  }
+}

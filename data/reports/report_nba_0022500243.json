@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500243",
+  "date": "2025.11.17",
+  "venue": "Xfinity Mobile Arena",
+  "attendance": 18008,
+  "home": {
+    "id": "1610612755",
+    "total": {
+      "pts": 110,
+      "fgm": 39,
+      "fga": 84,
+      "f2m": 28,
+      "f2a": 51,
+      "f3m": 11,
+      "f3a": 33,
+      "ftm": 21,
+      "fta": 30,
+      "reb": 60,
+      "oreb": 9,
+      "dreb": 37,
+      "ast": 26,
+      "tov": 9,
+      "stl": 7,
+      "blk": 4,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "PAUL GEORGE",
+        "min": "21:06",
+        "pts": 9,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "25",
+        "name": "DOMINICK BARLOW",
+        "min": "21:12",
+        "pts": 7,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "ANDRE DRUMMOND",
+        "min": "37:56",
+        "pts": 14,
+        "reb": 18,
+        "ast": 0
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "37:19",
+        "pts": 14,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "0",
+        "name": "TYRESE MAXEY",
+        "min": "40:57",
+        "pts": 39,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612746",
+    "total": {
+      "pts": 108,
+      "fgm": 35,
+      "fga": 87,
+      "f2m": 23,
+      "f2a": 48,
+      "f3m": 12,
+      "f3a": 39,
+      "ftm": 26,
+      "fta": 27,
+      "reb": 49,
+      "oreb": 8,
+      "dreb": 37,
+      "ast": 18,
+      "tov": 10,
+      "stl": 6,
+      "blk": 3,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "4",
+        "name": "KOBE SANDERS",
+        "min": "30:23",
+        "pts": 17,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "27:14",
+        "pts": 11,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "33:55",
+        "pts": 14,
+        "reb": 13,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "27:06",
+        "pts": 7,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "36:47",
+        "pts": 28,
+        "reb": 6,
+        "ast": 5
+      }
+    ]
+  }
+}

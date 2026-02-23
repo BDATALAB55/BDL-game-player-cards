@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500257",
+  "date": "2025.11.19",
+  "venue": "Kaseya Center",
+  "attendance": 19600,
+  "home": {
+    "id": "1610612748",
+    "total": {
+      "pts": 110,
+      "fgm": 39,
+      "fga": 96,
+      "f2m": 26,
+      "f2a": 61,
+      "f3m": 13,
+      "f3a": 35,
+      "ftm": 19,
+      "fta": 26,
+      "reb": 62,
+      "oreb": 14,
+      "dreb": 38,
+      "ast": 30,
+      "tov": 14,
+      "stl": 10,
+      "blk": 3,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "28:20",
+        "pts": 10,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "34:26",
+        "pts": 17,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "28:48",
+        "pts": 20,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "28:18",
+        "pts": 25,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "24:17",
+        "pts": 5,
+        "reb": 1,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612744",
+    "total": {
+      "pts": 96,
+      "fgm": 34,
+      "fga": 95,
+      "f2m": 21,
+      "f2a": 46,
+      "f3m": 13,
+      "f3a": 49,
+      "ftm": 15,
+      "fta": 20,
+      "reb": 70,
+      "oreb": 20,
+      "dreb": 42,
+      "ast": 24,
+      "tov": 21,
+      "stl": 8,
+      "blk": 5,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "WILL RICHARD",
+        "min": "18:05",
+        "pts": 0,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "15",
+        "name": "GUI SANTOS",
+        "min": "18:26",
+        "pts": 4,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "32",
+        "name": "TRAYCE JACKSON-DAVIS",
+        "min": "24:56",
+        "pts": 8,
+        "reb": 12,
+        "ast": 0
+      },
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "35:42",
+        "pts": 9,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "2",
+        "name": "BRANDIN PODZIEMSKI",
+        "min": "34:27",
+        "pts": 20,
+        "reb": 8,
+        "ast": 2
+      }
+    ]
+  }
+}

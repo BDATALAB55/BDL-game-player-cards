@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500288",
+  "date": "2025.11.24",
+  "venue": "Fiserv Forum",
+  "attendance": 16526,
+  "home": {
+    "id": "1610612749",
+    "total": {
+      "pts": 103,
+      "fgm": 38,
+      "fga": 86,
+      "f2m": 25,
+      "f2a": 49,
+      "f3m": 13,
+      "f3a": 37,
+      "ftm": 14,
+      "fta": 18,
+      "reb": 47,
+      "oreb": 8,
+      "dreb": 31,
+      "ast": 22,
+      "tov": 13,
+      "stl": 10,
+      "blk": 5,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "18",
+        "name": "KYLE KUZMA",
+        "min": "27:17",
+        "pts": 15,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "00",
+        "name": "JERICHO SIMS",
+        "min": "10:56",
+        "pts": 0,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "32:20",
+        "pts": 13,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "24:33",
+        "pts": 6,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "30:27",
+        "pts": 10,
+        "reb": 5,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612757",
+    "total": {
+      "pts": 115,
+      "fgm": 36,
+      "fga": 79,
+      "f2m": 18,
+      "f2a": 36,
+      "f3m": 18,
+      "f3a": 43,
+      "ftm": 25,
+      "fta": 33,
+      "reb": 57,
+      "oreb": 12,
+      "dreb": 36,
+      "ast": 24,
+      "tov": 14,
+      "stl": 8,
+      "blk": 8,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "JERAMI GRANT",
+        "min": "30:55",
+        "pts": 35,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "31:31",
+        "pts": 13,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "27:18",
+        "pts": 14,
+        "reb": 11,
+        "ast": 4
+      },
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "31:23",
+        "pts": 22,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "91",
+        "name": "SIDY CISSOKO",
+        "min": "28:15",
+        "pts": 3,
+        "reb": 1,
+        "ast": 2
+      }
+    ]
+  }
+}

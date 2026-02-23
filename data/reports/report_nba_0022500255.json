@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500255",
+  "date": "2025.11.19",
+  "venue": "Rocket Arena",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612739",
+    "total": {
+      "pts": 104,
+      "fgm": 36,
+      "fga": 81,
+      "f2m": 24,
+      "f2a": 42,
+      "f3m": 12,
+      "f3a": 39,
+      "ftm": 20,
+      "fta": 32,
+      "reb": 51,
+      "oreb": 10,
+      "dreb": 29,
+      "ast": 20,
+      "tov": 12,
+      "stl": 4,
+      "blk": 5,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "DE'ANDRE HUNTER",
+        "min": "30:32",
+        "pts": 25,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "35:40",
+        "pts": 18,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "28:16",
+        "pts": 8,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "35",
+        "name": "NAE'QWAN TOMLIN",
+        "min": "19:38",
+        "pts": 10,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "34:06",
+        "pts": 21,
+        "reb": 3,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612745",
+    "total": {
+      "pts": 114,
+      "fgm": 41,
+      "fga": 90,
+      "f2m": 32,
+      "f2a": 66,
+      "f3m": 9,
+      "f3a": 24,
+      "ftm": 23,
+      "fta": 27,
+      "reb": 60,
+      "oreb": 16,
+      "dreb": 35,
+      "ast": 23,
+      "tov": 13,
+      "stl": 9,
+      "blk": 4,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "30:49",
+        "pts": 14,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "38:00",
+        "pts": 28,
+        "reb": 11,
+        "ast": 7
+      },
+      {
+        "no": "12",
+        "name": "STEVEN ADAMS",
+        "min": "27:59",
+        "pts": 6,
+        "reb": 11,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "36:31",
+        "pts": 20,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "40:18",
+        "pts": 12,
+        "reb": 9,
+        "ast": 6
+      }
+    ]
+  }
+}

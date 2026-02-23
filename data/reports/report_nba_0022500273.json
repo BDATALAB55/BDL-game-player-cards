@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500273",
+  "date": "2025.11.22",
+  "venue": "American Airlines Center",
+  "attendance": 19623,
+  "home": {
+    "id": "1610612742",
+    "total": {
+      "pts": 96,
+      "fgm": 35,
+      "fga": 91,
+      "f2m": 23,
+      "f2a": 55,
+      "f3m": 12,
+      "f3a": 36,
+      "ftm": 14,
+      "fta": 16,
+      "reb": 49,
+      "oreb": 11,
+      "dreb": 30,
+      "ast": 19,
+      "tov": 10,
+      "stl": 4,
+      "blk": 9,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "33:26",
+        "pts": 12,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "31:54",
+        "pts": 15,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "27:06",
+        "pts": 5,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "22:16",
+        "pts": 9,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "10",
+        "name": "BRANDON WILLIAMS",
+        "min": "31:49",
+        "pts": 18,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612763",
+    "total": {
+      "pts": 102,
+      "fgm": 37,
+      "fga": 92,
+      "f2m": 29,
+      "f2a": 61,
+      "f3m": 8,
+      "f3a": 31,
+      "ftm": 20,
+      "fta": 24,
+      "reb": 68,
+      "oreb": 23,
+      "dreb": 38,
+      "ast": 26,
+      "tov": 12,
+      "stl": 5,
+      "blk": 5,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "31:19",
+        "pts": 9,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "7",
+        "name": "SANTI ALDAMA",
+        "min": "34:46",
+        "pts": 20,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "14",
+        "name": "ZACH EDEY",
+        "min": "26:28",
+        "pts": 12,
+        "reb": 15,
+        "ast": 3
+      },
+      {
+        "no": "23",
+        "name": "CEDRIC COWARD",
+        "min": "25:11",
+        "pts": 9,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "VINCE WILLIAMS JR.",
+        "min": "24:07",
+        "pts": 10,
+        "reb": 10,
+        "ast": 6
+      }
+    ]
+  }
+}

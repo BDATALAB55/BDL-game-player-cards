@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500233",
+  "date": "2025.11.16",
+  "venue": "TD Garden",
+  "attendance": 19156,
+  "home": {
+    "id": "1610612738",
+    "total": {
+      "pts": 121,
+      "fgm": 46,
+      "fga": 103,
+      "f2m": 30,
+      "f2a": 64,
+      "f3m": 16,
+      "f3a": 39,
+      "ftm": 13,
+      "fta": 17,
+      "reb": 55,
+      "oreb": 20,
+      "dreb": 29,
+      "ast": 26,
+      "tov": 6,
+      "stl": 6,
+      "blk": 6,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "38:37",
+        "pts": 33,
+        "reb": 13,
+        "ast": 3
+      },
+      {
+        "no": "27",
+        "name": "JORDAN WALSH",
+        "min": "33:12",
+        "pts": 6,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "33:27",
+        "pts": 14,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "33:05",
+        "pts": 30,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "38:52",
+        "pts": 22,
+        "reb": 7,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612746",
+    "total": {
+      "pts": 118,
+      "fgm": 38,
+      "fga": 81,
+      "f2m": 24,
+      "f2a": 46,
+      "f3m": 14,
+      "f3a": 35,
+      "ftm": 28,
+      "fta": 30,
+      "reb": 52,
+      "oreb": 10,
+      "dreb": 34,
+      "ast": 23,
+      "tov": 13,
+      "stl": 4,
+      "blk": 7,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "DERRICK JONES JR.",
+        "min": "10:59",
+        "pts": 5,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "30:17",
+        "pts": 17,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "33:37",
+        "pts": 16,
+        "reb": 12,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "24:29",
+        "pts": 6,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "37:49",
+        "pts": 37,
+        "reb": 7,
+        "ast": 8
+      }
+    ]
+  }
+}

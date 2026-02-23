@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500040",
+  "date": "2025.11.14",
+  "venue": "Kia Center",
+  "attendance": 17902,
+  "home": {
+    "id": "1610612753",
+    "total": {
+      "pts": 105,
+      "fgm": 36,
+      "fga": 78,
+      "f2m": 21,
+      "f2a": 39,
+      "f3m": 15,
+      "f3a": 39,
+      "ftm": 18,
+      "fta": 21,
+      "reb": 60,
+      "oreb": 7,
+      "dreb": 39,
+      "ast": 21,
+      "tov": 19,
+      "stl": 3,
+      "blk": 5,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "TRISTAN DA SILVA",
+        "min": "32:28",
+        "pts": 22,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "22",
+        "name": "FRANZ WAGNER",
+        "min": "37:05",
+        "pts": 25,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "31:45",
+        "pts": 7,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "39:55",
+        "pts": 19,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "28:13",
+        "pts": 14,
+        "reb": 7,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612751",
+    "total": {
+      "pts": 98,
+      "fgm": 38,
+      "fga": 89,
+      "f2m": 28,
+      "f2a": 50,
+      "f3m": 10,
+      "f3a": 39,
+      "ftm": 12,
+      "fta": 16,
+      "reb": 42,
+      "oreb": 7,
+      "dreb": 27,
+      "ast": 23,
+      "tov": 5,
+      "stl": 9,
+      "blk": 4,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "36:03",
+        "pts": 24,
+        "reb": 11,
+        "ast": 7
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "27:15",
+        "pts": 12,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "33:49",
+        "pts": 13,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "28:03",
+        "pts": 12,
+        "reb": 0,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "18:08",
+        "pts": 8,
+        "reb": 3,
+        "ast": 2
+      }
+    ]
+  }
+}

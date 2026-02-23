@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500297",
+  "date": "2025.11.29",
+  "venue": "Fiserv Forum",
+  "attendance": 16396,
+  "home": {
+    "id": "1610612749",
+    "total": {
+      "pts": 116,
+      "fgm": 44,
+      "fga": 84,
+      "f2m": 28,
+      "f2a": 45,
+      "f3m": 16,
+      "f3a": 39,
+      "ftm": 12,
+      "fta": 17,
+      "reb": 49,
+      "oreb": 12,
+      "dreb": 31,
+      "ast": 31,
+      "tov": 12,
+      "stl": 13,
+      "blk": 2,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "23:08",
+        "pts": 15,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "34",
+        "name": "GIANNIS ANTETOKOUNMPO",
+        "min": "18:59",
+        "pts": 29,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "22:09",
+        "pts": 10,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "KEVIN PORTER JR.",
+        "min": "24:32",
+        "pts": 13,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "31:00",
+        "pts": 10,
+        "reb": 2,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612751",
+    "total": {
+      "pts": 99,
+      "fgm": 36,
+      "fga": 77,
+      "f2m": 20,
+      "f2a": 35,
+      "f3m": 16,
+      "f3a": 42,
+      "ftm": 11,
+      "fta": 17,
+      "reb": 44,
+      "oreb": 6,
+      "dreb": 25,
+      "ast": 23,
+      "tov": 18,
+      "stl": 4,
+      "blk": 4,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "1",
+        "name": "ZIAIRE WILLIAMS",
+        "min": "19:26",
+        "pts": 10,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "21:22",
+        "pts": 6,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "24:47",
+        "pts": 7,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "21:05",
+        "pts": 4,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "13",
+        "name": "TYRESE MARTIN",
+        "min": "23:49",
+        "pts": 9,
+        "reb": 6,
+        "ast": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500063",
+  "date": "2025.11.26",
+  "venue": "Scotiabank Arena",
+  "attendance": 18484,
+  "home": {
+    "id": "1610612761",
+    "total": {
+      "pts": 97,
+      "fgm": 35,
+      "fga": 90,
+      "f2m": 30,
+      "f2a": 64,
+      "f3m": 5,
+      "f3a": 26,
+      "ftm": 22,
+      "fta": 27,
+      "reb": 59,
+      "oreb": 12,
+      "dreb": 36,
+      "ast": 18,
+      "tov": 13,
+      "stl": 9,
+      "blk": 4,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "38:12",
+        "pts": 26,
+        "reb": 8,
+        "ast": 0
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "36:26",
+        "pts": 24,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "19",
+        "name": "JAKOB POELTL",
+        "min": "31:33",
+        "pts": 8,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "12",
+        "name": "COLLIN MURRAY-BOYLES",
+        "min": "07:41",
+        "pts": 0,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "34:43",
+        "pts": 15,
+        "reb": 5,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612754",
+    "total": {
+      "pts": 95,
+      "fgm": 35,
+      "fga": 78,
+      "f2m": 24,
+      "f2a": 45,
+      "f3m": 11,
+      "f3a": 33,
+      "ftm": 14,
+      "fta": 23,
+      "reb": 54,
+      "oreb": 3,
+      "dreb": 40,
+      "ast": 20,
+      "tov": 18,
+      "stl": 7,
+      "blk": 7,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "JARACE WALKER",
+        "min": "26:40",
+        "pts": 13,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "30:56",
+        "pts": 11,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "ISAIAH JACKSON",
+        "min": "19:37",
+        "pts": 8,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "00",
+        "name": "BENNEDICT MATHURIN",
+        "min": "34:01",
+        "pts": 15,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "35:25",
+        "pts": 9,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  }
+}

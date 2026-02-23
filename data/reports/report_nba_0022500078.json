@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500078",
+  "date": "2025.11.28",
+  "venue": "Crypto.com Arena",
+  "attendance": 18997,
+  "home": {
+    "id": "1610612747",
+    "total": {
+      "pts": 129,
+      "fgm": 45,
+      "fga": 76,
+      "f2m": 27,
+      "f2a": 41,
+      "f3m": 18,
+      "f3a": 35,
+      "ftm": 21,
+      "fta": 26,
+      "reb": 43,
+      "oreb": 6,
+      "dreb": 28,
+      "ast": 27,
+      "tov": 14,
+      "stl": 4,
+      "blk": 4,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "33:57",
+        "pts": 13,
+        "reb": 5,
+        "ast": 7
+      },
+      {
+        "no": "28",
+        "name": "RUI HACHIMURA",
+        "min": "36:20",
+        "pts": 14,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "36:20",
+        "pts": 17,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "AUSTIN REAVES",
+        "min": "41:19",
+        "pts": 38,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "40:18",
+        "pts": 35,
+        "reb": 5,
+        "ast": 11
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612742",
+    "total": {
+      "pts": 119,
+      "fgm": 44,
+      "fga": 91,
+      "f2m": 30,
+      "f2a": 59,
+      "f3m": 14,
+      "f3a": 32,
+      "ftm": 17,
+      "fta": 20,
+      "reb": 43,
+      "oreb": 14,
+      "dreb": 25,
+      "ast": 28,
+      "tov": 11,
+      "stl": 8,
+      "blk": 4,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "35:38",
+        "pts": 13,
+        "reb": 7,
+        "ast": 11
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "35:15",
+        "pts": 22,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "ANTHONY DAVIS",
+        "min": "28:19",
+        "pts": 12,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "27:26",
+        "pts": 13,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "RYAN NEMBHARD",
+        "min": "23:21",
+        "pts": 17,
+        "reb": 2,
+        "ast": 4
+      }
+    ]
+  }
+}

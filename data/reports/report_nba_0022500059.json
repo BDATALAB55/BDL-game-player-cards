@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500059",
+  "date": "2025.11.25",
+  "venue": "Crypto.com Arena",
+  "attendance": 18997,
+  "home": {
+    "id": "1610612747",
+    "total": {
+      "pts": 135,
+      "fgm": 50,
+      "fga": 87,
+      "f2m": 37,
+      "f2a": 58,
+      "f3m": 13,
+      "f3a": 29,
+      "ftm": 22,
+      "fta": 26,
+      "reb": 47,
+      "oreb": 12,
+      "dreb": 26,
+      "ast": 29,
+      "tov": 11,
+      "stl": 9,
+      "blk": 4,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "32:19",
+        "pts": 25,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "28",
+        "name": "RUI HACHIMURA",
+        "min": "30:52",
+        "pts": 13,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "11",
+        "name": "JAXSON HAYES",
+        "min": "29:50",
+        "pts": 8,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "15",
+        "name": "AUSTIN REAVES",
+        "min": "35:03",
+        "pts": 31,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "38:16",
+        "pts": 43,
+        "reb": 9,
+        "ast": 13
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612746",
+    "total": {
+      "pts": 118,
+      "fgm": 42,
+      "fga": 81,
+      "f2m": 29,
+      "f2a": 46,
+      "f3m": 13,
+      "f3a": 35,
+      "ftm": 21,
+      "fta": 24,
+      "reb": 39,
+      "oreb": 7,
+      "dreb": 22,
+      "ast": 24,
+      "tov": 14,
+      "stl": 7,
+      "blk": 2,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "27:38",
+        "pts": 19,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "33:58",
+        "pts": 18,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "36:55",
+        "pts": 10,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "30:14",
+        "pts": 19,
+        "reb": 0,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "36:50",
+        "pts": 29,
+        "reb": 5,
+        "ast": 9
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500238",
+  "date": "2025.11.16",
+  "venue": "American Airlines Center",
+  "attendance": 18808,
+  "home": {
+    "id": "1610612742",
+    "total": {
+      "pts": 138,
+      "fgm": 48,
+      "fga": 95,
+      "f2m": 33,
+      "f2a": 61,
+      "f3m": 15,
+      "f3a": 34,
+      "ftm": 27,
+      "fta": 40,
+      "reb": 67,
+      "oreb": 13,
+      "dreb": 34,
+      "ast": 33,
+      "tov": 14,
+      "stl": 7,
+      "blk": 9,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "37:06",
+        "pts": 21,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "38:20",
+        "pts": 21,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "31:11",
+        "pts": 20,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "28:19",
+        "pts": 14,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "10",
+        "name": "BRANDON WILLIAMS",
+        "min": "30:44",
+        "pts": 15,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612757",
+    "total": {
+      "pts": 133,
+      "fgm": 46,
+      "fga": 113,
+      "f2m": 32,
+      "f2a": 66,
+      "f3m": 14,
+      "f3a": 47,
+      "ftm": 27,
+      "fta": 32,
+      "reb": 67,
+      "oreb": 22,
+      "dreb": 31,
+      "ast": 26,
+      "tov": 11,
+      "stl": 8,
+      "blk": 5,
+      "pf": 32
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "JERAMI GRANT",
+        "min": "39:23",
+        "pts": 26,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "40:31",
+        "pts": 11,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "27:54",
+        "pts": 16,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "38:30",
+        "pts": 36,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "39:07",
+        "pts": 29,
+        "reb": 6,
+        "ast": 7
+      }
+    ]
+  }
+}

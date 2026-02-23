@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500303",
+  "date": "2025.11.30",
+  "venue": "Madison Square Garden",
+  "attendance": 19812,
+  "home": {
+    "id": "1610612752",
+    "total": {
+      "pts": 116,
+      "fgm": 44,
+      "fga": 96,
+      "f2m": 28,
+      "f2a": 51,
+      "f3m": 16,
+      "f3a": 45,
+      "ftm": 12,
+      "fta": 16,
+      "reb": 66,
+      "oreb": 25,
+      "dreb": 36,
+      "ast": 27,
+      "tov": 18,
+      "stl": 9,
+      "blk": 3,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "33:25",
+        "pts": 14,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "34:58",
+        "pts": 20,
+        "reb": 12,
+        "ast": 7
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "31:02",
+        "pts": 22,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "33:44",
+        "pts": 18,
+        "reb": 6,
+        "ast": 7
+      },
+      {
+        "no": "2",
+        "name": "MILES MCBRIDE",
+        "min": "35:04",
+        "pts": 14,
+        "reb": 5,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612761",
+    "total": {
+      "pts": 94,
+      "fgm": 37,
+      "fga": 88,
+      "f2m": 26,
+      "f2a": 51,
+      "f3m": 11,
+      "f3a": 37,
+      "ftm": 9,
+      "fta": 17,
+      "reb": 49,
+      "oreb": 14,
+      "dreb": 26,
+      "ast": 27,
+      "tov": 18,
+      "stl": 9,
+      "blk": 6,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "77",
+        "name": "JAMISON BATTLE",
+        "min": "11:15",
+        "pts": 4,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "32:06",
+        "pts": 14,
+        "reb": 1,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "31:31",
+        "pts": 18,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "34:46",
+        "pts": 19,
+        "reb": 2,
+        "ast": 8
+      },
+      {
+        "no": "14",
+        "name": "JA'KOBE WALTER",
+        "min": "21:16",
+        "pts": 7,
+        "reb": 4,
+        "ast": 1
+      }
+    ]
+  }
+}

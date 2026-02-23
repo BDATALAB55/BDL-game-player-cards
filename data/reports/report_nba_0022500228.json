@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500228",
+  "date": "2025.11.15",
+  "venue": "Rocket Arena",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612739",
+    "total": {
+      "pts": 108,
+      "fgm": 38,
+      "fga": 83,
+      "f2m": 25,
+      "f2a": 43,
+      "f3m": 13,
+      "f3a": 40,
+      "ftm": 19,
+      "fta": 29,
+      "reb": 64,
+      "oreb": 11,
+      "dreb": 38,
+      "ast": 24,
+      "tov": 20,
+      "stl": 7,
+      "blk": 9,
+      "pf": 28
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "DE'ANDRE HUNTER",
+        "min": "32:07",
+        "pts": 9,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "35:19",
+        "pts": 22,
+        "reb": 13,
+        "ast": 4
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "26:21",
+        "pts": 16,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "SAM MERRILL",
+        "min": "27:11",
+        "pts": 13,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "32:55",
+        "pts": 30,
+        "reb": 5,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612763",
+    "total": {
+      "pts": 100,
+      "fgm": 31,
+      "fga": 86,
+      "f2m": 22,
+      "f2a": 54,
+      "f3m": 9,
+      "f3a": 32,
+      "ftm": 29,
+      "fta": 40,
+      "reb": 57,
+      "oreb": 11,
+      "dreb": 35,
+      "ast": 21,
+      "tov": 15,
+      "stl": 9,
+      "blk": 5,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "CEDRIC COWARD",
+        "min": "24:32",
+        "pts": 10,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "32:40",
+        "pts": 26,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "14",
+        "name": "ZACH EDEY",
+        "min": "24:42",
+        "pts": 13,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "23:51",
+        "pts": 8,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "12",
+        "name": "JA MORANT",
+        "min": "05:59",
+        "pts": 7,
+        "reb": 1,
+        "ast": 2
+      }
+    ]
+  }
+}

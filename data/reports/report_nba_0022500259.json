@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500259",
+  "date": "2025.11.19",
+  "venue": "Target Center",
+  "attendance": 16578,
+  "home": {
+    "id": "1610612750",
+    "total": {
+      "pts": 120,
+      "fgm": 42,
+      "fga": 94,
+      "f2m": 29,
+      "f2a": 56,
+      "f3m": 13,
+      "f3a": 38,
+      "ftm": 23,
+      "fta": 32,
+      "reb": 61,
+      "oreb": 19,
+      "dreb": 31,
+      "ast": 28,
+      "tov": 9,
+      "stl": 11,
+      "blk": 4,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "ANTHONY EDWARDS",
+        "min": "36:28",
+        "pts": 18,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "JULIUS RANDLE",
+        "min": "32:36",
+        "pts": 32,
+        "reb": 10,
+        "ast": 6
+      },
+      {
+        "no": "27",
+        "name": "RUDY GOBERT",
+        "min": "36:05",
+        "pts": 9,
+        "reb": 15,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "DONTE DIVINCENZO",
+        "min": "36:02",
+        "pts": 12,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "10",
+        "name": "MIKE CONLEY",
+        "min": "27:24",
+        "pts": 10,
+        "reb": 1,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612764",
+    "total": {
+      "pts": 109,
+      "fgm": 43,
+      "fga": 88,
+      "f2m": 29,
+      "f2a": 56,
+      "f3m": 14,
+      "f3a": 32,
+      "ftm": 9,
+      "fta": 12,
+      "reb": 49,
+      "oreb": 12,
+      "dreb": 31,
+      "ast": 25,
+      "tov": 17,
+      "stl": 6,
+      "blk": 6,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "29:20",
+        "pts": 13,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "22",
+        "name": "KHRIS MIDDLETON",
+        "min": "27:27",
+        "pts": 13,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "35",
+        "name": "MARVIN BAGLEY III",
+        "min": "30:33",
+        "pts": 13,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "37:22",
+        "pts": 23,
+        "reb": 7,
+        "ast": 7
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "30:56",
+        "pts": 14,
+        "reb": 5,
+        "ast": 4
+      }
+    ]
+  }
+}

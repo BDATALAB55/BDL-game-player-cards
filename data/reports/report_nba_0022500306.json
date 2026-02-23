@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500306",
+  "date": "2025.11.30",
+  "venue": "Target Center",
+  "attendance": 16979,
+  "home": {
+    "id": "1610612750",
+    "total": {
+      "pts": 125,
+      "fgm": 49,
+      "fga": 87,
+      "f2m": 32,
+      "f2a": 50,
+      "f3m": 17,
+      "f3a": 37,
+      "ftm": 10,
+      "fta": 13,
+      "reb": 43,
+      "oreb": 10,
+      "dreb": 26,
+      "ast": 35,
+      "tov": 12,
+      "stl": 5,
+      "blk": 0,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JADEN MCDANIELS",
+        "min": "33:00",
+        "pts": 13,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "30",
+        "name": "JULIUS RANDLE",
+        "min": "36:00",
+        "pts": 22,
+        "reb": 6,
+        "ast": 12
+      },
+      {
+        "no": "27",
+        "name": "RUDY GOBERT",
+        "min": "24:02",
+        "pts": 8,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "ANTHONY EDWARDS",
+        "min": "35:59",
+        "pts": 32,
+        "reb": 3,
+        "ast": 6
+      },
+      {
+        "no": "0",
+        "name": "DONTE DIVINCENZO",
+        "min": "29:26",
+        "pts": 18,
+        "reb": 5,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 112,
+      "fgm": 44,
+      "fga": 84,
+      "f2m": 36,
+      "f2a": 51,
+      "f3m": 8,
+      "f3a": 33,
+      "ftm": 16,
+      "fta": 19,
+      "reb": 41,
+      "oreb": 7,
+      "dreb": 26,
+      "ast": 17,
+      "tov": 10,
+      "stl": 10,
+      "blk": 1,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "25:16",
+        "pts": 5,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "28:38",
+        "pts": 5,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "LUKE KORNET",
+        "min": "23:47",
+        "pts": 6,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "31:42",
+        "pts": 22,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "31:56",
+        "pts": 25,
+        "reb": 2,
+        "ast": 4
+      }
+    ]
+  }
+}

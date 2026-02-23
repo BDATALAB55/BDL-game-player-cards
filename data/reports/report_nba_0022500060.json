@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500060",
+  "date": "2025.11.26",
+  "venue": "TD Garden",
+  "attendance": 19156,
+  "home": {
+    "id": "1610612738",
+    "total": {
+      "pts": 117,
+      "fgm": 38,
+      "fga": 87,
+      "f2m": 18,
+      "f2a": 44,
+      "f3m": 20,
+      "f3a": 43,
+      "ftm": 21,
+      "fta": 24,
+      "reb": 50,
+      "oreb": 12,
+      "dreb": 32,
+      "ast": 24,
+      "tov": 12,
+      "stl": 9,
+      "blk": 7,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "34:13",
+        "pts": 33,
+        "reb": 10,
+        "ast": 5
+      },
+      {
+        "no": "27",
+        "name": "JORDAN WALSH",
+        "min": "28:31",
+        "pts": 7,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "52",
+        "name": "LUKA GARZA",
+        "min": "11:20",
+        "pts": 0,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "34:25",
+        "pts": 16,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "31:14",
+        "pts": 27,
+        "reb": 7,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612765",
+    "total": {
+      "pts": 114,
+      "fgm": 37,
+      "fga": 93,
+      "f2m": 26,
+      "f2a": 57,
+      "f3m": 11,
+      "f3a": 36,
+      "ftm": 29,
+      "fta": 36,
+      "reb": 65,
+      "oreb": 21,
+      "dreb": 35,
+      "ast": 20,
+      "tov": 13,
+      "stl": 5,
+      "blk": 7,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "25:51",
+        "pts": 8,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "12",
+        "name": "TOBIAS HARRIS",
+        "min": "27:01",
+        "pts": 12,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "JALEN DUREN",
+        "min": "30:17",
+        "pts": 12,
+        "reb": 16,
+        "ast": 1
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "29:31",
+        "pts": 11,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "36:23",
+        "pts": 42,
+        "reb": 8,
+        "ast": 5
+      }
+    ]
+  }
+}

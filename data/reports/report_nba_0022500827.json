@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500827",
+  "date": "2026.02.22",
+  "venue": "Intuit Dome",
+  "attendance": 17927,
+  "home": {
+    "id": "1610612746",
+    "total": {
+      "pts": 109,
+      "fgm": 40,
+      "fga": 83,
+      "f2m": 35,
+      "f2a": 60,
+      "f3m": 5,
+      "f3a": 23,
+      "ftm": 24,
+      "fta": 28,
+      "reb": 49,
+      "oreb": 9,
+      "dreb": 34,
+      "ast": 18,
+      "tov": 9,
+      "stl": 9,
+      "blk": 9,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "32:55",
+        "pts": 37,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "DERRICK JONES JR.",
+        "min": "32:29",
+        "pts": 6,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "11",
+        "name": "BROOK LOPEZ",
+        "min": "22:00",
+        "pts": 10,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "4",
+        "name": "KOBE SANDERS",
+        "min": "26:24",
+        "pts": 7,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "33:40",
+        "pts": 7,
+        "reb": 5,
+        "ast": 0
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612753",
+    "total": {
+      "pts": 111,
+      "fgm": 40,
+      "fga": 83,
+      "f2m": 32,
+      "f2a": 60,
+      "f3m": 8,
+      "f3a": 23,
+      "ftm": 23,
+      "fta": 31,
+      "reb": 49,
+      "oreb": 12,
+      "dreb": 31,
+      "ast": 25,
+      "tov": 12,
+      "stl": 7,
+      "blk": 3,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "TRISTAN DA SILVA",
+        "min": "29:43",
+        "pts": 13,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "37:02",
+        "pts": 16,
+        "reb": 7,
+        "ast": 8
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "33:18",
+        "pts": 15,
+        "reb": 14,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "32:01",
+        "pts": 36,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "ANTHONY BLACK",
+        "min": "36:22",
+        "pts": 11,
+        "reb": 2,
+        "ast": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500291",
+  "date": "2025.11.24",
+  "venue": "Chase Center",
+  "attendance": 18064,
+  "home": {
+    "id": "1610612744",
+    "total": {
+      "pts": 134,
+      "fgm": 51,
+      "fga": 104,
+      "f2m": 32,
+      "f2a": 52,
+      "f3m": 19,
+      "f3a": 52,
+      "ftm": 13,
+      "fta": 18,
+      "reb": 60,
+      "oreb": 16,
+      "dreb": 34,
+      "ast": 34,
+      "tov": 10,
+      "stl": 11,
+      "blk": 5,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "GARY PAYTON II",
+        "min": "20:49",
+        "pts": 9,
+        "reb": 6,
+        "ast": 8
+      },
+      {
+        "no": "10",
+        "name": "JIMMY BUTLER III",
+        "min": "28:33",
+        "pts": 18,
+        "reb": 6,
+        "ast": 7
+      },
+      {
+        "no": "21",
+        "name": "QUINTEN POST",
+        "min": "27:33",
+        "pts": 9,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "29:10",
+        "pts": 15,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "29:02",
+        "pts": 31,
+        "reb": 4,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612762",
+    "total": {
+      "pts": 117,
+      "fgm": 47,
+      "fga": 99,
+      "f2m": 36,
+      "f2a": 63,
+      "f3m": 11,
+      "f3a": 36,
+      "ftm": 12,
+      "fta": 18,
+      "reb": 58,
+      "oreb": 14,
+      "dreb": 33,
+      "ast": 32,
+      "tov": 14,
+      "stl": 7,
+      "blk": 6,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "SVI MYKHAILIUK",
+        "min": "20:03",
+        "pts": 2,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "LAURI MARKKANEN",
+        "min": "32:41",
+        "pts": 17,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "30",
+        "name": "JUSUF NURKIĆ",
+        "min": "24:10",
+        "pts": 8,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "29:29",
+        "pts": 21,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "37:45",
+        "pts": 28,
+        "reb": 6,
+        "ast": 7
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500237",
+  "date": "2025.11.16",
+  "venue": "Smoothie King Center",
+  "attendance": 18373,
+  "home": {
+    "id": "1610612740",
+    "total": {
+      "pts": 106,
+      "fgm": 38,
+      "fga": 83,
+      "f2m": 30,
+      "f2a": 54,
+      "f3m": 8,
+      "f3a": 29,
+      "ftm": 22,
+      "fta": 29,
+      "reb": 50,
+      "oreb": 15,
+      "dreb": 30,
+      "ast": 22,
+      "tov": 20,
+      "stl": 11,
+      "blk": 4,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "25",
+        "name": "TREY MURPHY III",
+        "min": "31:09",
+        "pts": 20,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "28:47",
+        "pts": 11,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "22",
+        "name": "DERIK QUEEN",
+        "min": "24:34",
+        "pts": 9,
+        "reb": 7,
+        "ast": 6
+      },
+      {
+        "no": "2",
+        "name": "HERBERT JONES",
+        "min": "28:43",
+        "pts": 6,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "JEREMIAH FEARS",
+        "min": "25:09",
+        "pts": 17,
+        "reb": 5,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612744",
+    "total": {
+      "pts": 124,
+      "fgm": 43,
+      "fga": 94,
+      "f2m": 19,
+      "f2a": 38,
+      "f3m": 24,
+      "f3a": 56,
+      "ftm": 14,
+      "fta": 17,
+      "reb": 57,
+      "oreb": 16,
+      "dreb": 31,
+      "ast": 34,
+      "tov": 21,
+      "stl": 14,
+      "blk": 4,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "WILL RICHARD",
+        "min": "22:13",
+        "pts": 9,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "10",
+        "name": "JIMMY BUTLER III",
+        "min": "31:15",
+        "pts": 18,
+        "reb": 3,
+        "ast": 10
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "24:47",
+        "pts": 8,
+        "reb": 10,
+        "ast": 6
+      },
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "33:04",
+        "pts": 32,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "28:07",
+        "pts": 9,
+        "reb": 5,
+        "ast": 3
+      }
+    ]
+  }
+}

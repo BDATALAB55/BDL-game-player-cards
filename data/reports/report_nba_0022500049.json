@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500049",
+  "date": "2025.11.21",
+  "venue": "TD Garden",
+  "attendance": 19156,
+  "home": {
+    "id": "1610612738",
+    "total": {
+      "pts": 105,
+      "fgm": 42,
+      "fga": 90,
+      "f2m": 31,
+      "f2a": 56,
+      "f3m": 11,
+      "f3a": 34,
+      "ftm": 10,
+      "fta": 14,
+      "reb": 48,
+      "oreb": 14,
+      "dreb": 30,
+      "ast": 24,
+      "tov": 13,
+      "stl": 7,
+      "blk": 1,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "31:39",
+        "pts": 26,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "27",
+        "name": "JORDAN WALSH",
+        "min": "24:08",
+        "pts": 9,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "29:11",
+        "pts": 16,
+        "reb": 12,
+        "ast": 3
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "34:45",
+        "pts": 13,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "32:35",
+        "pts": 6,
+        "reb": 1,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612751",
+    "total": {
+      "pts": 113,
+      "fgm": 43,
+      "fga": 82,
+      "f2m": 30,
+      "f2a": 49,
+      "f3m": 13,
+      "f3a": 33,
+      "ftm": 14,
+      "fta": 21,
+      "reb": 51,
+      "oreb": 7,
+      "dreb": 34,
+      "ast": 31,
+      "tov": 13,
+      "stl": 5,
+      "blk": 6,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "36:59",
+        "pts": 33,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "37:02",
+        "pts": 19,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "34:41",
+        "pts": 18,
+        "reb": 11,
+        "ast": 12
+      },
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "32:14",
+        "pts": 6,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "29:29",
+        "pts": 12,
+        "reb": 6,
+        "ast": 5
+      }
+    ]
+  }
+}

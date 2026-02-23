@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500825",
+  "date": "2026.02.22",
+  "venue": "United Center",
+  "attendance": 19628,
+  "home": {
+    "id": "1610612741",
+    "total": {
+      "pts": 99,
+      "fgm": 34,
+      "fga": 86,
+      "f2m": 18,
+      "f2a": 40,
+      "f3m": 16,
+      "f3a": 46,
+      "ftm": 15,
+      "fta": 21,
+      "reb": 55,
+      "oreb": 13,
+      "dreb": 37,
+      "ast": 24,
+      "tov": 17,
+      "stl": 8,
+      "blk": 2,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "33:00",
+        "pts": 12,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "JALEN SMITH",
+        "min": "18:13",
+        "pts": 12,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "28",
+        "name": "GUERSCHON YABUSELE",
+        "min": "29:44",
+        "pts": 11,
+        "reb": 13,
+        "ast": 1
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "25:58",
+        "pts": 15,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "3",
+        "name": "JOSH GIDDEY",
+        "min": "22:58",
+        "pts": 6,
+        "reb": 2,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612752",
+    "total": {
+      "pts": 105,
+      "fgm": 38,
+      "fga": 84,
+      "f2m": 23,
+      "f2a": 42,
+      "f3m": 15,
+      "f3a": 42,
+      "ftm": 14,
+      "fta": 21,
+      "reb": 58,
+      "oreb": 10,
+      "dreb": 40,
+      "ast": 27,
+      "tov": 13,
+      "stl": 9,
+      "blk": 4,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "33:33",
+        "pts": 9,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "32:42",
+        "pts": 11,
+        "reb": 9,
+        "ast": 5
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "32:12",
+        "pts": 28,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "30:13",
+        "pts": 11,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "36:25",
+        "pts": 19,
+        "reb": 5,
+        "ast": 9
+      }
+    ]
+  }
+}

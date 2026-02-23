@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500052",
+  "date": "2025.11.21",
+  "venue": "American Airlines Center",
+  "attendance": 18506,
+  "home": {
+    "id": "1610612742",
+    "total": {
+      "pts": 118,
+      "fgm": 40,
+      "fga": 84,
+      "f2m": 24,
+      "f2a": 41,
+      "f3m": 16,
+      "f3a": 43,
+      "ftm": 22,
+      "fta": 28,
+      "reb": 53,
+      "oreb": 11,
+      "dreb": 36,
+      "ast": 30,
+      "tov": 20,
+      "stl": 9,
+      "blk": 9,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "32:21",
+        "pts": 29,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "37:28",
+        "pts": 24,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "25:14",
+        "pts": 8,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "31:38",
+        "pts": 23,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "10",
+        "name": "BRANDON WILLIAMS",
+        "min": "28:20",
+        "pts": 5,
+        "reb": 5,
+        "ast": 12
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612740",
+    "total": {
+      "pts": 115,
+      "fgm": 42,
+      "fga": 91,
+      "f2m": 35,
+      "f2a": 64,
+      "f3m": 7,
+      "f3a": 27,
+      "ftm": 24,
+      "fta": 31,
+      "reb": 53,
+      "oreb": 9,
+      "dreb": 33,
+      "ast": 25,
+      "tov": 13,
+      "stl": 15,
+      "blk": 4,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "25",
+        "name": "TREY MURPHY III",
+        "min": "35:22",
+        "pts": 25,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "ZION WILLIAMSON",
+        "min": "29:35",
+        "pts": 22,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "DERIK QUEEN",
+        "min": "32:13",
+        "pts": 20,
+        "reb": 7,
+        "ast": 11
+      },
+      {
+        "no": "2",
+        "name": "HERBERT JONES",
+        "min": "32:08",
+        "pts": 7,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "JEREMIAH FEARS",
+        "min": "31:30",
+        "pts": 21,
+        "reb": 7,
+        "ast": 2
+      }
+    ]
+  }
+}

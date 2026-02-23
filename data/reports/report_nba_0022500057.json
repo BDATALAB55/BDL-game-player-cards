@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500057",
+  "date": "2025.11.25",
+  "venue": "Capital One Arena",
+  "attendance": 15522,
+  "home": {
+    "id": "1610612764",
+    "total": {
+      "pts": 132,
+      "fgm": 48,
+      "fga": 84,
+      "f2m": 29,
+      "f2a": 46,
+      "f3m": 19,
+      "f3a": 38,
+      "ftm": 17,
+      "fta": 26,
+      "reb": 48,
+      "oreb": 6,
+      "dreb": 30,
+      "ast": 30,
+      "tov": 12,
+      "stl": 13,
+      "blk": 8,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "34:10",
+        "pts": 9,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "22",
+        "name": "KHRIS MIDDLETON",
+        "min": "31:10",
+        "pts": 10,
+        "reb": 7,
+        "ast": 12
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "37:39",
+        "pts": 27,
+        "reb": 11,
+        "ast": 0
+      },
+      {
+        "no": "24",
+        "name": "COREY KISPERT",
+        "min": "24:29",
+        "pts": 19,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "36:47",
+        "pts": 46,
+        "reb": 5,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612737",
+    "total": {
+      "pts": 113,
+      "fgm": 43,
+      "fga": 95,
+      "f2m": 28,
+      "f2a": 52,
+      "f3m": 15,
+      "f3a": 43,
+      "ftm": 12,
+      "fta": 16,
+      "reb": 54,
+      "oreb": 14,
+      "dreb": 30,
+      "ast": 33,
+      "tov": 18,
+      "stl": 4,
+      "blk": 6,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "29:51",
+        "pts": 17,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "30:04",
+        "pts": 7,
+        "reb": 7,
+        "ast": 7
+      },
+      {
+        "no": "8",
+        "name": "KRISTAPS PORZIŅĢIS",
+        "min": "21:45",
+        "pts": 22,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "32:00",
+        "pts": 11,
+        "reb": 9,
+        "ast": 7
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "32:25",
+        "pts": 8,
+        "reb": 2,
+        "ast": 4
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500294",
+  "date": "2025.11.29",
+  "venue": "Spectrum Center",
+  "attendance": 17060,
+  "home": {
+    "id": "1610612766",
+    "total": {
+      "pts": 118,
+      "fgm": 41,
+      "fga": 93,
+      "f2m": 31,
+      "f2a": 54,
+      "f3m": 10,
+      "f3a": 39,
+      "ftm": 26,
+      "fta": 29,
+      "reb": 49,
+      "oreb": 12,
+      "dreb": 27,
+      "ast": 24,
+      "tov": 9,
+      "stl": 10,
+      "blk": 5,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "36:42",
+        "pts": 20,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "MILES BRIDGES",
+        "min": "41:26",
+        "pts": 35,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "11",
+        "name": "RYAN KALKBRENNER",
+        "min": "22:15",
+        "pts": 8,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "24",
+        "name": "BRANDON MILLER",
+        "min": "25:18",
+        "pts": 7,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "LAMELO BALL",
+        "min": "21:41",
+        "pts": 14,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612761",
+    "total": {
+      "pts": 111,
+      "fgm": 44,
+      "fga": 99,
+      "f2m": 35,
+      "f2a": 70,
+      "f3m": 9,
+      "f3a": 29,
+      "ftm": 14,
+      "fta": 17,
+      "reb": 65,
+      "oreb": 17,
+      "dreb": 35,
+      "ast": 34,
+      "tov": 15,
+      "stl": 6,
+      "blk": 3,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "39:55",
+        "pts": 22,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "39:20",
+        "pts": 30,
+        "reb": 12,
+        "ast": 5
+      },
+      {
+        "no": "19",
+        "name": "JAKOB POELTL",
+        "min": "32:31",
+        "pts": 8,
+        "reb": 11,
+        "ast": 9
+      },
+      {
+        "no": "14",
+        "name": "JA'KOBE WALTER",
+        "min": "27:13",
+        "pts": 5,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "36:42",
+        "pts": 22,
+        "reb": 3,
+        "ast": 10
+      }
+    ]
+  }
+}

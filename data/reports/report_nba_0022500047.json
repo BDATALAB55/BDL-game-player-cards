@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500047",
+  "date": "2025.11.14",
+  "venue": "Frost Bank Center",
+  "attendance": 19059,
+  "home": {
+    "id": "1610612759",
+    "total": {
+      "pts": 108,
+      "fgm": 39,
+      "fga": 85,
+      "f2m": 25,
+      "f2a": 47,
+      "f3m": 14,
+      "f3a": 38,
+      "ftm": 16,
+      "fta": 19,
+      "reb": 59,
+      "oreb": 11,
+      "dreb": 36,
+      "ast": 28,
+      "tov": 20,
+      "stl": 8,
+      "blk": 6,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "31:51",
+        "pts": 11,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "28:08",
+        "pts": 7,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "38:14",
+        "pts": 26,
+        "reb": 12,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "36:26",
+        "pts": 13,
+        "reb": 9,
+        "ast": 6
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "33:12",
+        "pts": 24,
+        "reb": 4,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612744",
+    "total": {
+      "pts": 109,
+      "fgm": 38,
+      "fga": 90,
+      "f2m": 21,
+      "f2a": 45,
+      "f3m": 17,
+      "f3a": 45,
+      "ftm": 16,
+      "fta": 18,
+      "reb": 45,
+      "oreb": 15,
+      "dreb": 24,
+      "ast": 18,
+      "tov": 14,
+      "stl": 9,
+      "blk": 8,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "WILL RICHARD",
+        "min": "15:55",
+        "pts": 10,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "10",
+        "name": "JIMMY BUTLER III",
+        "min": "34:39",
+        "pts": 21,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "33:07",
+        "pts": 6,
+        "reb": 8,
+        "ast": 8
+      },
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "29:39",
+        "pts": 4,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "36:03",
+        "pts": 49,
+        "reb": 4,
+        "ast": 2
+      }
+    ]
+  }
+}

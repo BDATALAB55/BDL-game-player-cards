@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500079",
+  "date": "2025.11.28",
+  "venue": "Intuit Dome",
+  "attendance": 17927,
+  "home": {
+    "id": "1610612746",
+    "total": {
+      "pts": 107,
+      "fgm": 38,
+      "fga": 89,
+      "f2m": 26,
+      "f2a": 51,
+      "f3m": 12,
+      "f3a": 38,
+      "ftm": 19,
+      "fta": 21,
+      "reb": 47,
+      "oreb": 8,
+      "dreb": 31,
+      "ast": 19,
+      "tov": 13,
+      "stl": 13,
+      "blk": 5,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "28:31",
+        "pts": 39,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "32:48",
+        "pts": 10,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "39:08",
+        "pts": 9,
+        "reb": 12,
+        "ast": 5
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "30:23",
+        "pts": 11,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "40:09",
+        "pts": 23,
+        "reb": 7,
+        "ast": 11
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612763",
+    "total": {
+      "pts": 112,
+      "fgm": 39,
+      "fga": 88,
+      "f2m": 22,
+      "f2a": 48,
+      "f3m": 17,
+      "f3a": 40,
+      "ftm": 17,
+      "fta": 22,
+      "reb": 61,
+      "oreb": 15,
+      "dreb": 38,
+      "ast": 24,
+      "tov": 15,
+      "stl": 5,
+      "blk": 6,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "28:06",
+        "pts": 13,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "30:47",
+        "pts": 24,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "14",
+        "name": "ZACH EDEY",
+        "min": "31:57",
+        "pts": 5,
+        "reb": 19,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "CEDRIC COWARD",
+        "min": "30:44",
+        "pts": 7,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "VINCE WILLIAMS JR.",
+        "min": "23:17",
+        "pts": 16,
+        "reb": 1,
+        "ast": 5
+      }
+    ]
+  }
+}

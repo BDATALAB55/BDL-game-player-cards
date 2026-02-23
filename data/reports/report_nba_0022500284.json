@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500284",
+  "date": "2025.11.24",
+  "venue": "Scotiabank Arena",
+  "attendance": 17127,
+  "home": {
+    "id": "1610612761",
+    "total": {
+      "pts": 110,
+      "fgm": 44,
+      "fga": 90,
+      "f2m": 34,
+      "f2a": 54,
+      "f3m": 10,
+      "f3a": 36,
+      "ftm": 12,
+      "fta": 18,
+      "reb": 63,
+      "oreb": 10,
+      "dreb": 41,
+      "ast": 28,
+      "tov": 15,
+      "stl": 8,
+      "blk": 1,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "37:14",
+        "pts": 37,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "38:18",
+        "pts": 18,
+        "reb": 11,
+        "ast": 6
+      },
+      {
+        "no": "19",
+        "name": "JAKOB POELTL",
+        "min": "26:47",
+        "pts": 7,
+        "reb": 13,
+        "ast": 1
+      },
+      {
+        "no": "14",
+        "name": "JA'KOBE WALTER",
+        "min": "24:23",
+        "pts": 5,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "33:01",
+        "pts": 11,
+        "reb": 6,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612739",
+    "total": {
+      "pts": 99,
+      "fgm": 36,
+      "fga": 87,
+      "f2m": 22,
+      "f2a": 39,
+      "f3m": 14,
+      "f3a": 48,
+      "ftm": 13,
+      "fta": 13,
+      "reb": 40,
+      "oreb": 4,
+      "dreb": 33,
+      "ast": 27,
+      "tov": 12,
+      "stl": 11,
+      "blk": 4,
+      "pf": 13
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "JAYLON TYSON",
+        "min": "33:47",
+        "pts": 15,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "LARRY NANCE JR.",
+        "min": "18:08",
+        "pts": 6,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "31:11",
+        "pts": 14,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "33:46",
+        "pts": 17,
+        "reb": 1,
+        "ast": 8
+      },
+      {
+        "no": "2",
+        "name": "LONZO BALL",
+        "min": "34:03",
+        "pts": 8,
+        "reb": 7,
+        "ast": 7
+      }
+    ]
+  }
+}

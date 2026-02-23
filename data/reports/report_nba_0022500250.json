@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500250",
+  "date": "2025.11.18",
+  "venue": "Barclays Center",
+  "attendance": 18118,
+  "home": {
+    "id": "1610612751",
+    "total": {
+      "pts": 99,
+      "fgm": 33,
+      "fga": 82,
+      "f2m": 19,
+      "f2a": 44,
+      "f3m": 14,
+      "f3a": 38,
+      "ftm": 19,
+      "fta": 27,
+      "reb": 46,
+      "oreb": 12,
+      "dreb": 27,
+      "ast": 25,
+      "tov": 13,
+      "stl": 12,
+      "blk": 2,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "33:42",
+        "pts": 25,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "22:41",
+        "pts": 13,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "30:06",
+        "pts": 7,
+        "reb": 11,
+        "ast": 3
+      },
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "27:13",
+        "pts": 3,
+        "reb": 4,
+        "ast": 7
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "23:15",
+        "pts": 12,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612738",
+    "total": {
+      "pts": 113,
+      "fgm": 37,
+      "fga": 75,
+      "f2m": 18,
+      "f2a": 33,
+      "f3m": 19,
+      "f3a": 42,
+      "ftm": 20,
+      "fta": 26,
+      "reb": 56,
+      "oreb": 10,
+      "dreb": 39,
+      "ast": 25,
+      "tov": 19,
+      "stl": 6,
+      "blk": 5,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "31:59",
+        "pts": 29,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "27",
+        "name": "JORDAN WALSH",
+        "min": "11:13",
+        "pts": 4,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "22:50",
+        "pts": 6,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "32:46",
+        "pts": 15,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "35:15",
+        "pts": 22,
+        "reb": 10,
+        "ast": 5
+      }
+    ]
+  }
+}

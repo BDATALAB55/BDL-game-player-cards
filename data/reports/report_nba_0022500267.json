@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500267",
+  "date": "2025.11.20",
+  "venue": "Frost Bank Center",
+  "attendance": 18354,
+  "home": {
+    "id": "1610612759",
+    "total": {
+      "pts": 135,
+      "fgm": 48,
+      "fga": 91,
+      "f2m": 31,
+      "f2a": 51,
+      "f3m": 17,
+      "f3a": 40,
+      "ftm": 22,
+      "fta": 30,
+      "reb": 48,
+      "oreb": 10,
+      "dreb": 33,
+      "ast": 34,
+      "tov": 10,
+      "stl": 10,
+      "blk": 4,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "31:14",
+        "pts": 20,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "33:54",
+        "pts": 16,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "LUKE KORNET",
+        "min": "22:59",
+        "pts": 5,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "33:12",
+        "pts": 15,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "31:12",
+        "pts": 26,
+        "reb": 5,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612737",
+    "total": {
+      "pts": 126,
+      "fgm": 49,
+      "fga": 87,
+      "f2m": 29,
+      "f2a": 50,
+      "f3m": 20,
+      "f3a": 37,
+      "ftm": 8,
+      "fta": 13,
+      "reb": 46,
+      "oreb": 6,
+      "dreb": 33,
+      "ast": 30,
+      "tov": 16,
+      "stl": 7,
+      "blk": 6,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "37:57",
+        "pts": 26,
+        "reb": 12,
+        "ast": 7
+      },
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "20:39",
+        "pts": 2,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "KRISTAPS PORZIŅĢIS",
+        "min": "29:03",
+        "pts": 16,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "30:41",
+        "pts": 8,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "33:39",
+        "pts": 38,
+        "reb": 4,
+        "ast": 5
+      }
+    ]
+  }
+}

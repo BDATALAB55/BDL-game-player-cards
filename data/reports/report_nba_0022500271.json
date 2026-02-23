@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500271",
+  "date": "2025.11.22",
+  "venue": "United Center",
+  "attendance": 21302,
+  "home": {
+    "id": "1610612741",
+    "total": {
+      "pts": 121,
+      "fgm": 42,
+      "fga": 100,
+      "f2m": 30,
+      "f2a": 56,
+      "f3m": 12,
+      "f3a": 44,
+      "ftm": 25,
+      "fta": 30,
+      "reb": 62,
+      "oreb": 17,
+      "dreb": 37,
+      "ast": 26,
+      "tov": 10,
+      "stl": 5,
+      "blk": 5,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "11",
+        "name": "AYO DOSUNMU",
+        "min": "28:59",
+        "pts": 8,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "29:18",
+        "pts": 13,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "NIKOLA VUČEVIĆ",
+        "min": "27:00",
+        "pts": 28,
+        "reb": 12,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "COBY WHITE",
+        "min": "31:19",
+        "pts": 20,
+        "reb": 3,
+        "ast": 6
+      },
+      {
+        "no": "3",
+        "name": "JOSH GIDDEY",
+        "min": "34:15",
+        "pts": 18,
+        "reb": 12,
+        "ast": 11
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612764",
+    "total": {
+      "pts": 120,
+      "fgm": 44,
+      "fga": 96,
+      "f2m": 28,
+      "f2a": 60,
+      "f3m": 16,
+      "f3a": 36,
+      "ftm": 16,
+      "fta": 20,
+      "reb": 57,
+      "oreb": 15,
+      "dreb": 40,
+      "ast": 33,
+      "tov": 15,
+      "stl": 9,
+      "blk": 4,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "COREY KISPERT",
+        "min": "36:50",
+        "pts": 20,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "25:08",
+        "pts": 7,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "27:56",
+        "pts": 16,
+        "reb": 11,
+        "ast": 4
+      },
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "35:48",
+        "pts": 17,
+        "reb": 12,
+        "ast": 7
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "27:06",
+        "pts": 18,
+        "reb": 2,
+        "ast": 3
+      }
+    ]
+  }
+}

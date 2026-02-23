@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500042",
+  "date": "2025.11.14",
+  "venue": "Toyota Center",
+  "attendance": 18055,
+  "home": {
+    "id": "1610612745",
+    "total": {
+      "pts": 140,
+      "fgm": 53,
+      "fga": 106,
+      "f2m": 36,
+      "f2a": 61,
+      "f3m": 17,
+      "f3a": 45,
+      "ftm": 17,
+      "fta": 20,
+      "reb": 56,
+      "oreb": 20,
+      "dreb": 29,
+      "ast": 26,
+      "tov": 6,
+      "stl": 16,
+      "blk": 6,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "35:43",
+        "pts": 30,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "26:44",
+        "pts": 22,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "36:27",
+        "pts": 25,
+        "reb": 10,
+        "ast": 9
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "32:27",
+        "pts": 19,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "20",
+        "name": "JOSH OKOGIE",
+        "min": "20:47",
+        "pts": 11,
+        "reb": 3,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612757",
+    "total": {
+      "pts": 116,
+      "fgm": 42,
+      "fga": 89,
+      "f2m": 29,
+      "f2a": 53,
+      "f3m": 13,
+      "f3a": 36,
+      "ftm": 19,
+      "fta": 27,
+      "reb": 55,
+      "oreb": 16,
+      "dreb": 28,
+      "ast": 18,
+      "tov": 20,
+      "stl": 4,
+      "blk": 2,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "30:17",
+        "pts": 22,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "33:24",
+        "pts": 16,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "23:59",
+        "pts": 9,
+        "reb": 8,
+        "ast": 0
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "31:08",
+        "pts": 19,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "JRUE HOLIDAY",
+        "min": "29:28",
+        "pts": 13,
+        "reb": 4,
+        "ast": 6
+      }
+    ]
+  }
+}

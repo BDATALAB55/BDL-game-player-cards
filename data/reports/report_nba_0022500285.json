@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500285",
+  "date": "2025.11.24",
+  "venue": "Barclays Center",
+  "attendance": 18019,
+  "home": {
+    "id": "1610612751",
+    "total": {
+      "pts": 100,
+      "fgm": 33,
+      "fga": 87,
+      "f2m": 19,
+      "f2a": 39,
+      "f3m": 14,
+      "f3a": 48,
+      "ftm": 20,
+      "fta": 28,
+      "reb": 59,
+      "oreb": 13,
+      "dreb": 31,
+      "ast": 19,
+      "tov": 10,
+      "stl": 5,
+      "blk": 1,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "27:28",
+        "pts": 16,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "39:06",
+        "pts": 31,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "26:17",
+        "pts": 8,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "18:56",
+        "pts": 6,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "27:52",
+        "pts": 9,
+        "reb": 6,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612752",
+    "total": {
+      "pts": 113,
+      "fgm": 45,
+      "fga": 88,
+      "f2m": 33,
+      "f2a": 53,
+      "f3m": 12,
+      "f3a": 35,
+      "ftm": 11,
+      "fta": 14,
+      "reb": 51,
+      "oreb": 9,
+      "dreb": 34,
+      "ast": 28,
+      "tov": 8,
+      "stl": 6,
+      "blk": 6,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "33:30",
+        "pts": 16,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "37:40",
+        "pts": 7,
+        "reb": 12,
+        "ast": 7
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "32:58",
+        "pts": 37,
+        "reb": 12,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "MILES MCBRIDE",
+        "min": "29:36",
+        "pts": 9,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "32:44",
+        "pts": 27,
+        "reb": 3,
+        "ast": 3
+      }
+    ]
+  }
+}

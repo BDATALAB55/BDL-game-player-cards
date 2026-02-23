@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500295",
+  "date": "2025.11.29",
+  "venue": "Gainbridge Fieldhouse",
+  "attendance": 17006,
+  "home": {
+    "id": "1610612754",
+    "total": {
+      "pts": 103,
+      "fgm": 41,
+      "fga": 89,
+      "f2m": 28,
+      "f2a": 48,
+      "f3m": 13,
+      "f3a": 41,
+      "ftm": 8,
+      "fta": 11,
+      "reb": 52,
+      "oreb": 7,
+      "dreb": 37,
+      "ast": 24,
+      "tov": 12,
+      "stl": 8,
+      "blk": 10,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "26",
+        "name": "BEN SHEPPARD",
+        "min": "22:24",
+        "pts": 6,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "36:17",
+        "pts": 24,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "25:16",
+        "pts": 14,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "BENNEDICT MATHURIN",
+        "min": "37:52",
+        "pts": 19,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "31:34",
+        "pts": 14,
+        "reb": 1,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612741",
+    "total": {
+      "pts": 101,
+      "fgm": 39,
+      "fga": 87,
+      "f2m": 25,
+      "f2a": 53,
+      "f3m": 14,
+      "f3a": 34,
+      "ftm": 9,
+      "fta": 16,
+      "reb": 57,
+      "oreb": 8,
+      "dreb": 37,
+      "ast": 24,
+      "tov": 13,
+      "stl": 5,
+      "blk": 3,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "13",
+        "name": "KEVIN HUERTER",
+        "min": "31:44",
+        "pts": 15,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "34:01",
+        "pts": 8,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "NIKOLA VUČEVIĆ",
+        "min": "30:10",
+        "pts": 16,
+        "reb": 8,
+        "ast": 6
+      },
+      {
+        "no": "11",
+        "name": "AYO DOSUNMU",
+        "min": "35:24",
+        "pts": 15,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "3",
+        "name": "JOSH GIDDEY",
+        "min": "33:32",
+        "pts": 17,
+        "reb": 11,
+        "ast": 7
+      }
+    ]
+  }
+}

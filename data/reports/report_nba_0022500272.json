@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500272",
+  "date": "2025.11.22",
+  "venue": "Fiserv Forum",
+  "attendance": 17341,
+  "home": {
+    "id": "1610612749",
+    "total": {
+      "pts": 116,
+      "fgm": 43,
+      "fga": 84,
+      "f2m": 23,
+      "f2a": 41,
+      "f3m": 20,
+      "f3a": 43,
+      "ftm": 10,
+      "fta": 12,
+      "reb": 42,
+      "oreb": 6,
+      "dreb": 29,
+      "ast": 29,
+      "tov": 15,
+      "stl": 8,
+      "blk": 7,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "18",
+        "name": "KYLE KUZMA",
+        "min": "16:08",
+        "pts": 13,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "BOBBY PORTIS",
+        "min": "25:12",
+        "pts": 18,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "30:07",
+        "pts": 11,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "28:26",
+        "pts": 15,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "33:52",
+        "pts": 24,
+        "reb": 5,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612765",
+    "total": {
+      "pts": 129,
+      "fgm": 49,
+      "fga": 78,
+      "f2m": 33,
+      "f2a": 48,
+      "f3m": 16,
+      "f3a": 30,
+      "ftm": 15,
+      "fta": 24,
+      "reb": 40,
+      "oreb": 1,
+      "dreb": 31,
+      "ast": 31,
+      "tov": 14,
+      "stl": 10,
+      "blk": 6,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "27:53",
+        "pts": 6,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "12",
+        "name": "TOBIAS HARRIS",
+        "min": "22:59",
+        "pts": 18,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "JALEN DUREN",
+        "min": "27:21",
+        "pts": 19,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "28:09",
+        "pts": 15,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "32:34",
+        "pts": 29,
+        "reb": 8,
+        "ast": 10
+      }
+    ]
+  }
+}

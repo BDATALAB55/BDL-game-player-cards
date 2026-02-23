@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500270",
+  "date": "2025.11.22",
+  "venue": "Smoothie King Center",
+  "attendance": 18397,
+  "home": {
+    "id": "1610612740",
+    "total": {
+      "pts": 98,
+      "fgm": 35,
+      "fga": 84,
+      "f2m": 27,
+      "f2a": 57,
+      "f3m": 8,
+      "f3a": 27,
+      "ftm": 20,
+      "fta": 24,
+      "reb": 59,
+      "oreb": 13,
+      "dreb": 35,
+      "ast": 21,
+      "tov": 14,
+      "stl": 5,
+      "blk": 6,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "25",
+        "name": "TREY MURPHY III",
+        "min": "30:46",
+        "pts": 19,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "27:57",
+        "pts": 18,
+        "reb": 11,
+        "ast": 5
+      },
+      {
+        "no": "22",
+        "name": "DERIK QUEEN",
+        "min": "32:19",
+        "pts": 20,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "14",
+        "name": "MICAH PEAVY",
+        "min": "27:00",
+        "pts": 4,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "JEREMIAH FEARS",
+        "min": "31:26",
+        "pts": 11,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612737",
+    "total": {
+      "pts": 115,
+      "fgm": 42,
+      "fga": 90,
+      "f2m": 25,
+      "f2a": 44,
+      "f3m": 17,
+      "f3a": 46,
+      "ftm": 14,
+      "fta": 19,
+      "reb": 49,
+      "oreb": 10,
+      "dreb": 32,
+      "ast": 28,
+      "tov": 7,
+      "stl": 6,
+      "blk": 7,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "34:29",
+        "pts": 18,
+        "reb": 11,
+        "ast": 9
+      },
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "22:32",
+        "pts": 8,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "8",
+        "name": "KRISTAPS PORZIŅĢIS",
+        "min": "33:03",
+        "pts": 30,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "30:46",
+        "pts": 14,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "35:34",
+        "pts": 10,
+        "reb": 5,
+        "ast": 3
+      }
+    ]
+  }
+}

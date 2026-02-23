@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500249",
+  "date": "2025.11.18",
+  "venue": "Kia Center",
+  "attendance": 18846,
+  "home": {
+    "id": "1610612753",
+    "total": {
+      "pts": 121,
+      "fgm": 43,
+      "fga": 85,
+      "f2m": 35,
+      "f2a": 53,
+      "f3m": 8,
+      "f3a": 32,
+      "ftm": 27,
+      "fta": 29,
+      "reb": 51,
+      "oreb": 10,
+      "dreb": 33,
+      "ast": 28,
+      "tov": 14,
+      "stl": 14,
+      "blk": 3,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "TRISTAN DA SILVA",
+        "min": "28:52",
+        "pts": 15,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "FRANZ WAGNER",
+        "min": "36:23",
+        "pts": 18,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "35:07",
+        "pts": 17,
+        "reb": 12,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "39:10",
+        "pts": 23,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "31:56",
+        "pts": 13,
+        "reb": 5,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612744",
+    "total": {
+      "pts": 113,
+      "fgm": 39,
+      "fga": 78,
+      "f2m": 26,
+      "f2a": 42,
+      "f3m": 13,
+      "f3a": 36,
+      "ftm": 22,
+      "fta": 28,
+      "reb": 40,
+      "oreb": 6,
+      "dreb": 30,
+      "ast": 26,
+      "tov": 18,
+      "stl": 11,
+      "blk": 3,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "WILL RICHARD",
+        "min": "15:18",
+        "pts": 6,
+        "reb": 0,
+        "ast": 2
+      },
+      {
+        "no": "10",
+        "name": "JIMMY BUTLER III",
+        "min": "38:14",
+        "pts": 33,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "31:24",
+        "pts": 12,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "29:34",
+        "pts": 6,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "34:13",
+        "pts": 34,
+        "reb": 3,
+        "ast": 9
+      }
+    ]
+  }
+}

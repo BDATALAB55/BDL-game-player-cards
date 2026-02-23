@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500264",
+  "date": "2025.11.20",
+  "venue": "Kia Center",
+  "attendance": 17801,
+  "home": {
+    "id": "1610612753",
+    "total": {
+      "pts": 129,
+      "fgm": 45,
+      "fga": 94,
+      "f2m": 27,
+      "f2a": 60,
+      "f3m": 18,
+      "f3a": 34,
+      "ftm": 21,
+      "fta": 24,
+      "reb": 57,
+      "oreb": 12,
+      "dreb": 39,
+      "ast": 32,
+      "tov": 10,
+      "stl": 12,
+      "blk": 4,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "TRISTAN DA SILVA",
+        "min": "30:17",
+        "pts": 17,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "22",
+        "name": "FRANZ WAGNER",
+        "min": "29:54",
+        "pts": 20,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "31:42",
+        "pts": 7,
+        "reb": 7,
+        "ast": 6
+      },
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "30:49",
+        "pts": 15,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "26:15",
+        "pts": 23,
+        "reb": 3,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612746",
+    "total": {
+      "pts": 101,
+      "fgm": 36,
+      "fga": 89,
+      "f2m": 22,
+      "f2a": 53,
+      "f3m": 14,
+      "f3a": 36,
+      "ftm": 15,
+      "fta": 19,
+      "reb": 53,
+      "oreb": 10,
+      "dreb": 33,
+      "ast": 20,
+      "tov": 21,
+      "stl": 7,
+      "blk": 6,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "4",
+        "name": "KOBE SANDERS",
+        "min": "27:58",
+        "pts": 6,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "24:44",
+        "pts": 9,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "31:34",
+        "pts": 14,
+        "reb": 19,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "22:58",
+        "pts": 4,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "30:56",
+        "pts": 31,
+        "reb": 5,
+        "ast": 8
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500302",
+  "date": "2025.11.30",
+  "venue": "Rocket Arena",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612739",
+    "total": {
+      "pts": 115,
+      "fgm": 43,
+      "fga": 94,
+      "f2m": 23,
+      "f2a": 42,
+      "f3m": 20,
+      "f3a": 52,
+      "ftm": 9,
+      "fta": 13,
+      "reb": 48,
+      "oreb": 16,
+      "dreb": 27,
+      "ast": 28,
+      "tov": 13,
+      "stl": 7,
+      "blk": 2,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "DE'ANDRE HUNTER",
+        "min": "26:38",
+        "pts": 8,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "20",
+        "name": "JAYLON TYSON",
+        "min": "34:08",
+        "pts": 17,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "38:40",
+        "pts": 27,
+        "reb": 14,
+        "ast": 4
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "38:40",
+        "pts": 18,
+        "reb": 7,
+        "ast": 8
+      },
+      {
+        "no": "10",
+        "name": "DARIUS GARLAND",
+        "min": "31:24",
+        "pts": 21,
+        "reb": 3,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612738",
+    "total": {
+      "pts": 117,
+      "fgm": 40,
+      "fga": 81,
+      "f2m": 26,
+      "f2a": 41,
+      "f3m": 14,
+      "f3a": 40,
+      "ftm": 23,
+      "fta": 29,
+      "reb": 55,
+      "oreb": 15,
+      "dreb": 31,
+      "ast": 19,
+      "tov": 16,
+      "stl": 9,
+      "blk": 4,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "SAM HAUSER",
+        "min": "35:12",
+        "pts": 7,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "27",
+        "name": "JORDAN WALSH",
+        "min": "38:04",
+        "pts": 14,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "26",
+        "name": "XAVIER TILLMAN",
+        "min": "29:49",
+        "pts": 9,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "37:40",
+        "pts": 19,
+        "reb": 12,
+        "ast": 11
+      },
+      {
+        "no": "11",
+        "name": "PAYTON PRITCHARD",
+        "min": "30:43",
+        "pts": 42,
+        "reb": 3,
+        "ast": 3
+      }
+    ]
+  }
+}

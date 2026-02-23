@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500826",
+  "date": "2026.02.22",
+  "venue": "Mortgage Matchup Center",
+  "attendance": 17071,
+  "home": {
+    "id": "1610612756",
+    "total": {
+      "pts": 77,
+      "fgm": 31,
+      "fga": 85,
+      "f2m": 22,
+      "f2a": 50,
+      "f3m": 9,
+      "f3a": 35,
+      "ftm": 6,
+      "fta": 6,
+      "reb": 49,
+      "oreb": 13,
+      "dreb": 28,
+      "ast": 16,
+      "tov": 19,
+      "stl": 14,
+      "blk": 3,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "RYAN DUNN",
+        "min": "30:55",
+        "pts": 2,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "24:47",
+        "pts": 0,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "15:04",
+        "pts": 6,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "4",
+        "name": "JALEN GREEN",
+        "min": "22:20",
+        "pts": 13,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "33:06",
+        "pts": 18,
+        "reb": 3,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612757",
+    "total": {
+      "pts": 92,
+      "fgm": 38,
+      "fga": 81,
+      "f2m": 28,
+      "f2a": 44,
+      "f3m": 10,
+      "f3a": 37,
+      "ftm": 6,
+      "fta": 11,
+      "reb": 53,
+      "oreb": 13,
+      "dreb": 34,
+      "ast": 23,
+      "tov": 21,
+      "stl": 10,
+      "blk": 11,
+      "pf": 11
+    },
+    "starters": [
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "34:49",
+        "pts": 12,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "JERAMI GRANT",
+        "min": "30:49",
+        "pts": 23,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "31:01",
+        "pts": 23,
+        "reb": 13,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "JRUE HOLIDAY",
+        "min": "28:51",
+        "pts": 6,
+        "reb": 5,
+        "ast": 7
+      },
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "00:59",
+        "pts": 0,
+        "reb": 0,
+        "ast": 0
+      }
+    ]
+  }
+}

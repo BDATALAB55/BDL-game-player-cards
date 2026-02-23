@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500818",
+  "date": "2026.02.22",
+  "venue": "State Farm Arena",
+  "attendance": 17121,
+  "home": {
+    "id": "1610612737",
+    "total": {
+      "pts": 115,
+      "fgm": 42,
+      "fga": 87,
+      "f2m": 29,
+      "f2a": 54,
+      "f3m": 13,
+      "f3a": 33,
+      "ftm": 18,
+      "fta": 21,
+      "reb": 60,
+      "oreb": 15,
+      "dreb": 37,
+      "ast": 28,
+      "tov": 15,
+      "stl": 10,
+      "blk": 4,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "33:24",
+        "pts": 7,
+        "reb": 10,
+        "ast": 8
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "37:51",
+        "pts": 26,
+        "reb": 12,
+        "ast": 4
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "31:56",
+        "pts": 13,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "35:11",
+        "pts": 17,
+        "reb": 3,
+        "ast": 6
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "31:57",
+        "pts": 16,
+        "reb": 8,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612751",
+    "total": {
+      "pts": 104,
+      "fgm": 38,
+      "fga": 85,
+      "f2m": 26,
+      "f2a": 51,
+      "f3m": 12,
+      "f3a": 34,
+      "ftm": 16,
+      "fta": 22,
+      "reb": 42,
+      "oreb": 9,
+      "dreb": 25,
+      "ast": 29,
+      "tov": 13,
+      "stl": 9,
+      "blk": 4,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "34:38",
+        "pts": 18,
+        "reb": 7,
+        "ast": 6
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "31:03",
+        "pts": 12,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "30:33",
+        "pts": 15,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "28:00",
+        "pts": 13,
+        "reb": 1,
+        "ast": 4
+      },
+      {
+        "no": "88",
+        "name": "NOLAN TRAORE",
+        "min": "34:42",
+        "pts": 11,
+        "reb": 1,
+        "ast": 5
+      }
+    ]
+  }
+}

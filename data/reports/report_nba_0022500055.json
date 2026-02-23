@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500055",
+  "date": "2025.11.21",
+  "venue": "Delta Center",
+  "attendance": 18186,
+  "home": {
+    "id": "1610612762",
+    "total": {
+      "pts": 112,
+      "fgm": 38,
+      "fga": 79,
+      "f2m": 22,
+      "f2a": 41,
+      "f3m": 16,
+      "f3a": 38,
+      "ftm": 20,
+      "fta": 24,
+      "reb": 46,
+      "oreb": 12,
+      "dreb": 27,
+      "ast": 30,
+      "tov": 27,
+      "stl": 10,
+      "blk": 3,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "SVI MYKHAILIUK",
+        "min": "21:31",
+        "pts": 8,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "LAURI MARKKANEN",
+        "min": "34:37",
+        "pts": 19,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "30",
+        "name": "JUSUF NURKIĆ",
+        "min": "22:26",
+        "pts": 5,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "20:49",
+        "pts": 15,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "30:20",
+        "pts": 20,
+        "reb": 3,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612760",
+    "total": {
+      "pts": 144,
+      "fgm": 51,
+      "fga": 83,
+      "f2m": 28,
+      "f2a": 46,
+      "f3m": 23,
+      "f3a": 37,
+      "ftm": 19,
+      "fta": 25,
+      "reb": 38,
+      "oreb": 3,
+      "dreb": 23,
+      "ast": 36,
+      "tov": 13,
+      "stl": 15,
+      "blk": 4,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "21:08",
+        "pts": 9,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "26:47",
+        "pts": 11,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "55",
+        "name": "ISAIAH HARTENSTEIN",
+        "min": "23:43",
+        "pts": 12,
+        "reb": 6,
+        "ast": 7
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "26:52",
+        "pts": 10,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "30:09",
+        "pts": 31,
+        "reb": 2,
+        "ast": 8
+      }
+    ]
+  }
+}

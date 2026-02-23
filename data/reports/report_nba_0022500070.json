@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500070",
+  "date": "2025.11.28",
+  "venue": "Barclays Center",
+  "attendance": 17809,
+  "home": {
+    "id": "1610612751",
+    "total": {
+      "pts": 103,
+      "fgm": 34,
+      "fga": 85,
+      "f2m": 21,
+      "f2a": 42,
+      "f3m": 13,
+      "f3a": 43,
+      "ftm": 22,
+      "fta": 26,
+      "reb": 53,
+      "oreb": 14,
+      "dreb": 27,
+      "ast": 21,
+      "tov": 18,
+      "stl": 5,
+      "blk": 5,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "1",
+        "name": "ZIAIRE WILLIAMS",
+        "min": "29:47",
+        "pts": 10,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "35:09",
+        "pts": 16,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "37:32",
+        "pts": 12,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "35:56",
+        "pts": 14,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "30:29",
+        "pts": 23,
+        "reb": 9,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612755",
+    "total": {
+      "pts": 115,
+      "fgm": 43,
+      "fga": 88,
+      "f2m": 32,
+      "f2a": 51,
+      "f3m": 11,
+      "f3a": 37,
+      "ftm": 18,
+      "fta": 20,
+      "reb": 49,
+      "oreb": 9,
+      "dreb": 32,
+      "ast": 28,
+      "tov": 11,
+      "stl": 12,
+      "blk": 7,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "PAUL GEORGE",
+        "min": "21:21",
+        "pts": 14,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "25",
+        "name": "DOMINICK BARLOW",
+        "min": "25:20",
+        "pts": 10,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "ANDRE DRUMMOND",
+        "min": "10:31",
+        "pts": 7,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "QUENTIN GRIMES",
+        "min": "42:38",
+        "pts": 19,
+        "reb": 3,
+        "ast": 9
+      },
+      {
+        "no": "0",
+        "name": "TYRESE MAXEY",
+        "min": "41:44",
+        "pts": 22,
+        "reb": 9,
+        "ast": 7
+      }
+    ]
+  }
+}

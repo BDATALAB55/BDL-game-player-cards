@@ -1,0 +1,134 @@
+{
+  "gameId": "0022501204",
+  "date": "2025.12.10",
+  "venue": "Crypto.com Arena",
+  "attendance": 18684,
+  "home": {
+    "id": "1610612747",
+    "total": {
+      "pts": 119,
+      "fgm": 43,
+      "fga": 87,
+      "f2m": 27,
+      "f2a": 50,
+      "f3m": 16,
+      "f3a": 37,
+      "ftm": 17,
+      "fta": 23,
+      "reb": 45,
+      "oreb": 6,
+      "dreb": 37,
+      "ast": 27,
+      "tov": 11,
+      "stl": 4,
+      "blk": 7,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "36:26",
+        "pts": 19,
+        "reb": 15,
+        "ast": 8
+      },
+      {
+        "no": "28",
+        "name": "RUI HACHIMURA",
+        "min": "30:50",
+        "pts": 8,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "25:39",
+        "pts": 11,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "AUSTIN REAVES",
+        "min": "39:49",
+        "pts": 15,
+        "reb": 8,
+        "ast": 7
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "40:56",
+        "pts": 35,
+        "reb": 5,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 132,
+      "fgm": 43,
+      "fga": 86,
+      "f2m": 26,
+      "f2a": 48,
+      "f3m": 17,
+      "f3a": 38,
+      "ftm": 29,
+      "fta": 36,
+      "reb": 57,
+      "oreb": 9,
+      "dreb": 41,
+      "ast": 25,
+      "tov": 10,
+      "stl": 9,
+      "blk": 3,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "30:45",
+        "pts": 8,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "32:33",
+        "pts": 16,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "LUKE KORNET",
+        "min": "33:01",
+        "pts": 10,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "26:34",
+        "pts": 30,
+        "reb": 10,
+        "ast": 6
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "31:29",
+        "pts": 20,
+        "reb": 4,
+        "ast": 3
+      }
+    ]
+  }
+}

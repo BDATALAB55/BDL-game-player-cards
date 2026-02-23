@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500230",
+  "date": "2025.11.15",
+  "venue": "Gainbridge Fieldhouse",
+  "attendance": 17274,
+  "home": {
+    "id": "1610612754",
+    "total": {
+      "pts": 111,
+      "fgm": 37,
+      "fga": 87,
+      "f2m": 22,
+      "f2a": 44,
+      "f3m": 15,
+      "f3a": 43,
+      "ftm": 22,
+      "fta": 27,
+      "reb": 50,
+      "oreb": 7,
+      "dreb": 33,
+      "ast": 22,
+      "tov": 15,
+      "stl": 5,
+      "blk": 3,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "25",
+        "name": "JEREMIAH ROBINSON-EARL",
+        "min": "30:17",
+        "pts": 7,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "35:36",
+        "pts": 30,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "13",
+        "name": "TONY BRADLEY",
+        "min": "18:39",
+        "pts": 5,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "JARACE WALKER",
+        "min": "29:31",
+        "pts": 8,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "31:29",
+        "pts": 22,
+        "reb": 4,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612761",
+    "total": {
+      "pts": 129,
+      "fgm": 48,
+      "fga": 87,
+      "f2m": 41,
+      "f2a": 57,
+      "f3m": 7,
+      "f3a": 30,
+      "ftm": 26,
+      "fta": 42,
+      "reb": 61,
+      "oreb": 8,
+      "dreb": 38,
+      "ast": 29,
+      "tov": 12,
+      "stl": 13,
+      "blk": 3,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "29:54",
+        "pts": 19,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "31:45",
+        "pts": 14,
+        "reb": 11,
+        "ast": 6
+      },
+      {
+        "no": "19",
+        "name": "JAKOB POELTL",
+        "min": "25:51",
+        "pts": 22,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "28:02",
+        "pts": 22,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "29:28",
+        "pts": 12,
+        "reb": 3,
+        "ast": 7
+      }
+    ]
+  }
+}

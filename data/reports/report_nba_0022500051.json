@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500051",
+  "date": "2025.11.21",
+  "venue": "United Center",
+  "attendance": 21313,
+  "home": {
+    "id": "1610612741",
+    "total": {
+      "pts": 107,
+      "fgm": 37,
+      "fga": 90,
+      "f2m": 25,
+      "f2a": 47,
+      "f3m": 12,
+      "f3a": 43,
+      "ftm": 21,
+      "fta": 28,
+      "reb": 56,
+      "oreb": 8,
+      "dreb": 31,
+      "ast": 26,
+      "tov": 18,
+      "stl": 5,
+      "blk": 13,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "16:52",
+        "pts": 9,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "18:38",
+        "pts": 6,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "NIKOLA VUČEVIĆ",
+        "min": "20:34",
+        "pts": 6,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "11",
+        "name": "AYO DOSUNMU",
+        "min": "32:34",
+        "pts": 23,
+        "reb": 1,
+        "ast": 4
+      },
+      {
+        "no": "3",
+        "name": "JOSH GIDDEY",
+        "min": "31:24",
+        "pts": 19,
+        "reb": 11,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612748",
+    "total": {
+      "pts": 143,
+      "fgm": 47,
+      "fga": 100,
+      "f2m": 33,
+      "f2a": 62,
+      "f3m": 14,
+      "f3a": 38,
+      "ftm": 35,
+      "fta": 44,
+      "reb": 67,
+      "oreb": 15,
+      "dreb": 38,
+      "ast": 35,
+      "tov": 10,
+      "stl": 13,
+      "blk": 7,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "26:06",
+        "pts": 16,
+        "reb": 2,
+        "ast": 7
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "29:27",
+        "pts": 18,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "7",
+        "name": "KEL'EL WARE",
+        "min": "27:56",
+        "pts": 20,
+        "reb": 14,
+        "ast": 1
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "24:39",
+        "pts": 19,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "23:47",
+        "pts": 16,
+        "reb": 0,
+        "ast": 6
+      }
+    ]
+  }
+}

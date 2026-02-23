@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500290",
+  "date": "2025.11.24",
+  "venue": "Mortgage Matchup Center",
+  "attendance": 17071,
+  "home": {
+    "id": "1610612756",
+    "total": {
+      "pts": 92,
+      "fgm": 33,
+      "fga": 80,
+      "f2m": 20,
+      "f2a": 43,
+      "f3m": 13,
+      "f3a": 37,
+      "ftm": 13,
+      "fta": 19,
+      "reb": 51,
+      "oreb": 13,
+      "dreb": 26,
+      "ast": 11,
+      "tov": 21,
+      "stl": 9,
+      "blk": 4,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "31:35",
+        "pts": 29,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "32:46",
+        "pts": 12,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "NICK RICHARDS",
+        "min": "21:39",
+        "pts": 4,
+        "reb": 11,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "JORDAN GOODWIN",
+        "min": "26:40",
+        "pts": 7,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "37:47",
+        "pts": 18,
+        "reb": 3,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612745",
+    "total": {
+      "pts": 114,
+      "fgm": 43,
+      "fga": 88,
+      "f2m": 30,
+      "f2a": 57,
+      "f3m": 13,
+      "f3a": 31,
+      "ftm": 15,
+      "fta": 17,
+      "reb": 50,
+      "oreb": 12,
+      "dreb": 29,
+      "ast": 26,
+      "tov": 14,
+      "stl": 13,
+      "blk": 4,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "36:51",
+        "pts": 28,
+        "reb": 7,
+        "ast": 8
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "32:03",
+        "pts": 17,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "34:42",
+        "pts": 18,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "20",
+        "name": "JOSH OKOGIE",
+        "min": "29:30",
+        "pts": 9,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "REED SHEPPARD",
+        "min": "26:54",
+        "pts": 7,
+        "reb": 1,
+        "ast": 5
+      }
+    ]
+  }
+}

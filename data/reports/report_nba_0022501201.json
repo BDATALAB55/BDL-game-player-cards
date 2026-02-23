@@ -1,0 +1,134 @@
+{
+  "gameId": "0022501201",
+  "date": "2025.12.09",
+  "venue": "Kia Center",
+  "attendance": 18605,
+  "home": {
+    "id": "1610612753",
+    "total": {
+      "pts": 117,
+      "fgm": 44,
+      "fga": 87,
+      "f2m": 29,
+      "f2a": 55,
+      "f3m": 15,
+      "f3a": 32,
+      "ftm": 14,
+      "fta": 16,
+      "reb": 54,
+      "oreb": 7,
+      "dreb": 40,
+      "ast": 30,
+      "tov": 16,
+      "stl": 5,
+      "blk": 6,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "38:02",
+        "pts": 37,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "31:59",
+        "pts": 18,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "30:54",
+        "pts": 14,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "ANTHONY BLACK",
+        "min": "34:03",
+        "pts": 10,
+        "reb": 3,
+        "ast": 7
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "31:00",
+        "pts": 20,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612748",
+    "total": {
+      "pts": 108,
+      "fgm": 42,
+      "fga": 93,
+      "f2m": 34,
+      "f2a": 60,
+      "f3m": 8,
+      "f3a": 33,
+      "ftm": 16,
+      "fta": 19,
+      "reb": 47,
+      "oreb": 7,
+      "dreb": 32,
+      "ast": 25,
+      "tov": 8,
+      "stl": 8,
+      "blk": 6,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "34:00",
+        "pts": 21,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "35:25",
+        "pts": 19,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "35:33",
+        "pts": 19,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "14",
+        "name": "TYLER HERRO",
+        "min": "34:27",
+        "pts": 20,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "37:12",
+        "pts": 11,
+        "reb": 2,
+        "ast": 9
+      }
+    ]
+  }
+}

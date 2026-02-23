@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500301",
+  "date": "2025.11.30",
+  "venue": "Delta Center",
+  "attendance": 18186,
+  "home": {
+    "id": "1610612762",
+    "total": {
+      "pts": 101,
+      "fgm": 39,
+      "fga": 88,
+      "f2m": 30,
+      "f2a": 56,
+      "f3m": 9,
+      "f3a": 32,
+      "ftm": 14,
+      "fta": 15,
+      "reb": 40,
+      "oreb": 9,
+      "dreb": 24,
+      "ast": 32,
+      "tov": 17,
+      "stl": 8,
+      "blk": 4,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "SVI MYKHAILIUK",
+        "min": "24:50",
+        "pts": 11,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "LAURI MARKKANEN",
+        "min": "30:25",
+        "pts": 18,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "30",
+        "name": "JUSUF NURKIĆ",
+        "min": "19:22",
+        "pts": 14,
+        "reb": 6,
+        "ast": 9
+      },
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "31:26",
+        "pts": 19,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "19:08",
+        "pts": 0,
+        "reb": 1,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612745",
+    "total": {
+      "pts": 129,
+      "fgm": 46,
+      "fga": 87,
+      "f2m": 35,
+      "f2a": 56,
+      "f3m": 11,
+      "f3a": 31,
+      "ftm": 26,
+      "fta": 33,
+      "reb": 59,
+      "oreb": 15,
+      "dreb": 35,
+      "ast": 30,
+      "tov": 14,
+      "stl": 14,
+      "blk": 7,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "29:51",
+        "pts": 25,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "27:08",
+        "pts": 15,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "28:24",
+        "pts": 27,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "30:50",
+        "pts": 5,
+        "reb": 8,
+        "ast": 9
+      },
+      {
+        "no": "15",
+        "name": "REED SHEPPARD",
+        "min": "31:08",
+        "pts": 9,
+        "reb": 6,
+        "ast": 4
+      }
+    ]
+  }
+}

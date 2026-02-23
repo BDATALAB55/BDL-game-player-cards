@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500265",
+  "date": "2025.11.20",
+  "venue": "FedExForum",
+  "attendance": 14704,
+  "home": {
+    "id": "1610612763",
+    "total": {
+      "pts": 137,
+      "fgm": 50,
+      "fga": 99,
+      "f2m": 33,
+      "f2a": 45,
+      "f3m": 17,
+      "f3a": 54,
+      "ftm": 20,
+      "fta": 26,
+      "reb": 63,
+      "oreb": 11,
+      "dreb": 38,
+      "ast": 42,
+      "tov": 7,
+      "stl": 11,
+      "blk": 3,
+      "pf": 11
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "18:49",
+        "pts": 13,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "SANTI ALDAMA",
+        "min": "27:34",
+        "pts": 29,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "14",
+        "name": "ZACH EDEY",
+        "min": "24:50",
+        "pts": 16,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "CEDRIC COWARD",
+        "min": "24:49",
+        "pts": 19,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "VINCE WILLIAMS JR.",
+        "min": "23:50",
+        "pts": 4,
+        "reb": 5,
+        "ast": 15
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612758",
+    "total": {
+      "pts": 96,
+      "fgm": 37,
+      "fga": 80,
+      "f2m": 26,
+      "f2a": 47,
+      "f3m": 11,
+      "f3a": 33,
+      "ftm": 11,
+      "fta": 15,
+      "reb": 40,
+      "oreb": 4,
+      "dreb": 28,
+      "ast": 24,
+      "tov": 16,
+      "stl": 5,
+      "blk": 5,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "15:22",
+        "pts": 7,
+        "reb": 0,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "PRECIOUS ACHIUWA",
+        "min": "24:06",
+        "pts": 2,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "19",
+        "name": "DREW EUBANKS",
+        "min": "25:38",
+        "pts": 9,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "ZACH LAVINE",
+        "min": "26:04",
+        "pts": 26,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "20:31",
+        "pts": 11,
+        "reb": 7,
+        "ast": 4
+      }
+    ]
+  }
+}

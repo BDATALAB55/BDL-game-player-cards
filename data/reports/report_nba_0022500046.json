@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500046",
+  "date": "2025.11.14",
+  "venue": "American Airlines Center",
+  "attendance": 18624,
+  "home": {
+    "id": "1610612742",
+    "total": {
+      "pts": 127,
+      "fgm": 44,
+      "fga": 99,
+      "f2m": 34,
+      "f2a": 63,
+      "f3m": 10,
+      "f3a": 36,
+      "ftm": 29,
+      "fta": 38,
+      "reb": 66,
+      "oreb": 11,
+      "dreb": 39,
+      "ast": 18,
+      "tov": 22,
+      "stl": 11,
+      "blk": 7,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "47:39",
+        "pts": 16,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "47:09",
+        "pts": 28,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "27:22",
+        "pts": 10,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "36:45",
+        "pts": 10,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "10",
+        "name": "BRANDON WILLIAMS",
+        "min": "18:08",
+        "pts": 7,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612746",
+    "total": {
+      "pts": 133,
+      "fgm": 45,
+      "fga": 95,
+      "f2m": 32,
+      "f2a": 53,
+      "f3m": 13,
+      "f3a": 42,
+      "ftm": 30,
+      "fta": 36,
+      "reb": 56,
+      "oreb": 7,
+      "dreb": 38,
+      "ast": 22,
+      "tov": 20,
+      "stl": 16,
+      "blk": 6,
+      "pf": 32
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "DERRICK JONES JR.",
+        "min": "40:16",
+        "pts": 15,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "23:33",
+        "pts": 8,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "46:11",
+        "pts": 27,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "32:14",
+        "pts": 9,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "51:03",
+        "pts": 41,
+        "reb": 14,
+        "ast": 11
+      }
+    ]
+  }
+}

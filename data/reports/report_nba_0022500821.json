@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500821",
+  "date": "2026.02.22",
+  "venue": "Gainbridge Fieldhouse",
+  "attendance": 17274,
+  "home": {
+    "id": "1610612754",
+    "total": {
+      "pts": 130,
+      "fgm": 47,
+      "fga": 94,
+      "f2m": 27,
+      "f2a": 52,
+      "f3m": 20,
+      "f3a": 42,
+      "ftm": 16,
+      "fta": 20,
+      "reb": 45,
+      "oreb": 9,
+      "dreb": 30,
+      "ast": 37,
+      "tov": 15,
+      "stl": 8,
+      "blk": 3,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "JARACE WALKER",
+        "min": "34:19",
+        "pts": 18,
+        "reb": 9,
+        "ast": 6
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "29:02",
+        "pts": 30,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "26:12",
+        "pts": 9,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "KAM JONES",
+        "min": "30:30",
+        "pts": 10,
+        "reb": 0,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "29:30",
+        "pts": 22,
+        "reb": 1,
+        "ast": 11
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612742",
+    "total": {
+      "pts": 134,
+      "fgm": 51,
+      "fga": 94,
+      "f2m": 40,
+      "f2a": 66,
+      "f3m": 11,
+      "f3a": 28,
+      "ftm": 21,
+      "fta": 32,
+      "reb": 61,
+      "oreb": 10,
+      "dreb": 35,
+      "ast": 29,
+      "tov": 11,
+      "stl": 9,
+      "blk": 2,
+      "pf": 13
+    },
+    "starters": [
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "36:32",
+        "pts": 23,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "20",
+        "name": "KHRIS MIDDLETON",
+        "min": "29:35",
+        "pts": 25,
+        "reb": 7,
+        "ast": 7
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "21:56",
+        "pts": 8,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "30:34",
+        "pts": 16,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "25:34",
+        "pts": 17,
+        "reb": 2,
+        "ast": 2
+      }
+    ]
+  }
+}

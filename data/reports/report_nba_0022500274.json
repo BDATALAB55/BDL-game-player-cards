@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500274",
+  "date": "2025.11.22",
+  "venue": "Ball Arena",
+  "attendance": 19893,
+  "home": {
+    "id": "1610612743",
+    "total": {
+      "pts": 123,
+      "fgm": 45,
+      "fga": 92,
+      "f2m": 31,
+      "f2a": 55,
+      "f3m": 14,
+      "f3a": 37,
+      "ftm": 19,
+      "fta": 23,
+      "reb": 53,
+      "oreb": 11,
+      "dreb": 27,
+      "ast": 28,
+      "tov": 13,
+      "stl": 1,
+      "blk": 3,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "PEYTON WATSON",
+        "min": "34:09",
+        "pts": 15,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "SPENCER JONES",
+        "min": "23:32",
+        "pts": 1,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "36:35",
+        "pts": 44,
+        "reb": 13,
+        "ast": 7
+      },
+      {
+        "no": "23",
+        "name": "CAMERON JOHNSON",
+        "min": "37:14",
+        "pts": 20,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "36:48",
+        "pts": 23,
+        "reb": 2,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612758",
+    "total": {
+      "pts": 128,
+      "fgm": 48,
+      "fga": 91,
+      "f2m": 38,
+      "f2a": 61,
+      "f3m": 10,
+      "f3a": 30,
+      "ftm": 22,
+      "fta": 23,
+      "reb": 43,
+      "oreb": 9,
+      "dreb": 28,
+      "ast": 32,
+      "tov": 6,
+      "stl": 8,
+      "blk": 3,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "30:44",
+        "pts": 17,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "13",
+        "name": "KEEGAN MURRAY",
+        "min": "36:33",
+        "pts": 19,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "19",
+        "name": "DREW EUBANKS",
+        "min": "21:38",
+        "pts": 8,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "ZACH LAVINE",
+        "min": "35:47",
+        "pts": 15,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "29:47",
+        "pts": 21,
+        "reb": 6,
+        "ast": 11
+      }
+    ]
+  }
+}

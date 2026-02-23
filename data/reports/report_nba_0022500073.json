@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500073",
+  "date": "2025.11.28",
+  "venue": "Gainbridge Fieldhouse",
+  "attendance": 16515,
+  "home": {
+    "id": "1610612754",
+    "total": {
+      "pts": 119,
+      "fgm": 48,
+      "fga": 92,
+      "f2m": 35,
+      "f2a": 58,
+      "f3m": 13,
+      "f3a": 34,
+      "ftm": 10,
+      "fta": 13,
+      "reb": 57,
+      "oreb": 10,
+      "dreb": 40,
+      "ast": 27,
+      "tov": 11,
+      "stl": 9,
+      "blk": 8,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "JARACE WALKER",
+        "min": "23:08",
+        "pts": 10,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "26:27",
+        "pts": 24,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "21:47",
+        "pts": 12,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "BENNEDICT MATHURIN",
+        "min": "34:09",
+        "pts": 20,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "26",
+        "name": "BEN SHEPPARD",
+        "min": "29:14",
+        "pts": 9,
+        "reb": 3,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612764",
+    "total": {
+      "pts": 86,
+      "fgm": 33,
+      "fga": 84,
+      "f2m": 26,
+      "f2a": 52,
+      "f3m": 7,
+      "f3a": 32,
+      "ftm": 13,
+      "fta": 20,
+      "reb": 50,
+      "oreb": 11,
+      "dreb": 31,
+      "ast": 18,
+      "tov": 17,
+      "stl": 6,
+      "blk": 7,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "30:40",
+        "pts": 11,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "KHRIS MIDDLETON",
+        "min": "25:52",
+        "pts": 12,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "32:44",
+        "pts": 24,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "26:32",
+        "pts": 5,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "29:31",
+        "pts": 11,
+        "reb": 1,
+        "ast": 2
+      }
+    ]
+  }
+}

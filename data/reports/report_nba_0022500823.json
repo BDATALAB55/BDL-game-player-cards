@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500823",
+  "date": "2026.02.22",
+  "venue": "Crypto.com Arena",
+  "attendance": 18997,
+  "home": {
+    "id": "1610612747",
+    "total": {
+      "pts": 89,
+      "fgm": 34,
+      "fga": 87,
+      "f2m": 25,
+      "f2a": 57,
+      "f3m": 9,
+      "f3a": 30,
+      "ftm": 12,
+      "fta": 18,
+      "reb": 47,
+      "oreb": 8,
+      "dreb": 31,
+      "ast": 18,
+      "tov": 8,
+      "stl": 7,
+      "blk": 5,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "34:29",
+        "pts": 20,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "22:22",
+        "pts": 0,
+        "reb": 1,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "24:50",
+        "pts": 4,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "AUSTIN REAVES",
+        "min": "32:28",
+        "pts": 15,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "32:31",
+        "pts": 25,
+        "reb": 5,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612738",
+    "total": {
+      "pts": 111,
+      "fgm": 40,
+      "fga": 83,
+      "f2m": 26,
+      "f2a": 47,
+      "f3m": 14,
+      "f3a": 36,
+      "ftm": 17,
+      "fta": 21,
+      "reb": 61,
+      "oreb": 9,
+      "dreb": 41,
+      "ast": 29,
+      "tov": 14,
+      "stl": 6,
+      "blk": 5,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "36:01",
+        "pts": 32,
+        "reb": 8,
+        "ast": 7
+      },
+      {
+        "no": "30",
+        "name": "SAM HAUSER",
+        "min": "28:49",
+        "pts": 7,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "25:36",
+        "pts": 10,
+        "reb": 12,
+        "ast": 1
+      },
+      {
+        "no": "55",
+        "name": "BAYLOR SCHEIERMAN",
+        "min": "28:56",
+        "pts": 5,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "35:18",
+        "pts": 12,
+        "reb": 5,
+        "ast": 8
+      }
+    ]
+  }
+}

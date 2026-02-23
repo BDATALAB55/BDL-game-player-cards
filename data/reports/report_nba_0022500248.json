@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500248",
+  "date": "2025.11.17",
+  "venue": "Ball Arena",
+  "attendance": 19951,
+  "home": {
+    "id": "1610612743",
+    "total": {
+      "pts": 127,
+      "fgm": 46,
+      "fga": 97,
+      "f2m": 32,
+      "f2a": 61,
+      "f3m": 14,
+      "f3a": 36,
+      "ftm": 21,
+      "fta": 25,
+      "reb": 57,
+      "oreb": 13,
+      "dreb": 40,
+      "ast": 21,
+      "tov": 8,
+      "stl": 6,
+      "blk": 5,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "PEYTON WATSON",
+        "min": "34:02",
+        "pts": 5,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "32",
+        "name": "AARON GORDON",
+        "min": "32:25",
+        "pts": 24,
+        "reb": 10,
+        "ast": 0
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "38:37",
+        "pts": 36,
+        "reb": 18,
+        "ast": 13
+      },
+      {
+        "no": "23",
+        "name": "CAMERON JOHNSON",
+        "min": "36:55",
+        "pts": 19,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "38:16",
+        "pts": 34,
+        "reb": 11,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612741",
+    "total": {
+      "pts": 130,
+      "fgm": 48,
+      "fga": 102,
+      "f2m": 29,
+      "f2a": 49,
+      "f3m": 19,
+      "f3a": 53,
+      "ftm": 15,
+      "fta": 19,
+      "reb": 57,
+      "oreb": 13,
+      "dreb": 40,
+      "ast": 31,
+      "tov": 9,
+      "stl": 5,
+      "blk": 4,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "19:56",
+        "pts": 2,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "29:05",
+        "pts": 13,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "NIKOLA VUČEVIĆ",
+        "min": "29:00",
+        "pts": 8,
+        "reb": 9,
+        "ast": 6
+      },
+      {
+        "no": "13",
+        "name": "KEVIN HUERTER",
+        "min": "24:00",
+        "pts": 20,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "JOSH GIDDEY",
+        "min": "30:19",
+        "pts": 21,
+        "reb": 14,
+        "ast": 6
+      }
+    ]
+  }
+}

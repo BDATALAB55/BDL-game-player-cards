@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500244",
+  "date": "2025.11.17",
+  "venue": "Kaseya Center",
+  "attendance": 19600,
+  "home": {
+    "id": "1610612748",
+    "total": {
+      "pts": 115,
+      "fgm": 45,
+      "fga": 101,
+      "f2m": 31,
+      "f2a": 66,
+      "f3m": 14,
+      "f3a": 35,
+      "ftm": 11,
+      "fta": 13,
+      "reb": 55,
+      "oreb": 7,
+      "dreb": 33,
+      "ast": 29,
+      "tov": 12,
+      "stl": 5,
+      "blk": 5,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "26:16",
+        "pts": 13,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "32:57",
+        "pts": 6,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "7",
+        "name": "KEL'EL WARE",
+        "min": "30:41",
+        "pts": 16,
+        "reb": 14,
+        "ast": 1
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "31:43",
+        "pts": 19,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "32:30",
+        "pts": 18,
+        "reb": 3,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612752",
+    "total": {
+      "pts": 113,
+      "fgm": 43,
+      "fga": 94,
+      "f2m": 34,
+      "f2a": 58,
+      "f3m": 9,
+      "f3a": 36,
+      "ftm": 18,
+      "fta": 24,
+      "reb": 60,
+      "oreb": 11,
+      "dreb": 37,
+      "ast": 23,
+      "tov": 15,
+      "stl": 7,
+      "blk": 7,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "39:13",
+        "pts": 23,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "32:37",
+        "pts": 22,
+        "reb": 15,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "MITCHELL ROBINSON",
+        "min": "18:28",
+        "pts": 5,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "44",
+        "name": "LANDRY SHAMET",
+        "min": "39:26",
+        "pts": 10,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "2",
+        "name": "MILES MCBRIDE",
+        "min": "38:44",
+        "pts": 25,
+        "reb": 4,
+        "ast": 0
+      }
+    ]
+  }
+}

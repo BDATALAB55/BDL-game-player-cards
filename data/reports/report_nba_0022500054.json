@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500054",
+  "date": "2025.11.21",
+  "venue": "Toyota Center",
+  "attendance": 18108,
+  "home": {
+    "id": "1610612745",
+    "total": {
+      "pts": 109,
+      "fgm": 41,
+      "fga": 93,
+      "f2m": 27,
+      "f2a": 57,
+      "f3m": 14,
+      "f3a": 36,
+      "ftm": 13,
+      "fta": 20,
+      "reb": 52,
+      "oreb": 18,
+      "dreb": 23,
+      "ast": 21,
+      "tov": 14,
+      "stl": 8,
+      "blk": 2,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "36:56",
+        "pts": 21,
+        "reb": 11,
+        "ast": 4
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "36:09",
+        "pts": 14,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "12",
+        "name": "STEVEN ADAMS",
+        "min": "23:07",
+        "pts": 5,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "35:15",
+        "pts": 13,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "43:27",
+        "pts": 22,
+        "reb": 7,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612743",
+    "total": {
+      "pts": 112,
+      "fgm": 40,
+      "fga": 76,
+      "f2m": 29,
+      "f2a": 47,
+      "f3m": 11,
+      "f3a": 29,
+      "ftm": 21,
+      "fta": 27,
+      "reb": 52,
+      "oreb": 11,
+      "dreb": 27,
+      "ast": 28,
+      "tov": 14,
+      "stl": 8,
+      "blk": 7,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "PEYTON WATSON",
+        "min": "34:14",
+        "pts": 9,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "32",
+        "name": "AARON GORDON",
+        "min": "03:21",
+        "pts": 1,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "39:20",
+        "pts": 34,
+        "reb": 10,
+        "ast": 9
+      },
+      {
+        "no": "23",
+        "name": "CAMERON JOHNSON",
+        "min": "32:13",
+        "pts": 9,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "40:31",
+        "pts": 26,
+        "reb": 2,
+        "ast": 10
+      }
+    ]
+  }
+}

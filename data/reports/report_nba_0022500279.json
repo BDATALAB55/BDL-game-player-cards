@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500279",
+  "date": "2025.11.23",
+  "venue": "Scotiabank Arena",
+  "attendance": 18038,
+  "home": {
+    "id": "1610612761",
+    "total": {
+      "pts": 119,
+      "fgm": 39,
+      "fga": 84,
+      "f2m": 24,
+      "f2a": 54,
+      "f3m": 15,
+      "f3a": 30,
+      "ftm": 26,
+      "fta": 29,
+      "reb": 42,
+      "oreb": 6,
+      "dreb": 26,
+      "ast": 30,
+      "tov": 9,
+      "stl": 12,
+      "blk": 4,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "35:45",
+        "pts": 14,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "33:42",
+        "pts": 17,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "54",
+        "name": "SANDRO MAMUKELASHVILI",
+        "min": "26:33",
+        "pts": 12,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "20:09",
+        "pts": 16,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "30:21",
+        "pts": 13,
+        "reb": 7,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612751",
+    "total": {
+      "pts": 109,
+      "fgm": 35,
+      "fga": 75,
+      "f2m": 23,
+      "f2a": 41,
+      "f3m": 12,
+      "f3a": 34,
+      "ftm": 27,
+      "fta": 31,
+      "reb": 50,
+      "oreb": 10,
+      "dreb": 30,
+      "ast": 23,
+      "tov": 19,
+      "stl": 5,
+      "blk": 7,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "32:43",
+        "pts": 25,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "37:08",
+        "pts": 22,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "31:17",
+        "pts": 10,
+        "reb": 11,
+        "ast": 3
+      },
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "20:44",
+        "pts": 3,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "28:03",
+        "pts": 5,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500075",
+  "date": "2025.11.28",
+  "venue": "Paycom Center",
+  "attendance": 18203,
+  "home": {
+    "id": "1610612760",
+    "total": {
+      "pts": 123,
+      "fgm": 42,
+      "fga": 87,
+      "f2m": 27,
+      "f2a": 55,
+      "f3m": 15,
+      "f3a": 32,
+      "ftm": 24,
+      "fta": 28,
+      "reb": 45,
+      "oreb": 3,
+      "dreb": 34,
+      "ast": 27,
+      "tov": 10,
+      "stl": 9,
+      "blk": 3,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "29:39",
+        "pts": 7,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "JALEN WILLIAMS",
+        "min": "29:03",
+        "pts": 11,
+        "reb": 4,
+        "ast": 8
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "32:22",
+        "pts": 23,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "32:21",
+        "pts": 14,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "35:43",
+        "pts": 37,
+        "reb": 3,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612756",
+    "total": {
+      "pts": 119,
+      "fgm": 42,
+      "fga": 92,
+      "f2m": 27,
+      "f2a": 48,
+      "f3m": 15,
+      "f3a": 44,
+      "ftm": 20,
+      "fta": 24,
+      "reb": 60,
+      "oreb": 13,
+      "dreb": 38,
+      "ast": 20,
+      "tov": 18,
+      "stl": 7,
+      "blk": 4,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "38:49",
+        "pts": 19,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "28:53",
+        "pts": 11,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "22:21",
+        "pts": 13,
+        "reb": 14,
+        "ast": 0
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "33:15",
+        "pts": 24,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "38:31",
+        "pts": 21,
+        "reb": 8,
+        "ast": 6
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500287",
+  "date": "2025.11.24",
+  "venue": "FedExForum",
+  "attendance": 15519,
+  "home": {
+    "id": "1610612763",
+    "total": {
+      "pts": 115,
+      "fgm": 43,
+      "fga": 93,
+      "f2m": 27,
+      "f2a": 46,
+      "f3m": 16,
+      "f3a": 47,
+      "ftm": 13,
+      "fta": 15,
+      "reb": 47,
+      "oreb": 11,
+      "dreb": 29,
+      "ast": 33,
+      "tov": 11,
+      "stl": 6,
+      "blk": 4,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "33:24",
+        "pts": 22,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "JAREN JACKSON JR.",
+        "min": "28:35",
+        "pts": 16,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "14",
+        "name": "ZACH EDEY",
+        "min": "05:41",
+        "pts": 2,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "CEDRIC COWARD",
+        "min": "26:40",
+        "pts": 5,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "VINCE WILLIAMS JR.",
+        "min": "23:54",
+        "pts": 6,
+        "reb": 5,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612743",
+    "total": {
+      "pts": 125,
+      "fgm": 46,
+      "fga": 91,
+      "f2m": 24,
+      "f2a": 48,
+      "f3m": 22,
+      "f3a": 43,
+      "ftm": 11,
+      "fta": 14,
+      "reb": 54,
+      "oreb": 14,
+      "dreb": 32,
+      "ast": 32,
+      "tov": 14,
+      "stl": 5,
+      "blk": 3,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "SPENCER JONES",
+        "min": "15:02",
+        "pts": 0,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "PEYTON WATSON",
+        "min": "32:54",
+        "pts": 27,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "33:43",
+        "pts": 17,
+        "reb": 10,
+        "ast": 16
+      },
+      {
+        "no": "23",
+        "name": "CAMERON JOHNSON",
+        "min": "36:31",
+        "pts": 18,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "37:11",
+        "pts": 29,
+        "reb": 3,
+        "ast": 8
+      }
+    ]
+  }
+}

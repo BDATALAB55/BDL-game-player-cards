@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500229",
+  "date": "2025.11.15",
+  "venue": "Spectrum Center",
+  "attendance": 19469,
+  "home": {
+    "id": "1610612766",
+    "total": {
+      "pts": 96,
+      "fgm": 37,
+      "fga": 96,
+      "f2m": 21,
+      "f2a": 54,
+      "f3m": 16,
+      "f3a": 42,
+      "ftm": 6,
+      "fta": 7,
+      "reb": 54,
+      "oreb": 12,
+      "dreb": 30,
+      "ast": 23,
+      "tov": 12,
+      "stl": 6,
+      "blk": 5,
+      "pf": 10
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "27:21",
+        "pts": 8,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "MILES BRIDGES",
+        "min": "30:07",
+        "pts": 15,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "11",
+        "name": "RYAN KALKBRENNER",
+        "min": "25:42",
+        "pts": 13,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "4",
+        "name": "SION JAMES",
+        "min": "26:07",
+        "pts": 3,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "COLLIN SEXTON",
+        "min": "29:44",
+        "pts": 13,
+        "reb": 4,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612760",
+    "total": {
+      "pts": 109,
+      "fgm": 45,
+      "fga": 89,
+      "f2m": 34,
+      "f2a": 66,
+      "f3m": 11,
+      "f3a": 23,
+      "ftm": 8,
+      "fta": 10,
+      "reb": 53,
+      "oreb": 13,
+      "dreb": 37,
+      "ast": 26,
+      "tov": 14,
+      "stl": 9,
+      "blk": 6,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "21:54",
+        "pts": 3,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "32:22",
+        "pts": 25,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "55",
+        "name": "ISAIAH HARTENSTEIN",
+        "min": "30:22",
+        "pts": 12,
+        "reb": 12,
+        "ast": 5
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "30:25",
+        "pts": 10,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "29:26",
+        "pts": 33,
+        "reb": 4,
+        "ast": 7
+      }
+    ]
+  }
+}

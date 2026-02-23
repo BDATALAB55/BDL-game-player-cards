@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500254",
+  "date": "2025.11.18",
+  "venue": "Moda Center",
+  "attendance": 17051,
+  "home": {
+    "id": "1610612757",
+    "total": {
+      "pts": 110,
+      "fgm": 42,
+      "fga": 97,
+      "f2m": 32,
+      "f2a": 56,
+      "f3m": 10,
+      "f3a": 41,
+      "ftm": 16,
+      "fta": 20,
+      "reb": 54,
+      "oreb": 15,
+      "dreb": 28,
+      "ast": 24,
+      "tov": 19,
+      "stl": 7,
+      "blk": 6,
+      "pf": 12
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "KRIS MURRAY",
+        "min": "25:08",
+        "pts": 3,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "32:15",
+        "pts": 6,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "23:26",
+        "pts": 9,
+        "reb": 12,
+        "ast": 2
+      },
+      {
+        "no": "17",
+        "name": "SHAEDON SHARPE",
+        "min": "29:39",
+        "pts": 29,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "29:11",
+        "pts": 19,
+        "reb": 5,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612756",
+    "total": {
+      "pts": 127,
+      "fgm": 47,
+      "fga": 98,
+      "f2m": 33,
+      "f2a": 58,
+      "f3m": 14,
+      "f3a": 40,
+      "ftm": 19,
+      "fta": 22,
+      "reb": 59,
+      "oreb": 18,
+      "dreb": 28,
+      "ast": 24,
+      "tov": 15,
+      "stl": 19,
+      "blk": 4,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "RYAN DUNN",
+        "min": "26:31",
+        "pts": 9,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "31:09",
+        "pts": 9,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "21:16",
+        "pts": 15,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "25:38",
+        "pts": 12,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "29:02",
+        "pts": 19,
+        "reb": 6,
+        "ast": 5
+      }
+    ]
+  }
+}

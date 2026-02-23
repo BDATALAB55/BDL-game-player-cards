@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500304",
+  "date": "2025.11.30",
+  "venue": "Xfinity Mobile Arena",
+  "attendance": 17225,
+  "home": {
+    "id": "1610612755",
+    "total": {
+      "pts": 134,
+      "fgm": 46,
+      "fga": 105,
+      "f2m": 36,
+      "f2a": 61,
+      "f3m": 10,
+      "f3a": 44,
+      "ftm": 32,
+      "fta": 38,
+      "reb": 56,
+      "oreb": 11,
+      "dreb": 35,
+      "ast": 26,
+      "tov": 18,
+      "stl": 14,
+      "blk": 6,
+      "pf": 28
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "PAUL GEORGE",
+        "min": "28:02",
+        "pts": 16,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "25",
+        "name": "DOMINICK BARLOW",
+        "min": "45:00",
+        "pts": 10,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "21",
+        "name": "JOEL EMBIID",
+        "min": "30:00",
+        "pts": 18,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "21:25",
+        "pts": 7,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "TYRESE MAXEY",
+        "min": "52:18",
+        "pts": 44,
+        "reb": 7,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612737",
+    "total": {
+      "pts": 142,
+      "fgm": 48,
+      "fga": 104,
+      "f2m": 33,
+      "f2a": 59,
+      "f3m": 15,
+      "f3a": 45,
+      "ftm": 31,
+      "fta": 41,
+      "reb": 78,
+      "oreb": 14,
+      "dreb": 44,
+      "ast": 36,
+      "tov": 21,
+      "stl": 10,
+      "blk": 6,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "29:50",
+        "pts": 12,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "45:07",
+        "pts": 41,
+        "reb": 14,
+        "ast": 7
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "47:20",
+        "pts": 10,
+        "reb": 13,
+        "ast": 6
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "44:13",
+        "pts": 17,
+        "reb": 9,
+        "ast": 8
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "44:21",
+        "pts": 34,
+        "reb": 8,
+        "ast": 7
+      }
+    ]
+  }
+}

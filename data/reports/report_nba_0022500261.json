@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500261",
+  "date": "2025.11.19",
+  "venue": "Paycom Center",
+  "attendance": 18203,
+  "home": {
+    "id": "1610612760",
+    "total": {
+      "pts": 113,
+      "fgm": 41,
+      "fga": 88,
+      "f2m": 31,
+      "f2a": 50,
+      "f3m": 10,
+      "f3a": 38,
+      "ftm": 21,
+      "fta": 23,
+      "reb": 50,
+      "oreb": 9,
+      "dreb": 36,
+      "ast": 22,
+      "tov": 16,
+      "stl": 9,
+      "blk": 10,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "33:04",
+        "pts": 14,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "31:01",
+        "pts": 21,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "55",
+        "name": "ISAIAH HARTENSTEIN",
+        "min": "26:31",
+        "pts": 4,
+        "reb": 12,
+        "ast": 3
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "26:04",
+        "pts": 12,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "35:34",
+        "pts": 33,
+        "reb": 8,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612758",
+    "total": {
+      "pts": 99,
+      "fgm": 38,
+      "fga": 86,
+      "f2m": 30,
+      "f2a": 58,
+      "f3m": 8,
+      "f3a": 28,
+      "ftm": 15,
+      "fta": 23,
+      "reb": 55,
+      "oreb": 12,
+      "dreb": 33,
+      "ast": 21,
+      "tov": 18,
+      "stl": 12,
+      "blk": 0,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "34:55",
+        "pts": 17,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "9",
+        "name": "PRECIOUS ACHIUWA",
+        "min": "26:12",
+        "pts": 15,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "19",
+        "name": "DREW EUBANKS",
+        "min": "22:34",
+        "pts": 6,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "ZACH LAVINE",
+        "min": "30:09",
+        "pts": 8,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "29:37",
+        "pts": 7,
+        "reb": 11,
+        "ast": 6
+      }
+    ]
+  }
+}

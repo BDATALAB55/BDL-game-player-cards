@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500048",
+  "date": "2025.11.21",
+  "venue": "Rocket Arena",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612739",
+    "total": {
+      "pts": 120,
+      "fgm": 43,
+      "fga": 89,
+      "f2m": 30,
+      "f2a": 54,
+      "f3m": 13,
+      "f3a": 35,
+      "ftm": 21,
+      "fta": 27,
+      "reb": 59,
+      "oreb": 14,
+      "dreb": 38,
+      "ast": 28,
+      "tov": 14,
+      "stl": 5,
+      "blk": 8,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "DE'ANDRE HUNTER",
+        "min": "28:16",
+        "pts": 20,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "20",
+        "name": "JAYLON TYSON",
+        "min": "26:55",
+        "pts": 14,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "34:50",
+        "pts": 22,
+        "reb": 12,
+        "ast": 4
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "34:13",
+        "pts": 32,
+        "reb": 9,
+        "ast": 5
+      },
+      {
+        "no": "10",
+        "name": "DARIUS GARLAND",
+        "min": "26:34",
+        "pts": 20,
+        "reb": 2,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612754",
+    "total": {
+      "pts": 109,
+      "fgm": 37,
+      "fga": 88,
+      "f2m": 26,
+      "f2a": 51,
+      "f3m": 11,
+      "f3a": 37,
+      "ftm": 24,
+      "fta": 26,
+      "reb": 48,
+      "oreb": 10,
+      "dreb": 33,
+      "ast": 25,
+      "tov": 12,
+      "stl": 10,
+      "blk": 6,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "26",
+        "name": "BEN SHEPPARD",
+        "min": "25:24",
+        "pts": 2,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "36:52",
+        "pts": 26,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "22",
+        "name": "ISAIAH JACKSON",
+        "min": "17:58",
+        "pts": 3,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "00",
+        "name": "BENNEDICT MATHURIN",
+        "min": "37:18",
+        "pts": 21,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "32:53",
+        "pts": 32,
+        "reb": 1,
+        "ast": 8
+      }
+    ]
+  }
+}

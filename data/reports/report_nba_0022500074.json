@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500074",
+  "date": "2025.11.28",
+  "venue": "Madison Square Garden",
+  "attendance": 19812,
+  "home": {
+    "id": "1610612752",
+    "total": {
+      "pts": 118,
+      "fgm": 38,
+      "fga": 84,
+      "f2m": 24,
+      "f2a": 50,
+      "f3m": 14,
+      "f3a": 34,
+      "ftm": 28,
+      "fta": 33,
+      "reb": 55,
+      "oreb": 14,
+      "dreb": 30,
+      "ast": 25,
+      "tov": 12,
+      "stl": 10,
+      "blk": 2,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "34:42",
+        "pts": 14,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "39:54",
+        "pts": 19,
+        "reb": 15,
+        "ast": 7
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "35:40",
+        "pts": 9,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "39:05",
+        "pts": 37,
+        "reb": 1,
+        "ast": 5
+      },
+      {
+        "no": "2",
+        "name": "MILES MCBRIDE",
+        "min": "33:21",
+        "pts": 19,
+        "reb": 2,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612749",
+    "total": {
+      "pts": 109,
+      "fgm": 37,
+      "fga": 71,
+      "f2m": 19,
+      "f2a": 30,
+      "f3m": 18,
+      "f3a": 41,
+      "ftm": 17,
+      "fta": 25,
+      "reb": 40,
+      "oreb": 5,
+      "dreb": 30,
+      "ast": 24,
+      "tov": 15,
+      "stl": 9,
+      "blk": 4,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "34",
+        "name": "GIANNIS ANTETOKOUNMPO",
+        "min": "28:05",
+        "pts": 30,
+        "reb": 15,
+        "ast": 8
+      },
+      {
+        "no": "5",
+        "name": "GARY TRENT JR.",
+        "min": "24:56",
+        "pts": 3,
+        "reb": 0,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "30:23",
+        "pts": 10,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "39:15",
+        "pts": 18,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "41:01",
+        "pts": 13,
+        "reb": 5,
+        "ast": 6
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500039",
+  "date": "2025.11.14",
+  "venue": "Madison Square Garden",
+  "attendance": 19812,
+  "home": {
+    "id": "1610612752",
+    "total": {
+      "pts": 140,
+      "fgm": 48,
+      "fga": 104,
+      "f2m": 27,
+      "f2a": 51,
+      "f3m": 21,
+      "f3a": 53,
+      "ftm": 23,
+      "fta": 29,
+      "reb": 63,
+      "oreb": 20,
+      "dreb": 31,
+      "ast": 32,
+      "tov": 8,
+      "stl": 9,
+      "blk": 2,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "05:08",
+        "pts": 2,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "38:01",
+        "pts": 39,
+        "reb": 11,
+        "ast": 4
+      },
+      {
+        "no": "23",
+        "name": "MITCHELL ROBINSON",
+        "min": "14:07",
+        "pts": 0,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "42:22",
+        "pts": 15,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "2",
+        "name": "MILES MCBRIDE",
+        "min": "29:55",
+        "pts": 9,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612748",
+    "total": {
+      "pts": 132,
+      "fgm": 44,
+      "fga": 95,
+      "f2m": 25,
+      "f2a": 51,
+      "f3m": 19,
+      "f3a": 44,
+      "ftm": 25,
+      "fta": 34,
+      "reb": 61,
+      "oreb": 15,
+      "dreb": 31,
+      "ast": 30,
+      "tov": 11,
+      "stl": 4,
+      "blk": 5,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "24:01",
+        "pts": 14,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "35:35",
+        "pts": 15,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "KEL'EL WARE",
+        "min": "34:59",
+        "pts": 15,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "33:16",
+        "pts": 11,
+        "reb": 4,
+        "ast": 11
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "32:53",
+        "pts": 38,
+        "reb": 5,
+        "ast": 0
+      }
+    ]
+  }
+}

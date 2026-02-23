@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500300",
+  "date": "2025.11.29",
+  "venue": "Intuit Dome",
+  "attendance": 17927,
+  "home": {
+    "id": "1610612746",
+    "total": {
+      "pts": 110,
+      "fgm": 37,
+      "fga": 80,
+      "f2m": 30,
+      "f2a": 55,
+      "f3m": 7,
+      "f3a": 25,
+      "ftm": 29,
+      "fta": 31,
+      "reb": 57,
+      "oreb": 5,
+      "dreb": 41,
+      "ast": 25,
+      "tov": 18,
+      "stl": 5,
+      "blk": 6,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "28:48",
+        "pts": 30,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "36:03",
+        "pts": 21,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "37:53",
+        "pts": 19,
+        "reb": 11,
+        "ast": 4
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "32:45",
+        "pts": 6,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "36:57",
+        "pts": 29,
+        "reb": 8,
+        "ast": 11
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612742",
+    "total": {
+      "pts": 114,
+      "fgm": 40,
+      "fga": 90,
+      "f2m": 29,
+      "f2a": 51,
+      "f3m": 11,
+      "f3a": 39,
+      "ftm": 23,
+      "fta": 28,
+      "reb": 45,
+      "oreb": 4,
+      "dreb": 33,
+      "ast": 22,
+      "tov": 8,
+      "stl": 15,
+      "blk": 2,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "37:57",
+        "pts": 35,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "36:42",
+        "pts": 18,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "DWIGHT POWELL",
+        "min": "33:34",
+        "pts": 9,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "19:59",
+        "pts": 3,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "RYAN NEMBHARD",
+        "min": "20:51",
+        "pts": 8,
+        "reb": 1,
+        "ast": 3
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500281",
+  "date": "2025.11.23",
+  "venue": "Mortgage Matchup Center",
+  "attendance": 17071,
+  "home": {
+    "id": "1610612756",
+    "total": {
+      "pts": 111,
+      "fgm": 43,
+      "fga": 97,
+      "f2m": 29,
+      "f2a": 59,
+      "f3m": 14,
+      "f3a": 38,
+      "ftm": 11,
+      "fta": 16,
+      "reb": 53,
+      "oreb": 11,
+      "dreb": 32,
+      "ast": 27,
+      "tov": 6,
+      "stl": 10,
+      "blk": 6,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "35:29",
+        "pts": 25,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "33:42",
+        "pts": 9,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "28:36",
+        "pts": 14,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "JORDAN GOODWIN",
+        "min": "33:02",
+        "pts": 15,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "37:34",
+        "pts": 24,
+        "reb": 5,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 102,
+      "fgm": 32,
+      "fga": 77,
+      "f2m": 22,
+      "f2a": 43,
+      "f3m": 10,
+      "f3a": 34,
+      "ftm": 28,
+      "fta": 34,
+      "reb": 58,
+      "oreb": 14,
+      "dreb": 36,
+      "ast": 17,
+      "tov": 19,
+      "stl": 4,
+      "blk": 4,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "30:05",
+        "pts": 10,
+        "reb": 12,
+        "ast": 1
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "34:45",
+        "pts": 11,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "LUKE KORNET",
+        "min": "27:31",
+        "pts": 8,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "33:11",
+        "pts": 17,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "33:23",
+        "pts": 26,
+        "reb": 5,
+        "ast": 3
+      }
+    ]
+  }
+}

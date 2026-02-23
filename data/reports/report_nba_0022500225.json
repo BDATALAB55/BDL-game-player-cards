@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500225",
+  "date": "2025.11.13",
+  "venue": "Rocket Arena",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612739",
+    "total": {
+      "pts": 113,
+      "fgm": 41,
+      "fga": 91,
+      "f2m": 31,
+      "f2a": 50,
+      "f3m": 10,
+      "f3a": 41,
+      "ftm": 21,
+      "fta": 26,
+      "reb": 43,
+      "oreb": 14,
+      "dreb": 23,
+      "ast": 26,
+      "tov": 12,
+      "stl": 7,
+      "blk": 6,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "DE'ANDRE HUNTER",
+        "min": "27:27",
+        "pts": 16,
+        "reb": 2,
+        "ast": 6
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "34:47",
+        "pts": 7,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "20:54",
+        "pts": 6,
+        "reb": 8,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "SAM MERRILL",
+        "min": "27:12",
+        "pts": 12,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "35:41",
+        "pts": 31,
+        "reb": 6,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612761",
+    "total": {
+      "pts": 126,
+      "fgm": 49,
+      "fga": 88,
+      "f2m": 37,
+      "f2a": 57,
+      "f3m": 12,
+      "f3a": 31,
+      "ftm": 16,
+      "fta": 17,
+      "reb": 53,
+      "oreb": 11,
+      "dreb": 32,
+      "ast": 37,
+      "tov": 13,
+      "stl": 6,
+      "blk": 7,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "35:19",
+        "pts": 11,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "34:34",
+        "pts": 28,
+        "reb": 10,
+        "ast": 8
+      },
+      {
+        "no": "19",
+        "name": "JAKOB POELTL",
+        "min": "29:25",
+        "pts": 20,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "26:56",
+        "pts": 9,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "31:52",
+        "pts": 25,
+        "reb": 1,
+        "ast": 6
+      }
+    ]
+  }
+}

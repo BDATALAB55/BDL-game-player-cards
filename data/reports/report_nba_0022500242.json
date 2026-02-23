@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500242",
+  "date": "2025.11.17",
+  "venue": "Little Caesars Arena",
+  "attendance": 19058,
+  "home": {
+    "id": "1610612765",
+    "total": {
+      "pts": 127,
+      "fgm": 48,
+      "fga": 88,
+      "f2m": 39,
+      "f2a": 53,
+      "f3m": 9,
+      "f3a": 35,
+      "ftm": 22,
+      "fta": 30,
+      "reb": 52,
+      "oreb": 14,
+      "dreb": 29,
+      "ast": 29,
+      "tov": 16,
+      "stl": 9,
+      "blk": 8,
+      "pf": 28
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "RONALD HOLLAND II",
+        "min": "30:31",
+        "pts": 7,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "28",
+        "name": "ISAIAH STEWART",
+        "min": "20:26",
+        "pts": 10,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "0",
+        "name": "JALEN DUREN",
+        "min": "28:34",
+        "pts": 31,
+        "reb": 15,
+        "ast": 3
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "34:16",
+        "pts": 13,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "24",
+        "name": "DANISS JENKINS",
+        "min": "33:27",
+        "pts": 26,
+        "reb": 2,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612754",
+    "total": {
+      "pts": 112,
+      "fgm": 35,
+      "fga": 84,
+      "f2m": 26,
+      "f2a": 53,
+      "f3m": 9,
+      "f3a": 31,
+      "ftm": 33,
+      "fta": 45,
+      "reb": 57,
+      "oreb": 20,
+      "dreb": 23,
+      "ast": 19,
+      "tov": 21,
+      "stl": 8,
+      "blk": 5,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "JARACE WALKER",
+        "min": "28:26",
+        "pts": 8,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "33:49",
+        "pts": 29,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "22",
+        "name": "ISAIAH JACKSON",
+        "min": "26:34",
+        "pts": 16,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "00",
+        "name": "BENNEDICT MATHURIN",
+        "min": "25:15",
+        "pts": 25,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "31:31",
+        "pts": 15,
+        "reb": 1,
+        "ast": 4
+      }
+    ]
+  }
+}

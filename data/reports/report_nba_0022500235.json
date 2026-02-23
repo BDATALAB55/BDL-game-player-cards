@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500235",
+  "date": "2025.11.16",
+  "venue": "Capital One Arena",
+  "attendance": 14164,
+  "home": {
+    "id": "1610612764",
+    "total": {
+      "pts": 106,
+      "fgm": 37,
+      "fga": 84,
+      "f2m": 25,
+      "f2a": 50,
+      "f3m": 12,
+      "f3a": 34,
+      "ftm": 20,
+      "fta": 22,
+      "reb": 38,
+      "oreb": 3,
+      "dreb": 30,
+      "ast": 21,
+      "tov": 10,
+      "stl": 7,
+      "blk": 3,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "31:44",
+        "pts": 29,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "22",
+        "name": "KHRIS MIDDLETON",
+        "min": "27:22",
+        "pts": 14,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "23:06",
+        "pts": 9,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "27:34",
+        "pts": 6,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "32:09",
+        "pts": 17,
+        "reb": 2,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612751",
+    "total": {
+      "pts": 129,
+      "fgm": 42,
+      "fga": 79,
+      "f2m": 25,
+      "f2a": 38,
+      "f3m": 17,
+      "f3a": 41,
+      "ftm": 28,
+      "fta": 35,
+      "reb": 55,
+      "oreb": 7,
+      "dreb": 37,
+      "ast": 32,
+      "tov": 14,
+      "stl": 4,
+      "blk": 8,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "33:56",
+        "pts": 34,
+        "reb": 9,
+        "ast": 7
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "29:44",
+        "pts": 12,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "30:11",
+        "pts": 17,
+        "reb": 8,
+        "ast": 7
+      },
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "29:07",
+        "pts": 10,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "19:44",
+        "pts": 5,
+        "reb": 1,
+        "ast": 5
+      }
+    ]
+  }
+}

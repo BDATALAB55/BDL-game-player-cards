@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500822",
+  "date": "2026.02.22",
+  "venue": "Capital One Arena",
+  "attendance": 16443,
+  "home": {
+    "id": "1610612764",
+    "total": {
+      "pts": 112,
+      "fgm": 41,
+      "fga": 84,
+      "f2m": 23,
+      "f2a": 42,
+      "f3m": 18,
+      "f3a": 42,
+      "ftm": 12,
+      "fta": 17,
+      "reb": 40,
+      "oreb": 9,
+      "dreb": 28,
+      "ast": 24,
+      "tov": 11,
+      "stl": 6,
+      "blk": 5,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "17:10",
+        "pts": 17,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "17:54",
+        "pts": 13,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "16",
+        "name": "ANTHONY GILL",
+        "min": "30:31",
+        "pts": 8,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "12",
+        "name": "TRE JOHNSON",
+        "min": "19:16",
+        "pts": 11,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "30:06",
+        "pts": 6,
+        "reb": 3,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612766",
+    "total": {
+      "pts": 129,
+      "fgm": 43,
+      "fga": 87,
+      "f2m": 18,
+      "f2a": 41,
+      "f3m": 25,
+      "f3a": 46,
+      "ftm": 18,
+      "fta": 25,
+      "reb": 60,
+      "oreb": 16,
+      "dreb": 37,
+      "ast": 27,
+      "tov": 12,
+      "stl": 9,
+      "blk": 5,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "28:25",
+        "pts": 28,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "2",
+        "name": "GRANT WILLIAMS",
+        "min": "25:33",
+        "pts": 5,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "11",
+        "name": "RYAN KALKBRENNER",
+        "min": "15:15",
+        "pts": 6,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "24",
+        "name": "BRANDON MILLER",
+        "min": "26:06",
+        "pts": 22,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "LAMELO BALL",
+        "min": "27:29",
+        "pts": 37,
+        "reb": 8,
+        "ast": 7
+      }
+    ]
+  }
+}

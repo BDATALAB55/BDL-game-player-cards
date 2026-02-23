@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500066",
+  "date": "2025.11.26",
+  "venue": "Chase Center",
+  "attendance": 18064,
+  "home": {
+    "id": "1610612744",
+    "total": {
+      "pts": 100,
+      "fgm": 35,
+      "fga": 82,
+      "f2m": 23,
+      "f2a": 39,
+      "f3m": 12,
+      "f3a": 43,
+      "ftm": 18,
+      "fta": 21,
+      "reb": 54,
+      "oreb": 13,
+      "dreb": 34,
+      "ast": 25,
+      "tov": 16,
+      "stl": 8,
+      "blk": 5,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "WILL RICHARD",
+        "min": "28:01",
+        "pts": 18,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "10",
+        "name": "JIMMY BUTLER III",
+        "min": "32:35",
+        "pts": 21,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "34:16",
+        "pts": 12,
+        "reb": 9,
+        "ast": 8
+      },
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "30:05",
+        "pts": 9,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "30",
+        "name": "STEPHEN CURRY",
+        "min": "32:45",
+        "pts": 14,
+        "reb": 6,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612745",
+    "total": {
+      "pts": 104,
+      "fgm": 39,
+      "fga": 99,
+      "f2m": 28,
+      "f2a": 60,
+      "f3m": 11,
+      "f3a": 39,
+      "ftm": 15,
+      "fta": 24,
+      "reb": 66,
+      "oreb": 25,
+      "dreb": 28,
+      "ast": 24,
+      "tov": 10,
+      "stl": 7,
+      "blk": 3,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "38:19",
+        "pts": 10,
+        "reb": 14,
+        "ast": 3
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "36:36",
+        "pts": 15,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "34:34",
+        "pts": 16,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "20",
+        "name": "JOSH OKOGIE",
+        "min": "23:38",
+        "pts": 3,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "REED SHEPPARD",
+        "min": "37:16",
+        "pts": 31,
+        "reb": 9,
+        "ast": 5
+      }
+    ]
+  }
+}

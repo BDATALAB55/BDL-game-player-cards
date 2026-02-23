@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500308",
+  "date": "2025.11.30",
+  "venue": "Crypto.com Arena",
+  "attendance": 18824,
+  "home": {
+    "id": "1610612747",
+    "total": {
+      "pts": 133,
+      "fgm": 42,
+      "fga": 87,
+      "f2m": 27,
+      "f2a": 46,
+      "f3m": 15,
+      "f3a": 41,
+      "ftm": 34,
+      "fta": 39,
+      "reb": 54,
+      "oreb": 11,
+      "dreb": 35,
+      "ast": 26,
+      "tov": 8,
+      "stl": 4,
+      "blk": 10,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "GABE VINCENT",
+        "min": "24:43",
+        "pts": 6,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "28",
+        "name": "RUI HACHIMURA",
+        "min": "33:35",
+        "pts": 14,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "26:59",
+        "pts": 22,
+        "reb": 12,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "AUSTIN REAVES",
+        "min": "39:38",
+        "pts": 33,
+        "reb": 5,
+        "ast": 8
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "35:04",
+        "pts": 34,
+        "reb": 12,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612740",
+    "total": {
+      "pts": 121,
+      "fgm": 46,
+      "fga": 91,
+      "f2m": 33,
+      "f2a": 65,
+      "f3m": 13,
+      "f3a": 26,
+      "ftm": 16,
+      "fta": 20,
+      "reb": 47,
+      "oreb": 8,
+      "dreb": 32,
+      "ast": 23,
+      "tov": 8,
+      "stl": 6,
+      "blk": 1,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "32:55",
+        "pts": 22,
+        "reb": 11,
+        "ast": 3
+      },
+      {
+        "no": "22",
+        "name": "DERIK QUEEN",
+        "min": "28:15",
+        "pts": 15,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "21",
+        "name": "YVES MISSI",
+        "min": "23:54",
+        "pts": 2,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "11",
+        "name": "BRYCE MCGOWENS",
+        "min": "33:29",
+        "pts": 23,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "0",
+        "name": "JEREMIAH FEARS",
+        "min": "27:06",
+        "pts": 21,
+        "reb": 2,
+        "ast": 3
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500076",
+  "date": "2025.11.28",
+  "venue": "Ball Arena",
+  "attendance": 19936,
+  "home": {
+    "id": "1610612743",
+    "total": {
+      "pts": 136,
+      "fgm": 48,
+      "fga": 91,
+      "f2m": 32,
+      "f2a": 52,
+      "f3m": 16,
+      "f3a": 39,
+      "ftm": 24,
+      "fta": 30,
+      "reb": 56,
+      "oreb": 14,
+      "dreb": 30,
+      "ast": 27,
+      "tov": 16,
+      "stl": 5,
+      "blk": 5,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "SPENCER JONES",
+        "min": "22:46",
+        "pts": 9,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "PEYTON WATSON",
+        "min": "33:42",
+        "pts": 15,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "36:01",
+        "pts": 21,
+        "reb": 9,
+        "ast": 10
+      },
+      {
+        "no": "23",
+        "name": "CAMERON JOHNSON",
+        "min": "37:45",
+        "pts": 28,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "36:10",
+        "pts": 37,
+        "reb": 4,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 139,
+      "fgm": 46,
+      "fga": 94,
+      "f2m": 29,
+      "f2a": 52,
+      "f3m": 17,
+      "f3a": 42,
+      "ftm": 30,
+      "fta": 32,
+      "reb": 44,
+      "oreb": 12,
+      "dreb": 23,
+      "ast": 30,
+      "tov": 8,
+      "stl": 10,
+      "blk": 5,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "36:26",
+        "pts": 25,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "30:52",
+        "pts": 10,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "7",
+        "name": "LUKE KORNET",
+        "min": "27:43",
+        "pts": 12,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "31:17",
+        "pts": 35,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "34:07",
+        "pts": 15,
+        "reb": 1,
+        "ast": 12
+      }
+    ]
+  }
+}

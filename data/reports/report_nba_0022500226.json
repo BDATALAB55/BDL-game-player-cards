@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500226",
+  "date": "2025.11.13",
+  "venue": "Mortgage Matchup Center",
+  "attendance": 17071,
+  "home": {
+    "id": "1610612756",
+    "total": {
+      "pts": 133,
+      "fgm": 49,
+      "fga": 85,
+      "f2m": 36,
+      "f2a": 50,
+      "f3m": 13,
+      "f3a": 35,
+      "ftm": 22,
+      "fta": 27,
+      "reb": 53,
+      "oreb": 10,
+      "dreb": 33,
+      "ast": 19,
+      "tov": 11,
+      "stl": 6,
+      "blk": 6,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "28:02",
+        "pts": 32,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "22:57",
+        "pts": 5,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "NICK RICHARDS",
+        "min": "15:13",
+        "pts": 4,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "GRAYSON ALLEN",
+        "min": "12:10",
+        "pts": 12,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "29:19",
+        "pts": 33,
+        "reb": 5,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612754",
+    "total": {
+      "pts": 98,
+      "fgm": 32,
+      "fga": 88,
+      "f2m": 25,
+      "f2a": 63,
+      "f3m": 7,
+      "f3a": 25,
+      "ftm": 27,
+      "fta": 29,
+      "reb": 49,
+      "oreb": 16,
+      "dreb": 25,
+      "ast": 20,
+      "tov": 12,
+      "stl": 4,
+      "blk": 3,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "30:56",
+        "pts": 19,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "25",
+        "name": "JEREMIAH ROBINSON-EARL",
+        "min": "27:24",
+        "pts": 6,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "13",
+        "name": "TONY BRADLEY",
+        "min": "17:08",
+        "pts": 10,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "AARON NESMITH",
+        "min": "20:03",
+        "pts": 10,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "27:27",
+        "pts": 21,
+        "reb": 2,
+        "ast": 8
+      }
+    ]
+  }
+}

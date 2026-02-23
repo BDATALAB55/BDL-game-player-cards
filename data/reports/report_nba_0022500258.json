@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500258",
+  "date": "2025.11.19",
+  "venue": "Xfinity Mobile Arena",
+  "attendance": 17077,
+  "home": {
+    "id": "1610612755",
+    "total": {
+      "pts": 112,
+      "fgm": 41,
+      "fga": 87,
+      "f2m": 27,
+      "f2a": 52,
+      "f3m": 14,
+      "f3a": 35,
+      "ftm": 16,
+      "fta": 18,
+      "reb": 47,
+      "oreb": 16,
+      "dreb": 25,
+      "ast": 24,
+      "tov": 21,
+      "stl": 11,
+      "blk": 6,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "11",
+        "name": "JUSTIN EDWARDS",
+        "min": "22:33",
+        "pts": 8,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "25",
+        "name": "DOMINICK BARLOW",
+        "min": "17:16",
+        "pts": 5,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "ANDRE DRUMMOND",
+        "min": "34:03",
+        "pts": 10,
+        "reb": 12,
+        "ast": 0
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "37:06",
+        "pts": 21,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "TYRESE MAXEY",
+        "min": "38:30",
+        "pts": 24,
+        "reb": 2,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612761",
+    "total": {
+      "pts": 121,
+      "fgm": 45,
+      "fga": 84,
+      "f2m": 34,
+      "f2a": 55,
+      "f3m": 11,
+      "f3a": 29,
+      "ftm": 20,
+      "fta": 24,
+      "reb": 44,
+      "oreb": 8,
+      "dreb": 23,
+      "ast": 33,
+      "tov": 14,
+      "stl": 12,
+      "blk": 2,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "31:09",
+        "pts": 22,
+        "reb": 0,
+        "ast": 5
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "36:02",
+        "pts": 16,
+        "reb": 9,
+        "ast": 5
+      },
+      {
+        "no": "19",
+        "name": "JAKOB POELTL",
+        "min": "32:50",
+        "pts": 19,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "33:54",
+        "pts": 22,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "38:29",
+        "pts": 18,
+        "reb": 5,
+        "ast": 6
+      }
+    ]
+  }
+}

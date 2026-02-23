@@ -12,9 +12,23 @@
     "@astrojs/vercel": "^9.0.4",
     "@tailwindcss/vite": "^4.1.18",
     "astro": "^5.16.11",
+    "axios": "^1.13.5",
     "cheerio": "^1.2.0",
     "entities": "2.2.0",
     "playwright": "^1.58.1",
     "tailwindcss": "^4.1.18"
-  }
+  },
+  "description": "```sh npm create astro@latest -- --template basics ```",
+  "main": "migrate_notion.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BDATALAB55/BDL-game-player-cards.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BDATALAB55/BDL-game-player-cards/issues"
+  },
+  "homepage": "https://github.com/BDATALAB55/BDL-game-player-cards#readme"
 }

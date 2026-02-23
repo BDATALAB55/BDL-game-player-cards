@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500299",
+  "date": "2025.11.29",
+  "venue": "Mortgage Matchup Center",
+  "attendance": 17071,
+  "home": {
+    "id": "1610612756",
+    "total": {
+      "pts": 112,
+      "fgm": 39,
+      "fga": 88,
+      "f2m": 25,
+      "f2a": 46,
+      "f3m": 14,
+      "f3a": 42,
+      "ftm": 20,
+      "fta": 26,
+      "reb": 41,
+      "oreb": 11,
+      "dreb": 21,
+      "ast": 23,
+      "tov": 7,
+      "stl": 11,
+      "blk": 2,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DILLON BROOKS",
+        "min": "27:56",
+        "pts": 27,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "29:09",
+        "pts": 15,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "11",
+        "name": "OSO IGHODARO",
+        "min": "31:48",
+        "pts": 8,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "GRAYSON ALLEN",
+        "min": "25:48",
+        "pts": 10,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "35:18",
+        "pts": 24,
+        "reb": 4,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612743",
+    "total": {
+      "pts": 130,
+      "fgm": 44,
+      "fga": 76,
+      "f2m": 22,
+      "f2a": 38,
+      "f3m": 22,
+      "f3a": 38,
+      "ftm": 20,
+      "fta": 21,
+      "reb": 48,
+      "oreb": 10,
+      "dreb": 30,
+      "ast": 36,
+      "tov": 16,
+      "stl": 2,
+      "blk": 5,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "SPENCER JONES",
+        "min": "27:15",
+        "pts": 16,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "PEYTON WATSON",
+        "min": "27:36",
+        "pts": 11,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "31:24",
+        "pts": 26,
+        "reb": 9,
+        "ast": 10
+      },
+      {
+        "no": "23",
+        "name": "CAMERON JOHNSON",
+        "min": "34:58",
+        "pts": 15,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "36:32",
+        "pts": 24,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  }
+}

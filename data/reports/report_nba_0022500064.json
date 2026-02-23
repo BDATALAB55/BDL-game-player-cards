@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500064",
+  "date": "2025.11.26",
+  "venue": "Paycom Center",
+  "attendance": 18203,
+  "home": {
+    "id": "1610612760",
+    "total": {
+      "pts": 113,
+      "fgm": 38,
+      "fga": 80,
+      "f2m": 31,
+      "f2a": 54,
+      "f3m": 7,
+      "f3a": 26,
+      "ftm": 30,
+      "fta": 38,
+      "reb": 53,
+      "oreb": 5,
+      "dreb": 34,
+      "ast": 19,
+      "tov": 7,
+      "stl": 8,
+      "blk": 3,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "31:41",
+        "pts": 5,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "29:01",
+        "pts": 12,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "55",
+        "name": "ISAIAH HARTENSTEIN",
+        "min": "28:02",
+        "pts": 15,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "31:39",
+        "pts": 9,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "36:43",
+        "pts": 40,
+        "reb": 6,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612750",
+    "total": {
+      "pts": 105,
+      "fgm": 33,
+      "fga": 80,
+      "f2m": 16,
+      "f2a": 43,
+      "f3m": 17,
+      "f3a": 37,
+      "ftm": 22,
+      "fta": 37,
+      "reb": 60,
+      "oreb": 12,
+      "dreb": 32,
+      "ast": 25,
+      "tov": 14,
+      "stl": 4,
+      "blk": 5,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JADEN MCDANIELS",
+        "min": "30:08",
+        "pts": 10,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "30",
+        "name": "JULIUS RANDLE",
+        "min": "32:59",
+        "pts": 10,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "27",
+        "name": "RUDY GOBERT",
+        "min": "32:12",
+        "pts": 5,
+        "reb": 12,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "ANTHONY EDWARDS",
+        "min": "40:06",
+        "pts": 31,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "0",
+        "name": "DONTE DIVINCENZO",
+        "min": "31:18",
+        "pts": 11,
+        "reb": 5,
+        "ast": 2
+      }
+    ]
+  }
+}

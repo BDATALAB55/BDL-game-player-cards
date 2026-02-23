@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500069",
+  "date": "2025.11.28",
+  "venue": "State Farm Arena",
+  "attendance": 16124,
+  "home": {
+    "id": "1610612737",
+    "total": {
+      "pts": 130,
+      "fgm": 48,
+      "fga": 91,
+      "f2m": 32,
+      "f2a": 48,
+      "f3m": 16,
+      "f3a": 43,
+      "ftm": 18,
+      "fta": 26,
+      "reb": 49,
+      "oreb": 6,
+      "dreb": 32,
+      "ast": 36,
+      "tov": 12,
+      "stl": 11,
+      "blk": 5,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "ZACCHARIE RISACHER",
+        "min": "26:50",
+        "pts": 14,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "38:48",
+        "pts": 29,
+        "reb": 12,
+        "ast": 12
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "33:41",
+        "pts": 18,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "36:34",
+        "pts": 10,
+        "reb": 8,
+        "ast": 9
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "34:43",
+        "pts": 30,
+        "reb": 3,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612739",
+    "total": {
+      "pts": 123,
+      "fgm": 44,
+      "fga": 95,
+      "f2m": 27,
+      "f2a": 56,
+      "f3m": 17,
+      "f3a": 39,
+      "ftm": 18,
+      "fta": 20,
+      "reb": 55,
+      "oreb": 14,
+      "dreb": 34,
+      "ast": 29,
+      "tov": 17,
+      "stl": 9,
+      "blk": 4,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "DE'ANDRE HUNTER",
+        "min": "32:11",
+        "pts": 16,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "33:38",
+        "pts": 20,
+        "reb": 14,
+        "ast": 7
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "27:59",
+        "pts": 8,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "35:23",
+        "pts": 42,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "10",
+        "name": "DARIUS GARLAND",
+        "min": "32:58",
+        "pts": 15,
+        "reb": 5,
+        "ast": 10
+      }
+    ]
+  }
+}

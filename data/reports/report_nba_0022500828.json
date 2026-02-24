@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500828",
+  "date": "2026.02.23",
+  "venue": "Little Caesars Arena",
+  "attendance": 20062,
+  "home": {
+    "id": "1610612765",
+    "total": {
+      "pts": 103,
+      "fgm": 40,
+      "fga": 106,
+      "f2m": 33,
+      "f2a": 70,
+      "f3m": 7,
+      "f3a": 36,
+      "ftm": 16,
+      "fta": 19,
+      "reb": 69,
+      "oreb": 20,
+      "dreb": 35,
+      "ast": 21,
+      "tov": 15,
+      "stl": 7,
+      "blk": 8,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "17:44",
+        "pts": 8,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "12",
+        "name": "TOBIAS HARRIS",
+        "min": "29:51",
+        "pts": 4,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "JALEN DUREN",
+        "min": "29:17",
+        "pts": 25,
+        "reb": 14,
+        "ast": 1
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "26:41",
+        "pts": 13,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "34:50",
+        "pts": 16,
+        "reb": 6,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 114,
+      "fgm": 42,
+      "fga": 101,
+      "f2m": 24,
+      "f2a": 61,
+      "f3m": 18,
+      "f3a": 40,
+      "ftm": 12,
+      "fta": 19,
+      "reb": 67,
+      "oreb": 16,
+      "dreb": 34,
+      "ast": 32,
+      "tov": 12,
+      "stl": 8,
+      "blk": 11,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "36:19",
+        "pts": 28,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "36:26",
+        "pts": 17,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "35:36",
+        "pts": 21,
+        "reb": 17,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "33:23",
+        "pts": 10,
+        "reb": 7,
+        "ast": 7
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "30:07",
+        "pts": 16,
+        "reb": 4,
+        "ast": 11
+      }
+    ]
+  }
+}

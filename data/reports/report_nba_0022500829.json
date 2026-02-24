@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500829",
+  "date": "2026.02.23",
+  "venue": "FedExForum",
+  "attendance": 14176,
+  "home": {
+    "id": "1610612763",
+    "total": {
+      "pts": 114,
+      "fgm": 42,
+      "fga": 87,
+      "f2m": 30,
+      "f2a": 53,
+      "f3m": 12,
+      "f3a": 34,
+      "ftm": 18,
+      "fta": 20,
+      "reb": 46,
+      "oreb": 9,
+      "dreb": 28,
+      "ast": 33,
+      "tov": 17,
+      "stl": 13,
+      "blk": 3,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "25:41",
+        "pts": 12,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "45",
+        "name": "GG JACKSON",
+        "min": "25:34",
+        "pts": 16,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "18",
+        "name": "OLIVIER-MAXENCE PROSPER",
+        "min": "25:23",
+        "pts": 17,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "24",
+        "name": "CAM SPENCER",
+        "min": "21:59",
+        "pts": 7,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "SCOTTY PIPPEN JR.",
+        "min": "21:58",
+        "pts": 6,
+        "reb": 2,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612758",
+    "total": {
+      "pts": 123,
+      "fgm": 47,
+      "fga": 94,
+      "f2m": 37,
+      "f2a": 65,
+      "f3m": 10,
+      "f3a": 29,
+      "ftm": 19,
+      "fta": 25,
+      "reb": 55,
+      "oreb": 13,
+      "dreb": 32,
+      "ast": 30,
+      "tov": 15,
+      "stl": 12,
+      "blk": 7,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "13",
+        "name": "KEEGAN MURRAY",
+        "min": "34:05",
+        "pts": 6,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "9",
+        "name": "PRECIOUS ACHIUWA",
+        "min": "32:41",
+        "pts": 22,
+        "reb": 12,
+        "ast": 0
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "27:41",
+        "pts": 10,
+        "reb": 13,
+        "ast": 2
+      },
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "28:52",
+        "pts": 19,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "32:45",
+        "pts": 25,
+        "reb": 2,
+        "ast": 7
+      }
+    ]
+  }
+}

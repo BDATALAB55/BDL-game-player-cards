@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500830",
+  "date": "2026.02.23",
+  "venue": "Toyota Center",
+  "attendance": 18055,
+  "home": {
+    "id": "1610612745",
+    "total": {
+      "pts": 125,
+      "fgm": 49,
+      "fga": 86,
+      "f2m": 31,
+      "f2a": 46,
+      "f3m": 18,
+      "f3a": 40,
+      "ftm": 9,
+      "fta": 11,
+      "reb": 59,
+      "oreb": 10,
+      "dreb": 43,
+      "ast": 34,
+      "tov": 26,
+      "stl": 10,
+      "blk": 8,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "34:06",
+        "pts": 18,
+        "reb": 5,
+        "ast": 12
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "32:59",
+        "pts": 31,
+        "reb": 9,
+        "ast": 0
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "35:35",
+        "pts": 16,
+        "reb": 9,
+        "ast": 9
+      },
+      {
+        "no": "17",
+        "name": "TARI EASON",
+        "min": "31:34",
+        "pts": 11,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "29:05",
+        "pts": 20,
+        "reb": 7,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612762",
+    "total": {
+      "pts": 105,
+      "fgm": 36,
+      "fga": 98,
+      "f2m": 28,
+      "f2a": 54,
+      "f3m": 8,
+      "f3a": 44,
+      "ftm": 25,
+      "fta": 30,
+      "reb": 48,
+      "oreb": 13,
+      "dreb": 23,
+      "ast": 23,
+      "tov": 11,
+      "stl": 17,
+      "blk": 3,
+      "pf": 10
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "CODY WILLIAMS",
+        "min": "14:11",
+        "pts": 2,
+        "reb": 0,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "LAURI MARKKANEN",
+        "min": "32:10",
+        "pts": 29,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "KYLE FILIPOWSKI",
+        "min": "23:38",
+        "pts": 13,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "27:02",
+        "pts": 4,
+        "reb": 8,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "ISAIAH COLLIER",
+        "min": "29:51",
+        "pts": 17,
+        "reb": 1,
+        "ast": 3
+      }
+    ]
+  }
+}

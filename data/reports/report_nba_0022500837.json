@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500837",
+  "date": "2026.02.24",
+  "venue": "Fiserv Forum",
+  "attendance": 15459,
+  "home": {
+    "id": "1610612749",
+    "total": {
+      "pts": 128,
+      "fgm": 48,
+      "fga": 97,
+      "f2m": 32,
+      "f2a": 58,
+      "f3m": 16,
+      "f3a": 39,
+      "ftm": 16,
+      "fta": 19,
+      "reb": 53,
+      "oreb": 10,
+      "dreb": 36,
+      "ast": 25,
+      "tov": 10,
+      "stl": 10,
+      "blk": 3,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "27:35",
+        "pts": 8,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "18",
+        "name": "KYLE KUZMA",
+        "min": "24:48",
+        "pts": 19,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "18:47",
+        "pts": 2,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "KEVIN PORTER JR.",
+        "min": "36:36",
+        "pts": 32,
+        "reb": 7,
+        "ast": 7
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "36:48",
+        "pts": 21,
+        "reb": 4,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612748",
+    "total": {
+      "pts": 117,
+      "fgm": 40,
+      "fga": 94,
+      "f2m": 24,
+      "f2a": 46,
+      "f3m": 16,
+      "f3a": 48,
+      "ftm": 21,
+      "fta": 27,
+      "reb": 60,
+      "oreb": 14,
+      "dreb": 37,
+      "ast": 32,
+      "tov": 16,
+      "stl": 8,
+      "blk": 5,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "35:54",
+        "pts": 10,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "28:51",
+        "pts": 16,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "31:18",
+        "pts": 18,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "29:49",
+        "pts": 26,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "28:06",
+        "pts": 8,
+        "reb": 6,
+        "ast": 8
+      }
+    ]
+  }
+}

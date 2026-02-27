@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500844",
+  "date": "2026.02.25",
+  "venue": "FedExForum",
+  "attendance": 15689,
+  "home": {
+    "id": "1610612763",
+    "total": {
+      "pts": 112,
+      "fgm": 41,
+      "fga": 84,
+      "f2m": 24,
+      "f2a": 43,
+      "f3m": 17,
+      "f3a": 41,
+      "ftm": 13,
+      "fta": 18,
+      "reb": 39,
+      "oreb": 10,
+      "dreb": 24,
+      "ast": 30,
+      "tov": 16,
+      "stl": 7,
+      "blk": 4,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "26:52",
+        "pts": 8,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "45",
+        "name": "GG JACKSON",
+        "min": "25:51",
+        "pts": 24,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "18",
+        "name": "OLIVIER-MAXENCE PROSPER",
+        "min": "20:22",
+        "pts": 3,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "10",
+        "name": "JAVON SMALL",
+        "min": "27:37",
+        "pts": 16,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "2",
+        "name": "TY JEROME",
+        "min": "24:01",
+        "pts": 22,
+        "reb": 3,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612744",
+    "total": {
+      "pts": 133,
+      "fgm": 49,
+      "fga": 92,
+      "f2m": 30,
+      "f2a": 46,
+      "f3m": 19,
+      "f3a": 46,
+      "ftm": 16,
+      "fta": 19,
+      "reb": 56,
+      "oreb": 14,
+      "dreb": 34,
+      "ast": 37,
+      "tov": 14,
+      "stl": 12,
+      "blk": 6,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "27:35",
+        "pts": 14,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "15",
+        "name": "GUI SANTOS",
+        "min": "25:33",
+        "pts": 17,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "20",
+        "name": "AL HORFORD",
+        "min": "26:44",
+        "pts": 10,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "WILL RICHARD",
+        "min": "29:35",
+        "pts": 21,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "2",
+        "name": "BRANDIN PODZIEMSKI",
+        "min": "30:38",
+        "pts": 19,
+        "reb": 8,
+        "ast": 6
+      }
+    ]
+  }
+}

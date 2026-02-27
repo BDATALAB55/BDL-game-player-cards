@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500843",
+  "date": "2026.02.25",
+  "venue": "Scotiabank Arena",
+  "attendance": 19800,
+  "home": {
+    "id": "1610612761",
+    "total": {
+      "pts": 107,
+      "fgm": 38,
+      "fga": 90,
+      "f2m": 30,
+      "f2a": 67,
+      "f3m": 8,
+      "f3a": 23,
+      "ftm": 23,
+      "fta": 27,
+      "reb": 61,
+      "oreb": 12,
+      "dreb": 38,
+      "ast": 17,
+      "tov": 12,
+      "stl": 6,
+      "blk": 4,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "37:04",
+        "pts": 20,
+        "reb": 11,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "31:13",
+        "pts": 15,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "12",
+        "name": "COLLIN MURRAY-BOYLES",
+        "min": "15:20",
+        "pts": 4,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "32:52",
+        "pts": 12,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "36:42",
+        "pts": 20,
+        "reb": 4,
+        "ast": 0
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 110,
+      "fgm": 40,
+      "fga": 86,
+      "f2m": 23,
+      "f2a": 47,
+      "f3m": 17,
+      "f3a": 39,
+      "ftm": 13,
+      "fta": 23,
+      "reb": 53,
+      "oreb": 6,
+      "dreb": 34,
+      "ast": 28,
+      "tov": 13,
+      "stl": 11,
+      "blk": 5,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "31:55",
+        "pts": 21,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "28:05",
+        "pts": 10,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "29:39",
+        "pts": 12,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "30:35",
+        "pts": 20,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "27:33",
+        "pts": 13,
+        "reb": 3,
+        "ast": 5
+      }
+    ]
+  }
+}

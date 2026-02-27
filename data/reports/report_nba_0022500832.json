@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500832",
+  "date": "2026.02.24",
+  "venue": "State Farm Arena",
+  "attendance": 15417,
+  "home": {
+    "id": "1610612737",
+    "total": {
+      "pts": 119,
+      "fgm": 42,
+      "fga": 107,
+      "f2m": 30,
+      "f2a": 57,
+      "f3m": 12,
+      "f3a": 50,
+      "ftm": 23,
+      "fta": 26,
+      "reb": 71,
+      "oreb": 19,
+      "dreb": 42,
+      "ast": 33,
+      "tov": 10,
+      "stl": 14,
+      "blk": 2,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "24:06",
+        "pts": 6,
+        "reb": 8,
+        "ast": 7
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "05:38",
+        "pts": 5,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "22:57",
+        "pts": 10,
+        "reb": 10,
+        "ast": 7
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "24:43",
+        "pts": 16,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "22:44",
+        "pts": 8,
+        "reb": 2,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612764",
+    "total": {
+      "pts": 98,
+      "fgm": 37,
+      "fga": 84,
+      "f2m": 27,
+      "f2a": 53,
+      "f3m": 10,
+      "f3a": 31,
+      "ftm": 14,
+      "fta": 17,
+      "reb": 49,
+      "oreb": 2,
+      "dreb": 39,
+      "ast": 23,
+      "tov": 20,
+      "stl": 9,
+      "blk": 8,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "23:58",
+        "pts": 8,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "21:27",
+        "pts": 11,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "TRISTAN VUKCEVIC",
+        "min": "22:01",
+        "pts": 5,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "12",
+        "name": "TRE JOHNSON",
+        "min": "23:55",
+        "pts": 8,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "26:19",
+        "pts": 3,
+        "reb": 10,
+        "ast": 7
+      }
+    ]
+  }
+}

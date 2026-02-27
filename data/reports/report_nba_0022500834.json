@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500834",
+  "date": "2026.02.24",
+  "venue": "Scotiabank Arena",
+  "attendance": 19153,
+  "home": {
+    "id": "1610612761",
+    "total": {
+      "pts": 107,
+      "fgm": 41,
+      "fga": 88,
+      "f2m": 23,
+      "f2a": 50,
+      "f3m": 18,
+      "f3a": 38,
+      "ftm": 7,
+      "fta": 12,
+      "reb": 45,
+      "oreb": 7,
+      "dreb": 27,
+      "ast": 30,
+      "tov": 16,
+      "stl": 10,
+      "blk": 8,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "35:21",
+        "pts": 15,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "31:57",
+        "pts": 15,
+        "reb": 3,
+        "ast": 7
+      },
+      {
+        "no": "12",
+        "name": "COLLIN MURRAY-BOYLES",
+        "min": "30:12",
+        "pts": 4,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "33:54",
+        "pts": 21,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "32:35",
+        "pts": 17,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612760",
+    "total": {
+      "pts": 116,
+      "fgm": 45,
+      "fga": 95,
+      "f2m": 29,
+      "f2a": 55,
+      "f3m": 16,
+      "f3a": 40,
+      "ftm": 10,
+      "fta": 12,
+      "reb": 59,
+      "oreb": 12,
+      "dreb": 37,
+      "ast": 26,
+      "tov": 16,
+      "stl": 10,
+      "blk": 5,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "34:27",
+        "pts": 15,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "30:17",
+        "pts": 7,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "55",
+        "name": "ISAIAH HARTENSTEIN",
+        "min": "25:53",
+        "pts": 11,
+        "reb": 9,
+        "ast": 0
+      },
+      {
+        "no": "11",
+        "name": "ISAIAH JOE",
+        "min": "32:54",
+        "pts": 22,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "35:03",
+        "pts": 27,
+        "reb": 8,
+        "ast": 7
+      }
+    ]
+  }
+}

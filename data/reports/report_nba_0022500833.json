@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500833",
+  "date": "2026.02.24",
+  "venue": "Barclays Center",
+  "attendance": 16510,
+  "home": {
+    "id": "1610612751",
+    "total": {
+      "pts": 114,
+      "fgm": 41,
+      "fga": 80,
+      "f2m": 28,
+      "f2a": 48,
+      "f3m": 13,
+      "f3a": 32,
+      "ftm": 19,
+      "fta": 27,
+      "reb": 39,
+      "oreb": 5,
+      "dreb": 23,
+      "ast": 29,
+      "tov": 11,
+      "stl": 11,
+      "blk": 2,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "32:33",
+        "pts": 26,
+        "reb": 0,
+        "ast": 3
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "32:45",
+        "pts": 22,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "32:02",
+        "pts": 16,
+        "reb": 4,
+        "ast": 9
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "28:04",
+        "pts": 3,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "88",
+        "name": "NOLAN TRAORE",
+        "min": "27:45",
+        "pts": 8,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612742",
+    "total": {
+      "pts": 123,
+      "fgm": 48,
+      "fga": 82,
+      "f2m": 40,
+      "f2a": 59,
+      "f3m": 8,
+      "f3a": 23,
+      "ftm": 19,
+      "fta": 24,
+      "reb": 48,
+      "oreb": 10,
+      "dreb": 34,
+      "ast": 26,
+      "tov": 15,
+      "stl": 5,
+      "blk": 4,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "KHRIS MIDDLETON",
+        "min": "12:29",
+        "pts": 6,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "30:21",
+        "pts": 13,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "16:34",
+        "pts": 9,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "28:51",
+        "pts": 13,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "36:01",
+        "pts": 21,
+        "reb": 5,
+        "ast": 7
+      }
+    ]
+  }
+}

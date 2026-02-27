@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500835",
+  "date": "2026.02.24",
+  "venue": "Rocket Arena",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612739",
+    "total": {
+      "pts": 109,
+      "fgm": 37,
+      "fga": 87,
+      "f2m": 24,
+      "f2a": 52,
+      "f3m": 13,
+      "f3a": 35,
+      "ftm": 22,
+      "fta": 30,
+      "reb": 58,
+      "oreb": 13,
+      "dreb": 31,
+      "ast": 23,
+      "tov": 11,
+      "stl": 11,
+      "blk": 6,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "DEAN WADE",
+        "min": "24:40",
+        "pts": 11,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "24:27",
+        "pts": 12,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "28:49",
+        "pts": 19,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "31:21",
+        "pts": 23,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "32:12",
+        "pts": 20,
+        "reb": 2,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612752",
+    "total": {
+      "pts": 94,
+      "fgm": 35,
+      "fga": 86,
+      "f2m": 25,
+      "f2a": 49,
+      "f3m": 10,
+      "f3a": 37,
+      "ftm": 14,
+      "fta": 21,
+      "reb": 58,
+      "oreb": 11,
+      "dreb": 33,
+      "ast": 23,
+      "tov": 16,
+      "stl": 7,
+      "blk": 8,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "26:12",
+        "pts": 10,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "34:16",
+        "pts": 5,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "29:03",
+        "pts": 14,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "31:41",
+        "pts": 18,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "35:59",
+        "pts": 20,
+        "reb": 1,
+        "ast": 4
+      }
+    ]
+  }
+}

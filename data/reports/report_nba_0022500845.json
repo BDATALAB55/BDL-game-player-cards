@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500845",
+  "date": "2026.02.25",
+  "venue": "Toyota Center",
+  "attendance": 18055,
+  "home": {
+    "id": "1610612745",
+    "total": {
+      "pts": 128,
+      "fgm": 47,
+      "fga": 86,
+      "f2m": 30,
+      "f2a": 47,
+      "f3m": 17,
+      "f3a": 39,
+      "ftm": 17,
+      "fta": 19,
+      "reb": 50,
+      "oreb": 9,
+      "dreb": 35,
+      "ast": 29,
+      "tov": 11,
+      "stl": 6,
+      "blk": 8,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "27:54",
+        "pts": 21,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "32:38",
+        "pts": 12,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "32:03",
+        "pts": 26,
+        "reb": 13,
+        "ast": 11
+      },
+      {
+        "no": "17",
+        "name": "TARI EASON",
+        "min": "20:50",
+        "pts": 8,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "REED SHEPPARD",
+        "min": "32:19",
+        "pts": 28,
+        "reb": 4,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612758",
+    "total": {
+      "pts": 97,
+      "fgm": 37,
+      "fga": 93,
+      "f2m": 30,
+      "f2a": 61,
+      "f3m": 7,
+      "f3a": 32,
+      "ftm": 16,
+      "fta": 20,
+      "reb": 52,
+      "oreb": 16,
+      "dreb": 27,
+      "ast": 22,
+      "tov": 12,
+      "stl": 9,
+      "blk": 2,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "13",
+        "name": "KEEGAN MURRAY",
+        "min": "08:37",
+        "pts": 3,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "9",
+        "name": "PRECIOUS ACHIUWA",
+        "min": "30:07",
+        "pts": 6,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "28:42",
+        "pts": 11,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "23:48",
+        "pts": 15,
+        "reb": 1,
+        "ast": 7
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "25:07",
+        "pts": 22,
+        "reb": 5,
+        "ast": 3
+      }
+    ]
+  }
+}

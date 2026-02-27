@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500831",
+  "date": "2026.02.24",
+  "venue": "Gainbridge Fieldhouse",
+  "attendance": 16540,
+  "home": {
+    "id": "1610612754",
+    "total": {
+      "pts": 114,
+      "fgm": 41,
+      "fga": 95,
+      "f2m": 28,
+      "f2a": 52,
+      "f3m": 13,
+      "f3a": 43,
+      "ftm": 19,
+      "fta": 22,
+      "reb": 52,
+      "oreb": 12,
+      "dreb": 29,
+      "ast": 27,
+      "tov": 16,
+      "stl": 8,
+      "blk": 4,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "26",
+        "name": "BEN SHEPPARD",
+        "min": "28:27",
+        "pts": 12,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "JARACE WALKER",
+        "min": "32:06",
+        "pts": 8,
+        "reb": 10,
+        "ast": 6
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "24:34",
+        "pts": 4,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "7",
+        "name": "KAM JONES",
+        "min": "29:25",
+        "pts": 13,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "27:33",
+        "pts": 23,
+        "reb": 1,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612755",
+    "total": {
+      "pts": 135,
+      "fgm": 53,
+      "fga": 92,
+      "f2m": 45,
+      "f2a": 63,
+      "f3m": 8,
+      "f3a": 29,
+      "ftm": 21,
+      "fta": 25,
+      "reb": 49,
+      "oreb": 6,
+      "dreb": 38,
+      "ast": 29,
+      "tov": 13,
+      "stl": 14,
+      "blk": 5,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "KELLY OUBRE JR.",
+        "min": "27:49",
+        "pts": 12,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "25",
+        "name": "DOMINICK BARLOW",
+        "min": "20:19",
+        "pts": 0,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "JOEL EMBIID",
+        "min": "26:15",
+        "pts": 27,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "30:01",
+        "pts": 23,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "TYRESE MAXEY",
+        "min": "33:37",
+        "pts": 32,
+        "reb": 9,
+        "ast": 8
+      }
+    ]
+  }
+}

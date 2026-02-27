@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500853",
+  "date": "2026.02.26",
+  "venue": "United Center",
+  "attendance": 18516,
+  "home": {
+    "id": "1610612741",
+    "total": {
+      "pts": 112,
+      "fgm": 40,
+      "fga": 80,
+      "f2m": 31,
+      "f2a": 50,
+      "f3m": 9,
+      "f3a": 30,
+      "ftm": 23,
+      "fta": 30,
+      "reb": 53,
+      "oreb": 6,
+      "dreb": 35,
+      "ast": 29,
+      "tov": 20,
+      "stl": 8,
+      "blk": 4,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "37:24",
+        "pts": 12,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "35:56",
+        "pts": 20,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "28",
+        "name": "GUERSCHON YABUSELE",
+        "min": "21:18",
+        "pts": 6,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "COLLIN SEXTON",
+        "min": "17:48",
+        "pts": 10,
+        "reb": 0,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "JOSH GIDDEY",
+        "min": "27:45",
+        "pts": 15,
+        "reb": 6,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612757",
+    "total": {
+      "pts": 121,
+      "fgm": 42,
+      "fga": 95,
+      "f2m": 32,
+      "f2a": 49,
+      "f3m": 10,
+      "f3a": 46,
+      "ftm": 27,
+      "fta": 31,
+      "reb": 51,
+      "oreb": 15,
+      "dreb": 30,
+      "ast": 27,
+      "tov": 12,
+      "stl": 10,
+      "blk": 8,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "36:25",
+        "pts": 16,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "JERAMI GRANT",
+        "min": "34:56",
+        "pts": 27,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "24",
+        "name": "KRIS MURRAY",
+        "min": "28:09",
+        "pts": 10,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "JRUE HOLIDAY",
+        "min": "32:13",
+        "pts": 10,
+        "reb": 3,
+        "ast": 7
+      },
+      {
+        "no": "00",
+        "name": "SCOOT HENDERSON",
+        "min": "23:54",
+        "pts": 12,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500851",
+  "date": "2026.02.26",
+  "venue": "Barclays Center",
+  "attendance": 17548,
+  "home": {
+    "id": "1610612751",
+    "total": {
+      "pts": 110,
+      "fgm": 41,
+      "fga": 89,
+      "f2m": 28,
+      "f2a": 55,
+      "f3m": 13,
+      "f3a": 34,
+      "ftm": 15,
+      "fta": 17,
+      "reb": 55,
+      "oreb": 15,
+      "dreb": 35,
+      "ast": 26,
+      "tov": 15,
+      "stl": 5,
+      "blk": 1,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "30:08",
+        "pts": 25,
+        "reb": 14,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "30:06",
+        "pts": 11,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "23:39",
+        "pts": 12,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "25:01",
+        "pts": 6,
+        "reb": 5,
+        "ast": 9
+      },
+      {
+        "no": "88",
+        "name": "NOLAN TRAORE",
+        "min": "29:56",
+        "pts": 13,
+        "reb": 2,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 126,
+      "fgm": 43,
+      "fga": 87,
+      "f2m": 26,
+      "f2a": 44,
+      "f3m": 17,
+      "f3a": 43,
+      "ftm": 23,
+      "fta": 27,
+      "reb": 45,
+      "oreb": 10,
+      "dreb": 29,
+      "ast": 36,
+      "tov": 8,
+      "stl": 13,
+      "blk": 5,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "27:39",
+        "pts": 14,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "23:57",
+        "pts": 26,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "25:57",
+        "pts": 12,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "25:27",
+        "pts": 18,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "24:43",
+        "pts": 14,
+        "reb": 1,
+        "ast": 6
+      }
+    ]
+  }
+}

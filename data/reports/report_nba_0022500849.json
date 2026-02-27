@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500849",
+  "date": "2026.02.26",
+  "venue": "Xfinity Mobile Arena",
+  "attendance": 19746,
+  "home": {
+    "id": "1610612755",
+    "total": {
+      "pts": 124,
+      "fgm": 45,
+      "fga": 94,
+      "f2m": 28,
+      "f2a": 51,
+      "f3m": 17,
+      "f3a": 43,
+      "ftm": 17,
+      "fta": 18,
+      "reb": 54,
+      "oreb": 11,
+      "dreb": 38,
+      "ast": 26,
+      "tov": 14,
+      "stl": 11,
+      "blk": 3,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "KELLY OUBRE JR.",
+        "min": "34:05",
+        "pts": 21,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "25",
+        "name": "DOMINICK BARLOW",
+        "min": "31:10",
+        "pts": 9,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "21",
+        "name": "JOEL EMBIID",
+        "min": "31:12",
+        "pts": 26,
+        "reb": 11,
+        "ast": 4
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "39:13",
+        "pts": 19,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "TYRESE MAXEY",
+        "min": "37:50",
+        "pts": 28,
+        "reb": 4,
+        "ast": 11
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612748",
+    "total": {
+      "pts": 117,
+      "fgm": 40,
+      "fga": 87,
+      "f2m": 23,
+      "f2a": 47,
+      "f3m": 17,
+      "f3a": 40,
+      "ftm": 20,
+      "fta": 26,
+      "reb": 50,
+      "oreb": 10,
+      "dreb": 35,
+      "ast": 25,
+      "tov": 14,
+      "stl": 8,
+      "blk": 2,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "33:15",
+        "pts": 9,
+        "reb": 4,
+        "ast": 6
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "35:18",
+        "pts": 18,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "36:25",
+        "pts": 29,
+        "reb": 14,
+        "ast": 3
+      },
+      {
+        "no": "24",
+        "name": "NORMAN POWELL",
+        "min": "10:04",
+        "pts": 3,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "24:19",
+        "pts": 3,
+        "reb": 2,
+        "ast": 2
+      }
+    ]
+  }
+}

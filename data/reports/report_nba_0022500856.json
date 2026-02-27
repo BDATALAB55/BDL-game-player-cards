@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500856",
+  "date": "2026.02.26",
+  "venue": "Delta Center",
+  "attendance": 18186,
+  "home": {
+    "id": "1610612762",
+    "total": {
+      "pts": 118,
+      "fgm": 45,
+      "fga": 90,
+      "f2m": 33,
+      "f2a": 53,
+      "f3m": 12,
+      "f3a": 37,
+      "ftm": 16,
+      "fta": 25,
+      "reb": 49,
+      "oreb": 15,
+      "dreb": 22,
+      "ast": 28,
+      "tov": 18,
+      "stl": 14,
+      "blk": 6,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "29:23",
+        "pts": 23,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "CODY WILLIAMS",
+        "min": "30:03",
+        "pts": 6,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "22",
+        "name": "KYLE FILIPOWSKI",
+        "min": "18:12",
+        "pts": 13,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "55",
+        "name": "JOHN KONCHAR",
+        "min": "26:03",
+        "pts": 4,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "ISAIAH COLLIER",
+        "min": "27:26",
+        "pts": 11,
+        "reb": 1,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612740",
+    "total": {
+      "pts": 129,
+      "fgm": 46,
+      "fga": 88,
+      "f2m": 33,
+      "f2a": 54,
+      "f3m": 13,
+      "f3a": 34,
+      "ftm": 24,
+      "fta": 27,
+      "reb": 50,
+      "oreb": 13,
+      "dreb": 27,
+      "ast": 37,
+      "tov": 18,
+      "stl": 13,
+      "blk": 8,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "34:13",
+        "pts": 42,
+        "reb": 5,
+        "ast": 7
+      },
+      {
+        "no": "1",
+        "name": "ZION WILLIAMSON",
+        "min": "33:16",
+        "pts": 20,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "6",
+        "name": "DEANDRE JORDAN",
+        "min": "12:58",
+        "pts": 4,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "2",
+        "name": "HERBERT JONES",
+        "min": "25:35",
+        "pts": 8,
+        "reb": 1,
+        "ast": 6
+      },
+      {
+        "no": "5",
+        "name": "DEJOUNTE MURRAY",
+        "min": "25:49",
+        "pts": 17,
+        "reb": 3,
+        "ast": 9
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500855",
+  "date": "2026.02.26",
+  "venue": "Mortgage Matchup Center",
+  "attendance": 17071,
+  "home": {
+    "id": "1610612756",
+    "total": {
+      "pts": 113,
+      "fgm": 40,
+      "fga": 87,
+      "f2m": 18,
+      "f2a": 37,
+      "f3m": 22,
+      "f3a": 50,
+      "ftm": 11,
+      "fta": 14,
+      "reb": 43,
+      "oreb": 15,
+      "dreb": 26,
+      "ast": 22,
+      "tov": 12,
+      "stl": 9,
+      "blk": 5,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "RYAN DUNN",
+        "min": "26:28",
+        "pts": 10,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "28:18",
+        "pts": 13,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "15",
+        "name": "MARK WILLIAMS",
+        "min": "13:19",
+        "pts": 4,
+        "reb": 10,
+        "ast": 0
+      },
+      {
+        "no": "4",
+        "name": "JALEN GREEN",
+        "min": "23:49",
+        "pts": 9,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "31:19",
+        "pts": 21,
+        "reb": 3,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612747",
+    "total": {
+      "pts": 110,
+      "fgm": 38,
+      "fga": 75,
+      "f2m": 27,
+      "f2a": 46,
+      "f3m": 11,
+      "f3a": 29,
+      "ftm": 23,
+      "fta": 26,
+      "reb": 48,
+      "oreb": 10,
+      "dreb": 29,
+      "ast": 20,
+      "tov": 12,
+      "stl": 8,
+      "blk": 2,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "31:00",
+        "pts": 13,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "34:41",
+        "pts": 15,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "22:33",
+        "pts": 2,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "15",
+        "name": "AUSTIN REAVES",
+        "min": "36:26",
+        "pts": 14,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "39:19",
+        "pts": 41,
+        "reb": 8,
+        "ast": 8
+      }
+    ]
+  }
+}

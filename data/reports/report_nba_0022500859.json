@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500859",
+  "date": "2026.02.27",
+  "venue": "TD Garden",
+  "attendance": 19156,
+  "home": {
+    "id": "1610612738",
+    "total": {
+      "pts": 148,
+      "fgm": 52,
+      "fga": 78,
+      "f2m": 30,
+      "f2a": 44,
+      "f3m": 22,
+      "f3a": 34,
+      "ftm": 22,
+      "fta": 27,
+      "reb": 49,
+      "oreb": 7,
+      "dreb": 32,
+      "ast": 38,
+      "tov": 11,
+      "stl": 9,
+      "blk": 7,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "29:57",
+        "pts": 28,
+        "reb": 7,
+        "ast": 9
+      },
+      {
+        "no": "30",
+        "name": "SAM HAUSER",
+        "min": "26:36",
+        "pts": 13,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "14:53",
+        "pts": 8,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "55",
+        "name": "BAYLOR SCHEIERMAN",
+        "min": "22:04",
+        "pts": 10,
+        "reb": 3,
+        "ast": 6
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "32:05",
+        "pts": 12,
+        "reb": 3,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612751",
+    "total": {
+      "pts": 111,
+      "fgm": 43,
+      "fga": 88,
+      "f2m": 29,
+      "f2a": 54,
+      "f3m": 14,
+      "f3a": 34,
+      "ftm": 11,
+      "fta": 16,
+      "reb": 32,
+      "oreb": 9,
+      "dreb": 16,
+      "ast": 29,
+      "tov": 12,
+      "stl": 7,
+      "blk": 2,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "25:31",
+        "pts": 18,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "21:49",
+        "pts": 10,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "23:20",
+        "pts": 12,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "EGOR DËMIN",
+        "min": "21:41",
+        "pts": 5,
+        "reb": 0,
+        "ast": 2
+      },
+      {
+        "no": "88",
+        "name": "NOLAN TRAORE",
+        "min": "24:04",
+        "pts": 8,
+        "reb": 2,
+        "ast": 7
+      }
+    ]
+  }
+}

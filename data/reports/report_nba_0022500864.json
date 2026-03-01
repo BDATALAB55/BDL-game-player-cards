@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500864",
+  "date": "2026.02.28",
+  "venue": "Kaseya Center",
+  "attendance": 19700,
+  "home": {
+    "id": "1610612748",
+    "total": {
+      "pts": 115,
+      "fgm": 45,
+      "fga": 90,
+      "f2m": 34,
+      "f2a": 59,
+      "f3m": 11,
+      "f3a": 31,
+      "ftm": 14,
+      "fta": 20,
+      "reb": 54,
+      "oreb": 14,
+      "dreb": 33,
+      "ast": 22,
+      "tov": 13,
+      "stl": 3,
+      "blk": 4,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "34:33",
+        "pts": 20,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "31:02",
+        "pts": 12,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "35:00",
+        "pts": 24,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "14",
+        "name": "TYLER HERRO",
+        "min": "33:04",
+        "pts": 18,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "25:01",
+        "pts": 10,
+        "reb": 3,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612745",
+    "total": {
+      "pts": 105,
+      "fgm": 41,
+      "fga": 95,
+      "f2m": 32,
+      "f2a": 59,
+      "f3m": 9,
+      "f3a": 36,
+      "ftm": 14,
+      "fta": 21,
+      "reb": 59,
+      "oreb": 15,
+      "dreb": 32,
+      "ast": 26,
+      "tov": 11,
+      "stl": 6,
+      "blk": 2,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "TARI EASON",
+        "min": "35:48",
+        "pts": 10,
+        "reb": 11,
+        "ast": 5
+      },
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "37:14",
+        "pts": 32,
+        "reb": 5,
+        "ast": 8
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "34:49",
+        "pts": 13,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "39:01",
+        "pts": 20,
+        "reb": 11,
+        "ast": 4
+      },
+      {
+        "no": "15",
+        "name": "REED SHEPPARD",
+        "min": "35:47",
+        "pts": 14,
+        "reb": 4,
+        "ast": 5
+      }
+    ]
+  }
+}

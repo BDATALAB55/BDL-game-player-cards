@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500861",
+  "date": "2026.02.27",
+  "venue": "American Airlines Center",
+  "attendance": 19165,
+  "home": {
+    "id": "1610612742",
+    "total": {
+      "pts": 105,
+      "fgm": 37,
+      "fga": 88,
+      "f2m": 28,
+      "f2a": 56,
+      "f3m": 9,
+      "f3a": 32,
+      "ftm": 22,
+      "fta": 33,
+      "reb": 64,
+      "oreb": 13,
+      "dreb": 33,
+      "ast": 24,
+      "tov": 20,
+      "stl": 4,
+      "blk": 4,
+      "pf": 13
+    },
+    "starters": [
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "23:36",
+        "pts": 4,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "20",
+        "name": "KHRIS MIDDLETON",
+        "min": "19:16",
+        "pts": 10,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "20:06",
+        "pts": 14,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "29:02",
+        "pts": 13,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "10",
+        "name": "BRANDON WILLIAMS",
+        "min": "26:25",
+        "pts": 16,
+        "reb": 8,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612763",
+    "total": {
+      "pts": 124,
+      "fgm": 47,
+      "fga": 93,
+      "f2m": 35,
+      "f2a": 61,
+      "f3m": 12,
+      "f3a": 32,
+      "ftm": 18,
+      "fta": 21,
+      "reb": 48,
+      "oreb": 10,
+      "dreb": 33,
+      "ast": 29,
+      "tov": 11,
+      "stl": 13,
+      "blk": 7,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "19:57",
+        "pts": 12,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "45",
+        "name": "GG JACKSON",
+        "min": "24:22",
+        "pts": 12,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "18",
+        "name": "OLIVIER-MAXENCE PROSPER",
+        "min": "24:50",
+        "pts": 16,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "10",
+        "name": "JAVON SMALL",
+        "min": "25:49",
+        "pts": 9,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "1",
+        "name": "SCOTTY PIPPEN JR.",
+        "min": "21:37",
+        "pts": 15,
+        "reb": 2,
+        "ast": 3
+      }
+    ]
+  }
+}

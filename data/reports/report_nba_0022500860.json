@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500860",
+  "date": "2026.02.27",
+  "venue": "Fiserv Forum",
+  "attendance": 17341,
+  "home": {
+    "id": "1610612749",
+    "total": {
+      "pts": 98,
+      "fgm": 33,
+      "fga": 77,
+      "f2m": 17,
+      "f2a": 35,
+      "f3m": 16,
+      "f3a": 42,
+      "ftm": 16,
+      "fta": 22,
+      "reb": 44,
+      "oreb": 4,
+      "dreb": 30,
+      "ast": 24,
+      "tov": 16,
+      "stl": 5,
+      "blk": 3,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "30:12",
+        "pts": 7,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "18",
+        "name": "KYLE KUZMA",
+        "min": "27:27",
+        "pts": 17,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "24:44",
+        "pts": 19,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "KEVIN PORTER JR.",
+        "min": "27:09",
+        "pts": 11,
+        "reb": 6,
+        "ast": 10
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "32:21",
+        "pts": 13,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612752",
+    "total": {
+      "pts": 127,
+      "fgm": 46,
+      "fga": 88,
+      "f2m": 25,
+      "f2a": 46,
+      "f3m": 21,
+      "f3a": 42,
+      "ftm": 14,
+      "fta": 16,
+      "reb": 51,
+      "oreb": 7,
+      "dreb": 37,
+      "ast": 33,
+      "tov": 10,
+      "stl": 7,
+      "blk": 6,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "24:55",
+        "pts": 12,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "28:03",
+        "pts": 24,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "28:50",
+        "pts": 17,
+        "reb": 13,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "25:48",
+        "pts": 10,
+        "reb": 0,
+        "ast": 6
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "30:31",
+        "pts": 27,
+        "reb": 7,
+        "ast": 3
+      }
+    ]
+  }
+}

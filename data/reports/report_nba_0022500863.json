@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500863",
+  "date": "2026.02.28",
+  "venue": "Spectrum Center",
+  "attendance": 19634,
+  "home": {
+    "id": "1610612766",
+    "total": {
+      "pts": 109,
+      "fgm": 38,
+      "fga": 91,
+      "f2m": 22,
+      "f2a": 49,
+      "f3m": 16,
+      "f3a": 42,
+      "ftm": 17,
+      "fta": 25,
+      "reb": 66,
+      "oreb": 20,
+      "dreb": 35,
+      "ast": 24,
+      "tov": 16,
+      "stl": 11,
+      "blk": 0,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "28:40",
+        "pts": 10,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "MILES BRIDGES",
+        "min": "32:29",
+        "pts": 14,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "14",
+        "name": "MOUSSA DIABATÉ",
+        "min": "33:13",
+        "pts": 13,
+        "reb": 11,
+        "ast": 5
+      },
+      {
+        "no": "24",
+        "name": "BRANDON MILLER",
+        "min": "32:44",
+        "pts": 26,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "LAMELO BALL",
+        "min": "29:52",
+        "pts": 15,
+        "reb": 4,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612757",
+    "total": {
+      "pts": 93,
+      "fgm": 35,
+      "fga": 86,
+      "f2m": 24,
+      "f2a": 39,
+      "f3m": 11,
+      "f3a": 47,
+      "ftm": 12,
+      "fta": 19,
+      "reb": 53,
+      "oreb": 11,
+      "dreb": 28,
+      "ast": 22,
+      "tov": 16,
+      "stl": 8,
+      "blk": 7,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "KRIS MURRAY",
+        "min": "16:43",
+        "pts": 2,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "32:29",
+        "pts": 12,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "25:58",
+        "pts": 7,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "JERAMI GRANT",
+        "min": "31:50",
+        "pts": 21,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "JRUE HOLIDAY",
+        "min": "33:06",
+        "pts": 25,
+        "reb": 5,
+        "ast": 4
+      }
+    ]
+  }
+}

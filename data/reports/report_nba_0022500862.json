@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500862",
+  "date": "2026.02.27",
+  "venue": "Paycom Center",
+  "attendance": 18203,
+  "home": {
+    "id": "1610612760",
+    "total": {
+      "pts": 127,
+      "fgm": 46,
+      "fga": 99,
+      "f2m": 34,
+      "f2a": 64,
+      "f3m": 12,
+      "f3a": 35,
+      "ftm": 23,
+      "fta": 27,
+      "reb": 63,
+      "oreb": 8,
+      "dreb": 48,
+      "ast": 29,
+      "tov": 12,
+      "stl": 14,
+      "blk": 10,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "28:02",
+        "pts": 8,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "37:42",
+        "pts": 15,
+        "reb": 21,
+        "ast": 3
+      },
+      {
+        "no": "55",
+        "name": "ISAIAH HARTENSTEIN",
+        "min": "24:58",
+        "pts": 9,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "35:50",
+        "pts": 10,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "33:46",
+        "pts": 36,
+        "reb": 3,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612743",
+    "total": {
+      "pts": 121,
+      "fgm": 43,
+      "fga": 103,
+      "f2m": 25,
+      "f2a": 55,
+      "f3m": 18,
+      "f3a": 48,
+      "ftm": 17,
+      "fta": 22,
+      "reb": 59,
+      "oreb": 11,
+      "dreb": 40,
+      "ast": 27,
+      "tov": 17,
+      "stl": 10,
+      "blk": 6,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "CHRISTIAN BRAUN",
+        "min": "45:14",
+        "pts": 23,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "CAMERON JOHNSON",
+        "min": "40:04",
+        "pts": 7,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "44:34",
+        "pts": 23,
+        "reb": 17,
+        "ast": 14
+      },
+      {
+        "no": "3",
+        "name": "JULIAN STRAWTHER",
+        "min": "15:11",
+        "pts": 0,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "47:12",
+        "pts": 39,
+        "reb": 8,
+        "ast": 6
+      }
+    ]
+  }
+}

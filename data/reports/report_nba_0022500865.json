@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500865",
+  "date": "2026.02.28",
+  "venue": "Capital One Arena",
+  "attendance": 17429,
+  "home": {
+    "id": "1610612764",
+    "total": {
+      "pts": 125,
+      "fgm": 47,
+      "fga": 88,
+      "f2m": 31,
+      "f2a": 54,
+      "f3m": 16,
+      "f3a": 34,
+      "ftm": 15,
+      "fta": 21,
+      "reb": 45,
+      "oreb": 12,
+      "dreb": 23,
+      "ast": 23,
+      "tov": 13,
+      "stl": 3,
+      "blk": 8,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "22:52",
+        "pts": 14,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "15:10",
+        "pts": 14,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "00",
+        "name": "TRISTAN VUKCEVIC",
+        "min": "18:36",
+        "pts": 13,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "12",
+        "name": "TRE JOHNSON",
+        "min": "19:19",
+        "pts": 8,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "20:47",
+        "pts": 12,
+        "reb": 3,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612761",
+    "total": {
+      "pts": 134,
+      "fgm": 51,
+      "fga": 85,
+      "f2m": 42,
+      "f2a": 63,
+      "f3m": 9,
+      "f3a": 22,
+      "ftm": 23,
+      "fta": 27,
+      "reb": 41,
+      "oreb": 8,
+      "dreb": 27,
+      "ast": 31,
+      "tov": 9,
+      "stl": 7,
+      "blk": 3,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "33:41",
+        "pts": 24,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "29:26",
+        "pts": 18,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "19",
+        "name": "JAKOB POELTL",
+        "min": "26:14",
+        "pts": 18,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "32:40",
+        "pts": 21,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "37:10",
+        "pts": 27,
+        "reb": 2,
+        "ast": 11
+      }
+    ]
+  }
+}

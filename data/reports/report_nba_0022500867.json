@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500867",
+  "date": "2026.02.28",
+  "venue": "Delta Center",
+  "attendance": 18186,
+  "home": {
+    "id": "1610612762",
+    "total": {
+      "pts": 105,
+      "fgm": 33,
+      "fga": 96,
+      "f2m": 21,
+      "f2a": 53,
+      "f3m": 12,
+      "f3a": 43,
+      "ftm": 27,
+      "fta": 33,
+      "reb": 52,
+      "oreb": 13,
+      "dreb": 27,
+      "ast": 24,
+      "tov": 7,
+      "stl": 10,
+      "blk": 5,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "CODY WILLIAMS",
+        "min": "20:50",
+        "pts": 4,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "BLAKE HINSON",
+        "min": "16:07",
+        "pts": 8,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "22",
+        "name": "KYLE FILIPOWSKI",
+        "min": "29:28",
+        "pts": 12,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "29:43",
+        "pts": 13,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "23:22",
+        "pts": 17,
+        "reb": 2,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612740",
+    "total": {
+      "pts": 115,
+      "fgm": 39,
+      "fga": 85,
+      "f2m": 24,
+      "f2a": 41,
+      "f3m": 15,
+      "f3a": 44,
+      "ftm": 22,
+      "fta": 29,
+      "reb": 70,
+      "oreb": 12,
+      "dreb": 46,
+      "ast": 32,
+      "tov": 19,
+      "stl": 5,
+      "blk": 11,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "39:16",
+        "pts": 24,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "1",
+        "name": "ZION WILLIAMSON",
+        "min": "11:04",
+        "pts": 4,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "6",
+        "name": "DEANDRE JORDAN",
+        "min": "12:39",
+        "pts": 3,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "11",
+        "name": "BRYCE MCGOWENS",
+        "min": "33:20",
+        "pts": 18,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "HERBERT JONES",
+        "min": "36:00",
+        "pts": 17,
+        "reb": 8,
+        "ast": 7
+      }
+    ]
+  }
+}

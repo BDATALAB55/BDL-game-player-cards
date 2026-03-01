@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500866",
+  "date": "2026.02.28",
+  "venue": "Chase Center",
+  "attendance": 18064,
+  "home": {
+    "id": "1610612744",
+    "total": {
+      "pts": 101,
+      "fgm": 41,
+      "fga": 91,
+      "f2m": 29,
+      "f2a": 47,
+      "f3m": 12,
+      "f3a": 44,
+      "ftm": 7,
+      "fta": 9,
+      "reb": 42,
+      "oreb": 9,
+      "dreb": 31,
+      "ast": 32,
+      "tov": 10,
+      "stl": 6,
+      "blk": 4,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "4",
+        "name": "MOSES MOODY",
+        "min": "29:47",
+        "pts": 12,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "15",
+        "name": "GUI SANTOS",
+        "min": "27:17",
+        "pts": 14,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "23:55",
+        "pts": 7,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "8",
+        "name": "DE'ANTHONY MELTON",
+        "min": "23:53",
+        "pts": 10,
+        "reb": 1,
+        "ast": 4
+      },
+      {
+        "no": "2",
+        "name": "BRANDIN PODZIEMSKI",
+        "min": "29:56",
+        "pts": 9,
+        "reb": 7,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612747",
+    "total": {
+      "pts": 129,
+      "fgm": 48,
+      "fga": 90,
+      "f2m": 29,
+      "f2a": 49,
+      "f3m": 19,
+      "f3a": 41,
+      "ftm": 14,
+      "fta": 20,
+      "reb": 59,
+      "oreb": 10,
+      "dreb": 37,
+      "ast": 29,
+      "tov": 9,
+      "stl": 7,
+      "blk": 5,
+      "pf": 11
+    },
+    "starters": [
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "28:51",
+        "pts": 8,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "28:19",
+        "pts": 22,
+        "reb": 7,
+        "ast": 9
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "19:39",
+        "pts": 4,
+        "reb": 10,
+        "ast": 0
+      },
+      {
+        "no": "15",
+        "name": "AUSTIN REAVES",
+        "min": "27:45",
+        "pts": 18,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "29:15",
+        "pts": 26,
+        "reb": 6,
+        "ast": 8
+      }
+    ]
+  }
+}

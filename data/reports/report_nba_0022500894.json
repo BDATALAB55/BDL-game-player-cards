@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500894",
+  "date": "2026.03.04",
+  "venue": "TD Garden",
+  "attendance": 19156,
+  "home": {
+    "id": "1610612738",
+    "total": {
+      "pts": 89,
+      "fgm": 30,
+      "fga": 79,
+      "f2m": 20,
+      "f2a": 43,
+      "f3m": 10,
+      "f3a": 36,
+      "ftm": 19,
+      "fta": 20,
+      "reb": 55,
+      "oreb": 9,
+      "dreb": 36,
+      "ast": 18,
+      "tov": 15,
+      "stl": 1,
+      "blk": 3,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "33:42",
+        "pts": 20,
+        "reb": 11,
+        "ast": 7
+      },
+      {
+        "no": "30",
+        "name": "SAM HAUSER",
+        "min": "25:19",
+        "pts": 3,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "16:14",
+        "pts": 2,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "55",
+        "name": "BAYLOR SCHEIERMAN",
+        "min": "31:30",
+        "pts": 9,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "29:19",
+        "pts": 29,
+        "reb": 2,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612766",
+    "total": {
+      "pts": 118,
+      "fgm": 41,
+      "fga": 89,
+      "f2m": 22,
+      "f2a": 40,
+      "f3m": 19,
+      "f3a": 49,
+      "ftm": 17,
+      "fta": 21,
+      "reb": 48,
+      "oreb": 11,
+      "dreb": 32,
+      "ast": 26,
+      "tov": 4,
+      "stl": 10,
+      "blk": 4,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "MILES BRIDGES",
+        "min": "30:56",
+        "pts": 9,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "30:47",
+        "pts": 20,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "14",
+        "name": "MOUSSA DIABATÉ",
+        "min": "29:04",
+        "pts": 9,
+        "reb": 9,
+        "ast": 6
+      },
+      {
+        "no": "24",
+        "name": "BRANDON MILLER",
+        "min": "27:02",
+        "pts": 18,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "LAMELO BALL",
+        "min": "23:18",
+        "pts": 18,
+        "reb": 7,
+        "ast": 4
+      }
+    ]
+  }
+}

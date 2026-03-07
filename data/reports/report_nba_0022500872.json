@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500872",
+  "date": "2026.03.01",
+  "venue": "Gainbridge Fieldhouse",
+  "attendance": 16695,
+  "home": {
+    "id": "1610612754",
+    "total": {
+      "pts": 106,
+      "fgm": 39,
+      "fga": 80,
+      "f2m": 24,
+      "f2a": 41,
+      "f3m": 15,
+      "f3a": 39,
+      "ftm": 13,
+      "fta": 19,
+      "reb": 45,
+      "oreb": 7,
+      "dreb": 24,
+      "ast": 29,
+      "tov": 18,
+      "stl": 5,
+      "blk": 9,
+      "pf": 13
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "JARACE WALKER",
+        "min": "25:02",
+        "pts": 21,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "OBI TOPPIN",
+        "min": "11:10",
+        "pts": 4,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "27:54",
+        "pts": 14,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "26",
+        "name": "BEN SHEPPARD",
+        "min": "22:02",
+        "pts": 9,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "KAM JONES",
+        "min": "32:30",
+        "pts": 10,
+        "reb": 2,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612763",
+    "total": {
+      "pts": 125,
+      "fgm": 48,
+      "fga": 94,
+      "f2m": 33,
+      "f2a": 59,
+      "f3m": 15,
+      "f3a": 35,
+      "ftm": 14,
+      "fta": 14,
+      "reb": 49,
+      "oreb": 13,
+      "dreb": 27,
+      "ast": 34,
+      "tov": 12,
+      "stl": 12,
+      "blk": 9,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "21:15",
+        "pts": 18,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "45",
+        "name": "GG JACKSON",
+        "min": "20:21",
+        "pts": 11,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "18",
+        "name": "OLIVIER-MAXENCE PROSPER",
+        "min": "20:43",
+        "pts": 17,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "SCOTTY PIPPEN JR.",
+        "min": "20:16",
+        "pts": 16,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "4",
+        "name": "WALTER CLAYTON JR.",
+        "min": "34:18",
+        "pts": 7,
+        "reb": 3,
+        "ast": 14
+      }
+    ]
+  }
+}

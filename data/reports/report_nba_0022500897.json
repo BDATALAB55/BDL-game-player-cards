@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500897",
+  "date": "2026.03.04",
+  "venue": "Fiserv Forum",
+  "attendance": 14889,
+  "home": {
+    "id": "1610612749",
+    "total": {
+      "pts": 113,
+      "fgm": 43,
+      "fga": 86,
+      "f2m": 30,
+      "f2a": 47,
+      "f3m": 13,
+      "f3a": 39,
+      "ftm": 14,
+      "fta": 20,
+      "reb": 48,
+      "oreb": 12,
+      "dreb": 29,
+      "ast": 27,
+      "tov": 15,
+      "stl": 8,
+      "blk": 2,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "OUSMANE DIENG",
+        "min": "27:47",
+        "pts": 14,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "34",
+        "name": "GIANNIS ANTETOKOUNMPO",
+        "min": "26:13",
+        "pts": 24,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "21:37",
+        "pts": 8,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "23:40",
+        "pts": 7,
+        "reb": 0,
+        "ast": 0
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "35:10",
+        "pts": 13,
+        "reb": 8,
+        "ast": 12
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612737",
+    "total": {
+      "pts": 131,
+      "fgm": 50,
+      "fga": 92,
+      "f2m": 30,
+      "f2a": 47,
+      "f3m": 20,
+      "f3a": 45,
+      "ftm": 11,
+      "fta": 16,
+      "reb": 49,
+      "oreb": 11,
+      "dreb": 29,
+      "ast": 33,
+      "tov": 11,
+      "stl": 9,
+      "blk": 7,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "33:47",
+        "pts": 14,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "34:25",
+        "pts": 20,
+        "reb": 5,
+        "ast": 9
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "30:48",
+        "pts": 21,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "31:54",
+        "pts": 23,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "29:25",
+        "pts": 18,
+        "reb": 2,
+        "ast": 8
+      }
+    ]
+  }
+}

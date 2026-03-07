@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500879",
+  "date": "2026.03.02",
+  "venue": "Capital One Arena",
+  "attendance": 17352,
+  "home": {
+    "id": "1610612764",
+    "total": {
+      "pts": 118,
+      "fgm": 44,
+      "fga": 91,
+      "f2m": 25,
+      "f2a": 56,
+      "f3m": 19,
+      "f3a": 35,
+      "ftm": 11,
+      "fta": 14,
+      "reb": 36,
+      "oreb": 7,
+      "dreb": 20,
+      "ast": 20,
+      "tov": 12,
+      "stl": 15,
+      "blk": 4,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "26:30",
+        "pts": 23,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "18",
+        "name": "KYSHAWN GEORGE",
+        "min": "21:36",
+        "pts": 16,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "JULIAN REESE",
+        "min": "27:40",
+        "pts": 2,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "12",
+        "name": "TRE JOHNSON",
+        "min": "21:31",
+        "pts": 5,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "28:24",
+        "pts": 11,
+        "reb": 5,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612745",
+    "total": {
+      "pts": 123,
+      "fgm": 45,
+      "fga": 92,
+      "f2m": 36,
+      "f2a": 67,
+      "f3m": 9,
+      "f3a": 25,
+      "ftm": 24,
+      "fta": 28,
+      "reb": 68,
+      "oreb": 21,
+      "dreb": 38,
+      "ast": 21,
+      "tov": 20,
+      "stl": 10,
+      "blk": 5,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "TARI EASON",
+        "min": "24:34",
+        "pts": 9,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "37:01",
+        "pts": 30,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "38:03",
+        "pts": 32,
+        "reb": 13,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "30:55",
+        "pts": 22,
+        "reb": 12,
+        "ast": 4
+      },
+      {
+        "no": "15",
+        "name": "REED SHEPPARD",
+        "min": "42:05",
+        "pts": 19,
+        "reb": 7,
+        "ast": 10
+      }
+    ]
+  }
+}

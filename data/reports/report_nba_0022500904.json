@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500904",
+  "date": "2026.03.05",
+  "venue": "Frost Bank Center",
+  "attendance": 18748,
+  "home": {
+    "id": "1610612759",
+    "total": {
+      "pts": 121,
+      "fgm": 42,
+      "fga": 84,
+      "f2m": 29,
+      "f2a": 47,
+      "f3m": 13,
+      "f3a": 37,
+      "ftm": 24,
+      "fta": 30,
+      "reb": 55,
+      "oreb": 8,
+      "dreb": 38,
+      "ast": 24,
+      "tov": 8,
+      "stl": 5,
+      "blk": 11,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "30:32",
+        "pts": 8,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "30:41",
+        "pts": 16,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "38:50",
+        "pts": 38,
+        "reb": 16,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "32:25",
+        "pts": 29,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "34:49",
+        "pts": 11,
+        "reb": 1,
+        "ast": 12
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612765",
+    "total": {
+      "pts": 106,
+      "fgm": 35,
+      "fga": 87,
+      "f2m": 23,
+      "f2a": 59,
+      "f3m": 12,
+      "f3a": 28,
+      "ftm": 24,
+      "fta": 30,
+      "reb": 51,
+      "oreb": 14,
+      "dreb": 30,
+      "ast": 20,
+      "tov": 10,
+      "stl": 4,
+      "blk": 4,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "02:06",
+        "pts": 0,
+        "reb": 0,
+        "ast": 0
+      },
+      {
+        "no": "12",
+        "name": "TOBIAS HARRIS",
+        "min": "30:45",
+        "pts": 11,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "JALEN DUREN",
+        "min": "12:20",
+        "pts": 7,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "26:12",
+        "pts": 11,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "39:22",
+        "pts": 26,
+        "reb": 4,
+        "ast": 8
+      }
+    ]
+  }
+}

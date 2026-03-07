@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500878",
+  "date": "2026.03.01",
+  "venue": "Crypto.com Arena",
+  "attendance": 18272,
+  "home": {
+    "id": "1610612747",
+    "total": {
+      "pts": 128,
+      "fgm": 47,
+      "fga": 94,
+      "f2m": 29,
+      "f2a": 55,
+      "f3m": 18,
+      "f3a": 39,
+      "ftm": 16,
+      "fta": 22,
+      "reb": 45,
+      "oreb": 9,
+      "dreb": 28,
+      "ast": 34,
+      "tov": 9,
+      "stl": 14,
+      "blk": 9,
+      "pf": 12
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "26:46",
+        "pts": 24,
+        "reb": 1,
+        "ast": 5
+      },
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "24:52",
+        "pts": 9,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "18:02",
+        "pts": 12,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "AUSTIN REAVES",
+        "min": "27:06",
+        "pts": 12,
+        "reb": 0,
+        "ast": 5
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "29:12",
+        "pts": 28,
+        "reb": 5,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612758",
+    "total": {
+      "pts": 104,
+      "fgm": 42,
+      "fga": 90,
+      "f2m": 36,
+      "f2a": 64,
+      "f3m": 6,
+      "f3a": 26,
+      "ftm": 14,
+      "fta": 15,
+      "reb": 57,
+      "oreb": 16,
+      "dreb": 36,
+      "ast": 30,
+      "tov": 20,
+      "stl": 4,
+      "blk": 8,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "22:02",
+        "pts": 9,
+        "reb": 4,
+        "ast": 8
+      },
+      {
+        "no": "9",
+        "name": "PRECIOUS ACHIUWA",
+        "min": "26:42",
+        "pts": 8,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "33:47",
+        "pts": 16,
+        "reb": 13,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "NIQUE CLIFFORD",
+        "min": "41:39",
+        "pts": 26,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "21:58",
+        "pts": 14,
+        "reb": 4,
+        "ast": 5
+      }
+    ]
+  }
+}

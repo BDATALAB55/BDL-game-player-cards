@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500875",
+  "date": "2026.03.01",
+  "venue": "Kia Center",
+  "attendance": 19015,
+  "home": {
+    "id": "1610612753",
+    "total": {
+      "pts": 92,
+      "fgm": 29,
+      "fga": 77,
+      "f2m": 19,
+      "f2a": 41,
+      "f3m": 10,
+      "f3a": 36,
+      "ftm": 24,
+      "fta": 30,
+      "reb": 45,
+      "oreb": 9,
+      "dreb": 32,
+      "ast": 20,
+      "tov": 19,
+      "stl": 8,
+      "blk": 4,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "TRISTAN DA SILVA",
+        "min": "36:51",
+        "pts": 19,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "38:22",
+        "pts": 24,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "32:50",
+        "pts": 4,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "37:54",
+        "pts": 17,
+        "reb": 4,
+        "ast": 7
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "26:29",
+        "pts": 14,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612765",
+    "total": {
+      "pts": 106,
+      "fgm": 42,
+      "fga": 93,
+      "f2m": 38,
+      "f2a": 63,
+      "f3m": 4,
+      "f3a": 30,
+      "ftm": 18,
+      "fta": 24,
+      "reb": 67,
+      "oreb": 14,
+      "dreb": 42,
+      "ast": 24,
+      "tov": 13,
+      "stl": 14,
+      "blk": 6,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "AUSAR THOMPSON",
+        "min": "20:56",
+        "pts": 9,
+        "reb": 11,
+        "ast": 3
+      },
+      {
+        "no": "12",
+        "name": "TOBIAS HARRIS",
+        "min": "32:34",
+        "pts": 23,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "0",
+        "name": "JALEN DUREN",
+        "min": "33:53",
+        "pts": 16,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "25:10",
+        "pts": 0,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "37:24",
+        "pts": 29,
+        "reb": 6,
+        "ast": 11
+      }
+    ]
+  }
+}

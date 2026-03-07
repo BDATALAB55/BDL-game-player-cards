@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500905",
+  "date": "2026.03.05",
+  "venue": "Mortgage Matchup Center",
+  "attendance": 17071,
+  "home": {
+    "id": "1610612756",
+    "total": {
+      "pts": 103,
+      "fgm": 36,
+      "fga": 92,
+      "f2m": 23,
+      "f2a": 46,
+      "f3m": 13,
+      "f3a": 46,
+      "ftm": 18,
+      "fta": 27,
+      "reb": 61,
+      "oreb": 14,
+      "dreb": 34,
+      "ast": 24,
+      "tov": 14,
+      "stl": 7,
+      "blk": 3,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "4",
+        "name": "JALEN GREEN",
+        "min": "31:42",
+        "pts": 12,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "18:13",
+        "pts": 3,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "11",
+        "name": "OSO IGHODARO",
+        "min": "36:07",
+        "pts": 10,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "32:00",
+        "pts": 27,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "25:10",
+        "pts": 5,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612741",
+    "total": {
+      "pts": 105,
+      "fgm": 41,
+      "fga": 86,
+      "f2m": 34,
+      "f2a": 58,
+      "f3m": 7,
+      "f3a": 28,
+      "ftm": 16,
+      "fta": 25,
+      "reb": 58,
+      "oreb": 9,
+      "dreb": 37,
+      "ast": 23,
+      "tov": 12,
+      "stl": 8,
+      "blk": 3,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "35:31",
+        "pts": 6,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "11",
+        "name": "LEONARD MILLER",
+        "min": "23:49",
+        "pts": 8,
+        "reb": 9,
+        "ast": 0
+      },
+      {
+        "no": "28",
+        "name": "GUERSCHON YABUSELE",
+        "min": "37:20",
+        "pts": 16,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "TRE JONES",
+        "min": "28:50",
+        "pts": 21,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "2",
+        "name": "COLLIN SEXTON",
+        "min": "37:35",
+        "pts": 30,
+        "reb": 3,
+        "ast": 5
+      }
+    ]
+  }
+}

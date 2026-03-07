@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500881",
+  "date": "2026.03.02",
+  "venue": "Delta Center",
+  "attendance": 18186,
+  "home": {
+    "id": "1610612762",
+    "total": {
+      "pts": 125,
+      "fgm": 44,
+      "fga": 86,
+      "f2m": 29,
+      "f2a": 47,
+      "f3m": 15,
+      "f3a": 39,
+      "ftm": 22,
+      "fta": 26,
+      "reb": 38,
+      "oreb": 8,
+      "dreb": 25,
+      "ast": 24,
+      "tov": 9,
+      "stl": 11,
+      "blk": 3,
+      "pf": 28
+    },
+    "starters": [
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "31:38",
+        "pts": 18,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "CODY WILLIAMS",
+        "min": "11:00",
+        "pts": 3,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "22",
+        "name": "KYLE FILIPOWSKI",
+        "min": "29:24",
+        "pts": 19,
+        "reb": 8,
+        "ast": 6
+      },
+      {
+        "no": "16",
+        "name": "ELIJAH HARKLESS",
+        "min": "26:54",
+        "pts": 2,
+        "reb": 0,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "30:10",
+        "pts": 36,
+        "reb": 2,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612743",
+    "total": {
+      "pts": 128,
+      "fgm": 40,
+      "fga": 74,
+      "f2m": 24,
+      "f2a": 35,
+      "f3m": 16,
+      "f3a": 39,
+      "ftm": 32,
+      "fta": 35,
+      "reb": 47,
+      "oreb": 8,
+      "dreb": 30,
+      "ast": 25,
+      "tov": 15,
+      "stl": 4,
+      "blk": 2,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "CHRISTIAN BRAUN",
+        "min": "32:29",
+        "pts": 11,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "17",
+        "name": "JONAS VALANČIŪNAS",
+        "min": "17:10",
+        "pts": 13,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "36:23",
+        "pts": 22,
+        "reb": 12,
+        "ast": 5
+      },
+      {
+        "no": "3",
+        "name": "JULIAN STRAWTHER",
+        "min": "28:58",
+        "pts": 15,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "37:34",
+        "pts": 45,
+        "reb": 2,
+        "ast": 8
+      }
+    ]
+  }
+}

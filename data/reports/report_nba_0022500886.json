@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500886",
+  "date": "2026.03.03",
+  "venue": "Kaseya Center",
+  "attendance": 19700,
+  "home": {
+    "id": "1610612748",
+    "total": {
+      "pts": 124,
+      "fgm": 45,
+      "fga": 91,
+      "f2m": 32,
+      "f2a": 55,
+      "f3m": 13,
+      "f3a": 36,
+      "ftm": 21,
+      "fta": 24,
+      "reb": 53,
+      "oreb": 14,
+      "dreb": 32,
+      "ast": 28,
+      "tov": 12,
+      "stl": 13,
+      "blk": 8,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "18:28",
+        "pts": 3,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "22",
+        "name": "ANDREW WIGGINS",
+        "min": "27:02",
+        "pts": 13,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "34:58",
+        "pts": 23,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "14",
+        "name": "TYLER HERRO",
+        "min": "27:40",
+        "pts": 22,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "25:46",
+        "pts": 8,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612751",
+    "total": {
+      "pts": 98,
+      "fgm": 33,
+      "fga": 86,
+      "f2m": 27,
+      "f2a": 54,
+      "f3m": 6,
+      "f3a": 32,
+      "ftm": 26,
+      "fta": 30,
+      "reb": 54,
+      "oreb": 10,
+      "dreb": 28,
+      "ast": 24,
+      "tov": 18,
+      "stl": 6,
+      "blk": 5,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "26:32",
+        "pts": 9,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "27:20",
+        "pts": 17,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "27:52",
+        "pts": 4,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "26:42",
+        "pts": 8,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "88",
+        "name": "NOLAN TRAORE",
+        "min": "22:46",
+        "pts": 14,
+        "reb": 2,
+        "ast": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500869",
+  "date": "2026.03.01",
+  "venue": "Barclays Center",
+  "attendance": 17804,
+  "home": {
+    "id": "1610612751",
+    "total": {
+      "pts": 102,
+      "fgm": 38,
+      "fga": 75,
+      "f2m": 27,
+      "f2a": 43,
+      "f3m": 11,
+      "f3a": 32,
+      "ftm": 15,
+      "fta": 20,
+      "reb": 44,
+      "oreb": 3,
+      "dreb": 29,
+      "ast": 27,
+      "tov": 17,
+      "stl": 10,
+      "blk": 4,
+      "pf": 28
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "MICHAEL PORTER JR.",
+        "min": "30:26",
+        "pts": 26,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "22:37",
+        "pts": 5,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "20",
+        "name": "DAY'RON SHARPE",
+        "min": "27:59",
+        "pts": 7,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "14:26",
+        "pts": 0,
+        "reb": 1,
+        "ast": 4
+      },
+      {
+        "no": "88",
+        "name": "NOLAN TRAORE",
+        "min": "29:39",
+        "pts": 17,
+        "reb": 1,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612739",
+    "total": {
+      "pts": 106,
+      "fgm": 34,
+      "fga": 70,
+      "f2m": 21,
+      "f2a": 43,
+      "f3m": 13,
+      "f3a": 27,
+      "ftm": 25,
+      "fta": 37,
+      "reb": 48,
+      "oreb": 8,
+      "dreb": 30,
+      "ast": 25,
+      "tov": 15,
+      "stl": 9,
+      "blk": 7,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "JAYLON TYSON",
+        "min": "27:49",
+        "pts": 9,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "26:53",
+        "pts": 17,
+        "reb": 13,
+        "ast": 2
+      },
+      {
+        "no": "31",
+        "name": "JARRETT ALLEN",
+        "min": "31:47",
+        "pts": 20,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "SAM MERRILL",
+        "min": "27:25",
+        "pts": 15,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "36:23",
+        "pts": 22,
+        "reb": 9,
+        "ast": 8
+      }
+    ]
+  }
+}

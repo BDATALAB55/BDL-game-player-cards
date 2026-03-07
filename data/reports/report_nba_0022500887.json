@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500887",
+  "date": "2026.03.03",
+  "venue": "Scotiabank Arena",
+  "attendance": 19800,
+  "home": {
+    "id": "1610612761",
+    "total": {
+      "pts": 95,
+      "fgm": 35,
+      "fga": 77,
+      "f2m": 27,
+      "f2a": 49,
+      "f3m": 8,
+      "f3a": 28,
+      "ftm": 17,
+      "fta": 19,
+      "reb": 31,
+      "oreb": 5,
+      "dreb": 23,
+      "ast": 24,
+      "tov": 13,
+      "stl": 8,
+      "blk": 3,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "36:38",
+        "pts": 31,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "35:37",
+        "pts": 14,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "19",
+        "name": "JAKOB POELTL",
+        "min": "29:54",
+        "pts": 9,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "37:13",
+        "pts": 20,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "32:47",
+        "pts": 13,
+        "reb": 3,
+        "ast": 12
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612752",
+    "total": {
+      "pts": 111,
+      "fgm": 46,
+      "fga": 81,
+      "f2m": 36,
+      "f2a": 52,
+      "f3m": 10,
+      "f3a": 29,
+      "ftm": 9,
+      "fta": 12,
+      "reb": 51,
+      "oreb": 6,
+      "dreb": 37,
+      "ast": 32,
+      "tov": 16,
+      "stl": 10,
+      "blk": 4,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "26:47",
+        "pts": 15,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "30:44",
+        "pts": 12,
+        "reb": 7,
+        "ast": 7
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "28:57",
+        "pts": 21,
+        "reb": 12,
+        "ast": 6
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "32:14",
+        "pts": 11,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "36:35",
+        "pts": 26,
+        "reb": 2,
+        "ast": 10
+      }
+    ]
+  }
+}

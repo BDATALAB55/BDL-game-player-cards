@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500885",
+  "date": "2026.03.03",
+  "venue": "Kia Center",
+  "attendance": 16894,
+  "home": {
+    "id": "1610612753",
+    "total": {
+      "pts": 126,
+      "fgm": 42,
+      "fga": 76,
+      "f2m": 32,
+      "f2a": 51,
+      "f3m": 10,
+      "f3a": 25,
+      "ftm": 32,
+      "fta": 37,
+      "reb": 42,
+      "oreb": 3,
+      "dreb": 35,
+      "ast": 33,
+      "tov": 8,
+      "stl": 3,
+      "blk": 6,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "TRISTAN DA SILVA",
+        "min": "27:26",
+        "pts": 8,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "31:53",
+        "pts": 37,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "35",
+        "name": "GOGA BITADZE",
+        "min": "21:28",
+        "pts": 9,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "33:04",
+        "pts": 25,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "26:29",
+        "pts": 10,
+        "reb": 3,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612764",
+    "total": {
+      "pts": 109,
+      "fgm": 43,
+      "fga": 92,
+      "f2m": 36,
+      "f2a": 60,
+      "f3m": 7,
+      "f3a": 32,
+      "ftm": 16,
+      "fta": 25,
+      "reb": 57,
+      "oreb": 13,
+      "dreb": 29,
+      "ast": 23,
+      "tov": 12,
+      "stl": 4,
+      "blk": 6,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "24:10",
+        "pts": 6,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "27",
+        "name": "WILL RILEY",
+        "min": "33:22",
+        "pts": 19,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "15",
+        "name": "JULIAN REESE",
+        "min": "32:35",
+        "pts": 9,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "12",
+        "name": "TRE JOHNSON",
+        "min": "23:52",
+        "pts": 9,
+        "reb": 0,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "31:39",
+        "pts": 11,
+        "reb": 3,
+        "ast": 5
+      }
+    ]
+  }
+}

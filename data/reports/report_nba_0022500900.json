@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500900",
+  "date": "2026.03.05",
+  "venue": "Capital One Arena",
+  "attendance": 17689,
+  "home": {
+    "id": "1610612764",
+    "total": {
+      "pts": 112,
+      "fgm": 36,
+      "fga": 77,
+      "f2m": 18,
+      "f2a": 35,
+      "f3m": 18,
+      "f3a": 42,
+      "ftm": 22,
+      "fta": 32,
+      "reb": 53,
+      "oreb": 15,
+      "dreb": 28,
+      "ast": 22,
+      "tov": 19,
+      "stl": 8,
+      "blk": 1,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "34:04",
+        "pts": 17,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "14",
+        "name": "LEAKY BLACK",
+        "min": "39:17",
+        "pts": 16,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "JULIAN REESE",
+        "min": "38:27",
+        "pts": 18,
+        "reb": 20,
+        "ast": 2
+      },
+      {
+        "no": "12",
+        "name": "TRE JOHNSON",
+        "min": "20:06",
+        "pts": 15,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "TRAE YOUNG",
+        "min": "19:02",
+        "pts": 12,
+        "reb": 2,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612762",
+    "total": {
+      "pts": 122,
+      "fgm": 47,
+      "fga": 92,
+      "f2m": 32,
+      "f2a": 57,
+      "f3m": 15,
+      "f3a": 35,
+      "ftm": 13,
+      "fta": 18,
+      "reb": 49,
+      "oreb": 17,
+      "dreb": 28,
+      "ast": 31,
+      "tov": 11,
+      "stl": 12,
+      "blk": 4,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "CODY WILLIAMS",
+        "min": "35:58",
+        "pts": 13,
+        "reb": 3,
+        "ast": 7
+      },
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "32:35",
+        "pts": 32,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "22",
+        "name": "KYLE FILIPOWSKI",
+        "min": "30:55",
+        "pts": 20,
+        "reb": 14,
+        "ast": 3
+      },
+      {
+        "no": "55",
+        "name": "JOHN KONCHAR",
+        "min": "36:42",
+        "pts": 0,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "8",
+        "name": "ISAIAH COLLIER",
+        "min": "29:07",
+        "pts": 27,
+        "reb": 3,
+        "ast": 11
+      }
+    ]
+  }
+}

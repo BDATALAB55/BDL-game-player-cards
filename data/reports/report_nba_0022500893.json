@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500893",
+  "date": "2026.03.04",
+  "venue": "Madison Square Garden",
+  "attendance": 19812,
+  "home": {
+    "id": "1610612752",
+    "total": {
+      "pts": 100,
+      "fgm": 37,
+      "fga": 88,
+      "f2m": 27,
+      "f2a": 53,
+      "f3m": 10,
+      "f3a": 35,
+      "ftm": 16,
+      "fta": 22,
+      "reb": 56,
+      "oreb": 12,
+      "dreb": 36,
+      "ast": 23,
+      "tov": 13,
+      "stl": 5,
+      "blk": 3,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "37:44",
+        "pts": 16,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "24:53",
+        "pts": 10,
+        "reb": 12,
+        "ast": 3
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "32:31",
+        "pts": 17,
+        "reb": 17,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "39:38",
+        "pts": 15,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "38:36",
+        "pts": 16,
+        "reb": 3,
+        "ast": 15
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612760",
+    "total": {
+      "pts": 103,
+      "fgm": 33,
+      "fga": 73,
+      "f2m": 17,
+      "f2a": 31,
+      "f3m": 16,
+      "f3a": 42,
+      "ftm": 21,
+      "fta": 25,
+      "reb": 46,
+      "oreb": 3,
+      "dreb": 35,
+      "ast": 21,
+      "tov": 15,
+      "stl": 8,
+      "blk": 0,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "32:43",
+        "pts": 16,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "32:04",
+        "pts": 28,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "55",
+        "name": "ISAIAH HARTENSTEIN",
+        "min": "16:37",
+        "pts": 0,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "35:28",
+        "pts": 26,
+        "reb": 3,
+        "ast": 8
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "29:22",
+        "pts": 4,
+        "reb": 4,
+        "ast": 3
+      }
+    ]
+  }
+}

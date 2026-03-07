@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500880",
+  "date": "2026.03.02",
+  "venue": "Fiserv Forum",
+  "attendance": 15992,
+  "home": {
+    "id": "1610612749",
+    "total": {
+      "pts": 81,
+      "fgm": 27,
+      "fga": 74,
+      "f2m": 14,
+      "f2a": 38,
+      "f3m": 13,
+      "f3a": 36,
+      "ftm": 14,
+      "fta": 19,
+      "reb": 47,
+      "oreb": 9,
+      "dreb": 32,
+      "ast": 18,
+      "tov": 16,
+      "stl": 7,
+      "blk": 3,
+      "pf": 13
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "OUSMANE DIENG",
+        "min": "29:33",
+        "pts": 13,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "34",
+        "name": "GIANNIS ANTETOKOUNMPO",
+        "min": "25:29",
+        "pts": 19,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "18:36",
+        "pts": 5,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "18:25",
+        "pts": 0,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "KEVIN PORTER JR.",
+        "min": "30:59",
+        "pts": 8,
+        "reb": 4,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612738",
+    "total": {
+      "pts": 108,
+      "fgm": 41,
+      "fga": 95,
+      "f2m": 21,
+      "f2a": 45,
+      "f3m": 20,
+      "f3a": 50,
+      "ftm": 6,
+      "fta": 9,
+      "reb": 63,
+      "oreb": 19,
+      "dreb": 35,
+      "ast": 31,
+      "tov": 10,
+      "stl": 7,
+      "blk": 6,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "55",
+        "name": "BAYLOR SCHEIERMAN",
+        "min": "24:33",
+        "pts": 10,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "30",
+        "name": "SAM HAUSER",
+        "min": "29:00",
+        "pts": 14,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "4",
+        "name": "NIKOLA VUČEVIĆ",
+        "min": "26:17",
+        "pts": 10,
+        "reb": 5,
+        "ast": 7
+      },
+      {
+        "no": "28",
+        "name": "HUGO GONZÁLEZ",
+        "min": "35:20",
+        "pts": 18,
+        "reb": 16,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "33:48",
+        "pts": 18,
+        "reb": 1,
+        "ast": 9
+      }
+    ]
+  }
+}

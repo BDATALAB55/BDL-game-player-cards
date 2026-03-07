@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500889",
+  "date": "2026.03.03",
+  "venue": "United Center",
+  "attendance": 18561,
+  "home": {
+    "id": "1610612741",
+    "total": {
+      "pts": 108,
+      "fgm": 39,
+      "fga": 90,
+      "f2m": 22,
+      "f2a": 41,
+      "f3m": 17,
+      "f3a": 49,
+      "ftm": 13,
+      "fta": 19,
+      "reb": 61,
+      "oreb": 10,
+      "dreb": 43,
+      "ast": 27,
+      "tov": 19,
+      "stl": 3,
+      "blk": 3,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "31:48",
+        "pts": 4,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "20:21",
+        "pts": 11,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "28",
+        "name": "GUERSCHON YABUSELE",
+        "min": "29:24",
+        "pts": 18,
+        "reb": 12,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "TRE JONES",
+        "min": "26:21",
+        "pts": 15,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "JOSH GIDDEY",
+        "min": "33:02",
+        "pts": 14,
+        "reb": 9,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612760",
+    "total": {
+      "pts": 116,
+      "fgm": 43,
+      "fga": 99,
+      "f2m": 33,
+      "f2a": 57,
+      "f3m": 10,
+      "f3a": 42,
+      "ftm": 20,
+      "fta": 24,
+      "reb": 57,
+      "oreb": 12,
+      "dreb": 39,
+      "ast": 23,
+      "tov": 9,
+      "stl": 10,
+      "blk": 3,
+      "pf": 13
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "27:38",
+        "pts": 4,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "21",
+        "name": "AARON WIGGINS",
+        "min": "33:50",
+        "pts": 18,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "25:54",
+        "pts": 12,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "11",
+        "name": "ISAIAH JOE",
+        "min": "29:41",
+        "pts": 19,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "28:50",
+        "pts": 17,
+        "reb": 1,
+        "ast": 5
+      }
+    ]
+  }
+}

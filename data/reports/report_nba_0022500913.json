@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500913",
+  "date": "2026.03.06",
+  "venue": "Frost Bank Center",
+  "attendance": 18711,
+  "home": {
+    "id": "1610612759",
+    "total": {
+      "pts": 116,
+      "fgm": 46,
+      "fga": 95,
+      "f2m": 29,
+      "f2a": 54,
+      "f3m": 17,
+      "f3a": 41,
+      "ftm": 7,
+      "fta": 14,
+      "reb": 57,
+      "oreb": 15,
+      "dreb": 37,
+      "ast": 29,
+      "tov": 12,
+      "stl": 6,
+      "blk": 7,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "34:55",
+        "pts": 11,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "29:23",
+        "pts": 20,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "21:33",
+        "pts": 27,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "30:16",
+        "pts": 19,
+        "reb": 2,
+        "ast": 9
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "33:52",
+        "pts": 6,
+        "reb": 8,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612746",
+    "total": {
+      "pts": 112,
+      "fgm": 42,
+      "fga": 86,
+      "f2m": 30,
+      "f2a": 53,
+      "f3m": 12,
+      "f3a": 33,
+      "ftm": 16,
+      "fta": 20,
+      "reb": 47,
+      "oreb": 7,
+      "dreb": 34,
+      "ast": 22,
+      "tov": 9,
+      "stl": 12,
+      "blk": 3,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "37:10",
+        "pts": 30,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "DERRICK JONES JR.",
+        "min": "33:39",
+        "pts": 12,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "11",
+        "name": "BROOK LOPEZ",
+        "min": "34:01",
+        "pts": 26,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "KOBE SANDERS",
+        "min": "25:08",
+        "pts": 10,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "31:24",
+        "pts": 4,
+        "reb": 7,
+        "ast": 5
+      }
+    ]
+  }
+}

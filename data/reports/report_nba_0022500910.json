@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500910",
+  "date": "2026.03.06",
+  "venue": "Toyota Center",
+  "attendance": 18055,
+  "home": {
+    "id": "1610612745",
+    "total": {
+      "pts": 106,
+      "fgm": 41,
+      "fga": 76,
+      "f2m": 36,
+      "f2a": 57,
+      "f3m": 5,
+      "f3a": 19,
+      "ftm": 19,
+      "fta": 26,
+      "reb": 53,
+      "oreb": 8,
+      "dreb": 36,
+      "ast": 23,
+      "tov": 22,
+      "stl": 9,
+      "blk": 9,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "17",
+        "name": "TARI EASON",
+        "min": "25:13",
+        "pts": 5,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "39:27",
+        "pts": 20,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "25:55",
+        "pts": 28,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "REED SHEPPARD",
+        "min": "35:40",
+        "pts": 17,
+        "reb": 3,
+        "ast": 6
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "39:21",
+        "pts": 26,
+        "reb": 7,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612757",
+    "total": {
+      "pts": 99,
+      "fgm": 33,
+      "fga": 83,
+      "f2m": 21,
+      "f2a": 44,
+      "f3m": 12,
+      "f3a": 39,
+      "ftm": 21,
+      "fta": 37,
+      "reb": 56,
+      "oreb": 16,
+      "dreb": 27,
+      "ast": 20,
+      "tov": 14,
+      "stl": 17,
+      "blk": 2,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "JERAMI GRANT",
+        "min": "38:08",
+        "pts": 21,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "39:28",
+        "pts": 16,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "25:05",
+        "pts": 18,
+        "reb": 13,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "JRUE HOLIDAY",
+        "min": "36:59",
+        "pts": 20,
+        "reb": 4,
+        "ast": 10
+      },
+      {
+        "no": "00",
+        "name": "SCOOT HENDERSON",
+        "min": "19:41",
+        "pts": 4,
+        "reb": 2,
+        "ast": 2
+      }
+    ]
+  }
+}

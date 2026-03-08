@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500912",
+  "date": "2026.03.06",
+  "venue": "Mortgage Matchup Center",
+  "attendance": 0,
+  "home": {
+    "id": "1610612756",
+    "total": {
+      "pts": 118,
+      "fgm": 40,
+      "fga": 90,
+      "f2m": 20,
+      "f2a": 32,
+      "f3m": 20,
+      "f3a": 58,
+      "ftm": 18,
+      "fta": 26,
+      "reb": 56,
+      "oreb": 15,
+      "dreb": 26,
+      "ast": 27,
+      "tov": 12,
+      "stl": 9,
+      "blk": 6,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "4",
+        "name": "JALEN GREEN",
+        "min": "30:47",
+        "pts": 25,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "31:18",
+        "pts": 11,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "11",
+        "name": "OSO IGHODARO",
+        "min": "26:37",
+        "pts": 13,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "35:20",
+        "pts": 32,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "32:27",
+        "pts": 12,
+        "reb": 6,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612740",
+    "total": {
+      "pts": 116,
+      "fgm": 37,
+      "fga": 83,
+      "f2m": 27,
+      "f2a": 55,
+      "f3m": 10,
+      "f3a": 28,
+      "ftm": 32,
+      "fta": 37,
+      "reb": 55,
+      "oreb": 16,
+      "dreb": 26,
+      "ast": 18,
+      "tov": 14,
+      "stl": 8,
+      "blk": 3,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "34:09",
+        "pts": 19,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "ZION WILLIAMSON",
+        "min": "33:44",
+        "pts": 19,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "HERBERT JONES",
+        "min": "30:51",
+        "pts": 14,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "25",
+        "name": "TREY MURPHY III",
+        "min": "41:00",
+        "pts": 22,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "DEJOUNTE MURRAY",
+        "min": "29:48",
+        "pts": 15,
+        "reb": 8,
+        "ast": 5
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500914",
+  "date": "2026.03.06",
+  "venue": "Crypto.com Arena",
+  "attendance": 18173,
+  "home": {
+    "id": "1610612747",
+    "total": {
+      "pts": 128,
+      "fgm": 45,
+      "fga": 85,
+      "f2m": 28,
+      "f2a": 48,
+      "f3m": 17,
+      "f3a": 37,
+      "ftm": 21,
+      "fta": 23,
+      "reb": 49,
+      "oreb": 6,
+      "dreb": 37,
+      "ast": 25,
+      "tov": 12,
+      "stl": 5,
+      "blk": 2,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "28:46",
+        "pts": 11,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "28",
+        "name": "RUI HACHIMURA",
+        "min": "23:11",
+        "pts": 13,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "11",
+        "name": "JAXSON HAYES",
+        "min": "25:21",
+        "pts": 9,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "AUSTIN REAVES",
+        "min": "28:35",
+        "pts": 19,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "31:41",
+        "pts": 44,
+        "reb": 9,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612754",
+    "total": {
+      "pts": 117,
+      "fgm": 46,
+      "fga": 98,
+      "f2m": 38,
+      "f2a": 63,
+      "f3m": 8,
+      "f3a": 35,
+      "ftm": 17,
+      "fta": 24,
+      "reb": 52,
+      "oreb": 12,
+      "dreb": 28,
+      "ast": 33,
+      "tov": 7,
+      "stl": 10,
+      "blk": 4,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "JARACE WALKER",
+        "min": "26:51",
+        "pts": 10,
+        "reb": 9,
+        "ast": 5
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "29:26",
+        "pts": 26,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "33:13",
+        "pts": 16,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "AARON NESMITH",
+        "min": "22:48",
+        "pts": 7,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "31:07",
+        "pts": 17,
+        "reb": 2,
+        "ast": 8
+      }
+    ]
+  }
+}

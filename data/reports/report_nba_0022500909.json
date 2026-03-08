@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500909",
+  "date": "2026.03.06",
+  "venue": "Spectrum Center",
+  "attendance": 19653,
+  "home": {
+    "id": "1610612766",
+    "total": {
+      "pts": 120,
+      "fgm": 41,
+      "fga": 96,
+      "f2m": 22,
+      "f2a": 44,
+      "f3m": 19,
+      "f3a": 52,
+      "ftm": 19,
+      "fta": 20,
+      "reb": 58,
+      "oreb": 12,
+      "dreb": 36,
+      "ast": 24,
+      "tov": 12,
+      "stl": 5,
+      "blk": 9,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "7",
+        "name": "KON KNUEPPEL",
+        "min": "33:52",
+        "pts": 27,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "MILES BRIDGES",
+        "min": "27:52",
+        "pts": 12,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "14",
+        "name": "MOUSSA DIABATÉ",
+        "min": "31:06",
+        "pts": 6,
+        "reb": 14,
+        "ast": 1
+      },
+      {
+        "no": "24",
+        "name": "BRANDON MILLER",
+        "min": "33:42",
+        "pts": 22,
+        "reb": 13,
+        "ast": 5
+      },
+      {
+        "no": "1",
+        "name": "LAMELO BALL",
+        "min": "32:57",
+        "pts": 21,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612748",
+    "total": {
+      "pts": 128,
+      "fgm": 45,
+      "fga": 97,
+      "f2m": 27,
+      "f2a": 59,
+      "f3m": 18,
+      "f3a": 38,
+      "ftm": 20,
+      "fta": 25,
+      "reb": 57,
+      "oreb": 11,
+      "dreb": 33,
+      "ast": 31,
+      "tov": 6,
+      "stl": 7,
+      "blk": 5,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "28:32",
+        "pts": 11,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "MYRON GARDNER",
+        "min": "16:03",
+        "pts": 6,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "38:32",
+        "pts": 24,
+        "reb": 12,
+        "ast": 4
+      },
+      {
+        "no": "14",
+        "name": "TYLER HERRO",
+        "min": "37:20",
+        "pts": 33,
+        "reb": 9,
+        "ast": 9
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "26:57",
+        "pts": 13,
+        "reb": 2,
+        "ast": 7
+      }
+    ]
+  }
+}

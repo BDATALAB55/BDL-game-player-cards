@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500988",
+  "date": "2026.03.16",
+  "venue": "Smoothie King Center",
+  "attendance": 16787,
+  "home": {
+    "id": "1610612740",
+    "total": {
+      "pts": 129,
+      "fgm": 48,
+      "fga": 95,
+      "f2m": 37,
+      "f2a": 60,
+      "f3m": 11,
+      "f3a": 35,
+      "ftm": 22,
+      "fta": 34,
+      "reb": 66,
+      "oreb": 12,
+      "dreb": 45,
+      "ast": 31,
+      "tov": 14,
+      "stl": 7,
+      "blk": 12,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "35:00",
+        "pts": 23,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "ZION WILLIAMSON",
+        "min": "28:31",
+        "pts": 27,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "YVES MISSI",
+        "min": "28:10",
+        "pts": 4,
+        "reb": 10,
+        "ast": 5
+      },
+      {
+        "no": "25",
+        "name": "TREY MURPHY III",
+        "min": "32:44",
+        "pts": 17,
+        "reb": 7,
+        "ast": 7
+      },
+      {
+        "no": "2",
+        "name": "HERBERT JONES",
+        "min": "28:39",
+        "pts": 10,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612742",
+    "total": {
+      "pts": 111,
+      "fgm": 44,
+      "fga": 104,
+      "f2m": 30,
+      "f2a": 65,
+      "f3m": 14,
+      "f3a": 39,
+      "ftm": 9,
+      "fta": 14,
+      "reb": 58,
+      "oreb": 13,
+      "dreb": 38,
+      "ast": 27,
+      "tov": 11,
+      "stl": 10,
+      "blk": 3,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "32:54",
+        "pts": 32,
+        "reb": 8,
+        "ast": 7
+      },
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "29:59",
+        "pts": 21,
+        "reb": 7,
+        "ast": 8
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "31:10",
+        "pts": 18,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "31:31",
+        "pts": 12,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "9",
+        "name": "RYAN NEMBHARD",
+        "min": "25:14",
+        "pts": 2,
+        "reb": 4,
+        "ast": 5
+      }
+    ]
+  }
+}

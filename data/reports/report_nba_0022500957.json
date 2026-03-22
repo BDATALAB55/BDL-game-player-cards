@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500957",
+  "date": "2026.03.12",
+  "venue": "Kaseya Center",
+  "attendance": 19700,
+  "home": {
+    "id": "1610612748",
+    "total": {
+      "pts": 112,
+      "fgm": 38,
+      "fga": 92,
+      "f2m": 24,
+      "f2a": 51,
+      "f3m": 14,
+      "f3a": 41,
+      "ftm": 22,
+      "fta": 27,
+      "reb": 63,
+      "oreb": 15,
+      "dreb": 38,
+      "ast": 26,
+      "tov": 11,
+      "stl": 4,
+      "blk": 2,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "37:50",
+        "pts": 28,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "34:58",
+        "pts": 21,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "KEL'EL WARE",
+        "min": "27:57",
+        "pts": 6,
+        "reb": 13,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "KASPARAS JAKUČIONIS",
+        "min": "35:09",
+        "pts": 18,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "26:36",
+        "pts": 13,
+        "reb": 5,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612749",
+    "total": {
+      "pts": 105,
+      "fgm": 41,
+      "fga": 83,
+      "f2m": 32,
+      "f2a": 57,
+      "f3m": 9,
+      "f3a": 26,
+      "ftm": 14,
+      "fta": 19,
+      "reb": 44,
+      "oreb": 3,
+      "dreb": 33,
+      "ast": 26,
+      "tov": 14,
+      "stl": 10,
+      "blk": 2,
+      "pf": 30
+    },
+    "starters": [
+      {
+        "no": "18",
+        "name": "KYLE KUZMA",
+        "min": "20:07",
+        "pts": 5,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "34",
+        "name": "GIANNIS ANTETOKOUNMPO",
+        "min": "29:11",
+        "pts": 31,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "21:30",
+        "pts": 7,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "21",
+        "name": "OUSMANE DIENG",
+        "min": "13:58",
+        "pts": 0,
+        "reb": 0,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "KEVIN PORTER JR.",
+        "min": "27:44",
+        "pts": 6,
+        "reb": 7,
+        "ast": 5
+      }
+    ]
+  }
+}

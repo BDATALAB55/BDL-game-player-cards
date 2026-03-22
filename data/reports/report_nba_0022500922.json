@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500922",
+  "date": "2026.03.08",
+  "venue": "Crypto.com Arena",
+  "attendance": 18997,
+  "home": {
+    "id": "1610612747",
+    "total": {
+      "pts": 110,
+      "fgm": 35,
+      "fga": 81,
+      "f2m": 20,
+      "f2a": 37,
+      "f3m": 15,
+      "f3a": 44,
+      "ftm": 25,
+      "fta": 30,
+      "reb": 46,
+      "oreb": 12,
+      "dreb": 30,
+      "ast": 20,
+      "tov": 13,
+      "stl": 10,
+      "blk": 5,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "29:16",
+        "pts": 5,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "28",
+        "name": "RUI HACHIMURA",
+        "min": "36:45",
+        "pts": 13,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "19:55",
+        "pts": 6,
+        "reb": 8,
+        "ast": 0
+      },
+      {
+        "no": "15",
+        "name": "AUSTIN REAVES",
+        "min": "38:49",
+        "pts": 25,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "38:24",
+        "pts": 35,
+        "reb": 8,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612752",
+    "total": {
+      "pts": 97,
+      "fgm": 35,
+      "fga": 82,
+      "f2m": 27,
+      "f2a": 48,
+      "f3m": 8,
+      "f3a": 34,
+      "ftm": 19,
+      "fta": 21,
+      "reb": 54,
+      "oreb": 10,
+      "dreb": 37,
+      "ast": 23,
+      "tov": 18,
+      "stl": 7,
+      "blk": 2,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JOSH HART",
+        "min": "22:28",
+        "pts": 8,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "37:58",
+        "pts": 13,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "33:52",
+        "pts": 25,
+        "reb": 16,
+        "ast": 2
+      },
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "27:21",
+        "pts": 0,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "42:08",
+        "pts": 24,
+        "reb": 6,
+        "ast": 7
+      }
+    ]
+  }
+}

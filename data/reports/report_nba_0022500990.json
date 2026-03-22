@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500990",
+  "date": "2026.03.16",
+  "venue": "Intuit Dome",
+  "attendance": 17927,
+  "home": {
+    "id": "1610612746",
+    "total": {
+      "pts": 115,
+      "fgm": 43,
+      "fga": 89,
+      "f2m": 32,
+      "f2a": 60,
+      "f3m": 11,
+      "f3a": 29,
+      "ftm": 18,
+      "fta": 24,
+      "reb": 51,
+      "oreb": 12,
+      "dreb": 25,
+      "ast": 25,
+      "tov": 13,
+      "stl": 11,
+      "blk": 5,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "DERRICK JONES JR.",
+        "min": "23:47",
+        "pts": 10,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "25:32",
+        "pts": 11,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "11",
+        "name": "BROOK LOPEZ",
+        "min": "23:34",
+        "pts": 3,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "KRIS DUNN",
+        "min": "22:53",
+        "pts": 9,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "10",
+        "name": "DARIUS GARLAND",
+        "min": "32:09",
+        "pts": 25,
+        "reb": 2,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 119,
+      "fgm": 43,
+      "fga": 93,
+      "f2m": 33,
+      "f2a": 57,
+      "f3m": 10,
+      "f3a": 36,
+      "ftm": 23,
+      "fta": 29,
+      "reb": 60,
+      "oreb": 22,
+      "dreb": 30,
+      "ast": 25,
+      "tov": 14,
+      "stl": 5,
+      "blk": 7,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "35:25",
+        "pts": 20,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "28:49",
+        "pts": 7,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "33:51",
+        "pts": 21,
+        "reb": 13,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "29:29",
+        "pts": 18,
+        "reb": 3,
+        "ast": 6
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "36:19",
+        "pts": 23,
+        "reb": 7,
+        "ast": 8
+      }
+    ]
+  }
+}

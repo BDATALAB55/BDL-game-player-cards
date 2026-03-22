@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500971",
+  "date": "2026.03.14",
+  "venue": "TD Garden",
+  "attendance": 19156,
+  "home": {
+    "id": "1610612738",
+    "total": {
+      "pts": 111,
+      "fgm": 41,
+      "fga": 93,
+      "f2m": 29,
+      "f2a": 47,
+      "f3m": 12,
+      "f3a": 46,
+      "ftm": 17,
+      "fta": 19,
+      "reb": 62,
+      "oreb": 19,
+      "dreb": 36,
+      "ast": 29,
+      "tov": 14,
+      "stl": 8,
+      "blk": 4,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "SAM HAUSER",
+        "min": "26:24",
+        "pts": 12,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "JAYSON TATUM",
+        "min": "32:11",
+        "pts": 20,
+        "reb": 14,
+        "ast": 7
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "31:13",
+        "pts": 24,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "30:35",
+        "pts": 16,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "35:28",
+        "pts": 15,
+        "reb": 6,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612764",
+    "total": {
+      "pts": 100,
+      "fgm": 37,
+      "fga": 84,
+      "f2m": 22,
+      "f2a": 45,
+      "f3m": 15,
+      "f3a": 39,
+      "ftm": 11,
+      "fta": 17,
+      "reb": 47,
+      "oreb": 9,
+      "dreb": 29,
+      "ast": 28,
+      "tov": 13,
+      "stl": 9,
+      "blk": 4,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "24:13",
+        "pts": 12,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "27",
+        "name": "WILL RILEY",
+        "min": "29:17",
+        "pts": 5,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "22:04",
+        "pts": 4,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "12",
+        "name": "TRE JOHNSON",
+        "min": "24:28",
+        "pts": 7,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "TRAE YOUNG",
+        "min": "24:28",
+        "pts": 11,
+        "reb": 4,
+        "ast": 6
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022501007",
+  "date": "2026.03.18",
+  "venue": "Toyota Center",
+  "attendance": 18055,
+  "home": {
+    "id": "1610612745",
+    "total": {
+      "pts": 116,
+      "fgm": 45,
+      "fga": 91,
+      "f2m": 34,
+      "f2a": 59,
+      "f3m": 11,
+      "f3a": 32,
+      "ftm": 15,
+      "fta": 17,
+      "reb": 44,
+      "oreb": 12,
+      "dreb": 26,
+      "ast": 26,
+      "tov": 11,
+      "stl": 10,
+      "blk": 1,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "38:24",
+        "pts": 18,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "37:41",
+        "pts": 18,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "37:07",
+        "pts": 27,
+        "reb": 4,
+        "ast": 10
+      },
+      {
+        "no": "17",
+        "name": "TARI EASON",
+        "min": "31:34",
+        "pts": 10,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "42:03",
+        "pts": 26,
+        "reb": 11,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612747",
+    "total": {
+      "pts": 124,
+      "fgm": 46,
+      "fga": 76,
+      "f2m": 31,
+      "f2a": 44,
+      "f3m": 15,
+      "f3a": 32,
+      "ftm": 17,
+      "fta": 27,
+      "reb": 44,
+      "oreb": 5,
+      "dreb": 29,
+      "ast": 30,
+      "tov": 13,
+      "stl": 6,
+      "blk": 8,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "LEBRON JAMES",
+        "min": "34:06",
+        "pts": 30,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "33:48",
+        "pts": 5,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "33:42",
+        "pts": 16,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "AUSTIN REAVES",
+        "min": "38:31",
+        "pts": 14,
+        "reb": 3,
+        "ast": 8
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "37:41",
+        "pts": 40,
+        "reb": 9,
+        "ast": 10
+      }
+    ]
+  }
+}

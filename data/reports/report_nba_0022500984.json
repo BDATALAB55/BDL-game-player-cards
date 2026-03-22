@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500984",
+  "date": "2026.03.16",
+  "venue": "Capital One Arena",
+  "attendance": 15922,
+  "home": {
+    "id": "1610612764",
+    "total": {
+      "pts": 117,
+      "fgm": 40,
+      "fga": 78,
+      "f2m": 27,
+      "f2a": 44,
+      "f3m": 13,
+      "f3a": 34,
+      "ftm": 24,
+      "fta": 29,
+      "reb": 45,
+      "oreb": 9,
+      "dreb": 27,
+      "ast": 24,
+      "tov": 21,
+      "stl": 7,
+      "blk": 2,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "32:42",
+        "pts": 21,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "27",
+        "name": "WILL RILEY",
+        "min": "38:31",
+        "pts": 21,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "15",
+        "name": "JULIAN REESE",
+        "min": "23:41",
+        "pts": 12,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "12",
+        "name": "TRE JOHNSON",
+        "min": "23:29",
+        "pts": 13,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "TRAE YOUNG",
+        "min": "21:11",
+        "pts": 21,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612744",
+    "total": {
+      "pts": 125,
+      "fgm": 46,
+      "fga": 91,
+      "f2m": 37,
+      "f2a": 59,
+      "f3m": 9,
+      "f3a": 32,
+      "ftm": 24,
+      "fta": 28,
+      "reb": 48,
+      "oreb": 14,
+      "dreb": 27,
+      "ast": 32,
+      "tov": 15,
+      "stl": 13,
+      "blk": 4,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "WILL RICHARD",
+        "min": "32:12",
+        "pts": 0,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "GUI SANTOS",
+        "min": "27:56",
+        "pts": 18,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "28:32",
+        "pts": 5,
+        "reb": 8,
+        "ast": 7
+      },
+      {
+        "no": "2",
+        "name": "BRANDIN PODZIEMSKI",
+        "min": "28:17",
+        "pts": 10,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "DE'ANTHONY MELTON",
+        "min": "30:26",
+        "pts": 27,
+        "reb": 5,
+        "ast": 4
+      }
+    ]
+  }
+}

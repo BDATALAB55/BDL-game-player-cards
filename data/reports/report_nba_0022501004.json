@@ -1,0 +1,134 @@
+{
+  "gameId": "0022501004",
+  "date": "2026.03.18",
+  "venue": "Target Center",
+  "attendance": 17047,
+  "home": {
+    "id": "1610612750",
+    "total": {
+      "pts": 147,
+      "fgm": 52,
+      "fga": 96,
+      "f2m": 34,
+      "f2a": 57,
+      "f3m": 18,
+      "f3a": 39,
+      "ftm": 25,
+      "fta": 30,
+      "reb": 55,
+      "oreb": 12,
+      "dreb": 34,
+      "ast": 39,
+      "tov": 17,
+      "stl": 15,
+      "blk": 5,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JADEN MCDANIELS",
+        "min": "26:17",
+        "pts": 17,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "30",
+        "name": "JULIUS RANDLE",
+        "min": "27:02",
+        "pts": 21,
+        "reb": 1,
+        "ast": 8
+      },
+      {
+        "no": "27",
+        "name": "RUDY GOBERT",
+        "min": "28:46",
+        "pts": 21,
+        "reb": 12,
+        "ast": 0
+      },
+      {
+        "no": "13",
+        "name": "AYO DOSUNMU",
+        "min": "27:10",
+        "pts": 23,
+        "reb": 9,
+        "ast": 6
+      },
+      {
+        "no": "0",
+        "name": "DONTE DIVINCENZO",
+        "min": "25:48",
+        "pts": 9,
+        "reb": 3,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612762",
+    "total": {
+      "pts": 111,
+      "fgm": 40,
+      "fga": 93,
+      "f2m": 27,
+      "f2a": 54,
+      "f3m": 13,
+      "f3a": 39,
+      "ftm": 18,
+      "fta": 26,
+      "reb": 56,
+      "oreb": 17,
+      "dreb": 29,
+      "ast": 26,
+      "tov": 23,
+      "stl": 10,
+      "blk": 5,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "CODY WILLIAMS",
+        "min": "24:56",
+        "pts": 7,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "28",
+        "name": "BRICE SENSABAUGH",
+        "min": "37:16",
+        "pts": 41,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "22",
+        "name": "KYLE FILIPOWSKI",
+        "min": "22:53",
+        "pts": 7,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "24:55",
+        "pts": 17,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "ISAIAH COLLIER",
+        "min": "28:00",
+        "pts": 14,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  }
+}

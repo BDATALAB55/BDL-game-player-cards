@@ -28,7 +28,7 @@ function getTeamStyle(rawName) {
 }
 
 async function renderBReport(gameId) {
-    const dataPath = path.join(process.cwd(), "data", "reports", `report_${gameId}.json`);
+    const dataPath = `/Volumes/HD-CD-1/Masaki/B/BDATALAB APP/data/reports/report_${gameId}.json`;
     if (!fs.existsSync(dataPath)) {
         console.error(`❌ データファイルが見つかりません: ${dataPath}`);
         return;
@@ -257,10 +257,10 @@ async function renderBReport(gameId) {
     const dateStr = `${dateObj.getFullYear()}${String(dateObj.getMonth() + 1).padStart(2, '0')}${String(dateObj.getDate()).padStart(2, '0')}`;
     const fileName = `${dateStr}_${gameId}_${(homeStyle.nickname || "HOME").replace(/\s+/g, '')}_${(awayStyle.nickname || "AWAY").replace(/\s+/g, '')}.png`;
 
-    const outPath = path.join(process.cwd(), "output", "reports");
+    const outPath = "/Volumes/HD-CD-1/Masaki/B/BDATALAB APP/output/reports";
     if (!fs.existsSync(outPath)) fs.mkdirSync(outPath, { recursive: true });
 
-    await page.screenshot({ path: path.join(outPath, fileName) });
+    await page.screenshot({ path: `${outPath}/${fileName}` });
     await browser.close();
     console.log(`✅ レポート生成完了: ${fileName}`);
 }

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500962",
+  "date": "2026.03.13",
+  "venue": "Gainbridge Fieldhouse",
+  "attendance": 15544,
+  "home": {
+    "id": "1610612754",
+    "total": {
+      "pts": 92,
+      "fgm": 35,
+      "fga": 89,
+      "f2m": 25,
+      "f2a": 51,
+      "f3m": 10,
+      "f3a": 38,
+      "ftm": 12,
+      "fta": 15,
+      "reb": 56,
+      "oreb": 7,
+      "dreb": 39,
+      "ast": 21,
+      "tov": 10,
+      "stl": 6,
+      "blk": 3,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "KOBE BROWN",
+        "min": "29:31",
+        "pts": 8,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "JARACE WALKER",
+        "min": "38:05",
+        "pts": 18,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "28:54",
+        "pts": 11,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "AARON NESMITH",
+        "min": "34:26",
+        "pts": 12,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "32:04",
+        "pts": 8,
+        "reb": 5,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612752",
+    "total": {
+      "pts": 101,
+      "fgm": 37,
+      "fga": 88,
+      "f2m": 29,
+      "f2a": 60,
+      "f3m": 8,
+      "f3a": 28,
+      "ftm": 19,
+      "fta": 25,
+      "reb": 58,
+      "oreb": 11,
+      "dreb": 42,
+      "ast": 20,
+      "tov": 11,
+      "stl": 4,
+      "blk": 4,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "29:51",
+        "pts": 11,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "34:15",
+        "pts": 25,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "23",
+        "name": "MITCHELL ROBINSON",
+        "min": "30:37",
+        "pts": 12,
+        "reb": 22,
+        "ast": 0
+      },
+      {
+        "no": "44",
+        "name": "LANDRY SHAMET",
+        "min": "36:33",
+        "pts": 9,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "36:42",
+        "pts": 29,
+        "reb": 5,
+        "ast": 9
+      }
+    ]
+  }
+}

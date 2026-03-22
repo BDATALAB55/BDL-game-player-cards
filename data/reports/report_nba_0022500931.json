@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500931",
+  "date": "2026.03.09",
+  "venue": "Rocket Arena",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612739",
+    "total": {
+      "pts": 115,
+      "fgm": 38,
+      "fga": 84,
+      "f2m": 22,
+      "f2a": 40,
+      "f3m": 16,
+      "f3a": 44,
+      "ftm": 23,
+      "fta": 25,
+      "reb": 48,
+      "oreb": 9,
+      "dreb": 32,
+      "ast": 28,
+      "tov": 9,
+      "stl": 4,
+      "blk": 8,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "SAM MERRILL",
+        "min": "20:35",
+        "pts": 2,
+        "reb": 3,
+        "ast": 5
+      },
+      {
+        "no": "32",
+        "name": "DEAN WADE",
+        "min": "20:13",
+        "pts": 13,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "28:07",
+        "pts": 15,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "31:10",
+        "pts": 17,
+        "reb": 3,
+        "ast": 6
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "29:08",
+        "pts": 21,
+        "reb": 5,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612755",
+    "total": {
+      "pts": 101,
+      "fgm": 39,
+      "fga": 85,
+      "f2m": 28,
+      "f2a": 47,
+      "f3m": 11,
+      "f3a": 38,
+      "ftm": 12,
+      "fta": 18,
+      "reb": 53,
+      "oreb": 11,
+      "dreb": 31,
+      "ast": 20,
+      "tov": 14,
+      "stl": 7,
+      "blk": 4,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "KELLY OUBRE JR.",
+        "min": "13:53",
+        "pts": 6,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "DOMINICK BARLOW",
+        "min": "19:35",
+        "pts": 8,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "30",
+        "name": "ADEM BONA",
+        "min": "26:04",
+        "pts": 8,
+        "reb": 7,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "QUENTIN GRIMES",
+        "min": "36:05",
+        "pts": 17,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "20",
+        "name": "CAMERON PAYNE",
+        "min": "27:35",
+        "pts": 12,
+        "reb": 6,
+        "ast": 4
+      }
+    ]
+  }
+}

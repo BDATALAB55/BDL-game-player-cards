@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500938",
+  "date": "2026.03.10",
+  "venue": "Kaseya Center",
+  "attendance": 19700,
+  "home": {
+    "id": "1610612748",
+    "total": {
+      "pts": 150,
+      "fgm": 45,
+      "fga": 90,
+      "f2m": 32,
+      "f2a": 47,
+      "f3m": 13,
+      "f3a": 43,
+      "ftm": 47,
+      "fta": 59,
+      "reb": 61,
+      "oreb": 15,
+      "dreb": 33,
+      "ast": 31,
+      "tov": 16,
+      "stl": 16,
+      "blk": 5,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "24:26",
+        "pts": 10,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "15",
+        "name": "MYRON GARDNER",
+        "min": "25:43",
+        "pts": 4,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "41:54",
+        "pts": 83,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "25",
+        "name": "KASPARAS JAKUČIONIS",
+        "min": "29:44",
+        "pts": 5,
+        "reb": 5,
+        "ast": 6
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "24:06",
+        "pts": 12,
+        "reb": 7,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612764",
+    "total": {
+      "pts": 129,
+      "fgm": 46,
+      "fga": 89,
+      "f2m": 31,
+      "f2a": 53,
+      "f3m": 15,
+      "f3a": 36,
+      "ftm": 22,
+      "fta": 29,
+      "reb": 47,
+      "oreb": 4,
+      "dreb": 31,
+      "ast": 25,
+      "tov": 23,
+      "stl": 6,
+      "blk": 3,
+      "pf": 34
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "34:39",
+        "pts": 10,
+        "reb": 6,
+        "ast": 7
+      },
+      {
+        "no": "27",
+        "name": "WILL RILEY",
+        "min": "39:35",
+        "pts": 22,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "19:40",
+        "pts": 28,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "12",
+        "name": "TRE JOHNSON",
+        "min": "22:38",
+        "pts": 17,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "BUB CARRINGTON",
+        "min": "35:58",
+        "pts": 12,
+        "reb": 4,
+        "ast": 6
+      }
+    ]
+  }
+}

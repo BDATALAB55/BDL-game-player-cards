@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500966",
+  "date": "2026.03.13",
+  "venue": "Chase Center",
+  "attendance": 18064,
+  "home": {
+    "id": "1610612744",
+    "total": {
+      "pts": 117,
+      "fgm": 39,
+      "fga": 97,
+      "f2m": 24,
+      "f2a": 49,
+      "f3m": 15,
+      "f3a": 48,
+      "ftm": 24,
+      "fta": 25,
+      "reb": 45,
+      "oreb": 14,
+      "dreb": 24,
+      "ast": 23,
+      "tov": 8,
+      "stl": 8,
+      "blk": 1,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "15",
+        "name": "GUI SANTOS",
+        "min": "34:42",
+        "pts": 17,
+        "reb": 3,
+        "ast": 8
+      },
+      {
+        "no": "7",
+        "name": "KRISTAPS PORZIŅĢIS",
+        "min": "22:03",
+        "pts": 20,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "20",
+        "name": "AL HORFORD",
+        "min": "04:55",
+        "pts": 3,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "8",
+        "name": "DE'ANTHONY MELTON",
+        "min": "23:54",
+        "pts": 12,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "BRANDIN PODZIEMSKI",
+        "min": "35:53",
+        "pts": 25,
+        "reb": 10,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612750",
+    "total": {
+      "pts": 127,
+      "fgm": 46,
+      "fga": 82,
+      "f2m": 34,
+      "f2a": 52,
+      "f3m": 12,
+      "f3a": 30,
+      "ftm": 23,
+      "fta": 26,
+      "reb": 55,
+      "oreb": 11,
+      "dreb": 34,
+      "ast": 25,
+      "tov": 16,
+      "stl": 6,
+      "blk": 5,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JADEN MCDANIELS",
+        "min": "29:35",
+        "pts": 15,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "JULIUS RANDLE",
+        "min": "26:45",
+        "pts": 10,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "27",
+        "name": "RUDY GOBERT",
+        "min": "35:35",
+        "pts": 18,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "ANTHONY EDWARDS",
+        "min": "37:16",
+        "pts": 42,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "0",
+        "name": "DONTE DIVINCENZO",
+        "min": "27:43",
+        "pts": 7,
+        "reb": 6,
+        "ast": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500926",
+  "date": "2026.03.08",
+  "venue": "Fiserv Forum",
+  "attendance": 15555,
+  "home": {
+    "id": "1610612749",
+    "total": {
+      "pts": 91,
+      "fgm": 36,
+      "fga": 84,
+      "f2m": 23,
+      "f2a": 40,
+      "f3m": 13,
+      "f3a": 44,
+      "ftm": 6,
+      "fta": 13,
+      "reb": 43,
+      "oreb": 9,
+      "dreb": 27,
+      "ast": 22,
+      "tov": 16,
+      "stl": 10,
+      "blk": 3,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "21",
+        "name": "OUSMANE DIENG",
+        "min": "24:32",
+        "pts": 2,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "00",
+        "name": "JERICHO SIMS",
+        "min": "25:01",
+        "pts": 10,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "22:54",
+        "pts": 3,
+        "reb": 0,
+        "ast": 1
+      },
+      {
+        "no": "20",
+        "name": "AJ GREEN",
+        "min": "28:13",
+        "pts": 4,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "22:51",
+        "pts": 15,
+        "reb": 1,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612753",
+    "total": {
+      "pts": 130,
+      "fgm": 45,
+      "fga": 80,
+      "f2m": 31,
+      "f2a": 47,
+      "f3m": 14,
+      "f3a": 33,
+      "ftm": 26,
+      "fta": 35,
+      "reb": 58,
+      "oreb": 10,
+      "dreb": 39,
+      "ast": 31,
+      "tov": 15,
+      "stl": 11,
+      "blk": 2,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "TRISTAN DA SILVA",
+        "min": "27:13",
+        "pts": 5,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "29:03",
+        "pts": 33,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "21:34",
+        "pts": 9,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "30:16",
+        "pts": 18,
+        "reb": 5,
+        "ast": 9
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "23:43",
+        "pts": 20,
+        "reb": 3,
+        "ast": 2
+      }
+    ]
+  }
+}

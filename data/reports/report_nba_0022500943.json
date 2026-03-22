@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500943",
+  "date": "2026.03.10",
+  "venue": "Chase Center",
+  "attendance": 18064,
+  "home": {
+    "id": "1610612744",
+    "total": {
+      "pts": 124,
+      "fgm": 44,
+      "fga": 105,
+      "f2m": 24,
+      "f2a": 51,
+      "f3m": 20,
+      "f3a": 54,
+      "ftm": 16,
+      "fta": 18,
+      "reb": 58,
+      "oreb": 12,
+      "dreb": 37,
+      "ast": 30,
+      "tov": 12,
+      "stl": 9,
+      "blk": 12,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "15",
+        "name": "GUI SANTOS",
+        "min": "36:40",
+        "pts": 17,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "29:29",
+        "pts": 12,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "20",
+        "name": "AL HORFORD",
+        "min": "34:04",
+        "pts": 13,
+        "reb": 9,
+        "ast": 5
+      },
+      {
+        "no": "3",
+        "name": "WILL RICHARD",
+        "min": "31:44",
+        "pts": 8,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "BRANDIN PODZIEMSKI",
+        "min": "26:55",
+        "pts": 9,
+        "reb": 2,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612741",
+    "total": {
+      "pts": 130,
+      "fgm": 50,
+      "fga": 112,
+      "f2m": 35,
+      "f2a": 65,
+      "f3m": 15,
+      "f3a": 47,
+      "ftm": 15,
+      "fta": 18,
+      "reb": 71,
+      "oreb": 20,
+      "dreb": 44,
+      "ast": 34,
+      "tov": 12,
+      "stl": 6,
+      "blk": 6,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "11",
+        "name": "LEONARD MILLER",
+        "min": "37:40",
+        "pts": 17,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "JALEN SMITH",
+        "min": "33:53",
+        "pts": 12,
+        "reb": 12,
+        "ast": 3
+      },
+      {
+        "no": "28",
+        "name": "GUERSCHON YABUSELE",
+        "min": "23:13",
+        "pts": 2,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "45:12",
+        "pts": 41,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "JOSH GIDDEY",
+        "min": "43:12",
+        "pts": 21,
+        "reb": 13,
+        "ast": 17
+      }
+    ]
+  }
+}

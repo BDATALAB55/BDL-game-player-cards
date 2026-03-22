@@ -1,0 +1,134 @@
+{
+  "gameId": "0022501006",
+  "date": "2026.03.18",
+  "venue": "American Airlines Center",
+  "attendance": 19807,
+  "home": {
+    "id": "1610612742",
+    "total": {
+      "pts": 120,
+      "fgm": 42,
+      "fga": 86,
+      "f2m": 31,
+      "f2a": 58,
+      "f3m": 11,
+      "f3a": 28,
+      "ftm": 25,
+      "fta": 29,
+      "reb": 53,
+      "oreb": 11,
+      "dreb": 32,
+      "ast": 26,
+      "tov": 18,
+      "stl": 8,
+      "blk": 6,
+      "pf": 12
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "33:27",
+        "pts": 17,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "28:13",
+        "pts": 4,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "29:53",
+        "pts": 23,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "29:44",
+        "pts": 13,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "RYAN NEMBHARD",
+        "min": "26:47",
+        "pts": 8,
+        "reb": 2,
+        "ast": 12
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612737",
+    "total": {
+      "pts": 135,
+      "fgm": 55,
+      "fga": 102,
+      "f2m": 41,
+      "f2a": 67,
+      "f3m": 14,
+      "f3a": 35,
+      "ftm": 11,
+      "fta": 14,
+      "reb": 48,
+      "oreb": 12,
+      "dreb": 30,
+      "ast": 36,
+      "tov": 11,
+      "stl": 10,
+      "blk": 3,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "31:51",
+        "pts": 19,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "37:02",
+        "pts": 17,
+        "reb": 11,
+        "ast": 9
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "29:24",
+        "pts": 12,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "30:20",
+        "pts": 22,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "28:20",
+        "pts": 24,
+        "reb": 0,
+        "ast": 7
+      }
+    ]
+  }
+}

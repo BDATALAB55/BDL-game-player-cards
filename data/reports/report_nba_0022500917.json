@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500917",
+  "date": "2026.03.07",
+  "venue": "State Farm Arena",
+  "attendance": 17174,
+  "home": {
+    "id": "1610612737",
+    "total": {
+      "pts": 125,
+      "fgm": 46,
+      "fga": 83,
+      "f2m": 33,
+      "f2a": 51,
+      "f3m": 13,
+      "f3a": 32,
+      "ftm": 20,
+      "fta": 25,
+      "reb": 45,
+      "oreb": 12,
+      "dreb": 27,
+      "ast": 32,
+      "tov": 21,
+      "stl": 11,
+      "blk": 2,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "34:42",
+        "pts": 15,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "38:40",
+        "pts": 35,
+        "reb": 10,
+        "ast": 7
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "28:55",
+        "pts": 10,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "36:21",
+        "pts": 24,
+        "reb": 2,
+        "ast": 6
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "32:23",
+        "pts": 17,
+        "reb": 3,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612755",
+    "total": {
+      "pts": 116,
+      "fgm": 47,
+      "fga": 86,
+      "f2m": 37,
+      "f2a": 60,
+      "f3m": 10,
+      "f3a": 26,
+      "ftm": 12,
+      "fta": 18,
+      "reb": 42,
+      "oreb": 10,
+      "dreb": 26,
+      "ast": 27,
+      "tov": 19,
+      "stl": 10,
+      "blk": 4,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "KELLY OUBRE JR.",
+        "min": "35:51",
+        "pts": 24,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "25",
+        "name": "DOMINICK BARLOW",
+        "min": "26:07",
+        "pts": 4,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "ADEM BONA",
+        "min": "29:04",
+        "pts": 4,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "QUENTIN GRIMES",
+        "min": "41:14",
+        "pts": 26,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "TYRESE MAXEY",
+        "min": "37:50",
+        "pts": 31,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  }
+}

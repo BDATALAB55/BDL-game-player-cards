@@ -1,0 +1,134 @@
+{
+  "gameId": "0022501111",
+  "date": "2026.03.12",
+  "venue": "FedExForum",
+  "attendance": 15029,
+  "home": {
+    "id": "1610612763",
+    "total": {
+      "pts": 112,
+      "fgm": 41,
+      "fga": 98,
+      "f2m": 27,
+      "f2a": 50,
+      "f3m": 14,
+      "f3a": 48,
+      "ftm": 16,
+      "fta": 22,
+      "reb": 48,
+      "oreb": 14,
+      "dreb": 24,
+      "ast": 26,
+      "tov": 10,
+      "stl": 10,
+      "blk": 5,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "RAYAN RUPERT",
+        "min": "37:38",
+        "pts": 13,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "45",
+        "name": "GG JACKSON",
+        "min": "30:41",
+        "pts": 20,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "18",
+        "name": "OLIVIER-MAXENCE PROSPER",
+        "min": "26:31",
+        "pts": 9,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "32:23",
+        "pts": 23,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "10",
+        "name": "JAVON SMALL",
+        "min": "28:05",
+        "pts": 19,
+        "reb": 2,
+        "ast": 9
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612742",
+    "total": {
+      "pts": 120,
+      "fgm": 45,
+      "fga": 93,
+      "f2m": 34,
+      "f2a": 61,
+      "f3m": 11,
+      "f3a": 32,
+      "ftm": 19,
+      "fta": 24,
+      "reb": 70,
+      "oreb": 21,
+      "dreb": 39,
+      "ast": 25,
+      "tov": 19,
+      "stl": 8,
+      "blk": 9,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "33:15",
+        "pts": 13,
+        "reb": 6,
+        "ast": 7
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "27:59",
+        "pts": 12,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "27:18",
+        "pts": 22,
+        "reb": 14,
+        "ast": 1
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "24:37",
+        "pts": 13,
+        "reb": 0,
+        "ast": 0
+      },
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "23:18",
+        "pts": 5,
+        "reb": 6,
+        "ast": 3
+      }
+    ]
+  }
+}

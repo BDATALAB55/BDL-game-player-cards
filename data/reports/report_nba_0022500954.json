@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500954",
+  "date": "2026.03.12",
+  "venue": "Gainbridge Fieldhouse",
+  "attendance": 16470,
+  "home": {
+    "id": "1610612754",
+    "total": {
+      "pts": 108,
+      "fgm": 37,
+      "fga": 82,
+      "f2m": 25,
+      "f2a": 42,
+      "f3m": 12,
+      "f3a": 40,
+      "ftm": 22,
+      "fta": 25,
+      "reb": 44,
+      "oreb": 12,
+      "dreb": 24,
+      "ast": 24,
+      "tov": 16,
+      "stl": 7,
+      "blk": 4,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "KOBE BROWN",
+        "min": "17:49",
+        "pts": 7,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "JARACE WALKER",
+        "min": "25:49",
+        "pts": 12,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "40",
+        "name": "IVICA ZUBAC",
+        "min": "16:06",
+        "pts": 8,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "55",
+        "name": "ETHAN THOMPSON",
+        "min": "38:09",
+        "pts": 11,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "17:04",
+        "pts": 23,
+        "reb": 0,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612756",
+    "total": {
+      "pts": 123,
+      "fgm": 46,
+      "fga": 88,
+      "f2m": 33,
+      "f2a": 56,
+      "f3m": 13,
+      "f3a": 32,
+      "ftm": 18,
+      "fta": 22,
+      "reb": 51,
+      "oreb": 12,
+      "dreb": 28,
+      "ast": 21,
+      "tov": 12,
+      "stl": 9,
+      "blk": 7,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "4",
+        "name": "JALEN GREEN",
+        "min": "34:21",
+        "pts": 36,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "27:59",
+        "pts": 15,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "11",
+        "name": "OSO IGHODARO",
+        "min": "25:22",
+        "pts": 6,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "34:40",
+        "pts": 43,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "28:26",
+        "pts": 4,
+        "reb": 7,
+        "ast": 5
+      }
+    ]
+  }
+}

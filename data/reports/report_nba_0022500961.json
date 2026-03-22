@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500961",
+  "date": "2026.03.13",
+  "venue": "Little Caesars Arena",
+  "attendance": 20062,
+  "home": {
+    "id": "1610612765",
+    "total": {
+      "pts": 126,
+      "fgm": 50,
+      "fga": 92,
+      "f2m": 38,
+      "f2a": 57,
+      "f3m": 12,
+      "f3a": 35,
+      "ftm": 14,
+      "fta": 18,
+      "reb": 58,
+      "oreb": 19,
+      "dreb": 33,
+      "ast": 36,
+      "tov": 18,
+      "stl": 12,
+      "blk": 6,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "23:39",
+        "pts": 14,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "31",
+        "name": "JAVONTE GREEN",
+        "min": "21:13",
+        "pts": 6,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "JALEN DUREN",
+        "min": "27:51",
+        "pts": 30,
+        "reb": 13,
+        "ast": 0
+      },
+      {
+        "no": "25",
+        "name": "MARCUS SASSER",
+        "min": "21:51",
+        "pts": 16,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "30:10",
+        "pts": 17,
+        "reb": 8,
+        "ast": 15
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612763",
+    "total": {
+      "pts": 110,
+      "fgm": 38,
+      "fga": 89,
+      "f2m": 23,
+      "f2a": 48,
+      "f3m": 15,
+      "f3a": 41,
+      "ftm": 19,
+      "fta": 24,
+      "reb": 44,
+      "oreb": 13,
+      "dreb": 20,
+      "ast": 20,
+      "tov": 16,
+      "stl": 11,
+      "blk": 2,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "22",
+        "name": "TAYLOR HENDRICKS",
+        "min": "29:35",
+        "pts": 7,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "CEDRIC COWARD",
+        "min": "24:34",
+        "pts": 7,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "18",
+        "name": "OLIVIER-MAXENCE PROSPER",
+        "min": "21:34",
+        "pts": 17,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "TY JEROME",
+        "min": "24:34",
+        "pts": 21,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "24",
+        "name": "CAM SPENCER",
+        "min": "30:00",
+        "pts": 19,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500946",
+  "date": "2026.03.10",
+  "venue": "Crypto.com Arena",
+  "attendance": 18997,
+  "home": {
+    "id": "1610612747",
+    "total": {
+      "pts": 120,
+      "fgm": 45,
+      "fga": 93,
+      "f2m": 34,
+      "f2a": 55,
+      "f3m": 11,
+      "f3a": 38,
+      "ftm": 19,
+      "fta": 26,
+      "reb": 52,
+      "oreb": 14,
+      "dreb": 33,
+      "ast": 31,
+      "tov": 6,
+      "stl": 7,
+      "blk": 2,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "36",
+        "name": "MARCUS SMART",
+        "min": "31:19",
+        "pts": 8,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "28",
+        "name": "RUI HACHIMURA",
+        "min": "24:29",
+        "pts": 9,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "DEANDRE AYTON",
+        "min": "34:08",
+        "pts": 14,
+        "reb": 12,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "AUSTIN REAVES",
+        "min": "38:28",
+        "pts": 31,
+        "reb": 7,
+        "ast": 8
+      },
+      {
+        "no": "77",
+        "name": "LUKA DONČIĆ",
+        "min": "34:56",
+        "pts": 31,
+        "reb": 11,
+        "ast": 11
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612750",
+    "total": {
+      "pts": 106,
+      "fgm": 37,
+      "fga": 80,
+      "f2m": 27,
+      "f2a": 40,
+      "f3m": 10,
+      "f3a": 40,
+      "ftm": 22,
+      "fta": 28,
+      "reb": 52,
+      "oreb": 8,
+      "dreb": 35,
+      "ast": 22,
+      "tov": 11,
+      "stl": 4,
+      "blk": 5,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JADEN MCDANIELS",
+        "min": "26:29",
+        "pts": 6,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "30",
+        "name": "JULIUS RANDLE",
+        "min": "26:08",
+        "pts": 14,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "27",
+        "name": "RUDY GOBERT",
+        "min": "27:09",
+        "pts": 3,
+        "reb": 12,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "ANTHONY EDWARDS",
+        "min": "30:51",
+        "pts": 14,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "0",
+        "name": "DONTE DIVINCENZO",
+        "min": "31:32",
+        "pts": 8,
+        "reb": 5,
+        "ast": 2
+      }
+    ]
+  }
+}

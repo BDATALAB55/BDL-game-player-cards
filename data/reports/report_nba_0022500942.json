@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500942",
+  "date": "2026.03.10",
+  "venue": "Frost Bank Center",
+  "attendance": 19080,
+  "home": {
+    "id": "1610612759",
+    "total": {
+      "pts": 125,
+      "fgm": 44,
+      "fga": 85,
+      "f2m": 24,
+      "f2a": 38,
+      "f3m": 20,
+      "f3a": 47,
+      "ftm": 17,
+      "fta": 25,
+      "reb": 60,
+      "oreb": 9,
+      "dreb": 35,
+      "ast": 27,
+      "tov": 11,
+      "stl": 3,
+      "blk": 2,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "32:03",
+        "pts": 14,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "26:48",
+        "pts": 0,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "36:34",
+        "pts": 39,
+        "reb": 11,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "35:05",
+        "pts": 25,
+        "reb": 3,
+        "ast": 9
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "34:10",
+        "pts": 18,
+        "reb": 9,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612738",
+    "total": {
+      "pts": 116,
+      "fgm": 42,
+      "fga": 89,
+      "f2m": 23,
+      "f2a": 38,
+      "f3m": 19,
+      "f3a": 51,
+      "ftm": 13,
+      "fta": 17,
+      "reb": 41,
+      "oreb": 5,
+      "dreb": 32,
+      "ast": 27,
+      "tov": 8,
+      "stl": 6,
+      "blk": 4,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYSON TATUM",
+        "min": "26:46",
+        "pts": 24,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "SAM HAUSER",
+        "min": "34:20",
+        "pts": 11,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "19:18",
+        "pts": 5,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "14:42",
+        "pts": 8,
+        "reb": 2,
+        "ast": 7
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "39:59",
+        "pts": 34,
+        "reb": 5,
+        "ast": 7
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500930",
+  "date": "2026.03.08",
+  "venue": "Golden 1 Center",
+  "attendance": 15022,
+  "home": {
+    "id": "1610612758",
+    "total": {
+      "pts": 126,
+      "fgm": 47,
+      "fga": 105,
+      "f2m": 36,
+      "f2a": 76,
+      "f3m": 11,
+      "f3a": 29,
+      "ftm": 21,
+      "fta": 23,
+      "reb": 63,
+      "oreb": 13,
+      "dreb": 42,
+      "ast": 33,
+      "tov": 3,
+      "stl": 5,
+      "blk": 6,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "29",
+        "name": "DAEQWON PLOWDEN",
+        "min": "34:48",
+        "pts": 16,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "PRECIOUS ACHIUWA",
+        "min": "39:03",
+        "pts": 13,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "38:04",
+        "pts": 26,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "NIQUE CLIFFORD",
+        "min": "30:46",
+        "pts": 8,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "34:43",
+        "pts": 23,
+        "reb": 11,
+        "ast": 12
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612741",
+    "total": {
+      "pts": 110,
+      "fgm": 35,
+      "fga": 84,
+      "f2m": 18,
+      "f2a": 39,
+      "f3m": 17,
+      "f3a": 45,
+      "ftm": 23,
+      "fta": 34,
+      "reb": 57,
+      "oreb": 9,
+      "dreb": 40,
+      "ast": 27,
+      "tov": 14,
+      "stl": 2,
+      "blk": 6,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "35",
+        "name": "ISAAC OKORO",
+        "min": "23:43",
+        "pts": 9,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "30:29",
+        "pts": 20,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "28",
+        "name": "GUERSCHON YABUSELE",
+        "min": "22:02",
+        "pts": 4,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "30",
+        "name": "TRE JONES",
+        "min": "31:37",
+        "pts": 12,
+        "reb": 1,
+        "ast": 5
+      },
+      {
+        "no": "3",
+        "name": "JOSH GIDDEY",
+        "min": "33:35",
+        "pts": 15,
+        "reb": 12,
+        "ast": 10
+      }
+    ]
+  }
+}

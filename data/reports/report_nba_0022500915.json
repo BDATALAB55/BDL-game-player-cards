@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500915",
+  "date": "2026.03.07",
+  "venue": "Target Center",
+  "attendance": 18978,
+  "home": {
+    "id": "1610612750",
+    "total": {
+      "pts": 92,
+      "fgm": 30,
+      "fga": 84,
+      "f2m": 21,
+      "f2a": 44,
+      "f3m": 9,
+      "f3a": 40,
+      "ftm": 23,
+      "fta": 31,
+      "reb": 47,
+      "oreb": 8,
+      "dreb": 29,
+      "ast": 17,
+      "tov": 12,
+      "stl": 10,
+      "blk": 5,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "JADEN MCDANIELS",
+        "min": "28:38",
+        "pts": 3,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "JULIUS RANDLE",
+        "min": "25:58",
+        "pts": 14,
+        "reb": 9,
+        "ast": 1
+      },
+      {
+        "no": "27",
+        "name": "RUDY GOBERT",
+        "min": "33:07",
+        "pts": 12,
+        "reb": 8,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "ANTHONY EDWARDS",
+        "min": "31:33",
+        "pts": 34,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "DONTE DIVINCENZO",
+        "min": "28:33",
+        "pts": 0,
+        "reb": 2,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612753",
+    "total": {
+      "pts": 119,
+      "fgm": 42,
+      "fga": 91,
+      "f2m": 33,
+      "f2a": 57,
+      "f3m": 9,
+      "f3a": 34,
+      "ftm": 26,
+      "fta": 31,
+      "reb": 69,
+      "oreb": 15,
+      "dreb": 43,
+      "ast": 28,
+      "tov": 14,
+      "stl": 8,
+      "blk": 4,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "33:08",
+        "pts": 30,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "34:46",
+        "pts": 25,
+        "reb": 15,
+        "ast": 3
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "24:47",
+        "pts": 10,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "0",
+        "name": "ANTHONY BLACK",
+        "min": "02:01",
+        "pts": 0,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "29:17",
+        "pts": 14,
+        "reb": 4,
+        "ast": 4
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500964",
+  "date": "2026.03.13",
+  "venue": "Toyota Center",
+  "attendance": 18055,
+  "home": {
+    "id": "1610612745",
+    "total": {
+      "pts": 107,
+      "fgm": 40,
+      "fga": 94,
+      "f2m": 26,
+      "f2a": 53,
+      "f3m": 14,
+      "f3a": 41,
+      "ftm": 13,
+      "fta": 17,
+      "reb": 59,
+      "oreb": 18,
+      "dreb": 34,
+      "ast": 25,
+      "tov": 12,
+      "stl": 8,
+      "blk": 8,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "38:24",
+        "pts": 16,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "39:43",
+        "pts": 32,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "2",
+        "name": "DORIAN FINNEY-SMITH",
+        "min": "26:47",
+        "pts": 0,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "17",
+        "name": "TARI EASON",
+        "min": "19:04",
+        "pts": 4,
+        "reb": 8,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "40:16",
+        "pts": 23,
+        "reb": 12,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612740",
+    "total": {
+      "pts": 105,
+      "fgm": 37,
+      "fga": 84,
+      "f2m": 24,
+      "f2a": 52,
+      "f3m": 13,
+      "f3a": 32,
+      "ftm": 18,
+      "fta": 26,
+      "reb": 54,
+      "oreb": 15,
+      "dreb": 33,
+      "ast": 19,
+      "tov": 13,
+      "stl": 7,
+      "blk": 6,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "30:14",
+        "pts": 5,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "ZION WILLIAMSON",
+        "min": "34:09",
+        "pts": 21,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "HERBERT JONES",
+        "min": "35:08",
+        "pts": 8,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "25",
+        "name": "TREY MURPHY III",
+        "min": "36:53",
+        "pts": 14,
+        "reb": 6,
+        "ast": 7
+      },
+      {
+        "no": "5",
+        "name": "DEJOUNTE MURRAY",
+        "min": "30:58",
+        "pts": 35,
+        "reb": 7,
+        "ast": 4
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500949",
+  "date": "2026.03.11",
+  "venue": "Delta Center",
+  "attendance": 18186,
+  "home": {
+    "id": "1610612762",
+    "total": {
+      "pts": 117,
+      "fgm": 42,
+      "fga": 87,
+      "f2m": 24,
+      "f2a": 51,
+      "f3m": 18,
+      "f3a": 36,
+      "ftm": 15,
+      "fta": 19,
+      "reb": 47,
+      "oreb": 14,
+      "dreb": 24,
+      "ast": 30,
+      "tov": 15,
+      "stl": 7,
+      "blk": 4,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "28",
+        "name": "BRICE SENSABAUGH",
+        "min": "29:50",
+        "pts": 29,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "5",
+        "name": "CODY WILLIAMS",
+        "min": "37:31",
+        "pts": 10,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "22",
+        "name": "KYLE FILIPOWSKI",
+        "min": "27:48",
+        "pts": 15,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "35:51",
+        "pts": 21,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "20:03",
+        "pts": 14,
+        "reb": 2,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612752",
+    "total": {
+      "pts": 134,
+      "fgm": 48,
+      "fga": 92,
+      "f2m": 31,
+      "f2a": 52,
+      "f3m": 17,
+      "f3a": 40,
+      "ftm": 21,
+      "fta": 22,
+      "reb": 48,
+      "oreb": 15,
+      "dreb": 30,
+      "ast": 37,
+      "tov": 10,
+      "stl": 10,
+      "blk": 3,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "25",
+        "name": "MIKAL BRIDGES",
+        "min": "27:04",
+        "pts": 5,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "OG ANUNOBY",
+        "min": "30:49",
+        "pts": 22,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "32",
+        "name": "KARL-ANTHONY TOWNS",
+        "min": "30:01",
+        "pts": 21,
+        "reb": 7,
+        "ast": 7
+      },
+      {
+        "no": "44",
+        "name": "LANDRY SHAMET",
+        "min": "30:31",
+        "pts": 7,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "11",
+        "name": "JALEN BRUNSON",
+        "min": "32:51",
+        "pts": 28,
+        "reb": 4,
+        "ast": 8
+      }
+    ]
+  }
+}

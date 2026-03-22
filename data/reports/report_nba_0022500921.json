@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500921",
+  "date": "2026.03.08",
+  "venue": "Rocket Arena",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612739",
+    "total": {
+      "pts": 98,
+      "fgm": 35,
+      "fga": 86,
+      "f2m": 22,
+      "f2a": 41,
+      "f3m": 13,
+      "f3a": 45,
+      "ftm": 15,
+      "fta": 21,
+      "reb": 52,
+      "oreb": 10,
+      "dreb": 32,
+      "ast": 23,
+      "tov": 7,
+      "stl": 4,
+      "blk": 6,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "SAM MERRILL",
+        "min": "29:06",
+        "pts": 5,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "32",
+        "name": "DEAN WADE",
+        "min": "20:34",
+        "pts": 7,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "31:05",
+        "pts": 24,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "33:28",
+        "pts": 30,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "38:20",
+        "pts": 19,
+        "reb": 4,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612738",
+    "total": {
+      "pts": 109,
+      "fgm": 37,
+      "fga": 84,
+      "f2m": 22,
+      "f2a": 46,
+      "f3m": 15,
+      "f3a": 38,
+      "ftm": 20,
+      "fta": 22,
+      "reb": 56,
+      "oreb": 10,
+      "dreb": 39,
+      "ast": 25,
+      "tov": 10,
+      "stl": 2,
+      "blk": 0,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYSON TATUM",
+        "min": "27:02",
+        "pts": 20,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "SAM HAUSER",
+        "min": "24:24",
+        "pts": 15,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "88",
+        "name": "NEEMIAS QUETA",
+        "min": "35:51",
+        "pts": 4,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "JAYLEN BROWN",
+        "min": "37:45",
+        "pts": 23,
+        "reb": 9,
+        "ast": 8
+      },
+      {
+        "no": "9",
+        "name": "DERRICK WHITE",
+        "min": "35:36",
+        "pts": 6,
+        "reb": 7,
+        "ast": 5
+      }
+    ]
+  }
+}

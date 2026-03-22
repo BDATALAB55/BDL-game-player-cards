@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500972",
+  "date": "2026.03.14",
+  "venue": "Kaseya Center",
+  "attendance": 19757,
+  "home": {
+    "id": "1610612748",
+    "total": {
+      "pts": 117,
+      "fgm": 41,
+      "fga": 88,
+      "f2m": 29,
+      "f2a": 50,
+      "f3m": 12,
+      "f3a": 38,
+      "ftm": 23,
+      "fta": 28,
+      "reb": 41,
+      "oreb": 7,
+      "dreb": 25,
+      "ast": 25,
+      "tov": 10,
+      "stl": 13,
+      "blk": 5,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "35:06",
+        "pts": 15,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "38:29",
+        "pts": 20,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "KEL'EL WARE",
+        "min": "27:22",
+        "pts": 13,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "14",
+        "name": "TYLER HERRO",
+        "min": "31:04",
+        "pts": 10,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "25:30",
+        "pts": 14,
+        "reb": 2,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612753",
+    "total": {
+      "pts": 121,
+      "fgm": 44,
+      "fga": 89,
+      "f2m": 34,
+      "f2a": 57,
+      "f3m": 10,
+      "f3a": 32,
+      "ftm": 23,
+      "fta": 25,
+      "reb": 59,
+      "oreb": 11,
+      "dreb": 38,
+      "ast": 26,
+      "tov": 19,
+      "stl": 6,
+      "blk": 2,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "TRISTAN DA SILVA",
+        "min": "31:00",
+        "pts": 11,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "37:19",
+        "pts": 27,
+        "reb": 8,
+        "ast": 7
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "34:49",
+        "pts": 15,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "34:55",
+        "pts": 21,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "34:11",
+        "pts": 14,
+        "reb": 5,
+        "ast": 6
+      }
+    ]
+  }
+}

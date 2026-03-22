@@ -19,7 +19,7 @@ async function main() {
         await fetchBReportData(gameId);
         
         // 【修正】パスの基準を確実にプロジェクトルート (process.cwd) にする
-        const reportJsonPath = path.join(process.cwd(), "data", "reports", `report_${gameId}.json`);
+        const reportJsonPath = `/Volumes/HD-CD-1/Masaki/B/BDATALAB APP/data/reports/report_${gameId}.json`;
         
         if (fs.existsSync(reportJsonPath)) {
             // Step 2: 画像生成

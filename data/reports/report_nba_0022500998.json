@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500998",
+  "date": "2026.03.17",
+  "venue": "Golden 1 Center",
+  "attendance": 16475,
+  "home": {
+    "id": "1610612758",
+    "total": {
+      "pts": 104,
+      "fgm": 41,
+      "fga": 93,
+      "f2m": 27,
+      "f2a": 57,
+      "f3m": 14,
+      "f3a": 36,
+      "ftm": 8,
+      "fta": 13,
+      "reb": 50,
+      "oreb": 6,
+      "dreb": 35,
+      "ast": 32,
+      "tov": 8,
+      "stl": 4,
+      "blk": 2,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "16:55",
+        "pts": 2,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "PRECIOUS ACHIUWA",
+        "min": "29:38",
+        "pts": 10,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "41:38",
+        "pts": 32,
+        "reb": 9,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "NIQUE CLIFFORD",
+        "min": "36:44",
+        "pts": 15,
+        "reb": 8,
+        "ast": 7
+      },
+      {
+        "no": "18",
+        "name": "RUSSELL WESTBROOK",
+        "min": "24:35",
+        "pts": 5,
+        "reb": 1,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612759",
+    "total": {
+      "pts": 132,
+      "fgm": 48,
+      "fga": 93,
+      "f2m": 23,
+      "f2a": 44,
+      "f3m": 25,
+      "f3a": 49,
+      "ftm": 11,
+      "fta": 13,
+      "reb": 55,
+      "oreb": 5,
+      "dreb": 45,
+      "ast": 41,
+      "tov": 6,
+      "stl": 5,
+      "blk": 5,
+      "pf": 11
+    },
+    "starters": [
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "23:30",
+        "pts": 17,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "40",
+        "name": "HARRISON BARNES",
+        "min": "21:44",
+        "pts": 16,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "VICTOR WEMBANYAMA",
+        "min": "21:59",
+        "pts": 18,
+        "reb": 8,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "21:29",
+        "pts": 3,
+        "reb": 1,
+        "ast": 12
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "21:44",
+        "pts": 15,
+        "reb": 5,
+        "ast": 6
+      }
+    ]
+  }
+}

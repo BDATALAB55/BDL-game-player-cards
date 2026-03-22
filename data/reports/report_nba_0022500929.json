@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500929",
+  "date": "2026.03.08",
+  "venue": "Moda Center",
+  "attendance": 16833,
+  "home": {
+    "id": "1610612757",
+    "total": {
+      "pts": 131,
+      "fgm": 47,
+      "fga": 93,
+      "f2m": 32,
+      "f2a": 52,
+      "f3m": 15,
+      "f3a": 41,
+      "ftm": 22,
+      "fta": 27,
+      "reb": 61,
+      "oreb": 13,
+      "dreb": 40,
+      "ast": 29,
+      "tov": 12,
+      "stl": 5,
+      "blk": 8,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "JERAMI GRANT",
+        "min": "32:01",
+        "pts": 21,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "28:19",
+        "pts": 7,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "23:40",
+        "pts": 9,
+        "reb": 11,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "JRUE HOLIDAY",
+        "min": "25:22",
+        "pts": 21,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "24:39",
+        "pts": 18,
+        "reb": 5,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612754",
+    "total": {
+      "pts": 111,
+      "fgm": 41,
+      "fga": 95,
+      "f2m": 27,
+      "f2a": 53,
+      "f3m": 14,
+      "f3a": 42,
+      "ftm": 15,
+      "fta": 24,
+      "reb": 54,
+      "oreb": 12,
+      "dreb": 26,
+      "ast": 27,
+      "tov": 10,
+      "stl": 9,
+      "blk": 6,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "JARACE WALKER",
+        "min": "30:45",
+        "pts": 14,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "43",
+        "name": "PASCAL SIAKAM",
+        "min": "32:18",
+        "pts": 22,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "32",
+        "name": "JAY HUFF",
+        "min": "21:54",
+        "pts": 16,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "23",
+        "name": "AARON NESMITH",
+        "min": "24:44",
+        "pts": 9,
+        "reb": 1,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "ANDREW NEMBHARD",
+        "min": "27:56",
+        "pts": 14,
+        "reb": 2,
+        "ast": 9
+      }
+    ]
+  }
+}

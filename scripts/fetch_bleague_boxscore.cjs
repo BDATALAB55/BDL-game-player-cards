@@ -10,7 +10,7 @@ function loadJsonData(filename) {
 const arenaDict = loadJsonData("arena.json") || {};
 
 async function fetchGameBoxscore(gameId) {
-    const outDir = path.join(process.cwd(), "data", "reports"); 
+    const outDir = "/Volumes/HD-CD-1/Masaki/B/BDATALAB APP/data/reports"; 
     if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
     const browser = await chromium.launch({ headless: true });
@@ -239,7 +239,8 @@ async function fetchGameBoxscore(gameId) {
             players: statsData.players
         };
 
-        fs.writeFileSync(path.join(outDir, `report_${gameId}.json`), JSON.stringify(result, null, 2));
+        const fileName = `report_${gameId}.json`;
+        fs.writeFileSync(`${outDir}/${fileName}`, JSON.stringify(result, null, 2));
         console.log(`-----------------------------------------`);
         console.log(`✅ 取得成功: ${result.homeName} vs ${result.awayName}`);
         console.log(`-----------------------------------------`);

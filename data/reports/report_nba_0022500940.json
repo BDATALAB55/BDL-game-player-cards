@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500940",
+  "date": "2026.03.10",
+  "venue": "Toyota Center",
+  "attendance": 18055,
+  "home": {
+    "id": "1610612745",
+    "total": {
+      "pts": 113,
+      "fgm": 41,
+      "fga": 82,
+      "f2m": 31,
+      "f2a": 58,
+      "f3m": 10,
+      "f3a": 24,
+      "ftm": 21,
+      "fta": 27,
+      "reb": 60,
+      "oreb": 15,
+      "dreb": 37,
+      "ast": 21,
+      "tov": 17,
+      "stl": 8,
+      "blk": 4,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "JABARI SMITH JR.",
+        "min": "35:10",
+        "pts": 23,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "KEVIN DURANT",
+        "min": "32:38",
+        "pts": 29,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "28",
+        "name": "ALPEREN SENGUN",
+        "min": "29:54",
+        "pts": 14,
+        "reb": 12,
+        "ast": 4
+      },
+      {
+        "no": "17",
+        "name": "TARI EASON",
+        "min": "31:09",
+        "pts": 8,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "1",
+        "name": "AMEN THOMPSON",
+        "min": "38:39",
+        "pts": 23,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612761",
+    "total": {
+      "pts": 99,
+      "fgm": 34,
+      "fga": 78,
+      "f2m": 25,
+      "f2a": 42,
+      "f3m": 9,
+      "f3a": 36,
+      "ftm": 22,
+      "fta": 28,
+      "reb": 37,
+      "oreb": 7,
+      "dreb": 23,
+      "ast": 21,
+      "tov": 13,
+      "stl": 10,
+      "blk": 4,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "35:53",
+        "pts": 9,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "35:54",
+        "pts": 24,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "54",
+        "name": "SANDRO MAMUKELASHVILI",
+        "min": "29:58",
+        "pts": 8,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "32:25",
+        "pts": 25,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "32:53",
+        "pts": 12,
+        "reb": 4,
+        "ast": 6
+      }
+    ]
+  }
+}

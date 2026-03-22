@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500919",
+  "date": "2026.03.07",
+  "venue": "Fiserv Forum",
+  "attendance": 16020,
+  "home": {
+    "id": "1610612749",
+    "total": {
+      "pts": 113,
+      "fgm": 41,
+      "fga": 85,
+      "f2m": 26,
+      "f2a": 41,
+      "f3m": 15,
+      "f3a": 44,
+      "ftm": 16,
+      "fta": 28,
+      "reb": 59,
+      "oreb": 7,
+      "dreb": 41,
+      "ast": 33,
+      "tov": 11,
+      "stl": 7,
+      "blk": 5,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "18",
+        "name": "KYLE KUZMA",
+        "min": "28:57",
+        "pts": 18,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "34",
+        "name": "GIANNIS ANTETOKOUNMPO",
+        "min": "27:02",
+        "pts": 27,
+        "reb": 9,
+        "ast": 8
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "18:13",
+        "pts": 8,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "21",
+        "name": "OUSMANE DIENG",
+        "min": "32:06",
+        "pts": 11,
+        "reb": 8,
+        "ast": 9
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "39:50",
+        "pts": 13,
+        "reb": 11,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612762",
+    "total": {
+      "pts": 99,
+      "fgm": 31,
+      "fga": 90,
+      "f2m": 19,
+      "f2a": 41,
+      "f3m": 12,
+      "f3a": 49,
+      "ftm": 25,
+      "fta": 29,
+      "reb": 60,
+      "oreb": 13,
+      "dreb": 40,
+      "ast": 23,
+      "tov": 11,
+      "stl": 7,
+      "blk": 3,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "CODY WILLIAMS",
+        "min": "37:18",
+        "pts": 13,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "22",
+        "name": "KYLE FILIPOWSKI",
+        "min": "34:11",
+        "pts": 14,
+        "reb": 11,
+        "ast": 6
+      },
+      {
+        "no": "34",
+        "name": "OSCAR TSHIEBWE",
+        "min": "12:15",
+        "pts": 6,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "29:26",
+        "pts": 9,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "29:24",
+        "pts": 22,
+        "reb": 2,
+        "ast": 4
+      }
+    ]
+  }
+}

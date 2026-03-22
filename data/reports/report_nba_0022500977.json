@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500977",
+  "date": "2026.03.15",
+  "venue": "Rocket Arena",
+  "attendance": 19432,
+  "home": {
+    "id": "1610612739",
+    "total": {
+      "pts": 120,
+      "fgm": 45,
+      "fga": 88,
+      "f2m": 29,
+      "f2a": 47,
+      "f3m": 16,
+      "f3a": 41,
+      "ftm": 14,
+      "fta": 21,
+      "reb": 46,
+      "oreb": 10,
+      "dreb": 28,
+      "ast": 32,
+      "tov": 16,
+      "stl": 5,
+      "blk": 5,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "14",
+        "name": "KEON ELLIS",
+        "min": "31:26",
+        "pts": 5,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "32",
+        "name": "DEAN WADE",
+        "min": "26:18",
+        "pts": 12,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "36:03",
+        "pts": 18,
+        "reb": 11,
+        "ast": 4
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "39:08",
+        "pts": 26,
+        "reb": 1,
+        "ast": 11
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "37:33",
+        "pts": 13,
+        "reb": 5,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612742",
+    "total": {
+      "pts": 130,
+      "fgm": 46,
+      "fga": 87,
+      "f2m": 31,
+      "f2a": 57,
+      "f3m": 15,
+      "f3a": 30,
+      "ftm": 23,
+      "fta": 27,
+      "reb": 50,
+      "oreb": 9,
+      "dreb": 35,
+      "ast": 35,
+      "tov": 12,
+      "stl": 13,
+      "blk": 5,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "32:01",
+        "pts": 25,
+        "reb": 5,
+        "ast": 7
+      },
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "32:49",
+        "pts": 27,
+        "reb": 6,
+        "ast": 10
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "33:24",
+        "pts": 20,
+        "reb": 11,
+        "ast": 2
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "29:17",
+        "pts": 9,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "9",
+        "name": "RYAN NEMBHARD",
+        "min": "24:16",
+        "pts": 11,
+        "reb": 3,
+        "ast": 3
+      }
+    ]
+  }
+}

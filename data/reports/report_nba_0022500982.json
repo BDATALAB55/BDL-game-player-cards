@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500982",
+  "date": "2026.03.15",
+  "venue": "Golden 1 Center",
+  "attendance": 15132,
+  "home": {
+    "id": "1610612758",
+    "total": {
+      "pts": 116,
+      "fgm": 41,
+      "fga": 85,
+      "f2m": 30,
+      "f2a": 49,
+      "f3m": 11,
+      "f3a": 36,
+      "ftm": 23,
+      "fta": 28,
+      "reb": 55,
+      "oreb": 12,
+      "dreb": 38,
+      "ast": 28,
+      "tov": 18,
+      "stl": 9,
+      "blk": 3,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "10",
+        "name": "DEMAR DEROZAN",
+        "min": "38:03",
+        "pts": 41,
+        "reb": 4,
+        "ast": 11
+      },
+      {
+        "no": "9",
+        "name": "PRECIOUS ACHIUWA",
+        "min": "33:27",
+        "pts": 20,
+        "reb": 11,
+        "ast": 1
+      },
+      {
+        "no": "42",
+        "name": "MAXIME RAYNAUD",
+        "min": "28:34",
+        "pts": 8,
+        "reb": 12,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "NIQUE CLIFFORD",
+        "min": "26:11",
+        "pts": 10,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "KILLIAN HAYES",
+        "min": "38:18",
+        "pts": 16,
+        "reb": 5,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612762",
+    "total": {
+      "pts": 111,
+      "fgm": 41,
+      "fga": 86,
+      "f2m": 29,
+      "f2a": 50,
+      "f3m": 12,
+      "f3a": 36,
+      "ftm": 17,
+      "fta": 25,
+      "reb": 48,
+      "oreb": 10,
+      "dreb": 30,
+      "ast": 22,
+      "tov": 15,
+      "stl": 12,
+      "blk": 5,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "CODY WILLIAMS",
+        "min": "38:21",
+        "pts": 34,
+        "reb": 7,
+        "ast": 7
+      },
+      {
+        "no": "28",
+        "name": "BRICE SENSABAUGH",
+        "min": "22:43",
+        "pts": 22,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "0",
+        "name": "ANDERSSON GARCIA",
+        "min": "43:02",
+        "pts": 3,
+        "reb": 11,
+        "ast": 3
+      },
+      {
+        "no": "16",
+        "name": "ELIJAH HARKLESS",
+        "min": "40:25",
+        "pts": 13,
+        "reb": 1,
+        "ast": 4
+      },
+      {
+        "no": "8",
+        "name": "ISAIAH COLLIER",
+        "min": "24:37",
+        "pts": 21,
+        "reb": 5,
+        "ast": 3
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500948",
+  "date": "2026.03.11",
+  "venue": "Smoothie King Center",
+  "attendance": 16568,
+  "home": {
+    "id": "1610612740",
+    "total": {
+      "pts": 122,
+      "fgm": 45,
+      "fga": 88,
+      "f2m": 31,
+      "f2a": 59,
+      "f3m": 14,
+      "f3a": 29,
+      "ftm": 18,
+      "fta": 24,
+      "reb": 62,
+      "oreb": 10,
+      "dreb": 39,
+      "ast": 27,
+      "tov": 15,
+      "stl": 10,
+      "blk": 5,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "27:46",
+        "pts": 9,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "ZION WILLIAMSON",
+        "min": "31:49",
+        "pts": 19,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "2",
+        "name": "HERBERT JONES",
+        "min": "35:36",
+        "pts": 16,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "TREY MURPHY III",
+        "min": "33:42",
+        "pts": 28,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "DEJOUNTE MURRAY",
+        "min": "31:27",
+        "pts": 27,
+        "reb": 5,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612761",
+    "total": {
+      "pts": 111,
+      "fgm": 39,
+      "fga": 94,
+      "f2m": 25,
+      "f2a": 50,
+      "f3m": 14,
+      "f3a": 44,
+      "ftm": 19,
+      "fta": 25,
+      "reb": 48,
+      "oreb": 14,
+      "dreb": 29,
+      "ast": 20,
+      "tov": 11,
+      "stl": 13,
+      "blk": 5,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "38:01",
+        "pts": 22,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "35:32",
+        "pts": 9,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "19",
+        "name": "JAKOB POELTL",
+        "min": "29:34",
+        "pts": 8,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "28:04",
+        "pts": 16,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "34:27",
+        "pts": 25,
+        "reb": 6,
+        "ast": 3
+      }
+    ]
+  }
+}

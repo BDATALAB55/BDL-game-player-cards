@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500956",
+  "date": "2026.03.12",
+  "venue": "State Farm Arena",
+  "attendance": 15526,
+  "home": {
+    "id": "1610612737",
+    "total": {
+      "pts": 108,
+      "fgm": 35,
+      "fga": 89,
+      "f2m": 23,
+      "f2a": 49,
+      "f3m": 12,
+      "f3a": 40,
+      "ftm": 26,
+      "fta": 35,
+      "reb": 63,
+      "oreb": 17,
+      "dreb": 34,
+      "ast": 22,
+      "tov": 11,
+      "stl": 12,
+      "blk": 6,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "COREY KISPERT",
+        "min": "20:05",
+        "pts": 7,
+        "reb": 3,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "36:20",
+        "pts": 21,
+        "reb": 9,
+        "ast": 9
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "30:07",
+        "pts": 13,
+        "reb": 9,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "36:22",
+        "pts": 18,
+        "reb": 2,
+        "ast": 2
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "30:11",
+        "pts": 14,
+        "reb": 4,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612751",
+    "total": {
+      "pts": 97,
+      "fgm": 34,
+      "fga": 72,
+      "f2m": 22,
+      "f2a": 37,
+      "f3m": 12,
+      "f3a": 35,
+      "ftm": 17,
+      "fta": 22,
+      "reb": 43,
+      "oreb": 4,
+      "dreb": 35,
+      "ast": 19,
+      "tov": 20,
+      "stl": 5,
+      "blk": 6,
+      "pf": 29
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "DANNY WOLF",
+        "min": "28:10",
+        "pts": 8,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "19:34",
+        "pts": 10,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "20:53",
+        "pts": 8,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "4",
+        "name": "DRAKE POWELL",
+        "min": "32:11",
+        "pts": 11,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "77",
+        "name": "BEN SARAF",
+        "min": "30:39",
+        "pts": 10,
+        "reb": 1,
+        "ast": 4
+      }
+    ]
+  }
+}

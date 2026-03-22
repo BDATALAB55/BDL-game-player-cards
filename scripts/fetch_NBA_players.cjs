@@ -76,9 +76,12 @@ async function fetchNbaPlayerStats(gameId) {
     };
 
     // --- 修正箇所: __dirname を process.cwd() に変更 ---
-    const outDir = path.join(process.cwd(), "data", "raw");
+    const outDir = "/Volumes/HD-CD-1/Masaki/B/BDATALAB APP/data/raw";
     if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
-    fs.writeFileSync(path.join(outDir, `game_players_${gameId}.json`), JSON.stringify(result, null, 2));
+
+    const fileName = `game_players_${gameId}.json`;
+    fs.writeFileSync(`${outDir}/${fileName}`, JSON.stringify(result, null, 2));
+    
     return result;
 }
 

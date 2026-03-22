@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500992",
+  "date": "2026.03.17",
+  "venue": "Kia Center",
+  "attendance": 18846,
+  "home": {
+    "id": "1610612753",
+    "total": {
+      "pts": 108,
+      "fgm": 37,
+      "fga": 93,
+      "f2m": 20,
+      "f2a": 43,
+      "f3m": 17,
+      "f3a": 50,
+      "ftm": 17,
+      "fta": 20,
+      "reb": 50,
+      "oreb": 10,
+      "dreb": 31,
+      "ast": 21,
+      "tov": 12,
+      "stl": 8,
+      "blk": 2,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "TRISTAN DA SILVA",
+        "min": "31:44",
+        "pts": 13,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "36:13",
+        "pts": 32,
+        "reb": 10,
+        "ast": 5
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "28:53",
+        "pts": 11,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "36:16",
+        "pts": 16,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "32:39",
+        "pts": 14,
+        "reb": 7,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612760",
+    "total": {
+      "pts": 113,
+      "fgm": 40,
+      "fga": 90,
+      "f2m": 31,
+      "f2a": 61,
+      "f3m": 9,
+      "f3a": 29,
+      "ftm": 24,
+      "fta": 27,
+      "reb": 62,
+      "oreb": 11,
+      "dreb": 42,
+      "ast": 19,
+      "tov": 10,
+      "stl": 8,
+      "blk": 3,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "LUGUENTZ DORT",
+        "min": "18:32",
+        "pts": 5,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "33:15",
+        "pts": 20,
+        "reb": 12,
+        "ast": 1
+      },
+      {
+        "no": "55",
+        "name": "ISAIAH HARTENSTEIN",
+        "min": "16:21",
+        "pts": 0,
+        "reb": 7,
+        "ast": 8
+      },
+      {
+        "no": "25",
+        "name": "AJAY MITCHELL",
+        "min": "28:28",
+        "pts": 16,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "35:37",
+        "pts": 40,
+        "reb": 5,
+        "ast": 2
+      }
+    ]
+  }
+}

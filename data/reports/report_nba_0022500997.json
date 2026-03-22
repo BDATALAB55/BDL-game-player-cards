@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500997",
+  "date": "2026.03.17",
+  "venue": "Ball Arena",
+  "attendance": 19917,
+  "home": {
+    "id": "1610612743",
+    "total": {
+      "pts": 124,
+      "fgm": 43,
+      "fga": 86,
+      "f2m": 27,
+      "f2a": 53,
+      "f3m": 16,
+      "f3a": 33,
+      "ftm": 22,
+      "fta": 31,
+      "reb": 63,
+      "oreb": 9,
+      "dreb": 44,
+      "ast": 35,
+      "tov": 13,
+      "stl": 5,
+      "blk": 2,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "CAMERON JOHNSON",
+        "min": "23:10",
+        "pts": 18,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "32",
+        "name": "AARON GORDON",
+        "min": "18:51",
+        "pts": 12,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "24:48",
+        "pts": 8,
+        "reb": 7,
+        "ast": 14
+      },
+      {
+        "no": "0",
+        "name": "CHRISTIAN BRAUN",
+        "min": "27:14",
+        "pts": 22,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "25:55",
+        "pts": 12,
+        "reb": 6,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612755",
+    "total": {
+      "pts": 96,
+      "fgm": 37,
+      "fga": 94,
+      "f2m": 28,
+      "f2a": 53,
+      "f3m": 9,
+      "f3a": 41,
+      "ftm": 13,
+      "fta": 15,
+      "reb": 48,
+      "oreb": 9,
+      "dreb": 33,
+      "ast": 30,
+      "tov": 13,
+      "stl": 6,
+      "blk": 10,
+      "pf": 26
+    },
+    "starters": [
+      {
+        "no": "11",
+        "name": "JUSTIN EDWARDS",
+        "min": "24:48",
+        "pts": 11,
+        "reb": 5,
+        "ast": 3
+      },
+      {
+        "no": "25",
+        "name": "DOMINICK BARLOW",
+        "min": "26:40",
+        "pts": 8,
+        "reb": 9,
+        "ast": 4
+      },
+      {
+        "no": "30",
+        "name": "ADEM BONA",
+        "min": "14:47",
+        "pts": 6,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "QUENTIN GRIMES",
+        "min": "26:15",
+        "pts": 12,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "22:38",
+        "pts": 9,
+        "reb": 3,
+        "ast": 4
+      }
+    ]
+  }
+}

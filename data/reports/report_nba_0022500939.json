@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500939",
+  "date": "2026.03.10",
+  "venue": "State Farm Arena",
+  "attendance": 15514,
+  "home": {
+    "id": "1610612737",
+    "total": {
+      "pts": 124,
+      "fgm": 49,
+      "fga": 95,
+      "f2m": 35,
+      "f2a": 59,
+      "f3m": 14,
+      "f3a": 36,
+      "ftm": 12,
+      "fta": 18,
+      "reb": 53,
+      "oreb": 13,
+      "dreb": 32,
+      "ast": 29,
+      "tov": 9,
+      "stl": 8,
+      "blk": 8,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "35:57",
+        "pts": 14,
+        "reb": 7,
+        "ast": 10
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "37:46",
+        "pts": 27,
+        "reb": 7,
+        "ast": 8
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "32:32",
+        "pts": 18,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "36:44",
+        "pts": 29,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "28:00",
+        "pts": 13,
+        "reb": 9,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612742",
+    "total": {
+      "pts": 112,
+      "fgm": 41,
+      "fga": 86,
+      "f2m": 28,
+      "f2a": 54,
+      "f3m": 13,
+      "f3a": 32,
+      "ftm": 17,
+      "fta": 22,
+      "reb": 49,
+      "oreb": 12,
+      "dreb": 31,
+      "ast": 28,
+      "tov": 14,
+      "stl": 6,
+      "blk": 0,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "32:06",
+        "pts": 14,
+        "reb": 12,
+        "ast": 5
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "28:49",
+        "pts": 7,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "25:21",
+        "pts": 14,
+        "reb": 10,
+        "ast": 1
+      },
+      {
+        "no": "13",
+        "name": "NAJI MARSHALL",
+        "min": "29:53",
+        "pts": 14,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "24:47",
+        "pts": 6,
+        "reb": 3,
+        "ast": 1
+      }
+    ]
+  }
+}

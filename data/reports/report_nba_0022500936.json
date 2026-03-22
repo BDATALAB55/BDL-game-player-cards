@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500936",
+  "date": "2026.03.10",
+  "venue": "Xfinity Mobile Arena",
+  "attendance": 17897,
+  "home": {
+    "id": "1610612755",
+    "total": {
+      "pts": 139,
+      "fgm": 45,
+      "fga": 86,
+      "f2m": 34,
+      "f2a": 55,
+      "f3m": 11,
+      "f3a": 31,
+      "ftm": 38,
+      "fta": 46,
+      "reb": 52,
+      "oreb": 12,
+      "dreb": 28,
+      "ast": 27,
+      "tov": 10,
+      "stl": 13,
+      "blk": 5,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "KELLY OUBRE JR.",
+        "min": "37:39",
+        "pts": 30,
+        "reb": 12,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "DOMINICK BARLOW",
+        "min": "33:31",
+        "pts": 11,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "30",
+        "name": "ADEM BONA",
+        "min": "15:47",
+        "pts": 4,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "QUENTIN GRIMES",
+        "min": "35:29",
+        "pts": 23,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "34:32",
+        "pts": 21,
+        "reb": 5,
+        "ast": 5
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612763",
+    "total": {
+      "pts": 129,
+      "fgm": 48,
+      "fga": 97,
+      "f2m": 31,
+      "f2a": 54,
+      "f3m": 17,
+      "f3a": 43,
+      "ftm": 16,
+      "fta": 21,
+      "reb": 53,
+      "oreb": 19,
+      "dreb": 25,
+      "ast": 26,
+      "tov": 20,
+      "stl": 5,
+      "blk": 3,
+      "pf": 31
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "21:55",
+        "pts": 11,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "22",
+        "name": "TAYLOR HENDRICKS",
+        "min": "25:20",
+        "pts": 8,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "18",
+        "name": "OLIVIER-MAXENCE PROSPER",
+        "min": "20:53",
+        "pts": 11,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "CEDRIC COWARD",
+        "min": "23:47",
+        "pts": 13,
+        "reb": 16,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "TY JEROME",
+        "min": "24:30",
+        "pts": 26,
+        "reb": 2,
+        "ast": 8
+      }
+    ]
+  }
+}

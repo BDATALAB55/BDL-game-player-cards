@@ -6,7 +6,7 @@ const { chromium } = require("playwright");
 const nbaColorData = JSON.parse(fs.readFileSync(path.join(process.cwd(), "data", "NBA_team_colors.json"), "utf8"));
 
 async function renderNbaReport(gameId, roundText = "") {
-    const dataPath = path.join(process.cwd(), "data", "reports", `report_nba_${gameId}.json`);
+    const dataPath = `/Volumes/HD-CD-1/Masaki/B/BDATALAB APP/data/reports/report_nba_${gameId}.json`;
     const data = JSON.parse(fs.readFileSync(dataPath, "utf8"));
     
     // チームスタイルの取得
@@ -129,10 +129,10 @@ async function renderNbaReport(gameId, roundText = "") {
     });
 
     const fileName = `NBA_${data.date.replace(/\./g,'')}_${gameId}_${hStyle.abbr}_${aStyle.abbr}.png`;
-    const outPath = path.join(process.cwd(), "output", "reports");
+    const outPath = "/Volumes/HD-CD-1/Masaki/B/BDATALAB APP/output/reports";
     if (!fs.existsSync(outPath)) fs.mkdirSync(outPath, { recursive: true });
     
-    await page.screenshot({ path: path.join(outPath, fileName) });
+    await page.screenshot({ path: `${outPath}/${fileName}` });
     await browser.close();
     console.log(`✅ 生成完了: ${fileName}`);
 }

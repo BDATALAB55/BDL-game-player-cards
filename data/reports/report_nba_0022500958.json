@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500958",
+  "date": "2026.03.12",
+  "venue": "Frost Bank Center",
+  "attendance": 19038,
+  "home": {
+    "id": "1610612759",
+    "total": {
+      "pts": 131,
+      "fgm": 43,
+      "fga": 95,
+      "f2m": 24,
+      "f2a": 48,
+      "f3m": 19,
+      "f3a": 47,
+      "ftm": 26,
+      "fta": 32,
+      "reb": 57,
+      "oreb": 12,
+      "dreb": 37,
+      "ast": 34,
+      "tov": 10,
+      "stl": 8,
+      "blk": 4,
+      "pf": 25
+    },
+    "starters": [
+      {
+        "no": "24",
+        "name": "DEVIN VASSELL",
+        "min": "31:51",
+        "pts": 18,
+        "reb": 1,
+        "ast": 3
+      },
+      {
+        "no": "30",
+        "name": "JULIAN CHAMPAGNIE",
+        "min": "22:52",
+        "pts": 8,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "7",
+        "name": "LUKE KORNET",
+        "min": "24:44",
+        "pts": 0,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "4",
+        "name": "DE'AARON FOX",
+        "min": "36:01",
+        "pts": 27,
+        "reb": 3,
+        "ast": 9
+      },
+      {
+        "no": "5",
+        "name": "STEPHON CASTLE",
+        "min": "35:23",
+        "pts": 30,
+        "reb": 11,
+        "ast": 10
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612743",
+    "total": {
+      "pts": 136,
+      "fgm": 44,
+      "fga": 88,
+      "f2m": 32,
+      "f2a": 52,
+      "f3m": 12,
+      "f3a": 36,
+      "ftm": 36,
+      "fta": 38,
+      "reb": 50,
+      "oreb": 7,
+      "dreb": 40,
+      "ast": 27,
+      "tov": 10,
+      "stl": 8,
+      "blk": 4,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "CAMERON JOHNSON",
+        "min": "30:47",
+        "pts": 15,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "SPENCER JONES",
+        "min": "32:47",
+        "pts": 19,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "15",
+        "name": "NIKOLA JOKIĆ",
+        "min": "38:59",
+        "pts": 31,
+        "reb": 20,
+        "ast": 12
+      },
+      {
+        "no": "0",
+        "name": "CHRISTIAN BRAUN",
+        "min": "37:42",
+        "pts": 11,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "27",
+        "name": "JAMAL MURRAY",
+        "min": "39:50",
+        "pts": 39,
+        "reb": 2,
+        "ast": 7
+      }
+    ]
+  }
+}

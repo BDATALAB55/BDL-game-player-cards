@@ -1,0 +1,134 @@
+{
+  "gameId": "0022501000",
+  "date": "2026.03.18",
+  "venue": "Barclays Center",
+  "attendance": 17548,
+  "home": {
+    "id": "1610612751",
+    "total": {
+      "pts": 92,
+      "fgm": 29,
+      "fga": 79,
+      "f2m": 18,
+      "f2a": 44,
+      "f3m": 11,
+      "f3a": 35,
+      "ftm": 23,
+      "fta": 31,
+      "reb": 53,
+      "oreb": 11,
+      "dreb": 30,
+      "ast": 17,
+      "tov": 23,
+      "stl": 8,
+      "blk": 4,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "DANNY WOLF",
+        "min": "22:34",
+        "pts": 6,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "07:57",
+        "pts": 3,
+        "reb": 2,
+        "ast": 0
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "22:37",
+        "pts": 4,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "4",
+        "name": "DRAKE POWELL",
+        "min": "16:22",
+        "pts": 3,
+        "reb": 0,
+        "ast": 0
+      },
+      {
+        "no": "88",
+        "name": "NOLAN TRAORE",
+        "min": "26:55",
+        "pts": 13,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612760",
+    "total": {
+      "pts": 121,
+      "fgm": 45,
+      "fga": 85,
+      "f2m": 31,
+      "f2a": 50,
+      "f3m": 14,
+      "f3a": 35,
+      "ftm": 17,
+      "fta": 22,
+      "reb": 52,
+      "oreb": 9,
+      "dreb": 36,
+      "ast": 26,
+      "tov": 17,
+      "stl": 16,
+      "blk": 5,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "22",
+        "name": "CASON WALLACE",
+        "min": "28:25",
+        "pts": 6,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "21",
+        "name": "AARON WIGGINS",
+        "min": "33:34",
+        "pts": 17,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "CHET HOLMGREN",
+        "min": "21:55",
+        "pts": 11,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "AJAY MITCHELL",
+        "min": "22:54",
+        "pts": 10,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "SHAI GILGEOUS-ALEXANDER",
+        "min": "25:34",
+        "pts": 20,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  }
+}

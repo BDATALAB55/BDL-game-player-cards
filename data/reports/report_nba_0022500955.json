@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500955",
+  "date": "2026.03.12",
+  "venue": "Kia Center",
+  "attendance": 17321,
+  "home": {
+    "id": "1610612753",
+    "total": {
+      "pts": 136,
+      "fgm": 47,
+      "fga": 100,
+      "f2m": 32,
+      "f2a": 66,
+      "f3m": 15,
+      "f3a": 34,
+      "ftm": 27,
+      "fta": 34,
+      "reb": 64,
+      "oreb": 11,
+      "dreb": 41,
+      "ast": 30,
+      "tov": 13,
+      "stl": 12,
+      "blk": 5,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "TRISTAN DA SILVA",
+        "min": "41:04",
+        "pts": 26,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "42:19",
+        "pts": 18,
+        "reb": 10,
+        "ast": 5
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "33:48",
+        "pts": 19,
+        "reb": 11,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "42:03",
+        "pts": 22,
+        "reb": 1,
+        "ast": 6
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "34:04",
+        "pts": 28,
+        "reb": 4,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612764",
+    "total": {
+      "pts": 131,
+      "fgm": 48,
+      "fga": 105,
+      "f2m": 34,
+      "f2a": 59,
+      "f3m": 14,
+      "f3a": 46,
+      "ftm": 21,
+      "fta": 24,
+      "reb": 56,
+      "oreb": 14,
+      "dreb": 35,
+      "ast": 26,
+      "tov": 15,
+      "stl": 7,
+      "blk": 10,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "BILAL COULIBALY",
+        "min": "36:54",
+        "pts": 29,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "27",
+        "name": "WILL RILEY",
+        "min": "33:07",
+        "pts": 8,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "20",
+        "name": "ALEX SARR",
+        "min": "23:05",
+        "pts": 16,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "12",
+        "name": "TRE JOHNSON",
+        "min": "22:34",
+        "pts": 3,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "TRAE YOUNG",
+        "min": "21:14",
+        "pts": 15,
+        "reb": 3,
+        "ast": 6
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500923",
+  "date": "2026.03.08",
+  "venue": "Kaseya Center",
+  "attendance": 19700,
+  "home": {
+    "id": "1610612748",
+    "total": {
+      "pts": 121,
+      "fgm": 43,
+      "fga": 93,
+      "f2m": 31,
+      "f2a": 60,
+      "f3m": 12,
+      "f3a": 33,
+      "ftm": 23,
+      "fta": 25,
+      "reb": 60,
+      "oreb": 13,
+      "dreb": 36,
+      "ast": 31,
+      "tov": 11,
+      "stl": 9,
+      "blk": 5,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "9",
+        "name": "PELLE LARSSON",
+        "min": "32:45",
+        "pts": 10,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "15",
+        "name": "MYRON GARDNER",
+        "min": "16:29",
+        "pts": 4,
+        "reb": 6,
+        "ast": 2
+      },
+      {
+        "no": "13",
+        "name": "BAM ADEBAYO",
+        "min": "34:02",
+        "pts": 24,
+        "reb": 9,
+        "ast": 6
+      },
+      {
+        "no": "14",
+        "name": "TYLER HERRO",
+        "min": "30:18",
+        "pts": 25,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "45",
+        "name": "DAVION MITCHELL",
+        "min": "24:17",
+        "pts": 8,
+        "reb": 2,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612765",
+    "total": {
+      "pts": 110,
+      "fgm": 40,
+      "fga": 90,
+      "f2m": 29,
+      "f2a": 53,
+      "f3m": 11,
+      "f3a": 37,
+      "ftm": 19,
+      "fta": 24,
+      "reb": 48,
+      "oreb": 13,
+      "dreb": 26,
+      "ast": 26,
+      "tov": 11,
+      "stl": 5,
+      "blk": 12,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "23:55",
+        "pts": 3,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "12",
+        "name": "TOBIAS HARRIS",
+        "min": "24:16",
+        "pts": 9,
+        "reb": 1,
+        "ast": 0
+      },
+      {
+        "no": "0",
+        "name": "JALEN DUREN",
+        "min": "26:07",
+        "pts": 24,
+        "reb": 5,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "35:09",
+        "pts": 26,
+        "reb": 1,
+        "ast": 10
+      },
+      {
+        "no": "25",
+        "name": "MARCUS SASSER",
+        "min": "19:29",
+        "pts": 2,
+        "reb": 2,
+        "ast": 2
+      }
+    ]
+  }
+}

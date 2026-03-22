@@ -3,7 +3,7 @@ const path = require("path");
 
 async function fetchNbaReportData(gameId) {
     // 実行ディレクトリを基準に保存先を設定
-    const outDir = path.join(process.cwd(), "data", "reports");
+    const outDir = "/Volumes/HD-CD-1/Masaki/B/BDATALAB APP/data/reports";
     if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
     const url = `https://cdn.nba.com/static/json/liveData/boxscore/boxscore_${gameId}.json`;
@@ -63,7 +63,9 @@ async function fetchNbaReportData(gameId) {
             away: mapTeam(game.awayTeam)
         };
 
-        fs.writeFileSync(path.join(outDir, `report_nba_${gameId}.json`), JSON.stringify(result, null, 2));
+        const fileName = `report_nba_${gameId}.json`;
+        fs.writeFileSync(`${outDir}/${fileName}`, JSON.stringify(result, null, 2));
+        
         return result;
     } catch (e) { 
         console.error(`❌ Game ID ${gameId} の取得中にエラーが発生しました:`, e.message); 

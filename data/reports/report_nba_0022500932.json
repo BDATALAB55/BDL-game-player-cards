@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500932",
+  "date": "2026.03.09",
+  "venue": "Barclays Center",
+  "attendance": 16543,
+  "home": {
+    "id": "1610612751",
+    "total": {
+      "pts": 126,
+      "fgm": 47,
+      "fga": 85,
+      "f2m": 30,
+      "f2a": 52,
+      "f3m": 17,
+      "f3a": 33,
+      "ftm": 15,
+      "fta": 19,
+      "reb": 50,
+      "oreb": 10,
+      "dreb": 33,
+      "ast": 35,
+      "tov": 19,
+      "stl": 10,
+      "blk": 9,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "DANNY WOLF",
+        "min": "27:34",
+        "pts": 14,
+        "reb": 9,
+        "ast": 2
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "20:18",
+        "pts": 10,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "33",
+        "name": "NIC CLAXTON",
+        "min": "21:01",
+        "pts": 9,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "4",
+        "name": "DRAKE POWELL",
+        "min": "26:40",
+        "pts": 9,
+        "reb": 3,
+        "ast": 2
+      },
+      {
+        "no": "88",
+        "name": "NOLAN TRAORE",
+        "min": "23:08",
+        "pts": 17,
+        "reb": 1,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612763",
+    "total": {
+      "pts": 115,
+      "fgm": 40,
+      "fga": 92,
+      "f2m": 26,
+      "f2a": 57,
+      "f3m": 14,
+      "f3a": 35,
+      "ftm": 21,
+      "fta": 25,
+      "reb": 48,
+      "oreb": 13,
+      "dreb": 23,
+      "ast": 25,
+      "tov": 14,
+      "stl": 9,
+      "blk": 8,
+      "pf": 15
+    },
+    "starters": [
+      {
+        "no": "0",
+        "name": "JAYLEN WELLS",
+        "min": "26:29",
+        "pts": 17,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "45",
+        "name": "GG JACKSON",
+        "min": "26:15",
+        "pts": 18,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "18",
+        "name": "OLIVIER-MAXENCE PROSPER",
+        "min": "32:26",
+        "pts": 15,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "24",
+        "name": "CAM SPENCER",
+        "min": "26:20",
+        "pts": 6,
+        "reb": 2,
+        "ast": 8
+      },
+      {
+        "no": "10",
+        "name": "JAVON SMALL",
+        "min": "32:29",
+        "pts": 19,
+        "reb": 7,
+        "ast": 3
+      }
+    ]
+  }
+}

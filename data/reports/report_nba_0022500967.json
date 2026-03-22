@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500967",
+  "date": "2026.03.13",
+  "venue": "Moda Center",
+  "attendance": 17352,
+  "home": {
+    "id": "1610612757",
+    "total": {
+      "pts": 124,
+      "fgm": 46,
+      "fga": 89,
+      "f2m": 29,
+      "f2a": 43,
+      "f3m": 17,
+      "f3a": 46,
+      "ftm": 15,
+      "fta": 16,
+      "reb": 52,
+      "oreb": 14,
+      "dreb": 35,
+      "ast": 34,
+      "tov": 24,
+      "stl": 16,
+      "blk": 12,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "33",
+        "name": "TOUMANI CAMARA",
+        "min": "22:48",
+        "pts": 5,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "9",
+        "name": "JERAMI GRANT",
+        "min": "25:20",
+        "pts": 9,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "23",
+        "name": "DONOVAN CLINGAN",
+        "min": "35:03",
+        "pts": 21,
+        "reb": 15,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "JRUE HOLIDAY",
+        "min": "31:59",
+        "pts": 25,
+        "reb": 5,
+        "ast": 8
+      },
+      {
+        "no": "8",
+        "name": "DENI AVDIJA",
+        "min": "32:11",
+        "pts": 17,
+        "reb": 6,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612762",
+    "total": {
+      "pts": 114,
+      "fgm": 42,
+      "fga": 92,
+      "f2m": 29,
+      "f2a": 62,
+      "f3m": 13,
+      "f3a": 30,
+      "ftm": 17,
+      "fta": 22,
+      "reb": 47,
+      "oreb": 10,
+      "dreb": 26,
+      "ast": 28,
+      "tov": 18,
+      "stl": 16,
+      "blk": 3,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "CODY WILLIAMS",
+        "min": "36:26",
+        "pts": 19,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "28",
+        "name": "BRICE SENSABAUGH",
+        "min": "29:16",
+        "pts": 31,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "22",
+        "name": "KYLE FILIPOWSKI",
+        "min": "24:51",
+        "pts": 11,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "19",
+        "name": "ACE BAILEY",
+        "min": "07:16",
+        "pts": 8,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "8",
+        "name": "ISAIAH COLLIER",
+        "min": "29:47",
+        "pts": 17,
+        "reb": 3,
+        "ast": 9
+      }
+    ]
+  }
+}

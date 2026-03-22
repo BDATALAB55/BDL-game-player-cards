@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500983",
+  "date": "2026.03.16",
+  "venue": "State Farm Arena",
+  "attendance": 18138,
+  "home": {
+    "id": "1610612737",
+    "total": {
+      "pts": 124,
+      "fgm": 43,
+      "fga": 93,
+      "f2m": 27,
+      "f2a": 53,
+      "f3m": 16,
+      "f3a": 40,
+      "ftm": 22,
+      "fta": 29,
+      "reb": 67,
+      "oreb": 15,
+      "dreb": 39,
+      "ast": 33,
+      "tov": 13,
+      "stl": 5,
+      "blk": 3,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "35:42",
+        "pts": 15,
+        "reb": 12,
+        "ast": 3
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "36:53",
+        "pts": 24,
+        "reb": 15,
+        "ast": 13
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "37:09",
+        "pts": 15,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "36:50",
+        "pts": 41,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "31:39",
+        "pts": 9,
+        "reb": 2,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612753",
+    "total": {
+      "pts": 112,
+      "fgm": 40,
+      "fga": 95,
+      "f2m": 26,
+      "f2a": 52,
+      "f3m": 14,
+      "f3a": 43,
+      "ftm": 18,
+      "fta": 23,
+      "reb": 51,
+      "oreb": 8,
+      "dreb": 32,
+      "ast": 20,
+      "tov": 11,
+      "stl": 9,
+      "blk": 3,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "TRISTAN DA SILVA",
+        "min": "27:44",
+        "pts": 7,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "33:22",
+        "pts": 18,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "28:10",
+        "pts": 17,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "31:12",
+        "pts": 18,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "28:25",
+        "pts": 8,
+        "reb": 6,
+        "ast": 5
+      }
+    ]
+  }
+}

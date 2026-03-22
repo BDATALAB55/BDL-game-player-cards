@@ -5,7 +5,7 @@ const { chromium } = require("playwright");
 
 async function renderNbaPlayerCards(gameId, roundText = "") {
     // --- 修正箇所：パスをプロジェクトルート基準に変更 ---
-    const dataPath = path.join(process.cwd(), "data", "raw", `game_players_${gameId}.json`);
+    const dataPath = `/Volumes/HD-CD-1/Masaki/B/BDATALAB APP/data/raw/game_players_${gameId}.json`;
     const colorPath = path.join(process.cwd(), "data", "NBA_team_colors.json");
     
     const gameData = JSON.parse(fs.readFileSync(dataPath, "utf8"));
@@ -17,8 +17,8 @@ async function renderNbaPlayerCards(gameId, roundText = "") {
     const aStyle = getStyle(gameData.awayId);
 
     const folderName = `NBA_Cards_${gameId}_${gameData.date.replace(/\./g,'')}`;
-    // 保存先を output/players に設定
-    const outputDir = path.join(process.cwd(), "output", "players", folderName);
+    
+    const outputDir = `/Volumes/HD-CD-1/Masaki/B/BDATALAB APP/output/players/${folderName}`;
     if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
 
     const templateHtml = fs.readFileSync(path.join(process.cwd(), "template", "NBA_player.html"), "utf8");
@@ -128,7 +128,7 @@ async function renderNbaPlayerCards(gameId, roundText = "") {
 
         const safeName = player.name.replace(/\s+/g, '_');
         // 保存ファイル名
-        await page.screenshot({ path: path.join(outputDir, `${pStyle.abbr}_${player.no}_${safeName}.png`) });
+        await page.screenshot({ path: `${outputDir}/${pStyle.abbr}_${player.no}_${safeName}.png` });
     }
 
     await browser.close();

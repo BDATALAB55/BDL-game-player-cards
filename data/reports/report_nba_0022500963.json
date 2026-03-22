@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500963",
+  "date": "2026.03.13",
+  "venue": "Scotiabank Arena",
+  "attendance": 19195,
+  "home": {
+    "id": "1610612761",
+    "total": {
+      "pts": 122,
+      "fgm": 46,
+      "fga": 86,
+      "f2m": 32,
+      "f2a": 59,
+      "f3m": 14,
+      "f3a": 27,
+      "ftm": 16,
+      "fta": 20,
+      "reb": 51,
+      "oreb": 8,
+      "dreb": 36,
+      "ast": 25,
+      "tov": 10,
+      "stl": 6,
+      "blk": 3,
+      "pf": 27
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "38:38",
+        "pts": 36,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "31:27",
+        "pts": 14,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "19",
+        "name": "JAKOB POELTL",
+        "min": "20:58",
+        "pts": 6,
+        "reb": 6,
+        "ast": 1
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "35:07",
+        "pts": 22,
+        "reb": 6,
+        "ast": 5
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "37:48",
+        "pts": 17,
+        "reb": 4,
+        "ast": 1
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612756",
+    "total": {
+      "pts": 115,
+      "fgm": 38,
+      "fga": 80,
+      "f2m": 20,
+      "f2a": 38,
+      "f3m": 18,
+      "f3a": 42,
+      "ftm": 21,
+      "fta": 30,
+      "reb": 44,
+      "oreb": 6,
+      "dreb": 28,
+      "ast": 20,
+      "tov": 11,
+      "stl": 5,
+      "blk": 6,
+      "pf": 21
+    },
+    "starters": [
+      {
+        "no": "4",
+        "name": "JALEN GREEN",
+        "min": "35:17",
+        "pts": 34,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "00",
+        "name": "ROYCE O'NEALE",
+        "min": "28:06",
+        "pts": 6,
+        "reb": 6,
+        "ast": 4
+      },
+      {
+        "no": "11",
+        "name": "OSO IGHODARO",
+        "min": "24:04",
+        "pts": 5,
+        "reb": 6,
+        "ast": 0
+      },
+      {
+        "no": "1",
+        "name": "DEVIN BOOKER",
+        "min": "33:44",
+        "pts": 31,
+        "reb": 3,
+        "ast": 0
+      },
+      {
+        "no": "12",
+        "name": "COLLIN GILLESPIE",
+        "min": "25:47",
+        "pts": 0,
+        "reb": 3,
+        "ast": 2
+      }
+    ]
+  }
+}

@@ -60,7 +60,7 @@ function getTeamStyle(rawName) {
 // メイン関数：選手カードの生成
 async function renderPlayers(gameId) {
     // 修正：スクレイピング側（fetchGameBoxscore）の出力名に合わせて report_${gameId}.json を読み込む
-    const dataPath = path.join(process.cwd(), "data", "reports", `report_${gameId}.json`);
+    const dataPath = `/Volumes/HD-CD-1/Masaki/B/BDATALAB APP/data/reports/report_${gameId}.json`;
     const templatePath = path.join(process.cwd(), "template", "player.html");
 
     // 1. JSONデータの存在チェックと読み込み
@@ -75,7 +75,7 @@ async function renderPlayers(gameId) {
     const awayInitial = getTeamStyle(gameData.awayName).city.replace(/\s+/g, "_");
     const safeDate = (gameData.date || "").replace(/\./g, "");
     const folderName = `game_${gameId}_${homeInitial}_${awayInitial}_${safeDate}`;
-    const outputDir = path.join(process.cwd(), "output", "Bplayers", folderName);
+    const outputDir = `/Volumes/HD-CD-1/Masaki/B/BDATALAB APP/output/Bplayers/${folderName}`;
 
     // 3. ディレクトリの初期化
     if (fs.existsSync(outputDir)) fs.rmSync(outputDir, { recursive: true, force: true });
@@ -259,7 +259,7 @@ async function renderPlayers(gameId) {
 
         // ファイル名は記号なし（OMARA）、カード内は記号あり（O'MARA）になります
         const fileName = `${safeTeam}_${player.no}_${safeName}_${safeDateStr}.png`;
-        await page.screenshot({ path: path.join(outputDir, fileName) });
+        await page.screenshot({ path: `${outputDir}/${fileName}` });
     }
 
     await browser.close();

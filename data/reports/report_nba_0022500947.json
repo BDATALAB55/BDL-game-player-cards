@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500947",
+  "date": "2026.03.11",
+  "venue": "Kia Center",
+  "attendance": 18697,
+  "home": {
+    "id": "1610612753",
+    "total": {
+      "pts": 128,
+      "fgm": 44,
+      "fga": 85,
+      "f2m": 32,
+      "f2a": 50,
+      "f3m": 12,
+      "f3a": 35,
+      "ftm": 28,
+      "fta": 37,
+      "reb": 54,
+      "oreb": 8,
+      "dreb": 34,
+      "ast": 29,
+      "tov": 6,
+      "stl": 6,
+      "blk": 4,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "23",
+        "name": "TRISTAN DA SILVA",
+        "min": "34:17",
+        "pts": 23,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "PAOLO BANCHERO",
+        "min": "37:00",
+        "pts": 25,
+        "reb": 8,
+        "ast": 7
+      },
+      {
+        "no": "34",
+        "name": "WENDELL CARTER JR.",
+        "min": "35:23",
+        "pts": 11,
+        "reb": 11,
+        "ast": 4
+      },
+      {
+        "no": "3",
+        "name": "DESMOND BANE",
+        "min": "35:44",
+        "pts": 35,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "4",
+        "name": "JALEN SUGGS",
+        "min": "31:48",
+        "pts": 12,
+        "reb": 2,
+        "ast": 4
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612739",
+    "total": {
+      "pts": 122,
+      "fgm": 44,
+      "fga": 89,
+      "f2m": 27,
+      "f2a": 45,
+      "f3m": 17,
+      "f3a": 44,
+      "ftm": 17,
+      "fta": 26,
+      "reb": 52,
+      "oreb": 12,
+      "dreb": 30,
+      "ast": 24,
+      "tov": 9,
+      "stl": 3,
+      "blk": 5,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "SAM MERRILL",
+        "min": "30:12",
+        "pts": 13,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "32",
+        "name": "DEAN WADE",
+        "min": "19:58",
+        "pts": 0,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "4",
+        "name": "EVAN MOBLEY",
+        "min": "31:39",
+        "pts": 18,
+        "reb": 13,
+        "ast": 4
+      },
+      {
+        "no": "45",
+        "name": "DONOVAN MITCHELL",
+        "min": "36:07",
+        "pts": 25,
+        "reb": 5,
+        "ast": 5
+      },
+      {
+        "no": "1",
+        "name": "JAMES HARDEN",
+        "min": "36:50",
+        "pts": 30,
+        "reb": 5,
+        "ast": 8
+      }
+    ]
+  }
+}

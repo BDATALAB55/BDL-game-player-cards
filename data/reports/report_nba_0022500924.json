@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500924",
+  "date": "2026.03.08",
+  "venue": "Scotiabank Arena",
+  "attendance": 19800,
+  "home": {
+    "id": "1610612761",
+    "total": {
+      "pts": 122,
+      "fgm": 48,
+      "fga": 95,
+      "f2m": 38,
+      "f2a": 59,
+      "f3m": 10,
+      "f3a": 36,
+      "ftm": 16,
+      "fta": 22,
+      "reb": 54,
+      "oreb": 8,
+      "dreb": 34,
+      "ast": 39,
+      "tov": 8,
+      "stl": 11,
+      "blk": 4,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "31:21",
+        "pts": 11,
+        "reb": 6,
+        "ast": 6
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "34:46",
+        "pts": 17,
+        "reb": 4,
+        "ast": 5
+      },
+      {
+        "no": "19",
+        "name": "JAKOB POELTL",
+        "min": "30:28",
+        "pts": 16,
+        "reb": 10,
+        "ast": 4
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "33:39",
+        "pts": 31,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "31:15",
+        "pts": 10,
+        "reb": 2,
+        "ast": 8
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612742",
+    "total": {
+      "pts": 92,
+      "fgm": 35,
+      "fga": 88,
+      "f2m": 30,
+      "f2a": 58,
+      "f3m": 5,
+      "f3a": 30,
+      "ftm": 17,
+      "fta": 20,
+      "reb": 57,
+      "oreb": 13,
+      "dreb": 34,
+      "ast": 22,
+      "tov": 19,
+      "stl": 5,
+      "blk": 7,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "20",
+        "name": "KHRIS MIDDLETON",
+        "min": "19:11",
+        "pts": 6,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "25",
+        "name": "P.J. WASHINGTON",
+        "min": "30:55",
+        "pts": 9,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "21",
+        "name": "DANIEL GAFFORD",
+        "min": "23:20",
+        "pts": 21,
+        "reb": 11,
+        "ast": 3
+      },
+      {
+        "no": "32",
+        "name": "COOPER FLAGG",
+        "min": "29:32",
+        "pts": 17,
+        "reb": 8,
+        "ast": 6
+      },
+      {
+        "no": "00",
+        "name": "MAX CHRISTIE",
+        "min": "25:33",
+        "pts": 2,
+        "reb": 3,
+        "ast": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022501002",
+  "date": "2026.03.18",
+  "venue": "United Center",
+  "attendance": 19082,
+  "home": {
+    "id": "1610612741",
+    "total": {
+      "pts": 109,
+      "fgm": 40,
+      "fga": 85,
+      "f2m": 31,
+      "f2a": 54,
+      "f3m": 9,
+      "f3a": 31,
+      "ftm": 20,
+      "fta": 28,
+      "reb": 42,
+      "oreb": 9,
+      "dreb": 27,
+      "ast": 24,
+      "tov": 19,
+      "stl": 13,
+      "blk": 2,
+      "pf": 24
+    },
+    "starters": [
+      {
+        "no": "14",
+        "name": "MATAS BUZELIS",
+        "min": "30:57",
+        "pts": 19,
+        "reb": 7,
+        "ast": 1
+      },
+      {
+        "no": "11",
+        "name": "LEONARD MILLER",
+        "min": "26:30",
+        "pts": 13,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "25",
+        "name": "JALEN SMITH",
+        "min": "17:18",
+        "pts": 10,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "30",
+        "name": "TRE JONES",
+        "min": "23:44",
+        "pts": 6,
+        "reb": 2,
+        "ast": 5
+      },
+      {
+        "no": "3",
+        "name": "JOSH GIDDEY",
+        "min": "27:03",
+        "pts": 9,
+        "reb": 0,
+        "ast": 3
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612761",
+    "total": {
+      "pts": 139,
+      "fgm": 48,
+      "fga": 84,
+      "f2m": 34,
+      "f2a": 51,
+      "f3m": 14,
+      "f3a": 33,
+      "ftm": 29,
+      "fta": 33,
+      "reb": 51,
+      "oreb": 6,
+      "dreb": 37,
+      "ast": 33,
+      "tov": 18,
+      "stl": 6,
+      "blk": 3,
+      "pf": 23
+    },
+    "starters": [
+      {
+        "no": "3",
+        "name": "BRANDON INGRAM",
+        "min": "28:47",
+        "pts": 18,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "4",
+        "name": "SCOTTIE BARNES",
+        "min": "24:59",
+        "pts": 18,
+        "reb": 7,
+        "ast": 3
+      },
+      {
+        "no": "19",
+        "name": "JAKOB POELTL",
+        "min": "20:59",
+        "pts": 17,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "9",
+        "name": "RJ BARRETT",
+        "min": "26:58",
+        "pts": 23,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "5",
+        "name": "IMMANUEL QUICKLEY",
+        "min": "25:44",
+        "pts": 10,
+        "reb": 2,
+        "ast": 7
+      }
+    ]
+  }
+}

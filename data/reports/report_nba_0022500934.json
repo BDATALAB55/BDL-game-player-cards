@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500934",
+  "date": "2026.03.09",
+  "venue": "Delta Center",
+  "attendance": 18186,
+  "home": {
+    "id": "1610612762",
+    "total": {
+      "pts": 119,
+      "fgm": 40,
+      "fga": 83,
+      "f2m": 28,
+      "f2a": 49,
+      "f3m": 12,
+      "f3a": 34,
+      "ftm": 27,
+      "fta": 29,
+      "reb": 55,
+      "oreb": 13,
+      "dreb": 37,
+      "ast": 29,
+      "tov": 17,
+      "stl": 8,
+      "blk": 4,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "28",
+        "name": "BRICE SENSABAUGH",
+        "min": "28:31",
+        "pts": 21,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "5",
+        "name": "CODY WILLIAMS",
+        "min": "43:07",
+        "pts": 12,
+        "reb": 3,
+        "ast": 7
+      },
+      {
+        "no": "22",
+        "name": "KYLE FILIPOWSKI",
+        "min": "24:56",
+        "pts": 19,
+        "reb": 15,
+        "ast": 5
+      },
+      {
+        "no": "55",
+        "name": "JOHN KONCHAR",
+        "min": "32:55",
+        "pts": 2,
+        "reb": 10,
+        "ast": 3
+      },
+      {
+        "no": "3",
+        "name": "KEYONTE GEORGE",
+        "min": "24:09",
+        "pts": 15,
+        "reb": 0,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612744",
+    "total": {
+      "pts": 116,
+      "fgm": 43,
+      "fga": 99,
+      "f2m": 27,
+      "f2a": 47,
+      "f3m": 16,
+      "f3a": 52,
+      "ftm": 14,
+      "fta": 21,
+      "reb": 53,
+      "oreb": 19,
+      "dreb": 27,
+      "ast": 33,
+      "tov": 9,
+      "stl": 11,
+      "blk": 2,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "15",
+        "name": "GUI SANTOS",
+        "min": "33:27",
+        "pts": 15,
+        "reb": 8,
+        "ast": 5
+      },
+      {
+        "no": "23",
+        "name": "DRAYMOND GREEN",
+        "min": "32:28",
+        "pts": 6,
+        "reb": 2,
+        "ast": 11
+      },
+      {
+        "no": "21",
+        "name": "QUINTEN POST",
+        "min": "25:26",
+        "pts": 10,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "8",
+        "name": "DE'ANTHONY MELTON",
+        "min": "19:56",
+        "pts": 22,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "2",
+        "name": "BRANDIN PODZIEMSKI",
+        "min": "35:07",
+        "pts": 14,
+        "reb": 8,
+        "ast": 4
+      }
+    ]
+  }
+}

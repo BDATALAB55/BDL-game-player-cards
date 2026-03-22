@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500970",
+  "date": "2026.03.14",
+  "venue": "State Farm Arena",
+  "attendance": 16013,
+  "home": {
+    "id": "1610612737",
+    "total": {
+      "pts": 122,
+      "fgm": 47,
+      "fga": 95,
+      "f2m": 33,
+      "f2a": 57,
+      "f3m": 14,
+      "f3a": 38,
+      "ftm": 14,
+      "fta": 18,
+      "reb": 51,
+      "oreb": 15,
+      "dreb": 32,
+      "ast": 29,
+      "tov": 13,
+      "stl": 10,
+      "blk": 1,
+      "pf": 19
+    },
+    "starters": [
+      {
+        "no": "5",
+        "name": "DYSON DANIELS",
+        "min": "29:03",
+        "pts": 8,
+        "reb": 7,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "JALEN JOHNSON",
+        "min": "34:44",
+        "pts": 23,
+        "reb": 10,
+        "ast": 12
+      },
+      {
+        "no": "17",
+        "name": "ONYEKA OKONGWU",
+        "min": "27:13",
+        "pts": 4,
+        "reb": 4,
+        "ast": 4
+      },
+      {
+        "no": "7",
+        "name": "NICKEIL ALEXANDER-WALKER",
+        "min": "34:01",
+        "pts": 20,
+        "reb": 3,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "CJ MCCOLLUM",
+        "min": "26:58",
+        "pts": 30,
+        "reb": 3,
+        "ast": 2
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612749",
+    "total": {
+      "pts": 99,
+      "fgm": 37,
+      "fga": 76,
+      "f2m": 25,
+      "f2a": 39,
+      "f3m": 12,
+      "f3a": 37,
+      "ftm": 13,
+      "fta": 18,
+      "reb": 45,
+      "oreb": 5,
+      "dreb": 32,
+      "ast": 24,
+      "tov": 20,
+      "stl": 5,
+      "blk": 4,
+      "pf": 18
+    },
+    "starters": [
+      {
+        "no": "18",
+        "name": "KYLE KUZMA",
+        "min": "24:02",
+        "pts": 11,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "00",
+        "name": "JERICHO SIMS",
+        "min": "25:28",
+        "pts": 7,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "3",
+        "name": "MYLES TURNER",
+        "min": "24:14",
+        "pts": 8,
+        "reb": 6,
+        "ast": 3
+      },
+      {
+        "no": "7",
+        "name": "KEVIN PORTER JR.",
+        "min": "30:07",
+        "pts": 18,
+        "reb": 7,
+        "ast": 7
+      },
+      {
+        "no": "13",
+        "name": "RYAN ROLLINS",
+        "min": "30:51",
+        "pts": 22,
+        "reb": 3,
+        "ast": 8
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022501005",
+  "date": "2026.03.18",
+  "venue": "Smoothie King Center",
+  "attendance": 16546,
+  "home": {
+    "id": "1610612740",
+    "total": {
+      "pts": 124,
+      "fgm": 44,
+      "fga": 83,
+      "f2m": 28,
+      "f2a": 46,
+      "f3m": 16,
+      "f3a": 37,
+      "ftm": 20,
+      "fta": 21,
+      "reb": 48,
+      "oreb": 13,
+      "dreb": 27,
+      "ast": 32,
+      "tov": 18,
+      "stl": 12,
+      "blk": 6,
+      "pf": 14
+    },
+    "starters": [
+      {
+        "no": "41",
+        "name": "SADDIQ BEY",
+        "min": "34:57",
+        "pts": 25,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "1",
+        "name": "ZION WILLIAMSON",
+        "min": "27:41",
+        "pts": 14,
+        "reb": 4,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "HERBERT JONES",
+        "min": "26:16",
+        "pts": 7,
+        "reb": 3,
+        "ast": 3
+      },
+      {
+        "no": "25",
+        "name": "TREY MURPHY III",
+        "min": "39:41",
+        "pts": 23,
+        "reb": 7,
+        "ast": 5
+      },
+      {
+        "no": "5",
+        "name": "DEJOUNTE MURRAY",
+        "min": "29:39",
+        "pts": 17,
+        "reb": 4,
+        "ast": 11
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612746",
+    "total": {
+      "pts": 109,
+      "fgm": 45,
+      "fga": 88,
+      "f2m": 36,
+      "f2a": 57,
+      "f3m": 9,
+      "f3a": 31,
+      "ftm": 10,
+      "fta": 13,
+      "reb": 39,
+      "oreb": 14,
+      "dreb": 22,
+      "ast": 24,
+      "tov": 15,
+      "stl": 10,
+      "blk": 2,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "2",
+        "name": "KAWHI LEONARD",
+        "min": "29:02",
+        "pts": 25,
+        "reb": 8,
+        "ast": 1
+      },
+      {
+        "no": "20",
+        "name": "JOHN COLLINS",
+        "min": "24:16",
+        "pts": 18,
+        "reb": 7,
+        "ast": 2
+      },
+      {
+        "no": "11",
+        "name": "BROOK LOPEZ",
+        "min": "31:28",
+        "pts": 11,
+        "reb": 5,
+        "ast": 4
+      },
+      {
+        "no": "5",
+        "name": "DERRICK JONES JR.",
+        "min": "29:00",
+        "pts": 4,
+        "reb": 2,
+        "ast": 3
+      },
+      {
+        "no": "10",
+        "name": "DARIUS GARLAND",
+        "min": "28:48",
+        "pts": 13,
+        "reb": 1,
+        "ast": 6
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500953",
+  "date": "2026.03.12",
+  "venue": "Little Caesars Arena",
+  "attendance": 20062,
+  "home": {
+    "id": "1610612765",
+    "total": {
+      "pts": 131,
+      "fgm": 48,
+      "fga": 89,
+      "f2m": 34,
+      "f2a": 54,
+      "f3m": 14,
+      "f3a": 35,
+      "ftm": 21,
+      "fta": 22,
+      "reb": 49,
+      "oreb": 10,
+      "dreb": 30,
+      "ast": 37,
+      "tov": 17,
+      "stl": 10,
+      "blk": 7,
+      "pf": 20
+    },
+    "starters": [
+      {
+        "no": "55",
+        "name": "DUNCAN ROBINSON",
+        "min": "24:44",
+        "pts": 19,
+        "reb": 2,
+        "ast": 4
+      },
+      {
+        "no": "12",
+        "name": "TOBIAS HARRIS",
+        "min": "21:40",
+        "pts": 15,
+        "reb": 5,
+        "ast": 2
+      },
+      {
+        "no": "0",
+        "name": "JALEN DUREN",
+        "min": "14:51",
+        "pts": 14,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "25",
+        "name": "MARCUS SASSER",
+        "min": "22:31",
+        "pts": 6,
+        "reb": 0,
+        "ast": 3
+      },
+      {
+        "no": "2",
+        "name": "CADE CUNNINGHAM",
+        "min": "28:23",
+        "pts": 8,
+        "reb": 5,
+        "ast": 13
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612755",
+    "total": {
+      "pts": 109,
+      "fgm": 42,
+      "fga": 90,
+      "f2m": 34,
+      "f2a": 55,
+      "f3m": 8,
+      "f3a": 35,
+      "ftm": 17,
+      "fta": 24,
+      "reb": 48,
+      "oreb": 11,
+      "dreb": 24,
+      "ast": 20,
+      "tov": 15,
+      "stl": 10,
+      "blk": 8,
+      "pf": 17
+    },
+    "starters": [
+      {
+        "no": "12",
+        "name": "TRENDON WATFORD",
+        "min": "19:39",
+        "pts": 4,
+        "reb": 2,
+        "ast": 1
+      },
+      {
+        "no": "11",
+        "name": "JUSTIN EDWARDS",
+        "min": "29:20",
+        "pts": 12,
+        "reb": 9,
+        "ast": 5
+      },
+      {
+        "no": "25",
+        "name": "DOMINICK BARLOW",
+        "min": "26:24",
+        "pts": 11,
+        "reb": 4,
+        "ast": 0
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "29:12",
+        "pts": 10,
+        "reb": 5,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "QUENTIN GRIMES",
+        "min": "32:04",
+        "pts": 14,
+        "reb": 3,
+        "ast": 5
+      }
+    ]
+  }
+}

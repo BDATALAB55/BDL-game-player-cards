@@ -1,0 +1,134 @@
+{
+  "gameId": "0022500969",
+  "date": "2026.03.14",
+  "venue": "Xfinity Mobile Arena",
+  "attendance": 18418,
+  "home": {
+    "id": "1610612755",
+    "total": {
+      "pts": 104,
+      "fgm": 38,
+      "fga": 82,
+      "f2m": 35,
+      "f2a": 57,
+      "f3m": 3,
+      "f3a": 25,
+      "ftm": 25,
+      "fta": 31,
+      "reb": 59,
+      "oreb": 8,
+      "dreb": 39,
+      "ast": 22,
+      "tov": 14,
+      "stl": 12,
+      "blk": 10,
+      "pf": 16
+    },
+    "starters": [
+      {
+        "no": "11",
+        "name": "JUSTIN EDWARDS",
+        "min": "30:55",
+        "pts": 19,
+        "reb": 4,
+        "ast": 2
+      },
+      {
+        "no": "25",
+        "name": "DOMINICK BARLOW",
+        "min": "33:21",
+        "pts": 10,
+        "reb": 8,
+        "ast": 2
+      },
+      {
+        "no": "30",
+        "name": "ADEM BONA",
+        "min": "32:46",
+        "pts": 9,
+        "reb": 10,
+        "ast": 0
+      },
+      {
+        "no": "5",
+        "name": "QUENTIN GRIMES",
+        "min": "34:05",
+        "pts": 28,
+        "reb": 8,
+        "ast": 4
+      },
+      {
+        "no": "77",
+        "name": "VJ EDGECOMBE",
+        "min": "34:56",
+        "pts": 16,
+        "reb": 4,
+        "ast": 7
+      }
+    ]
+  },
+  "away": {
+    "id": "1610612751",
+    "total": {
+      "pts": 97,
+      "fgm": 32,
+      "fga": 89,
+      "f2m": 17,
+      "f2a": 46,
+      "f3m": 15,
+      "f3a": 43,
+      "ftm": 18,
+      "fta": 21,
+      "reb": 52,
+      "oreb": 12,
+      "dreb": 30,
+      "ast": 20,
+      "tov": 17,
+      "stl": 10,
+      "blk": 5,
+      "pf": 22
+    },
+    "starters": [
+      {
+        "no": "1",
+        "name": "ZIAIRE WILLIAMS",
+        "min": "20:36",
+        "pts": 9,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "21",
+        "name": "NOAH CLOWNEY",
+        "min": "18:39",
+        "pts": 5,
+        "reb": 4,
+        "ast": 1
+      },
+      {
+        "no": "2",
+        "name": "DANNY WOLF",
+        "min": "26:21",
+        "pts": 15,
+        "reb": 10,
+        "ast": 2
+      },
+      {
+        "no": "14",
+        "name": "TERANCE MANN",
+        "min": "18:14",
+        "pts": 5,
+        "reb": 1,
+        "ast": 1
+      },
+      {
+        "no": "88",
+        "name": "NOLAN TRAORE",
+        "min": "17:01",
+        "pts": 6,
+        "reb": 1,
+        "ast": 3
+      }
+    ]
+  }
+}

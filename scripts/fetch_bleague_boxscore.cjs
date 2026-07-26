@@ -4,10 +4,90 @@ const path = require("path");
 const { chromium } = require("playwright");
 
 function loadJsonData(filename) {
-    const p = path.join(process.cwd(), "data", filename);
+    const p = path.join(__dirname, "..", "data", filename);
     return fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, "utf8")) : null;
 }
 const arenaDict = loadJsonData("arena.json") || {};
+
+function extractJsonArray(htmlText, key) {
+    const marker = `"${key}":`;
+    const markerIndex = htmlText.indexOf(marker);
+
+    if (markerIndex === -1) {
+        throw new Error(
+            `${key} が公式ページ内に見つかりません`
+        );
+    }
+
+    const arrayStart = htmlText.indexOf(
+        "[",
+        markerIndex + marker.length
+    );
+
+    if (arrayStart === -1) {
+        throw new Error(
+            `${key} の配列開始位置が見つかりません`
+        );
+    }
+
+    let depth = 0;
+    let inString = false;
+    let escaped = false;
+
+    for (
+        let index = arrayStart;
+        index < htmlText.length;
+        index += 1
+    ) {
+        const character = htmlText[index];
+
+        if (inString) {
+            if (escaped) {
+                escaped = false;
+            } else if (character === "\\") {
+                escaped = true;
+            } else if (character === '"') {
+                inString = false;
+            }
+
+            continue;
+        }
+
+        if (character === '"') {
+            inString = true;
+            continue;
+        }
+
+        if (character === "[") {
+            depth += 1;
+        } else if (character === "]") {
+            depth -= 1;
+
+            if (depth === 0) {
+                return JSON.parse(
+                    htmlText.slice(
+                        arrayStart,
+                        index + 1
+                    )
+                );
+            }
+        }
+    }
+
+    throw new Error(
+        `${key} の配列終了位置が見つかりません`
+    );
+}
+
+function normalizeEnglishName(value) {
+    return String(value || "")
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .replace(/'/g, "")
+        .replace(/\s+/g, " ")
+        .trim()
+        .toUpperCase();
+}
 
 async function fetchGameBoxscore(gameId) {
     const outDir = "/Volumes/HD-CD-1/Masaki/B/BDATALAB APP/data/reports"; 
@@ -83,6 +163,38 @@ async function fetchGameBoxscore(gameId) {
             timeout: 60000 
         });
 
+        const boxscoreHtml = await page.content();
+
+        const officialBoxscores = [
+            ...extractJsonArray(
+                boxscoreHtml,
+                "HomeBoxscores"
+            ),
+            ...extractJsonArray(
+                boxscoreHtml,
+                "AwayBoxscores"
+            )
+        ];
+
+        const englishNameByPlayer = new Map(
+            officialBoxscores.map(row => [
+                [
+                    String(
+                        row.TeamNameJ || ""
+                    ).trim(),
+                    String(
+                        row.PlayerNo || ""
+                    ).trim(),
+                    String(
+                        row.PlayerNameJ || ""
+                    ).trim()
+                ].join("|"),
+                normalizeEnglishName(
+                    row.PlayerNameE
+                )
+            ])
+        );
+
         const statsData = await page.evaluate(() => {
             const teams = document.querySelectorAll('.team-name');
             const hName = teams[0]?.innerText.trim() || "";
@@ -129,62 +241,44 @@ async function fetchGameBoxscore(gameId) {
             return { homeName: hName, awayName: aName, scoreHome, scoreAway, players };
         });
 
-        for (let p of statsData.players) {
-            if (p.detailUrl) {
-                const pPage = await context.newPage();
-                try {
-                    await pPage.goto(p.detailUrl.replace("/en/", "/"), { waitUntil: "domcontentloaded", timeout: 15000 });
-                    const nameEn = await pPage.evaluate(() => {
-                        const kvInner = document.querySelector('.rosterDetail-kv-inner');
-                        if (!kvInner) return null;
+        const missingEnglishNames = [];
 
-                        const allLines = kvInner.innerText.split('\n').map(l => l.trim());
-                        let enNameParts = [];
-                        let startIndex = -1;
+        for (const player of statsData.players) {
+            const playerKey = [
+                String(
+                    player.teamNameRaw || ""
+                ).trim(),
+                String(
+                    player.no || ""
+                ).trim(),
+                String(
+                    player.nameJp || ""
+                ).trim()
+            ].join("|");
 
-                        for (let i = 0; i < allLines.length; i++) {
-                            if (allLines[i].startsWith('#')) {
-                                startIndex = i;
-                                break;
-                            }
-                        }
+            const englishName =
+                englishNameByPlayer.get(playerKey);
 
-                        if (startIndex !== -1) {
-                            // 背番号から4行以内をスキャン
-                            for (let j = startIndex + 1; j <= startIndex + 4 && j < allLines.length; j++) {
-                                const line = allLines[j];
-                                if (line.length === 0) continue;
+            if (!englishName) {
+                missingEnglishNames.push(
+                    [
+                        player.teamNameRaw,
+                        `#${player.no}`,
+                        player.nameJp
+                    ].join(" ")
+                );
 
-                                // 日本語が出たら即終了（中黒・長音含む）
-                                const jpRegex = /[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FFF\u30FB\u30FC\u3005-\u3007]/;
-                                if (jpRegex.test(line)) break;
-
-                                if (/[A-Za-z]/.test(line)) {
-                                    if (/^(PPG|RPG|APG|BPG|SPG|EFF|AVG)$/i.test(line)) break;
-                                    enNameParts.push(line);
-                                }
-                            }
-                        }
-                        return enNameParts.length > 0 ? enNameParts.join(' ') : null;
-                    });
-
-                    if (nameEn) {
-                        // 既に大文字変換ロジックがあるので、それに合わせる
-                        p.name = nameEn
-                            .normalize("NFD")
-                            .replace(/[\u0300-\u036f]/g, "")
-                            .replace(/'/g, "")
-                            .toUpperCase();
-                    } else {
-                        p.name = p.nameJp.toUpperCase();
-                    }
-                } catch (e) { 
-                    p.name = p.nameJp.toUpperCase(); 
-                }
-                await pPage.close();
-            } else { 
-                p.name = p.nameJp.toUpperCase(); 
+                continue;
             }
+
+            player.name = englishName;
+        }
+
+        if (missingEnglishNames.length > 0) {
+            throw new Error(
+                "英語名を取得できない選手があります: " +
+                missingEnglishNames.join(", ")
+            );
         }
 
         // --- 集計処理 ---
@@ -225,7 +319,22 @@ async function fetchGameBoxscore(gameId) {
                 if (cleanKey.length < 4 && normalizedRaw !== cleanKey) return false;
                 return normalizedRaw.includes(cleanKey) || cleanKey.includes(normalizedRaw);
             });
-            venueEn = fallbackKey ? arenaDict[fallbackKey] : "";
+            if (fallbackKey) {
+                venueEn = arenaDict[fallbackKey];
+            } else {
+                const containsJapanese =
+                    /[\u3040-\u30FF\u3400-\u9FFF]/.test(
+                        cleanRaw
+                    );
+
+                const containsEnglish =
+                    /[A-Za-z]/.test(cleanRaw);
+
+                venueEn =
+                    !containsJapanese && containsEnglish
+                        ? cleanRaw
+                        : "";
+            }
         }
 
         const result = { 
@@ -245,7 +354,15 @@ async function fetchGameBoxscore(gameId) {
         console.log(`✅ 取得成功: ${result.homeName} vs ${result.awayName}`);
         console.log(`-----------------------------------------`);
 
-    } catch (e) { console.error(`❌ エラー:`, e.message); } finally { await browser.close(); }
+    } catch (e) {
+        console.error(
+            `❌ GameID ${gameId} 取得エラー:`,
+            e.message
+        );
+        throw e;
+    } finally {
+        await browser.close();
+    }
 }
 
 module.exports = { fetchGameBoxscore };

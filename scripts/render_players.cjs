@@ -5,14 +5,14 @@ const { chromium } = require("playwright");
 
 // チームカラーデータの読み込み
 function loadColorData() {
-    const p = path.join(process.cwd(), "data", "team_colors.json");
+    const p = path.join(__dirname, "..", "data", "team_colors.json");
     return JSON.parse(fs.readFileSync(p, "utf8"));
 }
 const colorData = loadColorData();
 
 // アリーナ変換データの読み込み
 function loadArenaData() {
-    const p = path.join(process.cwd(), "data", "arena.json");
+    const p = path.join(__dirname, "..", "data", "arena.json");
     if (fs.existsSync(p)) {
         try {
             return JSON.parse(fs.readFileSync(p, "utf8"));
@@ -61,12 +61,13 @@ function getTeamStyle(rawName) {
 async function renderPlayers(gameId) {
     // 修正：スクレイピング側（fetchGameBoxscore）の出力名に合わせて report_${gameId}.json を読み込む
     const dataPath = `/Volumes/HD-CD-1/Masaki/B/BDATALAB APP/data/reports/report_${gameId}.json`;
-    const templatePath = path.join(process.cwd(), "template", "player.html");
+    const templatePath = path.join(__dirname, "..", "template", "player.html");
 
     // 1. JSONデータの存在チェックと読み込み
     if (!fs.existsSync(dataPath)) {
-        console.error(`❌ データファイルが見つかりません: ${dataPath}`);
-        return;
+        throw new Error(
+            `データファイルが見つかりません: ${dataPath}`
+        );
     }
     const gameData = JSON.parse(fs.readFileSync(dataPath, "utf8"));
 
@@ -74,8 +75,13 @@ async function renderPlayers(gameId) {
     const homeInitial = getTeamStyle(gameData.homeName).city.replace(/\s+/g, "_");
     const awayInitial = getTeamStyle(gameData.awayName).city.replace(/\s+/g, "_");
     const safeDate = (gameData.date || "").replace(/\./g, "");
+    const dateFolder = safeDate.slice(2);
     const folderName = `game_${gameId}_${homeInitial}_${awayInitial}_${safeDate}`;
-    const outputDir = `/Volumes/HD-CD-1/Masaki/B/BDATALAB APP/output/Bplayers/${folderName}`;
+    const outputDir = path.join(
+        "/Volumes/HD-CD-1/Masaki/B/BDATALAB APP/output/Game Players/B2/2025-26",
+        dateFolder,
+        folderName
+    );
 
     // 3. ディレクトリの初期化
     if (fs.existsSync(outputDir)) fs.rmSync(outputDir, { recursive: true, force: true });
@@ -103,9 +109,22 @@ async function renderPlayers(gameId) {
     const awayScoreColor = (aScoreNum > hScoreNum) ? getWinColor(gameData.awayName) : awayStyle.text;
 
     const originalHtml = fs.readFileSync(templatePath, "utf8");
-    const rawVenue = (gameData.venue || gameData.venueRaw || "").trim();
-    const foundKey = Object.keys(arenaDict).find(key => rawVenue.includes(key));
-    const venueEn = foundKey ? arenaDict[foundKey] : rawVenue;
+    const rawVenue = String(gameData.venue || "").trim();
+
+    if (!rawVenue) {
+        throw new Error(
+            `英語会場名を取得できません: ${
+                gameData.venueRaw || "会場不明"
+            }`
+        );
+    }
+
+    const foundKey = Object.keys(arenaDict).find(
+        key => rawVenue.includes(key)
+    );
+    const venueEn = foundKey
+        ? arenaDict[foundKey]
+        : rawVenue;
 
     // ブラウザの起動
     const browser = await chromium.launch({ headless: true });
@@ -123,7 +142,8 @@ async function renderPlayers(gameId) {
             "平 寿哉": "TOSHIYA TAIRA",
             "ショーン・オマラ": "SEAN O'MARA",
             "SEAN OMARA": "SEAN O'MARA",
-            "ドゥシャン・リスティッチ": "DUSAN RISTIC"
+            "ドゥシャン・リスティッチ": "DUSAN RISTIC",
+
         };
 
         let displayPlayerName = playerNameMap[player.name] || player.name || player.nameJp;

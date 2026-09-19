@@ -9,22 +9,113 @@ const arenaDict = JSON.parse(fs.readFileSync(path.join(process.cwd(), "data", "a
 
 function getTeamStyle(rawName) {
     const name = String(rawName || "").toUpperCase();
-    const aliasKey = Object.keys(colorData.aliases).find(k => name.includes(k.toUpperCase()));
-    const internalKey = aliasKey ? colorData.aliases[aliasKey] : null;
+
+    const aliasKeys = Object.keys(colorData.aliases);
+
+    const exactAliasKey = aliasKeys.find(
+        k => name === k.toUpperCase()
+    );
+
+    const partialAliasKey = aliasKeys
+        .slice()
+        .sort((a, b) => b.length - a.length)
+        .find(
+            k => name.includes(k.toUpperCase())
+        );
+
+    const aliasKey =
+        exactAliasKey || partialAliasKey;
+
+    const internalKey =
+        aliasKey ? colorData.aliases[aliasKey] : null;
 
     if (internalKey && colorData.teams[internalKey]) {
         const teamInfo = colorData.teams[internalKey];
+
+        const season = process.env.B_REPORT_SEASON || "";
+        const seasonMatch = season.match(/^(\d{4})/);
+        const seasonStartYear = seasonMatch
+            ? Number(seasonMatch[1])
+            : null;
+
+        // 仙台89ERS：2024-25以前は旧イエロー
+        const isOldSendai =
+            internalKey === "Sendai"
+            && seasonStartYear !== null
+            && seasonStartYear <= 2024;
+
+        // 信州：2026-27から新カラー
+        const isNewShinshu =
+            internalKey === "Shinshu"
+            && seasonStartYear !== null
+            && seasonStartYear >= 2026;
+
+        // サンロッカーズ：2026-27からTOKYO SRカラー
+        const isNewTokyoSR =
+            internalKey === "Shibuya"
+            && seasonStartYear !== null
+            && seasonStartYear >= 2026;
+
+        if (isOldSendai) {
+            return {
+                ...teamInfo,
+                city: "SENDAI",
+                nickname: "89ERS",
+                color: "#EFAB00",
+                dark: "#D69900",
+                color2: "#000000",
+                text: "#000000",
+                text2: "#FFFFFF"
+            };
+        }
+
+        if (isNewShinshu) {
+            return {
+                ...teamInfo,
+                city: "SHINSHU",
+                nickname: "BRAVE WARRIORS",
+                color: "#C5A231",
+                dark: "rgba(95, 78, 24, 0.3)",
+                color2: "#0F0F13",
+                text: "#000000",
+                text2: "#FFFFFF"
+            };
+        }
+
+        if (isNewTokyoSR) {
+            return {
+                ...teamInfo,
+                city: "TOKYO",
+                nickname: "SUNROCKERS",
+                color: "#392171",
+                dark: "rgba(18, 11, 37, 0.3)",
+                color2: "#FED100",
+                text: "#FFFFFF",
+                text2: "#000000"
+            };
+        }
+
         return {
             ...teamInfo,
             city: internalKey.toUpperCase(),
             nickname: (teamInfo.nickname || "").toUpperCase(),
             color: teamInfo.color || "#333333",
+            dark: teamInfo.dark || teamInfo.color || "#333333",
             color2: teamInfo.color2 || "#000000",
             text: teamInfo.text || "#FFFFFF",
             text2: teamInfo.text2 || "#FFFFFF"
         };
     }
-    return { color: "#333333", text: "#FFFFFF", city: "TEAM", nickname: name };
+
+    return {
+        color: "#333333",
+        dark: "#333333",
+        color2: "#000000",
+        text: "#FFFFFF",
+        text2: "#FFFFFF",
+        city: "TEAM",
+        nickname: name
+    };
 }
 
 async function renderBReport(gameId) {
@@ -108,10 +199,29 @@ async function renderBReport(gameId) {
         if (name.includes("RYUKYU") || name.includes("琉球") || name.includes("GOLDEN"))
             return "#F27200";
             
-        if (name.includes("SENDAI") || name.includes("仙台") || name.includes("89ERS") ||
-            name.includes("GUNMA") || name.includes("群馬") || name.includes("THUNDERS") ||
-            name.includes("SHINSHU") || name.includes("信州") || name.includes("BRAVE") ||
-            name.includes("SHIBUYA") || name.includes("渋谷") || name.includes("SUNROCKERS"))
+        const season = process.env.B_REPORT_SEASON || "";
+        const seasonStartYear = Number(
+            season.match(/^(\d{4})/)?.[1] || 9999
+        );
+
+        const isSendai =
+            city.includes("SENDAI")
+            || name.includes("SENDAI")
+            || name.includes("仙台")
+            || name.includes("89ERS");
+
+        if (isSendai)
+            return "#F27200";
+
+        const isShinshu =
+            city.includes("SHINSHU")
+            || name.includes("SHINSHU")
+            || name.includes("信州");
+
+        if (isShinshu)
+            return "#F27200";
+
+        if (name.includes("GUNMA") || name.includes("群馬") || name.includes("THUNDERS"))
             return "#FEAE00";
             
         return "#FFD932";
@@ -145,7 +255,7 @@ async function renderBReport(gameId) {
         "__AWAY_SCORE__": a.pts || 0,
         "__HOME_SCORE_COLOR__": homeScoreColor,
         "__AWAY_SCORE_COLOR__": awayScoreColor,
-        "__DATE__": reportData.date || "",
+        "__DATE__": String(reportData.date || "").replace(/-/g, "."),
         "__ATTENDANCE__": Number(reportData.attendance || 0).toLocaleString(),
         "__VENUE__": reportData.venue || reportData.venueRaw || "",
         "__LEAGUE_TYPE__": reportData.leagueType || "",
@@ -176,6 +286,12 @@ async function renderBReport(gameId) {
         const playerNameMap = {
             "飯尾 文哉": "Fumiya Iio",
             "飯尾文哉": "Fumiya Iio",
+            "ダリアス・デイズ": "Darius Days",
+            "スティーブ・ザック": "Steve Zack",
+            "ジョーダン・ダラス": "Jordan Dallas",
+            "小寺 ハミルトンゲイリー": "Hamiltongary Kotera",
+            "フランク・カミンスキー": "Frank Kaminsky",
+            "ケーレブ・ターズースキー": "Kaleb Tarczewski",
             "平 寿哉": "Toshiya Taira",
             "ショーン・オマラ": "Sean O'mara",
             "ドゥシャン・リスティッチ": "Dusan Ristic",
@@ -190,10 +306,22 @@ async function renderBReport(gameId) {
             ).join(' ');
         };
 
+        const japanesePattern =
+            /[\u3040-\u30FF\u3400-\u9FFF\u3005-\u3007]/;
+
         return (list || []).map(s => {
-            let displayName = playerNameMap[s.name] || playerNameMap[s.nameJp];
-            if (!displayName) {
-                displayName = s.name ? s.name : toTitleCase(s.nameJp);
+            let displayName =
+                playerNameMap[s.name]
+                || playerNameMap[s.nameJp]
+                || s.name
+                || "";
+
+            displayName = displayName.trim();
+
+            if (!displayName || japanesePattern.test(displayName)) {
+                throw new Error(
+                    `スタメン名を英字へ変換できません: ${s.nameJp || s.name || "UNKNOWN"}`
+                );
             }
 
             return `
@@ -250,17 +378,60 @@ async function renderBReport(gameId) {
         a: { r2: (a.f2m||0)*2, r3: (a.f3m||0)*3, rf: (a.ftm||0), p3: parseFloat(calcPct(a.f3m, a.f3a)), text2: awayStyle.text2 }
     };
 
-    await page.evaluate((d) => { if (window.drawReportCharts) window.drawReportCharts(d); }, chartData);
-    await page.waitForTimeout(1000);
+    await page.waitForFunction(
+        () =>
+            typeof window.Chart !== "undefined" &&
+            typeof window.ChartDataLabels !== "undefined" &&
+            typeof window.drawReportCharts === "function",
+        { timeout: 15000 }
+    );
+
+    await page.evaluate((d) => {
+        window.drawReportCharts(d);
+    }, chartData);
+
+    await page.waitForTimeout(500);
 
     const dateObj = new Date(reportData.date);
     const dateStr = `${dateObj.getFullYear()}${String(dateObj.getMonth() + 1).padStart(2, '0')}${String(dateObj.getDate()).padStart(2, '0')}`;
     const fileName = `${dateStr}_${gameId}_${(homeStyle.nickname || "HOME").replace(/\s+/g, '')}_${(awayStyle.nickname || "AWAY").replace(/\s+/g, '')}.png`;
 
-    const outPath = "/Volumes/HD-CD-1/Masaki/B/BDATALAB APP/output/reports";
-    if (!fs.existsSync(outPath)) fs.mkdirSync(outPath, { recursive: true });
+    const season = process.env.B_REPORT_SEASON || "";
+    const stage = process.env.B_REPORT_STAGE || "";
 
-    await page.screenshot({ path: `${outPath}/${fileName}` });
+    let outPath;
+
+    if (season && stage) {
+        const rawLeague = reportData.leagueType || "B";
+
+        const league =
+
+            stage === "Championship" && rawLeague === "B"
+
+                ? "B1"
+
+                : rawLeague;
+        const dateFolder = dateStr.slice(2);
+
+        outPath = path.join(
+            "/Volumes/HD-CD-1/Masaki/B/BDATALAB APP/output/Game Reports",
+            league,
+            season,
+            stage,
+            dateFolder
+        );
+    } else {
+        outPath =
+            "/Volumes/HD-CD-1/Masaki/B/BDATALAB APP/output/reports";
+    }
+
+    if (!fs.existsSync(outPath)) {
+        fs.mkdirSync(outPath, { recursive: true });
+    }
+
+    await page.screenshot({
+        path: path.join(outPath, fileName)
+    });
     await browser.close();
     console.log(`✅ レポート生成完了: ${fileName}`);
 }

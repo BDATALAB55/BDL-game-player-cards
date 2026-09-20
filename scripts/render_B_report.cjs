@@ -56,6 +56,12 @@ function getTeamStyle(rawName) {
             && seasonStartYear !== null
             && seasonStartYear >= 2026;
 
+        // 金沢：2026-27から第2カラーを紫へ変更
+        const isNewKanazawa =
+            internalKey === "Kanazawa"
+            && seasonStartYear !== null
+            && seasonStartYear >= 2026;
+
         if (isOldSendai) {
             return {
                 ...teamInfo,
@@ -95,9 +101,22 @@ function getTeamStyle(rawName) {
             };
         }
 
+        if (isNewKanazawa) {
+            return {
+                ...teamInfo,
+                city: (teamInfo.city || "KANAZAWA").toUpperCase(),
+                nickname: (teamInfo.nickname || "SAMURAIZ").toUpperCase(),
+                color: teamInfo.color || "#C09933",
+                dark: teamInfo.dark || "#745C1F",
+                color2: "#3C2A77",
+                text: teamInfo.text || "#FFFFFF",
+                text2: "#FFFFFF"
+            };
+        }
+
         return {
             ...teamInfo,
-            city: internalKey.toUpperCase(),
+            city: (teamInfo.city || internalKey).toUpperCase(),
             nickname: (teamInfo.nickname || "").toUpperCase(),
             color: teamInfo.color || "#333333",
             dark: teamInfo.dark || teamInfo.color || "#333333",

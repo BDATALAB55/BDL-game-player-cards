@@ -82,7 +82,12 @@ function getTeamStyle(rawName) {
             internalKey === "Shibuya"
             && seasonStartYear >= 2026;
 
-        const cityEn = internalKey.toUpperCase();
+        const isNewKanazawa =
+            internalKey === "Kanazawa"
+            && seasonStartYear >= 2026;
+
+        const cityEn =
+            (teamInfo.city || internalKey).toUpperCase();
         const nickEn =
             (teamInfo.nickname || "").toUpperCase();
 
@@ -125,6 +130,25 @@ function getTeamStyle(rawName) {
                 color2: "#FED100",
                 text: "#FFFFFF",
                 text2: "#000000"
+            };
+        }
+
+        if (isNewKanazawa) {
+            const kanazawaCity =
+                (teamInfo.city || "KANAZAWA").toUpperCase();
+            const kanazawaNick =
+                (teamInfo.nickname || "SAMURAIZ").toUpperCase();
+
+            return {
+                ...teamInfo,
+                city: kanazawaCity,
+                nickname: kanazawaNick,
+                fullName: `${kanazawaCity} ${kanazawaNick}`.trim(),
+                color: teamInfo.color || "#C09933",
+                dark: teamInfo.dark || "#745C1F",
+                color2: "#3C2A77",
+                text: teamInfo.text || "#FFFFFF",
+                text2: "#FFFFFF"
             };
         }
 

@@ -44,7 +44,19 @@
     "Ehime":    { "nickname": "ORANGE VIKINGS", "color": "#FF8A06", "dark": "#E67C05", "text": "#FFFFFF", "color2": "#000000", "text2": "#FFFFFF" },
     "Fukuoka":  { "nickname": "RIZING ZEPHYR", "color": "#0A318E", "dark": "#082875", "text": "#FFFFFF", "color2": "#E60321", "text2": "#FFFFFF" },
     "Kumamoto": { "nickname": "VOLTERS", "color": "#F0000A", "dark": "#D70009", "text": "#FFFFFF", "color2": "#000000", "text2": "#FFFFFF" },
-    "Kagoshima": { "nickname": "REBNISE", "color": "#000000", "dark": "#1A1A1A", "text": "#FFFFFF", "color2": "#FFFFFF", "text2": "#929292" }
+    "Kagoshima": { "nickname": "REBNISE", "color": "#000000", "dark": "#1A1A1A", "text": "#FFFFFF", "color2": "#FFFFFF", "text2": "#929292" },
+
+    "Saitama":   { "city": "THE SAITAMA", "nickname": "BRONCOS", "color": "#FF0000", "dark": "#800000", "text": "#FFFFFF", "color2": "#000000", "text2": "#FFFFFF" },
+    "TokyoU":    { "city": "TOKYO", "nickname": "UNITED BASKETBALL CLUB", "color": "#3ABAED", "dark": "#216A87", "text": "#FFFFFF", "color2": "#000000", "text2": "#FFFFFF" },
+    "TokyoZ":    { "city": "EARTHFRIENDS TOKYO", "nickname": "Z", "color": "#004182", "dark": "#001B36", "text": "#FFFFFF", "color2": "#FFFFFF", "text2": "#929292" },
+    "Tachikawa": { "city": "TACHIKAWA", "nickname": "DICE", "color": "#103F97", "dark": "#081F4B", "text": "#FFFFFF", "color2": "#EC5F19", "text2": "#FFFFFF" },
+    "Hachioji":  { "city": "TOKYO HACHIOJI", "nickname": "BEE TRAINS", "color": "#E60012", "dark": "#670008", "text": "#FFFFFF", "color2": "#000000", "text2": "#FFFFFF" },
+    "Niigata":   { "city": "NIIGATA", "nickname": "ALBIREX BB", "color": "#EB5405", "dark": "#853003", "text": "#FFFFFF", "color2": "#004099", "text2": "#FFFFFF" },
+    "Kanazawa":  { "city": "KANAZAWA", "nickname": "SAMURAIZ", "color": "#C09933", "dark": "#745C1F", "text": "#FFFFFF", "color2": "#023B87", "text2": "#FFFFFF" },
+    "Gifu":      { "city": "GIFU", "nickname": "SWOOPS", "color": "#D70C19", "dark": "#8B0810", "text": "#FFFFFF", "color2": "#22943A", "text2": "#FFFFFF" },
+    "Okayama":   { "city": "TRYHOOP", "nickname": "OKAYAMA", "color": "#F59900", "dark": "#8F5900", "text": "#FFFFFF", "color2": "#00479D", "text2": "#FFFFFF" },
+    "Tokushima": { "city": "TOKUSHIMA", "nickname": "GAMBAROUS", "color": "#00B9E7", "dark": "#006781", "text": "#FFFFFF", "color2": "#FFE900", "text2": "#929292" },
+    "Kagawa":    { "city": "KAGAWA", "nickname": "FIVE ARROWS", "color": "#FFC40D", "dark": "#997608", "text": "#FFFFFF", "color2": "#000000", "text2": "#FFFFFF" }
   },
   "aliases": {
     "北海道": "Hokkaido", "HOKKAIDO": "Hokkaido", "LEVANGA": "Hokkaido", "レバンガ北海道": "Hokkaido", "LEVANGA HOKKAIDO": "Hokkaido",
@@ -87,6 +99,18 @@
     "愛媛": "Ehime", "EHIME": "Ehime", "ORANGE VIKINGS": "Ehime", "愛媛オレンジバイキングス": "Ehime", "EHIME ORANGE VIKINGS": "Ehime",
     "福岡": "Fukuoka", "FUKUOKA": "Fukuoka", "RIZING ZEPHYR": "Fukuoka", "ライジングゼファーフクオカ": "Fukuoka", "RIZING ZEPHYR FUKUOKA": "Fukuoka",
     "熊本": "Kumamoto", "KUMAMOTO": "Kumamoto", "VOLTERS": "Kumamoto", "熊本ヴォルターズ": "Kumamoto", "KUMAMOTO VOLTERS": "Kumamoto",
-    "鹿児島": "Kagoshima", "KAGOSHIMA": "Kagoshima", "REBNISE": "Kagoshima", "鹿児島レブナイズ": "Kagoshima", "KAGOSHIMA REBNISE": "Kagoshima"
+    "鹿児島": "Kagoshima", "KAGOSHIMA": "Kagoshima", "REBNISE": "Kagoshima", "鹿児島レブナイズ": "Kagoshima", "KAGOSHIMA REBNISE": "Kagoshima",
+
+    "埼玉": "Saitama", "SAITAMA": "Saitama", "BRONCOS": "Saitama", "さいたまブロンコス": "Saitama", "THE SAITAMA BRONCOS": "Saitama",
+    "東京U": "TokyoU", "TOKYO U": "TokyoU", "TOKYO UNITED": "TokyoU", "東京ユナイテッドバスケットボールクラブ": "TokyoU", "TOKYO UNITED BASKETBALL CLUB": "TokyoU",
+    "東京Z": "TokyoZ", "TOKYO Z": "TokyoZ", "アースフレンズ東京Z": "TokyoZ", "EARTHFRIENDS TOKYO Z": "TokyoZ",
+    "立川": "Tachikawa", "TACHIKAWA": "Tachikawa", "DICE": "Tachikawa", "立川ダイス": "Tachikawa", "TACHIKAWA DICE": "Tachikawa",
+    "八王子": "Hachioji", "HACHIOJI": "Hachioji", "BEE TRAINS": "Hachioji", "東京八王子ビートレインズ": "Hachioji", "TOKYO HACHIOJI BEE TRAINS": "Hachioji",
+    "新潟": "Niigata", "NIIGATA": "Niigata", "ALBIREX BB": "Niigata", "新潟アルビレックスBB": "Niigata", "NIIGATA ALBIREX BB": "Niigata",
+    "金沢": "Kanazawa", "KANAZAWA": "Kanazawa", "SAMURAIZ": "Kanazawa", "金沢サムライズ": "Kanazawa", "KANAZAWA SAMURAIZ": "Kanazawa",
+    "岐阜": "Gifu", "GIFU": "Gifu", "SWOOPS": "Gifu", "岐阜スゥープス": "Gifu", "GIFU SWOOPS": "Gifu",
+    "岡山": "Okayama", "OKAYAMA": "Okayama", "TRYHOOP": "Okayama", "トライフープ岡山": "Okayama", "TRYHOOP OKAYAMA": "Okayama",
+    "徳島": "Tokushima", "TOKUSHIMA": "Tokushima", "GAMBAROUS": "Tokushima", "徳島ガンバロウズ": "Tokushima", "TOKUSHIMA GAMBAROUS": "Tokushima",
+    "香川": "Kagawa", "KAGAWA": "Kagawa", "FIVE ARROWS": "Kagawa", "香川ファイブアローズ": "Kagawa", "KAGAWA FIVE ARROWS": "Kagawa"
   }
 }

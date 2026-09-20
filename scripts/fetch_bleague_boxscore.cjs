@@ -143,8 +143,18 @@ async function fetchGameBoxscore(gameId) {
                 ? `${dtMatch[1]}.${dtMatch[2].padStart(2,'0')}.${dtMatch[3].padStart(2,'0')}` 
                 : "DATE_MISSING";
             let leagueType = "LEAGUE_MISSING";
-            const leagueMatch = breadcrumbText.match(/B[1-3]/);
-            if (leagueMatch) leagueType = leagueMatch[0];
+            const normalizedLeagueText = breadcrumbText.toUpperCase();
+
+            if (/B\.LEAGUE\s+PREMIER/.test(normalizedLeagueText)) {
+                leagueType = "B.PREMIER";
+            } else if (/B\.LEAGUE\s+ONE/.test(normalizedLeagueText)) {
+                leagueType = "B.ONE";
+            } else if (/B\.LEAGUE\s+NEXT/.test(normalizedLeagueText)) {
+                leagueType = "B.NEXT";
+            } else {
+                const leagueMatch = breadcrumbText.match(/\bB[1-3]\b/);
+                if (leagueMatch) leagueType = leagueMatch[0];
+            }
             let roundStr = "ROUND_MISSING";
             const roundTarget = document.querySelector(".game-top .time-wrap p.part");
             if (roundTarget && roundTarget.innerText.trim() !== "") {

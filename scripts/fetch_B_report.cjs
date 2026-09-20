@@ -32,7 +32,21 @@ async function fetchBReportData(gameId) {
                 attendance: document.querySelector(".attendance")?.innerText.match(/[\d,]+/)?.[0].replace(/,/g, "") || "0",
                 date: dtMatch ? `${dtMatch[1]}.${dtMatch[2].padStart(2,'0')}.${dtMatch[3].padStart(2,'0')}` : "",
                 venueRaw: document.querySelector(".stadium-name")?.innerText.trim() || "",
-                leagueType: breadcrumb.match(/B[1-3]/)?.[0] || "",
+                leagueType: (() => {
+                    const normalized = breadcrumb.toUpperCase();
+
+                    if (/B\.LEAGUE\s+PREMIER/.test(normalized)) {
+                        return "B.PREMIER";
+                    }
+                    if (/B\.LEAGUE\s+ONE/.test(normalized)) {
+                        return "B.ONE";
+                    }
+                    if (/B\.LEAGUE\s+NEXT/.test(normalized)) {
+                        return "B.NEXT";
+                    }
+
+                    return breadcrumb.match(/\bB[1-3]\b/)?.[0] || "";
+                })(),
                 round: document.querySelector(".game-top .time-wrap p.part")?.innerText.match(/\d+/)?.[0] ? `ROUND${document.querySelector(".game-top .time-wrap p.part").innerText.match(/\d+/)[0]}` : "ROUND1"
             };
         });

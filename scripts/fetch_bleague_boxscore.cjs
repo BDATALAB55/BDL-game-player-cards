@@ -111,7 +111,8 @@ async function fetchGameBoxscore(gameId) {
         await Promise.all([
             page.waitForFunction(() => {
                 const el = document.querySelector(".attendance");
-                return el && el.innerText.includes("人");
+                const scope = el?.parentElement;
+                return scope && /Attendance:[^\d]*[\d,]+/i.test(scope.innerText);
             }, { timeout: 20000 }).catch(() => console.log("⚠️ Attendance text not found")),
             page.waitForFunction(() => {
                 const el = document.querySelector(".stadium-name");
@@ -134,9 +135,10 @@ async function fetchGameBoxscore(gameId) {
             const breadcrumbText = breadcrumbEl ? breadcrumbEl.innerText : "";
             const stadiumNode = document.querySelector(".stadium-name");
             const attEl = document.querySelector(".attendance");
-            const attText = attEl ? attEl.innerText : "";
-            const attMatch = attText.match(/([\d,]+)/);
-            const attendance = attMatch ? attMatch[1].replace(/,/g, "") : "0";
+            const attScope = attEl?.parentElement;
+            const attText = attScope ? attScope.innerText : "";
+            const attMatch = attText.match(/Attendance:[^\d]*([\d,]+)/i);
+            const attendance = attMatch ? attMatch[1].replace(/,/g, "") : "";
             const venueRaw = stadiumNode ? stadiumNode.innerText.trim() : "VENUE_MISSING";
             const dtMatch = breadcrumbText.match(/(\d{4})\/(\d{1,2})\/(\d{1,2})/);
             const dateVal = dtMatch 
@@ -205,16 +207,87 @@ async function fetchGameBoxscore(gameId) {
             ])
         );
 
-        const statsData = await page.evaluate(() => {
+        // BOX SCOREの選手行よりtfoot TOTALの描画が遅れるため、
+        // フルゲーム先頭2テーブルのTOTAL行が揃ってから取得する。
+        try {
+            await page.waitForFunction(() => {
+                const tables = Array.from(document.querySelectorAll("table"))
+                    .filter(t => t.innerText.includes("MIN"))
+                    .slice(0, 2);
+
+                if (tables.length < 2) return false;
+
+                return tables.every(table =>
+                    Array.from(table.querySelectorAll("tfoot tr")).some(row => {
+                        const firstCell = row.querySelector("td, th");
+                        return ["total", "合計"].includes(
+                            (firstCell?.innerText || "").trim().toLowerCase()
+                        );
+                    })
+                );
+            }, { timeout: 10000 });
+        } catch {
+            console.warn(`[ID:${gameId}] ⚠️ 公式TOTAL行の描画待機がタイムアウトしました`);
+        }
+
+
+        let statsData = await page.evaluate(() => {
             const teams = document.querySelectorAll('.team-name');
             const hName = teams[0]?.innerText.trim() || "";
             const aName = teams[1]?.innerText.trim() || "";
             const tables = Array.from(document.querySelectorAll("table")).filter(t => t.innerText.includes("MIN")).slice(0, 2);
             const players = [];
             let scoreHome = 0, scoreAway = 0;
+            let homeTotal = null, awayTotal = null;
 
             tables.forEach((table, idx) => {
                 const isHome = (idx === 0);
+
+                // GAME REPORTのTEAM STATSは、個人値の合算ではなく
+                // 公式BOX SCOREの試合TOTALを正として使用する。
+                const totalRow = Array.from(table.querySelectorAll("tfoot tr"))
+                    .find(row => {
+                        const firstCell = row.querySelector("td, th");
+                        return ["total", "合計"].includes(
+                            (firstCell?.innerText || "").trim().toLowerCase()
+                        );
+                    });
+
+                if (totalRow) {
+                    const tc = Array.from(totalRow.querySelectorAll("td, th"))
+                        .map(td => td.innerText.trim());
+
+                    const readInt = index => {
+                        const raw = tc[index];
+                        if (raw == null || raw === "") return null;
+                        const value = Number.parseInt(raw, 10);
+                        return Number.isFinite(value) ? value : null;
+                    };
+
+                    const officialTotal = {
+                        pts:  readInt(3),
+                        f2m:  readInt(7),
+                        f2a:  readInt(8),
+                        f3m:  readInt(10),
+                        f3a:  readInt(11),
+                        ftm:  readInt(13),
+                        fta:  readInt(14),
+                        oreb: readInt(18),
+                        dreb: readInt(19),
+                        reb:  readInt(20),
+                        ast:  readInt(21),
+                        tov:  readInt(23),
+                        stl:  readInt(24),
+                        blk:  readInt(25),
+                        pf:   readInt(27)
+                    };
+
+                    if (Object.values(officialTotal).every(Number.isFinite)) {
+                        if (isHome) homeTotal = officialTotal;
+                        else awayTotal = officialTotal;
+                    }
+                }
+
                 table.querySelectorAll("tbody tr").forEach(row => {
                     const c = Array.from(row.querySelectorAll("td, th")).map(td => td.innerText.trim());
                     if (c.length > 15 && /^\d+$/.test(c[0])) {
@@ -248,8 +321,17 @@ async function fetchGameBoxscore(gameId) {
                     }
                 });
             });
-            return { homeName: hName, awayName: aName, scoreHome, scoreAway, players };
+            return {
+                homeName: hName,
+                awayName: aName,
+                scoreHome,
+                scoreAway,
+                players,
+                homeTotal,
+                awayTotal
+            };
         });
+
 
         const missingEnglishNames = [];
 
@@ -307,8 +389,17 @@ async function fetchGameBoxscore(gameId) {
             return { total, starters: tPlayers.filter(p => p.isStarter) };
         };
 
-        const homeData = calcTeamData(statsData.players, statsData.homeName);
-        const awayData = calcTeamData(statsData.players, statsData.awayName);
+        const homeCalculated = calcTeamData(statsData.players, statsData.homeName);
+        const awayCalculated = calcTeamData(statsData.players, statsData.awayName);
+
+        const homeData = {
+            ...homeCalculated,
+            total: statsData.homeTotal || homeCalculated.total
+        };
+        const awayData = {
+            ...awayCalculated,
+            total: statsData.awayTotal || awayCalculated.total
+        };
 
         const rawV = baseInfo.venueRaw;
         const cleanRaw = rawV.replace(/Venue:/i, "").replace(/会場[:：]/, "").replace(/\s+/g, ' ').trim();

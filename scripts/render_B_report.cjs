@@ -343,6 +343,8 @@ async function renderBReport(gameId) {
                 );
             }
 
+            displayName = toTitleCase(displayName);
+
             return `
             <div class="player-row" style="color: ${isAway ? '#FFFFFF' : homeStyle.text}">
                 <div class="p-num" style="background:${numBg}; color:${numText}">${s.no || ""}</div>
@@ -391,6 +393,54 @@ async function renderBReport(gameId) {
         .legend-item, .pie-legend { color: #FFFFFF !important; }
     `
     });
+
+    // STARTING 5: Canvasで実際の文字幅を測り、長い名前だけ確実に収める
+    await page.evaluate(() => {
+        const canvas = document.createElement("canvas");
+        const ctx = canvas.getContext("2d");
+        const maxWidth = 260;
+
+        document.querySelectorAll(".p-name").forEach(el => {
+            const style = getComputedStyle(el);
+            const family = style.fontFamily;
+            const weight = style.fontWeight;
+            const text = el.textContent || "";
+
+            let size = 24;
+            let spacing = 2.4;
+
+            const measure = () => {
+                ctx.font = `${weight} ${size}px ${family}`;
+                const base = ctx.measureText(text).width;
+                return base + Math.max(0, text.length - 1) * spacing;
+            };
+
+            while (measure() > maxWidth && spacing > -1.5) {
+                spacing -= 0.1;
+            }
+
+            while (measure() > maxWidth && size > 17) {
+                size -= 0.5;
+            }
+
+            el.style.fontSize = `${size}px`;
+            el.style.letterSpacing = `${spacing}px`;
+        });
+    });
+
+    // B.PREMIERは2026-27以降「節」の概念がないためROUND BOXを非表示
+    const roundSeason = process.env.B_REPORT_SEASON || "";
+    const roundSeasonStartYear = Number(
+        roundSeason.match(/^(\d{4})/)?.[1] || 0
+    );
+    if (
+        reportData.leagueType === "B.PREMIER" &&
+        roundSeasonStartYear >= 2026
+    ) {
+        await page.addStyleTag({
+            content: ".round-badge { display: none !important; }"
+        });
+    }
 
     const chartData = {
         h: { r2: (h.f2m||0)*2, r3: (h.f3m||0)*3, rf: (h.ftm||0), p3: parseFloat(calcPct(h.f3m, h.f3a)), text2: homeStyle.text2 },

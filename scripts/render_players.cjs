@@ -473,6 +473,23 @@ async function renderPlayers(gameId, options = {}) {
 
         await page.setContent(html);
 
+        // B.PREMIERは2026-27以降「節」の概念がないためROUND BOXを非表示
+        const roundSeason =
+            process.env.B_PLAYER_SEASON ||
+            process.env.B_REPORT_SEASON ||
+            "";
+        const roundSeasonStartYear = Number(
+            roundSeason.match(/^(\d{4})/)?.[1] || 0
+        );
+        if (
+            gameData.leagueType === "B.PREMIER" &&
+            roundSeasonStartYear >= 2026
+        ) {
+            await page.addStyleTag({
+                content: ".round-badge { display: none !important; }"
+            });
+        }
+
         // フォントサイズ調整などの evaluate ロジック（保持）
         await page.evaluate(() => {
             const nickParts = document.querySelectorAll('.nick-part');

@@ -135,10 +135,18 @@ async function fetchGameBoxscore(gameId) {
             const breadcrumbText = breadcrumbEl ? breadcrumbEl.innerText : "";
             const stadiumNode = document.querySelector(".stadium-name");
             const attEl = document.querySelector(".attendance");
+            const attHtml = attEl?.outerHTML || "";
+            const sourceMatch = attHtml.match(/人数[：:]\s*([\d,]+)人/);
+
             const attScope = attEl?.parentElement;
             const attText = attScope ? attScope.innerText : "";
-            const attMatch = attText.match(/Attendance:[^\d]*([\d,]+)/i);
-            const attendance = attMatch ? attMatch[1].replace(/,/g, "") : "";
+            const displayMatch = attText.match(/Attendance:[^\d]*([\d,]+)/i);
+
+            const attendance = sourceMatch
+                ? sourceMatch[1].replace(/,/g, "")
+                : displayMatch
+                    ? displayMatch[1].replace(/,/g, "")
+                    : "";
             const venueRaw = stadiumNode ? stadiumNode.innerText.trim() : "VENUE_MISSING";
             const dtMatch = breadcrumbText.match(/(\d{4})\/(\d{1,2})\/(\d{1,2})/);
             const dateVal = dtMatch 

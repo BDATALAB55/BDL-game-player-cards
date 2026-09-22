@@ -304,6 +304,55 @@ async function renderPlayers(gameId, options = {}) {
         gameData.scoreHome
     );
 
+    // B.ONE 2026-27以降は、GAME PLAYERの濃色アクセントを
+    // main 50% + dark 50% にしてGAME REPORTと統一する。
+    const accentSeason =
+        process.env.B_PLAYER_SEASON ||
+        process.env.B_REPORT_SEASON ||
+        "";
+
+    const accentSeasonStartYear = Number(
+        accentSeason.match(/^(\d{4})/)?.[1] || 0
+    );
+
+    const isBOneNewEra =
+        gameData.leagueType === "B.ONE" &&
+        accentSeasonStartYear >= 2026;
+
+    const mixDarkIntoMain = (main, dark, ratio = 0.5) => {
+        const parseHex = value => {
+            const m = String(value || "").match(/^#([0-9a-f]{6})$/i);
+            if (!m) return null;
+            return [
+                parseInt(m[1].slice(0, 2), 16),
+                parseInt(m[1].slice(2, 4), 16),
+                parseInt(m[1].slice(4, 6), 16)
+            ];
+        };
+
+        const mainRgb = parseHex(main);
+        const darkRgb = parseHex(dark);
+
+        if (!mainRgb || !darkRgb) return dark;
+
+        const mixed = mainRgb.map((v, i) =>
+            Math.round(v * (1 - ratio) + darkRgb[i] * ratio)
+        );
+
+        return "#" + mixed
+            .map(v => v.toString(16).padStart(2, "0"))
+            .join("")
+            .toUpperCase();
+    };
+
+    const homeAccent = isBOneNewEra
+        ? mixDarkIntoMain(homeStyle.color, homeStyle.dark, 0.5)
+        : homeStyle.dark;
+
+    const awayAccent = isBOneNewEra
+        ? mixDarkIntoMain(awayStyle.color, awayStyle.dark, 0.5)
+        : awayStyle.dark;
+
     const originalHtml = fs.readFileSync(templatePath, "utf8");
     const venueEn = String(
         gameData.venue || ""
@@ -422,14 +471,19 @@ async function renderPlayers(gameId, options = {}) {
 
         const starterMark = player.isStarter ? "S" : "";
 
+        const playerAccent =
+            player.teamNameRaw === gameData.homeName
+                ? homeAccent
+                : awayAccent;
+
         // HTMLテンプレートの置換処理
         let html = originalHtml
             .replace(/__HOME_BG__/g, homeStyle.color)
             .replace(/__HOME_TEXT__/g, homeStyle.text)
-            .replace(/__HOME_DARK__/g, homeStyle.dark)
+            .replace(/__HOME_DARK__/g, homeAccent)
             .replace(/__AWAY_BG__/g, awayStyle.color)
             .replace(/__AWAY_TEXT__/g, awayStyle.text)
-            .replace(/__AWAY_DARK__/g, awayStyle.dark)
+            .replace(/__AWAY_DARK__/g, awayAccent)
             .replace(/__HOME_CITY__/g, homeCity)
             .replace(/__HOME_NICK__/g, homeStyle.nickname)
             .replace(/__AWAY_CITY__/g, awayCity)
@@ -442,7 +496,7 @@ async function renderPlayers(gameId, options = {}) {
             .replace(/__PLAYER_NO__/g, player.no)
             .replace(/__STARTER__/g, starterMark)
             .replace(/__PLAYER_BG__/g, tp.color)
-            .replace(/__PLAYER_DARK__/g, tp.dark)
+            .replace(/__PLAYER_DARK__/g, playerAccent)
             .replace(/__PLAYER_TEXT__/g, tp.text)
             .replace(/__PLAYER_TEXT2__/g, tp.text2)
             .replace(/__PLAYER_COLOR__/g, tp.color)
@@ -473,7 +527,7 @@ async function renderPlayers(gameId, options = {}) {
 
         await page.setContent(html);
 
-        // B.PREMIERは2026-27以降「節」の概念がないためROUND BOXを非表示
+        // B.PREMIER / B.ONEは2026-27以降ROUND BOXを非表示
         const roundSeason =
             process.env.B_PLAYER_SEASON ||
             process.env.B_REPORT_SEASON ||
@@ -482,7 +536,7 @@ async function renderPlayers(gameId, options = {}) {
             roundSeason.match(/^(\d{4})/)?.[1] || 0
         );
         if (
-            gameData.leagueType === "B.PREMIER" &&
+            ["B.PREMIER", "B.ONE"].includes(gameData.leagueType) &&
             roundSeasonStartYear >= 2026
         ) {
             await page.addStyleTag({

@@ -148,6 +148,49 @@ async function renderBReport(gameId) {
     const homeStyle = getTeamStyle(reportData.homeName);
     const awayStyle = getTeamStyle(reportData.awayName);
 
+    // B.ONE 2026-27以降は、濃色アクセントを
+    // main 50% + dark 50% にしてコントラストを弱める。
+    const reportSeason = process.env.B_REPORT_SEASON || "";
+    const reportSeasonStartYear = Number(
+        reportSeason.match(/^(\d{4})/)?.[1] || 0
+    );
+    const isBOneNewEra =
+        reportData.leagueType === "B.ONE" &&
+        reportSeasonStartYear >= 2026;
+
+    const mixDarkIntoMain = (main, dark, ratio = 0.3) => {
+        const parseHex = value => {
+            const m = String(value || "").match(/^#([0-9a-f]{6})$/i);
+            if (!m) return null;
+            return [
+                parseInt(m[1].slice(0, 2), 16),
+                parseInt(m[1].slice(2, 4), 16),
+                parseInt(m[1].slice(4, 6), 16)
+            ];
+        };
+
+        const mainRgb = parseHex(main);
+        const darkRgb = parseHex(dark);
+        if (!mainRgb || !darkRgb) return dark;
+
+        const mixed = mainRgb.map((v, i) =>
+            Math.round(v * (1 - ratio) + darkRgb[i] * ratio)
+        );
+
+        return "#" + mixed
+            .map(v => v.toString(16).padStart(2, "0"))
+            .join("")
+            .toUpperCase();
+    };
+
+    const homeAccent = isBOneNewEra
+        ? mixDarkIntoMain(homeStyle.color, homeStyle.dark, 0.5)
+        : homeStyle.dark;
+
+    const awayAccent = isBOneNewEra
+        ? mixDarkIntoMain(awayStyle.color, awayStyle.dark, 0.5)
+        : awayStyle.dark;
+
     // --- マップデータもすべて保持 ---
     const cityNameMap = {
         "SANEN": "SAN-EN",
@@ -264,8 +307,8 @@ async function renderBReport(gameId) {
         "__AWAY_TEXT__": awayStyle.text,
         "__HOME_TEXT2__": homeStyle.text2,
         "__AWAY_TEXT2__": awayStyle.text2,
-        "__HOME_DARK__": homeStyle.dark,
-        "__AWAY_DARK__": awayStyle.dark,
+        "__HOME_DARK__": homeAccent,
+        "__AWAY_DARK__": awayAccent,
         "__HOME_CITY__": homeCity,
         "__HOME_NICK__": homeNick,
         "__AWAY_CITY__": awayCity,
@@ -428,13 +471,13 @@ async function renderBReport(gameId) {
         });
     });
 
-    // B.PREMIERは2026-27以降「節」の概念がないためROUND BOXを非表示
+    // B.PREMIER / B.ONEは2026-27以降ROUND BOXを非表示
     const roundSeason = process.env.B_REPORT_SEASON || "";
     const roundSeasonStartYear = Number(
         roundSeason.match(/^(\d{4})/)?.[1] || 0
     );
     if (
-        reportData.leagueType === "B.PREMIER" &&
+        ["B.PREMIER", "B.ONE"].includes(reportData.leagueType) &&
         roundSeasonStartYear >= 2026
     ) {
         await page.addStyleTag({

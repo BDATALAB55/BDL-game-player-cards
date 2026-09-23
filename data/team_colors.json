@@ -56,7 +56,91 @@
     "Gifu":      { "city": "GIFU", "nickname": "SWOOPS", "color": "#D70C19", "dark": "#8B0810", "text": "#FFFFFF", "color2": "#22943A", "text2": "#FFFFFF" },
     "Okayama":   { "city": "TRYHOOP", "nickname": "OKAYAMA", "color": "#F59900", "dark": "#8F5900", "text": "#FFFFFF", "color2": "#00479D", "text2": "#FFFFFF" },
     "Tokushima": { "city": "TOKUSHIMA", "nickname": "GAMBAROUS", "color": "#00B9E7", "dark": "#006781", "text": "#FFFFFF", "color2": "#FFE900", "text2": "#929292" },
-    "Kagawa":    { "city": "KAGAWA", "nickname": "FIVE ARROWS", "color": "#FFC40D", "dark": "#997608", "text": "#FFFFFF", "color2": "#000000", "text2": "#FFFFFF" }
+    "Kagawa":    { "city": "KAGAWA", "nickname": "FIVE ARROWS", "color": "#FFC40D", "dark": "#997608", "text": "#FFFFFF", "color2": "#000000", "text2": "#FFFFFF" },
+    "Euro_AnadoluEfes": {
+      "city": "TURKIYE",
+      "nickname": "ANADOLU EFES"
+    },
+    "Euro_ASMonaco": {
+      "city": "FRANCE",
+      "nickname": "AS MONACO"
+    },
+    "Euro_ASVEL": {
+      "city": "FRANCE",
+      "nickname": "ASVEL"
+    },
+    "Euro_Barcelona": {
+      "city": "SPAIN",
+      "nickname": "BARCELONA"
+    },
+    "Euro_Baskonia": {
+      "city": "SPAIN",
+      "nickname": "BASKONIA"
+    },
+    "Euro_Besiktas": {
+      "city": "TURKIYE",
+      "nickname": "BESIKTAS"
+    },
+    "Euro_Bayern": {
+      "city": "GERMANY",
+      "nickname": "BAYERN"
+    },
+    "Euro_Bologna": {
+      "city": "ITALY",
+      "nickname": "BOLOGNA"
+    },
+    "Euro_CrvenaZvezda": {
+      "city": "SERBIA",
+      "nickname": "CRVENA ZVEZDA"
+    },
+    "Euro_Dubai": {
+      "city": "UAE",
+      "nickname": "DUBAI"
+    },
+    "Euro_Fenerbahce": {
+      "city": "TURKIYE",
+      "nickname": "FENERBAHCE"
+    },
+    "Euro_HapoelTelAviv": {
+      "city": "ISRAEL",
+      "nickname": "HAPOEL TEL AVIV"
+    },
+    "Euro_MaccabiTelAviv": {
+      "city": "ISRAEL",
+      "nickname": "MACCABI TEL AVIV"
+    },
+    "Euro_Milan": {
+      "city": "ITALY",
+      "nickname": "MILAN"
+    },
+    "Euro_Olympiacos": {
+      "city": "GREECE",
+      "nickname": "OLYMPIACOS"
+    },
+    "Euro_Panathinaikos": {
+      "city": "GREECE",
+      "nickname": "PANATHINAIKOS"
+    },
+    "Euro_Paris": {
+      "city": "FRANCE",
+      "nickname": "PARIS"
+    },
+    "Euro_Partizan": {
+      "city": "SERBIA",
+      "nickname": "PARTIZAN"
+    },
+    "Euro_RealMadrid": {
+      "city": "SPAIN",
+      "nickname": "REAL MADRID"
+    },
+    "Euro_Valencia": {
+      "city": "SPAIN",
+      "nickname": "VALENCIA"
+    },
+    "Euro_ZalgirisKaunas": {
+      "city": "LITHUANIA",
+      "nickname": "ZALGIRIS KAUNAS"
+    }
   },
   "aliases": {
     "北海道": "Hokkaido", "HOKKAIDO": "Hokkaido", "LEVANGA": "Hokkaido", "レバンガ北海道": "Hokkaido", "LEVANGA HOKKAIDO": "Hokkaido",
@@ -111,6 +195,46 @@
     "岐阜": "Gifu", "GIFU": "Gifu", "SWOOPS": "Gifu", "岐阜スゥープス": "Gifu", "GIFU SWOOPS": "Gifu",
     "岡山": "Okayama", "OKAYAMA": "Okayama", "TRYHOOP": "Okayama", "トライフープ岡山": "Okayama", "TRYHOOP OKAYAMA": "Okayama",
     "徳島": "Tokushima", "TOKUSHIMA": "Tokushima", "GAMBAROUS": "Tokushima", "徳島ガンバロウズ": "Tokushima", "TOKUSHIMA GAMBAROUS": "Tokushima",
-    "香川": "Kagawa", "KAGAWA": "Kagawa", "FIVE ARROWS": "Kagawa", "香川ファイブアローズ": "Kagawa", "KAGAWA FIVE ARROWS": "Kagawa"
+    "香川": "Kagawa", "KAGAWA": "Kagawa", "FIVE ARROWS": "Kagawa", "香川ファイブアローズ": "Kagawa", "KAGAWA FIVE ARROWS": "Kagawa",
+    "ANADOLU EFES": "Euro_AnadoluEfes",
+    "AS MONACO": "Euro_ASMonaco",
+    "ASVEL": "Euro_ASVEL",
+    "BARCELONA": "Euro_Barcelona",
+    "BASKONIA": "Euro_Baskonia",
+    "BESIKTAS": "Euro_Besiktas",
+    "BAYERN": "Euro_Bayern",
+    "BOLOGNA": "Euro_Bologna",
+    "CRVENA ZVEZDA": "Euro_CrvenaZvezda",
+    "DUBAI": "Euro_Dubai",
+    "FENERBAHCE": "Euro_Fenerbahce",
+    "HAPOEL TEL AVIV": "Euro_HapoelTelAviv",
+    "MACCABI TEL AVIV": "Euro_MaccabiTelAviv",
+    "MILAN": "Euro_Milan",
+    "OLYMPIACOS": "Euro_Olympiacos",
+    "PANATHINAIKOS": "Euro_Panathinaikos",
+    "PARIS": "Euro_Paris",
+    "PARTIZAN": "Euro_Partizan",
+    "REAL MADRID": "Euro_RealMadrid",
+    "VALENCIA": "Euro_Valencia",
+    "ZALGIRIS KAUNAS": "Euro_ZalgirisKaunas",
+    "ANADOLU EFES ISTANBUL": "Euro_AnadoluEfes",
+    "LDLC ASVEL VILLEURBANNE": "Euro_ASVEL",
+    "FC BARCELONA": "Euro_Barcelona",
+    "KOSNER BASKONIA VITORIA-GASTEIZ": "Euro_Baskonia",
+    "BESIKTAS ISTANBUL": "Euro_Besiktas",
+    "FC BAYERN MUNICH": "Euro_Bayern",
+    "VIRTUS BOLOGNA": "Euro_Bologna",
+    "CRVENA ZVEZDA MERIDIANBET BELGRADE": "Euro_CrvenaZvezda",
+    "DUBAI BASKETBALL": "Euro_Dubai",
+    "FENERBAHCE TARFIN ISTANBUL": "Euro_Fenerbahce",
+    "HAPOEL IBI TEL AVIV": "Euro_HapoelTelAviv",
+    "MACCABI RAPYD TEL AVIV": "Euro_MaccabiTelAviv",
+    "EA7 EMPORIO ARMANI MILAN": "Euro_Milan",
+    "ARMANI OLIMPIA MILAN": "Euro_Milan",
+    "OLYMPIACOS PIRAEUS": "Euro_Olympiacos",
+    "PANATHINAIKOS AKTOR ATHENS": "Euro_Panathinaikos",
+    "PARIS BASKETBALL": "Euro_Paris",
+    "PARTIZAN MOZZART BET BELGRADE": "Euro_Partizan",
+    "VALENCIA BASKET": "Euro_Valencia"
   }
 }

@@ -185,16 +185,62 @@ async function fetchGameBoxscore(gameId) {
 
         const boxscoreHtml = await page.content();
 
-        const officialBoxscores = [
-            ...extractJsonArray(
-                boxscoreHtml,
-                "HomeBoxscores"
-            ),
-            ...extractJsonArray(
-                boxscoreHtml,
-                "AwayBoxscores"
-            )
-        ];
+        let officialBoxscores = [];
+
+        try {
+            officialBoxscores = [
+                ...extractJsonArray(
+                    boxscoreHtml,
+                    "HomeBoxscores"
+                ),
+                ...extractJsonArray(
+                    boxscoreHtml,
+                    "AwayBoxscores"
+                )
+            ];
+        } catch (htmlBoxscoreError) {
+            console.warn(
+                `[ID:${gameId}] ⚠️ HTML埋め込みBoxscores未検出のため ` +
+                `ブラウザ取得済み公式JSONへfallback`
+            );
+
+            await page.waitForFunction(() => {
+                const data = window._contexts?.fetchedData;
+
+                return (
+                    Array.isArray(data?.HomeBoxscores) &&
+                    Array.isArray(data?.AwayBoxscores) &&
+                    (
+                        data.HomeBoxscores.length > 0 ||
+                        data.AwayBoxscores.length > 0
+                    )
+                );
+            }, { timeout: 15000 });
+
+            const dynamicBoxscores = await page.evaluate(() => {
+                const data = window._contexts?.fetchedData || {};
+
+                return {
+                    home: Array.isArray(data.HomeBoxscores)
+                        ? data.HomeBoxscores
+                        : [],
+                    away: Array.isArray(data.AwayBoxscores)
+                        ? data.AwayBoxscores
+                        : []
+                };
+            });
+
+            officialBoxscores = [
+                ...dynamicBoxscores.home,
+                ...dynamicBoxscores.away
+            ];
+
+            console.log(
+                `[ID:${gameId}] 公式JSON Boxscores取得: ` +
+                `HOME ${dynamicBoxscores.home.length} / ` +
+                `AWAY ${dynamicBoxscores.away.length}`
+            );
+        }
 
         const englishNameByPlayer = new Map(
             officialBoxscores.map(row => [

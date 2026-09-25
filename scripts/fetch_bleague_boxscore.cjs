@@ -446,13 +446,66 @@ async function fetchGameBoxscore(gameId) {
         const homeCalculated = calcTeamData(statsData.players, statsData.homeName);
         const awayCalculated = calcTeamData(statsData.players, statsData.awayName);
 
+        // GAME REPORTのTEAM STATSは、最新公式JSONの
+        // Category=3 / PeriodCategory=18 のチームTOTALを最優先する。
+        const officialTeamTotal = teamName => {
+            const row = officialBoxscores.find(
+                row =>
+                    Number(row.Category) === 3 &&
+                    Number(row.PeriodCategory) === 18 &&
+                    String(row.TeamNameJ || "").trim() === teamName
+            );
+
+            if (!row) return null;
+
+            const n = value => {
+                const number = Number(value);
+                return Number.isFinite(number) ? number : 0;
+            };
+
+            return {
+                pts:  n(row.Point),
+                f2m:  n(row.PT2M),
+                f2a:  n(row.PT2A),
+                f3m:  n(row.PT3M),
+                f3a:  n(row.PT3A),
+                ftm:  n(row.FTM),
+                fta:  n(row.FTA),
+                oreb: n(row.RB_OFF),
+                dreb: n(row.RB_DEF),
+                reb:  n(row.RB_TOT),
+                ast:  n(row.AS),
+                tov:  n(row.TO),
+                stl:  n(row.ST),
+                blk:  n(row.BS),
+                pf:   n(row.FOUL)
+            };
+        };
+
+        const officialHomeTotal =
+            officialTeamTotal(statsData.homeName);
+        const officialAwayTotal =
+            officialTeamTotal(statsData.awayName);
+
+        if (officialHomeTotal && officialAwayTotal) {
+            console.log(
+                `[ID:${gameId}] 最新公式JSONのTEAM TOTALを使用`
+            );
+        }
+
         const homeData = {
             ...homeCalculated,
-            total: statsData.homeTotal || homeCalculated.total
+            total:
+                officialHomeTotal ||
+                statsData.homeTotal ||
+                homeCalculated.total
         };
         const awayData = {
             ...awayCalculated,
-            total: statsData.awayTotal || awayCalculated.total
+            total:
+                officialAwayTotal ||
+                statsData.awayTotal ||
+                awayCalculated.total
         };
 
         const rawV = baseInfo.venueRaw;

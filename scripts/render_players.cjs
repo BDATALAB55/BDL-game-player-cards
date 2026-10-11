@@ -272,6 +272,16 @@ async function renderPlayers(gameId, options = {}) {
             return "#F27200";
         }
 
+        const isKagawa =
+            city.includes("KAGAWA") ||
+            name.includes("KAGAWA") ||
+            name.includes("香川") ||
+            name.includes("FIVE ARROWS");
+
+        if (isKagawa) {
+            return "#F27200";
+        }
+
         const isShinshu =
             city.includes("SHINSHU") ||
             name.includes("SHINSHU") ||
